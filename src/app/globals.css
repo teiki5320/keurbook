@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/*
+ * Habillage volontairement neutre : le design définitif sera fait à part (Claude Design).
+ * Couleurs et polices centralisées ici pour être remplacées facilement.
+ */
+@theme {
+  --color-paper: #fbf8f3;
+  --color-ink: #1f1b16;
+  --color-muted: #6b6259;
+  --color-line: #e5ded3;
+  --color-accent: #9a3412;
+  --color-accent-soft: #fdebd8;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-literata), Georgia, serif;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+@utility btn-primary {
+  @apply btn bg-accent text-white hover:bg-ink;
+}
+@utility btn-secondary {
+  @apply btn border border-line bg-white text-ink hover:border-ink;
+}
+@utility input {
+  @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm focus:border-ink focus:outline-none;
+}
+@utility tag {
+  @apply inline-flex items-center rounded-full border border-line bg-white px-3 py-1 text-xs text-muted hover:border-ink hover:text-ink;
+}
+@utility section-title {
+  @apply font-serif text-2xl font-semibold sm:text-3xl;
+}
+
+@utility prose-text {
+  @apply max-w-3xl text-[16px] leading-relaxed text-ink/90;
+  & h2 {
+    @apply mt-10 mb-3 scroll-mt-24 font-serif text-2xl font-semibold text-ink;
+  }
+  & h3 {
+    @apply mt-6 mb-2 font-semibold;
+  }
+  & p,
+  & ul,
+  & ol {
+    @apply mb-4;
+  }
+  & ul {
+    @apply list-disc pl-6;
+  }
+  & ol {
+    @apply list-decimal pl-6;
+  }
+  & a {
+    @apply text-accent underline underline-offset-2 hover:text-ink;
+  }
+  & blockquote {
+    @apply my-6 border-l-4 border-accent pl-4 font-serif italic;
+  }
+}
