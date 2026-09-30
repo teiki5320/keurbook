@@ -93,6 +93,8 @@ export interface Author {
   /** Photo libre de droits uniquement, avec crédit. */
   photo: string | null;
   photoCredit: string | null;
+  /** Page source de la photo (Wikimedia Commons), liée depuis le crédit. */
+  photoSource?: string | null;
   /** « Par où commencer » : slug d'un livre du site. */
   startWith: string | null;
   /** Autres titres, sans fiche sur le site : « Titre (année) ». */

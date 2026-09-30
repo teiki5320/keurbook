@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AmazonButton } from "@/components/book/AmazonButton";
 import { BookGrid } from "@/components/book/BookCard";
+import { AuthorAvatar } from "@/components/book/AuthorAvatar";
 import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Breadcrumb, Section } from "@/components/layout/Section";
@@ -75,8 +76,18 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
         <div className="mx-auto md:mx-0">
           {author.photo ? (
             <figure>
-              <img src={author.photo} alt={`Portrait de ${author.name}`} className="size-44 rounded-full object-cover" />
-              {author.photoCredit && <figcaption className="mt-2 text-center text-xs text-muted">{author.photoCredit}</figcaption>}
+              <img src={author.photo} alt={`Portrait de ${author.name}`} className="size-44 rounded-full object-cover object-top" />
+              {author.photoCredit && (
+                <figcaption className="mt-2 max-w-44 text-center text-xs text-muted">
+                  {author.photoSource ? (
+                    <a href={author.photoSource} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      {author.photoCredit}
+                    </a>
+                  ) : (
+                    author.photoCredit
+                  )}
+                </figcaption>
+              )}
             </figure>
           ) : (
             <span aria-hidden className="flex size-44 items-center justify-center rounded-full bg-accent-soft font-serif text-5xl font-bold">
@@ -172,9 +183,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
             {related.map((a) => (
               <li key={a.slug}>
                 <Link href={`/auteur/${a.slug}`} className="flex items-center gap-3 rounded-xl border border-line bg-white p-3 hover:border-ink">
-                  <span aria-hidden className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent-soft font-serif text-sm font-bold">
-                    {initials(a.name)}
-                  </span>
+                  <AuthorAvatar name={a.name} photo={a.photo} />
                   <span>
                     <span className="block font-semibold">{a.name}</span>
                     <span className="block text-xs text-muted">{getCountry(a.countryCode)?.name}</span>

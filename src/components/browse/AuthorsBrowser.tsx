@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { initials, normalize } from "@/lib/book-utils";
+import { normalize } from "@/lib/book-utils";
+import { AuthorAvatar } from "../book/AuthorAvatar";
 
 export interface AuthorListItem {
   slug: string;
@@ -10,6 +11,7 @@ export interface AuthorListItem {
   countryCode: string;
   countryName: string;
   years: string;
+  photo: string | null;
   count: number;
 }
 
@@ -48,9 +50,7 @@ export function AuthorsBrowser({ authors, countries }: { authors: AuthorListItem
         {list.map((a) => (
           <li key={a.slug}>
             <Link href={`/auteur/${a.slug}`} className="flex items-center gap-4 rounded-xl border border-line bg-white p-4 hover:border-ink">
-              <span aria-hidden className="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent-soft font-serif font-bold">
-                {initials(a.name)}
-              </span>
+              <AuthorAvatar name={a.name} photo={a.photo} className="size-12" />
               <span>
                 <span className="block font-semibold">{a.name}</span>
                 <span className="block text-sm text-muted">

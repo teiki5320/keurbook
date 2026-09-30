@@ -4,7 +4,8 @@ import { BookGrid, BookRow } from "@/components/book/BookCard";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { CountryMap } from "@/components/map/CountryMap";
-import { initials, lifeYears } from "@/lib/book-utils";
+import { AuthorAvatar } from "@/components/book/AuthorAvatar";
+import { lifeYears } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
 import { getAuthors, getBooks, getBooksByAuthor, getCountriesWithBooks, getCountry, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
@@ -102,9 +103,7 @@ export default async function HomePage() {
       {spotlight && (
         <Section title="Auteur à découvrir" href={`/auteur/${spotlight.slug}`} linkLabel="Voir sa fiche">
           <div className="grid gap-6 rounded-xl border border-line bg-white p-6 md:grid-cols-[auto_1fr]">
-            <span aria-hidden className="flex size-24 items-center justify-center rounded-full bg-accent-soft font-serif text-3xl font-bold">
-              {initials(spotlight.name)}
-            </span>
+            <AuthorAvatar name={spotlight.name} photo={spotlight.photo} className="size-24 text-3xl" />
             <div>
               <p className="font-serif text-2xl font-semibold">
                 <Link href={`/auteur/${spotlight.slug}`} className="hover:text-accent">

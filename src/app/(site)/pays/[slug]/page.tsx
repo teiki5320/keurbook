@@ -5,7 +5,7 @@ import { BookGrid } from "@/components/book/BookCard";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Breadcrumb, Section } from "@/components/layout/Section";
 import { CountryMap } from "@/components/map/CountryMap";
-import { initials } from "@/lib/book-utils";
+import { AuthorAvatar } from "@/components/book/AuthorAvatar";
 import { siteConfig } from "@/lib/config";
 import { getAuthorsOfCountry, getBooksOfCountry, getCountriesWithBooks, getCountryBySlug, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
@@ -84,9 +84,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
             {authors.map((a) => (
               <li key={a.slug}>
                 <Link href={`/auteur/${a.slug}`} className="flex items-center gap-3 rounded-xl border border-line bg-white p-3 hover:border-ink">
-                  <span aria-hidden className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent-soft font-serif text-sm font-bold">
-                    {initials(a.name)}
-                  </span>
+                  <AuthorAvatar name={a.name} photo={a.photo} />
                   <span className="font-semibold">{a.name}</span>
                 </Link>
               </li>

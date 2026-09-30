@@ -22,6 +22,7 @@ export default async function AuthorsPage() {
       countryCode: a.countryCode,
       countryName: getCountry(a.countryCode)?.name ?? "",
       years: lifeYears(a),
+      photo: a.photo,
       count: (await getBooksByAuthor(a.slug)).length,
     })),
   );
