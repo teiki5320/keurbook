@@ -5,7 +5,7 @@ import { Breadcrumb, Section } from "@/components/layout/Section";
 import { PileButton } from "@/components/pile/PileButton";
 import { amazonUrl } from "@/lib/amazon";
 import { creatorNames, creators, translator } from "@/lib/book-utils";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, withBase } from "@/lib/config";
 import { getBookAuthors, getBookCountry, getBooksByAuthor, getRelatedBooks, toCards } from "@/lib/data/books";
 import { getConseilsForBooks } from "@/lib/data/conseils";
 import { formatPrice } from "@/lib/format";
@@ -155,7 +155,7 @@ export async function BookDetail({ book }: { book: Book }) {
               </h2>
               <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {book.plates.map((p, i) => (
-                  <img key={p} src={p} alt={`${book.title}, planche ${i + 1}`} className="rounded-md border border-line" loading="lazy" />
+                  <img key={p} src={withBase(p)} alt={`${book.title}, planche ${i + 1}`} className="rounded-md border border-line" loading="lazy" />
                 ))}
               </div>
             </section>

@@ -9,7 +9,7 @@ import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Breadcrumb, Section } from "@/components/layout/Section";
 import { initials, lifeYears } from "@/lib/book-utils";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, withBase } from "@/lib/config";
 import { getAuthorBySlug, getAuthors, getAuthorThemes, getBooksByAuthor, getCountry, getRelatedAuthors, toCard, toCards } from "@/lib/data/books";
 import { getConseilsForBooks } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
@@ -76,7 +76,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
         <div className="mx-auto md:mx-0">
           {author.photo ? (
             <figure>
-              <img src={author.photo} alt={`Portrait de ${author.name}`} className="size-44 rounded-full object-cover object-top" />
+              <img src={withBase(author.photo)} alt={`Portrait de ${author.name}`} className="size-44 rounded-full object-cover object-top" />
               {author.photoCredit && (
                 <figcaption className="mt-2 max-w-44 text-center text-xs text-muted">
                   {author.photoSource ? (

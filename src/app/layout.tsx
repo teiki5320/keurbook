@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Literata } from "next/font/google";
 import { CookieBanner } from "@/components/compliance/CookieBanner";
-import { siteConfig } from "@/lib/config";
+import { NOINDEX, siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   formatDetection: { telephone: false },
+  ...(NOINDEX ? { robots: { index: false, follow: false } } : {}),
 };
 
 export const viewport: Viewport = {
