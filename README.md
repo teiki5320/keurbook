@@ -2,7 +2,7 @@
 
 Site en français qui présente des **livres et BD d'auteurs d'Afrique subsaharienne** (et de leur diaspora), écrits en français ou traduits : fiches livres, fiches auteurs, littérature de chaque pays et une rubrique **Conseils** (un article chaque lundi). Le site ne vend rien : les boutons « Acheter sur Amazon » mènent à Amazon.fr (programme Partenaires).
 
-- **Site** : https://keurbook.com (à publier).
+- **Site** : https://keurbook.com (à publier). Version provisoire, non indexée : https://teiki5320.github.io/keurbook/ (GitHub Pages, workflow `.github/workflows/pages.yml`).
 - **Dépôt** : https://github.com/teiki5320/keurbook.
 - **Base technique** : reprise de [Keur Cook](https://github.com/teiki5320/keurcook).
 
