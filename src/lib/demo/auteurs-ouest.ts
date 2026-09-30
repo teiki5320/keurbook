@@ -85,7 +85,10 @@ export const auteursOuest: Author[] = [
     bio: "Né à Dakar, Boubacar Boris Diop est professeur de philosophie, journaliste et scénariste avant de se consacrer à l'écriture. Ses premiers romans interrogent la mémoire et le pouvoir en Afrique. En 1998, il participe au Rwanda à une résidence d'écrivains africains, d'où naît « Murambi, le livre des ossements ». Il écrit aussi en wolof et a fondé une maison d'édition consacrée à cette langue. En 2022, il reçoit le prix international de littérature Neustadt pour l'ensemble de son œuvre.",
     startWith: "murambi-le-livre-des-ossements",
     otherTitles: ["Les Tambours de la mémoire (1990)", "Le Cavalier et son ombre (1997)", "Doomi Golo (2003)", "Kaveena (2006)"],
-    awards: [{ name: "Prix international de littérature Neustadt", year: 2022 }],
+    awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 2000 },
+      { name: "Prix international de littérature Neustadt", year: 2022 },
+    ],
   }),
   auteur({
     slug: "aminata-sow-fall",
@@ -110,6 +113,7 @@ export const auteursOuest: Author[] = [
     otherTitles: ["1889, l'Attraction universelle (2012)", "La Porte du voyage sans retour (2021)"],
     awards: [
       { name: "Prix Goncourt des lycéens", year: 2018 },
+      { name: "Prix Ahmadou-Kourouma", year: 2019 },
       { name: "International Booker Prize", year: 2021 },
     ],
   }),
@@ -133,7 +137,7 @@ export const auteursOuest: Author[] = [
     bio: "Ken Bugul, de son vrai nom Mariètou Mbaye Biléoma, est née dans le Ndoucoumane, au centre du Sénégal. Après des études au lycée à Thiès, elle part étudier en Belgique, expérience qui nourrit son premier livre, « Le Baobab fou ». Son pseudonyme, qui signifie en wolof « personne n'en veut », lui a été imposé par son éditeur pour protéger son anonymat. Elle poursuit ensuite une œuvre très personnelle, où elle parle sans détour de la condition des femmes, du désir et de la polygamie. Son roman « Riwan ou le chemin de sable » reçoit le Grand prix littéraire d'Afrique noire.",
     startWith: "le-baobab-fou",
     otherTitles: ["Cendres et braises (1994)", "Riwan ou le chemin de sable (1999)", "La Folie et la Mort (2000)", "Mes hommes à moi (2008)"],
-    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 2000 }],
+    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 1999 }],
   }),
   auteur({
     slug: "marie-ndiaye",
@@ -183,7 +187,10 @@ export const auteursOuest: Author[] = [
     bio: "Né à Bandiagara, dans une famille peule, Amadou Hampâté Bâ reçoit l'enseignement des maîtres de la tradition avant d'être envoyé à l'école française. Fonctionnaire de l'administration coloniale, puis chercheur à l'Institut français d'Afrique noire, il consacre sa vie à recueillir les traditions orales d'Afrique de l'Ouest. Membre du conseil exécutif de l'Unesco, il y plaide pour la sauvegarde de cette mémoire. Il est l'auteur de contes, d'études sur l'islam et les Peuls, et de mémoires. On lui attribue la célèbre formule selon laquelle, en Afrique, un vieillard qui meurt est une bibliothèque qui brûle.",
     startWith: "amkoullel-l-enfant-peul",
     otherTitles: ["Kaïdara (1969)", "Petit Bodiel (1977)", "Oui mon commandant ! (1994)"],
-    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 1974 }],
+    awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 1974 },
+      { name: "Grand prix littéraire d'Afrique noire", year: 1991 },
+    ],
   }),
   auteur({
     slug: "yambo-ouologuem",
@@ -193,7 +200,7 @@ export const auteursOuest: Author[] = [
     countryCode: "ML",
     bio: "Né à Bandiagara, au pays dogon, Yambo Ouologuem fait des études de lettres, de philosophie et de sociologie à Paris. En 1968, son premier roman, « Le Devoir de violence », reçoit le prix Renaudot, une première pour un écrivain africain. Le livre est ensuite accusé d'emprunts à d'autres auteurs, et la polémique ternit sa réputation. Ouologuem publie encore deux livres, puis rentre au Mali où il vit retiré jusqu'à sa mort. Son roman est aujourd'hui relu comme une œuvre audacieuse et visionnaire.",
     startWith: "le-devoir-de-violence",
-    otherTitles: ["Lettre à la France nègre (1968)"],
+    otherTitles: ["Lettre à la France nègre (1969)", "Les Mille et Une Bibles du sexe (1969)"],
     awards: [{ name: "Prix Renaudot", year: 1968 }],
   }),
 
@@ -218,7 +225,11 @@ export const auteursOuest: Author[] = [
     bio: "Tierno Monénembo, de son vrai nom Thierno Saïdou Diallo, est né à Porédaka, dans le Fouta-Djalon. Il fuit la dictature de Sékou Touré en 1969, passe par le Sénégal et la Côte d'Ivoire, puis étudie la biochimie en France. Son premier roman paraît en 1979. Son œuvre, souvent ironique, raconte l'exil, les dictatures et l'histoire des Peuls. Il reçoit le prix Renaudot en 2008 pour « Le Roi de Kahel ».",
     startWith: "le-roi-de-kahel",
     otherTitles: ["Les Crapauds-brousse (1979)", "L'Aîné des orphelins (2000)", "Peuls (2004)", "Le Terroriste noir (2012)"],
-    awards: [{ name: "Prix Renaudot", year: 2008 }],
+    awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 1986 },
+      { name: "Prix Renaudot", year: 2008 },
+      { name: "Prix Ahmadou-Kourouma", year: 2013 },
+    ],
   }),
   auteur({
     slug: "djibril-tamsir-niane",
@@ -228,7 +239,7 @@ export const auteursOuest: Author[] = [
     countryCode: "GN",
     bio: "Djibril Tamsir Niane est né à Conakry. Historien formé à Dakar et à Bordeaux, il se consacre à l'histoire de l'empire du Mali et aux traditions orales mandingues. En 1960, il publie « Soundjata ou l'Épopée mandingue », transcription en français du récit d'un griot, qui fait connaître cette épopée dans le monde entier. Il est aussi auteur de pièces de théâtre et d'ouvrages d'histoire. Il a enseigné en Guinée et au Sénégal et participé à l'« Histoire générale de l'Afrique » de l'Unesco.",
     startWith: "soundjata-ou-l-epopee-mandingue",
-    otherTitles: ["Sikasso ou la dernière citadelle (1971)"],
+    otherTitles: ["Sikasso ou la dernière citadelle (1971)", "Méry (1975)", "Contes d'hier et d'aujourd'hui (1985)"],
     awards: [],
   }),
 
@@ -243,6 +254,7 @@ export const auteursOuest: Author[] = [
     startWith: "allah-n-est-pas-oblige",
     otherTitles: ["Monnè, outrages et défis (1990)", "En attendant le vote des bêtes sauvages (1998)", "Quand on refuse on dit non (2004)"],
     awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 1990 },
       { name: "Prix du Livre Inter", year: 1999 },
       { name: "Prix Renaudot", year: 2000 },
       { name: "Prix Goncourt des lycéens", year: 2000 },
@@ -257,7 +269,10 @@ export const auteursOuest: Author[] = [
     bio: "Née à Paris d'un père ivoirien et d'une mère française, Véronique Tadjo grandit à Abidjan. Après des études d'anglais et de civilisation africaine-américaine, elle enseigne à l'université d'Abidjan, puis vit au Kenya, en Afrique du Sud et à Londres. Poétesse, romancière et autrice de livres pour la jeunesse qu'elle illustre elle-même, elle mêle volontiers les genres. Elle a notamment écrit sur le génocide des Tutsi au Rwanda et sur l'épidémie d'Ebola. « Reine Pokou » reçoit le Grand prix littéraire d'Afrique noire en 2005.",
     startWith: "reine-pokou",
     otherTitles: ["À vol d'oiseau (1986)", "L'Ombre d'Imana (2000)", "Loin de mon père (2010)", "En compagnie des hommes (2017)"],
-    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 2005 }],
+    awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 2005 },
+      { name: "Prix Ahmadou-Kourouma", year: 2025 },
+    ],
   }),
   auteur({
     slug: "bernard-dadie",
@@ -279,7 +294,7 @@ export const auteursOuest: Author[] = [
     bio: "Gauz, de son vrai nom Armand Patrick Gbaka-Brédé, est né à Abidjan. Diplômé en biochimie, il arrive en France dans les années 1990 et vit un temps sans papiers, enchaînant les petits boulots, dont celui de vigile. Il est aussi photographe, documentariste et journaliste. Son premier roman, « Debout-payé », publié en 2014, est un succès inattendu. Ses livres suivants revisitent avec le même humour l'histoire coloniale et la vie à Abidjan.",
     startWith: "debout-paye",
     otherTitles: ["Camarade Papa (2018)", "Black Manoo (2020)"],
-    awards: [],
+    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 2018 }],
   }),
 
   // ------------------------------------------------------------------ Mauritanie
@@ -299,12 +314,12 @@ export const auteursOuest: Author[] = [
   auteur({
     slug: "nazi-boni",
     name: "Nazi Boni",
-    birthYear: 1909,
+    birthYear: 1912,
     deathYear: 1969,
     countryCode: "BF",
     bio: "Né à Bwan, dans le pays bwa, à l'ouest de l'actuel Burkina Faso, Nazi Boni est formé à l'école William-Ponty et devient instituteur. Il entre en politique après la Seconde Guerre mondiale et siège comme député de la Haute-Volta à l'Assemblée nationale française. Opposant au premier président voltaïque, il s'exile après l'indépendance. En 1962 paraît « Crépuscule des temps anciens », premier roman de l'histoire du pays. Il meurt dans un accident de la route en 1969.",
     startWith: "crepuscule-des-temps-anciens",
-    otherTitles: [],
+    otherTitles: ["Histoire synthétique de l'Afrique résistante (1971)"],
     awards: [],
   }),
 
@@ -331,6 +346,9 @@ export const auteursOuest: Author[] = [
     bio: "Sami Tchak, de son vrai nom Sadamba Tcha-Koura, est né au Togo. Professeur de philosophie à Lomé, il s'installe en France dans les années 1980 et y soutient une thèse de sociologie. Il mène des recherches à Cuba et en Amérique latine, qui nourrissent plusieurs de ses romans. Son œuvre, souvent provocante, aborde sans tabou la sexualité, l'argent et le pouvoir. Il reçoit le Grand prix littéraire d'Afrique noire en 2004.",
     startWith: "place-des-fetes",
     otherTitles: ["Hermina (2003)", "La Fête des masques (2004)", "Le Paradis des chiots (2006)", "Al Capone le Malien (2011)"],
-    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 2004 }],
+    awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 2004 },
+      { name: "Prix Ahmadou-Kourouma", year: 2007 },
+    ],
   }),
 ];

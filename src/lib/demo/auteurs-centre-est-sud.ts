@@ -52,7 +52,10 @@ export const auteursCentreEstSud: Author[] = [
       "Le Petit Prince de Belleville (1992)",
       "Maman a un amant (1993)",
     ],
-    awards: [{ name: "Grand prix du roman de l'Académie française", year: 1996 }],
+    awards: [
+      { name: "Grand prix littéraire d'Afrique noire", year: 1994 },
+      { name: "Grand prix du roman de l'Académie française", year: 1996 },
+    ],
   },
   {
     ...base,
@@ -72,6 +75,7 @@ export const auteursCentreEstSud: Author[] = [
     ],
     awards: [
       { name: "Prix Goncourt des lycéens", year: 2006 },
+      { name: "Grand prix littéraire d'Afrique noire", year: 2011 },
       { name: "Prix Femina", year: 2013 },
     ],
   },
@@ -108,7 +112,10 @@ export const auteursCentreEstSud: Author[] = [
       "La Saison des prunes (2013)",
       "Empreintes de crabe (2018)",
     ],
-    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 2002 }],
+    awards: [
+      { name: "Prix Marguerite-Yourcenar", year: 2001 },
+      { name: "Grand prix littéraire d'Afrique noire", year: 2002 },
+    ],
   },
   {
     ...base,
@@ -129,6 +136,7 @@ export const auteursCentreEstSud: Author[] = [
     awards: [
       { name: "Grand prix littéraire d'Afrique noire", year: 2015 },
       { name: "Prix Ahmadou-Kourouma", year: 2020 },
+      { name: "Grand prix littéraire d'Afrique noire", year: 2024 },
       { name: "Prix des Cinq Continents de la Francophonie", year: 2025 },
     ],
   },
@@ -189,7 +197,7 @@ export const auteursCentreEstSud: Author[] = [
       "L'Anté-peuple (1983)",
       "Les Sept Solitudes de Lorsa Lopez (1985)",
     ],
-    awards: [],
+    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 1983 }],
   },
   {
     ...base,
@@ -266,7 +274,7 @@ export const auteursCentreEstSud: Author[] = [
     origin: null,
     bio: "Né à Lubumbashi, dans le Katanga, Fiston Mwanza Mujila vit en Autriche, où il enseigne la littérature. Poète avant tout, il écrit aussi pour le théâtre et se produit souvent avec des musiciens de jazz. Son premier roman, Tram 83, est traduit dans de nombreuses langues et salué dans le monde entier. Il poursuit avec La Danse du vilain, qui se déroule entre le Zaïre de Mobutu et l'Angola. Sa prose rythmée et musicale en fait une voix à part.",
     startWith: "tram-83",
-    otherTitles: ["La Danse du vilain (2020)"],
+    otherTitles: ["Soleil privé de mazout (2016)", "La Danse du vilain (2020)"],
     awards: [
       { name: "Grand prix des associations littéraires", year: 2015 },
       { name: "Prix Les Afriques", year: 2021 },
@@ -291,7 +299,10 @@ export const auteursCentreEstSud: Author[] = [
       "Kibogo est monté au ciel (2020)",
       "Sister Deborah (2022)",
     ],
-    awards: [{ name: "Prix Renaudot", year: 2012 }],
+    awards: [
+      { name: "Prix Renaudot", year: 2012 },
+      { name: "Prix Ahmadou-Kourouma", year: 2012 },
+    ],
   },
 
   // ------------------------------------------------------------------ Burundi
@@ -330,7 +341,7 @@ export const auteursCentreEstSud: Author[] = [
       "Passage des larmes (2009)",
       "La Divine Chanson (2015)",
     ],
-    awards: [],
+    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 1996 }],
   },
 
   // ------------------------------------------------------------------ Maurice

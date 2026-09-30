@@ -127,7 +127,7 @@ export const auteursBd: Author[] = [
     photo: null,
     photoCredit: null,
     startWith: "malamine",
-    otherTitles: [],
+    otherTitles: ["Le Jugement des animaux (2019)"],
     awards: [],
   },
   {
@@ -152,7 +152,7 @@ export const auteursBd: Author[] = [
   {
     slug: "eyoum-ngangue",
     name: "Eyoum Ngangué",
-    birthYear: null,
+    birthYear: 1967,
     deathYear: null,
     countryCode: "CM",
     origin: null,
@@ -174,7 +174,7 @@ export const auteursBd: Author[] = [
     photo: null,
     photoCredit: null,
     startWith: "une-eternite-a-tanger",
-    otherTitles: [],
+    otherTitles: ["Le Secret du manguier ou La Jeunesse volée (2008)"],
     awards: [],
   },
 ];
