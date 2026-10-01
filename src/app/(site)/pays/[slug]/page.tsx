@@ -66,8 +66,8 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
       </div>
 
       {/* 1, 2 : carte, nom, présentation */}
-      <div className="container-page mt-5 grid items-end gap-8 lg:grid-cols-[1fr_420px]">
-        <div className="lg:order-2">
+      <div className="container-page mt-5 grid items-end gap-8 md:grid-cols-[1fr_320px] lg:grid-cols-[1fr_420px]">
+        <div className="md:order-2">
           <CountryMap countries={countries} highlight={country.slug} />
         </div>
         <div>
@@ -109,7 +109,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
       {/* 4. Auteurs */}
       {authors.length > 0 && (
         <Section title={`Auteurs ${country.of}`}>
-          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
             {authors.map((a) => (
               <li key={a.slug}>
                 <AuthorTile slug={a.slug} name={a.name} photo={a.photo} />

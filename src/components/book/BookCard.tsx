@@ -34,7 +34,7 @@ export function BookCard({ book, showBuy = false }: { book: BookCardData; showBu
 
 export function BookGrid({ books, showBuy = false }: { books: BookCardData[]; showBuy?: boolean }) {
   return (
-    <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5">
+    <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-5">
       {books.map((b) => (
         <BookCard key={b.slug} book={b} showBuy={showBuy} />
       ))}

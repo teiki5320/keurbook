@@ -83,12 +83,14 @@ export default async function HomePage() {
       )}
 
       {/* 2. Accroche */}
-      <section className="container-page pt-4">
+      <section className="container-page pt-4 md:grid md:grid-cols-[1.3fr_1fr] md:items-end md:gap-10">
+        <div>
         <h1 className="max-w-2xl font-serif text-[26px] leading-[1.15] text-ink/80 sm:text-4xl">Les livres des auteurs d&apos;Afrique subsaharienne, en français.</h1>
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
           Romans, poésie, essais, jeunesse et BD : des résumés, des fiches auteurs, la littérature de chaque pays et nos conseils pour choisir votre prochain livre.
         </p>
-        <div className="mt-6 flex flex-wrap gap-2">
+        </div>
+        <div className="mt-6 flex flex-wrap gap-2 md:mt-0 md:flex-col md:items-stretch">
           <Link href="/livres" className="btn-primary">
             Voir les livres
           </Link>

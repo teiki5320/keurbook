@@ -71,177 +71,192 @@ export async function BookDetail({ book }: { book: Book }) {
     ...(book.isbn ? ([["ISBN", book.isbn]] as Array<[string, React.ReactNode]>) : []),
   ];
 
+  const halo = isBd ? "bg-[radial-gradient(120%_80%_at_50%_30%,#3d3518_0%,var(--color-paper)_70%)]" : "bg-[radial-gradient(120%_80%_at_50%_30%,#3b2f22_0%,var(--color-paper)_70%)]";
+  const buy = (
+    <>
+      <div className="flex flex-col gap-2">
+        <AmazonButton href={buyUrl} priceCents={book.priceCents} className="py-4 text-[15px]" />
+        <PileButton slug={book.slug} className="py-3.5 text-[15px]" />
+      </div>
+      {book.priceCents != null && <p className="mt-2 text-xs text-faint">Prix indicatif : le prix affiché sur Amazon fait foi ({formatPrice(book.priceCents)}).</p>}
+    </>
+  );
+  const factList = (
+    <dl className="grid grid-cols-2 gap-x-4 gap-y-4 text-left text-[13px] sm:grid-cols-3 md:grid-cols-2">
+      {facts.map(([k, v]) => (
+        <div key={k}>
+          <dt className="text-[11px] text-faint">{k}</dt>
+          <dd className="mt-0.5">{v}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />
 
-      {/* 1. Couverture sur halo */}
-      <div className={isBd ? "bg-[radial-gradient(120%_80%_at_50%_20%,#3d3518_0%,var(--color-paper)_70%)]" : "bg-[radial-gradient(120%_80%_at_50%_20%,#3b2f22_0%,var(--color-paper)_70%)]"}>
-        <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: base.name, href: base.href }, { name: book.title }]} />
-        <div className={`mx-auto pt-10 pb-10 ${isBd ? "w-56 sm:w-64" : "w-52 sm:w-60"}`}>
-          <BookCover title={book.title} creators={names} cover={book.cover} className="shadow-2xl shadow-black/70" />
-        </div>
-      </div>
+      <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: base.name, href: base.href }, { name: book.title }]} />
 
-      {/* 2 à 5 : genre, pays, titre, auteurs, achat */}
-      <div className="container-page max-w-3xl text-center">
-        <p className="eyebrow">
-          <Link href={`${filterBase}?genre=${book.genre}`} className="hover:text-ink">
-            {GENRES[book.genre]}
-          </Link>
-          {country && (
-            <>
-              {" · "}
-              <Link href={`/pays/${country.slug}`} className="underline underline-offset-4 hover:text-ink">
-                {country.name}
-              </Link>
-            </>
-          )}
-          {` · ${book.year} · ${AUDIENCES[book.audience]}`}
-        </p>
-        <h1 className="mt-3 font-serif text-[44px] leading-none text-balance sm:text-6xl">{book.title}</h1>
-        {book.subtitle && <p className="mt-2 font-serif text-xl text-muted italic">{book.subtitle}</p>}
-
-        {isBd ? (
-          <div className="mx-auto mt-6 grid max-w-md gap-2.5 text-left sm:grid-cols-2">
-            {creators(book).map((c) => {
-              const inner = (
-                <>
-                  <AuthorAvatar name={c.name} photo={c.authorSlug ? (photoOf.get(c.authorSlug) ?? null) : null} className="size-11 text-base" />
-                  <span>
-                    <span className="eyebrow block text-[10px]">{ROLE_LABEL[c.role] || "Auteur"}</span>
-                    <span className="block font-serif text-lg leading-[1.05]">{c.name}</span>
-                  </span>
-                </>
-              );
-              return c.authorSlug ? (
-                <Link key={c.name} href={`/auteur/${c.authorSlug}`} className="flex items-center gap-3 rounded-xl bg-white p-3 hover:text-accent">
-                  {inner}
-                </Link>
-              ) : (
-                <div key={c.name} className="flex items-center gap-3 rounded-xl bg-white p-3">
-                  {inner}
-                </div>
-              );
-            })}
+      {/* Mobile : une colonne centrée. iPad et ordinateur : couverture, achat et fiche technique à gauche, texte à droite. */}
+      <div className="container-page md:mt-6 md:grid md:grid-cols-[280px_1fr] md:gap-10 lg:grid-cols-[320px_1fr] lg:gap-16">
+        <div className="md:sticky md:top-24 md:self-start">
+          {/* 1. Couverture sur halo */}
+          <div className={`-mx-5 px-5 py-10 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-xl md:px-5 md:py-6 ${halo}`}>
+            <div className={`mx-auto md:w-full ${isBd ? "w-56 sm:w-64" : "w-52 sm:w-60"}`}>
+              <BookCover title={book.title} creators={names} cover={book.cover} className="shadow-2xl shadow-black/70" />
+            </div>
           </div>
-        ) : (
-          <p className="mt-3 text-[15px] text-ink/80">
-            {creators(book).map((c, i) => (
-              <span key={c.name}>
-                {i > 0 && ", "}
-                {c.authorSlug ? (
-                  <Link href={`/auteur/${c.authorSlug}`} className="underline underline-offset-4 hover:text-accent">
-                    {c.name}
-                  </Link>
-                ) : (
-                  c.name
-                )}
-              </span>
-            ))}
-          </p>
-        )}
-
-        <div className="mx-auto mt-6 flex max-w-md flex-col gap-2">
-          <AmazonButton href={buyUrl} priceCents={book.priceCents} className="py-4 text-[15px]" />
-          <PileButton slug={book.slug} className="py-3.5 text-[15px]" />
+          <div className="hidden md:mt-5 md:block">
+            {buy}
+            <div className="mt-6">{factList}</div>
+          </div>
         </div>
-        {book.priceCents != null && <p className="mt-2 text-xs text-faint">Prix indicatif : le prix affiché sur Amazon fait foi ({formatPrice(book.priceCents)}).</p>}
-      </div>
 
-      <div className="container-page max-w-3xl">
-        {/* 6. Résumé */}
-        <section aria-labelledby="resume">
-          <h2 id="resume" className="sr-only">
-            Résumé
-          </h2>
-          <p className="mt-10 font-serif text-[22px] leading-[1.35] text-pretty text-ink/90 sm:text-[26px]">{book.summary}</p>
-        </section>
+        <div>
+          {/* 2 à 5 : genre, pays, titre, auteurs, achat */}
+          <div className="text-center md:text-left">
+            <p className="eyebrow">
+              <Link href={`${filterBase}?genre=${book.genre}`} className="hover:text-ink">
+                {GENRES[book.genre]}
+              </Link>
+              {country && (
+                <>
+                  {" · "}
+                  <Link href={`/pays/${country.slug}`} className="underline underline-offset-4 hover:text-ink">
+                    {country.name}
+                  </Link>
+                </>
+              )}
+              {` · ${book.year} · ${AUDIENCES[book.audience]}`}
+            </p>
+            <h1 className="mt-3 font-serif text-[44px] leading-none text-balance sm:text-6xl lg:text-7xl">{book.title}</h1>
+            {book.subtitle && <p className="mt-2 font-serif text-xl text-muted italic">{book.subtitle}</p>}
 
-        {/* 7. Pourquoi le lire */}
-        <section className="mt-10" aria-labelledby="pourquoi">
-          <h2 id="pourquoi" className="eyebrow">
-            Pourquoi le lire
-          </h2>
-          <ul className="mt-2">
-            {book.whyRead.map((w) => (
-              <li key={w} className="border-b border-line py-4 text-[15px] leading-relaxed text-ink/80">
-                {w}
-              </li>
-            ))}
-          </ul>
-        </section>
+            {isBd ? (
+              <div className="mx-auto mt-6 grid max-w-md gap-2.5 text-left sm:grid-cols-2 md:mx-0">
+                {creators(book).map((c) => {
+                  const inner = (
+                    <>
+                      <AuthorAvatar name={c.name} photo={c.authorSlug ? (photoOf.get(c.authorSlug) ?? null) : null} className="size-11 text-base" />
+                      <span>
+                        <span className="eyebrow block text-[10px]">{ROLE_LABEL[c.role] || "Auteur"}</span>
+                        <span className="block font-serif text-lg leading-[1.05]">{c.name}</span>
+                      </span>
+                    </>
+                  );
+                  return c.authorSlug ? (
+                    <Link key={c.name} href={`/auteur/${c.authorSlug}`} className="flex items-center gap-3 rounded-xl bg-white p-3 hover:text-accent">
+                      {inner}
+                    </Link>
+                  ) : (
+                    <div key={c.name} className="flex items-center gap-3 rounded-xl bg-white p-3">
+                      {inner}
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <p className="mt-3 text-[15px] text-ink/80 md:text-base">
+                {creators(book).map((c, i) => (
+                  <span key={c.name}>
+                    {i > 0 && ", "}
+                    {c.authorSlug ? (
+                      <Link href={`/auteur/${c.authorSlug}`} className="underline underline-offset-4 hover:text-accent">
+                        {c.name}
+                      </Link>
+                    ) : (
+                      c.name
+                    )}
+                  </span>
+                ))}
+              </p>
+            )}
 
-        {/* 8. Citation */}
-        {book.quote && (
-          <figure className="mt-10 border-l border-accent pl-5">
-            <blockquote className="font-serif text-2xl leading-snug italic">« {book.quote.text} »</blockquote>
-            <figcaption className="mt-2 text-[13px] text-muted">
-              {names}, <cite>{book.title}</cite>
-              {book.quote.source ? `, ${book.quote.source}` : ""}
-            </figcaption>
-          </figure>
-        )}
+            <div className="mx-auto mt-6 max-w-md md:hidden">{buy}</div>
+          </div>
 
-        {/* BD : planches autorisées */}
-        {isBd && book.plates && book.plates.length > 0 && (
-          <section className="mt-10" aria-labelledby="planches">
-            <h2 id="planches" className="eyebrow">
-              Planches
+          {/* 6. Résumé */}
+          <section aria-labelledby="resume">
+            <h2 id="resume" className="sr-only">
+              Résumé
             </h2>
-            <div className="-mx-5 mt-3 flex snap-x gap-3 overflow-x-auto px-5 pb-2">
-              {book.plates.map((p, i) => (
-                <img key={p} src={withBase(p)} alt={`${book.title}, planche ${i + 1}`} className="h-72 w-auto shrink-0 snap-start rounded-md sm:h-96" loading="lazy" />
+            <p className="mt-10 font-serif text-[22px] leading-[1.35] text-pretty text-ink/90 sm:text-[26px] md:mt-8">{book.summary}</p>
+          </section>
+
+          {/* 7. Pourquoi le lire */}
+          <section className="mt-10" aria-labelledby="pourquoi">
+            <h2 id="pourquoi" className="eyebrow">
+              Pourquoi le lire
+            </h2>
+            <ul className="mt-2">
+              {book.whyRead.map((w) => (
+                <li key={w} className="border-b border-line py-4 text-[15px] leading-relaxed text-ink/80">
+                  {w}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 8. Citation */}
+          {book.quote && (
+            <figure className="mt-10 border-l border-accent pl-5">
+              <blockquote className="font-serif text-2xl leading-snug italic">« {book.quote.text} »</blockquote>
+              <figcaption className="mt-2 text-[13px] text-muted">
+                {names}, <cite>{book.title}</cite>
+                {book.quote.source ? `, ${book.quote.source}` : ""}
+              </figcaption>
+            </figure>
+          )}
+
+          {/* BD : planches autorisées */}
+          {isBd && book.plates && book.plates.length > 0 && (
+            <section className="mt-10" aria-labelledby="planches">
+              <h2 id="planches" className="eyebrow">
+                Planches
+              </h2>
+              <div className="-mx-5 mt-3 flex snap-x gap-3 overflow-x-auto px-5 pb-2 md:mx-0 md:px-0">
+                {book.plates.map((p, i) => (
+                  <img key={p} src={withBase(p)} alt={`${book.title}, planche ${i + 1}`} className="h-72 w-auto shrink-0 snap-start rounded-md sm:h-96" loading="lazy" />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* 9. Fiche technique (mobile ; à gauche sur iPad et ordinateur) */}
+          <div className="mt-10 md:hidden">{factList}</div>
+
+          {/* 10. Prix littéraires */}
+          {book.awards.length > 0 && (
+            <section className="mt-8 space-y-2" aria-labelledby="prix">
+              <h2 id="prix" className="sr-only">
+                Prix littéraires
+              </h2>
+              {book.awards.map((a) => (
+                <p key={`${a.name}-${a.year}`} className="flex items-center gap-4 rounded-md border border-line-strong p-4 font-serif text-[22px] leading-tight">
+                  <span aria-hidden className="size-2.5 shrink-0 rounded-full bg-accent" />
+                  <span>
+                    {a.name} <span className="text-faint">{a.year}</span>
+                  </span>
+                </p>
+              ))}
+            </section>
+          )}
+
+          {/* 11. Thèmes */}
+          <section className="mt-8" aria-labelledby="themes">
+            <h2 id="themes" className="sr-only">
+              Thèmes
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {book.themes.map((t) => (
+                <Link key={t} href={`${filterBase}?theme=${t}`} className="tag">
+                  {THEMES[t]}
+                </Link>
               ))}
             </div>
           </section>
-        )}
-
-        {/* 9. Fiche technique */}
-        <section className="mt-10" aria-labelledby="fiche">
-          <h2 id="fiche" className="sr-only">
-            Fiche technique
-          </h2>
-          <dl className="grid grid-cols-2 gap-x-4 gap-y-4 text-[13px] sm:grid-cols-3">
-            {facts.map(([k, v]) => (
-              <div key={k}>
-                <dt className="text-[11px] text-faint">{k}</dt>
-                <dd className="mt-0.5">{v}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-
-        {/* 10. Prix littéraires */}
-        {book.awards.length > 0 && (
-          <section className="mt-8 space-y-2" aria-labelledby="prix">
-            <h2 id="prix" className="sr-only">
-              Prix littéraires
-            </h2>
-            {book.awards.map((a) => (
-              <p key={`${a.name}-${a.year}`} className="flex items-center gap-4 rounded-md border border-line-strong p-4 font-serif text-[22px] leading-tight">
-                <span aria-hidden className="size-2.5 shrink-0 rounded-full bg-accent" />
-                <span>
-                  {a.name} <span className="text-faint">{a.year}</span>
-                </span>
-              </p>
-            ))}
-          </section>
-        )}
-
-        {/* 11. Thèmes */}
-        <section className="mt-8" aria-labelledby="themes">
-          <h2 id="themes" className="sr-only">
-            Thèmes
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {book.themes.map((t) => (
-              <Link key={t} href={`${filterBase}?theme=${t}`} className="tag">
-                {THEMES[t]}
-              </Link>
-            ))}
-          </div>
-        </section>
+        </div>
       </div>
 
       {/* 14. Du même auteur */}
