@@ -131,7 +131,6 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           <div className="md:mt-10">
             {meta}
             <h1 className="mt-2 font-serif text-[64px] leading-[0.9] sm:text-8xl">{author.name}</h1>
-            <div aria-hidden className="kente mt-5 h-1.5 w-28 rounded-full" />
           </div>
         </div>
 

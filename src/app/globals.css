@@ -14,11 +14,7 @@
   --color-faint: #8f877b;
   --color-accent: #d6a24a;
   --color-accent-soft: #2a241b;
-  /* Couleurs du tissu (bande kente, comme sur Keur Déco) et des grandes époques. */
-  --color-kente-terracotta: #b4532f;
-  --color-kente-ocre: #d49a2a;
-  --color-kente-indigo: #1e2a47;
-  --color-kente-vert: #52693a;
+  /* Couleurs des grandes époques (palette des couvertures). */
   --color-terracotta: #d9774f;
   --color-indigo: #93a6dc;
   --color-white: #1f1d1a;
@@ -74,22 +70,6 @@ body {
 }
 @utility eyebrow {
   @apply text-[11px] tracking-[0.14em] text-accent uppercase;
-}
-
-/* Bande de tissu kente (reprise de Keur Déco) : blocs de couleur et fils clairs. */
-@utility kente {
-  background:
-    repeating-linear-gradient(90deg, transparent 0 9px, rgb(255 255 255 / 16%) 9px 10px, transparent 10px 15px, rgb(0 0 0 / 18%) 15px 17px),
-    repeating-linear-gradient(
-      90deg,
-      var(--color-kente-terracotta) 0 26px,
-      var(--color-kente-ocre) 26px 34px,
-      var(--color-kente-indigo) 34px 60px,
-      var(--color-kente-vert) 60px 68px,
-      var(--color-kente-ocre) 68px 90px,
-      var(--color-kente-terracotta) 90px 96px,
-      var(--color-kente-indigo) 96px 118px
-    );
 }
 
 @utility prose-text {

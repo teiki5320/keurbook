@@ -80,7 +80,6 @@ export default async function HomePage() {
       {/* 2. La galerie, par grandes époques */}
       {generations.map((g) => (
         <section key={g.key} id={g.key} style={{ "--era": g.color } as React.CSSProperties} className="container-page mt-16 scroll-mt-20">
-          <div aria-hidden className="kente reveal mb-8 h-1.5 w-28 rounded-full" />
           <div className="reveal mb-6 border-b border-(--era)/40 pb-4 md:grid md:grid-cols-[1fr_1.2fr] md:items-end md:gap-10">
             <div>
               <p className="eyebrow text-(--era)">{g.period}</p>
@@ -117,7 +116,6 @@ export default async function HomePage() {
       {/* 3. Voyager par pays : le carrousel de la page Pays */}
       {westToEast.length > 0 && (
         <section className="container-page mt-20">
-          <div aria-hidden className="kente reveal mb-8 h-1.5 w-28 rounded-full" />
           <div className="reveal flex items-end justify-between gap-4 border-b border-line pb-4">
             <div>
               <p className="eyebrow">Les écrivains, pays par pays</p>
