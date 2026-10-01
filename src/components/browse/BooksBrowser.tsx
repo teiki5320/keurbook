@@ -63,61 +63,61 @@ export function BooksBrowser({ books, countries, simple = false }: Props) {
 
   return (
     <div className="container-page">
-      <div className="grid gap-3 rounded-xl border border-line bg-white p-4 sm:grid-cols-2 lg:grid-cols-4">
-        <label className="sm:col-span-2">
-          <span className="sr-only">Rechercher</span>
-          <input
-            type="search"
-            className="input"
-            placeholder={simple ? "Titre, auteur, pays…" : "Titre, auteur, pays, thème…"}
-            value={state.q}
-            onChange={(e) => update({ q: e.target.value })}
-          />
-        </label>
-        <Select label="Pays" value={state.pays} onChange={(pays) => update({ pays })} options={countries.map((c) => [c.code, c.name])} />
-        <Select label="Public" value={state.public} onChange={(v) => update({ public: v })} options={Object.entries(AUDIENCES)} />
-        {!simple && (
-          <>
-            <Select label="Genre" value={state.genre} onChange={(genre) => update({ genre })} options={usedGenres} />
-            <Select label="Thème" value={state.theme} onChange={(theme) => update({ theme })} options={usedThemes} />
-            <Select label="Époque" value={state.epoque} onChange={(epoque) => update({ epoque })} options={PERIODS.map((p) => [p.key, p.name])} />
-          </>
-        )}
-        <Select
-          label="Trier par"
-          value={state.tri}
-          onChange={(tri) => update({ tri: (tri || "nouveautes") as Sort })}
-          options={[
-            ["nouveautes", "Nouveautés"],
-            ["titre", "Titre"],
-            ["annee", "Année de parution"],
-          ]}
-          noEmpty
+      <label className="block">
+        <span className="sr-only">Rechercher</span>
+        <input
+          type="search"
+          className="input-line"
+          placeholder={simple ? "Un titre, un auteur…" : "Un titre, un auteur, un thème…"}
+          value={state.q}
+          onChange={(e) => update({ q: e.target.value })}
         />
+      </label>
+
+      <div className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
+        <Pill label="Pays" value={state.pays} onChange={(pays) => update({ pays })} options={countries.map((c) => [c.code, c.name])} />
+        {!simple && <Pill label="Thème" value={state.theme} onChange={(theme) => update({ theme })} options={usedThemes} />}
+        {!simple && <Pill label="Genre" value={state.genre} onChange={(genre) => update({ genre })} options={usedGenres} />}
+        <Pill label="Public" value={state.public} onChange={(v) => update({ public: v })} options={Object.entries(AUDIENCES)} />
+        {!simple && <Pill label="Époque" value={state.epoque} onChange={(epoque) => update({ epoque })} options={PERIODS.map((p) => [p.key, p.name])} />}
       </div>
 
-      <div className="mt-4 mb-6 flex items-center justify-between text-sm text-muted">
+      <div className="mt-4 mb-6 flex items-center justify-between gap-3 text-xs text-faint">
         <p aria-live="polite">
           {results.length} {simple ? "BD" : results.length > 1 ? "livres" : "livre"}
+          {active && (
+            <button type="button" className="ml-3 text-accent hover:text-ink" onClick={() => update({ q: "", pays: "", genre: "", public: "", theme: "", epoque: "" })}>
+              Effacer les filtres
+            </button>
+          )}
         </p>
-        {active && (
-          <button type="button" className="underline hover:text-ink" onClick={() => update({ q: "", pays: "", genre: "", public: "", theme: "", epoque: "" })}>
-            Effacer les filtres
-          </button>
-        )}
+        <label className="flex items-center gap-1.5">
+          <span>Trier :</span>
+          <select className="bg-transparent text-ink focus:outline-none" value={state.tri} onChange={(e) => update({ tri: (e.target.value || "nouveautes") as Sort })}>
+            <option value="nouveautes">Nouveautés d&apos;abord</option>
+            <option value="titre">Titre</option>
+            <option value="annee">Année de parution</option>
+          </select>
+        </label>
       </div>
 
-      {results.length > 0 ? <BookGrid books={results} /> : <p className="py-10 text-center text-muted">Aucun résultat pour cette recherche.</p>}
+      {results.length > 0 ? <BookGrid books={results} /> : <p className="py-16 text-center font-serif text-2xl text-muted italic">Aucun résultat pour cette recherche.</p>}
     </div>
   );
 }
 
-function Select({ label, value, onChange, options, noEmpty = false }: { label: string; value: string; onChange: (v: string) => void; options: Array<[string, string]> | Array<readonly [string, string]>; noEmpty?: boolean }) {
+/** Filtre en forme de pastille : ocre plein quand une valeur est choisie. */
+function Pill({ label, value, onChange, options }: { label: string; value: string; onChange: (v: string) => void; options: Array<[string, string]> | Array<readonly [string, string]> }) {
+  const on = Boolean(value);
   return (
-    <label className="flex flex-col gap-1 text-xs text-muted">
-      {label}
-      <select className="input" value={value} onChange={(e) => onChange(e.target.value)}>
-        {!noEmpty && <option value="">Tous</option>}
+    <label className="shrink-0">
+      <span className="sr-only">{label}</span>
+      <select
+        className={`appearance-none rounded-full px-3.5 py-2 text-[13px] focus:outline-none ${on ? "bg-accent font-medium text-paper" : "border border-line-strong bg-paper text-ink"}`}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+      >
+        <option value="">{label}</option>
         {options.map(([k, v]) => (
           <option key={k} value={k}>
             {v}

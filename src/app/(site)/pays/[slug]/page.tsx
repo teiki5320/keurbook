@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AmazonButton } from "@/components/book/AmazonButton";
+import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { BookGrid } from "@/components/book/BookCard";
+import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
-import { Breadcrumb, Section } from "@/components/layout/Section";
+import { Section } from "@/components/layout/Section";
 import { CountryMap } from "@/components/map/CountryMap";
-import { AuthorAvatar } from "@/components/book/AuthorAvatar";
 import { siteConfig } from "@/lib/config";
 import { getAuthorsOfCountry, getBooksOfCountry, getCountriesWithBooks, getCountryBySlug, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
@@ -35,6 +37,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
   const livres = all.filter((b) => b.kind === "livre");
   const bd = all.filter((b) => b.kind === "bd");
   const start = country.startWith.flatMap((s) => all.filter((b) => b.slug === s));
+  const startCards = await toCards(start);
   const slugs = new Set(all.map((b) => b.slug));
   const conseils = getConseils()
     .filter((c) => c.livres.some((s) => slugs.has(s)) || c.body.includes(`/pays/${country.slug}`))
@@ -55,38 +58,61 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
           ),
         }}
       />
-      <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: "Pays", href: "/pays" }, { name: country.name }]} />
 
-      {/* 1, 2 : nom, carte, présentation */}
-      <div className="container-page mt-6 grid items-start gap-8 lg:grid-cols-[1fr_320px]">
+      <div className="container-page pt-5">
+        <Link href="/pays" className="text-[13px] text-ink/85 hover:text-accent">
+          ← Pays
+        </Link>
+      </div>
+
+      {/* 1, 2 : carte, nom, présentation */}
+      <div className="container-page mt-5 grid items-end gap-8 lg:grid-cols-[1fr_420px]">
+        <div className="lg:order-2">
+          <CountryMap countries={countries} highlight={country.slug} />
+        </div>
         <div>
-          <h1 className="font-serif text-4xl font-bold sm:text-5xl">Littérature {country.of}</h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed">{country.description}</p>
-          <p className="mt-4 text-sm text-muted">
+          <p className="eyebrow">
             {livres.length} {livres.length > 1 ? "livres" : "livre"}
             {bd.length > 0 && ` · ${bd.length} BD`} · {authors.length} {authors.length > 1 ? "auteurs" : "auteur"}
           </p>
+          <h1 className="mt-2 font-serif text-[72px] leading-[0.9] sm:text-8xl">
+            <span className="sr-only">Littérature {country.of} : </span>
+            {country.name}
+          </h1>
+          <p className="mt-5 max-w-2xl font-serif text-[22px] leading-[1.35] text-pretty text-ink/90 sm:text-[26px]">{country.description}</p>
         </div>
-        <CountryMap countries={countries} highlight={country.slug} />
       </div>
 
       {/* 3. Par où commencer */}
-      {start.length > 0 && (
+      {startCards.length > 0 && (
         <Section title="Par où commencer">
-          <BookGrid books={await toCards(start)} showBuy />
+          <ol className="-mx-5 flex snap-x gap-4 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:px-0 lg:grid-cols-5">
+            {startCards.map((b, i) => (
+              <li key={b.slug} className="w-40 shrink-0 snap-start sm:w-auto">
+                <Link href={b.path} className="group block">
+                  <BookCover title={b.title} creators={b.creators} cover={b.cover} className="transition group-hover:-translate-y-1" />
+                  <span className="mt-3 flex items-baseline gap-2">
+                    <span className="font-serif text-3xl leading-none text-accent">{i + 1}</span>
+                    <span className="font-serif text-lg leading-tight group-hover:text-accent">{b.title}</span>
+                  </span>
+                  <span className="mt-1 block text-xs text-muted">{b.creators}</span>
+                </Link>
+                <div className="mt-3">
+                  <AmazonButton href={b.amazonUrl} priceCents={b.priceCents} small />
+                </div>
+              </li>
+            ))}
+          </ol>
         </Section>
       )}
 
       {/* 4. Auteurs */}
       {authors.length > 0 && (
         <Section title={`Auteurs ${country.of}`}>
-          <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {authors.map((a) => (
               <li key={a.slug}>
-                <Link href={`/auteur/${a.slug}`} className="flex items-center gap-3 rounded-xl border border-line bg-white p-3 hover:border-ink">
-                  <AuthorAvatar name={a.name} photo={a.photo} />
-                  <span className="font-semibold">{a.name}</span>
-                </Link>
+                <AuthorTile slug={a.slug} name={a.name} photo={a.photo} />
               </li>
             ))}
           </ul>
@@ -102,7 +128,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
 
       {/* 6. BD */}
       {bd.length > 0 && (
-        <Section title="BD" href={`/bd?pays=${country.code}`}>
+        <Section title="Bandes dessinées" href={`/bd?pays=${country.code}`}>
           <BookGrid books={await toCards(bd)} />
         </Section>
       )}

@@ -5,22 +5,24 @@ import { formatDate } from "@/lib/format";
 
 export function ConseilCard({ conseil }: { conseil: Conseil }) {
   return (
-    <article className="flex h-full flex-col rounded-xl border border-line bg-white p-5">
-      <p className="text-xs tracking-wide text-accent uppercase">{CONSEIL_CATEGORIES[conseil.theme]}</p>
-      <h3 className="mt-2 font-serif text-lg leading-snug font-semibold">
-        <Link href={`/conseils/${conseil.slug}`} className="hover:text-accent">
-          {conseil.title}
-        </Link>
-      </h3>
-      <p className="mt-2 line-clamp-3 flex-1 text-sm text-muted">{conseil.resume}</p>
-      <p className="mt-4 text-xs text-muted">{formatDate(conseil.date)}</p>
+    <article className="border-t border-line">
+      <Link href={`/conseils/${conseil.slug}`} className="group grid grid-cols-[1fr_auto] items-center gap-4 py-5">
+        <span>
+          <span className="eyebrow block">
+            {CONSEIL_CATEGORIES[conseil.theme]} <span className="text-faint">· {formatDate(conseil.date)}</span>
+          </span>
+          <span className="mt-2 block font-serif text-2xl leading-[1.1] italic group-hover:text-accent sm:text-[28px]">{conseil.title}</span>
+          <span className="mt-2 line-clamp-2 block max-w-2xl text-sm text-muted">{conseil.resume}</span>
+        </span>
+        <span aria-hidden className="text-accent">→</span>
+      </Link>
     </article>
   );
 }
 
 export function ConseilGrid({ conseils }: { conseils: Conseil[] }) {
   return (
-    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="border-b border-line">
       {conseils.map((c) => (
         <ConseilCard key={c.slug} conseil={c} />
       ))}

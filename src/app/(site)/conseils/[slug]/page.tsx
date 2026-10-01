@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BookGrid } from "@/components/book/BookCard";
+import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
-import { Breadcrumb, Section } from "@/components/layout/Section";
+import { Section } from "@/components/layout/Section";
 import { conseilSections } from "@/lib/conseils/article";
 import { CONSEIL_CATEGORIES } from "@/lib/conseils/categories";
 import { siteConfig } from "@/lib/config";
@@ -29,7 +29,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
   const conseil = getConseilBySlug((await params).slug);
   if (!conseil) notFound();
   const books = await getAllBooks();
-  const cited = conseil.livres.flatMap((s) => books.filter((b) => b.slug === s));
+  const cited = await toCards(conseil.livres.flatMap((s) => books.filter((b) => b.slug === s)));
   const related = getRelatedConseils(conseil);
   const sections = conseilSections(conseil.body);
   const url = `${siteConfig.url}/conseils/${conseil.slug}`;
@@ -55,29 +55,36 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />
-      <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: "Conseils", href: "/conseils" }, { name: conseil.title }]} />
-      <article className="container-page mt-6">
+      <article className="container-page max-w-3xl">
+        <div className="flex justify-between pt-5 text-[13px]">
+          <Link href="/conseils" className="text-ink/85 hover:text-accent">
+            ← Conseils
+          </Link>
+          {/* 5. Date */}
+          <time dateTime={conseil.date} className="text-faint">
+            {formatDate(conseil.date)}
+          </time>
+        </div>
         {/* 1. Question */}
-        <p className="text-sm tracking-wide text-accent uppercase">
-          <Link href={`/conseils#${conseil.theme}`}>{CONSEIL_CATEGORIES[conseil.theme]}</Link>
+        <p className="eyebrow mt-10">
+          <Link href={`/conseils#${conseil.theme}`} className="hover:text-ink">
+            {CONSEIL_CATEGORIES[conseil.theme]}
+          </Link>
         </p>
-        <h1 className="mt-2 max-w-3xl font-serif text-4xl leading-tight font-bold sm:text-5xl">{conseil.title}</h1>
-        {/* 5. Date */}
-        <p className="mt-3 text-sm text-muted">
-          Publié le <time dateTime={conseil.date}>{formatDate(conseil.date)}</time>
-        </p>
+        <h1 className="mt-3 font-serif text-[44px] leading-none text-balance sm:text-6xl">{conseil.title}</h1>
         {/* 2. Réponse courte */}
-        <p className="mt-6 max-w-3xl rounded-xl border border-line bg-white p-5 text-lg leading-relaxed">
-          <strong>En bref : </strong>
+        <p className="mt-8 border-l border-accent pl-5 text-[17px] leading-relaxed">
+          <span className="sr-only">En bref : </span>
           {conseil.resume}
         </p>
         {sections.length > 2 && (
-          <nav aria-label="Sommaire" className="mt-6 max-w-3xl text-sm">
-            <p className="font-semibold">Sommaire</p>
-            <ol className="mt-2 list-decimal space-y-1 pl-5">
-              {sections.map((s) => (
-                <li key={s.id}>
-                  <a href={`#${s.id}`} className="hover:text-accent">
+          <nav aria-label="Sommaire" className="mt-8 text-sm">
+            <p className="eyebrow">Sommaire</p>
+            <ol className="mt-2 border-b border-line">
+              {sections.map((s, i) => (
+                <li key={s.id} className="border-t border-line">
+                  <a href={`#${s.id}`} className="flex gap-3 py-2.5 hover:text-accent">
+                    <span className="text-faint">{i + 1}</span>
                     {s.title}
                   </a>
                 </li>
@@ -87,14 +94,34 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
         )}
         {/* 3. Développement */}
         <div className="prose-text mt-8" dangerouslySetInnerHTML={{ __html: renderConseil(conseil.body) }} />
-      </article>
 
-      {/* 4. Livres cités */}
-      {cited.length > 0 && (
-        <Section title="Les livres de cet article">
-          <BookGrid books={await toCards(cited)} showBuy />
-        </Section>
-      )}
+        {/* 4. Livres cités */}
+        {cited.length > 0 && (
+          <section className="mt-12" aria-labelledby="cites">
+            <h2 id="cites" className="eyebrow">
+              Livres cités
+            </h2>
+            <ul className="mt-3 space-y-2.5">
+              {cited.map((b) => (
+                <li key={b.slug} className="grid grid-cols-[56px_1fr_auto] items-center gap-4 rounded-lg bg-white p-2.5">
+                  <Link href={b.path}>
+                    <BookCover title={b.title} creators={b.creators} cover={b.cover} />
+                  </Link>
+                  <div className="min-w-0">
+                    <Link href={b.path} className="font-serif text-xl leading-[1.05] hover:text-accent">
+                      {b.title}
+                    </Link>
+                    <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
+                  </div>
+                  <a href={b.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-primary px-3 py-2 text-xs">
+                    Amazon
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </article>
 
       {/* 6. Articles liés */}
       {related.length > 0 && (
