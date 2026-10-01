@@ -80,24 +80,24 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />
 
-      {/* 1, 2, 3 : portrait pleine largeur, nom, pays, années */}
-      {author.photo ? (
-        <>
-          <div className="relative h-[68svh] max-h-[820px] min-h-[460px] overflow-hidden">
-            <img src={withBase(author.photo)} alt={`Portrait de ${author.name}`} className="absolute inset-0 size-full object-cover object-top brightness-[.8] grayscale" />
-            <div className="absolute inset-0 bg-linear-to-b from-paper/50 via-transparent via-45% to-paper" />
-            <div className="container-page relative flex h-full flex-col justify-between pt-5 pb-5">
-              <Link href="/auteurs" className="text-[13px] text-ink/85 hover:text-accent">
-                ← Auteurs
-              </Link>
-              <div>
-                {meta}
-                <h1 className="mt-2 font-serif text-[64px] leading-[0.9] sm:text-8xl">{author.name}</h1>
-              </div>
+      {/* 1, 2, 3 : portrait, nom, pays, années.
+          Mobile : portrait pleine largeur, nom posé dessus. iPad et ordinateur : portrait à gauche, texte à droite. */}
+      <div className="grid md:container-page md:mt-6 md:grid-cols-[320px_1fr] md:grid-rows-[auto_1fr] md:gap-x-10 lg:grid-cols-[400px_1fr] lg:gap-x-16">
+        <div className="col-start-1 row-start-1 md:sticky md:top-24 md:row-span-2 md:self-start">
+          {author.photo ? (
+            <div className="relative h-[68svh] max-h-[820px] min-h-[460px] overflow-hidden md:h-[480px] md:min-h-0 md:rounded-md lg:h-[560px]">
+              <img src={withBase(author.photo)} alt={`Portrait de ${author.name}`} className="absolute inset-0 size-full object-cover object-top brightness-[.8] grayscale md:brightness-90" />
+              <div className="absolute inset-0 bg-linear-to-b from-paper/50 via-transparent via-45% to-paper md:hidden" />
             </div>
-          </div>
-          {author.photoCredit && (
-            <p className="container-page text-[10px] text-faint">
+          ) : (
+            <div className="container-page pt-16 md:px-0 md:pt-10">
+              <span aria-hidden className="flex size-28 items-center justify-center rounded-full bg-white font-serif text-4xl text-muted md:size-40 md:text-5xl">
+                {initials(author.name)}
+              </span>
+            </div>
+          )}
+          <div className="hidden md:block">{author.photoCredit && (
+            <p className="mt-2 text-[10px] text-faint">
               Photo :{" "}
               {author.photoSource ? (
                 <a href={author.photoSource} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
@@ -107,96 +107,108 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
                 author.photoCredit
               )}
             </p>
-          )}
-        </>
-      ) : (
-        <header className="container-page pt-5">
-          <Link href="/auteurs" className="text-[13px] text-ink/85 hover:text-accent">
+          )}</div>
+        </div>
+
+        <Link href="/auteurs" className="container-page z-10 col-start-1 row-start-1 self-start pt-5 text-[13px] text-ink/85 hover:text-accent md:hidden">
+          ← Auteurs
+        </Link>
+        <div className={`container-page z-10 md:col-start-2 md:row-start-1 md:self-start md:px-0 md:pt-4 md:pb-0 ${author.photo ? "col-start-1 row-start-1 self-end pb-5" : "pt-6"}`}>
+          <Link href="/auteurs" className="hidden text-[13px] text-ink/85 hover:text-accent md:inline-block">
             ← Auteurs
           </Link>
-          <span aria-hidden className="mt-8 flex size-28 items-center justify-center rounded-full bg-white font-serif text-4xl text-muted">
-            {initials(author.name)}
-          </span>
-          <div className="mt-6">
+          <div className="md:mt-10">
             {meta}
             <h1 className="mt-2 font-serif text-[64px] leading-[0.9] sm:text-8xl">{author.name}</h1>
           </div>
-        </header>
-      )}
+        </div>
 
-      <div className="container-page max-w-3xl">
-        {author.origin && <p className="mt-4 text-[13px] text-muted">{author.origin}</p>}
-        {/* 4. Biographie */}
-        <p className="mt-5 font-serif text-[22px] leading-[1.35] text-pretty text-ink/90 sm:text-[26px]">{author.bio}</p>
+        <div className="container-page max-w-3xl md:col-start-2 md:row-start-2 md:mx-0 md:px-0">
+          {author.photo && <div className="md:hidden">{author.photoCredit && (
+            <p className="mt-2 text-[10px] text-faint">
+              Photo :{" "}
+              {author.photoSource ? (
+                <a href={author.photoSource} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
+                  {author.photoCredit}
+                </a>
+              ) : (
+                author.photoCredit
+              )}
+            </p>
+          )}</div>}
+          {author.origin && <p className="mt-4 text-[13px] text-muted">{author.origin}</p>}
+          {/* 4. Biographie */}
+          <p className="mt-5 font-serif text-[22px] leading-[1.35] text-pretty text-ink/90 sm:text-[26px]">{author.bio}</p>
 
-        {/* 5. Par où commencer */}
-        {startCard && start && (
-          <div className="mt-8 grid grid-cols-[84px_1fr] gap-4 rounded-xl bg-white p-4 sm:grid-cols-[112px_1fr] sm:gap-6 sm:p-5">
-            <Link href={startCard.path}>
-              <BookCover title={startCard.title} creators={startCard.creators} cover={startCard.cover} />
-            </Link>
-            <div className="flex flex-col justify-between">
-              <div>
-                <p className="eyebrow">Par où commencer</p>
-                <Link href={startCard.path} className="mt-2 block font-serif text-[26px] leading-none hover:text-accent">
-                  {startCard.title}
-                </Link>
-                <p className="mt-1 text-xs text-faint">{start.year}</p>
-                <p className="mt-2 hidden text-sm text-muted sm:line-clamp-3">{start.summary}</p>
-              </div>
-              <a href={startCard.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-3 text-[13px] text-accent hover:text-ink">
-                Acheter sur Amazon →
-              </a>
-            </div>
-          </div>
-        )}
-
-        {/* 8. Prix */}
-        {author.awards.length > 0 && (
-          <section className="mt-8 space-y-2" aria-labelledby="prix">
-            <h2 id="prix" className="eyebrow">
-              Prix littéraires
-            </h2>
-            {author.awards.map((a) => (
-              <p key={`${a.name}-${a.year}`} className="flex items-center gap-4 rounded-md border border-line-strong p-4 font-serif text-xl leading-tight">
-                <span aria-hidden className="size-2.5 shrink-0 rounded-full bg-accent" />
-                <span>
-                  {a.name} <span className="text-faint">{a.year}</span>
-                </span>
-              </p>
-            ))}
-          </section>
-        )}
-
-        {/* 9. Thèmes récurrents */}
-        {themes.length > 0 && (
-          <div className="mt-8 flex flex-wrap gap-2">
-            {themes.map((t) => (
-              <Link key={t} href={`/livres?theme=${t}`} className="tag">
-                {THEMES[t]}
+          {/* 5. Par où commencer */}
+          {startCard && start && (
+            <div className="mt-8 grid grid-cols-[84px_1fr] gap-4 rounded-xl bg-white p-4 sm:grid-cols-[112px_1fr] sm:gap-6 sm:p-5">
+              <Link href={startCard.path}>
+                <BookCover title={startCard.title} creators={startCard.creators} cover={startCard.cover} />
               </Link>
-            ))}
-          </div>
-        )}
+              <div className="flex flex-col justify-between">
+                <div>
+                  <p className="eyebrow">Par où commencer</p>
+                  <Link href={startCard.path} className="mt-2 block font-serif text-[26px] leading-none hover:text-accent">
+                    {startCard.title}
+                  </Link>
+                  <p className="mt-1 text-xs text-faint">{start.year}</p>
+                  <p className="mt-2 hidden text-sm text-muted sm:line-clamp-3">{start.summary}</p>
+                </div>
+                <a href={startCard.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-3 text-[13px] text-accent hover:text-ink">
+                  Acheter sur Amazon →
+                </a>
+              </div>
+            </div>
+          )}
 
-        {/* 7. Autres titres */}
-        {author.otherTitles.length > 0 && (
-          <section className="mt-10" aria-labelledby="autres">
-            <h2 id="autres" className="eyebrow">
-              Ses autres titres
-            </h2>
-            <ul className="mt-3 space-y-1.5">
-              {author.otherTitles.map((t) => {
-                const m = t.match(/^(.*?)\s*(\(\d{4}\))$/);
-                return (
-                  <li key={t} className="font-serif text-[22px] leading-tight italic">
-                    {m ? m[1] : t} {m && <span className="text-faint not-italic">{m[2]}</span>}
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
-        )}
+          {/* 8. Prix */}
+          {author.awards.length > 0 && (
+            <section className="mt-8 space-y-2" aria-labelledby="prix">
+              <h2 id="prix" className="eyebrow">
+                Prix littéraires
+              </h2>
+              {author.awards.map((a) => (
+                <p key={`${a.name}-${a.year}`} className="flex items-center gap-4 rounded-md border border-line-strong p-4 font-serif text-xl leading-tight">
+                  <span aria-hidden className="size-2.5 shrink-0 rounded-full bg-accent" />
+                  <span>
+                    {a.name} <span className="text-faint">{a.year}</span>
+                  </span>
+                </p>
+              ))}
+            </section>
+          )}
+
+          {/* 9. Thèmes récurrents */}
+          {themes.length > 0 && (
+            <div className="mt-8 flex flex-wrap gap-2">
+              {themes.map((t) => (
+                <Link key={t} href={`/livres?theme=${t}`} className="tag">
+                  {THEMES[t]}
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* 7. Autres titres */}
+          {author.otherTitles.length > 0 && (
+            <section className="mt-10" aria-labelledby="autres">
+              <h2 id="autres" className="eyebrow">
+                Ses autres titres
+              </h2>
+              <ul className="mt-3 space-y-1.5">
+                {author.otherTitles.map((t) => {
+                  const m = t.match(/^(.*?)\s*(\(\d{4}\))$/);
+                  return (
+                    <li key={t} className="font-serif text-[22px] leading-tight italic">
+                      {m ? m[1] : t} {m && <span className="text-faint not-italic">{m[2]}</span>}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          )}
+        </div>
       </div>
 
       {/* 6. Ses livres sur le site */}
