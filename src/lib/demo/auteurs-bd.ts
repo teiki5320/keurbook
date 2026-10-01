@@ -20,7 +20,6 @@ export const auteursBd: Author[] = [
     ],
     awards: [
       { name: "Prix du premier album, Festival d'Angoulême", year: 2006 },
-      { name: "Prix de la BD du Point", year: 2007 },
     ],
   },
   {
@@ -147,7 +146,7 @@ export const auteursBd: Author[] = [
       "Njinga Mbandi, reine du Ndongo et du Matamba (2014)",
       "UN3 : Urgence niveau 3 (2018)",
     ],
-    awards: [{ name: "Prix Glyph Comics", year: 2010 }],
+    awards: [],
   },
   {
     slug: "eyoum-ngangue",

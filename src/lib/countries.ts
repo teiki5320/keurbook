@@ -220,7 +220,7 @@ export const COUNTRIES: Country[] = [
     name: "Djibouti",
     of: "de Djibouti",
     description:
-      "Petit pays de la Corne de l'Afrique, Djibouti a une littérature en français peu abondante, mais portée par une voix majeure : Abdourahman A. Waberi. Poète, nouvelliste et romancier, il mêle humour, fable et réflexion politique. Autour de lui, la culture djiboutienne puise dans les traditions orales somalie et afar, riches en poésie. C'est une littérature à la croisée de l'Afrique et du monde arabe.",
+      "Petit pays de la Corne de l'Afrique, Djibouti a une littérature en français peu abondante, mais portée par une voix majeure : Abdourahman A. Waberi. Poète, nouvelliste et romancier, il mêle humour, fable et réflexion politique. Autour de lui, la culture djiboutienne puise dans les traditions orales somalies et afar, riches en poésie. C'est une littérature à la croisée de l'Afrique et du monde arabe.",
     startWith: ["aux-etats-unis-d-afrique"],
     lon: 42.6,
     lat: 11.8,

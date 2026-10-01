@@ -35,7 +35,7 @@ export const legalConfig = {
   siret: process.env.NEXT_PUBLIC_LEGAL_SIRET || "938 522 596 00015",
   rcs: process.env.NEXT_PUBLIC_LEGAL_RCS || "RCS La Roche-sur-Yon 938 522 596",
   vat: process.env.NEXT_PUBLIC_LEGAL_VAT || "FR16 938 522 596",
-  director: process.env.NEXT_PUBLIC_LEGAL_DIRECTOR || "",
+  director: process.env.NEXT_PUBLIC_LEGAL_DIRECTOR || "le président de la société ALOHASH",
   phone: process.env.NEXT_PUBLIC_LEGAL_PHONE || "",
   host: process.env.NEXT_PUBLIC_LEGAL_HOST || defaultHost.full,
   hostName: process.env.NEXT_PUBLIC_LEGAL_HOST_NAME || defaultHost.name,

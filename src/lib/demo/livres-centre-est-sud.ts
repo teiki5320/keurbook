@@ -180,7 +180,7 @@ export const livresCentreEstSud: Book[] = [
     publisher: "Folio",
     pages: 400,
     isbn: "9782073133915",
-    format: "grand-format",
+    format: "poche",
     awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 2015 }],
     featured: false,
   },
@@ -692,7 +692,7 @@ export const livresCentreEstSud: Book[] = [
     audience: "adulte",
     themes: ["politique", "histoire", "travail"],
     summary:
-      "Nelson Mandela raconte sa vie, de son enfance dans un village du Transkei à ses années d'avocat à Johannesburg. Il décrit son engagement dans l'ANC, la lutte contre l'apartheid, puis le passage à la lutte armée. Il consacre une grande partie du livre à ses vingt-sept années de prison, en particulier sur l'île de Robben Island. Un témoignage essentiel sur l'histoire de l'Afrique du Sud au XXᵉ siècle.",
+      "Nelson Mandela raconte sa vie, de son enfance dans un village du Transkei à ses années d'avocat à Johannesburg. Il décrit son engagement dans l'ANC, la lutte contre l'apartheid, puis le passage à la lutte armée. Il consacre une grande partie du livre à ses vingt-sept années de prison, en particulier à Robben Island. Un témoignage essentiel sur l'histoire de l'Afrique du Sud au XXᵉ siècle.",
     whyRead: [
       "L'autobiographie d'une des grandes figures du XXᵉ siècle.",
       "Pour comprendre l'apartheid et la lutte pour l'abolir.",

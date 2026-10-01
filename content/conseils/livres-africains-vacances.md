@@ -3,14 +3,14 @@ title: Quels livres africains lire en vacances ?
 description: Des romans africains faciles à emporter et à dévorer en vacances : humour, grandes sagas, romans courts et récits d'aventure, pour tous les goûts.
 date: 2026-09-28
 theme: decouvrir
-resume: En vacances, misez sur des romans qui se lisent tout seuls, comme Verre cassé d'Alain Mabanckou pour rire, Petit pays de Gaël Faye pour l'émotion ou No Home de Yaa Gyasi pour une grande saga. Tous existent en poche et tiennent facilement dans un sac.
+resume: En vacances, misez sur des romans qui se lisent tout seuls, comme Verre Cassé d'Alain Mabanckou pour rire, Petit pays de Gaël Faye pour l'émotion ou No Home de Yaa Gyasi pour une grande saga. Tous existent en poche et tiennent facilement dans un sac.
 livres: verre-casse, debout-paye, congo-inc, petit-pays, le-ventre-de-l-atlantique, les-impatientes, no-home, l-autre-moitie-du-soleil, tram-83, anguille-sous-roche, le-tambour-des-larmes, place-des-fetes
 ---
 Les vacances, c'est le moment idéal pour découvrir une autre littérature : on a du temps, l'esprit libre, et l'envie de voyager, même depuis une chaise longue. Voici une sélection de romans africains faciles à emporter, classés selon l'humeur. La plupart existent en poche.
 
 ## Pour rire (et réfléchir un peu)
 
-**[Verre cassé](/livre/verre-casse) d'Alain Mabanckou.** Dans un bar de Pointe-Noire, un ancien instituteur écrit les histoires des habitués. Un texte sans points, mais plein de vie, de tendresse et de références cachées. Parfait pour les lecteurs qui aiment les livres un peu fous.
+**[Verre Cassé](/livre/verre-casse) d'Alain Mabanckou.** Dans un bar de Pointe-Noire, un ancien instituteur écrit les histoires des habitués. Un texte sans points, mais plein de vie, de tendresse et de références cachées. Parfait pour les lecteurs qui aiment les livres un peu fous.
 
 **[Debout-payé](/livre/debout-paye) de Gauz.** Le narrateur, un Ivoirien arrivé à Paris, devient vigile dans des grands magasins. Entre souvenirs d'immigration et observations hilarantes sur les clients, ce roman se picore avec bonheur, parfait pour la plage.
 
@@ -42,7 +42,7 @@ Les vacances, c'est le moment idéal pour découvrir une autre littérature : on
 
 ## Nos conseils pour choisir
 
-- **Vous partez en famille et lisez par petits morceaux** : Debout-payé ou Verre cassé, qui se lisent par fragments.
+- **Vous partez en famille et lisez par petits morceaux** : Debout-payé ou Verre Cassé, qui se lisent par fragments.
 - **Vous avez de longues journées devant vous** : No Home ou L'Autre Moitié du soleil.
 - **Vous voulez un livre court pour un week-end** : Les Impatientes ou Petit pays.
 - **Vous voulez être surpris** : Tram 83 ou Anguille sous roche.

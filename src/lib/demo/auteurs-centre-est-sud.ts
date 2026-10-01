@@ -487,7 +487,7 @@ export const auteursCentreEstSud: Author[] = [
     deathYear: 2013,
     countryCode: "ZA",
     origin: null,
-    bio: "Né dans un village du Transkei, Nelson Mandela devient avocat à Johannesburg et s'engage dans le Congrès national africain (ANC) contre la ségrégation raciale. Condamné à la prison à vie en 1964, il passe vingt-sept ans en détention, en grande partie sur l'île de Robben Island. Libéré en 1990, il négocie la fin de l'apartheid et reçoit le prix Nobel de la paix en 1993. L'année suivante, il devient le premier président noir de l'Afrique du Sud. Son autobiographie, commencée en prison, est l'un des grands témoignages du XXᵉ siècle.",
+    bio: "Né dans un village du Transkei, Nelson Mandela devient avocat à Johannesburg et s'engage dans le Congrès national africain (ANC) contre la ségrégation raciale. Condamné à la prison à vie en 1964, il passe vingt-sept ans en détention, en grande partie à Robben Island. Libéré en 1990, il négocie la fin de l'apartheid et reçoit le prix Nobel de la paix en 1993. L'année suivante, il devient le premier président noir de l'Afrique du Sud. Son autobiographie, commencée en prison, est l'un des grands témoignages du XXᵉ siècle.",
     startWith: "un-long-chemin-vers-la-liberte",
     otherTitles: ["Conversations avec moi-même (2010)"],
     awards: [{ name: "Prix Nobel de la paix", year: 1993 }],

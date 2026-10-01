@@ -57,7 +57,7 @@ export const auteursOuest: Author[] = [
     birthYear: 1990,
     deathYear: null,
     countryCode: "SN",
-    bio: "Né à Dakar et élevé à Diourbel, Mohamed Mbougar Sarr part en France après le prestigieux Prytanée militaire de Saint-Louis, pour étudier à Compiègne puis à l'EHESS. Son premier roman, « Terre ceinte », sur la vie d'une ville sous le joug djihadiste, est remarqué dès 2015. Il explore ensuite l'accueil des migrants en Italie, puis l'homophobie au Sénégal. En 2021, « La plus secrète mémoire des hommes » fait de lui, à 31 ans, le premier écrivain d'Afrique subsaharienne à recevoir le prix Goncourt. Il est aujourd'hui l'une des voix majeures de la littérature de langue française.",
+    bio: "Né à Dakar et élevé à Diourbel, Mohamed Mbougar Sarr part en France après le prestigieux Prytanée militaire de Saint-Louis, pour étudier à Compiègne puis à l'EHESS. Son premier roman, « Terre ceinte », sur la vie d'une ville sous le joug djihadiste, est remarqué dès 2015. Il explore ensuite l'accueil des migrants en Italie, puis l'homophobie au Sénégal. En 2021, « La plus secrète mémoire des hommes » fait de lui, à 31 ans, le premier écrivain né en Afrique subsaharienne à recevoir le prix Goncourt. Il est aujourd'hui l'une des voix majeures de la littérature de langue française.",
     startWith: "la-plus-secrete-memoire-des-hommes",
     otherTitles: ["Terre ceinte (2015)", "Silence du chœur (2017)", "De purs hommes (2018)"],
     awards: [
@@ -107,7 +107,7 @@ export const auteursOuest: Author[] = [
     birthYear: 1966,
     deathYear: null,
     countryCode: "SN",
-    origin: "Né à Paris, d'un père sénégalais, il a grandi au Sénégal",
+    origin: null,
     bio: "David Diop passe son enfance et sa jeunesse au Sénégal avant de poursuivre ses études en France. Il devient universitaire, spécialiste de la littérature française du XVIIIe siècle et des représentations de l'Afrique à cette époque. Son premier roman paraît en 2012. « Frère d'âme », en 2018, le révèle au grand public et remporte le Goncourt des lycéens, puis l'International Booker Prize pour sa traduction anglaise. Ses romans explorent la violence de l'histoire coloniale et ce qu'elle fait aux êtres.",
     startWith: "frere-d-ame",
     otherTitles: ["1889, l'Attraction universelle (2012)", "La Porte du voyage sans retour (2021)"],

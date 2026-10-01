@@ -3,7 +3,7 @@ title: Par quel livre commencer pour découvrir la littérature africaine ?
 description: Cinq livres faciles à lire et marquants pour entrer dans la littérature d'Afrique subsaharienne en français, des classiques aux romans d'aujourd'hui.
 date: 2026-08-10
 theme: decouvrir
-resume: Commencez par un livre court et accessible, comme Une si longue lettre de Mariama Bâ ou L'Enfant noir de Camara Laye. Si vous préférez un roman récent, Petit pays de Gaël Faye ou Verre cassé d'Alain Mabanckou sont d'excellentes portes d'entrée.
+resume: Commencez par un livre court et accessible, comme Une si longue lettre de Mariama Bâ ou L'Enfant noir de Camara Laye. Si vous préférez un roman récent, Petit pays de Gaël Faye ou Verre Cassé d'Alain Mabanckou sont d'excellentes portes d'entrée.
 livres: une-si-longue-lettre, l-enfant-noir, petit-pays, verre-casse, les-soleils-des-independances, la-plus-secrete-memoire-des-hommes
 ---
 La littérature africaine n'est pas un bloc : elle couvre des dizaines de pays, plusieurs langues et plus d'un siècle d'histoire. C'est justement ce qui peut intimider au moment de choisir un premier livre. Bonne nouvelle : il existe des titres courts, faciles à trouver en poche et qui donnent envie d'aller plus loin. Voici notre sélection, pensée pour un lecteur qui part de zéro.
@@ -20,9 +20,9 @@ Si vous ne deviez lire qu'un livre, ce serait peut-être [Une si longue lettre](
 
 Vous préférez un livre récent ? [Petit pays](/livre/petit-pays) de Gaël Faye a été l'un des grands succès de librairie de 2016, couronné par le prix Goncourt des lycéens. Le narrateur, Gabriel, grandit dans un quartier aisé de Bujumbura, au Burundi, avec sa bande de copains. Peu à peu, la guerre civile et les tensions de la région viennent briser cette insouciance. Le roman se lit très facilement, avec beaucoup d'émotion et parfois d'humour.
 
-## Pour rire : Verre cassé
+## Pour rire : Verre Cassé
 
-Pour montrer que la littérature africaine sait aussi être drôle, lisez [Verre cassé](/livre/verre-casse) d'Alain Mabanckou (2005). Dans un bar de Pointe-Noire, au Congo, un ancien instituteur consigne dans un cahier les histoires des clients. Le texte n'a presque pas de points, mais on s'y fait vite : c'est un flot de paroles plein d'ironie, de tendresse et de clins d'œil littéraires. Un livre qui bouscule l'idée qu'on se fait des « classiques ».
+Pour montrer que la littérature africaine sait aussi être drôle, lisez [Verre Cassé](/livre/verre-casse) d'Alain Mabanckou (2005). Dans un bar de Pointe-Noire, au Congo, un ancien instituteur consigne dans un cahier les histoires des clients. Le texte n'a presque pas de points, mais on s'y fait vite : c'est un flot de paroles plein d'ironie, de tendresse et de clins d'œil littéraires. Un livre qui bouscule l'idée qu'on se fait des « classiques ».
 
 ## Pour aller plus loin
 
@@ -35,7 +35,7 @@ Une fois ces premiers livres lus, deux titres permettent de mesurer la richesse 
 
 - **Vous aimez les récits intimes** : Une si longue lettre, puis L'Enfant noir.
 - **Vous aimez les romans d'actualité et d'histoire récente** : Petit pays.
-- **Vous aimez l'humour et les livres qui osent** : Verre cassé.
+- **Vous aimez l'humour et les livres qui osent** : Verre Cassé.
 - **Vous êtes un grand lecteur qui aime les défis** : La plus secrète mémoire des hommes.
 
 ## Nos conseils pratiques

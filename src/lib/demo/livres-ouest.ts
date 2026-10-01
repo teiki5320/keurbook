@@ -120,7 +120,7 @@ export const livresOuest: Book[] = [
     summary:
       "À Paris, Diégane Latyr Faye, jeune écrivain sénégalais, découvre un livre culte et introuvable paru en 1938, « Le Labyrinthe de l'inhumain », signé T. C. Elimane. Son auteur, surnommé en son temps « le Rimbaud nègre », a disparu après un scandale. Fasciné, Diégane se lance sur ses traces, du Sénégal à la France et jusqu'en Argentine. L'enquête traverse un siècle d'histoire et pose une question vertigineuse : qu'est-ce qu'écrire, et à quel prix ?",
     whyRead: [
-      "Le premier Goncourt attribué à un écrivain d'Afrique subsaharienne.",
+      "Le premier Goncourt attribué à un écrivain né en Afrique subsaharienne.",
       "Une enquête littéraire haletante, entre roman policier et roman d'idées.",
       "Un hommage à la littérature et à ceux qu'elle a oubliés.",
     ],

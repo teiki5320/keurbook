@@ -16,7 +16,7 @@ Que ce soit pour un exposé, une lecture cursive, l'oral du bac de français ou 
 
 **[Une vie de boy](/livre/une-vie-de-boy) de Ferdinand Oyono (1956).** Présenté comme le journal d'un jeune Camerounais au service d'un commandant colonial, ce roman est à la fois drôle et cruel. Il montre la colonisation de l'intérieur, avec une ironie mordante. Idéal pour étudier la satire et le regard naïf du narrateur.
 
-**[L'Enfant noir](/livre/l-enfant-noir) de Camara Laye (1953).** Un récit autobiographique sur une enfance guinéenne, souvent proposé dès la seconde. Il permet de réfléchir au genre de l'autobiographie et au souvenir d'enfance.
+**[L'Enfant noir](/livre/l-enfant-noir) de Camara Laye (1953).** Un récit autobiographique sur une enfance guinéenne, souvent étudié dès le collège et repris en seconde. Il permet de réfléchir au genre de l'autobiographie et au souvenir d'enfance.
 
 ## Les romans récents qui se lisent d'une traite
 

@@ -12,7 +12,7 @@ Le mot revient souvent dès qu'on parle de littérature africaine, mais il est r
 
 Au début des années 1930, trois jeunes étudiants noirs se rencontrent à Paris : Léopold Sédar Senghor, venu du Sénégal, Aimé Césaire, venu de la Martinique, et Léon-Gontran Damas, venu de la Guyane. Ils sont brillants, formés à l'école française, et pourtant ils se heurtent partout aux préjugés coloniaux, qui présentent les peuples noirs comme sans histoire et sans culture.
 
-Ensemble, ils décident de retourner l'insulte. Le mot « nègre », employé pour les rabaisser, devient chez eux un étendard. En 1935, ils participent à une revue, *L'Étudiant noir*. C'est Aimé Césaire qui fait apparaître le mot « négritude » dans son long poème *Cahier d'un retour au pays natal*, publié en 1939.
+Ensemble, ils décident de retourner l'insulte. Le mot « nègre », employé pour les rabaisser, devient chez eux un étendard. En 1935, ils participent à une revue, *L'Étudiant noir*. C'est là qu'Aimé Césaire emploie pour la première fois le mot « négritude », qu'il popularise ensuite avec son long poème *Cahier d'un retour au pays natal*, publié en 1939.
 
 ## Ce que dit la négritude
 

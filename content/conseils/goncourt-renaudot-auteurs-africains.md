@@ -14,7 +14,7 @@ Le Goncourt et le Renaudot sont les deux prix littéraires les plus médiatisés
 
 **Marie NDiaye (2009).** Fille d'un père sénégalais et d'une mère française, née en France, Marie NDiaye reçoit le Goncourt pour [Trois femmes puissantes](/livre/trois-femmes-puissantes). Le roman suit trois femmes, entre la France et le Sénégal, qui tiennent tête à ce qui les écrase. Une écriture précise, troublante, qui a fait d'elle l'une des grandes voix de la littérature française.
 
-**Mohamed Mbougar Sarr (2021).** Avec [La plus secrète mémoire des hommes](/livre/la-plus-secrete-memoire-des-hommes), l'écrivain sénégalais devient le premier auteur d'Afrique subsaharienne à recevoir le Goncourt. Pour tout savoir sur lui, lisez notre article [Qui est Mohamed Mbougar Sarr ?](/conseils/mohamed-mbougar-sarr).
+**Mohamed Mbougar Sarr (2021).** Avec [La plus secrète mémoire des hommes](/livre/la-plus-secrete-memoire-des-hommes), l'écrivain sénégalais devient le premier auteur né en Afrique subsaharienne à recevoir le Goncourt. Pour tout savoir sur lui, lisez notre article [Qui est Mohamed Mbougar Sarr ?](/conseils/mohamed-mbougar-sarr).
 
 ## Le prix Renaudot
 
