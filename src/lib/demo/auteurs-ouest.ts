@@ -351,4 +351,24 @@ export const auteursOuest: Author[] = [
       { name: "Prix Ahmadou-Kourouma", year: 2007 },
     ],
   }),
+  auteur({
+    slug: "kossi-efoui",
+    name: "Kossi Efoui",
+    birthYear: 1962,
+    deathYear: null,
+    countryCode: "TG",
+    bio: "Né au Togo, Kossi Efoui étudie la philosophie à l'université de Lomé et s'engage dans le mouvement étudiant contre le régime d'Eyadéma, ce qui le pousse à l'exil. Installé en France, il se fait d'abord connaître comme dramaturge : sa pièce Le Carrefour reçoit le grand prix du concours théâtral de RFI en 1989. Il publie ensuite des romans au Seuil, à la langue très travaillée, qui tournent autour de la mémoire, de la violence et du théâtre. Solo d'un revenant reçoit en 2009 le prix Ahmadou-Kourouma et le prix des Cinq Continents de la Francophonie. Il est l'une des voix les plus singulières de la littérature africaine d'aujourd'hui.",
+    startWith: "solo-d-un-revenant",
+    otherTitles: [
+      "La Polka (1998)",
+      "La Fabrique de cérémonies (2001)",
+      "L'Ombre des choses à venir (2011)",
+      "Cantique de l'acacia (2017)",
+      "Une magie ordinaire (2023)",
+    ],
+    awards: [
+      { name: "Prix Ahmadou-Kourouma", year: 2009 },
+      { name: "Prix des Cinq Continents de la Francophonie", year: 2009 },
+    ],
+  }),
 ];

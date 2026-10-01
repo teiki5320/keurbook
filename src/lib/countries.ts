@@ -100,7 +100,7 @@ export const COUNTRIES: Country[] = [
     of: "du Togo",
     description:
       "Le Togo a une littérature en français plus récente, marquée par le théâtre et par des romanciers à la voix très libre. Sami Tchak, qui vit en France, en est aujourd'hui l'une des figures les plus connues, avec des romans audacieux sur le corps, la ville et l'exil. Ses livres, souvent crus et ironiques, tranchent avec une image sage de la littérature africaine. On y écrit en français, avec l'éwé et le kabiyè en toile de fond.",
-    startWith: ["place-des-fetes"],
+    startWith: ["place-des-fetes", "solo-d-un-revenant"],
     lon: 1.0,
     lat: 8.6,
   },
@@ -111,7 +111,7 @@ export const COUNTRIES: Country[] = [
     of: "du Nigeria",
     description:
       "Pays le plus peuplé d'Afrique, le Nigeria est aussi une immense puissance littéraire, qui écrit surtout en anglais. Chinua Achebe a ouvert la voie en 1958 avec un roman devenu un classique mondial, et Wole Soyinka a été le premier Africain à recevoir le prix Nobel de littérature, en 1986. Chimamanda Ngozi Adichie incarne la génération suivante, lue dans le monde entier. Leurs livres sont largement traduits en français.",
-    startWith: ["le-monde-s-effondre", "l-autre-moitie-du-soleil"],
+    startWith: ["le-monde-s-effondre", "l-autre-moitie-du-soleil", "ake-les-annees-d-enfance"],
     lon: 8.1,
     lat: 9.6,
   },
@@ -188,7 +188,7 @@ export const COUNTRIES: Country[] = [
     of: "du Rwanda",
     description:
       "La littérature rwandaise en français est profondément marquée par le génocide des Tutsi de 1994. Scholastique Mukasonga, prix Renaudot 2012, en est la grande voix : ses livres font revivre les siens et racontent les persécutions qui ont précédé le génocide. D'autres écrivains, africains ou non, ont aussi pris la plume pour que cette histoire ne soit pas oubliée. Le kinyarwanda, langue commune à tout le pays, traverse ces récits.",
-    startWith: ["notre-dame-du-nil"],
+    startWith: ["notre-dame-du-nil", "tous-tes-enfants-disperses"],
     lon: 29.9,
     lat: -2.0,
   },
@@ -210,7 +210,7 @@ export const COUNTRIES: Country[] = [
     of: "du Tchad",
     description:
       "Au Tchad, la littérature en français naît avec Joseph Brahim Seid, qui publie en 1962 Au Tchad sous les étoiles, recueil de contes et légendes. Le pays écrit en français et en arabe, et sa tradition orale reste très vivante. Des auteurs comme Koulsy Lamko, dramaturge et romancier, ou le poète Nimrod ont fait connaître cette littérature au-delà des frontières. Les guerres et l'exil y sont des thèmes récurrents.",
-    startWith: [],
+    startWith: ["le-bal-des-princes"],
     lon: 18.7,
     lat: 15.4,
   },
@@ -279,5 +279,27 @@ export const COUNTRIES: Country[] = [
     startWith: ["disgrace", "un-long-chemin-vers-la-liberte"],
     lon: 24.7,
     lat: -29.0,
+  },
+  {
+    code: "TZ",
+    slug: "tanzanie",
+    name: "Tanzanie",
+    of: "de Tanzanie",
+    description:
+      "La Tanzanie, née en 1964 de l'union du Tanganyika et de l'archipel de Zanzibar, est le grand pays de la langue swahilie. Une riche littérature y est écrite dans cette langue, portée au XXᵉ siècle par le poète Shaaban Robert, et nourrie par des siècles d'échanges autour de l'océan Indien. En langue anglaise, Abdulrazak Gurnah, né à Zanzibar et installé en Angleterre, raconte l'exil et la mémoire de la côte est-africaine. Son prix Nobel de littérature, en 2021, a fait découvrir ses romans à de nombreux lecteurs français.",
+    startWith: ["paradis", "pres-de-la-mer"],
+    lon: 34.9,
+    lat: -6.4,
+  },
+  {
+    code: "MZ",
+    slug: "mozambique",
+    name: "Mozambique",
+    of: "du Mozambique",
+    description:
+      "Ancienne colonie portugaise, indépendante depuis 1975, le Mozambique écrit surtout en portugais, une langue que ses auteurs ont mêlée aux langues et aux récits du pays. Le poète José Craveirinha a été l'une des grandes voix de la lutte contre la colonisation. Mia Couto, dont les romans inventent une langue pleine de rêves et de contes, est aujourd'hui l'écrivain le plus traduit du pays, et Paulina Chiziane la première romancière à s'y être imposée. La longue guerre civile qui a suivi l'indépendance est au cœur de beaucoup de leurs livres.",
+    startWith: ["terre-somnambule"],
+    lon: 35.5,
+    lat: -17.5,
   },
 ];

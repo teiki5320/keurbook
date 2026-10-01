@@ -710,4 +710,32 @@ export const livresOuest: Book[] = [
     format: "grand-format",
     awards: [],
   }),
+  {
+    ...livre({
+      slug: "solo-d-un-revenant",
+      title: "Solo d'un revenant",
+      contributors: [auteur("Kossi Efoui", "kossi-efoui")],
+      genre: "roman",
+      audience: "adulte",
+      themes: ["guerre", "exil", "politique", "identite"],
+      summary:
+        "Après dix ans de massacres, un homme revient dans son pays, que la guerre a dévasté et où l'on célèbre désormais la paix et la réconciliation. Il veut comprendre comment est mort Mozaya, son ami d'autrefois. Il cherche aussi Asafo Johnson, avec qui il avait fondé une troupe de théâtre du temps de leurs études. Dans une ville où chacun préfère oublier, son enquête le confronte aux silences et aux faux-semblants de l'après-guerre.",
+      whyRead: [
+        "Une langue poétique et envoûtante, celle d'un homme de théâtre.",
+        "Un roman fort sur la mémoire des massacres et la fausse paix.",
+        "Prix Ahmadou-Kourouma et prix des Cinq Continents 2009.",
+      ],
+      year: 2008,
+      quote: null,
+      publisher: "Seuil",
+      pages: 206,
+      isbn: "9782020971935",
+      format: "grand-format",
+      awards: [
+        { name: "Prix Ahmadou-Kourouma", year: 2009 },
+        { name: "Prix des Cinq Continents de la Francophonie", year: 2009 },
+      ],
+    }),
+    addedAt: "2026-10-01",
+  },
 ];
