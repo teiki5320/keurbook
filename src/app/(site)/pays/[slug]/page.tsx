@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AmazonButton } from "@/components/book/AmazonButton";
-import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { BookGrid } from "@/components/book/BookCard";
 import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
+import { Coverflow } from "@/components/carousel/Coverflow";
 import { CountryMap } from "@/components/map/CountryMap";
+import { lifeYears } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
 import { getAuthorsOfCountry, getBooksOfCountry, getCountriesWithBooks, getCountryBySlug, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
@@ -83,16 +84,18 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
         </div>
       </div>
 
-      {/* 3. Les auteurs du pays, en premier */}
+      {/* 3. Les auteurs du pays, en premier : carrousel de portraits */}
       {authors.length > 0 && (
-        <Section title={`Auteurs ${country.of}`}>
-          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
-            {authors.map((a) => (
-              <li key={a.slug}>
-                <AuthorTile slug={a.slug} name={a.name} photo={a.photo} />
-              </li>
-            ))}
-          </ul>
+        <Section title={`Les écrivains ${country.of}`}>
+          <Coverflow
+            items={[...authors].sort((a, b) => (a.birthYear ?? 9999) - (b.birthYear ?? 9999)).map((a) => ({
+              key: a.slug,
+              title: a.name,
+              eyebrow: lifeYears(a) || undefined,
+              image: a.photo,
+              href: `/auteur/${a.slug}`,
+            }))}
+          />
         </Section>
       )}
 
