@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Instrument_Serif } from "next/font/google";
+import { Inter, Literata } from "next/font/google";
 import { CookieBanner } from "@/components/compliance/CookieBanner";
 import { NOINDEX, siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
-const geist = Geist({ variable: "--font-geist", subsets: ["latin"], display: "swap" });
-const instrumentSerif = Instrument_Serif({ variable: "--font-instrument-serif", subsets: ["latin"], weight: "400", style: ["normal", "italic"], display: "swap" });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
+const literata = Literata({ variable: "--font-literata", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -30,15 +30,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#141311",
-  colorScheme: "dark",
+  themeColor: "#fbf8f3",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${geist.variable} ${instrumentSerif.variable} antialiased`} suppressHydrationWarning>
+    <html lang="fr" className={`${inter.variable} ${literata.variable} antialiased`} suppressHydrationWarning>
       <body className="flex min-h-dvh flex-col">
         <a href="#contenu" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:rounded focus:bg-white focus:p-2">
           Aller au contenu

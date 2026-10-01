@@ -1,41 +1,24 @@
 @import "tailwindcss";
 
 /*
- * Design « Nuit » : fond sombre chaud, grande serif italique (Instrument Serif), texte en Geist, accent ocre unique.
- * --color-white est redéfini en surface sombre : les blocs `bg-white` (cartes, filtres, pied de page) deviennent
- * des surfaces un peu plus claires que le fond, et `text-white` sur l'accent ocre devient un texte sombre lisible.
+ * Habillage volontairement neutre : le design définitif sera fait à part (Claude Design).
+ * Couleurs et polices centralisées ici pour être remplacées facilement.
  */
 @theme {
-  --color-paper: #141311;
-  --color-ink: #efe9dd;
-  --color-muted: #a9a195;
-  --color-line: #2e2b26;
-  --color-accent: #d6a24a;
-  --color-accent-soft: #2a241b;
-  --color-white: #1f1d1a;
-  --font-sans: var(--font-geist), system-ui, sans-serif;
-  --font-serif: var(--font-instrument-serif), Georgia, serif;
-}
-
-html {
-  color-scheme: dark;
+  --color-paper: #fbf8f3;
+  --color-ink: #1f1b16;
+  --color-muted: #6b6259;
+  --color-line: #e5ded3;
+  --color-accent: #9a3412;
+  --color-accent-soft: #fdebd8;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-literata), Georgia, serif;
 }
 
 body {
   background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-sans);
-}
-
-::selection {
-  background: var(--color-accent);
-  color: var(--color-paper);
-}
-
-/* Instrument Serif n'existe qu'en graisse normale : on neutralise les graisses forcées sur les titres. */
-.font-serif.font-bold,
-.font-serif.font-semibold {
-  font-weight: 400;
 }
 
 @utility container-page {
@@ -45,31 +28,28 @@ body {
   @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
 }
 @utility btn-primary {
-  @apply btn bg-accent text-paper hover:bg-ink;
+  @apply btn bg-accent text-white hover:bg-ink;
 }
 @utility btn-secondary {
-  @apply btn border border-[#4a453d] bg-transparent font-medium text-ink hover:border-ink;
+  @apply btn border border-line bg-white text-ink hover:border-ink;
 }
 @utility input {
-  @apply w-full rounded-lg border border-[#4a453d] bg-white px-3 py-2 text-sm text-ink placeholder:text-[#6f685e] focus:border-accent focus:outline-none;
+  @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm focus:border-ink focus:outline-none;
 }
 @utility tag {
-  @apply inline-flex items-center rounded-full border border-[#4a453d] px-3 py-1 text-xs text-muted hover:border-ink hover:text-ink;
+  @apply inline-flex items-center rounded-full border border-line bg-white px-3 py-1 text-xs text-muted hover:border-ink hover:text-ink;
 }
 @utility section-title {
-  @apply font-serif text-3xl font-normal sm:text-4xl;
-}
-@utility eyebrow {
-  @apply text-[11px] tracking-[0.14em] text-accent uppercase;
+  @apply font-serif text-2xl font-semibold sm:text-3xl;
 }
 
 @utility prose-text {
-  @apply max-w-3xl text-[16px] leading-relaxed text-ink/85;
+  @apply max-w-3xl text-[16px] leading-relaxed text-ink/90;
   & h2 {
-    @apply mt-10 mb-3 scroll-mt-24 font-serif text-3xl font-normal text-ink;
+    @apply mt-10 mb-3 scroll-mt-24 font-serif text-2xl font-semibold text-ink;
   }
   & h3 {
-    @apply mt-6 mb-2 font-serif text-2xl font-normal text-ink;
+    @apply mt-6 mb-2 font-semibold;
   }
   & p,
   & ul,
@@ -85,10 +65,7 @@ body {
   & a {
     @apply text-accent underline underline-offset-2 hover:text-ink;
   }
-  & strong {
-    @apply font-semibold text-ink;
-  }
   & blockquote {
-    @apply my-6 border-l border-accent pl-4 font-serif text-xl italic text-ink;
+    @apply my-6 border-l-4 border-accent pl-4 font-serif italic;
   }
 }
