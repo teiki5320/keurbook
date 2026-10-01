@@ -19,9 +19,9 @@ export const NOINDEX = process.env.NEXT_PUBLIC_NOINDEX === "1";
 
 export const siteConfig = {
   name: process.env.NEXT_PUBLIC_SITE_NAME || "Keurbook",
-  tagline: "Les livres des auteurs d'Afrique subsaharienne",
+  tagline: "Une ode aux écrivains d'Afrique subsaharienne",
   description:
-    "Romans, poésie, essais, jeunesse et BD d'auteurs d'Afrique subsaharienne, en français : résumés, fiches auteurs, pays et conseils de lecture.",
+    "Une ode aux écrivains d'Afrique subsaharienne et de sa diaspora : leurs vies, leurs œuvres et leurs livres en français, du roman à la BD.",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://keurbook.com").replace(/\/$/, ""),
   locale: "fr_FR",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@keurbook.com",

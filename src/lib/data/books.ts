@@ -4,6 +4,7 @@ import { amazonUrl } from "../amazon";
 import { authorSlugsOf, bookCountry, byNewest, creatorNames, normalize, periodOf } from "../book-utils";
 import { COUNTRIES } from "../countries";
 import { allAuthors, allBooks } from "../demo";
+import { GENERATIONS, generationOf } from "../generations";
 import { GENRES, THEMES } from "../themes";
 import type { Author, Book, BookKind, Country } from "../types";
 
@@ -162,4 +163,25 @@ export async function getBooksOfCountry(code: string) {
 
 export async function getAuthorsOfCountry(code: string) {
   return (await getAuthors()).filter((a) => a.countryCode === code);
+}
+
+/** Galerie de l'accueil : auteurs par grande époque, du plus ancien au plus jeune. */
+export async function getAuthorGenerations() {
+  const items = await Promise.all(
+    (await getAuthors()).map(async (a) => {
+      const books = await getBooksByAuthor(a.slug);
+      const first = books.length ? Math.min(...books.map((b) => b.year)) : null;
+      return {
+        author: a,
+        generation: generationOf(a.birthYear, first),
+        sortYear: a.birthYear ?? (first != null ? first - 30 : 9999),
+        isBd: books.length > 0 && books.every((b) => b.kind === "bd"),
+        books: books.length,
+      };
+    }),
+  );
+  return GENERATIONS.map((g) => ({
+    ...g,
+    authors: items.filter((x) => x.generation === g.key && x.books > 0).sort((x, y) => x.sortYear - y.sortYear || x.author.name.localeCompare(y.author.name, "fr")),
+  })).filter((g) => g.authors.length > 0);
 }

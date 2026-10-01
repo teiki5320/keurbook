@@ -55,7 +55,7 @@ export async function BookDetail({ book }: { book: Book }) {
     },
     breadcrumbLd([
       { name: "Accueil", url: siteConfig.url },
-      { name: base.name, url: `${siteConfig.url}${base.href}` },
+      authors[0] ? { name: authors[0].name, url: `${siteConfig.url}/auteur/${authors[0].slug}` } : { name: base.name, url: `${siteConfig.url}${base.href}` },
       { name: book.title, url },
     ]),
   ];
@@ -96,7 +96,7 @@ export async function BookDetail({ book }: { book: Book }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />
 
-      <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: base.name, href: base.href }, { name: book.title }]} />
+      <Breadcrumb items={[{ name: "Accueil", href: "/" }, authors[0] ? { name: authors[0].name, href: `/auteur/${authors[0].slug}` } : { name: base.name, href: base.href }, { name: book.title }]} />
 
       {/* Mobile : une colonne centrée. iPad et ordinateur : couverture, achat et fiche technique à gauche, texte à droite. */}
       <div className="container-page md:mt-6 md:grid md:grid-cols-[280px_1fr] md:gap-10 lg:grid-cols-[320px_1fr] lg:gap-16">

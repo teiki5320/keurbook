@@ -4,24 +4,27 @@ Document de référence (contenu et structure). Le design sera fait séparément
 
 ## Cadrage
 
-1. Site qui fait la promotion de livres d'auteurs d'**Afrique subsaharienne** (liste ONU : Mauritanie incluse, Soudan exclu).
+1. Site qui rend hommage aux écrivains d'**Afrique subsaharienne** et fait découvrir leurs livres (liste ONU : Mauritanie incluse, Soudan exclu).
 2. Auteurs nés dans ces pays **et** auteurs de la diaspora qui en sont originaires.
 3. Livres **francophones** uniquement.
 4. Revenus : **Amazon Partenaires** uniquement (le site ne vend rien lui-même).
 5. Base technique : celle de Keur Cook (site statique Next.js, contenu dans le code, Cloudflare Pages).
 
-## Architecture
+## Architecture (centrée sur les auteurs, depuis le 1er octobre 2026)
 
-1. **Accueil** — `/`
-2. **Livres** — `/livres` (liste avec filtres) et `/livre/[titre]`
-3. **BD** — `/bd` (liste avec filtres pays et public) et `/bd/[titre]`
-4. **Auteurs** — `/auteurs` et `/auteur/[nom]` (scénaristes et dessinateurs de BD compris)
-5. **Pays** — `/pays` et `/pays/[pays]`
-6. **Conseils** — `/conseils` et `/conseils/[article]` : un article chaque lundi, qui répond à une question que les gens se posent (même logique que les Conseils de Keur Cook)
-7. **Ma pile à lire** — `/pile-a-lire` (stockée dans le navigateur, sans compte)
-8. **Pages légales** — mentions légales, confidentialité, conditions (avec la mention Amazon Partenaires)
+Le site est une **ode aux écrivains** : les auteurs sont mis en avant, leurs livres se découvrent depuis leur fiche.
 
-Les fiches livre, auteur et pays sont liées entre elles.
+1. **Accueil** — `/` : mosaïque de portraits et dédicace, puis la **galerie des auteurs par grandes époques** (les pionniers, nés avant 1930 ; la génération des indépendances, 1930–1959 ; les voix d'aujourd'hui, depuis 1960). Les auteurs de BD sont dans la même galerie, avec la mention « BD ». Puis les pays et les derniers conseils.
+2. **Fiche auteur** — `/auteur/[nom]` : la page principale ; portrait, vie, prix, « par où commencer », puis tous ses livres.
+3. **Fiche livre** — `/livre/[titre]`, et **fiche BD** — `/bd/[titre]` : inchangées ; fil d'Ariane « Accueil › Auteur › Livre ».
+4. **Auteurs de A à Z** — `/auteurs` (index, recherche, filtre pays).
+5. **Pays** — `/pays` et `/pays/[pays]` : les auteurs du pays d'abord, puis les livres conseillés, les livres et les BD.
+6. **Conseils** — `/conseils` et `/conseils/[article]` : un article chaque lundi, qui répond à une question que les gens se posent.
+7. **Listes secondaires** — `/livres` et `/bd` (recherche et filtres), accessibles depuis l'accueil et le pied de page, plus depuis le menu.
+8. **Ma pile à lire** — `/pile-a-lire` (stockée dans le navigateur, sans compte).
+9. **Pages légales** — mentions légales, confidentialité, conditions (avec la mention Amazon Partenaires).
+
+Menu principal : Auteurs · Pays · Conseils · Ma pile à lire. Les fiches livre, auteur et pays sont liées entre elles.
 
 ## Fiche livre (`/livre/[titre]`)
 

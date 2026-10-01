@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { siteConfig } from "@/lib/config";
 import { CookieSettingsButton } from "../compliance/CookieBanner";
-import { NAV } from "./nav";
+import { NAV, SECONDARY_NAV } from "./nav";
 
 export function Footer() {
   return (
@@ -21,6 +21,11 @@ export function Footer() {
           <Link href="/pile-a-lire" className="font-serif text-xl leading-none hover:text-accent">
             Ma pile <i>à lire</i>
           </Link>
+          {SECONDARY_NAV.map((n) => (
+            <Link key={n.href} href={n.href} className="mt-1 text-muted hover:text-ink">
+              {n.label}
+            </Link>
+          ))}
         </nav>
         <nav aria-label="Informations légales" className="flex flex-col gap-2 text-muted">
           <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>

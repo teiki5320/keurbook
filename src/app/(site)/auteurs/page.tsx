@@ -28,7 +28,7 @@ export default async function AuthorsPage() {
   );
   return (
     <>
-      <PageHeader title="Auteurs" intro="Les écrivains et dessinateurs d'Afrique subsaharienne et de sa diaspora présents sur Keurbook." />
+      <PageHeader title="Auteurs" intro="Tous les écrivains et dessinateurs d'Afrique subsaharienne et de sa diaspora, de A à Z." />
       <AuthorsBrowser authors={items} countries={countries.filter((c) => c.authors > 0)} />
     </>
   );

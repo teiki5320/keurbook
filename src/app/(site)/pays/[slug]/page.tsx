@@ -83,7 +83,20 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
         </div>
       </div>
 
-      {/* 3. Par où commencer */}
+      {/* 3. Les auteurs du pays, en premier */}
+      {authors.length > 0 && (
+        <Section title={`Auteurs ${country.of}`}>
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+            {authors.map((a) => (
+              <li key={a.slug}>
+                <AuthorTile slug={a.slug} name={a.name} photo={a.photo} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {/* 4. Par où commencer */}
       {startCards.length > 0 && (
         <Section title="Par où commencer">
           <ol className="-mx-5 flex snap-x gap-4 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:px-0 lg:grid-cols-5">
@@ -103,19 +116,6 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
               </li>
             ))}
           </ol>
-        </Section>
-      )}
-
-      {/* 4. Auteurs */}
-      {authors.length > 0 && (
-        <Section title={`Auteurs ${country.of}`}>
-          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
-            {authors.map((a) => (
-              <li key={a.slug}>
-                <AuthorTile slug={a.slug} name={a.name} photo={a.photo} />
-              </li>
-            ))}
-          </ul>
         </Section>
       )}
 

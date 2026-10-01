@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/lib/config";
 import { PileCount } from "../pile/PileCount";
-import { NAV } from "./nav";
+import { NAV, SECONDARY_NAV } from "./nav";
 
 /** En-tête : liens en ligne sur grand écran, bouton « Menu » plein écran sur mobile. */
 export function Header() {
@@ -54,6 +54,13 @@ export function Header() {
             </span>
             <PileCount />
           </Link>
+          <nav aria-label="Listes" className="mt-6 flex gap-5 text-sm text-muted">
+            {SECONDARY_NAV.map((n) => (
+              <Link key={n.href} href={n.href} onClick={close} className="hover:text-ink">
+                {n.label}
+              </Link>
+            ))}
+          </nav>
           <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 pt-10 text-xs text-muted">
             <Link href="/mentions-legales" onClick={close}>Mentions légales</Link>
             <Link href="/confidentialite" onClick={close}>Confidentialité</Link>
