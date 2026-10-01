@@ -5,7 +5,8 @@ import { NAV, SECONDARY_NAV } from "./nav";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-line">
+    <footer className="mt-24">
+      <div aria-hidden className="kente h-2" />
       <div className="container-page grid gap-10 py-12 text-sm sm:grid-cols-3">
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}

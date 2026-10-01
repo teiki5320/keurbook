@@ -13,19 +13,30 @@ export function AuthorAvatar({ name, photo, className = "size-10 text-sm" }: { n
   );
 }
 
-/** Vignette portrait (auteurs proches, auteurs d'un pays). */
+/**
+ * Vignette portrait (galerie, auteurs proches) : en gris, le portrait prend ses couleurs au survol
+ * (et, sur écran tactile, quand il passe au milieu de l'écran). Couleur de l'époque : variable CSS --era.
+ */
 export function AuthorTile({ slug, name, photo, subtitle }: { slug: string; name: string; photo: string | null; subtitle?: string | null }) {
   return (
-    <Link href={`/auteur/${slug}`} className="group relative block h-40 overflow-hidden rounded-md bg-white sm:h-56">
+    <Link
+      href={`/auteur/${slug}`}
+      className="group relative block h-40 overflow-hidden rounded-md bg-white ring-(--era,var(--color-accent)) transition duration-500 hover:ring-2 focus-visible:ring-2 focus-visible:outline-none sm:h-56"
+    >
       {photo ? (
-        <img src={withBase(photo)} alt="" className="size-full object-cover object-top grayscale brightness-75 transition group-hover:brightness-95" loading="lazy" />
+        <img
+          src={withBase(photo)}
+          alt=""
+          className="portrait-vivant size-full object-cover object-top brightness-75 grayscale transition duration-700 group-hover:scale-[1.04] group-hover:brightness-95 group-hover:grayscale-0 group-focus-visible:brightness-95 group-focus-visible:grayscale-0"
+          loading="lazy"
+        />
       ) : (
         <span aria-hidden className="flex size-full items-center justify-center pb-8 font-serif text-5xl text-faint">
           {initials(name)}
         </span>
       )}
       <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-paper/90 to-transparent p-3 pt-12">
-        <span className="block font-serif text-[19px] leading-none group-hover:text-accent">{name}</span>
+        <span className="block font-serif text-[19px] leading-none group-hover:text-(--era,var(--color-accent))">{name}</span>
         {subtitle && <span className="mt-1 block text-[11px] text-muted">{subtitle}</span>}
       </span>
     </Link>

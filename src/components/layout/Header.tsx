@@ -26,6 +26,7 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-paper/85 backdrop-blur">
+        <div aria-hidden className="kente h-[3px]" />
         <div className="container-page flex h-16 items-center gap-8">
           <Link href="/" onClick={close} className="flex items-center gap-2.5 font-serif text-[28px] leading-none">
             {/* eslint-disable-next-line @next/next/no-img-element */}

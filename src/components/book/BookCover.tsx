@@ -39,7 +39,8 @@ export function BookCover({
       <div
         role="img"
         aria-label={`${title}, ${creators} — couverture illustrée par Keurbook`}
-        className={`@container relative aspect-[2/3] w-full overflow-hidden rounded-[3px_6px_6px_3px] bg-white shadow-xl shadow-black/40 ${className}`}
+        style={{ backgroundColor: toneFor(title) }}
+        className={`@container relative aspect-[2/3] w-full overflow-hidden rounded-[3px_6px_6px_3px] shadow-xl shadow-black/40 ${className}`}
       >
         <img
           src={withBase(illustration)}

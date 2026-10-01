@@ -84,7 +84,7 @@ export function Coverflow({ items, hint = "Glissez pour parcourir · touchez le 
                     alt=""
                     draggable={false}
                     loading={ao <= 1 ? "eager" : "lazy"}
-                    className={`pointer-events-none absolute inset-0 size-full object-cover object-top grayscale transition duration-700 ${isActive ? "brightness-95" : "brightness-75"}`}
+                    className={`pointer-events-none absolute inset-0 size-full object-cover object-top transition duration-700 ${isActive ? "brightness-95 grayscale-0" : "brightness-75 grayscale"}`}
                   />
                 ) : (
                   <span aria-hidden className="absolute inset-0 flex items-center justify-center pb-16 font-serif text-7xl text-faint">

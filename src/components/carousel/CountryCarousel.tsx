@@ -23,7 +23,7 @@ export interface CarouselCountry {
 
 /**
  * Carrousel des pays (repris de Keur Cook) : au centre, les particules prennent la forme du pays
- * et se transforment d'un pays à l'autre ; les voisins sont dessinés en contour.
+ * et se transforment d'un pays à l'autre, aux couleurs du tissu ; les voisins restent en contour gris.
  */
 export function CountryCarousel({ countries, start = 0 }: { countries: CarouselCountry[]; start?: number }) {
   const n = countries.length;
@@ -44,7 +44,7 @@ export function CountryCarousel({ countries, start = 0 }: { countries: CarouselC
       <div {...swipe} className="relative overflow-hidden select-none" style={{ ...swipe.style, height: "min(clamp(300px,54vh,500px), 86vw)" }}>
         {/* Un seul nuage, au centre : il se transforme d'un pays à l'autre. */}
         <div className="absolute top-1/2 left-1/2 aspect-square h-full -translate-x-1/2 -translate-y-1/2">
-          <AfricaParticles country={cur.code} />
+          <AfricaParticles country={cur.code} colorful />
         </div>
         {countries.map((c, i) => {
           let o = i - active;
@@ -69,7 +69,7 @@ export function CountryCarousel({ countries, start = 0 }: { countries: CarouselC
               <svg viewBox="-1.85 -1.85 3.7 3.7" className="absolute inset-0 h-full w-full overflow-visible" aria-hidden>
                 <path
                   d={countryPath(c.code)}
-                  fill={isActive ? "none" : "rgba(214,162,74,.07)"}
+                  fill={isActive ? "none" : "rgba(239,233,221,.04)"}
                   stroke={isActive ? "rgba(239,233,221,.16)" : "rgba(239,233,221,.55)"}
                   strokeWidth={isActive ? 0.8 : 1.2}
                   strokeDasharray={isActive ? "2 4" : undefined}

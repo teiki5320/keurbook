@@ -6,9 +6,9 @@ import { BookCover } from "./BookCover";
 
 export function BookCard({ book, showBuy = false }: { book: BookCardData; showBuy?: boolean }) {
   return (
-    <article className="group relative flex flex-col">
+    <article className="group reveal relative flex flex-col">
       <Link href={book.path} className="block">
-        <BookCover title={book.title} creators={book.creators} cover={book.cover} illustration={book.illustration} className="transition group-hover:-translate-y-1" />
+        <BookCover title={book.title} creators={book.creators} cover={book.cover} illustration={book.illustration} className="transition duration-300 group-hover:-translate-y-1.5 group-hover:-rotate-1 group-hover:shadow-2xl group-hover:shadow-black/70" />
       </Link>
       <div className="absolute top-2 right-2">
         <PileButton slug={book.slug} compact />

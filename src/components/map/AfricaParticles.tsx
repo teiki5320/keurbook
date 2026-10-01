@@ -13,7 +13,7 @@ import { africaPoint, countryPoints } from "./africa-map";
 
 const VERT = /* glsl */ `
 attribute vec3 tA; attribute vec3 tB; attribute float aRand;
-uniform float uTime, uExplode, uPR, uForce, uMorph, uSize; uniform vec3 uMouse; varying vec3 vCol; varying float vA;
+uniform float uTime, uExplode, uPR, uForce, uMorph, uSize, uWax; uniform vec3 uMouse; varying vec3 vCol; varying float vA;
 void main(){
   float d = aRand * .35;
   vec3 p = mix(tA, tB, smoothstep(d * .8, .72 + d * .8, uMorph));
@@ -27,6 +27,10 @@ void main(){
   vec3 ivory = vec3(.94, .91, .87), sand = vec3(.78, .72, .63), ocre = vec3(.84, .64, .29);
   vCol = mix(sand, ivory, smoothstep(-1.6, 1.6, p.y + sin(p.x * 1.5) * .3));
   vCol = mix(vCol, ocre, step(.94, aRand));
+  // Pays choisi (carrousel) : les couleurs du tissu kente — terracotta, ocre, indigo, vert — et un peu d'ivoire.
+  vec3 terre = vec3(.85, .42, .27), indigo = vec3(.45, .55, .9), vert = vec3(.52, .7, .34);
+  vec3 wax = aRand < .3 ? terre : aRand < .55 ? ocre : aRand < .75 ? indigo : aRand < .9 ? vert : ivory;
+  vCol = mix(vCol, wax, uWax);
   vA = .45 + .55 * aRand;
 }`;
 
@@ -43,9 +47,10 @@ function africaTargets(N: number) {
   return out;
 }
 
-export function AfricaParticles({ country }: { country?: string }) {
+/** `colorful` : le pays affiché prend les couleurs du tissu (carrousel des pays) ; l'Afrique entière reste ivoire. */
+export function AfricaParticles({ country, colorful = false }: { country?: string; colorful?: boolean }) {
   const host = useRef<HTMLDivElement>(null);
-  const api = useRef<{ setCountry: (code?: string) => void } | null>(null);
+  const api = useRef<{ setCountry: (code?: string) => void; setColorful: (on: boolean) => void } | null>(null);
 
   useEffect(() => {
     const el = host.current;
@@ -80,7 +85,7 @@ export function AfricaParticles({ country }: { country?: string }) {
     geo.setAttribute("aRand", new THREE.BufferAttribute(rand, 1));
     const uni = {
       uTime: { value: 0 }, uExplode: { value: reduced ? 0 : 1 }, uPR: { value: PR }, uForce: { value: 0 }, uMorph: { value: 1 },
-      uSize: { value: 1 }, uMouse: { value: new THREE.Vector3(99, 99, 0) }, uAlpha: { value: 1 },
+      uSize: { value: 1 }, uMouse: { value: new THREE.Vector3(99, 99, 0) }, uAlpha: { value: 1 }, uWax: { value: 0 },
     };
     const mat = new THREE.ShaderMaterial({ uniforms: uni, vertexShader: VERT, fragmentShader: FRAG, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending });
     const cloud = new THREE.Points(geo, mat);
@@ -108,7 +113,8 @@ export function AfricaParticles({ country }: { country?: string }) {
       uni.uMorph.value = 0;
       shown = code;
     };
-    api.current = { setCountry };
+    let wax = false;
+    api.current = { setCountry, setColorful: (on) => (wax = on) };
 
     const resize = () => {
       const w = el.clientWidth, h = el.clientHeight;
@@ -147,6 +153,7 @@ export function AfricaParticles({ country }: { country?: string }) {
       uni.uTime.value = t;
       uni.uExplode.value += (0 - uni.uExplode.value) * 0.05;
       uni.uMorph.value += (1 - uni.uMorph.value) * 0.04;
+      uni.uWax.value += ((wax && shown ? 1 : 0) - uni.uWax.value) * 0.05;
       force += ((active ? 1 : 0) - force) * (active ? 0.2 : 0.06);
       uni.uForce.value = force;
       const s = cloud.scale.x;
@@ -171,8 +178,9 @@ export function AfricaParticles({ country }: { country?: string }) {
   }, []);
 
   useEffect(() => {
+    api.current?.setColorful(colorful);
     api.current?.setCountry(country);
-  }, [country]);
+  }, [country, colorful]);
 
   return <div ref={host} aria-hidden className="absolute inset-0 touch-pan-y" />;
 }

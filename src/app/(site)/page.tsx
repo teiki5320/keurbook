@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AuthorTile } from "@/components/book/AuthorAvatar";
+import { CountryCarousel } from "@/components/carousel/CountryCarousel";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { SECONDARY_NAV } from "@/components/layout/nav";
@@ -25,7 +26,9 @@ export default async function HomePage() {
   if (getMaintenance().enabled) return null;
   const [generations, authors, countries] = await Promise.all([getAuthorGenerations(), getAuthors(), getCountriesWithBooks()]);
   const conseils = getConseils().slice(0, 3);
-  const byCount = [...countries].sort((a, b) => b.authors - a.authors || a.name.localeCompare(b.name, "fr"));
+  // Carrousel des pays, comme sur la page Pays : d'ouest en est, en partant du Sénégal.
+  const westToEast = [...countries].sort((a, b) => a.lon - b.lon);
+  const startCountry = Math.max(0, westToEast.findIndex((c) => c.code === "SN"));
   // Mosaïque de l'ouverture : des portraits de toutes les époques, en alternance.
   const withPhoto = generations.map((g) => g.authors.filter((x) => x.author.photo).map((x) => x.author));
   const mosaic = Array.from({ length: 12 }, (_, i) => withPhoto[i % withPhoto.length]?.[Math.floor(i / withPhoto.length)]).filter((a) => a != null);
@@ -76,17 +79,18 @@ export default async function HomePage() {
 
       {/* 2. La galerie, par grandes époques */}
       {generations.map((g) => (
-        <section key={g.key} id={g.key} className="container-page mt-16 scroll-mt-20">
-          <div className="mb-6 border-b border-line pb-4 md:grid md:grid-cols-[1fr_1.2fr] md:items-end md:gap-10">
+        <section key={g.key} id={g.key} style={{ "--era": g.color } as React.CSSProperties} className="container-page mt-16 scroll-mt-20">
+          <div aria-hidden className="kente reveal mb-8 h-1.5 w-28 rounded-full" />
+          <div className="reveal mb-6 border-b border-(--era)/40 pb-4 md:grid md:grid-cols-[1fr_1.2fr] md:items-end md:gap-10">
             <div>
-              <p className="eyebrow">{g.period}</p>
+              <p className="eyebrow text-(--era)">{g.period}</p>
               <h2 className="mt-2 font-serif text-[40px] leading-none sm:text-6xl">{g.name}</h2>
             </div>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted md:mt-0">{g.intro}</p>
           </div>
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {g.authors.map(({ author: a, isBd }) => (
-              <li key={a.slug}>
+              <li key={a.slug} className="reveal">
                 <AuthorTile
                   slug={a.slug}
                   name={a.name}
@@ -110,24 +114,21 @@ export default async function HomePage() {
         ))}
       </section>
 
-      {/* 3. Voyager par pays */}
-      {byCount.length > 0 && (
-        <section className="container-page mt-16">
-          <div className="border-y border-line py-6">
-            <p className="eyebrow">Les écrivains, pays par pays</p>
-            <p className="mt-4 font-serif text-[30px] leading-[1.25] text-faint sm:text-4xl">
-              {byCount.map((c, i) => (
-                <span key={c.slug}>
-                  {i > 0 && " · "}
-                  <Link href={`/pays/${c.slug}`} className={i % 2 === 0 ? "text-ink hover:text-accent" : "hover:text-ink"}>
-                    {c.name}
-                  </Link>
-                </span>
-              ))}
-            </p>
-            <Link href="/pays" className="mt-4 inline-block text-[13px] text-accent hover:text-ink">
-              Ouvrir la carte →
+      {/* 3. Voyager par pays : le carrousel de la page Pays */}
+      {westToEast.length > 0 && (
+        <section className="container-page mt-20">
+          <div aria-hidden className="kente reveal mb-8 h-1.5 w-28 rounded-full" />
+          <div className="reveal flex items-end justify-between gap-4 border-b border-line pb-4">
+            <div>
+              <p className="eyebrow">Les écrivains, pays par pays</p>
+              <h2 className="mt-2 font-serif text-[40px] leading-none sm:text-6xl">Traverser le continent</h2>
+            </div>
+            <Link href="/pays" className="shrink-0 text-[13px] text-accent hover:text-ink">
+              Tous les pays →
             </Link>
+          </div>
+          <div className="mt-8">
+            <CountryCarousel countries={westToEast} start={startCountry} />
           </div>
         </section>
       )}

@@ -14,6 +14,13 @@
   --color-faint: #8f877b;
   --color-accent: #d6a24a;
   --color-accent-soft: #2a241b;
+  /* Couleurs du tissu (bande kente, comme sur Keur Déco) et des grandes époques. */
+  --color-kente-terracotta: #b4532f;
+  --color-kente-ocre: #d49a2a;
+  --color-kente-indigo: #1e2a47;
+  --color-kente-vert: #52693a;
+  --color-terracotta: #d9774f;
+  --color-indigo: #93a6dc;
   --color-white: #1f1d1a;
   --font-sans: var(--font-geist), system-ui, sans-serif;
   --font-serif: var(--font-instrument-serif), Georgia, serif;
@@ -69,6 +76,22 @@ body {
   @apply text-[11px] tracking-[0.14em] text-accent uppercase;
 }
 
+/* Bande de tissu kente (reprise de Keur Déco) : blocs de couleur et fils clairs. */
+@utility kente {
+  background:
+    repeating-linear-gradient(90deg, transparent 0 9px, rgb(255 255 255 / 16%) 9px 10px, transparent 10px 15px, rgb(0 0 0 / 18%) 15px 17px),
+    repeating-linear-gradient(
+      90deg,
+      var(--color-kente-terracotta) 0 26px,
+      var(--color-kente-ocre) 26px 34px,
+      var(--color-kente-indigo) 34px 60px,
+      var(--color-kente-vert) 60px 68px,
+      var(--color-kente-ocre) 68px 90px,
+      var(--color-kente-terracotta) 90px 96px,
+      var(--color-kente-indigo) 96px 118px
+    );
+}
+
 @utility prose-text {
   @apply max-w-3xl text-[16px] leading-[1.7] text-ink/80;
   & h2 {
@@ -96,6 +119,59 @@ body {
   }
   & blockquote {
     @apply my-6 border-l border-accent pl-5 font-serif text-xl text-ink italic;
+  }
+}
+
+/* Animations douces (seulement si le visiteur n'a pas demandé moins d'animations). */
+@media (prefers-reduced-motion: no-preference) {
+  /* Apparition en fondu au défilement (navigateurs qui savent lier une animation au défilement). */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+    /* Écrans tactiles (pas de survol) : le portrait prend ses couleurs quand il passe au milieu de l'écran. */
+    @media (hover: none) {
+      .portrait-vivant {
+        animation: couleur linear both;
+        animation-timeline: view();
+        animation-range: cover 30% cover 70%;
+      }
+    }
+  }
+  /* Fiche auteur : le portrait passe du gris à la couleur à l'arrivée. */
+  .portrait-arrivee {
+    animation: arrivee 1.6s 0.2s ease-out both;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes couleur {
+  0%,
+  100% {
+    filter: grayscale(1) brightness(0.75);
+  }
+  35%,
+  65% {
+    filter: grayscale(0) brightness(0.95);
+  }
+}
+@keyframes arrivee {
+  from {
+    filter: grayscale(1) brightness(0.8);
+  }
+  to {
+    filter: grayscale(0) brightness(0.95);
   }
 }
 

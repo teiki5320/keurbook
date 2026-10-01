@@ -12,6 +12,7 @@ import { siteConfig, withBase } from "@/lib/config";
 import { getAuthorBySlug, getAuthors, getAuthorThemes, getBooksByAuthor, getCountry, getRelatedAuthors, toCard, toCards } from "@/lib/data/books";
 import { getConseilsForBooks } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
+import { GENERATIONS, generationOf } from "@/lib/generations";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { clip, pageMetadata } from "@/lib/metadata";
 import { THEMES } from "@/lib/themes";
@@ -44,6 +45,10 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
   const conseils = getConseilsForBooks(books.map((b) => b.slug)).slice(0, 3);
   const url = `${siteConfig.url}/auteur/${author.slug}`;
   const years = lifeYears(author);
+  // Couleur de l'époque de l'auteur (ocre, terracotta ou indigo) et halo tiré de la couverture de son livre conseillé.
+  const firstYear = books.length ? Math.min(...books.map((b) => b.year)) : null;
+  const era = GENERATIONS.find((g) => g.key === generationOf(author.birthYear, firstYear))!;
+  const halo = startCard?.illustration ?? books.map((b) => b.illustration).find(Boolean) ?? null;
 
   const structuredData = [
     {
@@ -66,7 +71,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
   ];
 
   const meta = (
-    <p className="eyebrow">
+    <p className="eyebrow text-(--era)">
       {country && (
         <Link href={`/pays/${country.slug}`} className="hover:text-ink">
           {country.name}
@@ -77,8 +82,15 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
   );
 
   return (
-    <>
+    <div className="relative isolate" style={{ "--era": era.color } as React.CSSProperties}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />
+
+      {/* Halo : la couverture du livre conseillé, très floutée, colore le haut de la page. */}
+      {halo && (
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[820px] overflow-hidden [mask-image:linear-gradient(to_bottom,black_30%,transparent)]">
+          <img src={withBase(halo)} alt="" className="size-full scale-125 object-cover opacity-35 blur-3xl saturate-150" />
+        </div>
+      )}
 
       {/* 1, 2, 3 : portrait, nom, pays, années.
           Mobile : portrait pleine largeur, nom posé dessus. iPad et ordinateur : portrait à gauche, texte à droite. */}
@@ -86,7 +98,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
         <div className="col-start-1 row-start-1 md:sticky md:top-24 md:row-span-2 md:self-start">
           {author.photo ? (
             <div className="relative h-[68svh] max-h-[820px] min-h-[460px] overflow-hidden md:h-[480px] md:min-h-0 md:rounded-md lg:h-[560px]">
-              <img src={withBase(author.photo)} alt={`Portrait de ${author.name}`} className="absolute inset-0 size-full object-cover object-top brightness-[.8] grayscale md:brightness-90" />
+              <img src={withBase(author.photo)} alt={`Portrait de ${author.name}`} className="portrait-arrivee absolute inset-0 size-full object-cover object-top brightness-[.8] grayscale md:brightness-90" />
               <div className="absolute inset-0 bg-linear-to-b from-paper/50 via-transparent via-45% to-paper md:hidden" />
             </div>
           ) : (
@@ -119,6 +131,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           <div className="md:mt-10">
             {meta}
             <h1 className="mt-2 font-serif text-[64px] leading-[0.9] sm:text-8xl">{author.name}</h1>
+            <div aria-hidden className="kente mt-5 h-1.5 w-28 rounded-full" />
           </div>
         </div>
 
@@ -235,6 +248,6 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           <ConseilGrid conseils={conseils} />
         </Section>
       )}
-    </>
+    </div>
   );
 }
