@@ -6,7 +6,7 @@
 
 1. Tout est en **français**, ton clair et chaleureux, sans jargon universitaire. On s'adresse à un lecteur curieux qui ne connaît pas forcément la littérature africaine.
 2. **Exactitude** : titres, années, éditeurs, prix littéraires doivent être vrais. En cas de doute, vérifier sur le web (site de l'éditeur, Wikipédia, BnF, Google Books). Si on ne peut pas vérifier une information facultative, mettre `null` (ou ne pas citer le prix) plutôt qu'inventer.
-3. **Jamais inventés** : ISBN, nombre de pages, ASIN, prix. `amazonAsin`, `priceCents` et `cover` restent à `null` (remplis plus tard à la main). `isbn` et `pages` seulement s'ils sont vérifiés pour une édition en vente (de préférence en poche), sinon `null`.
+3. **Jamais inventés** : ISBN, nombre de pages, ASIN, prix. Les illustrations de couverture Keurbook (public/illustrations/, liste dans src/lib/demo/illustrations.ts) : style « collage wax », aucun texte ni visage, aucune personne réelle reconnaissable ; scènes dans docs/essais/scenes.json. `amazonAsin`, `priceCents` et `cover` restent à `null` (remplis plus tard à la main). `isbn` et `pages` seulement s'ils sont vérifiés pour une édition en vente (de préférence en poche), sinon `null`.
 4. **Écrit par nous** : résumés et biographies originaux, jamais recopiés ni paraphrasés de près d'une quatrième de couverture, de Wikipédia ou d'un autre site.
 5. **Citations** : 2 lignes au maximum (moins de 200 caractères), exactes. En cas de doute sur l'exactitude d'une citation, `quote: null`.
 6. **Pas de spoiler** : le résumé présente le point de départ et les enjeux, jamais la fin.

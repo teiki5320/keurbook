@@ -153,7 +153,7 @@ Pas de newsletter au lancement (comme Keur Cook).
 
 1. Résumés et biographies **écrits par nous** : jamais recopiés d'une quatrième de couverture ou d'un autre site.
 2. Citations : 2 lignes au maximum, avec la source (droit de citation).
-3. Couvertures : uniquement par les outils officiels Amazon Partenaires ou fournies par les éditeurs ; jamais copiées d'un autre site.
+3. Couvertures : les vraies couvertures uniquement par les outils officiels Amazon Partenaires ou fournies par les éditeurs, jamais copiées d'un autre site. En attendant, chaque livre a une **couverture illustrée Keurbook** (illustration « collage wax » générée avec OpenArt à partir de notre résumé, titre et auteur posés par le site, signature « Keurbook ») ; la fiche précise : « Couverture illustrée par Keurbook. L'édition vendue sur Amazon a sa propre couverture. »
 4. Photos d'auteurs : uniquement libres de droits, avec crédit.
 5. Prix Amazon indicatifs, avec la date du relevé : le prix affiché par Amazon fait foi.
 6. Livres francophones : écrits en français ou traduits en français (on indique le traducteur).

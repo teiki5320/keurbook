@@ -105,7 +105,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
               {cited.map((b) => (
                 <li key={b.slug} className="grid grid-cols-[56px_1fr_auto] items-center gap-4 rounded-lg bg-white p-2.5">
                   <Link href={b.path}>
-                    <BookCover title={b.title} creators={b.creators} cover={b.cover} />
+                    <BookCover title={b.title} creators={b.creators} cover={b.cover} illustration={b.illustration} />
                   </Link>
                   <div className="min-w-0">
                     <Link href={b.path} className="font-serif text-xl leading-[1.05] hover:text-accent">

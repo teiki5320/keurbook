@@ -144,7 +144,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           {startCard && start && (
             <div className="mt-8 grid grid-cols-[84px_1fr] gap-4 rounded-xl bg-white p-4 sm:grid-cols-[112px_1fr] sm:gap-6 sm:p-5">
               <Link href={startCard.path}>
-                <BookCover title={startCard.title} creators={startCard.creators} cover={startCard.cover} />
+                <BookCover title={startCard.title} creators={startCard.creators} cover={startCard.cover} illustration={startCard.illustration} />
               </Link>
               <div className="flex flex-col justify-between">
                 <div>

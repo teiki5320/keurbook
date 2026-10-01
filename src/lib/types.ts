@@ -69,6 +69,11 @@ export interface Book {
   priceCents: number | null;
   /** Couverture (/covers/<slug>.webp), null tant qu'elle n'est pas obtenue par un moyen autorisé. */
   cover: string | null;
+  /**
+   * Illustration de couverture Keurbook (collage wax, générée pour le site), sur laquelle le site pose
+   * le titre et l'auteur. Ce n'est PAS la couverture de l'édition vendue : la fiche le précise.
+   */
+  illustration?: string | null;
   /** BD : planches autorisées par l'éditeur. */
   plates?: string[];
   featured: boolean;

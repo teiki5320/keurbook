@@ -106,7 +106,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
             {startCards.map((b, i) => (
               <li key={b.slug} className="w-40 shrink-0 snap-start sm:w-auto">
                 <Link href={b.path} className="group block">
-                  <BookCover title={b.title} creators={b.creators} cover={b.cover} className="transition group-hover:-translate-y-1" />
+                  <BookCover title={b.title} creators={b.creators} cover={b.cover} illustration={b.illustration} className="transition group-hover:-translate-y-1" />
                   <span className="mt-3 flex items-baseline gap-2">
                     <span className="font-serif text-3xl leading-none text-accent">{i + 1}</span>
                     <span className="font-serif text-lg leading-tight group-hover:text-accent">{b.title}</span>

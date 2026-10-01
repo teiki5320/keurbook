@@ -9,9 +9,15 @@ import { auteursOuest } from "./auteurs-ouest";
 import { bandesDessinees } from "./bd";
 import { livresCentreEstSud } from "./livres-centre-est-sud";
 import { livresOuest } from "./livres-ouest";
+import { ILLUSTRATED } from "./illustrations";
 import { AUTHOR_PHOTOS } from "./photos";
 
-export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bandesDessinees];
+const illustrated = new Set(ILLUSTRATED);
+
+/** Livres et BD, avec leur illustration de couverture Keurbook quand elle existe (illustrations.ts). */
+export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bandesDessinees].map((b) =>
+  illustrated.has(b.slug) ? { ...b, illustration: `/illustrations/${b.slug}.webp` } : b,
+);
 /** Auteurs, avec leur photo libre de droits quand il y en a une (photos.ts). */
 export const allAuthors: Author[] = [...auteursOuest, ...auteursCentreEstSud, ...auteursBd].map((a) => {
   const p = AUTHOR_PHOTOS[a.slug];

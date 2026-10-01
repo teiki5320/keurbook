@@ -84,7 +84,7 @@ export function PileList({ books }: { books: BookCardData[] }) {
           <div aria-hidden className="relative mx-auto mt-6 h-64 max-w-sm">
             {mine.slice(0, 4).map((b, i) => (
               <div key={b.slug} className="absolute w-32" style={{ left: FAN[i].left, top: FAN[i].top, transform: `rotate(${FAN[i].rot})` }}>
-                <BookCover title={b.title} creators={b.creators} cover={b.cover} className="shadow-2xl shadow-black/70" />
+                <BookCover title={b.title} creators={b.creators} cover={b.cover} illustration={b.illustration} className="shadow-2xl shadow-black/70" />
               </div>
             ))}
           </div>

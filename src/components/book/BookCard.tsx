@@ -8,7 +8,7 @@ export function BookCard({ book, showBuy = false }: { book: BookCardData; showBu
   return (
     <article className="group relative flex flex-col">
       <Link href={book.path} className="block">
-        <BookCover title={book.title} creators={book.creators} cover={book.cover} className="transition group-hover:-translate-y-1" />
+        <BookCover title={book.title} creators={book.creators} cover={book.cover} illustration={book.illustration} className="transition group-hover:-translate-y-1" />
       </Link>
       <div className="absolute top-2 right-2">
         <PileButton slug={book.slug} compact />

@@ -23,6 +23,7 @@ export interface BookCardData {
   period: string;
   year: number;
   cover: string | null;
+  illustration: string | null;
   amazonUrl: string;
   priceCents: number | null;
   addedAt: string;
@@ -86,6 +87,7 @@ export async function toCard(book: Book): Promise<BookCardData> {
     period: periodOf(book.year),
     year: book.year,
     cover: book.cover,
+    illustration: book.illustration ?? null,
     amazonUrl: amazonUrl(book),
     priceCents: book.priceCents,
     addedAt: book.addedAt,
