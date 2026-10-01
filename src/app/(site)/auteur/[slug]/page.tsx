@@ -103,9 +103,13 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
             </div>
           ) : (
             <div className="container-page pt-16 md:px-0 md:pt-10">
-              <span aria-hidden className="flex size-28 items-center justify-center rounded-full bg-white font-serif text-4xl text-muted md:size-40 md:text-5xl">
-                {initials(author.name)}
-              </span>
+              {author.coverImage ? (
+                <img src={withBase(author.coverImage)} alt="" className="size-28 rounded-full object-cover md:size-40" />
+              ) : (
+                <span aria-hidden className="flex size-28 items-center justify-center rounded-full bg-white font-serif text-4xl text-muted md:size-40 md:text-5xl">
+                  {initials(author.name)}
+                </span>
+              )}
             </div>
           )}
           <div className="hidden md:block">{author.photoCredit && (
@@ -234,7 +238,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {related.map((a) => (
               <li key={a.slug}>
-                <AuthorTile slug={a.slug} name={a.name} photo={a.photo} subtitle={getCountry(a.countryCode)?.name} />
+                <AuthorTile slug={a.slug} name={a.name} photo={a.photo} coverImage={a.coverImage} subtitle={getCountry(a.countryCode)?.name} />
               </li>
             ))}
           </ul>

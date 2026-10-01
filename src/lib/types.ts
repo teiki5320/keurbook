@@ -100,6 +100,8 @@ export interface Author {
   photoCredit: string | null;
   /** Page source de la photo (Wikimedia Commons), liée depuis le crédit. */
   photoSource?: string | null;
+  /** Sans photo : l'illustration de couverture Keurbook de son livre conseillé, affichée à la place des initiales. */
+  coverImage?: string | null;
   /** « Par où commencer » : slug d'un livre du site. */
   startWith: string | null;
   /** Autres titres, sans fiche sur le site : « Titre (année) ». */

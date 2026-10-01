@@ -92,7 +92,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
               key: a.slug,
               title: a.name,
               eyebrow: lifeYears(a) || undefined,
-              image: a.photo,
+              image: a.photo ?? a.coverImage ?? null,
               href: `/auteur/${a.slug}`,
             }))}
           />

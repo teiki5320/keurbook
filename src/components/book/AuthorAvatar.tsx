@@ -17,17 +17,31 @@ export function AuthorAvatar({ name, photo, className = "size-10 text-sm" }: { n
  * Vignette portrait (galerie, auteurs proches) : en gris, le portrait prend ses couleurs au survol
  * (et, sur écran tactile, quand il passe au milieu de l'écran). Couleur de l'époque : variable CSS --era.
  */
-export function AuthorTile({ slug, name, photo, subtitle }: { slug: string; name: string; photo: string | null; subtitle?: string | null }) {
+export function AuthorTile({
+  slug,
+  name,
+  photo,
+  coverImage = null,
+  subtitle,
+}: {
+  slug: string;
+  name: string;
+  photo: string | null;
+  /** Sans photo : couverture illustrée de son livre, à la place des initiales. */
+  coverImage?: string | null;
+  subtitle?: string | null;
+}) {
+  const image = photo ?? coverImage;
   return (
     <Link
       href={`/auteur/${slug}`}
       className="group relative block h-40 overflow-hidden rounded-md bg-white ring-(--era,var(--color-accent)) transition duration-500 hover:ring-2 focus-visible:ring-2 focus-visible:outline-none sm:h-56"
     >
-      {photo ? (
+      {image ? (
         <img
-          src={withBase(photo)}
+          src={withBase(image)}
           alt=""
-          className="portrait-vivant size-full object-cover object-top brightness-75 grayscale transition duration-700 group-hover:scale-[1.04] group-hover:brightness-95 group-hover:grayscale-0 group-focus-visible:brightness-95 group-focus-visible:grayscale-0"
+          className={`portrait-vivant size-full object-cover ${photo ? "object-top" : "object-center"} brightness-75 grayscale transition duration-700 group-hover:scale-[1.04] group-hover:brightness-95 group-hover:grayscale-0 group-focus-visible:brightness-95 group-focus-visible:grayscale-0`}
           loading="lazy"
         />
       ) : (

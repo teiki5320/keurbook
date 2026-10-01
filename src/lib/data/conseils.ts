@@ -1,5 +1,5 @@
 import "server-only";
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { cache } from "react";
 import { marked } from "marked";
@@ -7,12 +7,17 @@ import { withBase } from "@/lib/config";
 import { anchorId, isPublished, parseConseil, relatedConseils, todayInParis, type Conseil } from "@/lib/conseils/article";
 
 const DIR = join(process.cwd(), "content", "conseils");
+const IMAGES = join(process.cwd(), "public", "conseils");
 
 /** Tous les articles, publiés ou programmés, du plus récent au plus ancien. */
 export const getAllConseils = cache((): Conseil[] =>
   readdirSync(DIR)
     .filter((f) => f.endsWith(".md"))
-    .map((f) => parseConseil(f.replace(/\.md$/, ""), readFileSync(join(DIR, f), "utf8")))
+    .map((f) => {
+      const slug = f.replace(/\.md$/, "");
+      const image = existsSync(join(IMAGES, `${slug}.webp`)) ? `/conseils/${slug}.webp` : null;
+      return { ...parseConseil(slug, readFileSync(join(DIR, f), "utf8")), image };
+    })
     .sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title, "fr")),
 );
 

@@ -6,7 +6,7 @@ import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { conseilSections } from "@/lib/conseils/article";
 import { CONSEIL_CATEGORIES } from "@/lib/conseils/categories";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, withBase } from "@/lib/config";
 import { getAllBooks, toCards } from "@/lib/data/books";
 import { getConseilBySlug, getConseils, getRelatedConseils, renderConseil } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
@@ -21,7 +21,15 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/conseils/[slug]">): Promise<Metadata> {
   const conseil = getConseilBySlug((await params).slug);
   if (!conseil) return {};
-  return pageMetadata({ title: conseil.title, description: conseil.description, path: `/conseils/${conseil.slug}`, type: "article", publishedTime: conseil.date });
+  return pageMetadata({
+    title: conseil.title,
+    description: conseil.description,
+    path: `/conseils/${conseil.slug}`,
+    type: "article",
+    publishedTime: conseil.date,
+    image: conseil.image,
+    imageAlt: `Illustration : ${conseil.title}`,
+  });
 }
 
 export default async function ConseilPage({ params }: PageProps<"/conseils/[slug]">) {
@@ -43,7 +51,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
       datePublished: conseil.date,
       dateModified: conseil.date,
       inLanguage: "fr",
-      image: `${siteConfig.url}/brand/keurbook-partage.jpg`,
+      image: `${siteConfig.url}${conseil.image ?? "/brand/keurbook-partage.jpg"}`,
       author: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
       url,
       publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url, logo: `${siteConfig.url}/brand/keurbook-logo.png` },
@@ -75,6 +83,20 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
           </Link>
         </p>
         <h1 className="mt-3 font-serif text-[44px] leading-none text-balance sm:text-6xl">{conseil.title}</h1>
+        {conseil.image && (
+          <figure className="mt-8">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={withBase(conseil.image)}
+              alt=""
+              width={1200}
+              height={800}
+              fetchPriority="high"
+              className="aspect-[3/2] w-full rounded-md object-cover shadow-2xl shadow-black/50"
+            />
+            <figcaption className="mt-2 text-[11px] text-faint">Illustration Keurbook (créée par intelligence artificielle).</figcaption>
+          </figure>
+        )}
         {/* 2. Réponse courte */}
         <p className="mt-8 border-l border-accent pl-5 text-[17px] leading-relaxed">
           <span className="sr-only">En bref : </span>

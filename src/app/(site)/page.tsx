@@ -3,13 +3,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { CountryCarousel } from "@/components/carousel/CountryCarousel";
+import { BookRow } from "@/components/book/BookCard";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { SECONDARY_NAV } from "@/components/layout/nav";
 import { lifeYears } from "@/lib/book-utils";
 import { siteConfig, withBase } from "@/lib/config";
-import { getAuthorGenerations, getAuthors, getBooksByAuthor, getCountriesWithBooks, getCountry } from "@/lib/data/books";
+import { getAllBooks, getAuthorGenerations, getAuthors, getBooksByAuthor, getCountriesWithBooks, getCountry, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
+import { todayInParis } from "@/lib/conseils/article";
 import { getMaintenance } from "@/lib/data/settings";
 import { jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
@@ -26,6 +28,16 @@ export default async function HomePage() {
   if (getMaintenance().enabled) return null;
   const [generations, authors, countries] = await Promise.all([getAuthorGenerations(), getAuthors(), getCountriesWithBooks()]);
   const conseils = getConseils().slice(0, 3);
+  // Étagère « À lire maintenant » : 12 livres illustrés, une sélection qui change chaque semaine
+  // (le site est reconstruit chaque lundi).
+  const week = Math.floor(Date.parse(todayInParis()) / (7 * 24 * 3600 * 1000));
+  const score = (slug: string) => [...`${slug}${week}`].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
+  const shelf = await toCards(
+    (await getAllBooks())
+      .filter((b) => b.illustration)
+      .sort((a, b) => score(a.slug) - score(b.slug))
+      .slice(0, 12),
+  );
   // Carrousel des pays, comme sur la page Pays : d'ouest en est, en partant du Sénégal.
   const westToEast = [...countries].sort((a, b) => a.lon - b.lon);
   const startCountry = Math.max(0, westToEast.findIndex((c) => c.code === "SN"));
@@ -77,6 +89,22 @@ export default async function HomePage() {
         </p>
       </section>
 
+      {/* Étagère de couvertures : la couleur des livres dès l'arrivée */}
+      {shelf.length > 0 && (
+        <section className="container-page mt-12">
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Cette semaine</p>
+              <h2 className="mt-2 font-serif text-[34px] leading-none sm:text-5xl">À lire maintenant</h2>
+            </div>
+            <Link href="/livres" className="shrink-0 text-[13px] text-accent hover:text-ink">
+              Tous les livres →
+            </Link>
+          </div>
+          <BookRow books={shelf} />
+        </section>
+      )}
+
       {/* 2. La galerie, par grandes époques */}
       {generations.map((g) => (
         <section key={g.key} id={g.key} style={{ "--era": g.color } as React.CSSProperties} className="container-page mt-16 scroll-mt-20">
@@ -94,6 +122,7 @@ export default async function HomePage() {
                   slug={a.slug}
                   name={a.name}
                   photo={a.photo}
+                  coverImage={a.coverImage}
                   subtitle={[getCountry(a.countryCode)?.name, lifeYears(a), isBd ? "BD" : null].filter(Boolean).join(" · ")}
                 />
               </li>

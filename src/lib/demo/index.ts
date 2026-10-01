@@ -18,8 +18,14 @@ const illustrated = new Set(ILLUSTRATED);
 export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bandesDessinees].map((b) =>
   illustrated.has(b.slug) ? { ...b, illustration: `/illustrations/${b.slug}.webp` } : b,
 );
-/** Auteurs, avec leur photo libre de droits quand il y en a une (photos.ts). */
+/** Illustration du livre conseillé de l'auteur (ou, à défaut, de son premier livre illustré). */
+function coverImageOf(a: Author): string | null {
+  const own = allBooks.filter((b) => b.illustration && b.contributors.some((c) => c.authorSlug === a.slug));
+  return (own.find((b) => b.slug === a.startWith) ?? own[0])?.illustration ?? null;
+}
+
+/** Auteurs, avec leur photo libre de droits quand il y en a une (photos.ts), sinon une couverture de leur livre. */
 export const allAuthors: Author[] = [...auteursOuest, ...auteursCentreEstSud, ...auteursBd].map((a) => {
   const p = AUTHOR_PHOTOS[a.slug];
-  return p ? { ...a, photo: p.photo, photoCredit: p.credit, photoSource: p.source } : a;
+  return p ? { ...a, photo: p.photo, photoCredit: p.credit, photoSource: p.source } : { ...a, coverImage: coverImageOf(a) };
 });

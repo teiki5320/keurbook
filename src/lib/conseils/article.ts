@@ -16,6 +16,8 @@ export interface Conseil {
   livres: string[];
   /** Corps de l'article en Markdown (parties en « ## »). */
   body: string;
+  /** Illustration Keurbook (collage wax) : public/conseils/<slug>.webp, si elle existe. */
+  image?: string | null;
 }
 
 export const DESCRIPTION_MIN = 70;
