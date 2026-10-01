@@ -43,7 +43,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
       datePublished: conseil.date,
       inLanguage: "fr",
       url,
-      publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+      publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url, logo: `${siteConfig.url}/brand/keurbook-logo.png` },
     },
     breadcrumbLd([
       { name: "Accueil", url: siteConfig.url },

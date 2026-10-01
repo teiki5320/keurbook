@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { siteConfig } from "./config";
 
-/**
- * Image de partage par défaut (1200 × 630), pour les pages sans image propre.
- * À fournir avec le design (public/brand/keurbook-partage.jpg) ; en attendant, pas d'image.
- */
-export const DEFAULT_SHARE_IMAGES: Array<{ url: string; width: number; height: number; alt: string }> = [];
+/** Image de partage par défaut (1200 × 630, logo Keurbook), pour les pages sans image propre. */
+export const DEFAULT_SHARE_IMAGES: Array<{ url: string; width: number; height: number; alt: string }> = [
+  { url: "/brand/keurbook-partage.jpg", width: 1200, height: 630, alt: "Keurbook, les auteurs d'Afrique subsaharienne à la une" },
+];
 
 interface PageMetadataInput {
   title: string;

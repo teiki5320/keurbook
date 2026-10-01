@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, withBase } from "@/lib/config";
 import { PileCount } from "../pile/PileCount";
 import { NAV, SECONDARY_NAV } from "./nav";
 
@@ -14,7 +14,9 @@ export function Header() {
     <>
       <header className="sticky top-0 z-50 bg-paper/85 backdrop-blur">
         <div className="container-page flex h-16 items-center gap-8">
-          <Link href="/" onClick={close} className="font-serif text-[28px] leading-none">
+          <Link href="/" onClick={close} className="flex items-center gap-2.5 font-serif text-[28px] leading-none">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={withBase("/brand/keurbook-embleme-nuit.webp")} alt="" width={36} height={36} className="size-9" />
             {siteConfig.name}
           </Link>
           <nav aria-label="Menu principal" className="hidden gap-6 text-sm text-ink/80 md:flex">

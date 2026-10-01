@@ -27,6 +27,11 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Livres
 | Ma pile à lire (dans le navigateur, sans compte, partageable par lien) | `/pile-a-lire` |
 | Pages légales | `/mentions-legales`, `/confidentialite`, `/conditions` |
 
+## Logo
+
+- Originaux (1254 × 1254) : `docs/brand/` — `keurbook-logo-couleur.png` (fond blanc), `keurbook-logo-noir.png` (noir sur blanc), `keurbook-logo-nuit.png` (transparent, pour fond sombre, avec la devise).
+- Utilisés sur le site : `public/brand/` (logo du pied de page, emblème de l'en-tête, logo des données structurées, image de partage 1200 × 630) et `src/app/icon.png`, `src/app/apple-icon.png` (emblème couleur).
+
 ## Où sont les contenus
 
 | Contenu | Fichier |
@@ -52,7 +57,6 @@ Règles de rédaction : [`docs/REDACTION.md`](docs/REDACTION.md). Champs exacts 
 - `amazonAsin` et `priceCents` de chaque livre (depuis Amazon Partenaires).
 - Couvertures (`public/covers/<slug>.webp`, champ `cover`) : uniquement via les outils Amazon Partenaires ou fournies par les éditeurs.
 - Photos d'auteurs (`photo`, `photoCredit`) : uniquement libres de droits.
-- Image de partage par défaut (`public/brand/keurbook-partage.jpg`, 1200 × 630) et icônes (`src/app/icon.png`, `src/app/apple-icon.png`) : avec le design.
 
 ---
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, withBase } from "@/lib/config";
 import { CookieSettingsButton } from "../compliance/CookieBanner";
 import { NAV, SECONDARY_NAV } from "./nav";
 
@@ -9,7 +9,15 @@ export function Footer() {
     <footer className="mt-24 border-t border-line">
       <div className="container-page grid gap-10 py-12 text-sm sm:grid-cols-3">
         <div>
-          <p className="font-serif text-4xl leading-none">{siteConfig.name}</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={withBase("/brand/keurbook-logo-nuit.webp")}
+            alt={`${siteConfig.name}, les auteurs d'Afrique subsaharienne à la une`}
+            width={480}
+            height={480}
+            loading="lazy"
+            className="w-44"
+          />
           <p className="mt-3 max-w-xs text-muted">{siteConfig.tagline}, en français.</p>
         </div>
         <nav aria-label="Rubriques" className="flex flex-col gap-2.5">
