@@ -24,12 +24,15 @@ export function BookCover({
   cover,
   illustration = null,
   className = "",
+  priority = false,
 }: {
   title: string;
   creators: string;
   cover: string | null;
   illustration?: string | null;
   className?: string;
+  /** Image principale de la page : chargée tout de suite, en priorité. */
+  priority?: boolean;
 }) {
   if (!cover && illustration)
     return (
@@ -38,7 +41,13 @@ export function BookCover({
         aria-label={`${title}, ${creators} — couverture illustrée par Keurbook`}
         className={`@container relative aspect-[2/3] w-full overflow-hidden rounded-[3px_6px_6px_3px] bg-white shadow-xl shadow-black/40 ${className}`}
       >
-        <img src={withBase(illustration)} alt="" className="absolute inset-0 size-full object-cover" loading="lazy" />
+        <img
+          src={withBase(illustration)}
+          alt=""
+          className="absolute inset-0 size-full object-cover"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+        />
         {/* Bandeau du titre en haut, signature en bas */}
         <div className="absolute inset-x-0 top-0 h-[42%] bg-linear-to-b from-paper/90 via-paper/55 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-[20%] bg-linear-to-t from-paper/80 to-transparent" />
@@ -54,7 +63,7 @@ export function BookCover({
         <div className="absolute inset-y-0 left-0 w-[5%] bg-linear-to-r from-black/55 via-white/15 to-black/0" />
       </div>
     );
-  if (cover) return <img src={withBase(cover)} alt={`Couverture de ${title}`} className={`aspect-[2/3] w-full rounded-md object-cover shadow-xl shadow-black/40 ${className}`} loading="lazy" />;
+  if (cover) return <img src={withBase(cover)} alt={`Couverture de ${title}`} className={`aspect-[2/3] w-full rounded-md object-cover shadow-xl shadow-black/40 ${className}`} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} />;
   return (
     <div
       role="img"

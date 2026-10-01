@@ -11,7 +11,7 @@
   --color-muted: #a9a195;
   --color-line: #2e2b26;
   --color-line-strong: #4a453d;
-  --color-faint: #6f685e;
+  --color-faint: #8f877b;
   --color-accent: #d6a24a;
   --color-accent-soft: #2a241b;
   --color-white: #1f1d1a;
@@ -96,5 +96,17 @@ body {
   }
   & blockquote {
     @apply my-6 border-l border-accent pl-5 font-serif text-xl text-ink italic;
+  }
+}
+
+/* Visiteurs qui ont demandé moins d'animations : transitions et animations coupées. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

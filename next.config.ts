@@ -2,9 +2,8 @@ import type { NextConfig } from "next";
 
 /**
  * Site 100 % statique (dossier out/).
- * - Cloudflare Pages (keurbook.com) : .github/workflows/deploy.yml ; en-têtes et redirections dans public/_headers et public/_redirects.
- * - GitHub Pages (version provisoire, teiki5320.github.io/keurbook) : .github/workflows/pages.yml,
- *   avec NEXT_PUBLIC_BASE_PATH=/keurbook (site servi dans un sous-dossier).
+ * Publié sur Cloudflare Pages (keurbook.com) par .github/workflows/deploy.yml ;
+ * en-têtes et redirections dans public/_headers et public/_redirects.
  */
 const nextConfig: NextConfig = {
   output: "export",

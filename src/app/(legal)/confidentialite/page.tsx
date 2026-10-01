@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
-import { CookieSettingsButton } from "@/components/compliance/CookieBanner";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { legalConfig, siteConfig } from "@/lib/config";
 
@@ -12,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Politique de confidentialité" updated="30 septembre 2026">
+    <LegalPage title="Politique de confidentialité" updated="1er octobre 2026">
       <p>
         {legalConfig.companyName} (« nous ») attache une grande importance à la protection de vos données personnelles,
         traitées conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et
@@ -46,7 +45,6 @@ export default function PrivacyPage() {
       <ul>
         <li>Messages de contact : le temps de traiter la demande, puis 3 ans au plus.</li>
         <li>Journaux techniques : selon la politique de l&apos;hébergeur, quelques jours en général.</li>
-        <li>Mémorisation du message sur les cookies : 6 mois.</li>
         <li>Pile à lire : dans votre navigateur uniquement, jusqu&apos;à ce que vous les retiriez ou effaciez les données du site.</li>
       </ul>
 
@@ -75,16 +73,14 @@ export default function PrivacyPage() {
       </p>
 
       <h2 id="cookies">Cookies</h2>
-      <p>Le site utilise les cookies et stockages locaux suivants :</p>
-      <ul>
-        <li><strong>Pile à lire</strong> (stockage local, nécessaire) — conserve les livres que vous avez mis de côté, jusqu&apos;à ce que vous les retiriez ou effaciez les données du site.</li>
-        <li><strong>kb_consent</strong> (nécessaire) — mémorise que vous avez vu le message sur les cookies, 6 mois.</li>
-      </ul>
       <p>
-        Le site ne dépose aucun cookie de mesure d&apos;audience ni publicitaire. Amazon.fr, une fois ouvert, dépose ses
-        propres cookies. Vous pouvez
-        afficher à nouveau le message sur les cookies à tout moment : <CookieSettingsButton className="font-semibold text-accent underline" />.
+        Le site ne dépose <strong>aucun cookie</strong> : ni mesure d&apos;audience, ni publicité, ni réseau social. Il
+        n&apos;affiche donc pas de bandeau de consentement.
       </p>
+      <ul>
+        <li><strong>Pile à lire</strong> (stockage local de votre navigateur) — conserve les livres que vous avez mis de côté, uniquement sur votre appareil, jusqu&apos;à ce que vous les retiriez ou effaciez les données du site. Elle n&apos;est transmise à personne.</li>
+      </ul>
+      <p>Amazon.fr, une fois ouvert depuis un bouton « Acheter sur Amazon », dépose ses propres cookies, selon sa politique.</p>
     </LegalPage>
   );
 }

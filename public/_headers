@@ -11,3 +11,17 @@
 # Fichiers de build versionnés : mis en cache longtemps.
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Images du site (noms stables) : cache d'une semaine.
+/authors/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/illustrations/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/brand/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+# Adresses techniques de Cloudflare Pages : pas d'indexation (seul keurbook.com compte).
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex

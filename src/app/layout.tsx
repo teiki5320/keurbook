@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Instrument_Serif } from "next/font/google";
-import { CookieBanner } from "@/components/compliance/CookieBanner";
-import { NOINDEX, siteConfig } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   formatDetection: { telephone: false },
-  ...(NOINDEX ? { robots: { index: false, follow: false } } : {}),
 };
 
 export const viewport: Viewport = {
@@ -44,7 +42,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Aller au contenu
         </a>
         {children}
-        <CookieBanner />
       </body>
     </html>
   );

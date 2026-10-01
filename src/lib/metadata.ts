@@ -25,9 +25,9 @@ interface PageMetadataInput {
  * Next.js remplace entièrement le bloc openGraph du layout dès qu'une page en définit un : on le reconstruit ici.
  */
 export function pageMetadata({ title, description, path, image, imageAlt, type = "website", publishedTime, noindex, absoluteTitle }: PageMetadataInput): Metadata {
-  // Titre complet limité à ~65 caractères (au-delà, Google le coupe) : sans le suffixe s'il est trop long.
+  // Titre complet limité à ~60 caractères (au-delà, Google le coupe) : sans le suffixe s'il est trop long.
   const suffixed = `${title} | ${siteConfig.name}`;
-  const absolute = absoluteTitle || suffixed.length > 65;
+  const absolute = absoluteTitle || suffixed.length > 60;
   const fullTitle = absolute ? title : suffixed;
   const images = image ? [{ url: image, alt: imageAlt ?? title }] : DEFAULT_SHARE_IMAGES;
   return {

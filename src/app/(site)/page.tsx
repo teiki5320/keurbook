@@ -46,8 +46,15 @@ export default async function HomePage() {
       {/* 1. Ouverture : mosaïque de portraits et dédicace */}
       <section className="relative overflow-hidden">
         <div aria-hidden className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6">
-          {mosaic.map((a) => (
-            <img key={a.slug} src={withBase(a.photo!)} alt="" className="aspect-[3/4] w-full object-cover object-top brightness-[.55] grayscale" />
+          {mosaic.map((a, i) => (
+            <img
+              key={a.slug}
+              src={withBase(a.photo!)}
+              alt=""
+              loading={i < 6 ? "eager" : "lazy"}
+              fetchPriority={i < 3 ? "high" : "low"}
+              className="aspect-[3/4] w-full object-cover object-top brightness-[.55] grayscale"
+            />
           ))}
         </div>
         <div className="absolute inset-0 bg-linear-to-b from-paper/30 via-paper/40 via-40% to-paper" />

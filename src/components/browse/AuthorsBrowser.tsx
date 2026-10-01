@@ -44,7 +44,7 @@ export function AuthorsBrowser({ authors, countries }: { authors: AuthorListItem
         </label>
         <label>
           <span className="sr-only">Pays</span>
-          <select className="rounded-full border border-line-strong bg-paper px-3.5 py-2 text-[13px] text-ink focus:border-accent focus:outline-none" value={pays} onChange={(e) => setPays(e.target.value)}>
+          <select className="rounded-full border border-line-strong bg-paper px-3.5 py-2 text-[13px] text-ink focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" value={pays} onChange={(e) => setPays(e.target.value)}>
             <option value="">Tous les pays</option>
             {countries.map((c) => (
               <option key={c.code} value={c.code}>

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { siteConfig, withBase } from "@/lib/config";
-import { CookieSettingsButton } from "../compliance/CookieBanner";
 import { NAV, SECONDARY_NAV } from "./nav";
 
 export function Footer() {
@@ -39,7 +38,7 @@ export function Footer() {
           <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
           <Link href="/confidentialite" className="hover:text-ink">Confidentialité</Link>
           <Link href="/conditions" className="hover:text-ink">Conditions d&apos;utilisation</Link>
-          <CookieSettingsButton className="text-left hover:text-ink" />
+          <Link href="/confidentialite#cookies" className="hover:text-ink">Cookies : aucun</Link>
           <a href={`mailto:${siteConfig.contactEmail}`} className="hover:text-ink">{siteConfig.contactEmail}</a>
         </nav>
       </div>

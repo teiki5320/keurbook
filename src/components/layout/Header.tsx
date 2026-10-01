@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { siteConfig, withBase } from "@/lib/config";
 import { PileCount } from "../pile/PileCount";
 import { NAV, SECONDARY_NAV } from "./nav";
@@ -10,6 +10,19 @@ import { NAV, SECONDARY_NAV } from "./nav";
 export function Header() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+
+  // Menu mobile ouvert : la page derrière ne défile plus, Échap le ferme, le focus va au premier lien.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    document.querySelector<HTMLElement>("#menu-mobile a")?.focus();
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [open]);
   return (
     <>
       <header className="sticky top-0 z-50 bg-paper/85 backdrop-blur">

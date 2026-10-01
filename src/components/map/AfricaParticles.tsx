@@ -143,14 +143,14 @@ export function AfricaParticles({ country }: { country?: string }) {
     const loop = () => {
       raf = requestAnimationFrame(loop);
       if (!visible) return;
-      const t = clock.getElapsedTime() * (reduced ? 0.3 : 1);
+      const t = reduced ? 0 : clock.getElapsedTime();
       uni.uTime.value = t;
       uni.uExplode.value += (0 - uni.uExplode.value) * 0.05;
       uni.uMorph.value += (1 - uni.uMorph.value) * 0.04;
       force += ((active ? 1 : 0) - force) * (active ? 0.2 : 0.06);
       uni.uForce.value = force;
       const s = cloud.scale.x;
-      if (active) uni.uMouse.value.set(px / s, py / s, 0);
+      if (active && !reduced) uni.uMouse.value.set(px / s, py / s, 0);
       // Léger balancement, la carte reste de face.
       cloud.rotation.set(Math.sin(t * 0.3) * 0.06, Math.sin(t * 0.25) * 0.12, 0);
       renderer.render(scene, camera);

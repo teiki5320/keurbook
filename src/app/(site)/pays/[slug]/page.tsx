@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps<"/pays/[slug]">): P
   const country = await getCountryBySlug((await params).slug);
   if (!country) return {};
   return pageMetadata({
-    title: `Littérature ${country.of} : livres et auteurs`,
+    title: `${country.name} : écrivains et livres`,
     description: clip(`Livres et auteurs ${country.of}. ${country.description}`),
     path: `/pays/${country.slug}`,
   });

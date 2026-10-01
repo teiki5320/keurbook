@@ -98,8 +98,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           )}
           <div className="hidden md:block">{author.photoCredit && (
             <p className="mt-2 text-[10px] text-faint">
-              Photo :{" "}
-              {author.photoSource ? (
+                            {author.photoSource ? (
                 <a href={author.photoSource} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
                   {author.photoCredit}
                 </a>
@@ -126,8 +125,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
         <div className="container-page max-w-3xl md:col-start-2 md:row-start-2 md:mx-0 md:px-0">
           {author.photo && <div className="md:hidden">{author.photoCredit && (
             <p className="mt-2 text-[10px] text-faint">
-              Photo :{" "}
-              {author.photoSource ? (
+                            {author.photoSource ? (
                 <a href={author.photoSource} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
                   {author.photoCredit}
                 </a>

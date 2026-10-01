@@ -57,6 +57,8 @@ export function Coverflow({ items, hint = "Glissez pour parcourir · touchez le 
               href={withBase(it.href)}
               draggable={false}
               onClick={(e) => {
+                // Ctrl/Cmd/Maj-clic : ouverture dans un nouvel onglet, comme un lien normal.
+                if (isActive && (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0)) return;
                 e.preventDefault();
                 if (isActive) router.push(it.href);
                 else setActive(i);
@@ -81,6 +83,7 @@ export function Coverflow({ items, hint = "Glissez pour parcourir · touchez le 
                     src={withBase(it.image)}
                     alt=""
                     draggable={false}
+                    loading={ao <= 1 ? "eager" : "lazy"}
                     className={`pointer-events-none absolute inset-0 size-full object-cover object-top grayscale transition duration-700 ${isActive ? "brightness-95" : "brightness-75"}`}
                   />
                 ) : (

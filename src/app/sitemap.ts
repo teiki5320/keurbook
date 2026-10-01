@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { NOINDEX, siteConfig } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 import { getAllBooks, getAuthors, getCountriesWithBooks } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
@@ -9,7 +9,7 @@ export const dynamic = "force-static";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Site en maintenance : rien à indexer.
   // Site en maintenance ou version provisoire (GitHub Pages) : rien à indexer.
-  if (getMaintenance().enabled || NOINDEX) return [];
+  if (getMaintenance().enabled) return [];
   const [books, authors, countries] = await Promise.all([getAllBooks(), getAuthors(), getCountriesWithBooks()]);
   const base = siteConfig.url;
   const lists = ["/livres", "/bd", "/auteurs", "/pays", "/conseils"];

@@ -93,7 +93,7 @@ export function BooksBrowser({ books, countries, simple = false }: Props) {
         </p>
         <label className="flex items-center gap-1.5">
           <span>Trier :</span>
-          <select className="bg-transparent text-ink focus:outline-none" value={state.tri} onChange={(e) => update({ tri: (e.target.value || "nouveautes") as Sort })}>
+          <select className="rounded-sm bg-transparent text-ink focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" value={state.tri} onChange={(e) => update({ tri: (e.target.value || "nouveautes") as Sort })}>
             <option value="nouveautes">Nouveautés d&apos;abord</option>
             <option value="titre">Titre</option>
             <option value="annee">Année de parution</option>
@@ -113,7 +113,7 @@ function Pill({ label, value, onChange, options }: { label: string; value: strin
     <label className="shrink-0">
       <span className="sr-only">{label}</span>
       <select
-        className={`appearance-none rounded-full px-3.5 py-2 text-[13px] focus:outline-none ${on ? "bg-accent font-medium text-paper" : "border border-line-strong bg-paper text-ink"}`}
+        className={`appearance-none rounded-full px-3.5 py-2 text-[13px] focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${on ? "bg-accent font-medium text-paper" : "border border-line-strong bg-paper text-ink"}`}
         value={value}
         onChange={(e) => onChange(e.target.value)}
       >

@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMetadata({
 export default function TermsPage() {
   const l = legalConfig;
   return (
-    <LegalPage title="Conditions générales d'utilisation" updated="30 septembre 2026">
+    <LegalPage title="Conditions générales d'utilisation" updated="1er octobre 2026">
       <h2>Article 1 — Objet</h2>
       <p>
         Les présentes conditions générales d&apos;utilisation (CGU) encadrent l&apos;accès au site {siteConfig.url}, édité
@@ -46,8 +46,10 @@ export default function TermsPage() {
 
       <h2>Article 4 — Fiches et conseils de lecture</h2>
       <p>
-        Les fiches et conseils reflètent l&apos;avis de la rédaction. Les couvertures, titres et courtes citations restent la
-        propriété de leurs auteurs et éditeurs ; les citations sont reproduites au titre du droit de courte citation.
+        Les fiches et conseils reflètent l&apos;avis de la rédaction. Les couvertures affichées sont des illustrations créées
+        par intelligence artificielle pour Keurbook, et non les couvertures des éditions vendues. Les titres et courtes
+        citations restent la propriété de leurs auteurs et éditeurs ; les citations sont reproduites au titre du droit de
+        courte citation.
       </p>
 
       <h2>Article 5 — Propriété intellectuelle</h2>

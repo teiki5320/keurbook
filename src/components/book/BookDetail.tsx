@@ -104,7 +104,7 @@ export async function BookDetail({ book }: { book: Book }) {
           {/* 1. Couverture sur halo */}
           <div className={`-mx-5 px-5 py-10 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-xl md:px-5 md:py-6 ${halo}`}>
             <div className={`mx-auto md:w-full ${isBd ? "w-56 sm:w-64" : "w-52 sm:w-60"}`}>
-              <BookCover title={book.title} creators={names} cover={book.cover} illustration={book.illustration} className="shadow-2xl shadow-black/70" />
+              <BookCover title={book.title} creators={names} cover={book.cover} illustration={book.illustration} className="shadow-2xl shadow-black/70" priority />
             </div>
             {/* Honnêteté envers l'acheteur : l'illustration n'est pas la couverture de l'édition vendue. */}
             {!book.cover && book.illustration && (
