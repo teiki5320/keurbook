@@ -76,6 +76,8 @@ export interface Book {
   illustration?: string | null;
   /** BD : planches autorisées par l'éditeur. */
   plates?: string[];
+  /** Épuisé chez l'éditeur : la fiche précise qu'on le trouve d'occasion. */
+  outOfPrint?: boolean;
   /** Adaptations vérifiées (film, série, théâtre, BD…), affichées sur la fiche. */
   adaptations?: Adaptation[];
   featured: boolean;

@@ -78,6 +78,7 @@ export async function BookDetail({ book }: { book: Book }) {
         <AmazonButton href={buyUrl} priceCents={book.priceCents} className="py-4 text-[15px]" />
         <PileButton slug={book.slug} className="py-3.5 text-[15px]" />
       </div>
+      {book.outOfPrint && <p className="mt-2 text-xs text-muted">Épuisé chez l&apos;éditeur : disponible d&apos;occasion.</p>}
       {book.priceCents != null && <p className="mt-2 text-xs text-faint">Prix indicatif : le prix affiché sur Amazon fait foi ({formatPrice(book.priceCents)}).</p>}
     </>
   );

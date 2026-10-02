@@ -12,8 +12,9 @@ la consigne du lot. Pas de commit.
 
 1. **Tous les livres** de chaque auteur du lot **publiés en français** (écrits en français ou traduits), quel que soit le
    genre : romans, nouvelles, poésie, théâtre, essais, récits, contes, jeunesse, BD.
-2. Exclus : ouvrages collectifs et anthologies dirigées par d'autres, préfaces, articles, thèses universitaires,
-   livres jamais traduits en français.
+2. Exclus : ouvrages collectifs et anthologies dirigées par d'autres, préfaces, articles, **ouvrages savants (thèses,
+   travaux universitaires, sociologie académique)**, livres jamais traduits en français. Les livres écrits à deux sont
+   gardés, sur la fiche de l'auteur du site (le co-auteur avec `authorSlug: null`).
 3. Un livre déjà présent sur le site (tous les fichiers de `src/lib/demo/`) n'est **jamais** ajouté une deuxième fois :
    vérifier les slugs **et** les titres avant d'écrire.
 4. Si on ne trouve pas assez d'informations fiables pour écrire un résumé juste, **on n'écrit pas la fiche** : le titre
@@ -33,32 +34,47 @@ la consigne du lot. Pas de commit.
 - `quote` : `null`. `awards` : seulement les prix vérifiés.
 - Traductions : contributeur `{ role: "traducteur", name: "…", authorSlug: null }`, traducteur vérifié.
 - `adaptations` (facultatif) : seulement les adaptations vérifiées (film, série, théâtre, BD…).
-- `featured: false`, `isPublished: true`, `addedAt: "2026-10-02"`, `subtitle: null` sauf vrai sous-titre.
+- `featured: false`, `isPublished: true`, `addedAt: "2026-10-02"`, `outOfPrint: true` si le livre est épuisé chez l'éditeur (on le garde : il se trouve d'occasion), `subtitle: null` sauf vrai sous-titre.
 - Slugs : titre en minuscules, sans accents, mots séparés par « - » (ex. `les-soleils-des-independances`).
-- Prendre les fiches existantes de `src/lib/demo/livres-ouest.ts` comme modèle exact du format.
+- Prendre `src/lib/demo/lots/lot-01.ts` comme modèle exact du format (helper `livre`, 6 fiches déjà écrites).
 
-## 3. Couvertures illustrées (OpenArt)
+## 3. Couvertures illustrées (OpenArt) — planches de 4
 
-Pour chaque nouveau livre :
+Les couvertures sont produites **4 par 4** sur une seule image (30 crédits la planche, soit 7,5 par livre).
 
-1. Écrire une scène en anglais (1 ou 2 phrases) tirée de **notre** résumé : lieu, époque, objets, personnages **de dos
-   ou de loin**, sans personne réelle reconnaissable, sans texte. L'ajouter à `docs/essais/scenes-lots/lot-XX.json`
-   (`{ "slug": "scène" }`).
-2. Générer avec `openart_generate_image`, modèle `nano-banana-2`, mode `text2image`,
-   `aspectRatio: "2:3"`, `resolution: "1K"`, avec exactement ce texte (remplacer SCENE) :
+1. Pour chaque livre, écrire une scène en anglais (1 ou 2 phrases) tirée de **notre** résumé : lieu, époque, objets,
+   personnages **de dos ou de loin**, sans personne réelle reconnaissable, sans texte. L'ajouter à
+   `docs/essais/scenes-lots/lot-XX.json` (`{ "slug": "scène" }`).
+2. Grouper les livres par 4 et générer chaque planche avec `openart_generate_image`, modèle `nano-banana-2`, mode
+   `text2image`, `aspectRatio: "2:3"`, `resolution: "2K"`, avec exactement ce texte (remplacer P1 à P4) :
 
-   > Paper cut-out collage illustration, layered textured papers with fragments of African wax-print fabric patterns,
-   > bold Matisse-like shapes, warm palette of ochre, terracotta, indigo and cream. Scene: SCENE Vertical book-cover
-   > composition, keep the top third calm and uncluttered for a title. Absolutely no text anywhere, no signs, no
-   > letters, no writing, no logo, no visible faces.
+   > A sheet of FOUR separate vertical book-cover illustrations arranged in a strict 2x2 grid, all four panels exactly
+   > the same size, separated by straight plain cream-white gutters of equal width, nothing crossing the gutters. Same
+   > style in all four panels: paper cut-out collage illustration, layered textured papers with fragments of African
+   > wax-print fabric patterns, bold Matisse-like shapes, warm palette of ochre, terracotta, indigo and cream; in each
+   > panel keep the top third calm and uncluttered for a title. Panel 1 (top left): P1 Panel 2 (top right): P2 Panel 3
+   > (bottom left): P3 Panel 4 (bottom right): P4 Absolutely no text anywhere, no letters, no numbers, no writing, no
+   > logo, no visible faces.
 
-3. Lancer plusieurs générations à la fois, puis relever chaque résultat avec `openart_creation_get` (ne pas utiliser
-   `sleep`). Télécharger l'image (`curl -s -o`), puis la convertir depuis la racine du projet :
-   `node -e "require('sharp')('IN.png').resize(600).webp({quality:80}).toFile('public/illustrations/SLUG.webp')"`.
-4. **Regarder chaque image** (outil Read). Si elle contient du texte, des lettres, une enseigne ou un visage net et
-   reconnaissable, la régénérer une fois avec une scène corrigée.
+3. Lancer plusieurs planches à la fois, relever chaque résultat avec `openart_creation_get` (pas de `sleep`), télécharger
+   la planche (`curl -s -o planche.png URL`, dans le dossier scratchpad de la session, jamais dans le projet), puis la
+   découper depuis la racine du projet :
+   `node scripts/decouper-planche.mjs planche.png 2 2 slug1 slug2 slug3 slug4`
+   (ordre : haut gauche, haut droite, bas gauche, bas droite). Le script écrit `public/illustrations/<slug>.webp`.
+4. **Regarder chaque couverture découpée** (outil Read). Si l'une contient du texte, des lettres, une enseigne, un visage
+   net ou si la découpe est ratée, la refaire seule : génération simple `aspectRatio: "2:3"`, `resolution: "1K"`
+   (20 crédits) avec le texte « Paper cut-out collage illustration, layered textured papers with fragments of African
+   wax-print fabric patterns, bold Matisse-like shapes, warm palette of ochre, terracotta, indigo and cream. Scene: SCENE
+   Vertical book-cover composition, keep the top third calm and uncluttered for a title. Absolutely no text anywhere, no
+   signs, no letters, no writing, no logo, no visible faces. », puis
+   `node -e "require('sharp')('IN.png').resize(600,900).webp({quality:80}).toFile('public/illustrations/SLUG.webp')"`.
 5. Ajouter le slug à `illustres` dans le fichier du lot.
-6. Coût : 20 crédits par image. Ne pas dépasser le nombre d'images indiqué dans la consigne du lot.
+6. Ne pas dépasser le nombre de planches indiqué dans la consigne du lot.
+
+## Confidentialité
+
+Ne jamais mettre d'adresse e-mail ni d'information personnelle dans une requête (en-tête User-Agent compris).
+Pour Wikipédia, un User-Agent du type « KeurbookBot/1.0 (https://keurbook.com) » suffit.
 
 ## 4. Vérifications avant de rendre la main
 
