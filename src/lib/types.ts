@@ -76,10 +76,21 @@ export interface Book {
   illustration?: string | null;
   /** BD : planches autorisées par l'éditeur. */
   plates?: string[];
+  /** Adaptations vérifiées (film, série, théâtre, BD…), affichées sur la fiche. */
+  adaptations?: Adaptation[];
   featured: boolean;
   /** Date d'ajout au site (AAAA-MM-JJ) : sert au tri « Nouveautés ». */
   addedAt: string;
   isPublished: boolean;
+}
+
+/** Adaptation d'un livre : « film », « série », « téléfilm », « théâtre », « BD », « opéra »… */
+export interface Adaptation {
+  kind: "film" | "série" | "téléfilm" | "théâtre" | "BD" | "opéra" | "animation";
+  title: string;
+  year: number;
+  /** Réalisateur, metteur en scène ou dessinateur, si connu. */
+  by: string | null;
 }
 
 // ------------------------------------------------------------------ Auteurs
