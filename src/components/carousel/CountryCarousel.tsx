@@ -92,7 +92,11 @@ export function CountryCarousel({ countries, start = 0 }: { countries: CarouselC
         <p className="eyebrow">
           {cur.authors} {cur.authors > 1 ? "écrivains" : "écrivain"} · {titles} {titles > 1 ? "titres" : "titre"}
         </p>
-        <h2 className="mt-2 font-serif text-[52px] leading-none sm:text-7xl">{cur.name}</h2>
+        <h2 className="mt-2 font-serif text-[52px] leading-none sm:text-7xl">
+          <Link href={`/pays/${cur.slug}`} className="transition-colors hover:text-accent">
+            {cur.name}
+          </Link>
+        </h2>
         <p className="mx-auto mt-3 line-clamp-4 max-w-2xl font-serif text-xl leading-snug text-ink/75">{cur.description}</p>
         <Link href={`/pays/${cur.slug}`} className="btn-primary mt-6">
           Les écrivains {cur.of} →
