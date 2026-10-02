@@ -1,7 +1,7 @@
 ---
 title: Quels livres africains pour les tout-petits (0-5 ans) ?
 description: Albums d'auteurs africains pour les tout-petits : imagiers, histoires de grand-mère, contes à rimes et premiers voyages, avec nos conseils de 2 à 5 ans.
-date: 2027-02-01
+date: 2026-11-06
 theme: age
 resume: Pour les tout-petits, choisissez des albums aux grandes images et aux textes courts : Mes images du Sénégal et Le Taxi-brousse de Papa Diop de Christian Kingue Epanya, Grand-mère Nanan et Le Grain de maïs magique de Véronique Tadjo, ou Peau d'épice de Beata Umubyeyi Mairesse. Avant 2 ans, l'essentiel est de regarder les images ensemble.
 livres: mes-images-du-senegal, le-taxi-brousse-de-papa-diop, grand-mere-nanan, le-grain-de-mais-magique, le-bel-oiseau-et-la-pluie, peau-d-epice, le-chat-et-le-noir, l-ennui-des-apres-midi-sans-fin

@@ -1,7 +1,7 @@
 ---
 title: Qui est Wole Soyinka ?
 description: Wole Soyinka, écrivain nigérian né en 1934, premier Africain prix Nobel de littérature : son théâtre, ses combats, ses mémoires et par où commencer.
-date: 2027-01-04
+date: 2026-10-28
 theme: auteurs
 resume: Wole Soyinka est un dramaturge, poète, romancier et essayiste nigérian né en 1934 à Abeokuta, en pays yoruba. Premier écrivain africain à recevoir le prix Nobel de littérature, en 1986, il a mêlé dans son théâtre les mythes yoruba et la tragédie grecque. Emprisonné pendant la guerre du Biafra puis exilé sous la dictature, il n'a jamais cessé de dénoncer les abus du pouvoir.
 livres: le-lion-et-la-perle, les-interpretes, cet-homme-est-mort, la-mort-et-l-ecuyer-du-roi, ake-les-annees-d-enfance, il-te-faut-partir-a-l-aube, chroniques-du-pays-des-gens-les-plus-heureux-du-monde

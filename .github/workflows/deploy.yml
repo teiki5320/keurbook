@@ -1,5 +1,5 @@
 # Vérifie, construit et publie le site statique sur Cloudflare Pages (projet « keurbook »).
-# Se lance à chaque push sur main, chaque lundi (articles « Conseils » programmés),
+# Se lance à chaque push sur main, chaque lundi, mercredi et vendredi (articles « Conseils » programmés),
 # à la main (onglet Actions) et après le bouton « Maintenance ».
 name: Publier le site
 
@@ -8,13 +8,13 @@ on:
     branches: [main]
   workflow_dispatch:
   workflow_call:
-  # Chaque lundi à 0 h 15 (heure de Paris en hiver, 1 h 15 en été) : publie les articles programmés.
+  # Chaque lundi, mercredi et vendredi à 0 h 15 (heure de Paris en hiver, 1 h 15 en été) : publie les articles programmés.
   schedule:
-    - cron: "15 23 * * 0"
+    - cron: "15 23 * * 0,2,4"
 
 permissions:
   contents: read
-  # Pour réactiver la tâche du lundi (voir la dernière étape).
+  # Pour réactiver la tâche programmée (voir la dernière étape).
   actions: write
 
 # Une seule publication à la fois ; on ne coupe pas une publication en cours.
@@ -82,8 +82,8 @@ jobs:
           npx wrangler pages deploy out --project-name=keurbook --branch=main --commit-dirty=true
 
       # GitHub coupe les tâches programmées d'un dépôt public après 60 jours sans activité :
-      # chaque publication du lundi réactive la tâche, pour que les articles continuent de paraître.
-      - name: Garder la publication du lundi active
+      # chaque publication programmée réactive la tâche, pour que les articles continuent de paraître.
+      - name: Garder la publication programmée active
         if: github.event_name == 'schedule'
         env:
           GH_TOKEN: ${{ github.token }}

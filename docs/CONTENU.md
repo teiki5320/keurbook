@@ -19,7 +19,7 @@ Le site est une **ode aux écrivains** : les auteurs sont mis en avant, leurs li
 3. **Fiche livre** — `/livre/[titre]`, et **fiche BD** — `/bd/[titre]` : inchangées ; fil d'Ariane « Accueil › Auteur › Livre ».
 4. **Auteurs de A à Z** — `/auteurs` (index, recherche, filtre pays).
 5. **Pays** — `/pays` et `/pays/[pays]` : les auteurs du pays d'abord, puis les livres conseillés, les livres et les BD.
-6. **Conseils** — `/conseils` et `/conseils/[article]` : un article chaque lundi, qui répond à une question que les gens se posent.
+6. **Conseils** — `/conseils` et `/conseils/[article]` : trois articles par semaine (lundi, mercredi, vendredi), qui répondent à une question que les gens se posent.
 7. **Listes secondaires** — `/livres` et `/bd` (recherche et filtres), accessibles depuis l'accueil et le pied de page, plus depuis le menu.
 8. **Ma pile à lire** — `/pile-a-lire` (stockée dans le navigateur, sans compte).
 9. **Pages légales** — mentions légales, confidentialité, conditions (avec la mention Amazon Partenaires).
@@ -107,7 +107,7 @@ Pas de newsletter au lancement (comme Keur Cook).
 ## Conseils (`/conseils`)
 
 1. **Principe** : chaque article répond à une question que les gens tapent sur Google, et renvoie vers des fiches livres.
-2. **Rythme** : un article chaque lundi (publication programmée, comme Keur Cook).
+2. **Rythme** : trois articles par semaine, le lundi, le mercredi et le vendredi (publication programmée).
 3. **Catégories** : Découvrir · Par pays · Par âge · Auteurs · Prix et actualité.
 4. **Structure d'un article** :
    1. Titre sous forme de question
@@ -145,7 +145,7 @@ Pas de newsletter au lancement (comme Keur Cook).
 1. 60 livres et 10 BD, des classiques (Senghor, Hampâté Bâ, Kourouma…) aux contemporains
 2. Environ 40 auteurs
 3. Les pays qui ont au moins un livre
-4. 8 conseils publiés au lancement, puis un chaque lundi
+4. 8 conseils publiés au lancement, puis trois par semaine
 5. Pas d'autoédition au lancement (seulement des livres publiés chez un éditeur)
 6. Rédaction : Claude rédige, le propriétaire relit
 

@@ -1,7 +1,7 @@
 ---
 title: Quels romans africains parlent d'exil et d'immigration ?
 description: Romans et BD d'auteurs africains sur l'exil et l'immigration : rêve d'Europe, vie en France, retour au pays. Fatou Diome, Gauz, Marie NDiaye et d'autres.
-date: 2026-12-14
+date: 2026-10-26
 theme: decouvrir
 resume: Le Ventre de l'Atlantique de Fatou Diome et Debout-payé de Gauz sont deux excellents points de départ pour lire l'exil et l'immigration vus par des auteurs africains. Trois femmes puissantes de Marie NDiaye, Le Baobab fou de Ken Bugul et la BD Une éternité à Tanger prolongent la réflexion.
 livres: le-ventre-de-l-atlantique, debout-paye, trois-femmes-puissantes, le-baobab-fou, l-aventure-ambigue, les-honneurs-perdus, place-des-fetes, une-eternite-a-tanger, malamine, aux-etats-unis-d-afrique, tropique-de-la-violence, no-home

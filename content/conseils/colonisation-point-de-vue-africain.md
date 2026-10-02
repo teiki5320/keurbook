@@ -1,7 +1,7 @@
 ---
 title: Quels romans racontent la colonisation du point de vue africain ?
 description: Romans et récits d'auteurs africains qui racontent la colonisation de l'intérieur : Achebe, Oyono, Mongo Beti, Hampâté Bâ, Sembène et d'autres.
-date: 2026-11-23
+date: 2026-10-21
 theme: decouvrir
 resume: Le monde s'effondre de Chinua Achebe, Une vie de boy de Ferdinand Oyono et Le Pauvre Christ de Bomba de Mongo Beti sont les grands classiques sur la colonisation vue par les colonisés. Des romans plus récents, comme Le Roi de Kahel ou Les Maquisards, revisitent aussi cette histoire.
 livres: le-monde-s-effondre, une-vie-de-boy, le-pauvre-christ-de-bomba, l-etrange-destin-de-wangrin, climbie, amkoullel-l-enfant-peul, rever-en-temps-de-guerre, les-bouts-de-bois-de-dieu, nour-1947, les-maquisards, le-roi-de-kahel

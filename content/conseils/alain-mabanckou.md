@@ -1,7 +1,7 @@
 ---
 title: Qui est Alain Mabanckou ?
 description: Alain Mabanckou, écrivain né à Pointe-Noire en 1966, prix Renaudot 2006 : son parcours, ses livres phares et par où commencer pour le lire.
-date: 2026-11-16
+date: 2026-10-19
 theme: auteurs
 resume: Alain Mabanckou est un romancier et poète né en 1966 à Pointe-Noire, au Congo-Brazzaville. Révélé par Verre Cassé en 2005, prix Renaudot 2006 pour Mémoires de porc-épic, il est aujourd'hui l'un des écrivains africains les plus lus et les plus traduits.
 livres: verre-casse, memoires-de-porc-epic, la-vie-et-demie, le-pleurer-rire, johnny-chien-mechant

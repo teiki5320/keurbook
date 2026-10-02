@@ -1,7 +1,7 @@
 ---
 title: Qui était Amadou Hampâté Bâ ?
 description: Amadou Hampâté Bâ (vers 1900-1991), écrivain et sage malien, gardien de la tradition orale : sa vie, ses mémoires, ses contes et par où commencer.
-date: 2027-01-18
+date: 2026-11-02
 theme: auteurs
 resume: Amadou Hampâté Bâ est un écrivain, historien et conteur malien, né au tout début du XXe siècle à Bandiagara et mort en 1991 à Abidjan. Il a consacré sa vie à recueillir et transmettre les traditions orales d'Afrique de l'Ouest. On lui doit L'Étrange Destin de Wangrin, des contes peuls et des mémoires, Amkoullel, l'enfant peul, parmi les plus beaux récits d'enfance africains.
 livres: amkoullel-l-enfant-peul, oui-mon-commandant, l-etrange-destin-de-wangrin, vie-et-enseignement-de-tierno-bokar, kaidara, petit-bodiel-et-autres-contes-de-la-savane, il-n-y-a-pas-de-petite-querelle

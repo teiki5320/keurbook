@@ -19,7 +19,7 @@ export default function ConseilsPage() {
   const categories = Object.entries(CONSEIL_CATEGORIES).filter(([k]) => conseils.some((c) => c.theme === k));
   return (
     <>
-      <PageHeader title="Conseils" intro="Nos réponses aux questions que l'on se pose sur la littérature africaine. Un nouvel article chaque lundi.">
+      <PageHeader title="Conseils" intro="Nos réponses aux questions que l'on se pose sur la littérature africaine. Trois nouveaux articles par semaine : le lundi, le mercredi et le vendredi.">
         <nav aria-label="Catégories" className="mt-6 flex flex-wrap gap-2">
           {categories.map(([k, name]) => (
             <Link key={k} href={`#${k}`} className="tag">

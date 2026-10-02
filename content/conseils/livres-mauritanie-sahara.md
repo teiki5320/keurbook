@@ -1,7 +1,7 @@
 ---
 title: Quels livres lire sur la Mauritanie et le Sahara ?
 description: Les romans de Mbarek Ould Beyrouk, une BD dans le désert et les souvenirs de Birago Diop : les livres pour découvrir la Mauritanie, ses nomades et le Sahara.
-date: 2027-01-11
+date: 2026-10-30
 theme: pays
 resume: Le grand écrivain francophone de la Mauritanie est Mbarek Ould Beyrouk. Commencez par Le Tambour des larmes, prix Ahmadou-Kourouma 2016, qui suit une jeune nomade en fuite, puis Le Griot de l'émir pour le Sahara d'autrefois. La BD Toubab or not toubab offre une aventure dans le désert, et Birago Diop raconte ses années mauritaniennes dans ses mémoires.
 livres: le-tambour-des-larmes, et-le-ciel-a-oublie-de-pleuvoir, nouvelles-du-desert, le-griot-de-l-emir, je-suis-seul, saara, toubab-or-not-toubab, a-rebrousse-gens

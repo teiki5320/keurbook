@@ -1,7 +1,7 @@
 ---
 title: Quels livres lire sur les tirailleurs sénégalais ?
 description: Romans, poèmes et témoignages sur les tirailleurs sénégalais, soldats africains de l'armée française : Frère d'âme de David Diop et d'autres lectures.
-date: 2026-11-30
+date: 2026-11-27
 theme: pays
 resume: Le livre incontournable sur les tirailleurs sénégalais est Frère d'âme de David Diop, prix Goncourt des lycéens 2018, qui plonge dans les tranchées de 1914-1918. On peut le compléter par les poèmes de Senghor dans Hosties noires, le récit pionnier Force-Bonté de Bakary Diallo et Le Terroriste noir de Tierno Monénembo.
 livres: frere-d-ame, ethiopiques, les-bouts-de-bois-de-dieu, allah-n-est-pas-oblige

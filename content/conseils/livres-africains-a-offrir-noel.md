@@ -1,7 +1,7 @@
 ---
 title: Quels livres d'auteurs africains offrir à Noël ?
 description: Idées de cadeaux de Noël : romans, BD, contes et essais d'auteurs africains à offrir selon le profil de chaque lecteur, des enfants aux grands lecteurs.
-date: 2026-12-07
+date: 2026-11-30
 theme: actualite
 resume: Pour un grand lecteur, offrez La plus secrète mémoire des hommes ou Jacaranda ; pour quelqu'un qui aime rire, Verre Cassé ou Debout-payé ; pour un adolescent, Petit pays ou Aya de Yopougon. Pour un enfant, Akissi ou Le Pagne noir sont des valeurs sûres.
 livres: la-plus-secrete-memoire-des-hommes, jacaranda, verre-casse, debout-paye, petit-pays, aya-de-yopougon, akissi, le-pagne-noir, l-autre-moitie-du-soleil, no-home, frere-d-ame, une-si-longue-lettre, afrotopia, ethiopiques, tempete-sur-bangui, l-enfant-noir

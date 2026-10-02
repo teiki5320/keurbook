@@ -1,7 +1,7 @@
 ---
 title: Qui est Gaël Faye ?
 description: Gaël Faye, rappeur et romancier né au Burundi : son parcours, Petit pays (Goncourt des lycéens 2016), Jacaranda (Renaudot 2024) et par où commencer.
-date: 2026-10-19
+date: 2026-10-12
 theme: auteurs
 resume: Gaël Faye est un auteur-compositeur et romancier franco-rwandais, né en 1982 à Bujumbura, au Burundi. Son premier roman, Petit pays, prix Goncourt des lycéens 2016, est devenu un immense succès ; son deuxième, Jacaranda, a reçu le prix Renaudot en 2024.
 livres: petit-pays, jacaranda, notre-dame-du-nil, murambi-le-livre-des-ossements

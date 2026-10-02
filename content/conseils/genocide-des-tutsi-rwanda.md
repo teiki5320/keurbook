@@ -1,7 +1,7 @@
 ---
 title: Quels livres lire pour comprendre le génocide des Tutsi au Rwanda ?
 description: Romans, témoignages et BD pour comprendre le génocide des Tutsi au Rwanda en 1994 : Mukasonga, Gaël Faye, Boubacar Boris Diop et d'autres.
-date: 2026-11-02
+date: 2026-10-23
 theme: pays
 resume: Pour comprendre le génocide des Tutsi, commencez par Notre-Dame du Nil de Scholastique Mukasonga, qui montre comment la haine s'est préparée, et Petit pays de Gaël Faye, plus accessible. Murambi, le livre des ossements de Boubacar Boris Diop et la BD Rwanda 1994 affrontent directement les massacres.
 livres: notre-dame-du-nil, petit-pays, jacaranda, murambi-le-livre-des-ossements, rwanda-1994

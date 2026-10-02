@@ -1,7 +1,7 @@
 ---
 title: Quels livres lire sur Maurice et l'océan Indien ?
 description: Ananda Devi, Nathacha Appanah, Ali Zamir, Abdulrazak Gurnah : les romans pour découvrir l'île Maurice, les Comores, Zanzibar et l'océan Indien loin des cartes postales.
-date: 2027-01-25
+date: 2026-11-04
 theme: pays
 resume: Pour découvrir l'île Maurice, lisez Ève de ses décombres d'Ananda Devi et Les Rochers de Poudre d'Or de Nathacha Appanah, qui racontent l'île loin des plages et son histoire d'engagés indiens. Prolongez avec Anguille sous roche d'Ali Zamir pour les Comores et Paradis d'Abdulrazak Gurnah, prix Nobel 2021, pour la côte swahilie.
 livres: eve-de-ses-decombres, le-sari-vert, les-rochers-de-poudre-d-or, le-dernier-frere, tropique-de-la-violence, anguille-sous-roche, paradis, tombe-tombe-au-fond-de-l-eau

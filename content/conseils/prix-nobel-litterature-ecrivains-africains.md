@@ -1,7 +1,7 @@
 ---
 title: Quels écrivains africains ont reçu le prix Nobel de littérature ?
 description: Wole Soyinka, Nadine Gordimer, J. M. Coetzee, Abdulrazak Gurnah : les écrivains d'Afrique subsaharienne lauréats du Nobel de littérature et quoi lire.
-date: 2026-12-21
+date: 2026-10-09
 theme: actualite
 resume: Quatre écrivains d'Afrique subsaharienne ont reçu le prix Nobel de littérature : le Nigérian Wole Soyinka en 1986, les Sud-Africains Nadine Gordimer en 1991 et J. M. Coetzee en 2003, et le Tanzanien Abdulrazak Gurnah en 2021. Aucun écrivain d'Afrique subsaharienne écrivant en français ne l'a encore obtenu.
 livres: disgrace, le-monde-s-effondre, rever-en-temps-de-guerre
@@ -49,4 +49,4 @@ Enfin, aucun écrivain d'Afrique subsaharienne de langue française n'a encore r
 - Pour l'exil et l'Afrique de l'Est : *Paradis* d'Abdulrazak Gurnah.
 - Pour l'Afrique du Sud de l'apartheid : *Fille de Burger* de Nadine Gordimer.
 
-Et à Noël, un livre de lauréat du Nobel fait toujours un beau cadeau : retrouvez d'autres idées dans [Quels livres d'auteurs africains offrir à Noël ?](/conseils/livres-africains-a-offrir-noel).
+Pour aller plus loin, découvrez aussi [les autres grands prix littéraires remportés par des auteurs africains](/conseils/goncourt-renaudot-auteurs-africains).

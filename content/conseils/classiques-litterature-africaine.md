@@ -1,7 +1,7 @@
 ---
 title: Quels sont les classiques de la littérature africaine à lire absolument ?
 description: Onze classiques de la littérature africaine à lire au moins une fois, de L'Enfant noir à Une si longue lettre, avec ce qui fait leur importance.
-date: 2026-10-26
+date: 2026-10-14
 theme: decouvrir
 resume: Les grands classiques de la littérature africaine sont pour la plupart parus entre les années 1950 et 1980, autour des indépendances. L'Enfant noir, Le monde s'effondre, L'Aventure ambiguë, Les Soleils des indépendances et Une si longue lettre forment un bon socle pour commencer.
 livres: l-enfant-noir, le-monde-s-effondre, l-aventure-ambigue, une-vie-de-boy, les-bouts-de-bois-de-dieu, soundjata-ou-l-epopee-mandingue, les-soleils-des-independances, le-devoir-de-violence, une-si-longue-lettre, la-vie-et-demie, les-contes-d-amadou-koumba

@@ -7,7 +7,7 @@ export interface Conseil {
   title: string;
   /** Description pour Google (70 à 170 caractères). */
   description: string;
-  /** Date de publication (AAAA-MM-JJ, un lundi) : l'article n'apparaît qu'à partir de ce jour. */
+  /** Date de publication (AAAA-MM-JJ, un lundi, un mercredi ou un vendredi) : l'article n'apparaît qu'à partir de ce jour. */
   date: string;
   theme: ConseilCategory;
   /** Réponse courte affichée en haut de l'article. */
@@ -47,7 +47,7 @@ export function parseConseil(slug: string, raw: string): Conseil {
   };
 }
 
-/** Date du jour à Paris (AAAA-MM-JJ) : un article daté d'un lundi paraît le lundi à 0 h, heure française. */
+/** Date du jour à Paris (AAAA-MM-JJ) : un article paraît le jour de sa date à 0 h, heure française. */
 export function todayInParis(now = new Date()): string {
   return new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
 }

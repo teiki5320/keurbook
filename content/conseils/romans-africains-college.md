@@ -1,7 +1,7 @@
 ---
 title: Quels romans africains lire au collège ?
 description: Romans, contes, récits et BD d'auteurs africains à lire au collège, de la 6e à la 3e : notre sélection par niveau, pour les élèves et les parents.
-date: 2026-11-09
+date: 2026-10-16
 theme: age
 resume: En 6e et en 5e, les contes de Birago Diop et de Bernard Dadié, L'Enfant noir de Camara Laye et Soundjata sont de très bons choix. En 4e et en 3e, on peut passer à Une vie de boy, Petit pays ou Le Ventre de l'Atlantique, qui abordent la colonisation, la guerre ou l'exil.
 livres: les-contes-d-amadou-koumba, le-pagne-noir, soundjata-ou-l-epopee-mandingue, l-enfant-noir, petit-joss, la-vie-de-pahe, amkoullel-l-enfant-peul, climbie, une-vie-de-boy, petit-pays, le-ventre-de-l-atlantique

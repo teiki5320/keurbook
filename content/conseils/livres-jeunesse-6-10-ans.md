@@ -1,7 +1,7 @@
 ---
 title: Quels livres jeunesse africains pour les 6–10 ans ?
 description: Contes, épopées et BD : les meilleurs livres africains pour les enfants de 6 à 10 ans, à lire seul ou à voix haute, avec nos conseils par âge.
-date: 2026-10-12
+date: 2026-10-07
 theme: age
 resume: Pour les 6–10 ans, les contes africains sont la meilleure porte d'entrée : Le Pagne noir de Bernard Dadié et Les Contes d'Amadou Koumba de Birago Diop, à lire à voix haute. En BD, la série Akissi plaît dès 6 ans, et vers 9 ou 10 ans l'épopée de Soundjata fait rêver les amateurs d'aventure.
 livres: le-pagne-noir, les-contes-d-amadou-koumba, soundjata-ou-l-epopee-mandingue, l-enfant-noir, akissi

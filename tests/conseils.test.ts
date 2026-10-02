@@ -44,7 +44,7 @@ describe("Conseils : en-têtes", () => {
       assert.match(c.title, /\?$/, "le titre doit être la question (terminée par « ? »)");
       assert.ok(c.description.length >= DESCRIPTION_MIN && c.description.length <= DESCRIPTION_MAX, `description de ${c.description.length} caractères (attendu ${DESCRIPTION_MIN} à ${DESCRIPTION_MAX})`);
       assert.match(c.date, /^\d{4}-\d{2}-\d{2}$/, "date au format AAAA-MM-JJ");
-      assert.equal(new Date(`${c.date}T12:00:00Z`).getUTCDay(), 1, "publication un lundi");
+      assert.ok([1, 3, 5].includes(new Date(`${c.date}T12:00:00Z`).getUTCDay()), "publication un lundi, un mercredi ou un vendredi");
       assert.ok(c.resume.length > 0, "réponse courte (resume) obligatoire");
       assert.ok(c.body.length > 0, "corps de l'article vide");
     });
