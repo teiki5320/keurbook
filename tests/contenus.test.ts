@@ -88,3 +88,30 @@ describe("Pays", () => {
     });
   }
 });
+
+describe("Compléments (extras)", async () => {
+  const { AUTHOR_FACTS, BOOK_ADAPTATIONS, BOOK_QUOTES } = await import("../src/lib/demo/extras");
+  const bookSlugs = new Set(allBooks.map((b) => b.slug));
+  it("les anecdotes visent des auteurs du site, 4 au plus, phrases courtes", () => {
+    for (const [slug, facts] of Object.entries(AUTHOR_FACTS)) {
+      assert.ok(authorMap.has(slug), `auteur inconnu : ${slug}`);
+      assert.ok(facts.length >= 1 && facts.length <= 4, `${slug} : ${facts.length} anecdotes`);
+      for (const f of facts) assert.ok(f.length <= 260, `${slug} : anecdote trop longue`);
+    }
+  });
+  it("les citations visent des livres du site et font moins de 200 caractères", () => {
+    for (const [slug, q] of Object.entries(BOOK_QUOTES)) {
+      assert.ok(bookSlugs.has(slug), `livre inconnu : ${slug}`);
+      assert.ok(q.text.length > 0 && q.text.length < 200, `${slug} : citation de ${q.text.length} caractères`);
+    }
+  });
+  it("les adaptations visent des livres du site, sans doublon", () => {
+    for (const [slug, list] of Object.entries(BOOK_ADAPTATIONS)) {
+      assert.ok(bookSlugs.has(slug), `livre inconnu : ${slug}`);
+      const book = allBooks.find((b) => b.slug === slug)!;
+      const keys = (book.adaptations ?? []).map((a) => `${a.kind}|${a.title}|${a.year}`);
+      assert.equal(new Set(keys).size, keys.length, `${slug} : adaptation en double`);
+      for (const a of list) assert.ok(a.year > 1890 && a.year < 2030, `${slug} : année ${a.year}`);
+    }
+  });
+});
