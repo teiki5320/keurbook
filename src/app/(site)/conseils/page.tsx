@@ -4,7 +4,9 @@ import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { PageHeader } from "@/components/layout/Section";
 import { CONSEIL_CATEGORIES } from "@/lib/conseils/categories";
 import { getConseils } from "@/lib/data/conseils";
+import { siteConfig } from "@/lib/config";
 import { getMaintenance } from "@/lib/data/settings";
+import { itemListLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
@@ -19,6 +21,10 @@ export default function ConseilsPage() {
   const categories = Object.entries(CONSEIL_CATEGORIES).filter(([k]) => conseils.some((c) => c.theme === k));
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(itemListLd("Conseils de lecture", conseils.map((c) => ({ name: c.title, url: `${siteConfig.url}/conseils/${c.slug}` })))) }}
+      />
       <PageHeader title="Conseils" intro="Nos réponses aux questions que l'on se pose sur la littérature africaine. Trois nouveaux articles par semaine : le lundi, le mercredi et le vendredi.">
         <nav aria-label="Catégories" className="mt-6 flex flex-wrap gap-2">
           {categories.map(([k, name]) => (

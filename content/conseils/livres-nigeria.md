@@ -1,6 +1,6 @@
 ---
 title: Quels livres lire pour découvrir le Nigeria ?
-description: Chinua Achebe, Wole Soyinka, Chimamanda Ngozi Adichie : les romans, récits et pièces traduits en français pour découvrir le Nigeria, pays le plus peuplé d'Afrique.
+description: Chinua Achebe, Wole Soyinka, Chimamanda Ngozi Adichie : les romans, récits et pièces traduits en français pour découvrir le Nigeria.
 date: 2026-09-28
 theme: pays
 resume: Pour découvrir le Nigeria, commencez par Le monde s'effondre de Chinua Achebe, le roman africain le plus lu au monde. Enchaînez avec L'Autre Moitié du soleil de Chimamanda Ngozi Adichie, sur la guerre du Biafra, puis Americanah pour le Nigeria d'aujourd'hui. Wole Soyinka, prix Nobel 1986, complète le tableau avec ses souvenirs d'enfance et son théâtre.

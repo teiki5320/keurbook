@@ -1,6 +1,6 @@
 ---
 title: Qu'est-ce que la littérature afropéenne ?
-description: Afropéen : le mot désigne les Européens d'ascendance africaine. Ce que recouvre la littérature afropéenne, Léonora Miano en tête, et les livres pour la découvrir.
+description: Afropéen : le mot désigne les Européens d'ascendance africaine. Ce que recouvre la littérature afropéenne, Léonora Miano en tête, et les livres à lire.
 date: 2026-09-28
 theme: decouvrir
 resume: La littérature afropéenne raconte la vie des Européens d'ascendance africaine, qui ne se sentent ni seulement africains, ni seulement européens. Léonora Miano en est la grande voix en français, avec Blues pour Élise et son essai Afropea ; Wilfried N'Sondé, Max Lobe ou Alain Mabanckou en offrent d'autres facettes.

@@ -48,3 +48,15 @@ export function Breadcrumb({ items }: { items: Array<{ name: string; href?: stri
     </nav>
   );
 }
+
+/** Texte de présentation d'une page d'entrée (en bas de page), lu par les visiteurs comme par les moteurs de recherche. */
+export function EntryText({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="container-page mt-20 max-w-3xl">
+      <h2 className="section-title">{title}</h2>
+      <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-muted [&_a]:text-ink [&_a]:underline [&_a]:decoration-line-strong [&_a]:underline-offset-4 [&_a:hover]:text-accent">
+        {children}
+      </div>
+    </section>
+  );
+}

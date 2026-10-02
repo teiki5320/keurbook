@@ -13,6 +13,8 @@ export interface CoverflowItem {
   /** Petite ligne au-dessus du titre (années, nombre de titres…). */
   eyebrow?: string;
   image: string | null;
+  /** Texte alternatif de l'image (portrait, illustration…). */
+  imageAlt?: string;
   href: string;
 }
 
@@ -81,7 +83,7 @@ export function Coverflow({ items, hint = "Glissez pour parcourir · touchez le 
                 {it.image ? (
                   <img
                     src={withBase(it.image)}
-                    alt=""
+                    alt={it.imageAlt ?? ""}
                     draggable={false}
                     loading={ao <= 1 ? "eager" : "lazy"}
                     className={`pointer-events-none absolute inset-0 size-full object-cover object-top transition duration-700 ${isActive ? "brightness-95 grayscale-0" : "brightness-75 grayscale"}`}

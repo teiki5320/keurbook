@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BookDetail } from "@/components/book/BookDetail";
 import { creatorNames } from "@/lib/book-utils";
-import { getBookBySlug, getBooks } from "@/lib/data/books";
+import { getBookBySlug, getBookPageTitle, getBooks } from "@/lib/data/books";
 import { getMaintenance } from "@/lib/data/settings";
 import { clip, pageMetadata } from "@/lib/metadata";
 
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps<"/bd/[slug]">): Pro
   const book = await getBookBySlug((await params).slug, "bd");
   if (!book) return {};
   return pageMetadata({
-    title: `${book.title} (BD), ${creatorNames(book)}`,
+    title: await getBookPageTitle(book),
     description: clip(`${book.title} (${book.year}) , BD de ${creatorNames(book)} : ${book.summary}`),
     path: `/bd/${book.slug}`,
     image: book.cover,

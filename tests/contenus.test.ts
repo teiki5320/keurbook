@@ -115,3 +115,22 @@ describe("Compléments (extras)", async () => {
     }
   });
 });
+
+describe("Titres des pages livres et BD", async () => {
+  const { bookPageTitle, creatorNames, normalize } = await import("../src/lib/book-utils");
+  it("chaque fiche a un titre unique (le tome distingue les albums d'une même série)", () => {
+    const seen = new Map<string, string>();
+    for (const b of books) {
+      const homonym = books.some((o) => o.slug !== b.slug && o.kind === b.kind && normalize(o.title) === normalize(b.title));
+      const t = bookPageTitle(b, homonym);
+      assert.ok(!seen.has(t), `titre en double : « ${t} » (${seen.get(t)} et ${b.slug})`);
+      seen.set(t, b.slug);
+    }
+  });
+  it("un même nom n'apparaît qu'une fois dans la liste des auteurs", () => {
+    for (const b of books) {
+      const names = creatorNames(b).split(/, | et /);
+      assert.equal(new Set(names).size, names.length, `${b.slug} : ${creatorNames(b)}`);
+    }
+  });
+});

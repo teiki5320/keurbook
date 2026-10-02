@@ -1,6 +1,6 @@
 ---
 title: Quels romans africains choisir pour un club de lecture ?
-description: Huit romans africains qui font débattre en club de lecture : Une si longue lettre, Les Impatientes, Frère d'âme, Petit pays, Americanah… avec des pistes de discussion.
+description: Huit romans africains qui font débattre en club de lecture : Une si longue lettre, Les Impatientes, Frère d'âme, Petit pays… avec des pistes de discussion.
 date: 2026-09-28
 theme: decouvrir
 resume: Pour un club de lecture, choisissez des romans faciles à trouver en poche et qui posent une vraie question. Une si longue lettre de Mariama Bâ et Les Impatientes de Djaïli Amadou Amal font débattre du mariage et de la liberté des femmes ; Le Ventre de l'Atlantique de Fatou Diome, du rêve d'Europe ; Frère d'âme de David Diop, de la guerre et de la folie.

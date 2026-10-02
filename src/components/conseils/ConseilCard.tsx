@@ -12,7 +12,7 @@ export function ConseilCard({ conseil }: { conseil: Conseil }) {
         {conseil.image ? (
           <img
             src={withBase(conseil.image)}
-            alt=""
+            alt={`Illustration de l'article « ${conseil.title} »`}
             loading="lazy"
             className="aspect-[3/2] w-24 rounded object-cover transition duration-500 group-hover:scale-[1.03] sm:w-48"
           />

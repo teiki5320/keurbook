@@ -37,31 +37,30 @@ export function BookCover({
   if (!cover && illustration)
     return (
       <div
-        role="img"
-        aria-label={`${title}, ${creators} — couverture illustrée par Keurbook`}
         style={{ backgroundColor: toneFor(title) }}
         className={`@container relative aspect-[2/3] w-full overflow-hidden rounded-[3px_6px_6px_3px] shadow-xl shadow-black/40 ${className}`}
       >
+        {/* Le texte alternatif porte le titre et l'auteur ; le titre posé par-dessus est masqué aux lecteurs d'écran. */}
         <img
           src={withBase(illustration)}
-          alt=""
+          alt={`${title}, ${creators} : couverture illustrée par Keurbook`}
           className="absolute inset-0 size-full object-cover"
           loading={priority ? "eager" : "lazy"}
           fetchPriority={priority ? "high" : "auto"}
         />
         {/* Bandeau du titre en haut, signature en bas */}
-        <div className="absolute inset-x-0 top-0 h-[42%] bg-linear-to-b from-paper/90 via-paper/55 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-[20%] bg-linear-to-t from-paper/80 to-transparent" />
-        <div className="absolute inset-x-0 top-0 flex flex-col items-center px-[8%] pt-[9%] text-center">
+        <div aria-hidden className="absolute inset-x-0 top-0 h-[42%] bg-linear-to-b from-paper/90 via-paper/55 to-transparent" />
+        <div aria-hidden className="absolute inset-x-0 bottom-0 h-[20%] bg-linear-to-t from-paper/80 to-transparent" />
+        <div aria-hidden className="absolute inset-x-0 top-0 flex flex-col items-center px-[8%] pt-[9%] text-center">
           <span className="line-clamp-2 text-[max(6px,4.2cqw)] leading-snug tracking-[0.2em] text-accent uppercase">{creators}</span>
           <span className="mt-[4%] line-clamp-3 font-serif text-[max(11px,12.5cqw)] leading-[0.98] text-balance text-ink">{title}</span>
         </div>
-        <div className="absolute inset-x-0 bottom-[4%] flex flex-col items-center gap-[1.5cqw]">
+        <div aria-hidden className="absolute inset-x-0 bottom-[4%] flex flex-col items-center gap-[1.5cqw]">
           <span className="block h-px w-[9%] bg-accent" />
           <span className="font-serif text-[max(6px,4.4cqw)] text-ink/85 italic">Keurbook</span>
         </div>
         {/* Tranche du livre */}
-        <div className="absolute inset-y-0 left-0 w-[5%] bg-linear-to-r from-black/55 via-white/15 to-black/0" />
+        <div aria-hidden className="absolute inset-y-0 left-0 w-[5%] bg-linear-to-r from-black/55 via-white/15 to-black/0" />
       </div>
     );
   if (cover) return <img src={withBase(cover)} alt={`Couverture de ${title}`} className={`aspect-[2/3] w-full rounded-md object-cover shadow-xl shadow-black/40 ${className}`} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} />;
