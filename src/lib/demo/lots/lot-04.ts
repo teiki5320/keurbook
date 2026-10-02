@@ -179,7 +179,6 @@ export const livres: Book[] = [
     isbn: "9782842614331",
     format: "poche",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "les-deux-meres-de-guillaume-ismael-dzewatama",
@@ -308,7 +307,6 @@ export const livres: Book[] = [
     isbn: "9782260010999",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "trop-de-soleil-tue-l-amour",
@@ -394,7 +392,6 @@ export const livres: Book[] = [
     isbn: "9782915129083",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
 
   // ------------------------------------------------------------------ Ferdinand Oyono
@@ -439,7 +436,6 @@ export const livres: Book[] = [
     isbn: "9782264008817",
     format: "poche",
     awards: [],
-    outOfPrint: true,
   }),
 
   // ------------------------------------------------------------------ Calixthe Beyala
@@ -505,7 +501,6 @@ export const livres: Book[] = [
     isbn: "9782290046012",
     format: "poche",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "le-petit-prince-de-belleville",
@@ -593,7 +588,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "la-petite-fille-du-reverbere",
@@ -657,7 +651,6 @@ export const livres: Book[] = [
     isbn: "9782842702328",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "comment-cuisiner-son-mari-a-l-africaine",
@@ -806,7 +799,6 @@ export const livres: Book[] = [
     isbn: "9782226181909",
     format: "grand-format",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "le-christ-selon-l-afrique",

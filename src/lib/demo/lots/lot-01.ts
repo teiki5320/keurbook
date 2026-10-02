@@ -336,7 +336,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "anthologie-de-la-nouvelle-poesie-negre-et-malgache",
@@ -379,7 +378,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "la-belle-histoire-de-leuk-le-lievre",
@@ -422,7 +420,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "nation-et-voie-africaine-du-socialisme",
@@ -444,7 +441,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "liberte-1-negritude-et-humanisme",
@@ -467,7 +463,6 @@ export const livres: Book[] = [
     isbn: "9782020022422",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "les-fondements-de-l-africanite",
@@ -489,7 +484,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "liberte-2-nation-et-voie-africaine-du-socialisme",
@@ -512,7 +506,6 @@ export const livres: Book[] = [
     isbn: "9782020023047",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "lettres-d-hivernage",
@@ -534,7 +527,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "liberte-3-negritude-et-civilisation-de-l-universel",
@@ -557,7 +549,6 @@ export const livres: Book[] = [
     isbn: "9782020046602",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "elegies-majeures",
@@ -580,7 +571,6 @@ export const livres: Book[] = [
     isbn: "9782020052313",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "la-poesie-de-l-action",
@@ -603,7 +593,6 @@ export const livres: Book[] = [
     isbn: "9782234006201",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "liberte-4-socialisme-et-planification",
@@ -626,7 +615,6 @@ export const livres: Book[] = [
     isbn: "9782020065542",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "ce-que-je-crois",
@@ -692,7 +680,6 @@ export const livres: Book[] = [
     isbn: "9782020191005",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
 
   // ------------------------------------------------------------------ Mohamed Mbougar Sarr
@@ -1085,7 +1072,6 @@ export const livres: Book[] = [
     isbn: "9782912485816",
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "kaveena",

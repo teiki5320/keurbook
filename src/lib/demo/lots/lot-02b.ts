@@ -1009,7 +1009,6 @@ export const livres: Book[] = [
     isbn: "9782842613952",
     format: "poche",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "les-mille-et-une-bibles-du-sexe",

@@ -56,7 +56,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "mistiriijo-la-mangeuse-d-ames",
@@ -79,7 +78,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "coeur-du-sahel",
@@ -145,7 +143,6 @@ export const livres: Book[] = [
     isbn: "9782842614393",
     format: "grand-format",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "l-invention-du-beau-regard",
@@ -233,7 +230,6 @@ export const livres: Book[] = [
     isbn: "9782848761770",
     format: "grand-format",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "la-saison-des-prunes",
@@ -255,7 +251,6 @@ export const livres: Book[] = [
     isbn: "9782848762883",
     format: "grand-format",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "empreintes-de-crabe",
@@ -277,7 +272,6 @@ export const livres: Book[] = [
     isbn: "9782709662499",
     format: "grand-format",
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "la-revolte-anglophone",
@@ -736,7 +730,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "du-rituel-a-la-scene-chez-les-bassa-du-cameroun",
@@ -758,7 +751,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "orphee-dafric",
@@ -823,7 +815,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "singue-mura",
@@ -846,7 +837,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "un-touareg-s-est-marie-a-une-pygmee",
@@ -869,7 +859,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
 
   // ------------------------------------------------------------ Francis Bebey
@@ -893,7 +882,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "la-poupee-ashanti",
@@ -915,7 +903,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "le-roi-albert-d-effidi",
@@ -937,7 +924,6 @@ export const livres: Book[] = [
     isbn: null,
     format: null,
     awards: [],
-    outOfPrint: true,
   }),
   livre({
     slug: "le-ministre-et-le-griot",

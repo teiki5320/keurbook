@@ -34,7 +34,8 @@ la consigne du lot. Pas de commit.
 - `quote` : `null`. `awards` : seulement les prix vérifiés.
 - Traductions : contributeur `{ role: "traducteur", name: "…", authorSlug: null }`, traducteur vérifié.
 - `adaptations` (facultatif) : seulement les adaptations vérifiées (film, série, théâtre, BD…).
-- `featured: false`, `isPublished: true`, `addedAt: "2026-10-02"`, `outOfPrint: true` si le livre est épuisé chez l'éditeur (on le garde : il se trouve d'occasion), `subtitle: null` sauf vrai sous-titre.
+- `featured: false`, `isPublished: true`, `addedAt: "2026-10-02"`, `subtitle: null` sauf vrai sous-titre.
+- `outOfPrint: true` **seulement si c'est prouvé** (éditeur ou libraire qui l'indique « indisponible » / « épuisé », ou notice qui le dit). Une simple estimation (édition ancienne, pas trouvée) ne suffit pas : dans le doute, ne pas mettre le champ.
 - Slugs : titre en minuscules, sans accents, mots séparés par « - » (ex. `les-soleils-des-independances`).
 - Prendre `src/lib/demo/lots/lot-01.ts` comme modèle exact du format (helper `livre`, 6 fiches déjà écrites).
 
@@ -57,7 +58,8 @@ Les couvertures sont produites **4 par 4** sur une seule image (30 crédits la p
    > logo, no visible faces.
 
 3. Lancer plusieurs planches à la fois, relever chaque résultat avec `openart_creation_get` (pas de `sleep`), télécharger
-   la planche (`curl -s -o planche.png URL`, dans le dossier scratchpad de la session, jamais dans le projet), puis la
+   la planche (`curl -s -o planche.png URL`, dans **son propre sous-dossier** `scratchpad/lot-XX/` : d'autres agents
+   travaillent en même temps dans le scratchpad ; jamais dans le projet), puis la
    découper depuis la racine du projet :
    `node scripts/decouper-planche.mjs planche.png 2 2 slug1 slug2 slug3 slug4`
    (ordre : haut gauche, haut droite, bas gauche, bas droite). Le script écrit `public/illustrations/<slug>.webp`.
@@ -70,6 +72,12 @@ Les couvertures sont produites **4 par 4** sur une seule image (30 crédits la p
    `node -e "require('sharp')('IN.png').resize(600,900).webp({quality:80}).toFile('public/illustrations/SLUG.webp')"`.
 5. Ajouter le slug à `illustres` dans le fichier du lot.
 6. Ne pas dépasser le nombre de planches indiqué dans la consigne du lot.
+
+## Nouveaux auteurs (lot 09)
+
+Fiche `Author` complète dans `auteurs` (modèle : `src/lib/demo/auteurs-bd.ts`), pays **déjà présent** dans
+`src/lib/countries.ts` (sinon on écarte l'auteur et on le signale). Photo seulement si elle est libre de droits
+(Wikimedia Commons, licence et auteur notés dans `photos`), fichier dans `public/authors/<slug>.webp`.
 
 ## Confidentialité
 
