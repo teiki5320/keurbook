@@ -10,6 +10,7 @@ import { auteursOuest } from "./auteurs-ouest";
 import { bandesDessinees } from "./bd";
 import { livresCentreEstSud } from "./livres-centre-est-sud";
 import { livresOuest } from "./livres-ouest";
+import { AUTHOR_FACTS, BOOK_ADAPTATIONS, BOOK_QUOTES } from "./extras";
 import { ILLUSTRATED } from "./illustrations";
 import { LOTS } from "./lots";
 import { AUTHOR_PHOTOS } from "./photos";
@@ -18,9 +19,12 @@ const illustrated = new Set([...ILLUSTRATED, ...LOTS.flatMap((l) => l.illustres)
 const photos = Object.assign({}, AUTHOR_PHOTOS, ...LOTS.map((l) => l.photos));
 
 /** Livres et BD, avec leur illustration de couverture Keurbook quand elle existe (illustrations.ts et lots). */
-export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bandesDessinees, ...LOTS.flatMap((l) => l.livres)].map((b) =>
-  illustrated.has(b.slug) ? { ...b, illustration: `/illustrations/${b.slug}.webp` } : b,
-);
+export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bandesDessinees, ...LOTS.flatMap((l) => l.livres)].map((b) => ({
+  ...b,
+  ...(illustrated.has(b.slug) ? { illustration: `/illustrations/${b.slug}.webp` } : {}),
+  quote: b.quote ?? BOOK_QUOTES[b.slug] ?? null,
+  ...(BOOK_ADAPTATIONS[b.slug] ? { adaptations: [...(b.adaptations ?? []), ...BOOK_ADAPTATIONS[b.slug]] } : {}),
+}));
 
 /** Livres de l'auteur présents sur le site. */
 const booksOf = (slug: string) => allBooks.filter((b) => b.contributors.some((c) => c.authorSlug === slug));
@@ -40,7 +44,7 @@ const titleKey = (t: string) => normalize(t.replace(/\s*\(\d{4}\)\s*$/, "")).rep
  */
 export const allAuthors: Author[] = [...auteursOuest, ...auteursCentreEstSud, ...auteursBd, ...LOTS.flatMap((l) => l.auteurs)].map((a) => {
   const onSite = new Set(booksOf(a.slug).map((b) => titleKey(b.title)));
-  const base = { ...a, otherTitles: a.otherTitles.filter((t) => !onSite.has(titleKey(t))) };
+  const base = { ...a, otherTitles: a.otherTitles.filter((t) => !onSite.has(titleKey(t))), facts: a.facts ?? AUTHOR_FACTS[a.slug] };
   const p = photos[a.slug];
   return p ? { ...base, photo: p.photo, photoCredit: p.credit, photoSource: p.source } : { ...base, coverImage: coverImageOf(base) };
 });

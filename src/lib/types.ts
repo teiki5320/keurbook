@@ -117,6 +117,8 @@ export interface Author {
   startWith: string | null;
   /** Autres titres, sans fiche sur le site : « Titre (année) ». */
   otherTitles: string[];
+  /** « Le saviez-vous ? » : 2 à 4 anecdotes vérifiées, une phrase chacune. */
+  facts?: string[];
   awards: Award[];
 }
 

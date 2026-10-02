@@ -249,6 +249,26 @@ export async function BookDetail({ book }: { book: Book }) {
             </section>
           )}
 
+          {/* Adaptations (cinéma, théâtre, BD…) */}
+          {book.adaptations && book.adaptations.length > 0 && (
+            <section className="mt-8" aria-labelledby="adaptations">
+              <h2 id="adaptations" className="eyebrow">
+                Adapté
+              </h2>
+              <ul className="mt-3 space-y-2">
+                {book.adaptations.map((a) => (
+                  <li key={`${a.kind}-${a.title}-${a.year}`} className="flex items-baseline gap-3 rounded-md border border-line-strong p-4">
+                    <span className="shrink-0 text-[11px] tracking-[0.14em] text-accent uppercase">{a.kind}</span>
+                    <span className="font-serif text-xl leading-tight">
+                      <i>{a.title}</i> <span className="text-faint">{a.year}</span>
+                      {a.by && <span className="block text-sm text-muted not-italic">{a.by}</span>}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {/* 11. Thèmes */}
           <section className="mt-8" aria-labelledby="themes">
             <h2 id="themes" className="sr-only">

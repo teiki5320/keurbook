@@ -176,6 +176,23 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
             </div>
           )}
 
+          {/* Le saviez-vous ? */}
+          {author.facts && author.facts.length > 0 && (
+            <section className="mt-8 rounded-md border border-line-strong p-5" aria-labelledby="saviez-vous">
+              <h2 id="saviez-vous" className="eyebrow text-(--era)">
+                Le saviez-vous ?
+              </h2>
+              <ul className="mt-3 space-y-3">
+                {author.facts.map((f) => (
+                  <li key={f} className="flex gap-3 font-serif text-xl leading-snug text-ink/90">
+                    <span aria-hidden className="mt-2.5 size-1.5 shrink-0 rounded-full bg-(--era)" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {/* 8. Prix */}
           {author.awards.length > 0 && (
             <section className="mt-8 space-y-2" aria-labelledby="prix">
