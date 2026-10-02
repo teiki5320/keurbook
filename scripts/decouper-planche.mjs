@@ -2,11 +2,15 @@
  * Découpe une planche OpenArt (2 ou 4 couvertures séparées par des marges claires) en couvertures 600 px (webp, 2:3).
  * Usage : node scripts/decouper-planche.mjs planche.png <colonnes> <lignes> slug1 slug2 …
  * (ordre de lecture : de gauche à droite, puis de haut en bas). Sortie : public/illustrations/<slug>.webp
+ * Avec KEURBOOK_FORMAT=conseil : images d'articles 1200×805 (3:2) dans public/conseils/<slug>.webp
  */
 import sharp from "sharp";
 
 const [file, cols, rows, ...slugs] = process.argv.slice(2);
 const C = Number(cols), R = Number(rows);
+const conseil = process.env.KEURBOOK_FORMAT === "conseil";
+const RATIO = conseil ? 1200 / 805 : 2 / 3;
+const [OW, OH, DIR] = conseil ? [1200, 805, "public/conseils"] : [600, 900, "public/illustrations"];
 const { data, info } = await sharp(file).removeAlpha().raw().toBuffer({ resolveWithObject: true });
 const { width: W, height: H, channels: ch } = info;
 const px = (x, y) => { const i = (y * W + x) * ch; return [data[i], data[i + 1], data[i + 2]]; };
@@ -40,13 +44,13 @@ for (let r = 0; r < R; r++) for (let c = 0; c < C; c++) {
   while (x1 > bx && colPale(x1 - 1, y0, y1) > 0.97) x1--;
   while (y0 < ay && rowPale(y0, x0, x1) > 0.97) y0++;
   while (y1 > by && rowPale(y1 - 1, x0, x1) > 0.97) y1--;
-  // Petite marge de sécurité, puis recadrage au format 2:3 centré.
+  // Petite marge de sécurité, puis recadrage centré au format voulu (2:3 pour les couvertures).
   x0 += 4; x1 -= 4; y0 += 4; y1 -= 4;
   let w = x1 - x0, h = y1 - y0;
-  if (w / h > 2 / 3) { const nw = Math.round((h * 2) / 3); x0 += Math.round((w - nw) / 2); w = nw; }
-  else { const nh = Math.round((w * 3) / 2); y0 += Math.round((h - nh) / 2); h = nh; }
+  if (w / h > RATIO) { const nw = Math.round(h * RATIO); x0 += Math.round((w - nw) / 2); w = nw; }
+  else { const nh = Math.round(w / RATIO); y0 += Math.round((h - nh) / 2); h = nh; }
   const slug = slugs[i++];
   if (!slug) break;
-  await sharp(file).extract({ left: x0, top: y0, width: w, height: h }).resize(600, 900).webp({ quality: 80 }).toFile(`public/illustrations/${slug}.webp`);
+  await sharp(file).extract({ left: x0, top: y0, width: w, height: h }).resize(OW, OH).webp({ quality: 80 }).toFile(`${DIR}/${slug}.webp`);
   console.log(slug, `${w}×${h}`);
 }
