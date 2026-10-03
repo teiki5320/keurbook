@@ -46,6 +46,17 @@ export default async function CountriesPage() {
           Faites glisser le carrousel pour voyager d&apos;ouest en est, ou cherchez directement un écrivain dans la liste des <Link href="/auteurs">auteurs</Link>. Pour un premier pas, lisez notre conseil{" "}
           <Link href="/conseils/par-quel-livre-commencer">Par quel livre commencer pour découvrir la littérature africaine ?</Link>
         </p>
+        {/* Ligne discrète : chaque page pays a un lien depuis cette page (pour les visiteurs sans carrousel et pour Google). */}
+        <nav aria-label="Tous les pays" className="pt-2 text-[13px] leading-loose text-faint">
+          {[...countries]
+            .sort((a, b) => a.name.localeCompare(b.name, "fr"))
+            .map((c, i) => (
+              <span key={c.code}>
+                {i > 0 && " · "}
+                <Link href={`/pays/${c.slug}`}>{c.name}</Link>
+              </span>
+            ))}
+        </nav>
       </EntryText>
     </>
   );
