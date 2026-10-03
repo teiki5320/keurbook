@@ -81,6 +81,12 @@ jobs:
           npx wrangler pages project create keurbook --production-branch=main || true
           npx wrangler pages deploy out --project-name=keurbook --branch=main --commit-dirty=true
 
+      # Signale à Bing (IndexNow) les pages nouvelles ou modifiées depuis hier (articles du jour, nouvelles fiches).
+      - name: Signaler les nouvelles pages (IndexNow)
+        if: steps.secrets.outputs.ok == 'true'
+        continue-on-error: true
+        run: node scripts/indexnow.mjs
+
       # GitHub coupe les tâches programmées d'un dépôt public après 60 jours sans activité :
       # chaque publication programmée réactive la tâche, pour que les articles continuent de paraître.
       - name: Garder la publication programmée active
