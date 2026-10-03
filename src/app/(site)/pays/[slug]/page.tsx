@@ -100,6 +100,17 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
         </Section>
       )}
 
+      {/* Repères sur la littérature du pays (pays qui ont encore peu de livres sur le site) */}
+      {country.more && country.more.length > 0 && (
+        <Section title={`La littérature ${country.of} en quelques repères`}>
+          <div className="max-w-3xl space-y-4 text-[16px] leading-relaxed text-ink/85">
+            {country.more.map((p) => (
+              <p key={p.slice(0, 40)}>{p}</p>
+            ))}
+          </div>
+        </Section>
+      )}
+
       {/* 4. Par où commencer */}
       {startCards.length > 0 && (
         <Section title="Par où commencer">
