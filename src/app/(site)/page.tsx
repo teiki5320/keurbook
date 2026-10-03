@@ -23,6 +23,22 @@ export const metadata: Metadata = pageMetadata({
   absoluteTitle: true,
 });
 
+/** Portraits de la mosaïque d'accueil, dans l'ordre d'affichage (les 9 premiers se voient sur téléphone). */
+const MOSAIC = [
+  "mariama-ba",
+  "ousmane-sembene",
+  "chimamanda-ngozi-adichie",
+  "alain-mabanckou",
+  "aminata-sow-fall",
+  "nelson-mandela",
+  "jean-joseph-rabearivelo",
+  "scholastique-mukasonga",
+  "mohamed-mbougar-sarr",
+  "chinua-achebe",
+  "djaili-amadou-amal",
+  "abdulrazak-gurnah",
+];
+
 /** Accueil : une ode aux écrivains. Les auteurs d'abord, rangés par grandes époques ; leurs livres sont sur leur fiche. */
 export default async function HomePage() {
   if (getMaintenance().enabled) return null;
@@ -41,9 +57,8 @@ export default async function HomePage() {
   // Carrousel des pays, comme sur la page Pays : d'ouest en est, en partant du Sénégal.
   const westToEast = [...countries].sort((a, b) => a.lon - b.lon);
   const startCountry = Math.max(0, westToEast.findIndex((c) => c.code === "SN"));
-  // Mosaïque de l'ouverture : des portraits de toutes les époques, en alternance.
-  const withPhoto = generations.map((g) => g.authors.filter((x) => x.author.photo).map((x) => x.author));
-  const mosaic = Array.from({ length: 12 }, (_, i) => withPhoto[i % withPhoto.length]?.[Math.floor(i / withPhoto.length)]).filter((a) => a != null);
+  // Mosaïque de l'ouverture : 12 portraits choisis (nets, sans texte), toutes époques mêlées.
+  const mosaic = MOSAIC.map((slug) => authors.find((a) => a.slug === slug)).filter((a) => a?.photo != null);
   const bookCount = (await Promise.all(authors.map((a) => getBooksByAuthor(a.slug)))).flat().filter((b, i, all) => all.findIndex((x) => x.slug === b.slug) === i).length;
 
   return (
@@ -61,15 +76,18 @@ export default async function HomePage() {
       {/* 1. Ouverture : mosaïque de portraits et dédicace */}
       <section className="relative overflow-hidden">
         <div aria-hidden className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6">
+          {/* Teinte chaude (terracotta) ; chaque portrait s'allume en couleur à son tour, toutes les 2 secondes. */}
           {mosaic.map((a, i) => (
-            <img
-              key={a.slug}
-              src={withBase(a.photo!)}
-              alt=""
-              loading={i < 6 ? "eager" : "lazy"}
-              fetchPriority={i < 3 ? "high" : "low"}
-              className="aspect-[3/4] w-full object-cover object-top brightness-[.55] grayscale"
-            />
+            <div key={a!.slug} className="mosaique-case relative overflow-hidden" style={{ "--rang": i } as React.CSSProperties}>
+              <img
+                src={withBase(a!.photo!)}
+                alt=""
+                loading={i < 6 ? "eager" : "lazy"}
+                fetchPriority={i < 3 ? "high" : "low"}
+                className="aspect-[3/4] w-full object-cover object-top"
+              />
+              <span className="mosaique-teinte absolute inset-0" />
+            </div>
           ))}
         </div>
         <div className="absolute inset-0 bg-linear-to-b from-paper/30 via-paper/40 via-40% to-paper" />
