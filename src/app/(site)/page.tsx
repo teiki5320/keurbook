@@ -76,7 +76,7 @@ export default async function HomePage() {
       {/* 1. Ouverture : mosaïque de portraits et dédicace */}
       <section className="relative overflow-hidden">
         <div aria-hidden className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6">
-          {/* Teinte chaude (terracotta) ; chaque portrait s'allume en couleur à son tour, toutes les 2 secondes. */}
+          {/* Teinte chaude (terracotta) ; chaque portrait s'allume en couleur à son tour, toutes les secondes. */}
           {mosaic.map((a, i) => (
             <div key={a!.slug} className="mosaique-case relative overflow-hidden" style={{ "--rang": i } as React.CSSProperties}>
               <img

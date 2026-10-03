@@ -167,7 +167,7 @@ body {
   }
 }
 
-/* Mosaïque d'accueil : portraits teintés terracotta, qui s'allument chacun leur tour (cycle de 24 s, 2 s d'écart). */
+/* Mosaïque d'accueil : portraits teintés terracotta, qui s'allument chacun leur tour (cycle de 12 s, 1 s d'écart). */
 .mosaique-case img {
   filter: grayscale(1) brightness(0.62) contrast(1.05);
 }
@@ -178,12 +178,12 @@ body {
 }
 @media (prefers-reduced-motion: no-preference) {
   .mosaique-case img {
-    animation: mosaique-photo 24s ease-in-out infinite;
-    animation-delay: calc(var(--rang) * 2s);
+    animation: mosaique-photo 12s ease-in-out infinite;
+    animation-delay: calc(var(--rang) * 1s);
   }
   .mosaique-teinte {
-    animation: mosaique-teinte 24s ease-in-out infinite;
-    animation-delay: calc(var(--rang) * 2s);
+    animation: mosaique-teinte 12s ease-in-out infinite;
+    animation-delay: calc(var(--rang) * 1s);
   }
 }
 @keyframes mosaique-photo {
