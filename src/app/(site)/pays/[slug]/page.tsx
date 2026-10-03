@@ -93,9 +93,21 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
               title: a.name,
               eyebrow: lifeYears(a) || undefined,
               image: a.photo ?? a.coverImage ?? null,
+              imageAlt: a.photo ? `Portrait de ${a.name}` : `Illustration d'un livre de ${a.name}`,
               href: `/auteur/${a.slug}`,
             }))}
           />
+        </Section>
+      )}
+
+      {/* Repères sur la littérature du pays (pays qui ont encore peu de livres sur le site) */}
+      {country.more && country.more.length > 0 && (
+        <Section title={`La littérature ${country.of} en quelques repères`}>
+          <div className="max-w-3xl space-y-4 text-[16px] leading-relaxed text-ink/85">
+            {country.more.map((p) => (
+              <p key={p.slice(0, 40)}>{p}</p>
+            ))}
+          </div>
         </Section>
       )}
 

@@ -3,7 +3,9 @@ import { AuthorsBrowser } from "@/components/browse/AuthorsBrowser";
 import { PageHeader } from "@/components/layout/Section";
 import { lifeYears } from "@/lib/book-utils";
 import { getAuthors, getBooksByAuthor, getCountriesWithBooks, getCountry } from "@/lib/data/books";
+import { siteConfig } from "@/lib/config";
 import { getMaintenance } from "@/lib/data/settings";
+import { itemListLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
@@ -28,6 +30,10 @@ export default async function AuthorsPage() {
   );
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(itemListLd("Auteurs africains", authors.map((a) => ({ name: a.name, url: `${siteConfig.url}/auteur/${a.slug}` })))) }}
+      />
       <PageHeader title="Auteurs" intro="Tous les écrivains et dessinateurs d'Afrique subsaharienne et de sa diaspora, de A à Z." />
       <AuthorsBrowser authors={items} countries={countries.filter((c) => c.authors > 0)} />
     </>

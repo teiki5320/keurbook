@@ -104,7 +104,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           ) : (
             <div className="container-page pt-16 md:px-0 md:pt-10">
               {author.coverImage ? (
-                <img src={withBase(author.coverImage)} alt="" className="size-28 rounded-full object-cover md:size-40" />
+                <img src={withBase(author.coverImage)} alt={`Illustration d'un livre de ${author.name}`} className="size-28 rounded-full object-cover md:size-40" />
               ) : (
                 <span aria-hidden className="flex size-28 items-center justify-center rounded-full bg-white font-serif text-4xl text-muted md:size-40 md:text-5xl">
                   {initials(author.name)}

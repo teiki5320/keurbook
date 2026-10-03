@@ -1,7 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import { amazonUrl } from "../amazon";
-import { authorSlugsOf, bookCountry, byNewest, creatorNames, normalize, periodOf } from "../book-utils";
+import { authorSlugsOf, bookCountry, bookPageTitle, byNewest, creatorNames, normalize, periodOf } from "../book-utils";
 import { COUNTRIES } from "../countries";
 import { allAuthors, allBooks } from "../demo";
 import { GENERATIONS, generationOf } from "../generations";
@@ -50,6 +50,12 @@ export async function getBooks(kind: BookKind) {
 
 export async function getBookBySlug(slug: string, kind: BookKind) {
   return (await getBooks(kind)).find((b) => b.slug === slug) ?? null;
+}
+
+/** Titre de la page du livre (le tome n'apparaît que si un autre livre du même type porte le même titre). */
+export async function getBookPageTitle(book: Book) {
+  const homonym = (await getBooks(book.kind)).some((b) => b.slug !== book.slug && normalize(b.title) === normalize(book.title));
+  return bookPageTitle(book, homonym);
 }
 
 export async function getAuthorBySlug(slug: string) {

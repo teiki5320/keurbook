@@ -40,7 +40,7 @@ export function AuthorTile({
       {image ? (
         <img
           src={withBase(image)}
-          alt=""
+          alt={photo ? `Portrait de ${name}` : `Illustration d'un livre de ${name}`}
           className={`portrait-vivant size-full object-cover ${photo ? "object-top" : "object-center"} brightness-75 grayscale transition duration-700 group-hover:scale-[1.04] group-hover:brightness-95 group-hover:grayscale-0 group-focus-visible:brightness-95 group-focus-visible:grayscale-0`}
           loading="lazy"
         />

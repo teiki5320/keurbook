@@ -134,6 +134,8 @@ export interface Country {
   of: string;
   /** Présentation de la littérature du pays, 3 à 5 phrases. */
   description: string;
+  /** Repères supplémentaires (paragraphes), pour les pays qui ont encore peu de livres sur le site. */
+  more?: string[];
   /** « Par où commencer » : 3 slugs de livres du pays (au plus). */
   startWith: string[];
   /** Position sur la carte (longitude, latitude). */

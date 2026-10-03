@@ -78,6 +78,10 @@ export const COUNTRIES: Country[] = [
     of: "du Burkina Faso",
     description:
       "Au Burkina Faso, la littérature écrite en français naît avec Nazi Boni, dont le roman Crépuscule des temps anciens, paru en 1962, fait revivre le monde bwa d'avant la colonisation. Le pays reste très attaché à ses traditions orales, aux contes et au théâtre, un genre très vivant sur place. Les langues nationales, comme le mooré ou le dioula, nourrissent les récits. C'est une littérature encore discrète en France, qui mérite d'être découverte.",
+    more: [
+      "Nazi Boni, né en 1909 dans l'ouest du pays, publie Crépuscule des temps anciens en 1962 : c'est souvent présenté comme le premier roman burkinabè. Il y fait revivre la société bwa, ses rites et ses croyances, avant l'arrivée des colonisateurs. D'autres romanciers ont pris le relais, comme Monique Ilboudo, qui publie Le Mal de peau en 1992 avant de devenir ministre de la Promotion des droits humains.",
+      "Le journaliste Norbert Zongo, assassiné en 1998, a lui aussi écrit des romans, dont Le Parachutage, une satire du pouvoir. Mais le Burkina Faso est surtout un grand pays de scène et d'image : Ouagadougou accueille depuis 1969 le Fespaco, le grand festival du cinéma africain, et le théâtre y est très vivant. Les contes en mooré, en dioula ou en fulfuldé restent une source d'inspiration majeure pour les écrivains.",
+    ],
     startWith: ["crepuscule-des-temps-anciens"],
     lon: -1.6,
     lat: 12.3,
@@ -122,6 +126,10 @@ export const COUNTRIES: Country[] = [
     of: "du Ghana",
     description:
       "Premier pays d'Afrique subsaharienne à devenir indépendant, en 1957, le Ghana a une littérature de langue anglaise riche, portée notamment par Ayi Kwei Armah et Ama Ata Aidoo. Sa diaspora compte aujourd'hui des voix majeures, comme Yaa Gyasi, née au Ghana et élevée aux États-Unis. Son premier roman, traduit en français, relie l'histoire de la traite à l'Amérique contemporaine. C'est une bonne manière d'aborder ce pays en français.",
+    more: [
+      "Le Ghana est l'un des berceaux de la littérature africaine de langue anglaise. Ayi Kwei Armah y publie en 1968 L'âge d'or n'est pas pour demain, roman sévère sur la corruption qui suit l'indépendance ; le roman a été traduit en français. Ama Ata Aidoo, romancière, dramaturge et ministre de l'Éducation, a fait entendre la voix des femmes ghanéennes, et le poète Kofi Awoonor a mêlé la poésie anglaise et les chants funèbres ewe.",
+      "La diaspora ghanéenne compte aujourd'hui des romancières lues dans le monde entier. Yaa Gyasi, née au Ghana et élevée aux États-Unis, a connu un grand succès avec No Home, qui suit sept générations depuis la traite atlantique. Taiye Selasi, d'origine ghanéenne et nigériane, raconte dans Le Ravissement des innocents une famille dispersée entre Accra et l'Amérique. Pour un lecteur français, ces romans traduits sont une belle porte d'entrée.",
+    ],
     startWith: ["no-home"],
     lon: -1.0,
     lat: 7.9,
@@ -155,6 +163,10 @@ export const COUNTRIES: Country[] = [
     of: "du Gabon",
     description:
       "La littérature gabonaise en français s'est développée surtout après l'indépendance. Angèle Rawiri, avec Elonga en 1980, a été la première romancière du pays. Plus récemment, Janis Otsiemi s'est fait un nom avec des romans policiers ancrés dans les rues de Libreville, et le dessinateur Pahé a raconté son enfance en bande dessinée. Les langues fang, punu ou myènè nourrissent contes et récits.",
+    more: [
+      "Le Gabon compte peu d'écrivains par rapport à ses voisins, mais plusieurs voix fortes. Angèle Rawiri ouvre la voie en 1980 avec Elonga, premier roman d'une Gabonaise. Laurent Owondo publie Au bout du silence en 1985, et Justine Mintsa fait paraître Histoire d'Awu chez Gallimard en 2000, le portrait d'une femme fang prise entre tradition et vie moderne.",
+      "Depuis les années 2000, la littérature gabonaise s'est ouverte au roman noir avec Janis Otsiemi, dont les polars racontent Libreville, ses trafics et ses petits arrangements, dans une langue pleine d'expressions locales. La romancière Bessora, née à Bruxelles d'un père gabonais, explore quant à elle les identités multiples. Et la bande dessinée a trouvé son ambassadeur avec Pahé, dont La Vie de Pahé fait rire les lecteurs des deux côtés de la Méditerranée.",
+    ],
     startWith: [],
     lon: 11.6,
     lat: -0.6,
@@ -232,6 +244,10 @@ export const COUNTRIES: Country[] = [
     of: "du Kenya",
     description:
       "La littérature kényane est dominée par la figure de Ngũgĩ wa Thiong'o, qui a d'abord écrit en anglais avant de choisir d'écrire en kikuyu, sa langue maternelle, pour défendre les langues africaines. Ses romans et essais racontent la colonisation britannique, la révolte des Mau Mau et les dérives de l'indépendance. Le pays a aussi une scène littéraire contemporaine vivante, en anglais et en swahili. Plusieurs de ces livres sont traduits en français.",
+    more: [
+      "Ngũgĩ wa Thiong'o, né en 1938 et mort en 2025, publie en 1964 Ne pleure pas, mon enfant, souvent cité comme le premier roman en anglais d'un auteur d'Afrique de l'Est. En 1977, sa pièce écrite en kikuyu avec Ngũgĩ wa Mĩriĩ, jouée par des paysans de son village, lui vaut d'être emprisonné sans procès. En prison, il écrit sur du papier toilette son premier roman en kikuyu, puis décide de ne plus écrire de fiction en anglais.",
+      "Après lui, une nouvelle génération a fait du Kenya un foyer littéraire très actif. Binyavanga Wainaina, prix Caine en 2002, fonde la revue Kwani? et signe en 2005 un texte ironique devenu célèbre, Comment écrire sur l'Afrique, qui se moque des clichés des écrivains occidentaux. Le pays écrit aussi beaucoup en swahili, et Nairobi est devenue l'une des capitales de l'édition en Afrique de l'Est.",
+    ],
     startWith: ["rever-en-temps-de-guerre"],
     lon: 37.9,
     lat: 0.2,
@@ -265,6 +281,10 @@ export const COUNTRIES: Country[] = [
     of: "des Comores",
     description:
       "La littérature comorienne en français est jeune, mais elle s'affirme depuis les années 1980. Elle parle de l'insularité, de l'exil et des liens complexes avec Mayotte et la France. Ali Zamir s'est fait remarquer en 2016 avec un premier roman écrit d'un seul souffle. Le shikomori, langue des îles, et une riche tradition orale nourrissent ces récits.",
+    more: [
+      "L'archipel des Comores a une longue tradition orale, en shikomori et en arabe, mais la littérature écrite en français y est récente. Le premier roman comorien en français, La République des imberbes de Mohamed Toihiri, paraît en 1985 : une satire du régime d'Ali Soilihi. Depuis, poètes, conteurs et romanciers ont fait connaître la vie des îles, entre tradition, religion et départs vers la France.",
+      "Salim Hatubou, installé à Marseille où vit une importante communauté comorienne, a beaucoup fait pour transmettre les contes de l'archipel, notamment aux enfants. Ali Zamir est la révélation de ces dernières années : son premier roman, Anguille sous roche, paru en 2016, est une seule longue phrase portée par la voix d'une jeune femme. La question de Mayotte, de l'exil et de la traversée vers l'île voisine revient souvent dans ces livres.",
+    ],
     startWith: ["anguille-sous-roche"],
     lon: 43.9,
     lat: -11.9,
@@ -287,6 +307,10 @@ export const COUNTRIES: Country[] = [
     of: "de Tanzanie",
     description:
       "La Tanzanie, née en 1964 de l'union du Tanganyika et de l'archipel de Zanzibar, est le grand pays de la langue swahilie. Une riche littérature y est écrite dans cette langue, portée au XXᵉ siècle par le poète Shaaban Robert, et nourrie par des siècles d'échanges autour de l'océan Indien. En langue anglaise, Abdulrazak Gurnah, né à Zanzibar et installé en Angleterre, raconte l'exil et la mémoire de la côte est-africaine. Son prix Nobel de littérature, en 2021, a fait découvrir ses romans à de nombreux lecteurs français.",
+    more: [
+      "La Tanzanie est d'abord le pays du swahili, langue d'une riche poésie ancienne venue de la côte et de Zanzibar. Au XXᵉ siècle, Shaaban Robert en devient le grand classique. Après l'indépendance, Euphrase Kezilahabi renouvelle le roman et la poésie en swahili, tandis qu'Ebrahim Hussein en fait une langue de théâtre. Ces auteurs restent malheureusement très peu traduits en français.",
+      "La voix tanzanienne la plus connue des lecteurs français est celle d'Abdulrazak Gurnah, né à Zanzibar en 1948. Il quitte l'île à la fin des années 1960, après la révolution de 1964, et s'installe en Angleterre, où il écrit en anglais. Ses romans, comme Paradis, racontent les échanges entre l'Afrique de l'Est, l'Arabie et l'Inde, la colonisation et l'exil. Le prix Nobel de littérature, reçu en 2021, a fait traduire ou rééditer une grande partie de son œuvre.",
+    ],
     startWith: ["paradis", "pres-de-la-mer"],
     lon: 34.9,
     lat: -6.4,

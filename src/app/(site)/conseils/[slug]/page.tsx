@@ -88,7 +88,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={withBase(conseil.image)}
-              alt=""
+              alt={`Illustration de l'article « ${conseil.title} »`}
               width={1200}
               height={800}
               fetchPriority="high"

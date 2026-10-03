@@ -21,7 +21,7 @@ export interface Conseil {
 }
 
 export const DESCRIPTION_MIN = 70;
-export const DESCRIPTION_MAX = 170;
+export const DESCRIPTION_MAX = 160;
 
 /** En-tête simple « clé: valeur » entre deux lignes « --- » ; les listes sont séparées par des virgules. */
 export function parseConseil(slug: string, raw: string): Conseil {

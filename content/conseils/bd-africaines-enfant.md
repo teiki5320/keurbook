@@ -1,6 +1,6 @@
 ---
 title: Quelles BD africaines offrir à un enfant ?
-description: Les meilleures BD africaines à offrir à un enfant, selon son âge : Akissi dès 6 ans, puis Aya de Yopougon et La Vie de Pahé pour les plus grands, et des contes illustrés.
+description: Les meilleures BD africaines à offrir à un enfant selon son âge : Akissi dès 6 ans, puis Aya de Yopougon et La Vie de Pahé pour les plus grands.
 date: 2026-10-05
 theme: age
 resume: Pour un enfant de 6 à 10 ans, la série Akissi de Marguerite Abouet et Mathieu Sapin est le meilleur choix : drôle, vivante et pensée pour les jeunes lecteurs. Pour les adolescents, Aya de Yopougon et La Vie de Pahé prennent le relais.

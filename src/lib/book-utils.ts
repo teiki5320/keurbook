@@ -5,9 +5,9 @@ import type { Author, Book, Contributor } from "./types";
 /** Auteurs principaux (auteur, scénariste, dessinateur), sans les traducteurs. */
 export const creators = (book: Pick<Book, "contributors">): Contributor[] => book.contributors.filter((c) => c.role !== "traducteur");
 
-/** « Mariama Bâ » ou « Marguerite Abouet et Clément Oubrerie ». */
+/** « Mariama Bâ » ou « Marguerite Abouet et Clément Oubrerie » (une personne à la fois scénariste et dessinatrice n'est nommée qu'une fois). */
 export function creatorNames(book: Pick<Book, "contributors">): string {
-  const names = creators(book).map((c) => c.name);
+  const names = [...new Set(creators(book).map((c) => c.name))];
   return names.length <= 1 ? (names[0] ?? "") : `${names.slice(0, -1).join(", ")} et ${names.at(-1)}`;
 }
 
@@ -50,4 +50,26 @@ export function lifeYears(a: Pick<Author, "birthYear" | "deathYear">): string {
   if (a.birthYear && a.deathYear) return `${a.birthYear} – ${a.deathYear}`;
   if (a.birthYear) return `né·e en ${a.birthYear}`;
   return "";
+}
+
+/** Titre et tome : « Aya de Yopougon, tome 2 », « Akissi : Paix temporaire ». */
+export function titleWithSubtitle(book: Pick<Book, "title" | "subtitle">): string {
+  if (!book.subtitle) return book.title;
+  const tome = book.subtitle.match(/^tome\s+(\d+)$/i);
+  return tome ? `${book.title}, tome ${tome[1]}` : `${book.title} : ${book.subtitle}`;
+}
+
+/**
+ * Titre de la fiche pour les moteurs de recherche, qui tient si possible dans 60 caractères avec « | Keurbook » :
+ * le sous-titre (tome) n'est ajouté que si un autre livre porte le même titre, et la liste des auteurs se réduit
+ * au premier nom quand elle est trop longue.
+ * @param homonym un autre livre du même type porte le même titre
+ */
+export function bookPageTitle(book: Pick<Book, "title" | "subtitle" | "kind" | "contributors">, homonym: boolean, max = 60, suffix = " | Keurbook"): string {
+  const base = homonym ? titleWithSubtitle(book) : book.title;
+  const head = book.kind === "bd" ? `${base} (BD)` : base;
+  const all = creatorNames(book);
+  const first = creators(book)[0]?.name ?? "";
+  const candidates = [...new Set([all && `${head}, ${all}`, first && `${head}, ${first}`, head].filter(Boolean))];
+  return candidates.find((t) => t.length + suffix.length <= max) ?? candidates.find((t) => t.length <= max) ?? head;
 }

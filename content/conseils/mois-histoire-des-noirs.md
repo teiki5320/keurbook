@@ -1,6 +1,6 @@
 ---
 title: Quels livres lire pour le Mois de l'histoire des Noirs ?
-description: Février est le Mois de l'histoire des Noirs : romans sur la traite, mémoires de Mandela, biographies pour la jeunesse et BD d'histoire africaine pour le célébrer.
+description: Février est le Mois de l'histoire des Noirs : romans sur la traite, mémoires de Mandela, biographies et BD d'histoire africaine pour le célébrer.
 date: 2027-02-01
 theme: actualite
 resume: Pour le Mois de l'histoire des Noirs, lisez No Home de Yaa Gyasi, qui suit trois siècles d'une famille entre le Ghana et l'Amérique, et La Saison de l'ombre de Léonora Miano sur les débuts de la traite. Un long chemin vers la liberté de Nelson Mandela et les biographies pour la jeunesse de Nimrod et Véronique Tadjo complètent la sélection.

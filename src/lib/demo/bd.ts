@@ -5,7 +5,7 @@ export const bandesDessinees: Book[] = [
     slug: "aya-de-yopougon",
     kind: "bd",
     title: "Aya de Yopougon",
-    subtitle: null,
+    subtitle: "Tome 1",
     contributors: [
       { role: "scenariste", name: "Marguerite Abouet", authorSlug: "marguerite-abouet" },
       { role: "dessinateur", name: "Clément Oubrerie", authorSlug: null },
@@ -175,7 +175,7 @@ export const bandesDessinees: Book[] = [
     slug: "tempete-sur-bangui",
     kind: "bd",
     title: "Tempête sur Bangui",
-    subtitle: null,
+    subtitle: "Tome 1",
     contributors: [
       { role: "scenariste", name: "Didier Kassaï", authorSlug: "didier-kassai" },
       { role: "dessinateur", name: "Didier Kassaï", authorSlug: "didier-kassai" },
