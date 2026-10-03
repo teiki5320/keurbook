@@ -83,7 +83,9 @@ Ouvrez http://localhost:3000. Variables facultatives : `cp .env.example .env.loc
 
 ## Publication
 
-Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` vérifie, construit et publie sur Cloudflare Pages (projet `keurbook`) à chaque push sur `main`, chaque lundi (articles programmés) et à la main. Il ne publie que si les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` sont présents. Le workflow « Maintenance » met le site en pause ou le rouvre (`content/maintenance.json`).
+Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` vérifie, construit et publie sur Cloudflare Pages (projet `keurbook`) à chaque push sur `main`, chaque lundi, mercredi et vendredi (articles programmés) et à la main. Il ne publie que si les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` sont présents. Le workflow « Maintenance » met le site en pause ou le rouvre (`content/maintenance.json`).
+
+**IndexNow (Bing, Yandex, Seznam…)** : le workflow `.github/workflows/indexnow.yml` lit le sitemap publié et signale toutes ses pages, chaque lundi à 2 h UTC et à la demande (onglet Actions → « IndexNow » → « Run workflow »). En local : `node scripts/indexnow.mjs`. La clé, publique par conception, est dans `public/86e162766f5615ec8020869f4b66761d.txt` et dans le script.
 
 Mise en route restante :
 

@@ -1,0 +1,35 @@
+# IndexNow : signale toutes les pages du site (sitemap publié) à Bing, Yandex, Seznam…
+# Une fois par semaine, le lundi après la publication du dimanche soir, et à la demande (bouton « Run workflow »).
+# Pas à chaque commit : inutile de signaler plusieurs fois par jour les mêmes pages.
+name: IndexNow
+
+on:
+  workflow_dispatch:
+  # Chaque lundi à 2 h UTC (3 h ou 4 h à Paris), après la publication programmée du dimanche à 23 h 15 UTC.
+  schedule:
+    - cron: "0 2 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  signaler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+
+      - name: Installer Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22
+
+      - name: Signaler les pages à IndexNow
+        run: node scripts/indexnow.mjs
