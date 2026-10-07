@@ -22,7 +22,7 @@ export const siteConfig = {
     "Une ode aux écrivains d'Afrique subsaharienne et de sa diaspora : leurs vies, leurs œuvres et leurs livres en français, du roman à la BD.",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://keurbook.com").replace(/\/$/, ""),
   locale: "fr_FR",
-  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@keurbook.com",
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "keurbook@toakeur.com",
 };
 
 /** Informations légales de l'éditeur, affichées dans les mentions légales et les conditions d'utilisation. */

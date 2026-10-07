@@ -91,5 +91,5 @@ Mise en route restante :
 
 1. Créer le tag Amazon Partenaires `keurbook-21` (ou régler `NEXT_PUBLIC_AMAZON_TAG`).
 2. Ajouter les secrets Cloudflare dans GitHub, puis relier le domaine `keurbook.com` au projet Cloudflare Pages.
-3. Créer l'adresse `contact@keurbook.com` (Cloudflare Email Routing, comme Keur Cook).
+3. Créer l'adresse `keurbook@toakeur.com` (Cloudflare Email Routing, comme Keur Cook).
 4. Vérifier les informations légales (éditeur : ALOHASH par défaut, variables `NEXT_PUBLIC_LEGAL_*`).
