@@ -8,7 +8,7 @@ import { getMaintenance } from "@/lib/data/settings";
 export const dynamic = "force-static";
 
 /** Dernière mise à jour des pages légales. */
-const LEGAL_UPDATED = "2026-10-01";
+const LEGAL_UPDATED = "2026-10-12";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Site en maintenance : rien à indexer.

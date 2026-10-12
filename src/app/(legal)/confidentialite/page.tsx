@@ -5,13 +5,13 @@ import { legalConfig, siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité",
-  description: "Données personnelles et cookies sur Keurbook : ce qui est collecté, pourquoi, et vos droits.",
+  description: "Données personnelles, cookies et publicité Google sur Keurbook : ce qui est collecté, pourquoi, et vos droits.",
   path: "/confidentialite",
 });
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Politique de confidentialité" updated="1er octobre 2026">
+    <LegalPage title="Politique de confidentialité" updated="12 octobre 2026">
       <p>
         {legalConfig.companyName} (« nous ») attache une grande importance à la protection de vos données personnelles,
         traitées conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et
@@ -25,8 +25,8 @@ export default function PrivacyPage() {
 
       <h2>Données collectées et finalités</h2>
       <p>
-        Le site ne comporte ni compte, ni formulaire, ni outil de mesure d&apos;audience : nous ne collectons aucune
-        donnée personnelle en dehors des cas suivants.
+        Le site ne comporte ni compte, ni formulaire, ni outil de mesure d&apos;audience. Des données personnelles sont
+        traitées dans les cas suivants.
       </p>
       <ul>
         <li>
@@ -37,6 +37,10 @@ export default function PrivacyPage() {
           <strong>Journaux techniques de l&apos;hébergeur</strong> : comme tout site, l&apos;hébergeur ({legalConfig.hostName})
           traite l&apos;adresse IP et les informations techniques de connexion pour délivrer les pages et protéger le site
           contre les attaques. Base légale : intérêt légitime (sécurité du site).
+        </li>
+        <li>
+          <strong>Publicité (Google AdSense)</strong> : certaines pages affichent des annonces fournies par Google. Le détail
+          figure plus bas, dans la partie « Publicité ».
         </li>
       </ul>
       <p>Nous ne revendons jamais vos données. Le lien « Partager ma pile à lire » ne contient que les titres choisis, sans donnée personnelle.</p>
@@ -51,11 +55,49 @@ export default function PrivacyPage() {
       <h2>Destinataires et sous-traitants</h2>
       <p>
         Vos données sont destinées à nos services internes et à nos sous-traitants techniques : hébergement du site et
-        acheminement des e-mails de contact ({legalConfig.hostName}), messagerie (IONOS). Lorsque des données sont
-        transférées hors de l&apos;Union européenne (Cloudflare, États-Unis), ce transfert est encadré par le cadre de
-        protection des données UE–États-Unis (Data Privacy Framework) et par des clauses contractuelles types de la
-        Commission européenne.
+        acheminement des e-mails de contact ({legalConfig.hostName}), messagerie (IONOS). Pour la publicité, Google et ses
+        partenaires publicitaires reçoivent directement les données décrites dans la partie « Publicité ». Lorsque des
+        données sont transférées hors de l&apos;Union européenne (Cloudflare et Google, États-Unis), ce transfert est encadré
+        par le cadre de protection des données UE–États-Unis (Data Privacy Framework) et par des clauses contractuelles types
+        de la Commission européenne.
       </p>
+
+      <h2 id="publicite">Publicité (Google AdSense)</h2>
+      <p>
+        Pour financer le site, les fiches livres et BD, les fiches auteurs, les pages pays et les articles « Conseils »
+        affichent des annonces signalées « Publicité ». Elles sont choisies et diffusées par Google (Google Ireland Limited,
+        Gordon House, Barrow Street, Dublin 4, Irlande), avec le service Google AdSense. Nous ne choisissons pas les annonces
+        une à une et ne recevons aucune donnée personnelle de Google sur vous : nous recevons seulement des statistiques
+        globales (nombre d&apos;annonces vues, de clics, revenus).
+      </p>
+      <ul>
+        <li>
+          <strong>Votre choix d&apos;abord</strong> : à votre première visite, un bandeau de Google vous demande votre accord.
+          Vous pouvez accepter, refuser ou choisir finalité par finalité. Vous pouvez changer d&apos;avis à tout moment avec
+          le lien « Gérer mes cookies » en bas de chaque page.
+        </li>
+        <li>
+          <strong>Si vous acceptez</strong> : Google et ses partenaires publicitaires, dont la liste figure dans le bandeau
+          (« Gérer les options »), peuvent déposer et lire des cookies ou identifiants sur votre appareil et utiliser votre
+          adresse IP, des informations sur votre navigateur et les pages consultées, pour afficher des annonces, les
+          personnaliser selon vos centres d&apos;intérêt, en mesurer l&apos;efficacité et lutter contre la fraude. Base
+          légale : votre consentement.
+        </li>
+        <li>
+          <strong>Si vous refusez</strong> : Google peut afficher des annonces dites « limitées », sans cookie publicitaire
+          ni personnalisation, ou n&apos;afficher aucune annonce. Le site reste entièrement accessible.
+        </li>
+        <li>
+          <strong>Durées</strong> : les durées de conservation des cookies de Google et de ses partenaires sont indiquées
+          pour chacun dans le bandeau (« Gérer les options »).
+        </li>
+        <li>
+          Google agit en responsable de traitement pour ses propres finalités. Pour en savoir plus :{" "}
+          <a href="https://policies.google.com/technologies/partner-sites?hl=fr">comment Google utilise les données des
+          sites partenaires</a>. Vous pouvez aussi régler la personnalisation des annonces Google dans{" "}
+          <a href="https://myadcenter.google.com/?hl=fr">Mon Centre de publicités</a>.
+        </li>
+      </ul>
 
       <h2>Liens vers Amazon</h2>
       <p>
@@ -74,10 +116,13 @@ export default function PrivacyPage() {
 
       <h2 id="cookies">Cookies</h2>
       <p>
-        Le site ne dépose <strong>aucun cookie</strong> : ni mesure d&apos;audience, ni publicité, ni réseau social. Il
-        n&apos;affiche donc pas de bandeau de consentement.
+        Le site lui-même ne dépose aucun cookie de mesure d&apos;audience ni de réseau social. Les seuls cookies sont
+        ceux de la publicité Google, déposés <strong>uniquement si vous les acceptez</strong> dans le bandeau (voir
+        « Publicité » ci-dessus). Pour revoir votre choix : lien « Gérer mes cookies » en bas de chaque page.
       </p>
       <ul>
+        <li><strong>Choix de consentement</strong> (cookie de Google) : mémorise votre réponse au bandeau, pour ne pas vous la redemander à chaque page.</li>
+        <li><strong>Cookies publicitaires de Google et de ses partenaires</strong> : seulement avec votre accord ; liste et durées dans le bandeau.</li>
         <li><strong>Pile à lire</strong> (stockage local de votre navigateur) — conserve les livres que vous avez mis de côté, uniquement sur votre appareil, jusqu&apos;à ce que vous les retiriez ou effaciez les données du site. Elle n&apos;est transmise à personne.</li>
       </ul>
       <p>Amazon.fr, une fois ouvert depuis un bouton « Acheter sur Amazon », dépose ses propres cookies, selon sa politique.</p>
