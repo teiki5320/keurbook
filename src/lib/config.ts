@@ -25,6 +25,12 @@ export const siteConfig = {
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "keurbook@toakeur.com",
 };
 
+/**
+ * Google AdSense : identifiant d'éditeur (public par conception : il figure dans le code de chaque page et dans ads.txt).
+ * Vide = aucune publicité ni script Google sur le site.
+ */
+export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-2680784147246798";
+
 /** Informations légales de l'éditeur, affichées dans les mentions légales et les conditions d'utilisation. */
 export const legalConfig = {
   companyName: process.env.NEXT_PUBLIC_LEGAL_COMPANY_NAME || "ALOHASH",
