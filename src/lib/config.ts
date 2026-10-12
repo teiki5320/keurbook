@@ -32,7 +32,7 @@ export const siteConfig = {
 export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-2680784147246798";
 
 /**
- * Identifiants des blocs d'annonces AdSense (Annonces → Par bloc d'annonces), publics eux aussi.
+ * Identifiants des blocs d'annonces AdSense (Annonces → Par bloc d'annonces, blocs « Keurbook - … »), publics eux aussi.
  * Un emplacement sans identifiant n'affiche rien. Pages sans annonce : accueil, listes, pile à lire, pages légales, 404.
  * - fiche : 1 annonce en fin de fiche livre ou BD, loin du bouton Amazon ;
  * - auteur : 1 annonce après la biographie ;
@@ -40,10 +40,10 @@ export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-
  * - article : 2 annonces dans un conseil (au milieu du texte, puis en fin de page).
  */
 export const ADSENSE_SLOTS = {
-  fiche: process.env.NEXT_PUBLIC_ADSENSE_SLOT_FICHE ?? "",
-  auteur: process.env.NEXT_PUBLIC_ADSENSE_SLOT_AUTEUR ?? "",
-  pays: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PAYS ?? "",
-  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "",
+  fiche: process.env.NEXT_PUBLIC_ADSENSE_SLOT_FICHE ?? "5113817102",
+  auteur: process.env.NEXT_PUBLIC_ADSENSE_SLOT_AUTEUR ?? "8772851353",
+  pays: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PAYS ?? "2487653764",
+  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "8861490424",
 };
 export type AdPlacement = keyof typeof ADSENSE_SLOTS;
 
