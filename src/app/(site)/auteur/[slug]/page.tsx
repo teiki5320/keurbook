@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { BookGrid } from "@/components/book/BookCard";
 import { BookCover } from "@/components/book/BookCover";
@@ -240,6 +241,11 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
             </section>
           )}
         </div>
+      </div>
+
+      {/* Publicité : après la biographie, avant les livres (et leurs boutons Amazon). */}
+      <div className="container-page">
+        <AdSlot placement="auteur" />
       </div>
 
       {/* 6. Ses livres sur le site */}

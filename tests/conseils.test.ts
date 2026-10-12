@@ -7,7 +7,7 @@ import assert from "node:assert/strict";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
-import { DESCRIPTION_MAX, DESCRIPTION_MIN, internalLinks, isPublished, parseConseil, todayInParis, type Conseil } from "../src/lib/conseils/article";
+import { DESCRIPTION_MAX, DESCRIPTION_MIN, internalLinks, isPublished, parseConseil, splitAtMiddleSection, todayInParis, type Conseil } from "../src/lib/conseils/article";
 import { COUNTRIES } from "../src/lib/countries";
 import { allAuthors, allBooks } from "../src/lib/demo";
 
@@ -65,4 +65,17 @@ describe("Conseils : publication programmée", () => {
   it("un article daté du futur n'est pas publié", () => assert.equal(isPublished(future, todayInParis()), false));
   it("un article est publié le jour même (heure de Paris)", () => assert.equal(isPublished(future, "2099-01-05"), true));
   it("la date du jour à Paris passe minuit à l'heure française", () => assert.equal(todayInParis(new Date("2026-01-04T23:30:00Z")), "2026-01-05"));
+});
+
+describe("Emplacement d'annonce au milieu d'un article", () => {
+  it("coupe avant la partie du milieu, sans rien perdre", () => {
+    const html = "<p>a</p><h2 id=\"1\">1</h2><p>b</p><h2 id=\"2\">2</h2><p>c</p><h2 id=\"3\">3</h2><p>d</p><h2 id=\"4\">4</h2>";
+    const [before, after] = splitAtMiddleSection(html);
+    assert.equal(before + after, html);
+    assert.ok(after.startsWith('<h2 id="3">'));
+  });
+  it("ne coupe pas un article de moins de 3 parties", () => {
+    const html = "<p>a</p><h2>1</h2><p>b</p><h2>2</h2>";
+    assert.deepEqual(splitAtMiddleSection(html), [html, ""]);
+  });
 });

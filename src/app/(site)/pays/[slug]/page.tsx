@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { AmazonButton } from "@/components/book/AmazonButton";
 import { BookGrid } from "@/components/book/BookCard";
 import { BookCover } from "@/components/book/BookCover";
@@ -99,6 +100,11 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
           />
         </Section>
       )}
+
+      {/* Publicité : après les portraits d'écrivains, avant les livres (et leurs boutons Amazon). */}
+      <div className="container-page">
+        <AdSlot placement="pays" />
+      </div>
 
       {/* Repères sur la littérature du pays (pays qui ont encore peu de livres sur le site) */}
       {country.more && country.more.length > 0 && (

@@ -194,3 +194,26 @@ body {
   0%, 12%, 100% { opacity: 0.85; }
   3%, 9% { opacity: 0; }
 }
+
+/* Emplacements d'annonces AdSense (composant AdSlot) : cadre neutre, mention « Publicité » toujours visible,
+   place réservée pour éviter que la page saute, repli complet si Google n'a pas d'annonce.
+   Pas d'overflow: hidden : sur téléphone, Google élargit l'annonce à toute la largeur de l'écran (sans débordement).
+   Volontairement sobre et différent des boutons Amazon (pas de fond orange, pas de bouton). */
+.ad-slot {
+  margin-block: 3rem;
+  border-block: 1px solid var(--color-line);
+  padding-block: 0.75rem;
+}
+.ad-slot-label {
+  margin-bottom: 0.5rem;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+.ad-slot ins.adsbygoogle {
+  min-height: 250px;
+}
+.ad-slot:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
+  display: none;
+}

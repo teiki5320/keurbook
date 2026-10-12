@@ -80,3 +80,14 @@ export function relatedConseils(current: Conseil, all: Conseil[], count = 3): Co
   const rest = others.filter((c) => c.theme !== current.theme);
   return [...same, ...rest].slice(0, count);
 }
+
+/**
+ * Coupe le HTML d'un article en deux, juste avant la partie (h2) du milieu, pour y glisser une annonce.
+ * Moins de 3 parties : pas de coupure (l'article est trop court pour une annonce au milieu).
+ */
+export function splitAtMiddleSection(html: string): [string, string] {
+  const starts = [...html.matchAll(/<h2[\s>]/g)].map((m) => m.index);
+  if (starts.length < 3) return [html, ""];
+  const cut = starts[Math.floor(starts.length / 2)];
+  return [html.slice(0, cut), html.slice(cut)];
+}

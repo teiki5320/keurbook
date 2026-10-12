@@ -11,7 +11,8 @@ uniquement des noms de variables et de consoles.
   articles Markdown. Catalogue dans `src/lib/demo/`, pays dans `src/lib/countries.ts`, articles
   « Conseils » dans `content/conseils/`. Base technique reprise de Keur Cook.
 - **Backend** : aucun. Site entièrement statique (dossier `out/`), sans base de données, sans
-  compte, sans cookie. La pile à lire reste dans le navigateur du visiteur.
+  compte. La pile à lire reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense,
+  après accord dans le bandeau de consentement de Google (voir docs/PUBLICITE.md).
 - **Taille** : 957 adresses dans le sitemap au 12 octobre 2026 (675 livres, 122 BD, 92 auteurs,
   26 pays, 34 articles Conseils publiés, pages de liste et pages légales).
 - **Particularités** : interrupteur de maintenance dans `content/maintenance.json` (désactivé),

@@ -7,14 +7,14 @@ import { legalConfig, siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = pageMetadata({
   title: "Mentions légales",
-  description: "Éditeur et hébergeur du site Keurbook, données personnelles, liens Amazon, illustrations et limites de responsabilité.",
+  description: "Éditeur et hébergeur du site Keurbook, données personnelles, publicité, liens Amazon, illustrations et limites de responsabilité.",
   path: "/mentions-legales",
 });
 
 export default function LegalNoticePage() {
   const l = legalConfig;
   return (
-    <LegalPage title="Mentions légales" updated="1er octobre 2026">
+    <LegalPage title="Mentions légales" updated="12 octobre 2026">
       <p>
         Informations sur l&apos;éditeur et l&apos;hébergeur du site, l&apos;usage de vos données et les limites des
         informations publiées (loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique).
@@ -41,7 +41,11 @@ export default function LegalNoticePage() {
 
       <h2>Données personnelles et cookies</h2>
       <ul>
-        <li>Aucun cookie n&apos;est déposé par le site, et aucun compte n&apos;est nécessaire.</li>
+        <li>
+          Aucun compte n&apos;est nécessaire. Le site ne dépose lui-même aucun cookie ; seuls les cookies de la publicité
+          Google sont déposés, et uniquement si vous les acceptez dans le bandeau de consentement (lien « Gérer mes cookies »
+          en bas de chaque page pour changer d&apos;avis).
+        </li>
         <li>
           Votre pile à lire est mémorisée dans le stockage local de votre navigateur, uniquement sur votre appareil, pour la
           retrouver à votre prochaine visite. Elle n&apos;est transmise à personne. Vous pouvez l&apos;effacer en vidant les
@@ -51,7 +55,10 @@ export default function LegalNoticePage() {
           Le bouton « Partager ma liste » place les titres choisis dans l&apos;adresse de la page : ils ne sont transmis
           qu&apos;aux personnes à qui vous envoyez ce lien.
         </li>
-        <li>Les polices, les images et le code du site sont servis par le site lui-même, sans service tiers ni mesure d&apos;audience.</li>
+        <li>
+          Les polices, les images et le code du site sont servis par le site lui-même, sans mesure d&apos;audience. Seuls les
+          annonces et le bandeau de consentement viennent de Google.
+        </li>
         <li>L&apos;hébergeur peut enregistrer des journaux techniques (adresse IP, date, page demandée) pour la sécurité du service.</li>
         <li>
           Conformément au RGPD, vous pouvez exercer vos droits d&apos;accès, de rectification et d&apos;effacement auprès de
@@ -59,6 +66,15 @@ export default function LegalNoticePage() {
           <Link href="/confidentialite">politique de confidentialité</Link>.
         </li>
       </ul>
+
+      <h2>Publicité</h2>
+      <p>
+        Pour financer le site, certaines pages affichent des annonces fournies par Google AdSense. Elles sont toujours
+        signalées par la mention « Publicité » et séparées des contenus et des liens Amazon. L&apos;éditeur ne choisit pas les
+        annonces une à une : leur présence ne vaut pas recommandation, et leur contenu relève de l&apos;annonceur. Les
+        catégories d&apos;annonces inadaptées à un site littéraire tout public sont bloquées. Le détail des données utilisées
+        figure dans la <Link href="/confidentialite#publicite">politique de confidentialité</Link>.
+      </p>
 
       <h2>Liens sponsorisés (Amazon)</h2>
       <p>
