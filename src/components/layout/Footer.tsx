@@ -42,7 +42,13 @@ export function Footer() {
           <a href={`mailto:${siteConfig.contactEmail}`} className="hover:text-ink">{siteConfig.contactEmail}</a>
         </nav>
       </div>
-      <p className="container-page border-t border-line py-5 text-[11px] leading-relaxed text-faint">{AMAZON_DISCLOSURE}</p>
+      <div className="container-page space-y-2 border-t border-line py-5 text-[11px] leading-relaxed text-faint">
+        <p>{AMAZON_DISCLOSURE}</p>
+        <p>
+          Un site{" "}
+          <a href="https://toakeur.com" className="font-semibold text-muted hover:text-ink">TOA KEUR</a>
+        </p>
+      </div>
     </footer>
   );
 }
