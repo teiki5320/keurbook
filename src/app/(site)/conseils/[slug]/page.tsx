@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
-import { conseilSections } from "@/lib/conseils/article";
+import { conseilSections, splitAtMiddleSection } from "@/lib/conseils/article";
 import { CONSEIL_CATEGORIES } from "@/lib/conseils/categories";
 import { siteConfig, withBase } from "@/lib/config";
 import { getAllBooks, toCards } from "@/lib/data/books";
@@ -40,6 +41,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
   const cited = await toCards(conseil.livres.flatMap((s) => books.filter((b) => b.slug === s)));
   const related = getRelatedConseils(conseil);
   const sections = conseilSections(conseil.body);
+  const [firstHalf, secondHalf] = splitAtMiddleSection(renderConseil(conseil.body));
   const url = `${siteConfig.url}/conseils/${conseil.slug}`;
 
   const structuredData = [
@@ -118,7 +120,14 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
           </nav>
         )}
         {/* 3. Développement */}
-        <div className="prose-text mt-8" dangerouslySetInnerHTML={{ __html: renderConseil(conseil.body) }} />
+        <div className="prose-text mt-8" dangerouslySetInnerHTML={{ __html: firstHalf }} />
+        {secondHalf && (
+          <>
+            {/* Publicité : au milieu du texte, entre deux parties. */}
+            <AdSlot placement="article" />
+            <div className="prose-text" dangerouslySetInnerHTML={{ __html: secondHalf }} />
+          </>
+        )}
 
         {/* 4. Livres cités */}
         {cited.length > 0 && (
@@ -154,6 +163,11 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
           <ConseilGrid conseils={related} />
         </Section>
       )}
+
+      {/* Publicité : en fin de page, après les articles liés (loin des boutons Amazon des livres cités). */}
+      <div className="container-page">
+        <AdSlot placement="article" />
+      </div>
     </>
   );
 }

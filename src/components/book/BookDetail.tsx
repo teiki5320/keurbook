@@ -12,6 +12,7 @@ import { formatPrice } from "@/lib/format";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { AUDIENCES, GENRES, THEMES } from "@/lib/themes";
 import type { Book } from "@/lib/types";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { AmazonButton } from "./AmazonButton";
 import { AuthorAvatar } from "./AuthorAvatar";
 import { BookGrid } from "./BookCard";
@@ -283,6 +284,9 @@ export async function BookDetail({ book }: { book: Book }) {
               ))}
             </div>
           </section>
+
+          {/* Publicité : en fin de fiche, loin du bouton Amazon (en haut de page). */}
+          <AdSlot placement="fiche" />
         </div>
       </div>
 

@@ -31,6 +31,22 @@ export const siteConfig = {
  */
 export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-2680784147246798";
 
+/**
+ * Identifiants des blocs d'annonces AdSense (Annonces → Par bloc d'annonces), publics eux aussi.
+ * Un emplacement sans identifiant n'affiche rien. Pages sans annonce : accueil, listes, pile à lire, pages légales, 404.
+ * - fiche : 1 annonce en fin de fiche livre ou BD, loin du bouton Amazon ;
+ * - auteur : 1 annonce après la biographie ;
+ * - pays : 1 annonce après les portraits d'écrivains ;
+ * - article : 2 annonces dans un conseil (au milieu du texte, puis en fin de page).
+ */
+export const ADSENSE_SLOTS = {
+  fiche: process.env.NEXT_PUBLIC_ADSENSE_SLOT_FICHE ?? "",
+  auteur: process.env.NEXT_PUBLIC_ADSENSE_SLOT_AUTEUR ?? "",
+  pays: process.env.NEXT_PUBLIC_ADSENSE_SLOT_PAYS ?? "",
+  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "",
+};
+export type AdPlacement = keyof typeof ADSENSE_SLOTS;
+
 /** Informations légales de l'éditeur, affichées dans les mentions légales et les conditions d'utilisation. */
 export const legalConfig = {
   companyName: process.env.NEXT_PUBLIC_LEGAL_COMPANY_NAME || "ALOHASH",
