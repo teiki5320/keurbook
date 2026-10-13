@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BookDetail } from "@/components/book/BookDetail";
-import { creatorNames } from "@/lib/book-utils";
+import { creatorNames, deOrD } from "@/lib/book-utils";
 import { getBookBySlug, getBookPageTitle, getBooks } from "@/lib/data/books";
 import { getMaintenance } from "@/lib/data/settings";
 import { clip, pageMetadata } from "@/lib/metadata";
+import { GENRES } from "@/lib/themes";
 
 export async function generateStaticParams() {
   return (await getBooks("livre")).map((b) => ({ slug: b.slug }));
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: PageProps<"/livre/[slug]">): 
   if (!book) return {};
   return pageMetadata({
     title: await getBookPageTitle(book),
-    description: clip(`${book.title} (${book.year}) de ${creatorNames(book)} : ${book.summary}`),
+    description: clip(`${book.title}, ${GENRES[book.genre].toLowerCase()} ${deOrD(creatorNames(book))} (${book.year}) : ${book.summary}`),
     path: `/livre/${book.slug}`,
     image: book.cover,
     type: "book",

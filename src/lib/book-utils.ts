@@ -11,6 +11,9 @@ export function creatorNames(book: Pick<Book, "contributors">): string {
   return names.length <= 1 ? (names[0] ?? "") : `${names.slice(0, -1).join(", ")} et ${names.at(-1)}`;
 }
 
+/** « de Mariama Bâ », « d'Ananda Devi ». */
+export const deOrD = (name: string) => (/^[aeiouyàâéèêîôûœ]/i.test(name) ? `d'${name}` : `de ${name}`);
+
 export const translator = (book: Pick<Book, "contributors">) => book.contributors.find((c) => c.role === "traducteur") ?? null;
 
 /** Slugs des fiches auteurs liées au livre. */

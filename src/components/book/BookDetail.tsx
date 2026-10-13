@@ -4,7 +4,7 @@ import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Breadcrumb, Section } from "@/components/layout/Section";
 import { PileButton } from "@/components/pile/PileButton";
 import { amazonUrl } from "@/lib/amazon";
-import { creatorNames, creators, translator } from "@/lib/book-utils";
+import { creatorNames, creators, deOrD, translator } from "@/lib/book-utils";
 import { siteConfig, withBase } from "@/lib/config";
 import { getBookAuthors, getBookCountry, getBooksByAuthor, getRelatedBooks, toCards } from "@/lib/data/books";
 import { getConseilsForBooks } from "@/lib/data/conseils";
@@ -35,6 +35,17 @@ export async function BookDetail({ book }: { book: Book }) {
   const url = `${siteConfig.url}${base.path}`;
   const filterBase = isBd ? "/bd" : "/livres";
   const photoOf = new Map(authors.map((a) => [a.slug, a.photo]));
+  // Place du livre dans l'œuvre de l'auteur (ordre de parution) : texte propre à chaque fiche, et liens vers les livres voisins.
+  const author = authors.length === 1 ? authors[0] : null;
+  const oeuvre = author ? [book, ...sameAuthor].sort((a, b) => a.year - b.year || a.title.localeCompare(b.title, "fr")) : [];
+  const rank = oeuvre.indexOf(book);
+  const before = rank > 0 ? oeuvre[rank - 1] : null;
+  const after = rank >= 0 && rank < oeuvre.length - 1 ? oeuvre[rank + 1] : null;
+  const bookLink = (b: Book) => (
+    <Link href={b.kind === "bd" ? `/bd/${b.slug}` : `/livre/${b.slug}`} className="underline underline-offset-4 hover:text-accent">
+      <i>{b.title}</i>
+    </Link>
+  );
 
   const structuredData = [
     {
@@ -205,6 +216,40 @@ export async function BookDetail({ book }: { book: Book }) {
               ))}
             </ul>
           </section>
+
+          {/* Dans l'œuvre de l'auteur */}
+          {author && oeuvre.length > 1 && (
+            <section className="mt-10" aria-labelledby="oeuvre">
+              <h2 id="oeuvre" className="eyebrow">
+                Dans l&apos;œuvre {deOrD(author.name)}
+              </h2>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink/80">
+                <i>{book.title}</i> ({GENRES[book.genre].toLowerCase()}, {book.year}) est l&apos;un des {oeuvre.length} livres {deOrD(author.name).startsWith("d'") ? "d'" : "de "}
+                <Link href={`/auteur/${author.slug}`} className="underline underline-offset-4 hover:text-accent">
+                  {author.name}
+                </Link>{" "}
+                présentés sur Keurbook
+                {rank === 0 ? ", et le plus ancien d'entre eux" : rank === oeuvre.length - 1 ? ", et le plus récent d'entre eux" : ""}.
+                {before && (
+                  <>
+                    {" "}Il vient après {bookLink(before)} ({before.year})
+                    {after ? (
+                      <>
+                        {" "}et avant {bookLink(after)} ({after.year}).
+                      </>
+                    ) : (
+                      "."
+                    )}
+                  </>
+                )}
+                {!before && after && (
+                  <>
+                    {" "}Le suivant est {bookLink(after)} ({after.year}).
+                  </>
+                )}
+              </p>
+            </section>
+          )}
 
           {/* 8. Citation */}
           {book.quote && (
