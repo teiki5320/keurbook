@@ -49,6 +49,8 @@ export interface Book {
   summary: string;
   /** « Pourquoi le lire » : 2 ou 3 raisons courtes. */
   whyRead: string[];
+  /** Description pour Google (155 caractères au plus), écrite à la main pour les fiches travaillées ; sinon tirée du résumé. */
+  metaDescription?: string;
   quote: Quote | null;
   /** Année de première parution (en français, ou en langue originale pour une traduction). */
   year: number;

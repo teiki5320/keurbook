@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: PageProps<"/bd/[slug]">): Pro
   if (!book) return {};
   return pageMetadata({
     title: await getBookPageTitle(book),
-    description: clip(`${book.title} (${book.year}) , BD de ${creatorNames(book)} : ${book.summary}`),
+    description: book.metaDescription ?? clip(`${book.title} (${book.year}) , BD de ${creatorNames(book)} : ${book.summary}`),
     path: `/bd/${book.slug}`,
     image: book.cover,
     type: "book",

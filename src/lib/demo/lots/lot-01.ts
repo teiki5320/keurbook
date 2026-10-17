@@ -160,6 +160,7 @@ export const livres: Book[] = [
   livre({
     slug: "les-gardiens-du-temple",
     title: "Les Gardiens du temple",
+    metaDescription: "Les Gardiens du temple (1995) de Cheikh Hamidou Kane, la suite de L'Aventure ambiguë : résumé du roman et raisons de le lire.",
     contributors: [auteur("Cheikh Hamidou Kane", "cheikh-hamidou-kane")],
     genre: "roman",
     audience: "adulte",

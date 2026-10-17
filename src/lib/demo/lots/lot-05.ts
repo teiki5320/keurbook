@@ -104,6 +104,7 @@ export const livres: Book[] = [
   livre({
     slug: "et-dieu-seul-sait-comment-je-dors",
     title: "Et Dieu seul sait comment je dors",
+    metaDescription: "Et Dieu seul sait comment je dors (2001), roman d'Alain Mabanckou situé en Guadeloupe : résumé de cette enquête sur la culpabilité et le pardon.",
     contributors: [MABANCKOU],
     genre: "roman",
     audience: "adulte",

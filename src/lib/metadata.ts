@@ -45,12 +45,13 @@ export function pageMetadata({ title, description, path, image, imageAlt, type =
       ...(publishedTime ? { publishedTime } : {}),
     },
     twitter: { card: "summary_large_image", title: fullTitle, description, images: images.map((i) => i.url) },
-    ...(noindex ? { robots: { index: false, follow: true } } : {}),
+    // Grande image autorisée dans Google Discover et les résultats (« max-image-preview:large »).
+    robots: noindex ? { index: false, follow: true, "max-image-preview": "large" } : { "max-image-preview": "large" },
   };
 }
 
-/** Texte coupé proprement pour une description (≤ max caractères). */
-export function clip(text: string, max = 160): string {
+/** Texte coupé proprement pour une description (≤ max caractères ; Google en montre environ 155). */
+export function clip(text: string, max = 155): string {
   if (text.length <= max) return text;
   const cut = text.slice(0, max - 1);
   return `${cut.slice(0, cut.lastIndexOf(" "))}…`;

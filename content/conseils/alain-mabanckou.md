@@ -4,7 +4,7 @@ description: Alain Mabanckou, écrivain né à Pointe-Noire en 1966, prix Renaud
 date: 2026-10-19
 theme: auteurs
 resume: Alain Mabanckou est un romancier et poète né en 1966 à Pointe-Noire, au Congo-Brazzaville. Révélé par Verre Cassé en 2005, prix Renaudot 2006 pour Mémoires de porc-épic, il est aujourd'hui l'un des écrivains africains les plus lus et les plus traduits.
-livres: verre-casse, memoires-de-porc-epic, la-vie-et-demie, le-pleurer-rire, johnny-chien-mechant
+livres: verre-casse, memoires-de-porc-epic, la-vie-et-demie, le-pleurer-rire, johnny-chien-mechant, et-dieu-seul-sait-comment-je-dors
 ---
 Élégant, souriant, présent sur les plateaux comme dans les amphithéâtres, Alain Mabanckou est l'une des figures les plus reconnaissables de la littérature d'aujourd'hui. Mais derrière le personnage public, il y a d'abord une œuvre, drôle, inventive et profondément attachée au Congo. Voici l'essentiel à savoir.
 
@@ -33,6 +33,8 @@ Depuis, Alain Mabanckou a publié de nombreux livres : romans, poèmes, essais e
 - *Black Bazar* (2009), sur un Congolais amateur d'élégance dans le Paris africain ;
 - *Demain j'aurai vingt ans* (2010), où il revient sur son enfance à Pointe-Noire à travers les yeux d'un garçon de dix ans ; le livre a reçu le prix Georges-Brassens ;
 - *Petit Piment* (2015), l'histoire d'un orphelin de Pointe-Noire, du temps de la révolution socialiste à la vie de rue.
+
+Plus ancien et moins connu, [Et Dieu seul sait comment je dors](/livre/et-dieu-seul-sait-comment-je-dors) (2001) se passe en Guadeloupe et se lit comme une enquête sur la culpabilité et le pardon.
 
 Il est aussi un passeur. Professeur de littérature à l'université de Californie à Los Angeles (UCLA), il a occupé au Collège de France, à Paris, la chaire annuelle de création artistique, où il a consacré ses cours aux littératures africaines. En 2015, il a été finaliste du Man Booker International Prize pour l'ensemble de son œuvre.
 

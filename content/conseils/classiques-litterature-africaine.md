@@ -1,10 +1,10 @@
 ---
 title: Quels sont les classiques de la littérature africaine à lire absolument ?
-description: Onze classiques de la littérature africaine à lire au moins une fois, de L'Enfant noir à Une si longue lettre, avec ce qui fait leur importance.
+description: Douze classiques de la littérature africaine à lire au moins une fois, de L'Enfant noir à Une si longue lettre, avec ce qui fait leur importance.
 date: 2026-10-14
 theme: decouvrir
 resume: Les grands classiques de la littérature africaine sont pour la plupart parus entre les années 1950 et 1980, autour des indépendances. L'Enfant noir, Le monde s'effondre, L'Aventure ambiguë, Les Soleils des indépendances et Une si longue lettre forment un bon socle pour commencer.
-livres: l-enfant-noir, le-monde-s-effondre, l-aventure-ambigue, une-vie-de-boy, les-bouts-de-bois-de-dieu, soundjata-ou-l-epopee-mandingue, les-soleils-des-independances, le-devoir-de-violence, une-si-longue-lettre, la-vie-et-demie, les-contes-d-amadou-koumba
+livres: l-enfant-noir, le-monde-s-effondre, l-aventure-ambigue, une-vie-de-boy, les-bouts-de-bois-de-dieu, soundjata-ou-l-epopee-mandingue, les-soleils-des-independances, le-devoir-de-violence, une-si-longue-lettre, la-vie-et-demie, les-contes-d-amadou-koumba, crepuscule-des-temps-anciens
 ---
 Un classique, c'est un livre qui continue d'être lu longtemps après sa parution, parce qu'il a changé quelque chose : la manière d'écrire, le regard porté sur une société, ou la place d'une voix dans le monde. La littérature africaine en compte beaucoup. La plupart sont nés entre les années 1950 et 1980, au moment où le continent sortait de la colonisation et cherchait à se raconter lui-même. Voici notre sélection, dans l'ordre chronologique.
 
@@ -24,7 +24,9 @@ Un classique, c'est un livre qui continue d'être lu longtemps après sa parutio
 
 **[Soundjata ou l'Épopée mandingue](/livre/soundjata-ou-l-epopee-mandingue)**, transcrite par Djibril Tamsir Niane (1960), fait découvrir la fondation de l'empire du Mali au XIIIe siècle, telle que la racontent les griots. C'est l'équivalent africain des grandes épopées antiques.
 
-**[L'Aventure ambiguë](/livre/l-aventure-ambigue)** de Cheikh Hamidou Kane (1961) est un roman philosophique sur un jeune homme partagé entre l'école coranique de son enfance et l'école occidentale. Une question qui n'a rien perdu de son actualité.
+**[L'Aventure ambiguë](/livre/l-aventure-ambigue)** de Cheikh Hamidou Kane (1961) est un roman philosophique sur un jeune homme partagé entre l'école coranique de son enfance et l'école occidentale. Une question qui n'a rien perdu de son actualité. L'auteur lui a donné une suite en 1995, [Les Gardiens du temple](/livre/les-gardiens-du-temple).
+
+**[Crépuscule des temps anciens](/livre/crepuscule-des-temps-anciens)** de [Nazi Boni](/auteur/nazi-boni) (1962) est le premier roman de l'histoire du Burkina Faso. Il fait revivre le pays bwa d'avant la colonisation, avec ses rites, ses fêtes et ses guerres, comme un dernier regard sur un monde qui disparaît.
 
 **[Les Soleils des indépendances](/livre/les-soleils-des-independances)** d'Ahmadou Kourouma (1968) est une révolution de style. L'Ivoirien y plie le français aux tournures du malinké pour raconter la déchéance d'un prince après les indépendances. Refusé par les éditeurs français, le roman paraît d'abord au Canada avant de s'imposer partout.
 

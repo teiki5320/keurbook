@@ -4,7 +4,7 @@ description: Romans et BD d'auteurs africains sur l'exil et l'immigration : rêv
 date: 2026-10-26
 theme: decouvrir
 resume: Le Ventre de l'Atlantique de Fatou Diome et Debout-payé de Gauz sont deux excellents points de départ pour lire l'exil et l'immigration vus par des auteurs africains. Trois femmes puissantes de Marie NDiaye, Le Baobab fou de Ken Bugul et la BD Une éternité à Tanger prolongent la réflexion.
-livres: le-ventre-de-l-atlantique, debout-paye, trois-femmes-puissantes, le-baobab-fou, l-aventure-ambigue, les-honneurs-perdus, place-des-fetes, une-eternite-a-tanger, malamine, aux-etats-unis-d-afrique, tropique-de-la-violence, no-home
+livres: le-ventre-de-l-atlantique, debout-paye, trois-femmes-puissantes, le-baobab-fou, l-aventure-ambigue, les-honneurs-perdus, place-des-fetes, une-eternite-a-tanger, malamine, aux-etats-unis-d-afrique, tropique-de-la-violence, no-home, et-dieu-seul-sait-comment-je-dors
 ---
 Partir, arriver, rester, revenir : l'exil traverse toute la littérature africaine. Il y a ceux qui rêvent d'Europe, ceux qui y vivent et s'y sentent étrangers, ceux qui ne savent plus vraiment d'où ils sont. Les écrivains du continent et de sa diaspora en ont fait l'un de leurs grands sujets, souvent avec beaucoup d'humour. Voici les livres à lire.
 
@@ -35,6 +35,8 @@ Partir, c'est aussi risquer de se perdre. **[L'Aventure ambiguë](/livre/l-avent
 ## D'autres exils
 
 L'exil ne mène pas toujours en France. **[Tropique de la violence](/livre/tropique-de-la-violence)** de [Nathacha Appanah](/auteur/nathacha-appanah) (2016) se passe à Mayotte, où arrivent de nombreux migrants venus des Comores voisines. Plusieurs voix racontent le destin d'un adolescent livré à lui-même dans un bidonville.
+
+**[Et Dieu seul sait comment je dors](/livre/et-dieu-seul-sait-comment-je-dors)** d'[Alain Mabanckou](/auteur/alain-mabanckou) (2001) se passe en Guadeloupe. Mabakana, un vieil Africain arrivé sur l'île cinquante ans plus tôt, y a perdu le sommeil : un roman en forme d'enquête, sur un passé qui ne lâche pas ses personnages.
 
 **[No Home](/livre/no-home)** de [Yaa Gyasi](/auteur/yaa-gyasi) (2016) remonte plus loin : il suit, sur trois siècles, les descendants de deux demi-sœurs du Ghana, l'une restée en Afrique, l'autre déportée en Amérique. Un grand roman sur l'exil forcé de la traite et ses conséquences.
 

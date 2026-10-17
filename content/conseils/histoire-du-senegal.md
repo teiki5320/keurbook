@@ -4,7 +4,7 @@ description: Romans, contes, poèmes et essais pour comprendre l'histoire du Sé
 date: 2026-08-31
 theme: pays
 resume: Pour comprendre l'histoire du Sénégal, lisez Les Bouts de bois de Dieu (la grande grève de 1947-1948), L'Aventure ambiguë (l'école coloniale) et Frère d'âme (les tirailleurs). Une si longue lettre et Le Ventre de l'Atlantique éclairent le Sénégal d'après l'indépendance.
-livres: les-contes-d-amadou-koumba, frere-d-ame, les-bouts-de-bois-de-dieu, l-aventure-ambigue, ethiopiques, nations-negres-et-culture, une-si-longue-lettre, la-greve-des-battu, le-ventre-de-l-atlantique
+livres: les-contes-d-amadou-koumba, frere-d-ame, les-bouts-de-bois-de-dieu, l-aventure-ambigue, ethiopiques, nations-negres-et-culture, une-si-longue-lettre, la-greve-des-battu, le-ventre-de-l-atlantique, les-gardiens-du-temple
 ---
 Les livres d'histoire sont indispensables, mais les romans ont un avantage : ils font vivre de l'intérieur ce que les manuels résument en quelques lignes. Le Sénégal a la chance d'avoir une littérature très riche, qui a accompagné chaque grande étape de son histoire. Voici un parcours chronologique, du monde d'avant la colonisation jusqu'au Sénégal d'aujourd'hui.
 
@@ -22,7 +22,7 @@ Pour entrer dans l'imaginaire ancien du pays, commencez par [Les Contes d'Amadou
 
 ## L'école française et la question de l'identité
 
-[L'Aventure ambiguë](/livre/l-aventure-ambigue) de Cheikh Hamidou Kane (1961) raconte l'itinéraire d'un jeune Peul envoyé à « l'école nouvelle » des colonisateurs. Le livre pose une question qui a traversé toute l'élite sénégalaise : que gagne-t-on, et que perd-on, en apprenant à l'école des Blancs ? C'est un texte philosophique autant qu'un roman.
+[L'Aventure ambiguë](/livre/l-aventure-ambigue) de Cheikh Hamidou Kane (1961) raconte l'itinéraire d'un jeune Peul envoyé à « l'école nouvelle » des colonisateurs. Le livre pose une question qui a traversé toute l'élite sénégalaise : que gagne-t-on, et que perd-on, en apprenant à l'école des Blancs ? C'est un texte philosophique autant qu'un roman. Trente-quatre ans plus tard, l'auteur lui donne une suite avec [Les Gardiens du temple](/livre/les-gardiens-du-temple) (1995), un roman inspiré des crises politiques du Sénégal après l'indépendance.
 
 ## La négritude et l'indépendance
 

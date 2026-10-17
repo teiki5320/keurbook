@@ -25,6 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   formatDetection: { telephone: false },
+  // Grande image autorisée dans Google Discover et les résultats.
+  robots: { "max-image-preview": "large" },
   // Validation du site dans AdSense.
   ...(ADSENSE_CLIENT && { other: { "google-adsense-account": ADSENSE_CLIENT } }),
 };

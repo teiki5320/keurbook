@@ -455,6 +455,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "soundjata-ou-l-epopee-mandingue",
     title: "Soundjata ou l'Épopée mandingue",
+    metaDescription: "Soundjata ou l'Épopée mandingue (1960) de Djibril Tamsir Niane : résumé de l'épopée de Soundjata (Soundiata) Keïta, fondateur de l'empire du Mali.",
     contributors: [auteur("Djibril Tamsir Niane", "djibril-tamsir-niane")],
     genre: "recit",
     audience: "ado",
@@ -550,6 +551,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "climbie",
     title: "Climbié",
+    metaDescription: "Climbié (1956), roman de Bernard Dadié inspiré de sa vie : l'école coloniale et le « symbole » en Côte d'Ivoire. Résumé et raisons de le lire.",
     contributors: [auteur("Bernard Dadié", "bernard-dadie")],
     genre: "roman",
     audience: "adulte",
@@ -643,6 +645,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "crepuscule-des-temps-anciens",
     title: "Crépuscule des temps anciens",
+    metaDescription: "Crépuscule des temps anciens (1962) de Nazi Boni, premier roman du Burkina Faso : résumé, le pays bwa avant la colonisation, raisons de le lire.",
     contributors: [auteur("Nazi Boni", "nazi-boni")],
     genre: "roman",
     audience: "adulte",
