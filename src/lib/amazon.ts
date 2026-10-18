@@ -1,7 +1,7 @@
 import type { Book } from "./types";
 
 /** Programme Partenaires Amazon : identifiant ajouté à tous les liens vers Amazon.fr. */
-export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || "keurbook-21";
+export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || "keurbookfr-21";
 
 /**
  * Lien d'achat d'un livre : la fiche Amazon.fr si l'ASIN est connu (vérifié à la main),
