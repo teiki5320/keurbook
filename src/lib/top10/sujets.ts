@@ -574,6 +574,7 @@ export const TOP10S: Top10[] = [
       },
       {
         slug: "nelson-mandela-non-a-l-apartheid",
+        place: "Afrique du Sud · autrice ivoirienne",
         why: "Véronique Tadjo raconte aux adolescents la vie de Nelson Mandela, de son village du Transkei à ses vingt-sept années de prison. Le livre explique simplement ce qu'était l'apartheid et pourquoi Mandela est devenu un symbole mondial. Une biographie claire, dans la collection « Ceux qui ont dit non » d'Actes Sud Junior.",
       },
       {
