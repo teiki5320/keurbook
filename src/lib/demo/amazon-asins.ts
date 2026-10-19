@@ -7,6 +7,7 @@
  */
 export const AMAZON_ASINS: Record<string, string> = {
   "l-enfant-noir": "2266178946",
+  "le-monde-s-effondre": "2708701916",
   "une-vie-de-boy": "2266169289",
   "l-aventure-ambigue": "2264036931",
   "les-soleils-des-independances": "2020259214",

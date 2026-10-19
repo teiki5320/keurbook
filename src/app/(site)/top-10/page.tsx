@@ -8,7 +8,7 @@ const first = getTop10s()[0];
 
 /** /top-10 ouvre le premier onglet ; l'adresse canonique est celle de cet onglet (pas de contenu en double pour Google). */
 export const metadata: Metadata = {
-  ...pageMetadata({ title: "Top 10", description: first.description, path: `/top-10/${first.slug}` }),
+  ...pageMetadata({ title: "Top 10", description: first.description, path: `/top-10/${first.slug}`, image: `/top10/${first.slug}.jpg`, imageAlt: first.title }),
   title: { absolute: `${first.title} | Keurbook` },
 };
 
