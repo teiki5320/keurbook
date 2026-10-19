@@ -3,6 +3,7 @@ import { bookCountry } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
 import { getAllBooks, getAuthors, getCountriesWithBooks } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
+import { getSelections } from "@/lib/data/selections";
 import { getMaintenance } from "@/lib/data/settings";
 
 export const dynamic = "force-static";
@@ -24,12 +25,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const booksOf = (pred: (b: (typeof books)[number]) => boolean) => books.filter(pred).map((b) => b.addedAt);
   const lastBook = latest(books.map((b) => b.addedAt));
   const lastConseil = latest(conseils.map((c) => c.date));
+  const selections = getSelections();
   const lists: Record<string, string> = {
     "/livres": latest(booksOf((b) => b.kind === "livre")),
     "/bd": latest(booksOf((b) => b.kind === "bd")),
     "/auteurs": lastBook,
     "/pays": lastBook,
     "/conseils": lastConseil,
+    "/selections": latest(selections.map((s) => s.updated)),
   };
   const staticPages = [
     { url: base, lastModified: day(latest([lastBook, lastConseil])), changeFrequency: "weekly" as const, priority: 1 },
@@ -43,6 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
   return [
     ...staticPages,
+    ...selections.map((s) => ({ url: `${base}/selections/${s.slug}`, lastModified: day(s.updated), changeFrequency: "monthly" as const, priority: 0.8 })),
     ...books.map((b) => ({
       url: `${base}${b.kind === "bd" ? "/bd" : "/livre"}/${b.slug}`,
       lastModified: new Date(`${b.addedAt}T00:00:00Z`),
