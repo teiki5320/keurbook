@@ -1138,6 +1138,7 @@ export const livres: Book[] = [
   livre({
     slug: "beatrice-du-congo",
     title: "Béatrice du Congo",
+    metaDescription: "Béatrice du Congo (1970) de Bernard Dadié : tragédie inspirée de Kimpa Vita, prophétesse du royaume du Kongo. Résumé et raisons de lire la pièce.",
     contributors: [dadie],
     genre: "theatre",
     audience: "adulte",

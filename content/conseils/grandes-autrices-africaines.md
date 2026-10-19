@@ -14,7 +14,7 @@ Impossible de parler des autrices d'aujourd'hui sans citer celles qui ont ouvert
 
 ## Les grandes voix francophones
 
-**Fatou Diome (Sénégal).** Née sur l'île de Niodior, installée à Strasbourg, elle s'est fait connaître avec [Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) (2003), sur le rêve d'Europe des jeunes de son île. Son humour et sa lucidité en font une conteuse irrésistible.
+**[Fatou Diome](/auteur/fatou-diome) (Sénégal).** Née sur l'île de Niodior, installée à Strasbourg, elle s'est fait connaître avec [Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) (2003), sur le rêve d'Europe des jeunes de son île. Son humour et sa lucidité en font une conteuse irrésistible.
 
 **Marie NDiaye (France et Sénégal).** Née en France d'un père sénégalais, elle a reçu le prix Goncourt en 2009 pour [Trois femmes puissantes](/livre/trois-femmes-puissantes). Son écriture, étrange et précise, fait d'elle l'une des plus grandes romancières de langue française.
 

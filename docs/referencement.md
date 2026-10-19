@@ -39,3 +39,37 @@ Reste à faire (Jean) : dans la Search Console, « Demander l'indexation » des 
 ### Page nouvelle
 
 Aucune : les recherches fréquentes (15 vues ou plus) ont toutes déjà leur page sur le site (fiche livre ou page auteur). Celles qui sont loin (« terre ceinte » 44e, « encre sueur salive et sang » 41e, « marianne porte plainte » 39e, « trop de soleil tue l'amour » 35e…) sont des fiches livre récentes : à revoir dans 4 semaines.
+
+## 19/10/2026
+
+### Pages améliorées (montrées par Google en 2e page, chiffres des 28 derniers jours au 19/10)
+
+Même méthode que le 17/10 : titre (« Titre, Auteur | Keurbook ») et titre principal (titre du livre) inchangés, car ils contiennent déjà la recherche. Ajout d'une description Google écrite à la main (`metaDescription`) et de liens depuis les articles Conseils, avec des faits déjà présents dans les fiches.
+
+| Page | Recherches visées | Place | Vues | Titre (inchangé) | Liens ajoutés |
+|---|---|---|---|---|---|
+| /livre/une-enfant-de-poto-poto | « une enfant de poto poto » | 17,4 | 57 | Une enfant de Poto-Poto, Henri Lopes \| Keurbook | /conseils/livres-congo-rdc, /conseils/independances-africaines (aucun lien avant) |
+| /livre/une-vie-de-boy | « une vie de boy » | 11,9 | 48 | Une vie de boy, Ferdinand Oyono \| Keurbook | déjà 6 articles qui y mènent : description seulement |
+| /livre/beatrice-du-congo | « beatrice du congo de bernard dadié », « béatrice du congo » | 9,5 | 47 | Béatrice du Congo, Bernard Dadié \| Keurbook | /conseils/livres-cote-d-ivoire (nouveau paragraphe) |
+| /livre/qui-a-mange-madame-d-avoine-bergotha | « qui a mange madame d'avoine bergotha » | 16,2 | 40 | Qui a mangé Madame d'Avoine Bergotha ? \| Keurbook | /conseils/theatre-africain, /conseils/livres-congo-rdc (aucun lien avant) |
+| /livre/l-enfant-noir | « camara laye l'enfant noir », « l'enfant noir de camara laye » | 11,3 | 37 | L'Enfant noir, Camara Laye \| Keurbook | déjà 9 articles qui y mènent : description seulement |
+
+### Pages oubliées par Google (Search Console au 19/10)
+
+960 pages dans le plan du site, 663 indexées (+13 depuis le 17/10). Restent 160 pages « inconnues » et 137 « trouvées, pas encore visitées » (BD, pages auteur, livres, pays, pages de liste). Pas de nouvelle cause trouvée : le site est jeune, Google passe peu à peu.
+
+Fait : « fatou diome » (53 vues) ne montre toujours que ses livres. Liens ajoutés vers /auteur/fatou-diome depuis 3 articles qui la citaient sans lien (grandes autrices africaines, histoire du Sénégal, livres pour les vacances).
+
+Reste à faire (Jean) : dans la Search Console, « Demander l'indexation » de /bd, /auteurs, /pays, /conseils et /auteur/fatou-diome (pas encore fait à la date du 19/10 : ces pages sont toujours dans la liste).
+
+### Vitesse sur téléphone
+
+L'outil PageSpeed de Google a encore refusé (quota du jour épuisé, erreur 429). À refaire au prochain passage.
+
+### Page nouvelle
+
+Aucune : toutes les recherches fréquentes ont déjà leur page (fiche livre, page auteur ou article « Qui est Fatou Diome ? »). Les fiches loin dans Google (« terre ceinte » 45e, « marianne porte plainte » 41e, « encre sueur salive et sang » 38e, « trop de soleil tue l'amour » 34e) sont récentes : à revoir le 14/11.
+
+### Pages travaillées il y a 4 semaines
+
+Aucune : le journal commence le 17/10. Premier bilan possible à partir du 14/11.

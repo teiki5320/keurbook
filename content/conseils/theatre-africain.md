@@ -30,7 +30,7 @@ Si vous n'avez jamais lu de théâtre, commencez par [L'Os de Mor Lam](/livre/l-
 
 ## Le théâtre des dictatures
 
-Le Congolais [Sony Labou Tansi](/auteur/sony-labou-tansi) a fondé à Brazzaville une troupe, le Rocado Zulu Théâtre, qui a joué en Afrique et en Europe. [La Parenthèse de sang](/livre/la-parenthese-de-sang) réunit deux textes : dans le premier, des soldats recherchent un rebelle et refusent de croire qu'il est mort et enterré, avec une logique absurde et terrifiante. Un théâtre de l'absurde ancré dans l'Afrique des dictatures.
+Le Congolais [Sony Labou Tansi](/auteur/sony-labou-tansi) a fondé à Brazzaville une troupe, le Rocado Zulu Théâtre, qui a joué en Afrique et en Europe. [La Parenthèse de sang](/livre/la-parenthese-de-sang) réunit deux textes : dans le premier, des soldats recherchent un rebelle et refusent de croire qu'il est mort et enterré, avec une logique absurde et terrifiante. Un théâtre de l'absurde ancré dans l'Afrique des dictatures. Dans [Qui a mangé Madame d'Avoine Bergotha ?](/livre/qui-a-mange-madame-d-avoine-bergotha), un amoureux transi se déguise en femme pour combattre un tyran : la comédie du travestissement tourne au cauchemar politique.
 
 Dans la même veine, le Togolais [Kossi Efoui](/auteur/kossi-efoui) a écrit sa première pièce, [Le Carrefour](/livre/le-carrefour), sous la dictature, pour en dénoncer les mécanismes de répression.
 

@@ -410,6 +410,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "l-enfant-noir",
     title: "L'Enfant noir",
+    metaDescription: "L'Enfant noir (1953) de Camara Laye : son enfance à Kouroussa, en Guinée, entre son père forgeron et sa mère. Résumé du classique étudié au collège.",
     contributors: [auteur("Camara Laye", "camara-laye")],
     genre: "roman",
     audience: "ado",

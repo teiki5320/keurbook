@@ -20,7 +20,7 @@ Les vacances, c'est le moment idéal pour découvrir une autre littérature : on
 
 **[Petit pays](/livre/petit-pays) de Gaël Faye.** Une enfance au Burundi, les copains, les bêtises, puis la guerre qui s'approche. On le lit d'une traite et on n'oublie pas ses personnages.
 
-**[Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) de Fatou Diome.** Entre une petite île sénégalaise et Strasbourg, une narratrice raconte les rêves de football et d'Europe de son jeune frère. Drôle, tendre et lucide.
+**[Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) de [Fatou Diome](/auteur/fatou-diome).** Entre une petite île sénégalaise et Strasbourg, une narratrice raconte les rêves de football et d'Europe de son jeune frère. Drôle, tendre et lucide.
 
 **[Les Impatientes](/livre/les-impatientes) de Djaïli Amadou Amal.** Trois jeunes femmes du nord du Cameroun face au mariage forcé et à la polygamie. Un livre court, qui se lit comme un roman à suspense et ne laisse personne indifférent.
 

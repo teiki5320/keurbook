@@ -16,6 +16,8 @@ Ses contes sont une parfaite porte d'entrée. [Le Pagne noir](/livre/le-pagne-no
 
 Son roman [Climbié](/livre/climbie) (1956), largement inspiré de sa vie, suit un garçon qui grandit sous la colonisation. À l'école, on punit ceux qui parlent leur langue en leur faisant porter un « symbole », un objet humiliant passé de main en main. Devenu adulte, Climbié découvre les injustices du système colonial et s'engage. Un livre simple et fort pour comprendre cette époque.
 
+Au théâtre, sa tragédie [Béatrice du Congo](/livre/beatrice-du-congo) (1970) s'inspire de l'histoire de Kimpa Vita, une jeune femme du royaume du Kongo qui appela son peuple à se libérer de la domination étrangère au début du XVIIIe siècle.
+
 ## Ahmadou Kourouma, le géant
 
 Le plus célèbre des écrivains ivoiriens est Ahmadou Kourouma. Avec [Les Soleils des indépendances](/livre/les-soleils-des-independances) (1968), il raconte la déchéance de Fama, prince malinké ruiné par les indépendances et le parti unique, dans un français plein des images et des tournures du malinké. Ce livre a changé la manière d'écrire le roman africain.

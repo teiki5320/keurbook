@@ -30,7 +30,7 @@ Sa course aux remèdes devient une satire féroce et drôle de ceux qui ont gard
 
 Les années 1970 et 1980 voient se multiplier les régimes autoritaires. Les romanciers répondent par la satire, souvent en inventant des pays imaginaires.
 
-Dans [Le Pleurer-rire](/livre/le-pleurer-rire), le Congolais [Henri Lopes](/auteur/henri-lopes) raconte un coup d'État vu par le maître d'hôtel du nouveau chef, surnommé « Tonton ». On rit pour ne pas pleurer, comme le dit le titre. [La Vie et demie](/livre/la-vie-et-demie), de [Sony Labou Tansi](/auteur/sony-labou-tansi), va plus loin : dans la Katamalanasie, un opposant exécuté refuse de mourir et vient hanter le dictateur et sa descendance. C'est un roman baroque, violent et inoubliable.
+Dans [Le Pleurer-rire](/livre/le-pleurer-rire), le Congolais [Henri Lopes](/auteur/henri-lopes) raconte un coup d'État vu par le maître d'hôtel du nouveau chef, surnommé « Tonton ». On rit pour ne pas pleurer, comme le dit le titre. Du même auteur, [Une enfant de Poto-Poto](/livre/une-enfant-de-poto-poto) s'ouvre sur la fête de l'indépendance, le 15 août 1960, à Brazzaville. [La Vie et demie](/livre/la-vie-et-demie), de [Sony Labou Tansi](/auteur/sony-labou-tansi), va plus loin : dans la Katamalanasie, un opposant exécuté refuse de mourir et vient hanter le dictateur et sa descendance. C'est un roman baroque, violent et inoubliable.
 
 Au Cameroun, [Mongo Beti](/auteur/mongo-beti) montre dans [Perpétue et l'habitude du malheur](/livre/perpetue-et-l-habitude-du-malheur) ce que la dictature fait aux plus fragiles, et d'abord aux femmes, à travers l'enquête d'un homme sur la mort de sa jeune sœur.
 

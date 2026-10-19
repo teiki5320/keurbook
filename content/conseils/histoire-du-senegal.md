@@ -39,7 +39,7 @@ Deux romans des années 1970 montrent une société qui change vite :
 
 ## Le Sénégal d'aujourd'hui : l'émigration
 
-Enfin, [Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) de Fatou Diome (2003) aborde un sujet central de l'histoire récente : le rêve d'Europe des jeunes Sénégalais. Entre l'île de Niodior et la France, la narratrice raconte avec humour et lucidité les illusions de l'exil.
+Enfin, [Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) de [Fatou Diome](/auteur/fatou-diome) (2003) aborde un sujet central de l'histoire récente : le rêve d'Europe des jeunes Sénégalais. Entre l'île de Niodior et la France, la narratrice raconte avec humour et lucidité les illusions de l'exil.
 
 ## Par où commencer ?
 

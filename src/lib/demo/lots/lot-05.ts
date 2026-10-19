@@ -682,6 +682,7 @@ export const livres: Book[] = [
   livre({
     slug: "qui-a-mange-madame-d-avoine-bergotha",
     title: "Qui a mangé Madame d'Avoine Bergotha ?",
+    metaDescription: "Qui a mangé Madame d'Avoine Bergotha ? (1989), pièce de Sony Labou Tansi : une comédie du travestissement qui tourne au cauchemar politique. Résumé.",
     contributors: [SONY],
     genre: "theatre",
     audience: "adulte",
@@ -1055,6 +1056,7 @@ export const livres: Book[] = [
   livre({
     slug: "une-enfant-de-poto-poto",
     title: "Une enfant de Poto-Poto",
+    metaDescription: "Une enfant de Poto-Poto (2012), roman d'Henri Lopes : deux amies de Brazzaville le soir de l'indépendance, en 1960. Résumé et raisons de le lire.",
     contributors: [LOPES],
     genre: "roman",
     audience: "adulte",
