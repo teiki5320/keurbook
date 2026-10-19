@@ -3,6 +3,7 @@ export const NAV = [
   { href: "/auteurs", label: "Auteurs" },
   { href: "/pays", label: "Pays" },
   { href: "/conseils", label: "Conseils" },
+  { href: "/top-10", label: "Top 10" },
 ] as const;
 
 /** Listes secondaires (pied de page, bas de l'accueil). */

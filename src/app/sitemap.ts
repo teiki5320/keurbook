@@ -3,6 +3,8 @@ import { bookCountry } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
 import { getAllBooks, getAuthors, getCountriesWithBooks } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
+import { getTop10s } from "@/lib/data/top10";
+import { TOP10_UPDATED } from "@/lib/top10/sujets";
 import { getMaintenance } from "@/lib/data/settings";
 
 export const dynamic = "force-static";
@@ -43,6 +45,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
   return [
     ...staticPages,
+    // Top 10 : une adresse par onglet (/top-10 renvoie vers le premier comme adresse canonique).
+    ...getTop10s().map((t) => ({ url: `${base}/top-10/${t.slug}`, lastModified: day(TOP10_UPDATED), changeFrequency: "monthly" as const, priority: 0.8 })),
     ...books.map((b) => ({
       url: `${base}${b.kind === "bd" ? "/bd" : "/livre"}/${b.slug}`,
       lastModified: new Date(`${b.addedAt}T00:00:00Z`),

@@ -4,6 +4,7 @@
  */
 import { normalize } from "../book-utils";
 import type { Author, Book } from "../types";
+import { AMAZON_ASINS } from "./amazon-asins";
 import { auteursBd } from "./auteurs-bd";
 import { auteursCentreEstSud } from "./auteurs-centre-est-sud";
 import { auteursOuest } from "./auteurs-ouest";
@@ -18,9 +19,10 @@ import { AUTHOR_PHOTOS } from "./photos";
 const illustrated = new Set([...ILLUSTRATED, ...LOTS.flatMap((l) => l.illustres)]);
 const photos = Object.assign({}, AUTHOR_PHOTOS, ...LOTS.map((l) => l.photos));
 
-/** Livres et BD, avec leur illustration de couverture Keurbook quand elle existe (illustrations.ts et lots). */
+/** Livres et BD, avec leur illustration de couverture Keurbook quand elle existe (illustrations.ts et lots) et leur ASIN vérifié (amazon-asins.ts). */
 export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bandesDessinees, ...LOTS.flatMap((l) => l.livres)].map((b) => ({
   ...b,
+  amazonAsin: b.amazonAsin ?? AMAZON_ASINS[b.slug] ?? null,
   ...(illustrated.has(b.slug) ? { illustration: `/illustrations/${b.slug}.webp` } : {}),
   quote: b.quote ?? BOOK_QUOTES[b.slug] ?? null,
   ...(BOOK_ADAPTATIONS[b.slug] ? { adaptations: [...(b.adaptations ?? []), ...BOOK_ADAPTATIONS[b.slug]] } : {}),
