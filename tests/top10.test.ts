@@ -3,7 +3,7 @@
  * Lancement : npm test
  */
 import assert from "node:assert/strict";
-import { readdirSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { COUNTRIES } from "../src/lib/countries";
@@ -61,11 +61,23 @@ describe("Top 10", () => {
         assert.ok(sentences >= 2 && sentences <= 3, `${sentences} phrases`);
       });
 
-      it("chaque livre a de quoi remplir « Pourquoi le lire »", () => {
+      it("chaque livre a son propre « Pourquoi le lire » (3 ou 4 phrases)", () => {
         for (const i of t.items) {
-          if (i.why) assert.ok(i.why.length >= 120 && i.why.length <= 500, `${i.slug} : ${i.why.length} caractères`);
-          else assert.ok((published.get(i.slug)?.whyRead.length ?? 0) >= 2, `${i.slug} : fiche sans « Pourquoi le lire »`);
+          assert.ok(i.why, `${i.slug} : texte « Pourquoi le lire » manquant`);
+          assert.ok(i.why.length >= 120 && i.why.length <= 500, `${i.slug} : ${i.why.length} caractères`);
+          const n = i.why.split(/(?<=[.!?])\s+(?=[A-ZÀ-ÖØ-ÞÉ«])/).length;
+          assert.ok(n >= 3 && n <= 4, `${i.slug} : ${n} phrases`);
         }
+      });
+
+      it("l'intro dit comment le classement est fait et nomme le n° 1", () => {
+        assert.match(t.intro, /class/);
+        const first = published.get(t.items[0].slug)!;
+        assert.ok(t.intro.includes(first.title), `l'intro ne cite pas le n° 1 (${first.title})`);
+      });
+
+      it("image de partage présente", () => {
+        assert.ok(existsSync(join(import.meta.dirname, "..", "public", "top10", `${t.slug}.jpg`)), "lancer : npx tsx scripts/images-top10.ts");
       });
 
       it("3 questions fréquentes et un « Par où commencer »", () => {
@@ -79,10 +91,29 @@ describe("Top 10", () => {
       });
 
       it("ni prix ni note dans les textes", () => {
-        assert.doesNotMatch(JSON.stringify(t), /\d+(,\d+)?\s?€|étoile|★|\/\s?(5|10)\b/);
+        // Notes du type « 4/5 », « ★ » ou « 3 étoiles » (le mot seul, comme dans « Ma Sœur-Étoile », est permis).
+        assert.doesNotMatch(JSON.stringify(t), /\d+(,\d+)?\s?€|★|\d\s?étoiles?\b|\d\s?\/\s?(5|10)\b/);
       });
     });
   }
+});
+
+describe("Doublons entre onglets", () => {
+  it("un livre apparaît dans 2 onglets au plus", () => {
+    const count = new Map<string, number>();
+    for (const t of TOP10S) for (const i of t.items) count.set(i.slug, (count.get(i.slug) ?? 0) + 1);
+    for (const [slug, n] of count) assert.ok(n <= 2, `${slug} : ${n} onglets`);
+  });
+  it("deux onglets partagent 2 livres au plus", () => {
+    for (const [a, ta] of TOP10S.entries())
+      for (const tb of TOP10S.slice(a + 1)) {
+        const common = ta.items.filter((i) => tb.items.some((j) => j.slug === i.slug)).map((i) => i.slug);
+        assert.ok(common.length <= 2, `${ta.slug} / ${tb.slug} : ${common.join(", ")}`);
+      }
+  });
+  it("le n° 1 de chaque onglet a un lien Amazon direct", () => {
+    for (const t of TOP10S) assert.ok(published.get(t.items[0].slug)?.amazonAsin, `${t.slug} : n° 1 sans ASIN`);
+  });
 });
 
 describe("ASIN Amazon vérifiés", () => {

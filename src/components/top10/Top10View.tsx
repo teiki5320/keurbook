@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { AmazonButton } from "@/components/book/AmazonButton";
 import { BookCover } from "@/components/book/BookCover";
-import { Breadcrumb } from "@/components/layout/Section";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import type { Top10Book } from "@/lib/data/top10";
 import { TOP10_UPDATED } from "@/lib/top10/sujets";
@@ -12,12 +11,24 @@ import { Top10Tabs } from "./Top10Tabs";
 
 const monthYear = new Intl.DateTimeFormat("fr-FR", { month: "long", year: "numeric", timeZone: "UTC" });
 
+/** Les 3 sujets qui suivent dans l'ordre des onglets (on repart du début après le dernier). */
+function seeAlso(tops: Top10[], top: Top10): Top10[] {
+  const i = tops.findIndex((t) => t.slug === top.slug);
+  return [1, 2, 3].map((k) => tops[(i + k) % tops.length]);
+}
+
+/** Sujet du top avec une majuscule : « Top 10 des romans récents » → « Romans récents ». */
+function subjectOf(top: Top10): string {
+  const s = top.title.replace(/^Top 10 des /, "");
+  return s[0].toUpperCase() + s.slice(1);
+}
+
 /** Page « Top 10 » : onglets des sujets, puis le top du sujet actif (même gabarit pour tous les sujets). */
 export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; books: Top10Book[] }) {
   return (
     <>
-      <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: "Top 10", href: "/top-10" }, { name: top.tab }]} />
-      <div className="mt-5">
+      {/* Pas de fil d'Ariane visible (comme le reste du site) : seule sa version pour Google, dans la page. */}
+      <div className="mt-4">
         <Top10Tabs tabs={tops.map((t) => ({ slug: t.slug, tab: t.tab }))} active={top.slug} />
       </div>
 
@@ -119,6 +130,24 @@ export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; boo
               </details>
             ))}
           </div>
+        </section>
+
+        {/* Voir aussi : les 3 tops suivants dans l'ordre des onglets */}
+        <section aria-labelledby="voir-aussi" className="mt-14">
+          <h2 id="voir-aussi" className="section-title">
+            Voir aussi
+          </h2>
+          <ul className="mt-5 grid gap-3 sm:grid-cols-3">
+            {seeAlso(tops, top).map((t) => (
+              <li key={t.slug}>
+                <Link href={`/top-10/${t.slug}`} className="flex h-full flex-col rounded-xl border border-line bg-white p-4 transition hover:border-line-strong">
+                  <span className="eyebrow">Top 10</span>
+                  <span className="mt-1.5 font-serif text-2xl leading-[1.05] text-balance">{subjectOf(t)}</span>
+                  <span className="mt-auto pt-3 text-sm text-accent">Voir le top →</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
           <p className="mt-8 text-xs leading-relaxed text-faint">{AMAZON_DISCLOSURE}</p>
         </section>
       </article>

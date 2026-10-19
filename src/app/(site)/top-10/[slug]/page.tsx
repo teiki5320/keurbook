@@ -14,7 +14,15 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/top-10/[slug]">): Promise<Metadata> {
   const top = getTop10BySlug((await params).slug);
   if (!top) return {};
-  return pageMetadata({ title: top.title, description: top.description, path: `/top-10/${top.slug}`, type: "article" });
+  return pageMetadata({
+    title: top.title,
+    description: top.description,
+    path: `/top-10/${top.slug}`,
+    type: "article",
+    // Image de partage : les 3 premières couvertures du top (scripts/images-top10.ts).
+    image: `/top10/${top.slug}.jpg`,
+    imageAlt: top.title,
+  });
 }
 
 /** Un onglet de la page « Top 10 » : vraie page à part, avec son titre, sa description et ses 10 livres dans le HTML. */

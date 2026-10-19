@@ -732,7 +732,7 @@ export const livresCentreEstSud: Book[] = [
     originalLanguage: "anglais",
     publisher: "Présence Africaine",
     pages: null,
-    isbn: null,
+    isbn: "9782708701915",
     format: null,
     awards: [],
     featured: false,
