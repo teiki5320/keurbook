@@ -60,7 +60,7 @@ Même méthode que le 17/10 : titre (« Titre, Auteur | Keurbook ») et titre pr
 
 Fait : « fatou diome » (53 vues) ne montre toujours que ses livres. Liens ajoutés vers /auteur/fatou-diome depuis 3 articles qui la citaient sans lien (grandes autrices africaines, histoire du Sénégal, livres pour les vacances).
 
-Reste à faire (Jean) : dans la Search Console, « Demander l'indexation » de /bd, /auteurs, /pays, /conseils et /auteur/fatou-diome (pas encore fait à la date du 19/10 : ces pages sont toujours dans la liste).
+Fait le 19/10 (dans la Search Console, avec l'accord de Jean) : « Demander l'indexation » de /bd, /auteurs, /pays, /conseils et /auteur/fatou-diome. Google a répondu « Indexation demandée » pour les 5. À vérifier au prochain passage : sont-elles indexées ?
 
 ### Vitesse sur téléphone
 
