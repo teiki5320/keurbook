@@ -106,7 +106,7 @@ export const livresOuest: Book[] = [
     year: 1956,
     publisher: "Seuil",
     pages: null,
-    isbn: null,
+    isbn: "9782020037952",
     format: null,
     awards: [],
   }),
@@ -212,7 +212,7 @@ export const livresOuest: Book[] = [
     whyRead: [
       "Un roman bref et saisissant sur les tirailleurs sénégalais de 14-18.",
       "Une voix hypnotique, qui répète et envoûte comme un chant.",
-      "Couronné en France comme à l'étranger, notamment par l'International Booker Prize.",
+      "Couronné en France comme à l'étranger, notamment par l'International Booker Prize 2021, décerné à sa traduction anglaise.",
     ],
     quote: null,
     year: 2018,

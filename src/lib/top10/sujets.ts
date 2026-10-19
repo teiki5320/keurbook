@@ -177,6 +177,7 @@ export const TOP10S: Top10[] = [
       },
       {
         slug: "rwanda-1994",
+        place: "Rwanda · dessinateur congolais",
         why: "L'album suit Mathilde et ses enfants pendant le génocide des Tutsi, en avril 1994. Les scénaristes ont passé de longs mois au Rwanda à recueillir des témoignages, et la fiction s'appuie sur des faits réels. Le dessin sobre de Pat Masioni, grand auteur congolais, raconte beaucoup avec peu de mots.",
       },
       {
@@ -281,35 +282,35 @@ export const TOP10S: Top10[] = [
     title: "Top 10 des livres d'autrices africaines",
     description: "Notre top 10 des livres d'autrices africaines : Mariama Bâ, Marie NDiaye, Léonora Miano, Djaïli Amadou Amal, Chimamanda Ngozi Adichie et d'autres.",
     intro:
-      "Dix livres écrits par des femmes d'Afrique subsaharienne et de sa diaspora, choisis parmi les fiches de Keurbook, souvent primés et venus de cinq pays. Ils sont classés par date de parution, du plus ancien au plus récent, pour suivre comment ces voix se sont fait entendre. Le n° 1 est donc Une si longue lettre, roman pionnier de Mariama Bâ paru en 1979.",
+      "Dix livres écrits par des femmes d'Afrique subsaharienne et de sa diaspora, choisis parmi les fiches de Keurbook, souvent primés et venus de cinq pays. Le classement suit le nombre de prix littéraires reçus par chaque livre, d'après sa fiche, puis notre préférence en cas d'égalité. Assèze l'Africaine, de Calixthe Beyala, seul livre du top couronné deux fois, arrive donc en tête.",
     items: [
       {
-        slug: "une-si-longue-lettre",
-        why: "Le livre pionnier de ce top : en 1979, Mariama Bâ donne la parole à Ramatoulaye, une veuve qui écrit à son amie pendant son deuil. Sa voix parle franchement du mariage, de la polygamie et des espoirs des femmes instruites. Prix Noma 1980, le livre est lu dans les lycées de toute l'Afrique francophone.",
-      },
-      {
         slug: "asseze-l-africaine",
-        why: "Calixthe Beyala suit Assèze du village camerounais à Douala, puis jusqu'à Paris, parmi les déracinés. Sa voix rend toute l'intensité d'une amitié-rivalité entre deux jeunes filles. Le roman a reçu le prix François-Mauriac de l'Académie française en 1994.",
+        why: "Deux prix en 1994, le prix François-Mauriac de l'Académie française et le prix Tropiques : c'est le livre le plus primé de ce top. Calixthe Beyala suit Assèze du village camerounais à Douala, puis jusqu'à Paris, parmi les déracinés. Sa voix rend toute l'intensité d'une amitié-rivalité entre deux jeunes filles.",
       },
       {
-        slug: "le-ventre-de-l-atlantique",
-        why: "Fatou Diome écrit depuis les deux rives : Salie, installée à Strasbourg, voit son petit frère resté au Sénégal rêver de l'Europe. Ce regard de femme partagée entre deux pays rend le livre drôle et amer à la fois. Une écriture vive, pleine d'humour et de tendresse.",
-      },
-      {
-        slug: "reine-pokou",
-        why: "Véronique Tadjo reprend le mythe fondateur du peuple baoulé et en propose plusieurs versions, en variant les points de vue. Sa voix, entre poésie et conte, interroge le sacrifice et la violence faite au nom du peuple. Un texte bref, Grand prix littéraire d'Afrique noire 2005.",
-      },
-      {
-        slug: "l-autre-moitie-du-soleil",
-        why: "Chimamanda Ngozi Adichie raconte la guerre du Biafra, souvent oubliée, à travers des personnages qu'on suit pendant des années. Écrit en anglais, le roman se lit en traduction française. Il a reçu l'Orange Prize 2007 et a révélé son autrice.",
+        slug: "une-si-longue-lettre",
+        why: "Un livre pionnier : en 1979, Mariama Bâ donne la parole à Ramatoulaye, une veuve qui écrit à son amie pendant son deuil. Sa voix parle franchement du mariage, de la polygamie et des espoirs des femmes instruites. Prix Noma 1980, le livre est lu dans les lycées de toute l'Afrique francophone.",
       },
       {
         slug: "trois-femmes-puissantes",
         why: "Marie NDiaye fait le portrait de trois femmes, entre la France et l'Afrique, qui refusent de plier face à l'humiliation. Son écriture ample et précise donne une grande force à ces trois récits. Prix Goncourt 2009.",
       },
       {
+        slug: "l-autre-moitie-du-soleil",
+        why: "Chimamanda Ngozi Adichie raconte la guerre du Biafra, souvent oubliée, à travers des personnages qu'on suit pendant des années. Écrit en anglais, le roman se lit en traduction française. Il a reçu l'Orange Prize 2007 et a révélé son autrice.",
+      },
+      {
         slug: "la-saison-de-l-ombre",
         why: "Léonora Miano raconte le début de la traite atlantique depuis l'Afrique, du point de vue des mères de douze jeunes hommes disparus. Son écriture ample, presque incantatoire, donne la parole aux familles des disparus. Prix Femina 2013.",
+      },
+      {
+        slug: "les-impatientes",
+        why: "Djaïli Amadou Amal fait entendre trois femmes du nord du Cameroun à qui l'on répète un seul conseil : « munyal », patience. Leurs voix disent de l'intérieur la polygamie et le mariage forcé. Un roman court, direct et très fort, prix Goncourt des lycéens 2020.",
+      },
+      {
+        slug: "reine-pokou",
+        why: "Véronique Tadjo reprend le mythe fondateur du peuple baoulé et en propose plusieurs versions, en variant les points de vue. Sa voix, entre poésie et conte, interroge le sacrifice et la violence faite au nom du peuple. Un texte bref, Grand prix littéraire d'Afrique noire 2005.",
       },
       {
         slug: "les-maquisards",
@@ -320,8 +321,8 @@ export const TOP10S: Top10[] = [
         why: "Nathacha Appanah fait se succéder plusieurs voix pour raconter Mayotte et ses enfants des rues, dont Moïse, adopté bébé par une infirmière venue de métropole. Le roman est court et intense, et chaque voix éclaire un point de vue. Prix Femina des lycéens 2016.",
       },
       {
-        slug: "les-impatientes",
-        why: "Djaïli Amadou Amal fait entendre trois femmes du nord du Cameroun à qui l'on répète un seul conseil : « munyal », patience. Leurs voix disent de l'intérieur la polygamie et le mariage forcé. Un roman court, direct et très fort, prix Goncourt des lycéens 2020.",
+        slug: "le-ventre-de-l-atlantique",
+        why: "Fatou Diome écrit depuis les deux rives : Salie, installée à Strasbourg, voit son petit frère resté au Sénégal rêver de l'Europe. Ce regard de femme partagée entre deux pays rend le livre drôle et amer à la fois. Une écriture vive, pleine d'humour et de tendresse.",
       },
     ],
     start:
@@ -329,7 +330,7 @@ export const TOP10S: Top10[] = [
     faq: [
       {
         q: "Comment avez-vous choisi ces dix livres ?",
-        a: "Parmi les livres d'autrices présentés sur Keurbook, nous avons retenu ceux que leurs fiches conseillent ou que de grands prix ont distingués, en variant les époques et les pays. Ils sont rangés par date de parution.",
+        a: "Parmi les livres d'autrices présentés sur Keurbook, nous avons retenu ceux que leurs fiches conseillent ou que de grands prix ont distingués, en variant les époques et les pays. Ils sont classés selon le nombre de prix reçus, puis selon notre préférence.",
       },
       {
         q: "Ces livres sont-ils tous écrits en français ?",
@@ -413,23 +414,23 @@ export const TOP10S: Top10[] = [
     title: "Top 10 des livres de poésie africaine",
     description: "Notre top 10 des recueils de poésie africaine : Senghor, Birago Diop, Rabearivelo, Bernard Dadié, Wole Soyinka, Véronique Tadjo et d'autres voix.",
     intro:
-      "Dix recueils de poètes d'Afrique subsaharienne, choisis parmi les livres de poésie présentés sur Keurbook, en variant les pays et les époques. Ils sont classés par date de parution, pour suivre près d'un siècle de poésie, des pionniers aux voix d'aujourd'hui. Le n° 1 est donc Presque-songes, recueil de 1934 du Malgache Jean-Joseph Rabearivelo.",
+      "Dix recueils de poètes d'Afrique subsaharienne, choisis parmi les livres de poésie présentés sur Keurbook, en variant les pays et les époques. Ils sont classés selon leur influence : les recueils les plus lus et les plus étudiés d'abord. Éthiopiques, de Léopold Sédar Senghor, le plus célèbre poète de la négritude, arrive donc en tête.",
     items: [
       {
-        slug: "presque-songes",
-        why: "Le plus ancien recueil de ce top, et l'un des premiers grands livres de la poésie africaine d'expression française. Jean-Joseph Rabearivelo y écrit, en malgache et en français, des poèmes en prose où les hautes terres et les mythes de Madagascar deviennent des visions presque rêvées. Un recueil bref, à lire poème par poème.",
-      },
-      {
-        slug: "afrique-debout",
-        why: "Le premier recueil de Bernard Dadié, paru en 1950 alors qu'il militait contre le système colonial en Côte d'Ivoire. Ses poèmes appellent l'Afrique à se relever et à refuser la domination, avec colère mais aussi espoir et fraternité. Des vers simples et puissants, faits pour être dits.",
-      },
-      {
         slug: "ethiopiques",
-        why: "Senghor y chante l'Afrique, ses paysages, ses rois et ses femmes, dans des poèmes faits pour être dits avec kôras, balafong et tam-tams. On y trouve « Chaka » et « À New York », un poème qui n'a pas pris une ride. L'un des recueils essentiels de la négritude, à lire à voix haute.",
+        why: "Le recueil du plus célèbre poète de la négritude. Senghor y chante l'Afrique, ses paysages, ses rois et ses femmes, dans des poèmes faits pour être dits avec kôras, balafong et tam-tams. On y trouve « Chaka » et « À New York », un poème qui n'a pas pris une ride. À lire à voix haute.",
       },
       {
         slug: "leurres-et-lueurs",
         why: "Le seul recueil de poèmes de Birago Diop, écrit sur plus de trente ans. Il contient « Souffles », où les morts vivent dans l'arbre, l'eau et le vent : l'un des poèmes les plus connus d'Afrique. Une poésie musicale et brève, idéale pour commencer.",
+      },
+      {
+        slug: "presque-songes",
+        why: "Paru en 1934, c'est l'un des premiers grands livres de la poésie africaine d'expression française. Jean-Joseph Rabearivelo y écrit, en malgache et en français, des poèmes en prose où les hautes terres et les mythes de Madagascar deviennent des visions presque rêvées. Un recueil bref, à lire poème par poème.",
+      },
+      {
+        slug: "afrique-debout",
+        why: "Le premier recueil de Bernard Dadié, paru en 1950 alors qu'il militait contre le système colonial en Côte d'Ivoire. Ses poèmes appellent l'Afrique à se relever et à refuser la domination, avec colère mais aussi espoir et fraternité. Des vers simples et puissants, faits pour être dits.",
       },
       {
         slug: "cycles-sombres",
@@ -448,12 +449,12 @@ export const TOP10S: Top10[] = [
         why: "Avant ses romans, Alain Mabanckou était poète : ce long poème est l'adieu d'un fils exilé à sa mère, morte seule au Congo. Il reconstitue en vers les signes du deuil, comme on raconte une légende. On y entend déjà la douleur de l'absence qui traversera toute son œuvre.",
       },
       {
-        slug: "sur-les-berges-du-chari-district-nord-de-la-beaute",
-        why: "Pour la première fois, Nimrod inscrit dans un titre le nom qui le relie au Tchad : le Chari, fleuve qui se jette dans le lac Tchad. Ses poèmes en disent les paysages, les ciels et les pêcheurs, sans oublier la mémoire de l'esclavage ni la répression. Le Tchad du poète, entre beauté et blessures.",
+        slug: "ishindenshin",
+        why: "Un recueil paru en 2017, au carrefour des genres : une pièce de théâtre, des poèmes, des chansons et un essai, « Pourquoi je suis poète ! ». On y découvre Felwine Sarr poète et musicien, moins connu que l'essayiste. Un livre bref, à lire par fragments.",
       },
       {
-        slug: "ishindenshin",
-        why: "Le plus récent recueil du top, au carrefour des genres : une pièce de théâtre, des poèmes, des chansons et un essai, « Pourquoi je suis poète ! ». On y découvre Felwine Sarr poète et musicien, moins connu que l'essayiste. Un livre bref, à lire par fragments.",
+        slug: "sur-les-berges-du-chari-district-nord-de-la-beaute",
+        why: "Pour la première fois, Nimrod inscrit dans un titre le nom qui le relie au Tchad : le Chari, fleuve qui se jette dans le lac Tchad. Ses poèmes en disent les paysages, les ciels et les pêcheurs, sans oublier la mémoire de l'esclavage ni la répression. Le Tchad du poète, entre beauté et blessures.",
       },
     ],
     start:
@@ -477,17 +478,29 @@ export const TOP10S: Top10[] = [
     slug: "livres-africains-enfants",
     tab: "Pour enfants",
     title: "Top 10 des livres africains pour enfants",
-    description: "Notre top 10 des livres africains pour enfants : contes, albums et premiers romans de Senghor, Bernard Dadié, Hampâté Bâ, Véronique Tadjo et d'autres.",
+    description: "Notre top 10 des livres africains pour enfants : contes, albums, BD et premiers romans de Senghor, Bernard Dadié, Hampâté Bâ, Marguerite Abouet et d'autres.",
     intro:
-      "Dix livres pour enfants d'auteurs d'Afrique subsaharienne, choisis parmi les livres jeunesse du site : albums illustrés, contes à lire le soir et premiers romans. Ils sont classés selon l'âge du lecteur, du plus jeune au plus grand : les albums à lire aux petits d'abord, les romans pour les 10 ans et plus à la fin. Le n° 1 est donc une fable pour les tout-petits, Pourquoi le lion n'est plus le roi des animaux.",
+      "Dix livres et BD pour enfants d'auteurs d'Afrique subsaharienne, choisis parmi les livres jeunesse du site : contes, albums illustrés, BD et premiers romans. Ils sont classés selon leur influence : les livres les plus connus, lus et transmis d'abord. La Belle Histoire de Leuk-le-Lièvre, le livre de lecture qui a appris à lire à des générations d'écoliers africains, arrive donc en tête.",
     items: [
       {
-        slug: "pourquoi-le-lion-n-est-plus-le-roi-des-animaux",
-        why: "Pour les tout-petits : une petite mangouste ose désobéir au lion tout-puissant, et son audace change l'ordre des choses. Une fable drôle sur le pouvoir, à lire dès le plus jeune âge. C'est le tout premier livre d'In Koli Jean Bofane, l'auteur de Congo Inc.",
+        slug: "la-belle-histoire-de-leuk-le-lievre",
+        why: "Le livre de lecture qui a appris à lire à des générations d'écoliers africains, écrit par Senghor et Abdoulaye Sadji. Leuk, le petit lièvre malin, déjoue les ruses de Bouki l'hyène au fil de courts chapitres illustrés. Il se lit toujours avec plaisir, à l'école comme en famille.",
       },
       {
-        slug: "mamy-wata-et-le-monstre",
-        why: "Un album aux couleurs vives, illustré par Véronique Tadjo elle-même. Mamy Wata, la reine des eaux, part à la rencontre d'un monstre qui terrorise les villages, et découvre une histoire plus triste qu'on ne le croit. Une belle façon de présenter aux petits une grande figure des croyances d'Afrique de l'Ouest.",
+        slug: "le-pagne-noir",
+        why: "Des contes de Côte d'Ivoire qui se lisent en quelques minutes, parfaits pour le soir. Kacou Ananzè, l'araignée rusée et gourmande, y joue des tours à tous les animaux, souvent à ses dépens. Un classique des bibliothèques d'école, lu par des générations d'écoliers.",
+      },
+      {
+        slug: "petit-bodiel-et-autres-contes-de-la-savane",
+        why: "Pour les lecteurs à partir de 10 ans : Petit Bodiel, lièvre paresseux et gourmand, se sert de la ruse pour tromper des animaux bien plus grands que lui. Amadou Hampâté Bâ réunit des contes de la savane qui se moquent de la vanité et de l'avidité. Drôles et pleins de sagesse, ils se lisent en famille.",
+      },
+      {
+        slug: "akissi",
+        why: "Akissi, petite fille de Yopougon qui ne tient pas en place, enchaîne les bêtises dans de courtes histoires indépendantes. L'album se lit seul dès 6 ans, et il ouvre une longue série. Marguerite Abouet, la scénariste d'Aya de Yopougon, y puise dans ses souvenirs d'enfance.",
+      },
+      {
+        slug: "yacouba-chasseur-africain",
+        why: "Le seul roman pour la jeunesse d'Ahmadou Kourouma, à partir de 10 ans. Mathieu, jeune Franco-Ivoirien en vacances à Abidjan, découvre une famille divisée sur l'initiation des garçons par Yacouba, chasseur et prêtre traditionnel. Une découverte de la Côte d'Ivoire d'aujourd'hui et des chasseurs malinké.",
       },
       {
         slug: "le-taxi-brousse-de-papa-diop",
@@ -502,40 +515,94 @@ export const TOP10S: Top10[] = [
         why: "Un premier roman à lire seul ou à deux, dès 6 ans. Une diablesse aux pieds de chèvre cherche son enfant perdu, mais les villageois lui claquent la porte au nez. Marie NDiaye signe un conte doux et grave sur la rumeur et la peur de l'autre.",
       },
       {
-        slug: "le-pagne-noir",
-        why: "Des contes de Côte d'Ivoire qui se lisent en quelques minutes, parfaits pour le soir. Kacou Ananzè, l'araignée rusée et gourmande, y joue des tours à tous les animaux, souvent à ses dépens. Un classique des bibliothèques d'école, lu par des générations d'écoliers.",
-      },
-      {
-        slug: "la-belle-histoire-de-leuk-le-lievre",
-        why: "Le livre de lecture qui a appris à lire à des générations d'écoliers africains, écrit par Senghor et Abdoulaye Sadji. Leuk, le petit lièvre malin, déjoue les ruses de Bouki l'hyène au fil de courts chapitres illustrés. Il se lit toujours avec plaisir, à l'école comme en famille.",
-      },
-      {
         slug: "trois-petits-cireurs",
         why: "Un court roman pour les jeunes lecteurs : Mamou, Abel et Nyassa cirent des chaussures devant les grands hôtels et partagent chaque soir leurs gains. Francis Bebey raconte avec tendresse l'amitié et le courage d'enfants obligés de grandir trop vite. Une histoire pleine de dignité.",
       },
       {
-        slug: "petit-bodiel-et-autres-contes-de-la-savane",
-        why: "Pour les lecteurs à partir de 10 ans : Petit Bodiel, lièvre paresseux et gourmand, se sert de la ruse pour tromper des animaux bien plus grands que lui. Amadou Hampâté Bâ réunit des contes de la savane qui se moquent de la vanité et de l'avidité. Drôles et pleins de sagesse, ils se lisent en famille.",
-      },
-      {
-        slug: "yacouba-chasseur-africain",
-        why: "Le seul roman pour la jeunesse d'Ahmadou Kourouma, à partir de 10 ans. Mathieu, jeune Franco-Ivoirien en vacances à Abidjan, découvre une famille divisée sur l'initiation des garçons par Yacouba, chasseur et prêtre traditionnel. Une découverte de la Côte d'Ivoire d'aujourd'hui et des chasseurs malinké.",
+        slug: "pourquoi-le-lion-n-est-plus-le-roi-des-animaux",
+        why: "Pour les tout-petits : une petite mangouste ose désobéir au lion tout-puissant, et son audace change l'ordre des choses. Une fable drôle sur le pouvoir, à lire dès le plus jeune âge. C'est le tout premier livre d'In Koli Jean Bofane, l'auteur de Congo Inc.",
       },
     ],
     start:
-      "Pour les plus petits, un album : [Le Taxi-brousse de Papa Diop](/livre/le-taxi-brousse-de-papa-diop) ou [Mamy Wata et le Monstre](/livre/mamy-wata-et-le-monstre). Pour la lecture du soir, les contes du [Pagne noir](/livre/le-pagne-noir).",
+      "Pour la lecture du soir, [La Belle Histoire de Leuk-le-Lièvre](/livre/la-belle-histoire-de-leuk-le-lievre) ou les contes du [Pagne noir](/livre/le-pagne-noir). Pour les plus petits, un album : [Le Taxi-brousse de Papa Diop](/livre/le-taxi-brousse-de-papa-diop). Pour une première BD, [Akissi](/bd/akissi).",
     faq: [
       {
         q: "À partir de quel âge ?",
-        a: "Les albums illustrés se lisent avec les plus petits. [La Diablesse et son enfant](/livre/la-diablesse-et-son-enfant) se lit dès 6 ans ; [Petit Bodiel](/livre/petit-bodiel-et-autres-contes-de-la-savane) et [Yacouba, chasseur africain](/livre/yacouba-chasseur-africain) à partir de 10 ans.",
+        a: "L'âge est indiqué quand la fiche du livre le précise : [Akissi](/bd/akissi) et [La Diablesse et son enfant](/livre/la-diablesse-et-son-enfant) se lisent dès 6 ans ; [Petit Bodiel](/livre/petit-bodiel-et-autres-contes-de-la-savane) et [Yacouba, chasseur africain](/livre/yacouba-chasseur-africain) à partir de 10 ans. Pour les plus grands, voir notre [top 10 pour ados](/top-10/livres-africains-ados).",
       },
       {
         q: "Ces auteurs écrivent-ils aussi pour les adultes ?",
         a: "Oui, presque tous : Senghor, Bernard Dadié, Amadou Hampâté Bâ, Ahmadou Kourouma, Alain Mabanckou ou Marie NDiaye ont aussi une œuvre pour les adultes, présentée sur leur fiche.",
       },
       {
-        q: "Et les BD pour enfants ?",
-        a: "Elles sont dans notre [top 10 des BD africaines](/top-10/bd-africaines), avec par exemple [Akissi](/bd/akissi) pour les jeunes lecteurs.",
+        q: "Et les autres BD pour enfants ?",
+        a: "[Akissi](/bd/akissi) figure dans ce top. D'autres albums sont dans notre [top 10 des BD africaines](/top-10/bd-africaines) et sur la page [Toutes les BD](/bd), avec un filtre par public.",
+      },
+    ],
+  },
+  {
+    slug: "livres-africains-ados",
+    tab: "Pour ados",
+    title: "Top 10 des livres africains pour ados",
+    description: "Notre top 10 des livres africains pour ados : romans, BD, nouvelles et biographies de Camara Laye, Gaël Faye, Marguerite Abouet, Léonora Miano et d'autres.",
+    intro:
+      "Dix livres et BD pour adolescents d'auteurs d'Afrique subsaharienne, choisis parmi les livres du site conseillés aux ados : romans étudiés en classe, BD cultes, nouvelles et biographies, un seul tome par série. Ils sont classés selon leur influence : les livres les plus connus, lus et transmis d'abord. L'Enfant noir, de Camara Laye, classique étudié au collège et adapté au cinéma comme en BD, arrive donc en tête.",
+    items: [
+      {
+        slug: "l-enfant-noir",
+        why: "Camara Laye se souvient de son enfance à Kouroussa, en Haute-Guinée, entre un père forgeron et orfèvre et une mère aux pouvoirs mystérieux. Peu à peu, l'école l'éloigne de sa famille et de son village. Ce classique étudié au collège a été adapté au cinéma en 1995 et en BD en 2010.",
+      },
+      {
+        slug: "petit-pays",
+        why: "Un premier roman lu par des millions de lecteurs, prix Goncourt des lycéens 2016. Gabriel, dix ans, vit à Bujumbura avec ses copains de l'impasse, jusqu'à ce qu'en 1993 le Burundi bascule dans la violence. Raconté à hauteur d'enfant, il a été adapté au cinéma, en BD et au théâtre.",
+      },
+      {
+        slug: "aya-de-yopougon",
+        why: "Le premier tome d'une série culte, prix du premier album au festival d'Angoulême 2006, adaptée en film d'animation. Aya, dix-neuf ans, rêve de devenir médecin dans le Yopougon joyeux de la fin des années 1970, pendant que ses amies ne pensent qu'aux sorties. Les expressions ivoiriennes des dialogues sont expliquées en fin d'album.",
+      },
+      {
+        slug: "le-fils-d-agatha-moudio",
+        why: "Un classique camerounais, Grand prix littéraire d'Afrique noire 1968. Mbenda, jeune pêcheur près de Douala, doit choisir entre l'épouse choisie par les anciens et Agatha Moudio, qu'il aime. Francis Bebey, écrivain et grand musicien, raconte la vie du village avec humour et le sens du conte.",
+      },
+      {
+        slug: "la-vie-de-pahe",
+        why: "Le dessinateur gabonais Pahé raconte sa propre enfance à Bitam, dans le nord du Gabon : la famille, l'école, les copains et les combines. Son trait de caricaturiste fait mouche à chaque page. Premier tome d'une série autobiographique, l'album a été adapté en dessin animé, Le Monde de Pahé.",
+      },
+      {
+        slug: "afropean-soul",
+        why: "Des nouvelles courtes, parfaites pour les lycéens, publiées dans une collection scolaire avec un dossier de lecture. Léonora Miano y donne la parole à des personnes qu'on voit peu dans la littérature française : un jeune footballeur camerounais, un garçon de neuf ans, des jeunes filles pleines de rêves. Une porte d'entrée idéale vers son œuvre.",
+      },
+      {
+        slug: "nelson-mandela-non-a-l-apartheid",
+        why: "Véronique Tadjo raconte aux adolescents la vie de Nelson Mandela, de son village du Transkei à ses vingt-sept années de prison. Le livre explique simplement ce qu'était l'apartheid et pourquoi Mandela est devenu un symbole mondial. Une biographie claire, dans la collection « Ceux qui ont dit non » d'Actes Sud Junior.",
+      },
+      {
+        slug: "le-pays-de-reve",
+        why: "David Diop, l'auteur de Frère d'âme, écrit ici pour les jeunes un conte poétique et grave. Rêve, orpheline élevée par sa grand-mère dans un bidonville, attend le jour où elle pourra partir découvrir le monde. Mais elle n'a pas envie d'attendre : une héroïne déterminée, dans un récit court sur l'injustice du monde.",
+      },
+      {
+        slug: "un-enfant-d-afrique",
+        why: "Écrit d'abord pour les lecteurs de 10 à 14 ans, ce roman suit Ayao, qui grandit au Dahomey dans une famille de cultivateurs. Jeux, école, travaux des champs : Olympe Bhêly-Quenum s'inspire de ses souvenirs pour montrer une Afrique loin des clichés de misère. Un récit sincère et lumineux sur l'enfance.",
+      },
+      {
+        slug: "aigre-doux",
+        why: "« D'où tu viens ? » : le narrateur, adolescent français à part entière, en a assez qu'on le juge sur sa couleur de peau. Wilfried N'Sondé dit sa colère, puis la confiance qu'il faut trouver en soi pour passer de l'aigreur à la douceur. Un texte court et direct, idéal pour parler des préjugés en classe.",
+      },
+    ],
+    start:
+      "Pour un classique court, [L'Enfant noir](/livre/l-enfant-noir). Pour un roman d'aujourd'hui, [Petit pays](/livre/petit-pays). Pour une BD, [Aya de Yopougon](/bd/aya-de-yopougon) ou [La Vie de Pahé](/bd/la-vie-de-pahe).",
+    faq: [
+      {
+        q: "Comment avez-vous fait ce classement ?",
+        a: "Nous avons retenu des livres que leurs fiches conseillent aux adolescents, avec un seul tome par série de BD. Nous les avons classés selon leur influence : les plus connus, lus et transmis d'abord. D'autres lecteurs feraient un autre ordre.",
+      },
+      {
+        q: "À partir de quel âge ?",
+        a: "L'âge est indiqué quand la fiche du livre le précise, comme pour [Un enfant d'Afrique](/livre/un-enfant-d-afrique), écrit pour les 10 à 14 ans. Pour les plus jeunes, voir notre [top 10 pour enfants](/top-10/livres-africains-enfants).",
+      },
+      {
+        q: "Ces livres sont-ils étudiés en classe ?",
+        a: "Certains, oui : [L'Enfant noir](/livre/l-enfant-noir) est un classique étudié au collège, et [Afropean Soul](/livre/afropean-soul) est publié dans une collection scolaire avec un dossier de lecture.",
       },
     ],
   },
@@ -545,39 +612,19 @@ export const TOP10S: Top10[] = [
     title: "Top 10 des livres d'histoire de l'Afrique",
     description: "Notre top 10 des livres sur l'histoire de l'Afrique : épopées, essais et témoignages, de l'empire du Mali à l'apartheid et au génocide des Tutsi.",
     intro:
-      "Dix livres d'auteurs africains pour comprendre l'histoire du continent, choisis parmi les essais et récits du site : épopées transmises par les griots, essais et témoignages. Ils sont classés selon l'époque qu'ils racontent, de la plus ancienne à la plus récente, pour lire l'histoire dans l'ordre. Le n° 1 est donc Nations nègres et culture, de Cheikh Anta Diop, qui remonte à l'Égypte ancienne.",
+      "Dix livres d'auteurs africains pour comprendre l'histoire du continent, choisis parmi les essais et récits du site : épopées transmises par les griots, essais et témoignages. Ils sont classés selon leur influence : les livres les plus lus et les plus cités d'abord. Nations nègres et culture, de Cheikh Anta Diop, qui a changé le regard de toute une génération sur l'histoire africaine, arrive donc en tête.",
     items: [
       {
         slug: "nations-negres-et-culture",
-        why: "Le livre qui remonte le plus loin : Cheikh Anta Diop y soutient que l'Égypte ancienne était une civilisation africaine noire, effacée par le regard colonial. Paru en 1954, il a changé le regard de toute une génération sur l'histoire africaine. Un classique de la pensée panafricaine, qui suscite encore des débats.",
+        why: "Le livre le plus discuté de ce top : Cheikh Anta Diop y soutient que l'Égypte ancienne était une civilisation africaine noire, effacée par le regard colonial. Paru en 1954, il a changé le regard de toute une génération sur l'histoire africaine. Un classique de la pensée panafricaine, qui suscite encore des débats.",
       },
       {
         slug: "soundjata-ou-l-epopee-mandingue",
-        why: "Pour le XIIIe siècle : la fondation de l'empire du Mali par Soundjata Keïta, telle que la racontait le griot Mamadou Kouyaté. Djibril Tamsir Niane l'a transcrite en français. L'épopée se lit comme un récit captivant, entre histoire, magie et héroïsme.",
-      },
-      {
-        slug: "le-maitre-de-la-parole",
-        why: "Une autre version, plus ample, de la même épopée de Soundjata, recueillie par Camara Laye auprès du griot Babou Condé, en Haute-Guinée. L'écrivain a gardé le souffle de la récitation, ses généalogies et ses chants. À lire après celle de Djibril Tamsir Niane, pour voir comment vit la tradition orale.",
-      },
-      {
-        slug: "l-empire-peul-du-macina",
-        why: "L'histoire de la Dina, l'État musulman fondé en 1818 par le marabout peul Sékou Amadou dans le delta intérieur du Niger. Amadou Hampâté Bâ et Jacques Daget la retracent jusqu'en 1853, surtout à partir des traditions orales. Un travail pionnier pour comprendre le Mali d'avant la colonisation.",
-      },
-      {
-        slug: "histoire-synthetique-de-l-afrique-resistante",
-        why: "Nazi Boni raconte l'histoire de l'Afrique du côté de ceux qui ont résisté, face aux invasions, à la traite et à la conquête coloniale. Rois, chefs de guerre et peuples entiers y sont les acteurs de leur propre histoire. Le livre, préfacé par l'historien Jean Suret-Canale, est paru après la mort de l'auteur.",
+        why: "La grande épopée de l'Afrique de l'Ouest : la fondation de l'empire du Mali au XIIIe siècle par Soundjata Keïta, telle que la racontait le griot Mamadou Kouyaté. Djibril Tamsir Niane l'a transcrite en français. L'épopée se lit comme un récit captivant, entre histoire, magie et héroïsme.",
       },
       {
         slug: "un-long-chemin-vers-la-liberte",
         why: "L'autobiographie de Nelson Mandela, de son enfance au Transkei à ses vingt-sept années de prison. Un témoignage essentiel pour comprendre l'apartheid et la lutte pour l'abolir. Écrit en anglais, il se lit en traduction française ; le récit est simple, humain et souvent émouvant.",
-      },
-      {
-        slug: "main-basse-sur-le-cameroun",
-        why: "L'histoire cachée de l'indépendance du Cameroun : Mongo Beti y raconte comment l'UPC a été écartée du pouvoir au profit d'un régime soutenu par Paris. Ce pamphlet fut saisi et interdit en France à sa parution. Une plume de romancier au service du combat politique.",
-      },
-      {
-        slug: "l-ombre-d-imana",
-        why: "En 1998, quatre ans après le génocide des Tutsi, Véronique Tadjo se rend au Rwanda et rencontre rescapés, orphelins et prisonniers. Son récit court mêle témoignages, impressions de voyage et fiction. Un des grands livres du projet « Écrire par devoir de mémoire ».",
       },
       {
         slug: "critique-de-la-raison-negre",
@@ -585,7 +632,27 @@ export const TOP10S: Top10[] = [
       },
       {
         slug: "restituer-le-patrimoine-africain",
-        why: "Le plus actuel : le texte de Felwine Sarr et Bénédicte Savoy, né de la mission confiée après l'annonce faite en 2017 à Ouagadougou par le président Macron. Il retrace les pillages de l'époque coloniale et propose des mesures pour rendre les œuvres. Ce texte a ouvert la voie aux restitutions au Bénin et au Sénégal.",
+        why: "Le rapport qui a relancé le débat mondial sur les restitutions : le texte de Felwine Sarr et Bénédicte Savoy, né de la mission confiée après l'annonce faite en 2017 à Ouagadougou par le président Macron. Il retrace les pillages de l'époque coloniale et propose des mesures pour rendre les œuvres. Ce texte a ouvert la voie aux restitutions au Bénin et au Sénégal.",
+      },
+      {
+        slug: "main-basse-sur-le-cameroun",
+        why: "L'histoire cachée de l'indépendance du Cameroun : Mongo Beti y raconte comment l'UPC a été écartée du pouvoir au profit d'un régime soutenu par Paris. Ce pamphlet fut saisi et interdit en France à sa parution. Une plume de romancier au service du combat politique.",
+      },
+      {
+        slug: "l-empire-peul-du-macina",
+        why: "L'histoire de la Dina, l'État musulman fondé en 1818 par le marabout peul Sékou Amadou dans le delta intérieur du Niger. Amadou Hampâté Bâ et Jacques Daget la retracent jusqu'en 1853, surtout à partir des traditions orales. Un travail pionnier pour comprendre le Mali d'avant la colonisation.",
+      },
+      {
+        slug: "le-maitre-de-la-parole",
+        why: "Une autre version, plus ample, de la même épopée de Soundjata, recueillie par Camara Laye auprès du griot Babou Condé, en Haute-Guinée. L'écrivain a gardé le souffle de la récitation, ses généalogies et ses chants. À lire après celle de Djibril Tamsir Niane, pour voir comment vit la tradition orale.",
+      },
+      {
+        slug: "l-ombre-d-imana",
+        why: "En 1998, quatre ans après le génocide des Tutsi, Véronique Tadjo se rend au Rwanda et rencontre rescapés, orphelins et prisonniers. Son récit court mêle témoignages, impressions de voyage et fiction. Un des grands livres du projet « Écrire par devoir de mémoire ».",
+      },
+      {
+        slug: "histoire-synthetique-de-l-afrique-resistante",
+        why: "Nazi Boni raconte l'histoire de l'Afrique du côté de ceux qui ont résisté, face aux invasions, à la traite et à la conquête coloniale. Rois, chefs de guerre et peuples entiers y sont les acteurs de leur propre histoire. Le livre, préfacé par l'historien Jean Suret-Canale, est paru après la mort de l'auteur.",
       },
     ],
     start:
@@ -611,7 +678,7 @@ export const TOP10S: Top10[] = [
     title: "Top 10 des romans africains récents",
     description: "Notre top 10 des romans africains parus depuis 2015 : Gaël Faye, David Diop, Nathacha Appanah, Mohamed Mbougar Sarr, Hemley Boum et d'autres.",
     intro:
-      "Dix romans d'auteurs d'Afrique subsaharienne et de sa diaspora parus depuis 2015, sans reprendre Petit pays ni La plus secrète mémoire des hommes, déjà dans notre top 10 des romans à lire absolument. Le classement suit le nombre de prix littéraires reçus par chaque livre, d'après sa fiche, puis notre préférence en cas d'égalité. Frère d'âme, couronné trois fois dont par l'International Booker Prize, arrive donc en tête.",
+      "Dix romans d'auteurs d'Afrique subsaharienne et de sa diaspora parus depuis 2015, sans reprendre Petit pays ni La plus secrète mémoire des hommes, déjà dans notre top 10 des romans à lire absolument. Le classement suit le nombre de prix littéraires reçus par chaque livre, d'après sa fiche, puis notre préférence en cas d'égalité. Frère d'âme, couronné trois fois dont par l'International Booker Prize 2021, arrive donc en tête.",
     items: [
       {
         slug: "frere-d-ame",

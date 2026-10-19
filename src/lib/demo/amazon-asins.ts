@@ -3,7 +3,8 @@
  * (https://www.amazon.fr/dp/<ASIN>) au lieu d'une recherche. Pour un livre papier, l'ASIN est l'ISBN-10
  * de l'édition conseillée (celui de la fiche) : chaque adresse a été ouverte et contrôlée.
  * Vérifiés le 19 octobre 2026 : livres de la page « Top 10 » (le titre de chaque page Amazon a été comparé à la fiche).
- * Sans ISBN-10 possible (ISBN 979…, ISBN absent) ou page introuvable : le bouton garde une recherche Amazon.
+ * Livre à ISBN 979… (sans ISBN-10) : l'ASIN Amazon (B0…) de la page dont l'ISBN-13 est celui de la fiche.
+ * ISBN absent ou page introuvable : le bouton garde une recherche Amazon.
  */
 export const AMAZON_ASINS: Record<string, string> = {
   "l-enfant-noir": "2266178946",
@@ -85,4 +86,17 @@ export const AMAZON_ASINS: Record<string, string> = {
   "un-long-chemin-vers-la-liberte": "2253140635",
   "un-ocean-deux-mers-trois-continents": "2330130783",
   "yacouba-chasseur-africain": "2070630153",
+  // Vérifiés le 19 octobre 2026 (2e série : liens qui ouvraient une recherche, nouvel onglet « Pour ados »).
+  "solo-d-un-revenant": "2020971933",
+  "eve-de-ses-decombres": "2070776182",
+  "petit-pays-bd": "B0CQFCCGLH",
+  "la-vie-de-pahe": "2888901331",
+  "rwanda-1994": "222615809X",
+  "ethiopiques": "2020037955",
+  "laterite": "B0CJBFMD47",
+  "afropean-soul": "2080425900",
+  "nelson-mandela-non-a-l-apartheid": "2330032412",
+  "le-pays-de-reve": "2700281349",
+  "un-enfant-d-afrique": "2708706454",
+  "aigre-doux": "2330124317",
 };

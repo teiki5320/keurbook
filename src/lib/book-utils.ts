@@ -76,3 +76,13 @@ export function bookPageTitle(book: Pick<Book, "title" | "subtitle" | "kind" | "
   const candidates = [...new Set([all && `${head}, ${all}`, first && `${head}, ${first}`, head].filter(Boolean))];
   return candidates.find((t) => t.length + suffix.length <= max) ?? candidates.find((t) => t.length <= max) ?? head;
 }
+
+/** Âge conseillé écrit dans la fiche d'un livre jeunesse ou ado (« dès 6 ans », « à partir de 10 ans », « de 10 à 14 ans »), sinon null. */
+export function ageFromSheet(book: Book): string | null {
+  if (book.audience === "adulte") return null;
+  const text = [book.summary, ...book.whyRead].join(" ");
+  const range = text.match(/\bde (\d{1,2}) à (\d{1,2}) ans\b/i);
+  if (range) return `De ${range[1]} à ${range[2]} ans`;
+  const from = text.match(/(?:dès|à partir de) (\d{1,2}) ans\b/i);
+  return from ? `Dès ${from[1]} ans` : null;
+}

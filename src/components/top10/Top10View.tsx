@@ -64,8 +64,7 @@ export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; boo
 
                   <div className="mt-5 min-w-0 sm:mt-0">
                     <p className="eyebrow">
-                      {[b.country?.name, b.year].filter(Boolean).join(" · ")}
-                      {b.isBd && " · BD"}
+                      {[b.place ?? b.country?.name, b.year, b.isBd && "BD", b.age].filter(Boolean).join(" · ")}
                     </p>
                     <h2 id={`livre-${b.rank}`} className="mt-2 font-serif text-[32px] leading-[1.02] text-balance sm:text-4xl">
                       <Link href={b.path} className="italic hover:text-accent">

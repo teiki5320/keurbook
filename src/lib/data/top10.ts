@@ -1,5 +1,5 @@
 import { amazonUrl } from "@/lib/amazon";
-import { bookPath, creatorNames } from "@/lib/book-utils";
+import { ageFromSheet, bookPath, creatorNames } from "@/lib/book-utils";
 import { TOP10S } from "@/lib/top10/sujets";
 import type { Top10 } from "@/lib/top10/types";
 import { getAllBooks, getAuthorBySlug, getCountry } from "./books";
@@ -17,7 +17,11 @@ export interface Top10Book {
   authorName: string;
   authorSlug: string | null;
   country: { name: string; slug: string } | null;
+  /** Remplace le pays en tête de la carte (voir Top10.items). */
+  place: string | null;
   year: number;
+  /** Âge conseillé, seulement s'il est écrit dans la fiche (« Dès 6 ans »). */
+  age: string | null;
   awards: string[];
   why: string;
   amazonUrl: string;
@@ -49,7 +53,7 @@ function whyFromSheet(summary: string, whyRead: string[]): string {
 export async function getTop10Books(top: Top10): Promise<Top10Book[]> {
   const books = await getAllBooks();
   return Promise.all(
-    top.items.map(async ({ slug, why }, i) => {
+    top.items.map(async ({ slug, why, place }, i) => {
       const book = books.find((b) => b.slug === slug);
       if (!book) throw new Error(`Top 10 « ${top.slug} » : livre absent ou non publié (${slug}).`);
       const main = book.contributors.find((c) => c.authorSlug && c.role !== "traducteur");
@@ -67,7 +71,9 @@ export async function getTop10Books(top: Top10): Promise<Top10Book[]> {
         authorName: creatorNames(book),
         authorSlug: author?.slug ?? null,
         country: country ? { name: country.name, slug: country.slug } : null,
+        place: place ?? null,
         year: book.year,
+        age: ageFromSheet(book),
         awards: book.awards.map((a) => `${a.name} ${a.year}`),
         why: fr(why ?? whyFromSheet(book.summary, book.whyRead)),
         amazonUrl: amazonUrl(book),

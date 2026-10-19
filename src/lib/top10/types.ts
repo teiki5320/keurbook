@@ -15,9 +15,10 @@ export interface Top10 {
   intro: string;
   /**
    * Les 10 livres, du n° 1 au n° 10. `why` (facultatif) remplace le texte tiré de la fiche
-   * (première phrase du résumé + « Pourquoi le lire »).
+   * (première phrase du résumé + « Pourquoi le lire »). `place` (facultatif) remplace le pays de l'auteur
+   * en tête de la carte, quand il prêterait à confusion (ex. « Rwanda · dessinateur congolais »).
    */
-  items: Array<{ slug: string; why?: string }>;
+  items: Array<{ slug: string; why?: string; place?: string }>;
   /** « Par où commencer » : texte court, liens internes écrits [texte](/chemin). */
   start: string;
   /** 3 questions fréquentes (liens internes possibles). */

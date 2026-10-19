@@ -6,6 +6,7 @@ import assert from "node:assert/strict";
 import { existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
+import { ageFromSheet } from "../src/lib/book-utils";
 import { COUNTRIES } from "../src/lib/countries";
 import { allAuthors, allBooks } from "../src/lib/demo";
 import { AMAZON_ASINS } from "../src/lib/demo/amazon-asins";
@@ -116,13 +117,32 @@ describe("Doublons entre onglets", () => {
   });
 });
 
+describe("Tops par âge", () => {
+  const tab = (slug: string) => TOP10S.find((t) => t.slug === slug)!.items.map((i) => published.get(i.slug)!);
+  it("« Pour enfants » : uniquement des livres et BD jeunesse", () => {
+    for (const b of tab("livres-africains-enfants")) assert.equal(b.audience, "jeunesse", b.slug);
+  });
+  it("« Pour ados » : uniquement des livres ado, 10 titres différents (un tome par série)", () => {
+    const books = tab("livres-africains-ados");
+    for (const b of books) assert.equal(b.audience, "ado", b.slug);
+    assert.equal(new Set(books.map((b) => b.title)).size, 10);
+  });
+  it("âge conseillé seulement s'il est écrit dans la fiche", () => {
+    assert.equal(ageFromSheet(published.get("akissi")!), "Dès 6 ans");
+    assert.equal(ageFromSheet(published.get("un-enfant-d-afrique")!), "De 10 à 14 ans");
+    assert.equal(ageFromSheet(published.get("l-enfant-noir")!), null);
+  });
+});
+
 describe("ASIN Amazon vérifiés", () => {
   it("chaque ASIN correspond à l'ISBN de l'édition de la fiche", () => {
     for (const [slug, asin] of Object.entries(AMAZON_ASINS)) {
       const book = published.get(slug);
       assert.ok(book, `livre inconnu : ${slug}`);
       assert.ok(book.isbn, `${slug} : pas d'ISBN sur la fiche`);
-      assert.equal(asin, isbn10(book.isbn), slug);
+      // ISBN 979… : pas d'ISBN-10, l'ASIN Amazon (B0…) a été vérifié sur la page de cet ISBN-13.
+      if (book.isbn.startsWith("979")) assert.match(asin, /^B0[A-Z0-9]{8}$/, slug);
+      else assert.equal(asin, isbn10(book.isbn), slug);
       assert.equal(book.amazonAsin, asin, `${slug} : ASIN non appliqué`);
     }
   });
