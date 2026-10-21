@@ -30,7 +30,7 @@ publications réelles, ou routine qui publie).
 - ✅ Site en ligne sur `keurbook.com`.
 - ✅ Référencement naturel : sitemap envoyé à Google Search Console (propriété `keurbook.com`),
   IndexNow chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
-  vendredi). Au 20 octobre 2026 : 37 articles publiés, 24 programmés ; le rythme régulier va
+  vendredi). Au 21 octobre 2026 : 38 articles publiés, 23 programmés ; le rythme régulier va
   jusqu'au 7 décembre (11 articles ajoutés le 15 octobre), puis seuls des articles de saison sont programmés. La routine « Écrire les
   articles Conseils » repasse le 1er et le 15 de chaque mois.
 - ⬜ Pinterest : aucun compte Keurbook.
@@ -44,7 +44,7 @@ publications réelles, ou routine qui publie).
 - **Pages indexées par Google** : 673 sur 971 (Search Console, 20 octobre 2026)
 - **Pages pas encore indexées** : 298, dont 159 inconnues de Google et 139 détectées non explorées
 - **Liens Amazon directs** : 91 livres et BD sur 796 (ASIN vérifiés le 19 octobre 2026)
-- **Articles Conseils** : 37 publiés, 24 programmés
+- **Articles Conseils** : 38 publiés, 23 programmés (21 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
 - **Revenus AdSense** : aucun, site encore en examen chez Google
