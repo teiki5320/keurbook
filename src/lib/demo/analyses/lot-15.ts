@@ -7,7 +7,7 @@
  *   - hanibal-pushkin — Hanibal@Pushkin (Joëlle Esso, 2011)
  *   - eto-o-fils-naissance-d-un-champion — Eto'o Fils (Samuel Eto'o, Joëlle Esso, Joëlle Esso, 2013)
  *   - eto-o-fils-l-envol — Eto'o Fils (Samuel Eto'o, Joëlle Esso, Joëlle Esso, 2013)
- *   - l-odyssee-de-mongou — L'Odyssée de Mongou (Didier Kassaï, Didier Kassaï, 2008)
+ *   - l-odyssee-de-mongou — L'Odyssée de Mongou (Didier Kassaï, Didier Kassaï, 2014)
  *   - tempete-sur-bangui-tome-2 — Tempête sur Bangui (Didier Kassaï, Didier Kassaï, 2018)
  *   - maison-sans-fenetres — Maison sans fenêtres (Marc Ellison, Didier Kassaï, 2017)
  *   - rene-maran-un-homme-presque-pareil-aux-autres — René Maran (Jean-Paul Delfino, Alain Zenou, Didier Kassaï, 2023)

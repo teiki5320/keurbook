@@ -692,10 +692,10 @@ export const livres: Book[] = [
       "L'adaptation d'un roman classique de Centrafrique.",
       "Les aquarelles de l'auteur de Tempête sur Bangui.",
     ],
-    year: 2008,
+    year: 2014,
     publisher: "L'Harmattan",
-    pages: 59,
-    isbn: "9782343219172",
+    pages: 51,
+    isbn: "9782336307107",
     awards: [],
   }),
   bd({
