@@ -18,7 +18,7 @@
  *   - un-negre-a-paris — Un nègre à Paris (Bernard Dadié, 1959)
  *   - patron-de-new-york — Patron de New York (Bernard Dadié, 1964)
  *   - hommes-de-tous-les-continents — Hommes de tous les continents (Bernard Dadié, 1967)
- *   - la-ville-ou-nul-ne-meurt — La Ville où nul ne meurt (Bernard Dadié, 1969)
+ *   - la-ville-ou-nul-ne-meurt — La Ville où nul ne meurt (Bernard Dadié, 1968)
  *   - monsieur-thogo-gnini — Monsieur Thôgô-gnini (Bernard Dadié, 1970)
  *   - beatrice-du-congo — Béatrice du Congo (Bernard Dadié, 1970)
  *   - les-voix-dans-le-vent — Les Voix dans le vent (Bernard Dadié, 1970)

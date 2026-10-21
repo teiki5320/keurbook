@@ -1107,7 +1107,7 @@ export const livres: Book[] = [
       "Le troisième volet des chroniques après Paris et New York.",
       "Réédité en 2023 chez Présence africaine.",
     ],
-    year: 1969,
+    year: 1968,
     publisher: "Présence africaine",
     pages: 256,
     isbn: "9782708710221",
@@ -1772,7 +1772,7 @@ export const livres: Book[] = [
     whyRead: [
       "Mexico vue par un écrivain africain en errance.",
       "Une tragi-comédie sur les inégalités et le racisme.",
-      "Le troisième volet du cycle latino-américain de Tchak.",
+      "Le quatrième et dernier volet du cycle latino-américain de Tchak.",
     ],
     year: 2008,
     publisher: "Mercure de France",

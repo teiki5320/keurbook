@@ -542,7 +542,7 @@ export const livres: Book[] = [
     pages: 246,
     isbn: "9782277239819",
     format: "poche",
-    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 1993 }],
+    awards: [{ name: "Grand prix littéraire d'Afrique noire", year: 1994 }],
   }),
   livre({
     slug: "asseze-l-africaine",
