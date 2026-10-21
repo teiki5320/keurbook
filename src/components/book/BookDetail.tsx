@@ -217,6 +217,27 @@ export async function BookDetail({ book }: { book: Book }) {
             </ul>
           </section>
 
+          {/* Le livre en détail (texte long, src/lib/demo/analyses) */}
+          {book.analysis && (
+            <section className="mt-10" aria-labelledby="detail">
+              <h2 id="detail" className="eyebrow">
+                Le livre en détail
+              </h2>
+              {(
+                [
+                  ["Le contexte", book.analysis.contexte],
+                  ["Les thèmes et l'écriture", book.analysis.ecriture],
+                  ["À qui le conseiller", book.analysis.aQui],
+                ] as const
+              ).map(([titre, texte]) => (
+                <div key={titre} className="mt-5">
+                  <h3 className="font-serif text-[19px] text-ink">{titre}</h3>
+                  <p className="mt-2 text-[15px] leading-relaxed text-pretty text-ink/80">{texte}</p>
+                </div>
+              ))}
+            </section>
+          )}
+
           {/* Dans l'œuvre de l'auteur */}
           {author && oeuvre.length > 1 && (
             <section className="mt-10" aria-labelledby="oeuvre">

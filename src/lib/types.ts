@@ -82,10 +82,25 @@ export interface Book {
   outOfPrint?: boolean;
   /** Adaptations vérifiées (film, série, théâtre, BD…), affichées sur la fiche. */
   adaptations?: Adaptation[];
+  /** « Le livre en détail » : texte long écrit par nous (src/lib/demo/analyses, règles docs/ANALYSES.md). */
+  analysis?: BookAnalysis | null;
   featured: boolean;
   /** Date d'ajout au site (AAAA-MM-JJ) : sert au tri « Nouveautés ». */
   addedAt: string;
   isPublished: boolean;
+}
+
+/**
+ * « Le livre en détail » (fiche livre ou BD) : trois parties écrites par nous, 250 à 450 mots au total.
+ * Rien d'inventé : uniquement des faits vérifiés sur le livre, l'auteur, l'époque et le pays (docs/ANALYSES.md).
+ */
+export interface BookAnalysis {
+  /** Le contexte : l'auteur au moment du livre, l'époque, le pays, la place du livre dans l'œuvre. */
+  contexte: string;
+  /** Les thèmes et l'écriture : ce dont parle vraiment le livre, sa forme, son ton, ce qui le distingue. */
+  ecriture: string;
+  /** À qui le conseiller : quel lecteur, à quel âge, et quoi lire avant ou après sur le site. */
+  aQui: string;
 }
 
 /** Adaptation d'un livre : « film », « série », « téléfilm », « théâtre », « BD », « opéra »… */

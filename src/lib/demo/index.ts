@@ -11,6 +11,7 @@ import { auteursOuest } from "./auteurs-ouest";
 import { bandesDessinees } from "./bd";
 import { livresCentreEstSud } from "./livres-centre-est-sud";
 import { livresOuest } from "./livres-ouest";
+import { BOOK_ANALYSES } from "./analyses";
 import { AUTHOR_FACTS, BOOK_ADAPTATIONS, BOOK_QUOTES } from "./extras";
 import { ILLUSTRATED } from "./illustrations";
 import { LOTS } from "./lots";
@@ -26,6 +27,7 @@ export const allBooks: Book[] = [...livresOuest, ...livresCentreEstSud, ...bande
   ...(illustrated.has(b.slug) ? { illustration: `/illustrations/${b.slug}.webp` } : {}),
   quote: b.quote ?? BOOK_QUOTES[b.slug] ?? null,
   ...(BOOK_ADAPTATIONS[b.slug] ? { adaptations: [...(b.adaptations ?? []), ...BOOK_ADAPTATIONS[b.slug]] } : {}),
+  analysis: b.analysis ?? BOOK_ANALYSES[b.slug] ?? null,
 }));
 
 /** Livres de l'auteur présents sur le site. */
