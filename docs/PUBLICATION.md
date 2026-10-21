@@ -1,6 +1,6 @@
 # PUBLICATION — état de la mise en ligne
 
-> Mis à jour le 20 octobre 2026, d'après le site en ligne, la Search Console et les exécutions GitHub Actions.
+> Mis à jour le 21 octobre 2026, d'après le site en ligne, la Search Console et les exécutions GitHub Actions.
 >
 > Aucun secret ici — uniquement des références.
 
@@ -26,8 +26,8 @@
 
 1. ✅ **Mise en ligne** : site publié sur keurbook.com par Cloudflare Pages le 1er octobre 2026.
 2. ✅ **Search Console et IndexNow** : sitemap envoyé à Google, tout le site signalé chaque lundi.
-3. ✅ **Publicité en place** : script AdSense, ads.txt et 4 blocs d'annonces publiés le 12 octobre.
-4. **Validation AdSense** : attendre et suivre l'avis de Google dans la console AdSense.
+3. ✅ **Publicité préparée** : script AdSense, ads.txt et 4 blocs d'annonces publiés le 12 octobre (aucune annonce affichée avant la validation).
+4. **Validation AdSense** : examen demandé le 12 octobre, toujours en cours ; suivre l'avis de Google dans la console AdSense.
 5. **Indexation complète** : faire entrer dans Google les 298 pages encore absentes.
 6. ✅ **Mesure d'audience** : Cloudflare Web Analytics autorisé dans `public/_headers` le 13 octobre.
 7. **Design définitif** : remplacer l'habillage provisoire par le design fait à part.
@@ -38,7 +38,7 @@
 |---|---|
 | Adresse | **En ligne** sur https://keurbook.com (vérifié le 20 octobre 2026 : réponse 200) |
 | Hébergeur | Cloudflare Pages (projet `keurbook`), workflow `deploy.yml` |
-| Dernière publication | 19 octobre 2026 (18 h UTC), publication réussie avec les pages Top 10 |
+| Dernière publication | 21 octobre 2026 (1 h 40 UTC), publication programmée réussie |
 | Mise en ligne | 1er octobre 2026 |
 | Dépôt | https://github.com/teiki5320/keurbook |
 | Taille publiée | 971 adresses dans le sitemap |
@@ -66,4 +66,5 @@
 - **Mesure d'audience** : Cloudflare Web Analytics (sans cookie), balise constatée en ligne le
   14 octobre 2026 ; chiffres à vérifier dans la console.
 - **Publicité** : Google AdSense en place (script chargé sur les pages, `https://keurbook.com/ads.txt`
-  répond). Validation du site par AdSense : à vérifier dans la console.
+  répond). Validation du site par AdSense : en examen depuis le 12 octobre 2026, aucune annonce
+  affichée pour l'instant.
