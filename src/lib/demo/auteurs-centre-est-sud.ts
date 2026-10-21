@@ -445,7 +445,7 @@ export const auteursCentreEstSud: Author[] = [
     deathYear: 2025,
     countryCode: "KE",
     origin: null,
-    bio: "Né près de Limuru, au Kenya, Ngũgĩ wa Thiong'o grandit pendant la révolte des Mau Mau contre la colonisation britannique. Ses premiers romans, écrits en anglais, font de lui l'un des pères de la littérature d'Afrique de l'Est. Emprisonné sans procès en 1978 pour une pièce de théâtre en kikuyu, il décide ensuite d'écrire dans sa langue maternelle. Contraint à l'exil, il enseigne pendant des décennies aux États-Unis. Son essai Décoloniser l'esprit a profondément marqué la réflexion sur les langues africaines.",
+    bio: "Né près de Limuru, au Kenya, Ngũgĩ wa Thiong'o grandit pendant la révolte des Mau Mau contre la colonisation britannique. Ses premiers romans, écrits en anglais, font de lui l'un des pères de la littérature d'Afrique de l'Est. Arrêté fin 1977 et emprisonné sans procès près d'un an pour une pièce de théâtre en kikuyu, il décide ensuite d'écrire dans sa langue maternelle. Contraint à l'exil, il enseigne pendant des décennies aux États-Unis. Son essai Décoloniser l'esprit a profondément marqué la réflexion sur les langues africaines.",
     startWith: "rever-en-temps-de-guerre",
     otherTitles: [
       "Enfant, ne pleure pas (1964)",

@@ -225,7 +225,7 @@ export const livres: Book[] = [
     audience: "adulte",
     themes: ["colonisation", "guerre", "histoire"],
     summary:
-      "Le premier livre de Coetzee réunit deux récits que trois siècles séparent. Dans le premier, un spécialiste de la guerre psychologique travaille pour l'armée américaine au temps du Vietnam et s'enfonce peu à peu dans la folie. Dans le second, Jacobus Coetzee, un colon hollandais du XVIIIe siècle, raconte son expédition au-delà du fleuve Orange, chez les Namaquas. Deux voix glaçantes qui montrent la violence de l'esprit de conquête.",
+      "Le premier livre de Coetzee réunit deux récits que deux siècles séparent. Dans le premier, un spécialiste de la guerre psychologique travaille pour l'armée américaine au temps du Vietnam et s'enfonce peu à peu dans la folie. Dans le second, Jacobus Coetzee, un colon hollandais du XVIIIe siècle, raconte son expédition au-delà du fleuve Orange, chez les Namaquas. Deux voix glaçantes qui montrent la violence de l'esprit de conquête.",
     whyRead: [
       "Le premier livre de Coetzee, déjà audacieux et dérangeant.",
       "Deux récits en miroir sur la violence coloniale.",
