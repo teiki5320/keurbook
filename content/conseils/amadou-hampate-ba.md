@@ -20,7 +20,7 @@ Dès l'enfance, à Bandiagara, il suit l'enseignement de Tierno Bokar, un maîtr
 
 ## Le chercheur et le diplomate
 
-En 1942, il entre à l'Institut français d'Afrique noire, à Dakar, auprès du naturaliste Théodore Monod. Il parcourt l'Afrique de l'Ouest pour recueillir récits, généalogies, poèmes et contes, et publie des travaux d'histoire. Après l'indépendance du Mali, il entre au conseil exécutif de l'Unesco, où il plaide pour la sauvegarde des traditions orales, puis devient ambassadeur de son pays en [Côte d'Ivoire](/pays/cote-d-ivoire). Il passe ses dernières années à Abidjan, où il meurt en 1991.
+En 1942, il entre à l'Institut français d'Afrique noire, à Dakar, auprès du naturaliste Théodore Monod. Il parcourt l'Afrique de l'Ouest pour recueillir récits, généalogies, poèmes et contes, et publie des travaux d'histoire. Avec Jacques Daget, il signe ainsi [L'Empire peul du Macina](/livre/l-empire-peul-du-macina) (1955), tiré surtout des traditions orales. Après l'indépendance du Mali, il entre au conseil exécutif de l'Unesco, où il plaide pour la sauvegarde des traditions orales, puis devient ambassadeur de son pays en [Côte d'Ivoire](/pays/cote-d-ivoire). Il passe ses dernières années à Abidjan, où il meurt en 1991.
 
 ## L'Étrange Destin de Wangrin
 

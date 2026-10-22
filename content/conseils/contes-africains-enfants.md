@@ -29,7 +29,7 @@ Les chapitres sont courts et se suivent comme une grande aventure : on peut en l
 
 Avec [Les Belles Histoires de Kacou Ananzè, l'araignée](/livre/les-belles-histoires-de-kacou-ananze), [Bernard Dadié](/auteur/bernard-dadie) et André Terrisse ont réuni les aventures de l'araignée la plus célèbre d'Afrique de l'Ouest. Lui aussi pensé pour l'école, ce livre propose des fables malicieuses, où l'intelligence l'emporte sur la force, mais où le tricheur est parfois démasqué.
 
-Dadié est aussi l'auteur du *Pagne noir*, autre grand recueil de contes ivoiriens, souvent lu en classe. Si votre enfant a aimé Kacou Ananzè, c'est la suite naturelle.
+Dadié est aussi l'auteur du *Pagne noir*, autre grand recueil de contes ivoiriens, souvent lu en classe. Si votre enfant a aimé Kacou Ananzè, c'est la suite naturelle. Pour les plus grands, ses [Légendes africaines](/livre/legendes-africaines) racontent notamment la légende de la reine Pokou.
 
 ## Vers 8 à 10 ans : les contes de la savane d'Amadou Hampâté Bâ
 

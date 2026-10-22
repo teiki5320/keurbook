@@ -44,6 +44,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-regard-du-roi",
     title: "Le Regard du roi",
+    metaDescription: "Le Regard du roi (1954) de Camara Laye : résumé du voyage de Clarence, un Blanc ruiné qui veut voir le roi. Personnages, thèmes et raisons de le lire.",
     contributors: [laye],
     genre: "roman",
     audience: "adulte",
@@ -65,6 +66,7 @@ export const livres: Book[] = [
   livre({
     slug: "dramouss",
     title: "Dramouss",
+    metaDescription: "Dramouss (1966) de Camara Laye, parfois écrit Dramous, la suite de L'Enfant noir : résumé du retour de Fatoman en Guinée après six ans à Paris.",
     contributors: [laye],
     genre: "roman",
     audience: "adulte",
@@ -86,6 +88,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-maitre-de-la-parole",
     title: "Le Maître de la parole",
+    metaDescription: "Le Maître de la parole (1978) de Camara Laye : résumé et personnages principaux de l'épopée de Soundjata, contée par le griot Babou Condé.",
     subtitle: "Kouma Lafôlô Kouma",
     contributors: [laye],
     genre: "recit",
@@ -131,6 +134,7 @@ export const livres: Book[] = [
   livre({
     slug: "les-ecailles-du-ciel",
     title: "Les Écailles du ciel",
+    metaDescription: "Les Écailles du ciel (1986) de Tierno Monénembo, Grand prix littéraire d'Afrique noire : résumé du roman de Kolisoko, un siècle d'histoire guinéenne.",
     contributors: [monenembo],
     genre: "roman",
     audience: "adulte",
@@ -969,6 +973,7 @@ export const livres: Book[] = [
   livre({
     slug: "afrique-debout",
     title: "Afrique debout !",
+    metaDescription: "Afrique debout ! (1950) de Bernard Dadié : résumé du premier recueil du poète ivoirien, une poésie de combat contre la colonisation, ses thèmes.",
     contributors: [dadie],
     genre: "poesie",
     audience: "adulte",
@@ -990,6 +995,7 @@ export const livres: Book[] = [
   livre({
     slug: "legendes-africaines",
     title: "Légendes africaines",
+    metaDescription: "Légendes africaines (1954) de Bernard Dadié : résumé du recueil de légendes de Côte d'Ivoire, dont celle de la reine Pokou et du peuple baoulé.",
     contributors: [dadie],
     genre: "contes",
     audience: "adulte",
@@ -1011,6 +1017,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-ronde-des-jours",
     title: "La Ronde des jours",
+    metaDescription: "La Ronde des jours (1956) de Bernard Dadié : résumé du recueil de poèmes qui contient « Je vous remercie mon Dieu ». Thèmes et raisons de le lire.",
     contributors: [dadie],
     genre: "poesie",
     audience: "adulte",
@@ -1053,6 +1060,7 @@ export const livres: Book[] = [
   livre({
     slug: "patron-de-new-york",
     title: "Patron de New York",
+    metaDescription: "Patron de New York (1964) de Bernard Dadié : résumé de la chronique de voyage, New York vue par un Ivoirien. Grand prix littéraire d'Afrique noire.",
     contributors: [dadie],
     genre: "recit",
     audience: "adulte",
@@ -1160,6 +1168,7 @@ export const livres: Book[] = [
   livre({
     slug: "les-voix-dans-le-vent",
     title: "Les Voix dans le vent",
+    metaDescription: "Les Voix dans le vent de Bernard Dadié : résumé de la pièce où Nahoubou, homme du peuple devenu roi, installe la terreur. Une tragédie du pouvoir.",
     contributors: [dadie],
     genre: "theatre",
     audience: "adulte",
@@ -1784,6 +1793,7 @@ export const livres: Book[] = [
   livre({
     slug: "al-capone-le-malien",
     title: "Al Capone le Malien",
+    metaDescription: "Al Capone le Malien (2011) de Sami Tchak : résumé de la satire où un journaliste français croise à Bamako un prince flamboyant surnommé Al Capone.",
     contributors: [tchak],
     genre: "roman",
     audience: "adulte",

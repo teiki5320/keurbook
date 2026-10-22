@@ -24,7 +24,7 @@ Suivent [Ô pays, mon beau peuple !](/livre/o-pays-mon-beau-peuple) en 1957, sur
 
 Au début des années 1960, Sembène fait un constat : la plupart de ses compatriotes ne lisent pas le français, mais tout le monde va au cinéma. Il part se former au cinéma à Moscou, puis tourne ses premiers films.
 
-*La Noire de…*, en 1966, est considéré comme le premier long métrage d'un cinéaste d'Afrique subsaharienne. Suivront, entre autres, *Mandabi*, adapté de sa nouvelle « Le Mandat », *Xala*, *Camp de Thiaroye* et *Moolaadé*, son dernier film, en 2004. On l'a surnommé le « père du cinéma africain ». Notre article [Quels livres africains ont été adaptés au cinéma ?](/conseils/livres-africains-adaptes-au-cinema) revient sur ces passages du livre à l'écran.
+*La Noire de…*, en 1966, tiré d'une nouvelle de son recueil [Voltaïque](/livre/voltaique) (1962), est considéré comme le premier long métrage d'un cinéaste d'Afrique subsaharienne. Suivront, entre autres, *Mandabi*, adapté de sa nouvelle « Le Mandat », *Xala*, *Camp de Thiaroye* et *Moolaadé*, son dernier film, en 2004. On l'a surnommé le « père du cinéma africain ». Notre article [Quels livres africains ont été adaptés au cinéma ?](/conseils/livres-africains-adaptes-au-cinema) revient sur ces passages du livre à l'écran.
 
 ## Des livres et des films qui se répondent
 

@@ -18,7 +18,7 @@ Camara Laye a écrit d'autres livres très différents. [Le Regard du roi](/livr
 
 ## Tierno Monénembo, l'écrivain de l'exil
 
-Né en 1947 dans le Fouta-Djalon, [Tierno Monénembo](/auteur/tierno-monenembo) quitte la Guinée à la fin des années 1960 pour fuir le régime de Sékou Touré. Il vit ensuite au Sénégal, en Côte d'Ivoire, en France, en Algérie et au Maroc, et construit une œuvre abondante, souvent tournée vers son pays perdu.
+Né en 1947 dans le Fouta-Djalon, [Tierno Monénembo](/auteur/tierno-monenembo) quitte la Guinée à la fin des années 1960 pour fuir le régime de Sékou Touré. Il vit ensuite au Sénégal, en Côte d'Ivoire, en France, en Algérie et au Maroc, et construit une œuvre abondante, souvent tournée vers son pays perdu. [Les Écailles du ciel](/livre/les-ecailles-du-ciel), Grand prix littéraire d'Afrique noire en 1986, raconte un siècle d'histoire autour d'une ville imaginaire où l'on reconnaît la Guinée.
 
 Son premier roman, [Les Crapauds-brousse](/livre/les-crapauds-brousse), en 1979, décrit de l'intérieur l'engrenage d'une dictature qui ressemble beaucoup à celle de Sékou Touré : délations, arrestations, complots inventés. Plus léger, [Cinéma](/livre/cinema) suit un adolescent fou de westerns dans une petite ville guinéenne de la fin des années 1950.
 

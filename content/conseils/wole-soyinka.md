@@ -34,7 +34,7 @@ Soyinka est aussi connu pour son franc-parler. Il s'est moqué de la négritude,
 
 ## Le romancier et le mémorialiste
 
-Soyinka a écrit peu de romans, mais ils comptent. [Les Interprètes](/livre/les-interpretes) (1965), son premier, suit cinq jeunes intellectuels revenus d'études à l'étranger qui observent avec ironie la nouvelle élite du pays. Près de cinquante ans après son roman précédent, il publie en 2021 [Chroniques du pays des gens les plus heureux du monde](/livre/chroniques-du-pays-des-gens-les-plus-heureux-du-monde), une satire noire et drôle de la corruption au Nigeria.
+Soyinka a écrit peu de romans, mais ils comptent. [Les Interprètes](/livre/les-interpretes) (1965), son premier, suit cinq jeunes intellectuels revenus d'études à l'étranger qui observent avec ironie la nouvelle élite du pays. Le second, [Une saison d'anomie](/livre/une-saison-d-anomie) (1973), écrit sous le choc des massacres de la fin des années 1960, suit Ofeyi parti chercher sa compagne dans un pays livré à la violence. Près de cinquante ans après son roman précédent, il publie en 2021 [Chroniques du pays des gens les plus heureux du monde](/livre/chroniques-du-pays-des-gens-les-plus-heureux-du-monde), une satire noire et drôle de la corruption au Nigeria.
 
 Mais c'est peut-être dans ses souvenirs qu'il est le plus attachant. [Aké, les années d'enfance](/livre/ake-les-annees-d-enfance) (1981) raconte ses premières années avec un humour et une tendresse irrésistibles : l'enfant curieux de tout, les colères de sa mère, l'école, le marché, et les échos lointains de la Seconde Guerre mondiale. C'est un grand livre sur l'enfance, que l'on peut lire à tout âge.
 

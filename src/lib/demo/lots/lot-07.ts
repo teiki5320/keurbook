@@ -1308,6 +1308,7 @@ export const livres: Book[] = [
   livre({
     slug: "une-saison-d-anomie",
     title: "Une saison d'anomie",
+    metaDescription: "Une saison d'anomie (1973) de Wole Soyinka, prix Nobel : résumé du roman d'Ofeyi et d'Aiyéró, communauté rebelle face au cartel du cacao.",
     contributors: [SOYINKA, trad("Étienne Galle")],
     genre: "roman",
     audience: "adulte",

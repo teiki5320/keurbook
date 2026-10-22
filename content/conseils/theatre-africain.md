@@ -18,7 +18,7 @@ Pour un registre plus léger, lisez [Le Lion et la Perle](/livre/le-lion-et-la-p
 
 ## Rire du pouvoir : Dadié et Kourouma
 
-L'Ivoirien [Bernard Dadié](/auteur/bernard-dadie) a écrit des comédies satiriques encore très jouées. [Monsieur Thôgô-gnini](/livre/monsieur-thogo-gnini) raconte, au XIXe siècle, l'ascension d'un porte-canne du roi devenu intermédiaire entre son peuple et les commerçants européens, et qui s'enrichit sur le dos des siens. Un arriviste inoubliable.
+L'Ivoirien [Bernard Dadié](/auteur/bernard-dadie) a écrit des comédies satiriques encore très jouées. [Monsieur Thôgô-gnini](/livre/monsieur-thogo-gnini) raconte, au XIXe siècle, l'ascension d'un porte-canne du roi devenu intermédiaire entre son peuple et les commerçants européens, et qui s'enrichit sur le dos des siens. Un arriviste inoubliable. Dans un registre plus sombre, [Les Voix dans le vent](/livre/les-voix-dans-le-vent) suit Nahoubou, homme du peuple prêt à tout pour devenir roi, puis hanté par des voix qui l'accusent.
 
 Du même auteur, [Béatrice du Congo](/livre/beatrice-du-congo) est une tragédie. Inspirée de l'histoire de Kimpa Vita, prophétesse du royaume du Kongo au début du XVIIIe siècle, elle met en scène une jeune femme qui appelle son peuple à se libérer de la domination étrangère.
 

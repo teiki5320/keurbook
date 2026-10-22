@@ -16,7 +16,7 @@ La poésie africaine de langue française est d'abord liée à la négritude et 
 
 [Leurres et lueurs](/livre/leurres-et-lueurs) est l'unique recueil de poèmes de [Birago Diop](/auteur/birago-diop), l'auteur des *Contes d'Amadou Koumba*. Il contient « Souffles », l'un des poèmes les plus connus d'Afrique, où les morts ne sont jamais partis : ils vivent dans l'arbre, l'eau et le vent. Un livre bref et musical.
 
-[La Ronde des jours](/livre/la-ronde-des-jours) de l'Ivoirien [Bernard Dadié](/auteur/bernard-dadie) chante le travail, l'amour, la fraternité et la terre africaine. On y trouve « Je vous remercie mon Dieu », où le poète revendique avec fierté et ironie sa couleur de peau. Une poésie lumineuse, engagée sans être austère.
+[La Ronde des jours](/livre/la-ronde-des-jours) de l'Ivoirien [Bernard Dadié](/auteur/bernard-dadie) chante le travail, l'amour, la fraternité et la terre africaine. On y trouve « Je vous remercie mon Dieu », où le poète revendique avec fierté et ironie sa couleur de peau. Une poésie lumineuse, engagée sans être austère. Son premier recueil, [Afrique debout !](/livre/afrique-debout) (1950), est une poésie de combat écrite au temps de la colonisation.
 
 Plus tôt encore, à Madagascar, [Jean-Joseph Rabearivelo](/auteur/jean-joseph-rabearivelo) publiait [Presque-songes](/livre/presque-songes) en 1934 : des poèmes en prose écrits en malgache et en français, où les paysages des hautes terres deviennent des visions de rêve. C'est l'un des premiers grands livres de la poésie africaine d'expression française. Notre article [Quels livres lire sur Madagascar ?](/conseils/livres-madagascar) vous en dira plus sur ce poète.
 

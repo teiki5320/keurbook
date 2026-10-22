@@ -18,7 +18,7 @@ Pour découvrir l'auteur, lisez aussi [Qui est Alain Mabanckou ?](/conseils/alai
 
 ## Des satires de la société
 
-L'humour sert souvent à dire des choses sérieuses. Dans [La Grève des bàttu](/livre/la-greve-des-battu), [Aminata Sow Fall](/auteur/aminata-sow-fall) imagine un haut fonctionnaire de Dakar qui fait chasser les mendiants de la ville pour plaire aux touristes. Mais un marabout lui prescrit justement de faire l'aumône pour obtenir une promotion… et les mendiants se mettent en grève. La situation est irrésistible, et la critique de l'hypocrisie sociale, très fine.
+L'humour sert souvent à dire des choses sérieuses. Dans [La Grève des bàttu](/livre/la-greve-des-battu), [Aminata Sow Fall](/auteur/aminata-sow-fall) imagine un haut fonctionnaire de Dakar qui fait chasser les mendiants de la ville pour plaire aux touristes. Mais un marabout lui prescrit justement de faire l'aumône pour obtenir une promotion… et les mendiants se mettent en grève. La situation est irrésistible, et la critique de l'hypocrisie sociale, très fine. De la même autrice, [Le Revenant](/livre/le-revenant) raconte avec ironie un petit employé des postes qui vit bien au-dessus de ses moyens.
 
 Plus près de nous, [Debout-payé](/livre/debout-paye) de [Gauz](/auteur/gauz) suit un étudiant ivoirien devenu vigile dans les magasins parisiens. Entre deux chapitres sur l'histoire de l'immigration africaine en France, il note ses observations sur les clients, en petites scènes cruelles et hilarantes. C'est un livre qu'on a envie de lire à voix haute à ses amis.
 
@@ -28,7 +28,7 @@ Le rire a aussi été une arme contre l'ordre colonial. [Une vie de boy](/livre/
 
 ## Des comédies de mœurs pleines de tendresse
 
-Certains romans font sourire par leur tendresse plus que par leur mordant. [Le Fils d'Agatha Moudio](/livre/le-fils-d-agatha-moudio), de [Francis Bebey](/auteur/francis-bebey), raconte l'histoire de Mbenda, jeune pêcheur près de Douala. Les anciens ont choisi pour lui une épouse sage, mais il n'a d'yeux que pour Agatha Moudio, que tout le village regarde de travers. C'est léger, plein de malice, et le livre a reçu le Grand prix littéraire d'Afrique noire en 1968.
+Certains romans font sourire par leur tendresse plus que par leur mordant. [Le Fils d'Agatha Moudio](/livre/le-fils-d-agatha-moudio), de [Francis Bebey](/auteur/francis-bebey), raconte l'histoire de Mbenda, jeune pêcheur près de Douala. Les anciens ont choisi pour lui une épouse sage, mais il n'a d'yeux que pour Agatha Moudio, que tout le village regarde de travers. C'est léger, plein de malice, et le livre a reçu le Grand prix littéraire d'Afrique noire en 1968. Du même auteur, [Le Roi Albert d'Effidi](/livre/le-roi-albert-d-effidi) oppose un boutiquier vaniteux et un jeune fonctionnaire en Vespa qui convoitent la même fiancée.
 
 Dans [Le Petit Prince de Belleville](/livre/le-petit-prince-de-belleville), [Calixthe Beyala](/auteur/calixthe-beyala) donne la parole à Loukoum, sept ans, qui observe la vie de sa famille malienne à Paris avec des mots d'enfant. On rit de ses trouvailles, et on est ému par ce qu'il comprend sans le dire.
 

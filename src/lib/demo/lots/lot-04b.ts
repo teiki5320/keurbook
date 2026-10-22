@@ -38,6 +38,7 @@ export const livres: Book[] = [
   livre({
     slug: "walaande-l-art-de-partager-un-mari",
     title: "Walaande",
+    metaDescription: "Walaande, l'art de partager un mari (2010), premier roman de Djaïli Amadou Amal : résumé, quatre coépouses de Maroua racontent la polygamie.",
     subtitle: "L'art de partager un mari",
     contributors: [AMAL],
     genre: "roman",
@@ -907,6 +908,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-roi-albert-d-effidi",
     title: "Le Roi Albert d'Effidi",
+    metaDescription: "Le Roi Albert d'Effidi (1976) de Francis Bebey : résumé de la comédie d'Effidi, au Cameroun colonial, où le boutiquier Albert veut épouser la jeune Nani.",
     contributors: [BEBEY],
     genre: "roman",
     audience: "adulte",

@@ -20,7 +20,7 @@ Dans les années 1950, deux jeunes écrivains camerounais publient des romans d'
 
 **[Une vie de boy](/livre/une-vie-de-boy)** de [Ferdinand Oyono](/auteur/ferdinand-oyono) (1956) est le journal d'un jeune domestique au service d'un missionnaire puis du commandant d'un poste colonial. Toundi note tout, avec naïveté, et révèle sans le vouloir l'hypocrisie et la brutalité de ses maîtres. Un livre court, drôle et terrible.
 
-**[Le Pauvre Christ de Bomba](/livre/le-pauvre-christ-de-bomba)** de [Mongo Beti](/auteur/mongo-beti) (1956) suit la tournée d'un missionnaire dans une région qui a tourné le dos à sa mission. Le jeune narrateur, lui aussi naïf, laisse voir ce que le prêtre refuse de voir : les liens entre l'Église et l'administration coloniale.
+**[Le Pauvre Christ de Bomba](/livre/le-pauvre-christ-de-bomba)** de [Mongo Beti](/auteur/mongo-beti) (1956) suit la tournée d'un missionnaire dans une région qui a tourné le dos à sa mission. Le jeune narrateur, lui aussi naïf, laisse voir ce que le prêtre refuse de voir : les liens entre l'Église et l'administration coloniale. Mongo Beti revient aux missions sur le ton de la farce dans [Le Roi miraculé](/livre/le-roi-miracule) (1958), et son tout premier roman, [Ville cruelle](/livre/ville-cruelle) (1954), suit un jeune paysan venu vendre son cacao dans la ville coloniale.
 
 ## Entre deux mondes : l'interprète et l'écolier
 

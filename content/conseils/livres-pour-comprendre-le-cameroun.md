@@ -18,11 +18,11 @@ Le Cameroun sous administration française devient indépendant le 1er janvier 1
 
 Dans les années 1950, deux jeunes écrivains publient des satires de la colonisation qui sont devenues des classiques. Dans [Une vie de boy](/livre/une-vie-de-boy) (1956), Ferdinand Oyono donne la parole à Toundi, un garçon devenu le domestique du commandant blanc. Il note tout dans son journal, et ce témoin discret en apprend beaucoup trop sur ses maîtres. Le livre est court, drôle et cruel ; il figure dans notre sélection [Quels romans africains lire au lycée ?](/conseils/romans-africains-lycee).
 
-La même année, Mongo Beti publie [Le Pauvre Christ de Bomba](/livre/le-pauvre-christ-de-bomba). Un missionnaire part en tournée dans une région qui a délaissé sa mission, accompagné d'un jeune boy qui raconte le voyage avec une naïveté totale. Le lecteur comprend ce que le prêtre refuse de voir. Le livre fit scandale à sa parution. Mongo Beti, exilé en France pendant plus de trente ans, est resté toute sa vie un opposant farouche au régime camerounais. Son roman *Remember Ruben* (1974) est consacré à la lutte de l'UPC.
+La même année, Mongo Beti publie [Le Pauvre Christ de Bomba](/livre/le-pauvre-christ-de-bomba). Un missionnaire part en tournée dans une région qui a délaissé sa mission, accompagné d'un jeune boy qui raconte le voyage avec une naïveté totale. Le lecteur comprend ce que le prêtre refuse de voir. Le livre fit scandale à sa parution. Mongo Beti, exilé en France pendant plus de trente ans, est resté toute sa vie un opposant farouche au régime camerounais. Son roman [Remember Ruben](/livre/remember-ruben) (1974) est consacré à la lutte de l'UPC. Deux ans avant Le Pauvre Christ de Bomba, il avait signé sous le nom d'Eza Boto [Ville cruelle](/livre/ville-cruelle), son tout premier roman, et il publie en 1958 [Le Roi miraculé](/livre/le-roi-miracule), une farce sur la conversion d'un chef polygame.
 
 ## Le village et la tradition
 
-Pour une lecture plus légère, ouvrez [Le Fils d'Agatha Moudio](/livre/le-fils-d-agatha-moudio) (1967) de Francis Bebey, écrivain et grand musicien. Dans un village de pêcheurs près de Douala, un jeune homme doit épouser la fille choisie par les anciens, mais n'a d'yeux que pour la libre et rieuse Agatha. Une comédie pleine de malice sur la parole des anciens et les désirs de la jeunesse.
+Pour une lecture plus légère, ouvrez [Le Fils d'Agatha Moudio](/livre/le-fils-d-agatha-moudio) (1967) de Francis Bebey, écrivain et grand musicien. Dans un village de pêcheurs près de Douala, un jeune homme doit épouser la fille choisie par les anciens, mais n'a d'yeux que pour la libre et rieuse Agatha. Une comédie pleine de malice sur la parole des anciens et les désirs de la jeunesse. Du même auteur, [Le Roi Albert d'Effidi](/livre/le-roi-albert-d-effidi) (1976) met en scène un boutiquier vaniteux qui veut épouser la jeune Nani.
 
 ## La guerre d'indépendance
 
@@ -34,7 +34,7 @@ Plus loin dans le temps, [La Saison de l'ombre](/livre/la-saison-de-l-ombre) de 
 
 À Yaoundé, dans un quartier populaire, un chien observe les clients du bar de son maître : c'est [Temps de chien](/livre/temps-de-chien) (2001) de Patrice Nganang. À travers ce narrateur à quatre pattes, on entend les disputes, les rumeurs et les colères d'une ville frappée par la crise économique des années 1990. Drôle et mordant, le roman donne une image très vivante de la rue camerounaise.
 
-Dans le nord du pays, Djaïli Amadou Amal raconte la vie des femmes peules soumises aux mariages forcés et à la polygamie. [Les Impatientes](/livre/les-impatientes), prix Goncourt des lycéens 2020, fait entendre trois femmes à qui l'on répète toujours le même conseil : patience. Un livre fort et très facile à lire.
+Dans le nord du pays, Djaïli Amadou Amal raconte la vie des femmes peules soumises aux mariages forcés et à la polygamie. [Les Impatientes](/livre/les-impatientes), prix Goncourt des lycéens 2020, fait entendre trois femmes à qui l'on répète toujours le même conseil : patience. Un livre fort et très facile à lire. Son premier roman, [Walaande, l'art de partager un mari](/livre/walaande-l-art-de-partager-un-mari) (2010), donnait déjà la parole à quatre coépouses de Maroua.
 
 Enfin, [Loin de Douala](/livre/loin-de-douala) (2018) de Max Lobe suit deux adolescents partis à la recherche d'un grand frère qui rêve de football en Europe. Leur voyage vers le nord traverse un pays marqué par Boko Haram, mais aussi plein de fêtes et de rencontres. Un roman tendre, qui montre le Cameroun d'aujourd'hui à hauteur de jeunes gens.
 

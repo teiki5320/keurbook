@@ -717,6 +717,7 @@ export const livres: Book[] = [
   livre({
     slug: "l-empire-peul-du-macina",
     title: "L'Empire peul du Macina",
+    metaDescription: "L'Empire peul du Macina d'Amadou Hampâté Bâ et Jacques Daget : résumé de l'histoire de la Dina de Sékou Amadou (1818-1853), capitale Hamdallaye.",
     subtitle: "1818-1853",
     contributors: [ba, auteur("Jacques Daget", null)],
     genre: "essai",
@@ -926,6 +927,7 @@ export const livres: Book[] = [
   livre({
     slug: "oui-mon-commandant",
     title: "Oui mon commandant !",
+    metaDescription: "Oui mon commandant ! (1994) d'Amadou Hampâté Bâ, la suite d'Amkoullel : résumé des mémoires d'un jeune commis africain de l'administration coloniale.",
     contributors: [ba],
     genre: "recit",
     audience: "adulte",

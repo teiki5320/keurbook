@@ -22,6 +22,8 @@ Un classique, c'est un livre qui continue d'être lu longtemps après sa parutio
 
 **[Les Bouts de bois de Dieu](/livre/les-bouts-de-bois-de-dieu)** d'Ousmane Sembène (1960) raconte la grande grève des cheminots de la ligne Dakar-Niger, en 1947. Une fresque collective où les femmes jouent un rôle décisif.
 
+**[Un piège sans fin](/livre/un-piege-sans-fin)** d'Olympe Bhêly-Quenum (1960), grand classique du Bénin, suit Ahouna, fils d'un éleveur du nord du Dahomey, dont la vie bascule dans une spirale tragique.
+
 **[Soundjata ou l'Épopée mandingue](/livre/soundjata-ou-l-epopee-mandingue)**, transcrite par Djibril Tamsir Niane (1960), fait découvrir la fondation de l'empire du Mali au XIIIe siècle, telle que la racontent les griots. C'est l'équivalent africain des grandes épopées antiques.
 
 **[L'Aventure ambiguë](/livre/l-aventure-ambigue)** de Cheikh Hamidou Kane (1961) est un roman philosophique sur un jeune homme partagé entre l'école coranique de son enfance et l'école occidentale. Une question qui n'a rien perdu de son actualité. L'auteur lui a donné une suite en 1995, [Les Gardiens du temple](/livre/les-gardiens-du-temple).

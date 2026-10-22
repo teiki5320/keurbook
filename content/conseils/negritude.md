@@ -44,7 +44,7 @@ Du côté des idées, [Nations nègres et culture](/livre/nations-negres-et-cult
 
 ## Les critiques de la négritude
 
-Le mouvement a aussi été vivement discuté. Des écrivains anglophones, comme le Nigérian Wole Soyinka, ont ironisé : un tigre, disait-il en substance, n'a pas besoin de proclamer sa « tigritude », il agit. D'autres ont reproché à la négritude de figer une image idéalisée de l'Afrique, ou de rester trop proche de la France.
+Le mouvement a aussi été vivement discuté. Des écrivains anglophones, comme le Nigérian Wole Soyinka, ont ironisé : un tigre, disait-il en substance, n'a pas besoin de proclamer sa « tigritude », il agit. D'autres ont reproché à la négritude de figer une image idéalisée de l'Afrique, ou de rester trop proche de la France. Dans [Ma grand-mère bantoue et mes ancêtres les Gaulois](/livre/ma-grand-mere-bantoue-et-mes-ancetres-les-gaulois) (2003), Henri Lopes se demande ce qu'il reste de la négritude pour un écrivain africain d'aujourd'hui.
 
 Plus récemment, le philosophe camerounais Achille Mbembe a repris ces débats dans [Critique de la raison nègre](/livre/critique-de-la-raison-negre) (2013), une réflexion sur la manière dont l'idée de « race » a été construite. Un livre exigeant, pour ceux qui veulent aller plus loin.
 

@@ -69,6 +69,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "les-bouts-de-bois-de-dieu",
     title: "Les Bouts de bois de Dieu",
+    metaDescription: "Les Bouts de bois de Dieu (1960), roman d'Ousmane Sembène sur la grève des cheminots du Dakar-Niger en 1947 : résumé, personnages, femmes en lutte.",
     contributors: [auteur("Ousmane Sembène", "ousmane-sembene")],
     genre: "roman",
     audience: "adulte",
@@ -317,6 +318,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "nations-negres-et-culture",
     title: "Nations nègres et culture",
+    metaDescription: "Nations nègres et culture (1954) de Cheikh Anta Diop : résumé du livre fondateur sur l'Égypte ancienne africaine et les langues africaines.",
     contributors: [auteur("Cheikh Anta Diop", "cheikh-anta-diop")],
     genre: "essai",
     audience: "adulte",
@@ -481,6 +483,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "les-soleils-des-independances",
     title: "Les Soleils des indépendances",
+    metaDescription: "Les Soleils des indépendances (1968) d'Ahmadou Kourouma : résumé du roman de Fama, prince malinké déchu, personnages et analyse de sa langue.",
     contributors: [auteur("Ahmadou Kourouma", "ahmadou-kourouma")],
     genre: "roman",
     audience: "adulte",
@@ -671,6 +674,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "un-piege-sans-fin",
     title: "Un piège sans fin",
+    metaDescription: "Un piège sans fin (1960) d'Olympe Bhêly-Quenum : résumé du roman d'Ahouna, fils d'éleveur du nord du Dahomey. Un classique tragique du Bénin.",
     contributors: [auteur("Olympe Bhêly-Quenum", "olympe-bhely-quenum")],
     genre: "roman",
     audience: "adulte",

@@ -26,7 +26,7 @@ Le roman est court, mais d'une intensité rare. Sa langue, répétitive comme un
 
 L'un des tout premiers livres écrits en français par un Africain est le récit d'un tirailleur. **Force-Bonté** (1926) de Bakary Diallo, berger peul du Sénégal engagé dans l'armée française, raconte son parcours jusqu'aux tranchées, où il est grièvement blessé. Longtemps lu comme un simple hommage à la France, il est aujourd'hui relu de manière plus nuancée.
 
-Du côté de la poésie, [Léopold Sédar Senghor](/auteur/leopold-sedar-senghor), lui-même mobilisé en 1939 et fait prisonnier en 1940, consacre aux tirailleurs plusieurs poèmes de son recueil *Hosties noires* (1948). Il y rend hommage à ces soldats morts loin de chez eux, et l'un des poèmes du recueil évoque le drame de Thiaroye. Les poèmes plus tardifs d'[Éthiopiques](/livre/ethiopiques) permettent de prolonger la découverte de sa poésie.
+Du côté de la poésie, [Léopold Sédar Senghor](/auteur/leopold-sedar-senghor), lui-même mobilisé en 1939 et fait prisonnier en 1940, consacre aux tirailleurs plusieurs poèmes de son recueil [Hosties noires](/livre/hosties-noires) (1948). Il y rend hommage à ces soldats morts loin de chez eux, et l'un des poèmes du recueil évoque le drame de Thiaroye. Les poèmes plus tardifs d'[Éthiopiques](/livre/ethiopiques) permettent de prolonger la découverte de sa poésie.
 
 ## La Seconde Guerre mondiale et après
 

@@ -1,6 +1,6 @@
 ---
 title: Quels romans africains courts lire (moins de 200 pages) ?
-description: Une si longue lettre, L'Aventure ambiguë, La Vie et demie, Tropique de la violence… Des romans africains de moins de 200 pages, à lire en un week-end.
+description: Romans africains courts à lire, de moins de 200 pages : Une si longue lettre, L'Aventure ambiguë, La Vie et demie… Des classiques à lire en un week-end.
 date: 2026-09-28
 theme: decouvrir
 resume: Beaucoup de grands romans africains font moins de 200 pages. Une si longue lettre de Mariama Bâ, L'Aventure ambiguë de Cheikh Hamidou Kane et La Vie et demie de Sony Labou Tansi sont des classiques courts ; Tropique de la violence de Nathacha Appanah et Black Manoo de Gauz, des romans récents qui se lisent d'une traite.

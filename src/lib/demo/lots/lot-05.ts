@@ -767,6 +767,7 @@ export const livres: Book[] = [
   livre({
     slug: "un-fusil-dans-la-main-un-poeme-dans-la-poche",
     title: "Un fusil dans la main, un poème dans la poche",
+    metaDescription: "Un fusil dans la main, un poème dans la poche (1973), premier roman d'Emmanuel Dongala : résumé, Mayéla dia Mayéla, du maquis au pouvoir.",
     contributors: [DONGALA],
     genre: "roman",
     audience: "adulte",
@@ -893,6 +894,7 @@ export const livres: Book[] = [
   livre({
     slug: "tribaliques",
     title: "Tribaliques",
+    metaDescription: "Tribaliques (1971) d'Henri Lopes : résumé du recueil de huit nouvelles sur le Congo après l'indépendance. Grand prix littéraire d'Afrique noire 1972.",
     contributors: [LOPES],
     genre: "nouvelles",
     audience: "adulte",
@@ -913,6 +915,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-nouvelle-romance",
     title: "La Nouvelle Romance",
+    metaDescription: "La Nouvelle Romance (1976) d'Henri Lopes : résumé du premier roman de l'écrivain congolais. Wali, épouse d'une vedette du football, conquiert sa liberté.",
     contributors: [LOPES],
     genre: "roman",
     audience: "adulte",
@@ -1035,6 +1038,7 @@ export const livres: Book[] = [
   livre({
     slug: "ma-grand-mere-bantoue-et-mes-ancetres-les-gaulois",
     title: "Ma grand-mère bantoue et mes ancêtres les Gaulois",
+    metaDescription: "Ma grand-mère bantoue et mes ancêtres les Gaulois (2003) d'Henri Lopes : résumé de l'essai sur le métissage, la négritude et la francophonie.",
     subtitle: "Simples discours",
     contributors: [LOPES],
     genre: "essai",

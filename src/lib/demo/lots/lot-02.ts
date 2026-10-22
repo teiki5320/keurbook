@@ -36,6 +36,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-revenant",
     title: "Le Revenant",
+    metaDescription: "Le Revenant (1976), premier roman d'Aminata Sow Fall : résumé de l'histoire de Bakar, employé des postes à Dakar, de la prison à la revanche.",
     contributors: [sowFall],
     genre: "roman",
     audience: "adulte",
@@ -58,6 +59,7 @@ export const livres: Book[] = [
   livre({
     slug: "l-appel-des-arenes",
     title: "L'Appel des arènes",
+    metaDescription: "L'Appel des arènes (1982) d'Aminata Sow Fall : résumé du roman de Nalla, adolescent attiré par la lutte sénégalaise, adapté au cinéma en 2005.",
     contributors: [sowFall],
     genre: "roman",
     audience: "adulte",
@@ -454,6 +456,7 @@ export const livres: Book[] = [
   livre({
     slug: "cendres-et-braises",
     title: "Cendres et braises",
+    metaDescription: "Cendres et braises (1994) de Ken Bugul, la suite du Baobab fou : résumé du roman de Marie, Sénégalaise en France prise dans une passion devenue emprise.",
     contributors: [kenBugul],
     genre: "roman",
     audience: "adulte",
@@ -475,6 +478,7 @@ export const livres: Book[] = [
   livre({
     slug: "riwan-ou-le-chemin-de-sable",
     title: "Riwan ou le chemin de sable",
+    metaDescription: "Riwan ou le chemin de sable (1999) de Ken Bugul, Grand prix littéraire d'Afrique noire : résumé du roman sur la polygamie, la foi et la liberté des femmes.",
     contributors: [kenBugul],
     genre: "roman",
     audience: "adulte",
@@ -861,6 +865,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-fabrique-du-present",
     title: "La Fabrique du présent",
+    metaDescription: "La Fabrique du présent (2026) de Felwine Sarr, la suite d'Afrotopia : résumé de l'essai sur une « économie politique de la dignité » en Afrique.",
     subtitle: "Pour des utopies en actes",
     contributors: [felwineSarr],
     genre: "essai",

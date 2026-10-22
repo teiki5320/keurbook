@@ -184,6 +184,7 @@ export const livres: Book[] = [
   livre({
     slug: "voltaique",
     title: "Voltaïque",
+    metaDescription: "Voltaïque (1962) d'Ousmane Sembène : résumé du recueil de nouvelles qui contient « La Noire de… », l'histoire de Diouana, portée au cinéma en 1966.",
     contributors: [auteur("Ousmane Sembène", "ousmane-sembene")],
     genre: "nouvelles",
     audience: "adulte",
@@ -320,6 +321,7 @@ export const livres: Book[] = [
   livre({
     slug: "hosties-noires",
     title: "Hosties noires",
+    metaDescription: "Hosties noires (1948) de Léopold Sédar Senghor : résumé du recueil de poèmes dédié aux tirailleurs sénégalais, écrit en partie en captivité.",
     contributors: [auteur("Léopold Sédar Senghor", "leopold-sedar-senghor")],
     genre: "poesie",
     audience: "adulte",

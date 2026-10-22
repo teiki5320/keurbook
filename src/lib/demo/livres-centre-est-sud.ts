@@ -714,6 +714,7 @@ export const livresCentreEstSud: Book[] = [
     ...base,
     slug: "le-monde-s-effondre",
     title: "Le monde s'effondre",
+    metaDescription: "Le monde s'effondre, écrit par Chinua Achebe (Nigeria, 1958) : résumé du roman d'Okonkwo à Umuofia, personnages et raisons de lire ce classique.",
     contributors: [
       { role: "auteur", name: "Chinua Achebe", authorSlug: "chinua-achebe" },
       { role: "traducteur", name: "Michel Ligny", authorSlug: null },

@@ -10,7 +10,7 @@ Pendant longtemps, la littérature africaine a été racontée surtout par des h
 
 ## Les pionnières
 
-Impossible de parler des autrices d'aujourd'hui sans citer celles qui ont ouvert la voie. [Une si longue lettre](/livre/une-si-longue-lettre) de Mariama Bâ (1979), qui a reçu le prix Noma, reste un texte fondateur sur la condition des femmes au Sénégal. La même année, Aminata Sow Fall publiait [La Grève des bàttu](/livre/la-greve-des-battu), une satire sociale pleine d'esprit. Et Ken Bugul, avec [Le Baobab fou](/livre/le-baobab-fou) (1982), a écrit un récit autobiographique d'une franchise rare sur l'exil et la solitude. Aminata Sow Fall et Ken Bugul continuent d'écrire et de compter aujourd'hui.
+Impossible de parler des autrices d'aujourd'hui sans citer celles qui ont ouvert la voie. [Une si longue lettre](/livre/une-si-longue-lettre) de Mariama Bâ (1979), qui a reçu le prix Noma, reste un texte fondateur sur la condition des femmes au Sénégal. La même année, Aminata Sow Fall publiait [La Grève des bàttu](/livre/la-greve-des-battu), une satire sociale pleine d'esprit. Son premier roman, [Le Revenant](/livre/le-revenant) (1976), visait déjà l'argent-roi et les apparences à Dakar, et [L'Appel des arènes](/livre/l-appel-des-arenes) (1982) suit un adolescent fasciné par la lutte sénégalaise. Et Ken Bugul, avec [Le Baobab fou](/livre/le-baobab-fou) (1982), a écrit un récit autobiographique d'une franchise rare sur l'exil et la solitude. Elle l'a prolongé avec [Cendres et braises](/livre/cendres-et-braises) (1994) puis [Riwan ou le chemin de sable](/livre/riwan-ou-le-chemin-de-sable) (1999). Aminata Sow Fall et Ken Bugul continuent d'écrire et de compter aujourd'hui.
 
 ## Les grandes voix francophones
 

@@ -20,7 +20,7 @@ Quelques années plus tard, il tourne [Xala](/livre/xala) (1975), d'après son r
 
 [L'Enfant noir](/livre/l-enfant-noir) de Camara Laye (1953), souvenir d'une enfance à Kouroussa, en Haute-Guinée, a été adapté par Laurent Chevallier en 1995. Le film a été tourné en Guinée. Le livre garde pourtant une magie que l'image peine à rendre : celle du père forgeron qui travaille l'or et de la mère aux pouvoirs mystérieux, vus par les yeux d'un enfant.
 
-Plus récemment, [Petit pays](/livre/petit-pays) de [Gaël Faye](/auteur/gael-faye) est devenu un film d'Éric Barbier, sorti en 2020. On y suit Gabriel, dix ans, à Bujumbura, au moment où le Burundi bascule dans la violence. Le roman a aussi été adapté en BD, en 2024. Si vous avez un adolescent à la maison, c'est une très bonne occasion de lire le livre puis de regarder le film ensemble.
+Plus récemment, [Petit pays](/livre/petit-pays) de [Gaël Faye](/auteur/gael-faye) est devenu un film d'Éric Barbier, sorti en 2020. On y suit Gabriel, dix ans, à Bujumbura, au moment où le Burundi bascule dans la violence. Le roman a aussi été adapté en BD, en 2024. Si vous avez un adolescent à la maison, c'est une très bonne occasion de lire le livre puis de regarder le film ensemble. Au Sénégal, [L'Appel des arènes](/livre/l-appel-des-arenes) d'Aminata Sow Fall, l'histoire d'un adolescent attiré par les arènes de lutte, a été porté à l'écran par Cheikh Ndiaye en 2005.
 
 ## Des romans de guerre et de mémoire
 

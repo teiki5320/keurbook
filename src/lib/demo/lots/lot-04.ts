@@ -34,6 +34,7 @@ export const livres: Book[] = [
   livre({
     slug: "ville-cruelle",
     title: "Ville cruelle",
+    metaDescription: "Ville cruelle (1954), premier roman de Mongo Beti signé Eza Boto : résumé de la journée de Banda à Tanga, la ville coloniale. Personnages et thèmes.",
     contributors: [beti],
     genre: "roman",
     audience: "adulte",
@@ -76,6 +77,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-roi-miracule",
     title: "Le Roi miraculé",
+    metaDescription: "Le Roi miraculé (1958) de Mongo Beti : résumé de la farce où le chef Essomba Mendouga, guéri, se convertit et doit renvoyer ses épouses.",
     subtitle: "Chronique des Essazam",
     contributors: [beti],
     genre: "roman",
@@ -141,6 +143,7 @@ export const livres: Book[] = [
   livre({
     slug: "remember-ruben",
     title: "Remember Ruben",
+    metaDescription: "Remember Ruben (1974) de Mongo Beti : résumé du roman de Mor-Zamba et Abena, fresque sur la lutte de l'UPC pour l'indépendance du Cameroun.",
     contributors: [beti],
     genre: "roman",
     audience: "adulte",
