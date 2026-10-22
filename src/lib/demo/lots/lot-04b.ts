@@ -61,6 +61,7 @@ export const livres: Book[] = [
   livre({
     slug: "mistiriijo-la-mangeuse-d-ames",
     title: "Mistiriijo",
+    metaDescription: "Mistiriijo, la mangeuse d'âmes (2013) de Djaïli Amadou Amal : à Maroua, une vieille femme peule accusée de sorcellerie affronte la rumeur. Résumé.",
     subtitle: "La mangeuse d'âmes",
     contributors: [AMAL],
     genre: "roman",

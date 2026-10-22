@@ -183,6 +183,7 @@ export const livres: Book[] = [
   livre({
     slug: "hilda",
     title: "Hilda",
+    metaDescription: "Hilda (1999), première pièce de Marie NDiaye : une patronne veut posséder Hilda, la femme qu'elle emploie, qu'on ne voit jamais sur scène. Résumé.",
     contributors: [ndiaye],
     genre: "theatre",
     audience: "adulte",
@@ -478,6 +479,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-cheffe-roman-d-une-cuisiniere",
     title: "La Cheffe, roman d'une cuisinière",
+    metaDescription: "La Cheffe, roman d'une cuisinière (2016) de Marie NDiaye : un ancien commis raconte la vie d'une grande cuisinière de Bordeaux. Résumé et analyse.",
     contributors: [ndiaye],
     genre: "roman",
     audience: "adulte",
@@ -994,6 +996,7 @@ export const livres: Book[] = [
   livre({
     slug: "lettre-a-la-france-negre",
     title: "Lettre à la France nègre",
+    metaDescription: "Lettre à la France nègre (1969) de Yambo Ouologuem : un pamphlet en lettres ouvertes contre tous les racismes, après Le Devoir de violence. Résumé.",
     contributors: [ouologuem],
     genre: "essai",
     audience: "adulte",

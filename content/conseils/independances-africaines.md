@@ -34,6 +34,8 @@ Dans [Le Pleurer-rire](/livre/le-pleurer-rire), le Congolais [Henri Lopes](/aute
 
 Au Cameroun, [Mongo Beti](/auteur/mongo-beti) montre dans [Perpétue et l'habitude du malheur](/livre/perpetue-et-l-habitude-du-malheur) ce que la dictature fait aux plus fragiles, et d'abord aux femmes, à travers l'enquête d'un homme sur la mort de sa jeune sœur. Dans [Remember Ruben](/livre/remember-ruben), il revient sur la lutte de l'UPC et de Ruben Um Nyobè pour l'indépendance. En Guinée, [Dramouss](/livre/dramouss) de Camara Laye (1966) dit dès les premières années la peur et la violence politique du nouveau régime.
 
+Au Nigeria, Chinua Achebe avait ouvert la voie dès 1966 avec [Le Démagogue](/livre/le-demagogue), satire mordante du clientélisme : un jeune instituteur y découvre les luxes et les combines de son ancien professeur, devenu ministre adoré du peuple.
+
 Enfin, trente ans après *Les Soleils des indépendances*, Kourouma revient sur le sujet avec [En attendant le vote des bêtes sauvages](/livre/en-attendant-le-vote-des-betes-sauvages). Pendant six veillées, un griot chante la geste de Koyaga, chasseur devenu dictateur, derrière lequel on reconnaît plusieurs chefs d'État bien réels de la guerre froide.
 
 ## Par où commencer ?

@@ -26,7 +26,7 @@ Plus tard, [Allah n'est pas obligé](/livre/allah-n-est-pas-oblige), prix Renaud
 
 ## Légendes et mémoire
 
-La légende de la reine Pokou est l'un des grands récits fondateurs du pays. Fuyant avec son peuple, la reine aurait sacrifié son enfant pour franchir un fleuve : ainsi serait né le peuple baoulé. Véronique Tadjo reprend ce mythe dans [Reine Pokou](/livre/reine-pokou) (2005), Grand prix littéraire d'Afrique noire. Elle en propose plusieurs versions, qui font écho à la Côte d'Ivoire déchirée du début des années 2000. Un livre bref et poétique.
+La légende de la reine Pokou est l'un des grands récits fondateurs du pays. Fuyant avec son peuple, la reine aurait sacrifié son enfant pour franchir un fleuve : ainsi serait né le peuple baoulé. Véronique Tadjo reprend ce mythe dans [Reine Pokou](/livre/reine-pokou) (2005), Grand prix littéraire d'Afrique noire. Elle en propose plusieurs versions, qui font écho à la Côte d'Ivoire déchirée du début des années 2000. Un livre bref et poétique. Plus récemment, [Je remercie la nuit](/livre/je-remercie-la-nuit) (2024), prix Ivoire 2025, suit deux étudiantes d'Abidjan prises dans la crise électorale de 2010-2011.
 
 Véronique Tadjo a aussi écrit de nombreux albums pour la jeunesse, et elle fait partie des écrivaines présentées dans [Qui sont les grandes autrices africaines d'aujourd'hui ?](/conseils/grandes-autrices-africaines).
 

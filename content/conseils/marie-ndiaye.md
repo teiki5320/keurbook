@@ -22,7 +22,7 @@ Avec [Rosie Carpe](/livre/rosie-carpe), elle reçoit le prix Femina en 2001. Ros
 
 ## Une grande dramaturge
 
-Marie NDiaye écrit aussi pour le théâtre. En 2003, sa pièce [Papa doit manger](/livre/papa-doit-manger) entre au répertoire de la Comédie-Française. On y voit un père revenu après dix ans d'absence, sûr de son bon droit, face à une famille qui n'a aucune envie de l'accueillir.
+Marie NDiaye écrit aussi pour le théâtre. En 2003, sa pièce [Papa doit manger](/livre/papa-doit-manger) entre au répertoire de la Comédie-Française. On y voit un père revenu après dix ans d'absence, sûr de son bon droit, face à une famille qui n'a aucune envie de l'accueillir. Sa toute première pièce, [Hilda](/livre/hilda) (1999), oppose une patronne et le mari de la femme qu'elle veut employer : Hilda, qu'on ne voit jamais sur scène.
 
 Elle a également écrit plusieurs livres pour la jeunesse, comme [La Diablesse et son enfant](/livre/la-diablesse-et-son-enfant), un conte doux et grave sur la peur de l'autre, et coécrit des scénarios de films, dont *White Material* de Claire Denis et *Saint Omer* d'Alice Diop.
 
@@ -34,7 +34,7 @@ Aucune de ces femmes n'est « puissante » au sens habituel : elles sont humili�
 
 ## Des romans sur la honte et la mémoire
 
-Les livres suivants creusent les mêmes questions. Dans [Ladivine](/livre/ladivine) (2013), Clarisse cache à son mari et à sa fille l'existence de sa mère, une femme de ménage noire qu'elle va voir en secret une fois par mois. Le roman suit trois générations de femmes liées par ce secret. Dans [La vengeance m'appartient](/livre/la-vengeance-m-appartient) (2021), une avocate de Bordeaux est chargée de défendre une mère accusée d'un crime terrible, et croit reconnaître dans le mari un garçon croisé dans son enfance.
+Les livres suivants creusent les mêmes questions. Dans [Ladivine](/livre/ladivine) (2013), Clarisse cache à son mari et à sa fille l'existence de sa mère, une femme de ménage noire qu'elle va voir en secret une fois par mois. Le roman suit trois générations de femmes liées par ce secret. Dans [La vengeance m'appartient](/livre/la-vengeance-m-appartient) (2021), une avocate de Bordeaux est chargée de défendre une mère accusée d'un crime terrible, et croit reconnaître dans le mari un garçon croisé dans son enfance. Plus lumineux, [La Cheffe, roman d'une cuisinière](/livre/la-cheffe-roman-d-une-cuisiniere) (2016) fait raconter par un ancien commis la vie d'une grande cuisinière de Bordeaux, née dans une famille pauvre du Sud-Ouest.
 
 Ses phrases sont longues, précises, d'une grande élégance, et elle y place souvent un détail qui fait tout basculer. On parle peu du racisme de façon directe dans ses livres, mais il est là, dans les regards, les silences et les places assignées.
 

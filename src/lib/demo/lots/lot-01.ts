@@ -72,6 +72,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-docker-noir",
     title: "Le Docker noir",
+    metaDescription: "Le Docker noir (1956), premier roman d'Ousmane Sembène : un docker sénégalais de Marseille dont une romancière vole le manuscrit. Résumé.",
     contributors: [auteur("Ousmane Sembène", "ousmane-sembene")],
     genre: "roman",
     audience: "adulte",
@@ -275,6 +276,7 @@ export const livres: Book[] = [
   livre({
     slug: "niiwam-suivi-de-taaw",
     title: "Niiwam, suivi de Taaw",
+    metaDescription: "Niiwam, suivi de Taaw (1987) d'Ousmane Sembène : deux nouvelles sur la pauvreté à Dakar, dont un père qui traverse la ville en bus avec son fils. Résumé.",
     contributors: [auteur("Ousmane Sembène", "ousmane-sembene")],
     genre: "nouvelles",
     audience: "adulte",
@@ -491,6 +493,7 @@ export const livres: Book[] = [
   livre({
     slug: "liberte-2-nation-et-voie-africaine-du-socialisme",
     title: "Liberté 2",
+    metaDescription: "Liberté 2, Nation et voie africaine du socialisme (1971) de Léopold Sédar Senghor : ses textes politiques des débuts de l'indépendance. Résumé.",
     subtitle: "Nation et voie africaine du socialisme",
     contributors: [auteur("Léopold Sédar Senghor", "leopold-sedar-senghor")],
     genre: "essai",
@@ -758,6 +761,7 @@ export const livres: Book[] = [
   livre({
     slug: "ketala",
     title: "Kétala",
+    metaDescription: "Kétala (2006) de Fatou Diome : après la mort de Mémoria, ses objets racontent sa vie, de Dakar à Strasbourg. Résumé de ce roman sur l'exil.",
     contributors: [auteur("Fatou Diome", "fatou-diome")],
     genre: "roman",
     audience: "adulte",

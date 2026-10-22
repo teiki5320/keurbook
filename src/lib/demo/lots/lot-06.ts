@@ -1260,6 +1260,7 @@ export const livres: Book[] = [
   livre({
     slug: "rien-ne-t-appartient",
     title: "Rien ne t'appartient",
+    metaDescription: "Rien ne t'appartient (2021) de Nathacha Appanah : Tara, veuve, voit resurgir la fille qu'elle a été. Résumé du roman, prix des libraires de Nancy.",
     contributors: [appanah],
     genre: "roman",
     audience: "adulte",

@@ -38,6 +38,8 @@ Plus récent, le prix Orange du livre en Afrique, lancé en 2019, distingue des 
 
 Enfin, le prix Senghor du premier roman francophone repère de nouvelles voix : il a couronné en 2016 [Anguille sous roche](/livre/anguille-sous-roche) du Comorien Ali Zamir.
 
+Créé à Abidjan, le prix Ivoire récompense lui aussi des écrivains africains de langue française. Parmi ses lauréats : [Camarade papa](/livre/camarade-papa) de Gauz en 2018, [Le Continent du Tout et du presque Rien](/livre/le-continent-du-tout-et-du-presque-rien) de Sami Tchak en 2022 et [Je remercie la nuit](/livre/je-remercie-la-nuit) de Véronique Tadjo en 2025.
+
 ## Et les grands prix français ?
 
 Les écrivains africains ont aussi remporté les plus grands prix de la rentrée française, du Renaudot de Yambo Ouologuem en 1968 au Goncourt de Mohamed Mbougar Sarr en 2021. Nous leur consacrons un article à part : [Quels auteurs africains ont reçu le prix Goncourt ou le Renaudot ?](/conseils/goncourt-renaudot-auteurs-africains). Et pour la plus haute distinction, lisez [Quels écrivains africains ont reçu le prix Nobel de littérature ?](/conseils/prix-nobel-litterature-ecrivains-africains).

@@ -30,6 +30,8 @@ Au début des années 1960, Sembène fait un constat : la plupart de ses compatr
 
 Sembène n'a jamais cessé d'écrire. Souvent, un même sujet donne un livre et un film. [Véhi-Ciosane, suivi du Mandat](/livre/vehi-ciosane-suivi-du-mandat) réunit deux longues nouvelles, l'une tragique, l'autre comique : un chômeur de Dakar reçoit un mandat de Paris, mais sans papiers il ne peut pas le toucher, et tout le quartier réclame déjà sa part.
 
+Dans la même veine, [Niiwam, suivi de Taaw](/livre/niiwam-suivi-de-taaw) (1987) réunit deux nouvelles sur la pauvreté dans le Dakar des années 1980. Dans « Niiwam », un père pauvre traverse la ville en autobus avec le corps de son fils, sans que personne ne devine ce qu'il porte ; Clarence Delgado en a tiré un film.
+
 [Xala](/livre/xala), en 1973, est une satire de la nouvelle bourgeoisie sénégalaise, à travers un homme d'affaires frappé d'impuissance le soir de son troisième mariage. Dans [Guelwaar](/livre/guelwaar), un notable catholique est enterré par erreur dans un cimetière musulman, et l'affaire tourne à la querelle ; Sembène en tire une fable pleine d'humour sur la tolérance. Plus ambitieux, [Le Dernier de l'Empire](/livre/le-dernier-de-l-empire) imagine la disparition soudaine d'un vieux président et la lutte pour sa succession.
 
 ## Ce qui fait la force de son œuvre

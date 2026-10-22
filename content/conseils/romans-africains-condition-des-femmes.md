@@ -32,6 +32,8 @@ On parle beaucoup des hommes qui partent vers l'Europe, moins de celles qui atte
 
 Dans [La Confession de la lionne](/livre/la-confession-de-la-lionne) (2012), le Mozambicain [Mia Couto](/auteur/mia-couto) part d'un fait réel : dans un village du nord du pays, des lions attaquent et tuent des femmes. Un chasseur est appelé pour les abattre. Mais à mesure que la jeune Mariamar prend la parole, le roman révèle une autre violence, plus sourde, celle que subissent les femmes au quotidien. Un livre envoûtant, entre conte et enquête.
 
+Dans [C'est le soleil qui m'a brûlée](/livre/c-est-le-soleil-qui-m-a-brulee) (1987), premier roman de [Calixthe Beyala](/auteur/calixthe-beyala), Ateba, dix-neuf ans, observe le sort fait aux femmes de son quartier et leur écrit des lettres qu'elle n'envoie jamais. Un livre d'une rare audace sur le corps et le désir de liberté.
+
 ## Pour réfléchir : un texte court
 
 Si vous voulez prolonger ces lectures par une réflexion, lisez [Nous sommes tous des féministes](/livre/nous-sommes-tous-des-feministes) de [Chimamanda Ngozi Adichie](/auteur/chimamanda-ngozi-adichie). Tiré d'une conférence de 2012, ce texte bref explique simplement pourquoi l'égalité entre les femmes et les hommes concerne tout le monde. Il se lit en une heure, et peut se partager dès le lycée.

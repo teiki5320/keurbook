@@ -957,6 +957,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-chercheur-d-afriques",
     title: "Le Chercheur d'Afriques",
+    metaDescription: "Le Chercheur d'Afriques (1990) d'Henri Lopes, prix Jules-Verne : André, métis né au Congo, cherche en France son père et sa place. Résumé du roman.",
     contributors: [LOPES],
     genre: "roman",
     audience: "adulte",

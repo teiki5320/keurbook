@@ -445,6 +445,7 @@ export const livres: Book[] = [
   livre({
     slug: "c-est-le-soleil-qui-m-a-brulee",
     title: "C'est le soleil qui m'a brûlée",
+    metaDescription: "C'est le soleil qui m'a brûlée (1987), premier roman de Calixthe Beyala : Ateba, 19 ans, écrit aux femmes des lettres jamais envoyées. Résumé du roman.",
     contributors: [beyala],
     genre: "roman",
     audience: "adulte",
@@ -550,6 +551,7 @@ export const livres: Book[] = [
   livre({
     slug: "asseze-l-africaine",
     title: "Assèze l'Africaine",
+    metaDescription: "Assèze l'Africaine (1994) de Calixthe Beyala : d'un village du Cameroun à Douala puis à Paris, le parcours d'Assèze face à Sorraya. Résumé du roman.",
     contributors: [beyala],
     genre: "roman",
     audience: "adulte",
@@ -595,6 +597,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-petite-fille-du-reverbere",
     title: "La Petite Fille du réverbère",
+    metaDescription: "La Petite Fille du réverbère (1998) de Calixthe Beyala : une enfance à Douala dans les années 1960, auprès d'une grand-mère. Résumé du roman.",
     contributors: [beyala],
     genre: "roman",
     audience: "adulte",

@@ -113,6 +113,7 @@ export const livres: Book[] = [
   livre({
     slug: "les-crapauds-brousse",
     title: "Les Crapauds-brousse",
+    metaDescription: "Les Crapauds-brousse (1979), premier roman de Tierno Monénembo : un jeune fonctionnaire pris dans une dictature proche de la Guinée de Sékou Touré. Résumé.",
     contributors: [monenembo],
     genre: "roman",
     audience: "adulte",
@@ -439,6 +440,7 @@ export const livres: Book[] = [
   livre({
     slug: "en-attendant-le-vote-des-betes-sauvages",
     title: "En attendant le vote des bêtes sauvages",
+    metaDescription: "En attendant le vote des bêtes sauvages (1998) d'Ahmadou Kourouma, prix du Livre Inter : la geste du dictateur Koyaga en six veillées. Résumé.",
     contributors: [kourouma],
     genre: "roman",
     audience: "adulte",
@@ -630,6 +632,7 @@ export const livres: Book[] = [
   livre({
     slug: "l-ombre-d-imana",
     title: "L'Ombre d'Imana",
+    metaDescription: "L'Ombre d'Imana (2000) de Véronique Tadjo : un voyage au Rwanda quatre ans après le génocide des Tutsi, entre témoignages et fiction. Résumé.",
     subtitle: "Voyages jusqu'au bout du Rwanda",
     contributors: [tadjo],
     genre: "recit",
@@ -694,6 +697,7 @@ export const livres: Book[] = [
   livre({
     slug: "je-remercie-la-nuit",
     title: "Je remercie la nuit",
+    metaDescription: "Je remercie la nuit (2024) de Véronique Tadjo, prix Ivoire 2025 : deux étudiantes d'Abidjan prises dans la crise de 2010-2011. Résumé du roman.",
     contributors: [tadjo],
     genre: "roman",
     audience: "adulte",
@@ -950,6 +954,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-voyage-de-yao",
     title: "Le Voyage de Yao",
+    metaDescription: "Le Voyage de Yao (2019) de Véronique Tadjo : un garçon du nord du Sénégal part seul à Dakar voir son écrivain préféré. Résumé du roman tiré du film.",
     contributors: [tadjo],
     genre: "jeunesse",
     audience: "ado",
@@ -1276,6 +1281,7 @@ export const livres: Book[] = [
   livre({
     slug: "camarade-papa",
     title: "Camarade papa",
+    metaDescription: "Camarade papa (2018) de Gauz : la colonisation de la Côte d'Ivoire racontée par deux voix, un jeune Français et un enfant d'Amsterdam. Résumé du roman.",
     contributors: [gauz],
     genre: "roman",
     audience: "adulte",
@@ -1560,6 +1566,7 @@ export const livres: Book[] = [
   livre({
     slug: "liaison-d-un-ete",
     title: "Liaison d'un été",
+    metaDescription: "Liaison d'un été (1968) d'Olympe Bhêly-Quenum : ses premières nouvelles, où le surnaturel surgit dans la vie de tous les jours. Présentation du recueil.",
     contributors: [quenum],
     genre: "nouvelles",
     audience: "adulte",
@@ -1581,6 +1588,7 @@ export const livres: Book[] = [
   livre({
     slug: "un-enfant-d-afrique",
     title: "Un enfant d'Afrique",
+    metaDescription: "Un enfant d'Afrique (1970), roman d'Olympe Bhêly-Quenum : l'enfance heureuse d'Ayao au Dahomey (Bénin), écrit pour les 10-14 ans. Résumé du livre.",
     contributors: [quenum],
     genre: "jeunesse",
     audience: "ado",
@@ -1898,6 +1906,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-continent-du-tout-et-du-presque-rien",
     title: "Le Continent du Tout et du presque Rien",
+    metaDescription: "Le Continent du Tout et du presque Rien (2021) de Sami Tchak, prix Ivoire 2022 : un ethnologue français transformé par un village du Togo. Résumé.",
     contributors: [tchak],
     genre: "roman",
     audience: "adulte",

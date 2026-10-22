@@ -20,15 +20,19 @@ En bande dessinée, **[Une éternité à Tanger](/bd/une-eternite-a-tanger)** d'
 
 La BD **[Malamine](/bd/malamine)** de Christophe Ngalle Edimo et Simon-Pierre Mbumbo montre un autre visage de cette vie : un homme diplômé et cultivé, renvoyé sans cesse aux clichés et aux petits boulots. Elle dit avec justesse la frustration d'être étranger partout.
 
-**[Les Honneurs perdus](/livre/les-honneurs-perdus)** de [Calixthe Beyala](/auteur/calixthe-beyala) (1996) emmène une Camerounaise de plus de cinquante ans de Douala à Belleville, où elle découvre une autre façon d'être femme. Plein de verve et d'humour, le roman a reçu le Grand prix du roman de l'Académie française.
+**[Les Honneurs perdus](/livre/les-honneurs-perdus)** de [Calixthe Beyala](/auteur/calixthe-beyala) (1996) emmène une Camerounaise de plus de cinquante ans de Douala à Belleville, où elle découvre une autre façon d'être femme. Plein de verve et d'humour, le roman a reçu le Grand prix du roman de l'Académie française. Du même auteur, [Assèze l'Africaine](/livre/asseze-l-africaine) (1994) suit une jeune fille d'un village du Cameroun jusqu'à Paris, parmi les sans-papiers et les déracinés.
 
 **[Place des fêtes](/livre/place-des-fetes)** de [Sami Tchak](/auteur/sami-tchak) (2001) donne la parole à un jeune homme né en banlieue parisienne de parents africains. Son monologue, cru et provocateur, démonte les clichés sur l'Afrique comme sur l'immigration. À réserver aux adultes. Dix ans plus tard, avec [Al Capone le Malien](/livre/al-capone-le-malien), il installe sa satire de l'argent dans un hôtel de luxe de Bamako.
+
+Bien avant eux, **[Le Docker noir](/livre/le-docker-noir)** d'[Ousmane Sembène](/auteur/ousmane-sembene) (1956) racontait la vie des ouvriers africains en France : Diaw Falla, docker sénégalais à Marseille, écrit un roman la nuit, qu'une romancière française publie sous son nom.
+
+**[Le Chercheur d'Afriques](/livre/le-chercheur-d-afriques)** d'[Henri Lopes](/auteur/henri-lopes) (1990), prix Jules-Verne, suit André, né au Congo d'une mère noire et d'un père blanc. Traité de « mal blanchi » au pays, il devient le « moricaud » en France, où il cherche sa place et son père.
 
 ## L'exil intérieur
 
 Partir, c'est aussi risquer de se perdre. **[L'Aventure ambiguë](/livre/l-aventure-ambigue)** de Cheikh Hamidou Kane (1961) suit Samba Diallo, envoyé de son pays des Diallobé jusqu'à Paris pour étudier, et de plus en plus partagé entre deux mondes. Un grand roman philosophique, toujours actuel.
 
-**[Le Baobab fou](/livre/le-baobab-fou)** de [Ken Bugul](/auteur/ken-bugul) (1982), récit très autobiographique, raconte l'arrivée d'une jeune Sénégalaise en Belgique dans les années 1970. Persuadée de trouver en Europe une famille et une identité, elle y découvre la solitude et une dérive de plus en plus violente. Un livre d'une grande franchise. La suite, [Cendres et braises](/livre/cendres-et-braises) (1994), raconte une passion amoureuse qui tourne à l'emprise.
+**[Le Baobab fou](/livre/le-baobab-fou)** de [Ken Bugul](/auteur/ken-bugul) (1982), récit très autobiographique, raconte l'arrivée d'une jeune Sénégalaise en Belgique dans les années 1970. Persuadée de trouver en Europe une famille et une identité, elle y découvre la solitude et une dérive de plus en plus violente. Un livre d'une grande franchise. La suite, [Cendres et braises](/livre/cendres-et-braises) (1994), raconte une passion amoureuse qui tourne à l'emprise. Dans [La Pièce d'or](/livre/la-piece-d-or) (2006), Ken Bugul raconte cette fois l'exode vers la ville : à Yakar, chacun court après une pièce d'or censée apporter richesse et bonheur.
 
 **[Trois femmes puissantes](/livre/trois-femmes-puissantes)** de [Marie NDiaye](/auteur/marie-ndiaye), prix Goncourt 2009, réunit trois récits entre la France et l'Afrique. Le troisième, celui de Khady, jeune veuve poussée sur les routes de l'exil, est l'un des textes les plus forts écrits sur le sujet.
 

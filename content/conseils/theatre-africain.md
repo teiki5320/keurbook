@@ -36,7 +36,7 @@ Dans la même veine, le Togolais [Kossi Efoui](/auteur/kossi-efoui) a écrit sa 
 
 ## Des voix d'aujourd'hui
 
-[Marie NDiaye](/auteur/marie-ndiaye), prix Goncourt 2009, est aussi une grande autrice de théâtre. [Papa doit manger](/livre/papa-doit-manger) est entrée au répertoire de la Comédie-Française dès sa création en 2003 : un père revient après dix ans d'absence, persuadé qu'on lui doit tout. Des dialogues tranchants, aussi forts à lire qu'à voir.
+[Marie NDiaye](/auteur/marie-ndiaye), prix Goncourt 2009, est aussi une grande autrice de théâtre. [Papa doit manger](/livre/papa-doit-manger) est entrée au répertoire de la Comédie-Française dès sa création en 2003 : un père revient après dix ans d'absence, persuadé qu'on lui doit tout. Des dialogues tranchants, aussi forts à lire qu'à voir. Sa première pièce, [Hilda](/livre/hilda) (1999), est un face-à-face entre une patronne et le mari d'une femme de ménage qui n'apparaît jamais.
 
 [Léonora Miano](/auteur/leonora-miano) a écrit avec [Red in Blue trilogie](/livre/red-in-blue-trilogie) trois pièces sur la mémoire de la traite transatlantique, dans une langue ample et épique. Et la Camerounaise [Werewere Liking](/auteur/werewere-liking), installée à Abidjan, a créé avec sa compagnie Ki-Yi M'Bock des spectacles comme [Singuè Mura](/livre/singue-mura), sur la pression faite aux femmes sans enfant.
 

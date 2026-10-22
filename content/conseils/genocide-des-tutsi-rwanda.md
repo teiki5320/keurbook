@@ -32,7 +32,7 @@ En 1998, quatre ans après le génocide, une dizaine d'écrivains africains se r
 
 Le plus marquant est **[Murambi, le livre des ossements](/livre/murambi-le-livre-des-ossements)** du Sénégalais Boubacar Boris Diop (2000). Un homme rentre au Rwanda après des années d'exil et se rend à Murambi, une école où des milliers de personnes ont été tuées. Le roman fait alterner sa voix avec celles des victimes, des témoins et des tueurs. C'est un livre très dur, mais essentiel, à réserver aux adultes.
 
-Du même projet sont nés *L'Ombre d'Imana* de [Véronique Tadjo](/auteur/veronique-tadjo), récit de voyage au Rwanda, *L'Aîné des orphelins* de [Tierno Monénembo](/auteur/tierno-monenembo) et *Moisson de crânes* d'[Abdourahman A. Waberi](/auteur/abdourahman-a-waberi), tous parus en 2000.
+Du même projet sont nés [L'Ombre d'Imana](/livre/l-ombre-d-imana) de [Véronique Tadjo](/auteur/veronique-tadjo), récit de voyage au Rwanda, *L'Aîné des orphelins* de [Tierno Monénembo](/auteur/tierno-monenembo) et *Moisson de crânes* d'[Abdourahman A. Waberi](/auteur/abdourahman-a-waberi), tous parus en 2000.
 
 ## En bande dessinée
 

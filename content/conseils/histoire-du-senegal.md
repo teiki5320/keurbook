@@ -26,7 +26,7 @@ Pour entrer dans l'imaginaire ancien du pays, commencez par [Les Contes d'Amadou
 
 ## La négritude et l'indépendance
 
-Léopold Sédar Senghor, poète et premier président du Sénégal indépendant (1960-1980), est incontournable. Ses poèmes, comme ceux d'[Éthiopiques](/livre/ethiopiques) (1956), célèbrent la culture africaine et son pays sérère natal. Avec Aimé Césaire et Léon-Gontran Damas, il a fondé le mouvement de la négritude, qui revendiquait la fierté d'être noir face au mépris colonial.
+Léopold Sédar Senghor, poète et premier président du Sénégal indépendant (1960-1980), est incontournable. Ses poèmes, comme ceux d'[Éthiopiques](/livre/ethiopiques) (1956), célèbrent la culture africaine et son pays sérère natal. Avec Aimé Césaire et Léon-Gontran Damas, il a fondé le mouvement de la négritude, qui revendiquait la fierté d'être noir face au mépris colonial. Ses discours et textes politiques des premières années de l'indépendance sont réunis dans [Liberté 2](/livre/liberte-2-nation-et-voie-africaine-du-socialisme).
 
 Plus ardu mais essentiel, [Nations nègres et culture](/livre/nations-negres-et-culture) de Cheikh Anta Diop (1954) a profondément marqué la pensée africaine en défendant l'idée d'une histoire africaine ancienne et prestigieuse, en lien avec l'Égypte antique. Ses thèses ont été discutées, mais son influence au Sénégal est immense : l'université de Dakar porte aujourd'hui son nom.
 

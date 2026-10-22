@@ -32,6 +32,8 @@ En 1968, un jeune auteur malien de 28 ans, [Yambo Ouologuem](/auteur/yambo-ouolo
 
 Le roman raconte, sur plusieurs siècles, la dynastie imaginaire des Saïfs, qui règne sur le Nakem par la terreur, puis s'arrange avec les colons pour garder le pouvoir. Ouologuem y prend le contre-pied d'une Afrique précoloniale idéalisée. Le livre est ensuite accusé d'emprunts à d'autres auteurs, et la polémique pousse l'écrivain au silence. C'est une lecture exigeante et parfois violente, pour les lecteurs adultes, mais un jalon de la littérature africaine.
 
+Un an plus tard, Ouologuem publie [Lettre à la France nègre](/livre/lettre-a-la-france-negre) (1969), un pamphlet fait de lettres ouvertes où il démonte avec une ironie féroce les préjugés sur les Noirs, mais aussi l'hypocrisie d'un certain antiracisme.
+
 ## Le Mali en bande dessinée
 
 Pour une approche plus légère, la BD [Le Mali de Madi](/bd/le-mali-de-madi) parcourt cinquante ans d'histoire du pays à travers les souvenirs d'un journaliste, le jour du cinquantenaire de l'indépendance, en 2010. Politique, arts, sport : tout y passe, de façon claire et accessible.

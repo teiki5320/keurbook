@@ -32,6 +32,8 @@ Deux autres récits mettent l'école coloniale au centre. Dans [Climbié](/livre
 
 Au Kenya, [Ngũgĩ wa Thiong'o](/auteur/ngugi-wa-thiongo) raconte dans [Rêver en temps de guerre](/livre/rever-en-temps-de-guerre) son enfance à Limuru dans les années 1940 et 1950. Sa mère se bat pour qu'il aille à l'école, tandis que la Seconde Guerre mondiale puis la révolte des Mau Mau bouleversent les villages. C'est un beau livre sur le pouvoir des livres au milieu de la violence.
 
+Au Dahomey, l'actuel Bénin, [Un enfant d'Afrique](/livre/un-enfant-d-afrique) (1970) d'Olympe Bhêly-Quenum raconte au contraire une enfance heureuse, dans une famille de cultivateurs. Écrit d'abord pour les lecteurs de 10 à 14 ans, il veut montrer une Afrique loin des clichés de misère. Et au Cameroun, dans [La Petite Fille du réverbère](/livre/la-petite-fille-du-reverbere) (1998), Calixthe Beyala puise dans ses souvenirs : dans les années 1960, une fillette élevée par sa grand-mère dans un quartier pauvre de Douala fait ses devoirs sous un réverbère, faute d'électricité.
+
 ## Petit pays, une enfance rattrapée par l'histoire
 
 Plus près de nous, [Petit pays](/livre/petit-pays) de [Gaël Faye](/auteur/gael-faye) est un roman, mais il s'inspire largement de l'enfance de l'auteur au [Burundi](/pays/burundi). Gabriel, dix ans, vit une enfance heureuse à Bujumbura, entre copains, vélos et mangues, jusqu'à ce que la guerre civile et le génocide des Tutsi au Rwanda voisin viennent tout bouleverser.

@@ -532,6 +532,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "reine-pokou",
     title: "Reine Pokou",
+    metaDescription: "Reine Pokou (2005) de Véronique Tadjo : la légende de la reine baoulé qui sacrifia son enfant, racontée en plusieurs versions. Résumé et analyse.",
     subtitle: "Concerto pour un sacrifice",
     contributors: [auteur("Véronique Tadjo", "veronique-tadjo")],
     genre: "roman",
@@ -601,6 +602,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "debout-paye",
     title: "Debout-payé",
+    metaDescription: "Debout-payé (2014) de Gauz : Ossiri, étudiant ivoirien sans papiers, devient vigile dans les magasins de Paris. Résumé du roman, drôle et cruel.",
     contributors: [auteur("Gauz", "gauz")],
     genre: "roman",
     audience: "adulte",
@@ -625,6 +627,7 @@ export const livresOuest: Book[] = [
   livre({
     slug: "le-tambour-des-larmes",
     title: "Le Tambour des larmes",
+    metaDescription: "Le Tambour des larmes (2015) de Beyrouk, prix Ahmadou-Kourouma : Rayhana fuit sa tribu du désert mauritanien avec le tambour sacré. Résumé du roman.",
     contributors: [auteur("Mbarek Ould Beyrouk", "mbarek-ould-beyrouk")],
     genre: "roman",
     audience: "adulte",

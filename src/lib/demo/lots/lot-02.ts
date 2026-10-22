@@ -500,6 +500,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-folie-et-la-mort",
     title: "La Folie et la Mort",
+    metaDescription: "La Folie et la Mort (2000) de Ken Bugul : une fable politique où le chef suprême fait éliminer ceux qui pensent et ceux qui ne pensent pas. Résumé.",
     contributors: [kenBugul],
     genre: "roman",
     audience: "adulte",
@@ -521,6 +522,7 @@ export const livres: Book[] = [
   livre({
     slug: "de-l-autre-cote-du-regard",
     title: "De l'autre côté du regard",
+    metaDescription: "De l'autre côté du regard (2003) de Ken Bugul : après la mort de sa mère, Marie cherche à comprendre pourquoi elle ne s'est pas sentie aimée. Résumé.",
     contributors: [kenBugul],
     genre: "roman",
     audience: "adulte",
@@ -564,6 +566,7 @@ export const livres: Book[] = [
   livre({
     slug: "la-piece-d-or",
     title: "La Pièce d'or",
+    metaDescription: "La Pièce d'or (2006) de Ken Bugul : à Yakar, tout le monde court après une pièce d'or mythique. Une fable sur l'exode rural et ses illusions. Résumé.",
     contributors: [kenBugul],
     genre: "roman",
     audience: "adulte",
@@ -737,6 +740,7 @@ export const livres: Book[] = [
   livre({
     slug: "habiter-le-monde",
     title: "Habiter le monde",
+    metaDescription: "Habiter le monde (2017) de Felwine Sarr : un court essai qui propose une politique de la relation, dans le prolongement d'Afrotopia. Résumé.",
     subtitle: "Essai de politique relationnelle",
     contributors: [felwineSarr],
     genre: "essai",

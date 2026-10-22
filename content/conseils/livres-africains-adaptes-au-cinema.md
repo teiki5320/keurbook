@@ -36,7 +36,7 @@ Plus dur, [Johnny chien méchant](/livre/johnny-chien-mechant) d'[Emmanuel Donga
 
 ## Et aussi : animation, théâtre et autres écrans
 
-Le cinéma n'est pas la seule forme d'adaptation. La BD [Aya de Yopougon](/bd/aya-de-yopougon) est devenue un film d'animation en 2013, coréalisé par ses deux auteurs. [Allah n'est pas obligé](/livre/allah-n-est-pas-oblige) d'Ahmadou Kourouma a été porté au théâtre, puis adapté en animation en 2025. Et l'autobiographie de Nelson Mandela, *Un long chemin vers la liberté*, a donné un film du même nom en 2013.
+Le cinéma n'est pas la seule forme d'adaptation. La BD [Aya de Yopougon](/bd/aya-de-yopougon) est devenue un film d'animation en 2013, coréalisé par ses deux auteurs. [Allah n'est pas obligé](/livre/allah-n-est-pas-oblige) d'Ahmadou Kourouma a été porté au théâtre, puis adapté en animation en 2025. Et l'autobiographie de Nelson Mandela, *Un long chemin vers la liberté*, a donné un film du même nom en 2013. Le chemin inverse existe aussi : Véronique Tadjo a tiré du film *Yao* de Philippe Godeau, avec Omar Sy, un roman pour la jeunesse, [Le Voyage de Yao](/livre/le-voyage-de-yao) (2019), où un garçon du nord du Sénégal part seul à Dakar rencontrer son écrivain préféré.
 
 ## Lire avant ou après le film ?
 

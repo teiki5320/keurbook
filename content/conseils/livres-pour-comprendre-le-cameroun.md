@@ -34,13 +34,13 @@ Plus loin dans le temps, [La Saison de l'ombre](/livre/la-saison-de-l-ombre) de 
 
 À Yaoundé, dans un quartier populaire, un chien observe les clients du bar de son maître : c'est [Temps de chien](/livre/temps-de-chien) (2001) de Patrice Nganang. À travers ce narrateur à quatre pattes, on entend les disputes, les rumeurs et les colères d'une ville frappée par la crise économique des années 1990. Drôle et mordant, le roman donne une image très vivante de la rue camerounaise.
 
-Dans le nord du pays, Djaïli Amadou Amal raconte la vie des femmes peules soumises aux mariages forcés et à la polygamie. [Les Impatientes](/livre/les-impatientes), prix Goncourt des lycéens 2020, fait entendre trois femmes à qui l'on répète toujours le même conseil : patience. Un livre fort et très facile à lire. Son premier roman, [Walaande, l'art de partager un mari](/livre/walaande-l-art-de-partager-un-mari) (2010), donnait déjà la parole à quatre coépouses de Maroua.
+Dans le nord du pays, Djaïli Amadou Amal raconte la vie des femmes peules soumises aux mariages forcés et à la polygamie. [Les Impatientes](/livre/les-impatientes), prix Goncourt des lycéens 2020, fait entendre trois femmes à qui l'on répète toujours le même conseil : patience. Un livre fort et très facile à lire. Son premier roman, [Walaande, l'art de partager un mari](/livre/walaande-l-art-de-partager-un-mari) (2010), donnait déjà la parole à quatre coépouses de Maroua. Elle a aussi publié au Cameroun [Mistiriijo, la mangeuse d'âmes](/livre/mistiriijo-la-mangeuse-d-ames) (2013), l'histoire d'une vieille femme peule de Maroua que tout son quartier accuse de sorcellerie.
 
 Enfin, [Loin de Douala](/livre/loin-de-douala) (2018) de Max Lobe suit deux adolescents partis à la recherche d'un grand frère qui rêve de football en Europe. Leur voyage vers le nord traverse un pays marqué par Boko Haram, mais aussi plein de fêtes et de rencontres. Un roman tendre, qui montre le Cameroun d'aujourd'hui à hauteur de jeunes gens.
 
 ## D'autres auteurs à connaître
 
-Calixthe Beyala, qui vit en France, a reçu en 1996 le Grand prix du roman de l'Académie française pour *Les Honneurs perdus*. Le philosophe Achille Mbembe est l'un des penseurs africains les plus lus dans le monde. Et la bande dessinée camerounaise est très vivante, avec des auteurs comme Christophe Ngalle Edimo. Toutes leurs fiches sont réunies sur la page [Cameroun](/pays/cameroun).
+Calixthe Beyala, qui vit en France, a reçu en 1996 le Grand prix du roman de l'Académie française pour [Les Honneurs perdus](/livre/les-honneurs-perdus). Lisez aussi son premier roman, [C'est le soleil qui m'a brûlée](/livre/c-est-le-soleil-qui-m-a-brulee) (1987), et [Assèze l'Africaine](/livre/asseze-l-africaine) (1994), prix François-Mauriac de l'Académie française. Le philosophe Achille Mbembe est l'un des penseurs africains les plus lus dans le monde. Et la bande dessinée camerounaise est très vivante, avec des auteurs comme Christophe Ngalle Edimo. Toutes leurs fiches sont réunies sur la page [Cameroun](/pays/cameroun).
 
 ## Par où commencer ?
 

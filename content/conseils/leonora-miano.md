@@ -28,7 +28,7 @@ Le roman ne montre ni bateaux négriers ni plantations : il fait sentir, de l'in
 
 ## Afropéens et futurs imaginés
 
-Miano s'intéresse aussi à ceux qu'elle appelle les Afropéens, à la fois africains et européens. Dans [Tels des astres éteints](/livre/tels-des-astres-eteints) (2008), trois jeunes gens noirs d'une grande ville d'Europe cherchent chacun leur réponse à la question de l'identité. Son essai [Afropea](/livre/afropea) (2020) défend l'idée d'une société où l'on peut être pleinement européen et d'ascendance africaine, sans avoir à choisir.
+Miano s'intéresse aussi à ceux qu'elle appelle les Afropéens, à la fois africains et européens. Dans [Tels des astres éteints](/livre/tels-des-astres-eteints) (2008), trois jeunes gens noirs d'une grande ville d'Europe cherchent chacun leur réponse à la question de l'identité. Son essai [Afropea](/livre/afropea) (2020) défend l'idée d'une société où l'on peut être pleinement européen et d'ascendance africaine, sans avoir à choisir. Pour en savoir plus sur ce mot et ce courant, lisez [Qu'est-ce que la littérature afropéenne ?](/conseils/litterature-afropeenne).
 
 Elle aime aussi changer de forme. [Crépuscule du tourment](/livre/crepuscule-du-tourment) (2016) fait parler quatre femmes qui s'adressent au même homme. Et [Rouge impératrice](/livre/rouge-imperatrice) (2019) imagine l'Afrique dans un peu plus d'un siècle : unifiée et prospère sous le nom de Katiopa, elle doit décider du sort de descendants d'Européens venus s'y réfugier. Une histoire d'amour et de pouvoir qui renverse tous les regards.
 

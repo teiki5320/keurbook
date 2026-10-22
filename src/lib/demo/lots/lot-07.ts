@@ -242,6 +242,7 @@ export const livres: Book[] = [
   livre({
     slug: "au-coeur-de-ce-pays",
     title: "Au cœur de ce pays",
+    metaDescription: "Au cœur de ce pays (1977) de J. M. Coetzee : le monologue de Magda, seule avec son père dans une ferme du Karoo. Résumé du roman adapté au cinéma (Dust).",
     contributors: [COETZEE, trad("Sophie Mayoux")],
     genre: "roman",
     audience: "adulte",
@@ -807,6 +808,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-malaise",
     title: "Le Malaise",
+    metaDescription: "Le Malaise (1960) de Chinua Achebe, suite du Monde s'effondre : Obi Okonkwo, jeune haut fonctionnaire à Lagos, face à la corruption. Résumé du roman.",
     contributors: [ACHEBE, trad("Jocelyn Robert Duclos")],
     genre: "roman",
     audience: "adulte",
@@ -852,6 +854,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-demagogue",
     title: "Le Démagogue",
+    metaDescription: "Le Démagogue (1966) de Chinua Achebe : résumé de la satire où un jeune instituteur affronte aux élections son ancien professeur devenu ministre.",
     contributors: [ACHEBE, trad("A. Diop")],
     genre: "roman",
     audience: "adulte",

@@ -28,6 +28,8 @@ Le grand romancier de l'apartheid et de l'après est [J. M. Coetzee](/auteur/j-m
 
 [Michael K, sa vie, son temps](/livre/michael-k-sa-vie-son-temps), premier Booker Prize de Coetzee en 1983, imagine une Afrique du Sud ravagée par la guerre civile. Un jardinier simple pousse sa mère malade dans une brouette, faute de permis, pour rejoindre la ferme de son enfance. C'est l'histoire d'un homme qui refuse d'entrer dans la guerre.
 
+Plus ancien, [Au cœur de ce pays](/livre/au-coeur-de-ce-pays) (1977) est le monologue de Magda, une femme seule avec son père dans une ferme isolée du Karoo, qui consigne sa vie en courts paragraphes numérotés. Marion Hänsel l'a adapté au cinéma sous le titre *Dust*.
+
 Enfin, [Disgrâce](/livre/disgrace), deuxième Booker Prize en 1999, se passe après la fin de l'apartheid. Un professeur chassé de son université se réfugie chez sa fille, dans une ferme du Cap-Oriental. Le roman montre un pays où les rapports entre Blancs et Noirs, hommes et femmes, sont en train de changer, et pas sans douleur. C'est un livre qui fait longtemps réfléchir.
 
 ## Des regards venus d'ailleurs en Afrique

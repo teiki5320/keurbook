@@ -28,6 +28,8 @@ Née à Mahébourg en 1973, [Nathacha Appanah](/auteur/nathacha-appanah) a reçu
 
 Avec [Tropique de la violence](/livre/tropique-de-la-violence), elle quitte Maurice pour Mayotte, où elle a vécu. Un adolescent adopté bascule dans un bidonville livré aux bandes d'enfants. Prix Femina des lycéens 2016.
 
+Dans [Rien ne t'appartient](/livre/rien-ne-t-appartient) (2021), Tara, qui vient de perdre son mari, voit resurgir la fille qu'elle a été, dans un pays d'Asie jamais nommé où les filles ne comptent pour rien.
+
 ## Les Comores, en une seule phrase
 
 Aux Comores, [Ali Zamir](/auteur/ali-zamir), né à Anjouan en 1987, a fait une entrée remarquée avec [Anguille sous roche](/livre/anguille-sous-roche), prix Senghor du premier roman francophone 2016. En pleine mer, une jeune femme lutte pour ne pas se noyer et raconte sa vie à Anjouan. Le roman entier tient en une seule phrase, qui coule comme les vagues. Une voix insolente et libre.
