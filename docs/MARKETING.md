@@ -16,7 +16,7 @@ publications réelles, ou routine qui publie).
 
 - [fait] **Aujourd'hui** : affiliation Amazon Partenaires (tag `keurbookfr-21`, nouveau compte depuis le 18 octobre) ; le site ne vend rien.
 - [en cours] **Validation AdSense** : script et ads.txt en place, examen demandé le 12 octobre ; aucune annonce ne s'affiche tant que Google n'a pas validé le site.
-- **Liens Amazon directs** : 91 livres (ceux des Top 10) mènent déjà à leur fiche Amazon ; étendre ces ASIN vérifiés aux autres, qui gardent une recherche.
+- **Liens Amazon directs** : 90 livres des Top 10 mènent déjà à leur fiche Amazon ; étendre ces ASIN vérifiés aux autres, qui gardent une recherche.
 - **Partenariats** : mises en avant payées par des éditeurs ou libraires, une fois l'audience mesurée.
 
 ## Points forts
@@ -43,7 +43,7 @@ publications réelles, ou routine qui publie).
 
 - **Pages indexées par Google** : 673 sur 971 (Search Console, 20 octobre 2026)
 - **Pages pas encore indexées** : 298, dont 159 inconnues de Google et 139 détectées non explorées
-- **Liens Amazon directs** : 91 livres et BD sur 796 (ASIN vérifiés le 19 octobre 2026)
+- **Liens Amazon directs** : 90 livres et BD sur 796 (ASIN vérifiés le 19 octobre 2026 ; 91 jusqu'au 24 octobre, L'Empire peul du Macina étant devenu indisponible)
 - **Articles Conseils** : 38 publiés, 23 programmés (21 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
@@ -54,7 +54,7 @@ publications réelles, ou routine qui publie).
 - Faire indexer par Google les 298 pages qui ne le sont pas encore (BD, pages auteurs, livres,
   pays et pages de liste) : renforcer les liens internes vers elles et suivre leur
   évolution dans l'onglet Indexation du Studio.
-- Étendre les liens Amazon directs (ASIN vérifiés) au-delà des 91 livres des Top 10, en commençant
+- Étendre les liens Amazon directs (ASIN vérifiés) au-delà des 90 livres des Top 10, en commençant
   par les livres les plus vus dans Cloudflare Web Analytics.
 - Ouvrir un premier canal social pour Keurbook — un compte Pinterest Keurbook pour les couvertures
   et les portraits d'auteurs, comme Keur Cook et Keur Déco — et le brancher au Planning du Studio.

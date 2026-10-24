@@ -5,6 +5,8 @@
  * Vérifiés le 19 octobre 2026 : livres de la page « Top 10 » (le titre de chaque page Amazon a été comparé à la fiche).
  * Livre à ISBN 979… (sans ISBN-10) : l'ASIN Amazon (B0…) de la page dont l'ISBN-13 est celui de la fiche.
  * ISBN absent ou page introuvable : le bouton garde une recherche Amazon.
+ * 24 octobre 2026 : L'Empire peul du Macina (2723606260) retiré, indisponible sur Amazon.fr sans autre édition
+ * achetable (livre épuisé) ; son bouton revient à la recherche Amazon. Le remettre s'il redevient achetable.
  */
 export const AMAZON_ASINS: Record<string, string> = {
   "l-enfant-noir": "2266178946",
@@ -33,7 +35,6 @@ export const AMAZON_ASINS: Record<string, string> = {
   "je-remercie-la-nuit": "2897129840",
   "kaidara": "2364371414",
   "l-autre-moitie-du-soleil": "2072722470",
-  "l-empire-peul-du-macina": "2723606260",
   "l-etrange-destin-de-wangrin": "2264017589",
   "l-interieur-de-la-nuit": "2266162683",
   "l-ombre-d-imana": "2742754776",
