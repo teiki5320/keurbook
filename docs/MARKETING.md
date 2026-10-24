@@ -1,6 +1,6 @@
 # MARKETING — plan marketing & rémunération
 
-Mis à jour le 21 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
+Mis à jour le 24 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
 publications réelles, ou routine qui publie).
 
 ## Positionnement
@@ -15,7 +15,7 @@ publications réelles, ou routine qui publie).
 ## Rémunération par phases
 
 - [fait] **Aujourd'hui** : affiliation Amazon Partenaires (tag `keurbookfr-21`, nouveau compte depuis le 18 octobre) ; le site ne vend rien.
-- [en cours] **Validation AdSense** : script et ads.txt en place, examen demandé le 12 octobre ; aucune annonce ne s'affiche tant que Google n'a pas validé le site.
+- [en cours] **Validation AdSense** : refusée le 21 octobre (contenu jugé trop mince), fiches rallongées, nouvel examen demandé le 22 octobre ; aucune annonce d'ici là.
 - **Liens Amazon directs** : 90 livres des Top 10 mènent déjà à leur fiche Amazon ; étendre ces ASIN vérifiés aux autres, qui gardent une recherche.
 - **Partenariats** : mises en avant payées par des éditeurs ou libraires, une fois l'audience mesurée.
 
@@ -30,7 +30,7 @@ publications réelles, ou routine qui publie).
 - ✅ Site en ligne sur `keurbook.com`.
 - ✅ Référencement naturel : sitemap envoyé à Google Search Console (propriété `keurbook.com`),
   IndexNow chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
-  vendredi). Au 21 octobre 2026 : 38 articles publiés, 23 programmés ; le rythme régulier va
+  vendredi). Au 24 octobre 2026 : 39 articles publiés, 22 programmés ; le rythme régulier va
   jusqu'au 7 décembre (11 articles ajoutés le 15 octobre), puis seuls des articles de saison sont programmés. La routine « Écrire les
   articles Conseils » repasse le 1er et le 15 de chaque mois.
 - ⬜ Pinterest : aucun compte Keurbook.
@@ -44,10 +44,10 @@ publications réelles, ou routine qui publie).
 - **Pages indexées par Google** : 673 sur 971 (Search Console, 20 octobre 2026)
 - **Pages pas encore indexées** : 298, dont 159 inconnues de Google et 139 détectées non explorées
 - **Liens Amazon directs** : 90 livres et BD sur 796 (ASIN vérifiés le 19 octobre 2026 ; 91 jusqu'au 24 octobre, L'Empire peul du Macina étant devenu indisponible)
-- **Articles Conseils** : 38 publiés, 23 programmés (21 octobre 2026)
+- **Articles Conseils** : 39 publiés, 22 programmés (24 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
-- **Revenus AdSense** : aucun, site encore en examen chez Google
+- **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre (état à vérifier dans la console)
 
 ## Les 3 priorités
 
