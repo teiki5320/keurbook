@@ -50,3 +50,5 @@ Citons aussi [Le Long Désir](/livre/le-long-desir) de la Mauricienne [Ananda De
 ## Par où commencer ?
 
 Prenez [Leurres et lueurs](/livre/leurres-et-lueurs) pour « Souffles », puis [La Ronde des jours](/livre/la-ronde-des-jours). Si vous préférez une voix contemporaine, ouvrez [Latérite](/livre/laterite). Et pour d'autres genres, voyez notre sélection de [pièces de théâtre africain](/conseils/theatre-africain).
+
+Pour un choix resserré, voyez notre [Top 10 des livres de poésie africaine](/top-10/poesie-africaine).

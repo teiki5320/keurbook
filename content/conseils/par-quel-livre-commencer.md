@@ -43,3 +43,5 @@ Une fois ces premiers livres lus, deux titres permettent de mesurer la richesse 
 Commencez par un livre court : la plupart des titres cités ici existent en poche, ce qui permet d'essayer sans se ruiner. Ne cherchez pas à « tout comprendre » du contexte : les bons romans vous donnent ce qu'il faut pour suivre l'histoire. Et variez les pays : un roman sénégalais, un roman congolais et un roman burundais ne racontent pas du tout la même Afrique.
 
 Vous pouvez aussi explorer le site par pays, par exemple le [Sénégal](/pays/senegal), la [Côte d'Ivoire](/pays/cote-d-ivoire) ou le [Congo](/pays/congo), ou parcourir l'ensemble des [livres](/livres). Chaque fiche indique le public conseillé et les thèmes abordés, pour trouver facilement votre prochain livre.
+
+Pour aller plus vite, deux classements en dix titres : le [Top 10 des livres d'auteurs africains pour commencer](/top-10/livres-africains-pour-commencer) et le [Top 10 des romans africains à lire absolument](/top-10/romans-africains-a-lire-absolument).

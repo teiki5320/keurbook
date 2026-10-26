@@ -367,6 +367,7 @@ export const livres: Book[] = [
   livre({
     slug: "le-clan-des-femmes",
     title: "Le Clan des femmes",
+    metaDescription: "Le Clan des femmes (2010), premier roman d'Hemley Boum : résumé. Sarah, mariée jeune, raconte à sa petite-fille sa vie de coépouse. Thèmes du roman.",
     contributors: [BOUM],
     genre: "roman",
     audience: "adulte",

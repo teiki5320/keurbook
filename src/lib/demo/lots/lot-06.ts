@@ -1584,6 +1584,7 @@ export const livres: Book[] = [
   livre({
     slug: "les-cauchemars-du-gecko",
     title: "Les Cauchemars du gecko",
+    metaDescription: "Les Cauchemars du gecko (2011) de Raharimanana : résumé de ce texte de scène, entre théâtre et poésie, qui regarde l'Occident riche depuis Madagascar.",
     contributors: [raharimanana],
     genre: "theatre",
     audience: "adulte",

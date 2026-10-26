@@ -167,3 +167,45 @@ Aucune : le journal commence le 17/10. Premier bilan possible à partir du 14/11
 - « fatou diome » fait apparaître 3 fiches qui ne sont pas d'elle (La Folie et la Mort et De l'autre côté du regard de Ken Bugul, Liaison d'un été d'Olympe Bhêly-Quenum), sans doute à cause des cartes « Vous aimerez aussi ». Leur description ne parle pas de Fatou Diome (ce serait trompeur) : la bonne page pour cette recherche reste /auteur/fatou-diome.
 - « mistiriijo la mangeuse d'âmes » : le titre de la page reste « Mistiriijo, Djaïli Amadou Amal | Keurbook » (gabarit commun, sous-titre seulement pour les homonymes) ; le sous-titre est dans la nouvelle description.
 - À revoir à partir du 19/11/2026 (28 jours).
+
+## 26/10/2026
+
+### Pages améliorées (montrées par Google en 2e page, chiffres du 26/09 au 24/10)
+
+Sur les 80 pages de la liste, 77 ont déjà été travaillées depuis le 17/10 (moins de 28 jours) : il en restait 3. Titre (« Titre, Auteur | Keurbook », gabarit commun) et titre principal inchangés : ils contiennent déjà la recherche. Ajouts : une description Google écrite à la main (`metaDescription`, faits repris de la fiche) et des liens depuis les articles Conseils.
+
+| Page | Recherches visées | Place | Vues | Ancienne description | Nouvelle description | Liens ajoutés depuis |
+|---|---|---|---|---|---|---|
+| /livre/les-cauchemars-du-gecko | « les cauchemars du gecko » | 18,5 | 4 | automatique (début du résumé) | Les Cauchemars du gecko (2011) de Raharimanana : résumé de ce texte de scène, entre théâtre et poésie, qui regarde l'Occident riche depuis Madagascar. | /conseils/theatre-africain (nouveau paragraphe) |
+| /livre/le-clan-des-femmes | « le clan des femmes » | 17,7 | 3 | automatique (début du résumé) | Le Clan des femmes (2010), premier roman d'Hemley Boum : résumé. Sarah, mariée jeune, raconte à sa petite-fille sa vie de coépouse. Thèmes du roman. | /conseils/grandes-autrices-africaines, /conseils/romans-africains-condition-des-femmes (aucun lien avant) |
+| /livre/vie-et-enseignement-de-tierno-bokar | « vie et enseignement de tierno bokar » | 10,3 | 3 | automatique (début du résumé) | Vie et enseignement de Tierno Bokar (1980) d'Amadou Hampâté Bâ : résumé de la vie du sage soufi de Bandiagara, son maître, apôtre de la tolérance. | /conseils/livres-mali |
+
+À revoir à partir du 23/11/2026.
+
+### Pages oubliées par Google (Search Console au 26/10)
+
+974 pages dans le plan du site (lu par Google le 24/10), 678 indexées (+15 depuis le 19/10). Restent 159 pages « inconnues » et 137 « trouvées, pas encore visitées » : 103 BD, 90 pages auteur, 62 livres, 22 pays, 11 pages Top 10, 6 articles Conseils, et /conditions, /confidentialite.
+
+Bonne nouvelle : les 5 pages dont l'indexation a été demandée le 19/10 (/bd, /auteurs, /pays, /conseils, /auteur/fatou-diome) sont maintenant indexées.
+
+Causes cherchées sur 30 pages (les 11 Top 10, les 6 Conseils, des pages auteur) :
+- Les 11 pages Top 10 n'étaient reliées que par la barre d'onglets de /top-10 : aucun article n'y menait. Fait : un lien vers chacune depuis l'article Conseils le plus proche (18 liens : classiques, poésie, BD adultes et enfants, autrices, Congo-RDC, Cameroun, jeunesse 6-10 ans, collège, colonisation, « Par quel livre commencer » (2 tops), prix littéraires). Le test des liens des Conseils accepte maintenant les adresses /top-10/….
+- /conseils/livres-nigeria n'avait aucun lien depuis les autres articles. Fait : liens depuis /conseils/wole-soyinka et /conseils/chimamanda-ngozi-adichie.
+- /conseils/genocide-des-tutsi-rwanda (paru le 23/10) et /conseils/romans-africains-exil-immigration (daté du 26/10) sont tout récents ; la règle du site interdit qu'un article plus ancien pointe vers un article plus récent, donc pas de lien ajouté : Google les trouvera par le plan du site et la page /conseils.
+- Pages auteur (ex. /auteur/mongo-beti) : bonne adresse canonique, pas de blocage, plus de 900 mots, présentes dans le plan du site et reliées depuis /auteurs et les fiches. Pas de défaut trouvé : Google passe peu à peu sur ce site jeune.
+
+Reste : BD, pages auteur, livres et pays non visités ; à revoir au prochain passage.
+
+### Fiches enrichies et socle
+
+Fiches enrichies vérifiées le 17/10 (moins de 28 jours) : pas refait. Contrôle rapide des pages construites aujourd'hui : JSON-LD valide (Book, Article, ItemList, BreadcrumbList).
+
+Socle vérifié le 17/10 : pas refait. Vitesse sur téléphone : l'outil PageSpeed de Google a encore refusé ce matin (quota du jour épuisé, erreur 429). À refaire au prochain passage.
+
+### Page nouvelle
+
+Aucune : les 46 recherches de 15 vues ou plus ont toutes leur vraie page (fiche livre). Certaines sont loin dans Google : « marianne porte plainte » 40,9, « terre ceinte » 45,3, « impossible de grandir » 43,7, « l'ante peuple » 36,3, « encre sueur salive et sang » 35,6, « trop de soleil tue l'amour » 33. « fatou diome » (65 vues) montre encore des fiches qui ne sont pas d'elle ; la page auteur et l'article existent déjà.
+
+### Pages travaillées il y a 4 semaines
+
+Aucune : le journal commence le 17/10. Premier bilan le 14/11. Premiers signes (moins de 10 jours, à ne pas interpréter) : « une vie de boy » 11,9 → 14,1 ; « crépuscule des temps anciens » 11,4 → 11,8 ; « soundjata ou l'épopée mandingue » 12,5 → 10,1 ; « et dieu seul sait comment je dors » 19,7 → 23,8.

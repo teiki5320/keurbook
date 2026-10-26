@@ -51,3 +51,5 @@ La colonisation, ce sont aussi des luttes, longtemps passées sous silence.
 Si vous ne deviez en lire qu'un, choisissez [Le monde s'effondre](/livre/le-monde-s-effondre). Si vous voulez rire autant que réfléchir, prenez [Une vie de boy](/livre/une-vie-de-boy) ou [L'Étrange Destin de Wangrin](/livre/l-etrange-destin-de-wangrin). Et pour découvrir les résistances, [Les Maquisards](/livre/les-maquisards) est une belle surprise.
 
 Pour aller plus loin, lisez [Quels sont les classiques de la littérature africaine à lire absolument ?](/conseils/classiques-litterature-africaine) et [Qu'est-ce que la négritude ?](/conseils/negritude), sur le mouvement né de la contestation de l'ordre colonial.
+
+Pour des livres d'histoire, voyez aussi notre [Top 10 des livres d'histoire de l'Afrique](/top-10/histoire-de-l-afrique).

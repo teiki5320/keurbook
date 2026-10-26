@@ -46,3 +46,5 @@ En fin de collège, les élèves sont prêts pour des romans qui abordent des su
 - **Accompagner les lectures difficiles** : pour les livres qui parlent de guerre ou de génocide, prévoir un temps d'échange.
 
 Et après le collège ? Notre article [Quels romans africains lire au lycée ?](/conseils/romans-africains-lycee) prend le relais, avec des classiques comme *L'Aventure ambiguë* ou *Une si longue lettre*. Pour les plus jeunes, voyez aussi [Quels livres jeunesse africains pour les 6–10 ans ?](/conseils/livres-jeunesse-6-10-ans).
+
+Pour un choix en dix titres, voyez aussi notre [Top 10 des livres africains pour ados](/top-10/livres-africains-ados).

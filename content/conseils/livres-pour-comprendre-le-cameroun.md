@@ -47,3 +47,5 @@ Calixthe Beyala, qui vit en France, a reçu en 1996 le Grand prix du roman de l'
 Si vous ne deviez lire qu'un livre, prenez [Une vie de boy](/livre/une-vie-de-boy), court et inoubliable. Pour un grand roman historique, choisissez [Les Maquisards](/livre/les-maquisards). Et pour le Cameroun d'aujourd'hui, [Les Impatientes](/livre/les-impatientes) ou [Temps de chien](/livre/temps-de-chien).
 
 Pour aller plus loin, Djaïli Amadou Amal, Hemley Boum et Léonora Miano sont présentées dans [Qui sont les grandes autrices africaines d'aujourd'hui ?](/conseils/grandes-autrices-africaines), et vous trouverez tous les livres de [Mongo Beti](/auteur/mongo-beti) et de [Ferdinand Oyono](/auteur/ferdinand-oyono) sur leurs fiches auteur.
+
+Pour un classement en dix titres, voyez aussi notre [Top 10 des romans du Congo et du Cameroun](/top-10/romans-congo-cameroun).

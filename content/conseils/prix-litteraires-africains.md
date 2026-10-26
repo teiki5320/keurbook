@@ -49,3 +49,5 @@ Les écrivains africains ont aussi remporté les plus grands prix de la rentrée
 Si vous voulez un roman primé qui se lit facilement, prenez [Frère d'âme](/livre/frere-d-ame) ou [Camarade papa](/livre/camarade-papa). Pour un grand classique, [L'Aventure ambiguë](/livre/l-aventure-ambigue). Et pour un roman ample sur l'histoire récente, [Les Maquisards](/livre/les-maquisards).
 
 Gardez aussi un œil sur les palmarès de chaque année : un livre primé par le prix Kourouma ou le Grand Prix Afrique est presque toujours une belle découverte.
+
+Pour les romans des dernières années, voyez aussi notre [Top 10 des romans africains récents](/top-10/romans-africains-recents).

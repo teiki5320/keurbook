@@ -51,3 +51,5 @@ Le texte original est destiné aux adultes. Pour un enfant de 9 ou 10 ans, le mi
 Laissez l'enfant réagir comme dans une veillée : répondre au conteur, deviner la ruse, imaginer une autre fin. Cherchez ensemble sur une carte le pays d'où vient l'histoire, par exemple la [Côte d'Ivoire](/pays/cote-d-ivoire), le [Sénégal](/pays/senegal) ou la [Guinée](/pays/guinee). Et n'hésitez pas à comparer avec les contes que l'enfant connaît déjà : le lièvre malin ou l'orpheline maltraitée existent sous d'autres noms partout dans le monde.
 
 Retrouvez tous nos livres sur la page [Livres](/livres) et nos bandes dessinées sur la page [BD](/bd).
+
+Pour un choix resserré, voyez aussi notre [Top 10 des livres africains pour enfants](/top-10/livres-africains-enfants).

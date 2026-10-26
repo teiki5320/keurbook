@@ -18,7 +18,7 @@ C'est un texte court, rythmé, plein de prophéties et de combats. Il se lit dè
 
 ## Amadou Hampâté Bâ, la mémoire d'un siècle
 
-Né à Bandiagara vers 1900, [Amadou Hampâté Bâ](/auteur/amadou-hampate-ba) a passé sa vie à recueillir et à transmettre la tradition orale. On lui attribue une phrase devenue célèbre, prononcée à l'Unesco : en Afrique, quand un vieillard meurt, c'est une bibliothèque qui brûle. Avec Jacques Daget, il a aussi retracé l'histoire de [l'Empire peul du Macina](/livre/l-empire-peul-du-macina), l'État fondé en 1818 par Sékou Amadou autour d'Hamdallaye.
+Né à Bandiagara vers 1900, [Amadou Hampâté Bâ](/auteur/amadou-hampate-ba) a passé sa vie à recueillir et à transmettre la tradition orale. On lui attribue une phrase devenue célèbre, prononcée à l'Unesco : en Afrique, quand un vieillard meurt, c'est une bibliothèque qui brûle. Avec Jacques Daget, il a aussi retracé l'histoire de [l'Empire peul du Macina](/livre/l-empire-peul-du-macina), l'État fondé en 1818 par Sékou Amadou autour d'Hamdallaye. Il a aussi raconté la vie de son maître soufi de Bandiagara dans [Vie et enseignement de Tierno Bokar](/livre/vie-et-enseignement-de-tierno-bokar) (1980), un livre sur la bonté et la tolérance.
 
 Ses mémoires sont la meilleure porte d'entrée vers le Mali du début du XXe siècle. Dans [Amkoullel, l'enfant peul](/livre/amkoullel-l-enfant-peul), il raconte son enfance entre familles peules, école coranique et « école des Blancs ». La suite, [Oui mon commandant !](/livre/oui-mon-commandant), le montre jeune commis de l'administration coloniale, avec beaucoup d'humour et de finesse.
 

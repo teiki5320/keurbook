@@ -41,3 +41,5 @@ Kinshasa est aussi une capitale de la bande dessinée. Le dessinateur [Barly Bar
 ## Par où commencer ?
 
 Si vous ne devez en lire qu'un par pays : [Verre Cassé](/livre/verre-casse) pour le Congo-Brazzaville, [Congo Inc.](/livre/congo-inc) pour la RDC. Tous deux sont drôles, accessibles et disent beaucoup de leur pays. Pour aller plus loin, retrouvez tous les auteurs sur nos pages [Congo](/pays/congo) et [République démocratique du Congo](/pays/rd-congo), et piochez d'autres idées dans [Quels livres africains lire en vacances ?](/conseils/livres-africains-vacances).
+
+Pour un classement en dix titres, voyez aussi notre [Top 10 des romans du Congo et du Cameroun](/top-10/romans-congo-cameroun).

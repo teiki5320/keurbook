@@ -10,6 +10,7 @@ import { describe, it } from "node:test";
 import { DESCRIPTION_MAX, DESCRIPTION_MIN, internalLinks, isPublished, parseConseil, splitAtMiddleSection, todayInParis, type Conseil } from "../src/lib/conseils/article";
 import { COUNTRIES } from "../src/lib/countries";
 import { allAuthors, allBooks } from "../src/lib/demo";
+import { TOP10S } from "../src/lib/top10/sujets";
 
 const root = join(import.meta.dirname, "..");
 const dir = join(root, "content", "conseils");
@@ -30,6 +31,7 @@ function validAt(path: string, date: string): boolean {
   if (section === "bd") return bd.has(slug);
   if (section === "auteur") return authors.has(slug);
   if (section === "pays") return COUNTRIES.some((c) => c.slug === slug);
+  if (section === "top-10") return TOP10S.some((t) => t.slug === slug);
   if (section === "conseils") {
     const target = bySlug.get(slug);
     return Boolean(target && target.date <= date);

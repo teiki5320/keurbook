@@ -49,3 +49,5 @@ Pour les plus grands, vers 10 ou 11 ans, [Soundjata ou l'épopée mandingue](/li
 - **Pour un adolescent** : le premier tome d'Aya de Yopougon.
 
 Retrouvez toutes nos BD sur la page [BD](/bd), et, pour les adultes de la famille, notre sélection [Quels livres africains lire en vacances ?](/conseils/livres-africains-vacances).
+
+Et pour une sélection en dix albums, voyez notre [Top 10 des BD africaines](/top-10/bd-africaines).

@@ -22,7 +22,7 @@ Impossible de parler des autrices d'aujourd'hui sans citer celles qui ont ouvert
 
 **Djaïli Amadou Amal (Cameroun).** Originaire du nord du pays, elle écrit sur les mariages forcés et la polygamie dans la société peule. [Les Impatientes](/livre/les-impatientes) a reçu le prix Goncourt des lycéens en 2020. Elle est aussi engagée dans la défense des droits des femmes.
 
-**Hemley Boum (Cameroun).** Avec [Les Maquisards](/livre/les-maquisards) (2015), elle fait revivre la lutte pour l'indépendance au Cameroun, un pan de l'histoire longtemps passé sous silence.
+**Hemley Boum (Cameroun).** Avec [Les Maquisards](/livre/les-maquisards) (2015), elle fait revivre la lutte pour l'indépendance au Cameroun, un pan de l'histoire longtemps passé sous silence. Son premier roman, [Le Clan des femmes](/livre/le-clan-des-femmes) (2010), inspiré des souvenirs de sa grand-mère, raconte la vie d'une coépouse au début du XXe siècle.
 
 **Scholastique Mukasonga (Rwanda).** Exilée au Burundi dès 1973 puis installée en France, elle a perdu une grande partie de sa famille lors du génocide des Tutsi de 1994, et écrit pour faire vivre la mémoire des siens. [Notre-Dame du Nil](/livre/notre-dame-du-nil) a reçu le prix Renaudot en 2012.
 
@@ -45,3 +45,5 @@ Ces autrices n'ont pas le même style ni les mêmes sujets. Mais beaucoup partag
 ## Par où commencer ?
 
 Pour un premier livre, [Le Ventre de l'Atlantique](/livre/le-ventre-de-l-atlantique) ou [Les Impatientes](/livre/les-impatientes) se lisent très facilement. Pour un grand roman historique, [La Saison de l'ombre](/livre/la-saison-de-l-ombre) ou [L'Autre Moitié du soleil](/livre/l-autre-moitie-du-soleil). Et pour replacer ces livres dans les palmarès, lisez [Quels auteurs africains ont reçu le prix Goncourt ou le Renaudot ?](/conseils/goncourt-renaudot-auteurs-africains).
+
+Pour un choix en dix titres, voyez aussi notre [Top 10 des livres d'autrices africaines](/top-10/livres-autrices-africaines).

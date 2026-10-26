@@ -45,3 +45,5 @@ Adichie écrit dans une langue claire, sans effets, qui rend ses romans faciles 
 Pour un premier contact, [Americanah](/livre/americanah) est le plus vivant et le plus actuel : on le lit comme une grande histoire d'amour. Si vous aimez les romans historiques, choisissez [L'Autre Moitié du soleil](/livre/l-autre-moitie-du-soleil), son livre le plus ample. Et si vous avez peu de temps, [Nous sommes tous des féministes](/livre/nous-sommes-tous-des-feministes) se lit en une heure.
 
 Retrouvez tous ses livres présents sur Keurbook sur sa [fiche auteur](/auteur/chimamanda-ngozi-adichie), et les autres écrivains de son pays sur notre page [Nigeria](/pays/nigeria).
+
+Pour d'autres romans de son pays, voyez aussi notre sélection [Quels livres lire pour découvrir le Nigeria ?](/conseils/livres-nigeria).

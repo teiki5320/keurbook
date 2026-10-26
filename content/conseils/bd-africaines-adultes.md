@@ -40,3 +40,5 @@ La BD africaine sait aussi se moquer des puissants. [Colonel Toutou](/bd/colonel
 - **Pour un grand roman graphique** : [Djarabane](/bd/djarabane-au-petit-marche-des-amours-perdues) ou [Les Enfants du pays](/bd/les-enfants-du-pays).
 
 Ces albums se trouvent parfois difficilement en librairie : n'hésitez pas à les commander ou à les demander à votre médiathèque. Retrouvez toutes nos bandes dessinées sur la page [BD](/bd), et, pour d'autres lectures sur la guerre en Afrique centrale, notre sélection [Quels livres lire sur les enfants soldats et les guerres civiles en Afrique ?](/conseils/livres-enfants-soldats-guerres-civiles).
+
+Pour une sélection en dix albums, voyez aussi notre [Top 10 des BD africaines](/top-10/bd-africaines).

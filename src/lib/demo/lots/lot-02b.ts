@@ -743,6 +743,7 @@ export const livres: Book[] = [
   livre({
     slug: "vie-et-enseignement-de-tierno-bokar",
     title: "Vie et enseignement de Tierno Bokar",
+    metaDescription: "Vie et enseignement de Tierno Bokar (1980) d'Amadou Hampâté Bâ : résumé de la vie du sage soufi de Bandiagara, son maître, apôtre de la tolérance.",
     subtitle: "Le sage de Bandiagara",
     contributors: [ba],
     genre: "recit",

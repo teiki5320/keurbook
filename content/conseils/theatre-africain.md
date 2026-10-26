@@ -40,6 +40,8 @@ Dans la même veine, le Togolais [Kossi Efoui](/auteur/kossi-efoui) a écrit sa 
 
 [Léonora Miano](/auteur/leonora-miano) a écrit avec [Red in Blue trilogie](/livre/red-in-blue-trilogie) trois pièces sur la mémoire de la traite transatlantique, dans une langue ample et épique. Et la Camerounaise [Werewere Liking](/auteur/werewere-liking), installée à Abidjan, a créé avec sa compagnie Ki-Yi M'Bock des spectacles comme [Singuè Mura](/livre/singue-mura), sur la pression faite aux femmes sans enfant.
 
+Le Malgache [Raharimanana](/auteur/raharimanana) écrit lui aussi pour la scène. [Les Cauchemars du gecko](/livre/les-cauchemars-du-gecko) (2011), tiré d'un spectacle créé en 2008, regarde l'Occident riche depuis Madagascar avec une ironie mordante, entre théâtre et poésie.
+
 ## Par où commencer ?
 
 Commencez par [L'Os de Mor Lam](/livre/l-os-de-mor-lam) ou [Le Lion et la Perle](/livre/le-lion-et-la-perle), deux comédies courtes. Puis attaquez [La Mort et l'Écuyer du roi](/livre/la-mort-et-l-ecuyer-du-roi), le grand chef-d'œuvre. Un conseil : lisez les répliques à voix haute, à plusieurs si possible. Pour un autre genre fait pour être dit, voyez notre sélection de [recueils de poésie africaine](/conseils/poesie-africaine).

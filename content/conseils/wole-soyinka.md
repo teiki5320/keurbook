@@ -47,3 +47,5 @@ Soyinka est un écrivain de la rencontre. Il puise à la fois dans les mythes yo
 Commencez par [Aké, les années d'enfance](/livre/ake-les-annees-d-enfance) : c'est son livre le plus accessible et le plus chaleureux. Pour découvrir son théâtre, lisez [Le Lion et la Perle](/livre/le-lion-et-la-perle), puis [La Mort et l'Écuyer du roi](/livre/la-mort-et-l-ecuyer-du-roi). Et si vous voulez comprendre l'homme engagé, [Cet homme est mort](/livre/cet-homme-est-mort) est un témoignage inoubliable.
 
 Retrouvez tous ses livres présents sur Keurbook sur sa [fiche auteur](/auteur/wole-soyinka). Pour découvrir une autre grande voix de son pays, lisez notre article [Qui est Chimamanda Ngozi Adichie ?](/conseils/chimamanda-ngozi-adichie).
+
+Pour découvrir les autres écrivains de son pays, de Chinua Achebe à Chimamanda Ngozi Adichie, lisez [Quels livres lire pour découvrir le Nigeria ?](/conseils/livres-nigeria).
