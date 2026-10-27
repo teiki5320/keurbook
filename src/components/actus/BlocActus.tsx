@@ -81,18 +81,34 @@ export function BlocActus({ titre, surtitre, limite, tag, lien, prioritaire = fa
           </time>
         </p>
       )}
-      <div className={large ? "space-y-4" : `grid gap-4 ${suite.length ? "lg:grid-cols-[1.2fr_1fr] lg:items-start" : ""}`}>
-        <ActuBandeau actu={une} prioritaire={prioritaire} Titre={Titre} />
-        {suite.length > 0 && (
-          <ul className={large ? "grid gap-4 md:grid-cols-2" : "grid gap-4"}>
-            {suite.map((a) => (
-              <li key={a.id} className="min-w-0">
-                <ActuVignette actu={a} Titre={Titre} />
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+      {!large && suite.length === 1 ? (
+        // Deux actus seulement : sur grand écran, deux bandeaux côte à côte de même hauteur
+        // (une vignette seule, étirée à la hauteur du bandeau, aurait l'air vide).
+        <div className="grid gap-4 lg:grid-cols-2">
+          <ActuBandeau actu={une} prioritaire={prioritaire} Titre={Titre} />
+          <div className="min-w-0 lg:hidden">
+            <ActuVignette actu={suite[0]} Titre={Titre} />
+          </div>
+          <div className="hidden min-w-0 lg:block">
+            <ActuBandeau actu={suite[0]} Titre={Titre} />
+          </div>
+        </div>
+      ) : (
+        // À côté des vignettes (55 % / 45 %), les deux colonnes finissent à la même hauteur :
+        // l'image du bandeau prend la hauteur restante, les vignettes se partagent la colonne à parts égales.
+        <div className={large ? "space-y-4" : `grid gap-4 ${suite.length ? "lg:grid-cols-[minmax(0,11fr)_minmax(0,9fr)]" : ""}`}>
+          <ActuBandeau actu={une} prioritaire={prioritaire} Titre={Titre} colonne={!large && suite.length > 0} horizontal={large} />
+          {suite.length > 0 && (
+            <ul className={large ? "grid gap-4 md:grid-cols-2" : "grid gap-4 lg:auto-rows-fr"}>
+              {suite.map((a) => (
+                <li key={a.id} className="flex min-w-0">
+                  <ActuVignette actu={a} Titre={Titre} />
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </section>
   );
 }
