@@ -53,7 +53,8 @@ export function BlocActus({ titre, surtitre, limite, tag, lien, prioritaire = fa
 
   const [une, ...suite] = actus;
   // Peu d'actus (accueil, fiche auteur) : le bandeau à gauche, les vignettes en colonne à droite.
-  // Beaucoup (page /actus) : le bandeau sur toute la largeur, puis les vignettes sur deux colonnes.
+  // Beaucoup (page /actus) : le bandeau sur toute la largeur, puis les vignettes sur deux colonnes ;
+  // un nombre impair laisse la dernière seule : elle prend toute la ligne (jamais de case vide).
   const large = limite > 4;
   const Titre = titre ? "h3" : "h2";
   const miseAJour = fichier?.genere_le ? new Date(fichier.genere_le) : null;
@@ -99,7 +100,7 @@ export function BlocActus({ titre, surtitre, limite, tag, lien, prioritaire = fa
         <div className={large ? "space-y-4" : `grid gap-4 ${suite.length ? "lg:grid-cols-[minmax(0,11fr)_minmax(0,9fr)]" : ""}`}>
           <ActuBandeau actu={une} prioritaire={prioritaire} Titre={Titre} colonne={!large && suite.length > 0} horizontal={large} />
           {suite.length > 0 && (
-            <ul className={large ? "grid gap-4 md:grid-cols-2" : "grid gap-4 lg:auto-rows-fr"}>
+            <ul className={large ? "grid gap-4 md:grid-cols-2 md:[&>:last-child:nth-child(odd)]:col-span-2" : "grid gap-4 lg:auto-rows-fr"}>
               {suite.map((a) => (
                 <li key={a.id} className="flex min-w-0">
                   <ActuVignette actu={a} Titre={Titre} />
