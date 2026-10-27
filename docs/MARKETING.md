@@ -52,7 +52,7 @@ publications réelles, ou routine qui publie).
 - **Articles Conseils** : 40 publiés, 21 programmés (26 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
-- **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre (état à vérifier dans la console)
+- **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre, « En préparation » dans la console (vérifié le 27 octobre 2026)
 
 ## Les 3 priorités
 
