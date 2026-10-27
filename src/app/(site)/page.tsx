@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- site statique : images non optimisées par Next.js */
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BlocActus } from "@/components/actus/BlocActus";
 import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { CountryCarousel } from "@/components/carousel/CountryCarousel";
 import { BookRow } from "@/components/book/BookCard";
@@ -122,6 +123,16 @@ export default async function HomePage() {
           <BookRow books={shelf} />
         </section>
       )}
+
+      {/* Actus du livre : lues en direct depuis la veille (rien ne s'affiche s'il n'y en a pas). */}
+      <BlocActus
+        className="container-page mt-16"
+        surtitre="En ce moment"
+        titre="Actus du livre"
+        limite={4}
+        lien={{ href: "/actus", label: "Toutes les actus →" }}
+        prioritaire
+      />
 
       {/* 2. La galerie, par grandes époques */}
       {generations.map((g) => (

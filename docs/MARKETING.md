@@ -1,6 +1,6 @@
 # MARKETING — plan marketing & rémunération
 
-Mis à jour le 26 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
+Mis à jour le 27 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
 publications réelles, ou routine qui publie).
 
 ## Positionnement
@@ -23,6 +23,7 @@ publications réelles, ou routine qui publie).
 
 - 📚 **Catalogue ciblé** : 675 livres et 121 BD d'auteurs d'Afrique subsaharienne et de la diaspora, introuvables ensemble ailleurs.
 - 🌍 **Entrée par auteurs, pays et Top 10** : 92 fiches d'auteurs, 26 pages pays et 11 Top 10 thématiques relient chaque livre à son contexte.
+- 📰 **Actus du livre africain** : prix, sorties, salons et BD, résumés par nous deux fois par jour, avec la source et le crédit de chaque image.
 - ✍️ **Textes maison** : résumés écrits par nous et articles Conseils trois fois par semaine, sans ISBN ni prix inventés.
 
 ## Canaux
@@ -33,6 +34,10 @@ publications réelles, ou routine qui publie).
   vendredi). Au 26 octobre 2026 : 40 articles publiés, 21 programmés ; le rythme régulier va
   jusqu'au 7 décembre (11 articles ajoutés le 15 octobre), puis seuls des articles de saison sont programmés. La routine « Écrire les
   articles Conseils » repasse le 1er et le 15 de chaque mois.
+- ✅ Actus : depuis le 27 octobre 2026, une rubrique « Actus du livre africain » (`/actus`, 20 actus),
+  un bloc de 4 actus sur l'accueil et les actus de l'auteur sur chaque fiche auteur, mis à jour
+  2 fois par jour (12 h et 19 h) par la veille actus ; chaque actu renvoie vers sa source. Contenu frais
+  pour le référencement et pour donner une raison de revenir.
 - ⬜ Pinterest : aucun compte Keurbook.
 - ⬜ TikTok et YouTube : TikTok « Afrotok » est branché au Studio mais rattaché à aucune app, YouTube « toa.afrotok » à Erea seule ; une
   vidéo Keurbook est prête depuis le 5 octobre, mais aucune publication n'est constatée.

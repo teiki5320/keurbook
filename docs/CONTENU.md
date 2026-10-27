@@ -21,10 +21,11 @@ Le site est une **ode aux écrivains** : les auteurs sont mis en avant, leurs li
 5. **Pays** — `/pays` et `/pays/[pays]` : les auteurs du pays d'abord, puis les livres conseillés, les livres et les BD.
 6. **Conseils** — `/conseils` et `/conseils/[article]` : trois articles par semaine (lundi, mercredi, vendredi), qui répondent à une question que les gens se posent.
 7. **Listes secondaires** — `/livres` et `/bd` (recherche et filtres), accessibles depuis l'accueil et le pied de page, plus depuis le menu.
-8. **Ma pile à lire** — `/pile-a-lire` (stockée dans le navigateur, sans compte).
-9. **Pages légales** — mentions légales, confidentialité, conditions (avec la mention Amazon Partenaires).
+8. **Actus du livre africain** — `/actus` (depuis le 27 octobre 2026) : les 20 dernières actus de la veille actus (prix, sorties, salons, BD), lues en direct ; aussi un bloc de 4 actus sur l'accueil (après « À lire maintenant ») et un bloc « L'actu de … » (3 actus) sur chaque fiche auteur, absent s'il n'y en a pas. Chaque actu : titre reformulé, résumé réécrit, lien « Source », crédit de l'image ; jamais de lien Amazon.
+9. **Ma pile à lire** — `/pile-a-lire` (stockée dans le navigateur, sans compte).
+10. **Pages légales** — mentions légales, confidentialité, conditions (avec la mention Amazon Partenaires).
 
-Menu principal : Auteurs · Pays · Conseils · Ma pile à lire. Les fiches livre, auteur et pays sont liées entre elles.
+Menu principal : Auteurs · Pays · Conseils · Top 10 · Actus · Ma pile à lire. Les fiches livre, auteur et pays sont liées entre elles.
 
 ## Fiche livre (`/livre/[titre]`)
 
@@ -65,8 +66,9 @@ Même contenu que la fiche livre, avec deux différences :
 7. Ses autres titres (liste simple, sans fiche)
 8. Prix littéraires reçus
 9. Thèmes récurrents (liens vers les listes par thème)
-10. « Auteurs proches » (même pays ou mêmes thèmes)
-11. Conseils liés
+10. « L'actu de [Nom] » : jusqu'à 3 actus liées à l'auteur (veille actus), seulement s'il y en a
+11. « Auteurs proches » (même pays ou mêmes thèmes)
+12. Conseils liés
 
 ## Fiche pays (`/pays/[pays]`)
 

@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BlocActus } from "@/components/actus/BlocActus";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { BookGrid } from "@/components/book/BookCard";
@@ -247,6 +248,9 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
       <div className="container-page">
         <AdSlot placement="auteur" />
       </div>
+
+      {/* Actus de l'auteur, lues en direct depuis la veille (bloc absent s'il n'y en a aucune). */}
+      <BlocActus className="container-page mt-16" titre={`L'actu de ${author.name}`} limite={3} tag={`auteur:${author.slug}`} />
 
       {/* 6. Ses livres sur le site */}
       {books.length > 1 && (

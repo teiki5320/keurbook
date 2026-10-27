@@ -48,3 +48,6 @@ next-env.d.ts
 
 # Images de partage générées au build (scripts/og-images.mjs)
 /public/og/
+
+# Fiches pour la veille actus, générées au build (scripts/veille-entites.mjs)
+/public/veille/

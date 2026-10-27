@@ -36,6 +36,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     { url: base, lastModified: day(latest([lastBook, lastConseil])), changeFrequency: "weekly" as const, priority: 1 },
     ...Object.entries(lists).map(([path, d]) => ({ url: `${base}${path}`, lastModified: day(d), changeFrequency: "weekly" as const, priority: 0.8 })),
+    // Actus : lues en direct depuis la veille (2 fois par jour), la page change tous les jours.
+    { url: `${base}/actus`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.7 },
     ...["/conditions", "/mentions-legales", "/confidentialite"].map((path) => ({
       url: `${base}${path}`,
       lastModified: day(LEGAL_UPDATED),
