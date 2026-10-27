@@ -46,8 +46,8 @@ publications réelles, ou routine qui publie).
 
 ## Mesures
 
-- **Pages indexées par Google** : 678 sur 973 (Search Console, onglet Indexation du Studio, 25 octobre 2026 ; 673 sur 971 le 20 octobre)
-- **Pages pas encore indexées** : 295, dont 151 inconnues de Google et 144 détectées non explorées
+- **Pages indexées par Google** : 679 sur 975 (Search Console, onglet Indexation du Studio, 27 octobre 2026 ; 678 sur 973 le 25 octobre, 673 sur 971 le 20 octobre)
+- **Pages pas encore indexées** : 296, dont 169 inconnues de Google (parmi elles la page Actus, ouverte le 27 octobre) et 127 détectées non explorées
 - **Liens Amazon directs** : 90 livres et BD sur 796 (ASIN vérifiés le 19 octobre 2026 ; 91 jusqu'au 24 octobre, L'Empire peul du Macina étant devenu indisponible)
 - **Articles Conseils** : 40 publiés, 21 programmés (26 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
@@ -56,7 +56,7 @@ publications réelles, ou routine qui publie).
 
 ## Les 3 priorités
 
-- Faire indexer par Google les 295 pages qui ne le sont pas encore (BD, pages auteurs, livres,
+- Faire indexer par Google les 296 pages qui ne le sont pas encore (BD, pages auteurs, livres,
   pays et pages de liste) : renforcer les liens internes vers elles et suivre leur
   évolution dans l'onglet Indexation du Studio.
 - Étendre les liens Amazon directs (ASIN vérifiés) au-delà des 90 livres des Top 10, en commençant
