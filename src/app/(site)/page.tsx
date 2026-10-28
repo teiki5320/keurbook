@@ -8,10 +8,11 @@ import { BookRow } from "@/components/book/BookCard";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { SECONDARY_NAV } from "@/components/layout/nav";
-import { lifeYears } from "@/lib/book-utils";
+import { creatorNames, lifeYears } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
 import { getAllBooks, getAuthorGenerations, getAuthors, getBooksByAuthor, getCountriesWithBooks, getCountry, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
+import { BookCover } from "@/components/book/BookCover";
 import { getTop10s } from "@/lib/data/top10";
 import { todayInParis } from "@/lib/conseils/article";
 import { getMaintenance } from "@/lib/data/settings";
@@ -49,14 +50,27 @@ export default async function HomePage() {
   const conseils = getConseils().slice(0, 3);
   // Étagère « À lire maintenant » : 12 livres illustrés, une sélection qui change chaque semaine
   // (le site est reconstruit chaque lundi).
+  const allBooks = await getAllBooks();
   const week = Math.floor(Date.parse(todayInParis()) / (7 * 24 * 3600 * 1000));
   const score = (slug: string) => [...`${slug}${week}`].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
   const shelf = await toCards(
-    (await getAllBooks())
+    allBooks
       .filter((b) => b.illustration)
       .sort((a, b) => score(a.slug) - score(b.slug))
       .slice(0, 12),
   );
+  // « Nos coups de cœur » : le livre illustré (ASIN vérifié) le mieux classé de 8 Top 10, chacun d'un sujet différent.
+  const coupsDeCoeur = getTop10s()
+    .flatMap((top) => {
+      const i = top.items.findIndex((it) => {
+        const b = allBooks.find((x) => x.slug === it.slug);
+        return b?.illustration && b.amazonAsin;
+      });
+      const book = i < 0 ? null : allBooks.find((x) => x.slug === top.items[i].slug)!;
+      return book ? [{ top, rank: i + 1, book }] : [];
+    })
+    .filter((c, i, all) => all.findIndex((x) => x.book.slug === c.book.slug) === i)
+    .slice(0, 8);
   // Carrousel des pays, comme sur la page Pays : d'ouest en est, en partant du Sénégal.
   const westToEast = [...countries].sort((a, b) => a.lon - b.lon);
   const startCountry = Math.max(0, westToEast.findIndex((c) => c.code === "SN"));
@@ -110,6 +124,46 @@ export default async function HomePage() {
         </p>
       </section>
 
+      {/* Nos coups de cœur (Top 10) : dans les 2 premiers écrans sur téléphone ; liens internes seulement,
+          aucun bouton ni lien Amazon sur l'accueil (examen AdSense). */}
+      {coupsDeCoeur.length > 0 && (
+        <section id="coups-de-coeur" className="container-page mt-10" aria-labelledby="coups-de-coeur-titre">
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Nos sélections Top 10</p>
+              <h2 id="coups-de-coeur-titre" className="mt-2 font-serif text-[34px] leading-none sm:text-5xl">
+                Nos coups de cœur
+              </h2>
+            </div>
+            <Link href="/top-10" className="shrink-0 text-[13px] text-accent hover:text-ink">
+              Tout voir →
+            </Link>
+          </div>
+          <ul className="-mx-5 flex snap-x gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:-mx-6 sm:gap-5 sm:px-6 lg:mx-0 lg:grid lg:grid-cols-8 lg:px-0">
+            {coupsDeCoeur.map(({ top, rank, book }) => (
+              <li key={book.slug} className="w-32 shrink-0 snap-start sm:w-40 lg:w-auto">
+                <Link href={book.kind === "bd" ? `/bd/${book.slug}` : `/livre/${book.slug}`} className="group block">
+                  <BookCover title={book.title} creators={creatorNames(book)} cover={book.cover} illustration={book.illustration} className="transition group-hover:-translate-y-1" />
+                  <span className="mt-2 block font-serif text-[17px] leading-[1.05] group-hover:text-accent">{book.title}</span>
+                </Link>
+                <Link href={`/top-10/${top.slug}#livre-${rank}`} className="mt-1 block text-[11px] leading-snug text-muted hover:text-accent">
+                  n°&nbsp;{rank} · {top.tab}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul className="mt-5 flex flex-wrap gap-2" aria-label="Tous les Top 10">
+            {getTop10s().map((t) => (
+              <li key={t.slug}>
+                <Link href={`/top-10/${t.slug}`} className="tag min-h-11">
+                  {t.tab}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Étagère de couvertures : la couleur des livres dès l'arrivée */}
       {shelf.length > 0 && (
         <section className="container-page mt-12">
@@ -125,30 +179,6 @@ export default async function HomePage() {
           <BookRow books={shelf} />
         </section>
       )}
-
-      {/* Les sélections Top 10 : liens internes seulement (aucun bouton Amazon sur l'accueil). */}
-      <section className="container-page mt-12" aria-labelledby="top10-accueil">
-        <div className="mb-4 flex items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Nos sélections</p>
-            <h2 id="top10-accueil" className="mt-2 font-serif text-[30px] leading-none sm:text-4xl">
-              Les Top 10
-            </h2>
-          </div>
-          <Link href="/top-10" className="shrink-0 text-[13px] text-accent hover:text-ink">
-            Tous les Top 10 →
-          </Link>
-        </div>
-        <ul className="flex flex-wrap gap-2">
-          {getTop10s().map((t) => (
-            <li key={t.slug}>
-              <Link href={`/top-10/${t.slug}`} className="tag min-h-11">
-                {t.tab}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
 
       {/* Actus du livre : lues en direct depuis la veille (rien ne s'affiche s'il n'y en a pas). */}
       <BlocActus

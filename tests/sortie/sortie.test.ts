@@ -150,6 +150,15 @@ describe("Liens Amazon des pages construites", () => {
     assert.deepEqual(erreurs.slice(0, 10), []);
   });
 
+  it("l'accueil montre « Nos coups de cœur » : au moins 4 livres menant à des pages internes", () => {
+    const html = readFileSync(join(out, "index.html"), "utf8");
+    const bloc = html.match(/<section id="coups-de-coeur"[\s\S]*?<\/section>/)?.[0] ?? "";
+    assert.ok(bloc, "bloc « Nos coups de cœur » absent");
+    const fiches = new Set([...bloc.matchAll(/href="(\/(?:livre|bd)\/[^"]+)"/g)].map((m) => m[1]));
+    assert.ok(fiches.size >= 4, `${fiches.size} livre(s) seulement`);
+    assert.doesNotMatch(bloc, /amazon\./);
+  });
+
   it("aucun lien Amazon sur l'accueil ni dans les actus", () => {
     const erreurs = fautives(({ file, html }) => ((file === "index.html" || file.startsWith("actus")) && liens(html).length ? "lien Amazon" : null));
     assert.deepEqual(erreurs.slice(0, 10), []);

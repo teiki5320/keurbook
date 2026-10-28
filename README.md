@@ -18,7 +18,7 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Livres
 
 | Page | Adresse |
 | --- | --- |
-| Accueil | `/` |
+| Accueil (dont « Nos coups de cœur » : le livre illustré le mieux classé de 8 Top 10, liens internes, sans Amazon ; puis les 11 Top 10) | `/` |
 | Livres (recherche, filtres pays, genre, public, thème, époque) | `/livres`, `/livre/<slug>` |
 | BD (recherche, filtres pays et public) | `/bd`, `/bd/<slug>` |
 | Auteurs | `/auteurs`, `/auteur/<slug>` |

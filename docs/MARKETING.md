@@ -23,6 +23,7 @@ publications réelles, ou routine qui publie).
 
 - 📚 **Catalogue ciblé** : 675 livres et 121 BD d'auteurs d'Afrique subsaharienne et de la diaspora, introuvables ensemble ailleurs.
 - 🌍 **Entrée par auteurs, pays et Top 10** : 92 fiches d'auteurs, 26 pages pays et 11 Top 10 thématiques relient chaque livre à son contexte.
+- 📚 **Livres dès l'accueil** : depuis le 28 octobre 2026, « Nos coups de cœur » montre 8 livres des Top 10 (couvertures illustrées, liens vers les fiches et les Top 10, sans lien Amazon) dans le 2e écran sur téléphone.
 - 📰 **Actus du livre africain** : prix, sorties, salons et BD, racontés par nous deux fois par jour dans un article complet sur le site, avec la source et le crédit de chaque image.
 - ✍️ **Textes maison** : résumés écrits par nous et articles Conseils trois fois par semaine, sans ISBN ni prix inventés.
 
