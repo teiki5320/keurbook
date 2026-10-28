@@ -11,9 +11,9 @@ export function LienSource({ actu }: { actu: Actu }) {
     <p className="text-[13px]">
       <span className="font-medium text-accent">Source : {actu.source_nom}</span>
       {age && (
+        // Un seul texte dans <time> : suppressHydrationWarning ne couvre que ce cas (l'âge change entre la construction et la visite).
         <time dateTime={actu.publie_le} className="text-faint" suppressHydrationWarning>
-          {" "}
-          · {age}
+          {` · ${age}`}
         </time>
       )}
     </p>
