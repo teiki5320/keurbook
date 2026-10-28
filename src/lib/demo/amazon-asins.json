@@ -1731,6 +1731,14 @@
     "moi-borg-enfant-de-korhogo": {
       "asin": "2343174504",
       "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon": {
+      "asin": "2075171173",
+      "verifie_le": "2026-10-28"
+    },
+    "l-interieur-de-la-nuit": {
+      "asin": "2259201490",
+      "verifie_le": "2026-10-28"
     }
   },
   "indisponibles": {
@@ -1759,18 +1767,8 @@
       "constate_le": "2026-10-28",
       "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
     },
-    "aya-de-yopougon": {
-      "asin": "2070669343",
-      "constate_le": "2026-10-28",
-      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
-    },
     "cycles-sombres": {
       "asin": "2876930021",
-      "constate_le": "2026-10-28",
-      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
-    },
-    "l-interieur-de-la-nuit": {
-      "asin": "2266162683",
       "constate_le": "2026-10-28",
       "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
     },

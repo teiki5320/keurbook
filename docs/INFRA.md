@@ -17,7 +17,7 @@ uniquement des noms de variables et de consoles.
 - 🌐 **Web** : 🐙 GitHub — main · publication au vert [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbook [ok] → 🌍 keurbook.com — en ligne, réponse 200 [ok]
 - 📝 **Contenu** : ✍️ Articles Conseils — 41 publiés, 20 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé après chaque publication et chaque lundi [ok] → 🔍 Google — 680 pages indexées sur 980 [à faire]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 10 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbook.json sur GitHub Pages [ok] → 🌍 keurbook.com — accueil (4), /actus (20), fiches auteur (3) [ok]
-- 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 433 ASIN sur 796 livres et BD [en cours]
+- 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 435 ASIN sur 796 livres et BD [en cours]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — script et 4 blocs en place [ok] → ✅ Validation du site — refusée le 21/10, réexamen demandé le 22/10, « En préparation » au 28/10 [pas encore] → 💶 Revenus — aucun constaté [pas encore]
 
 ## Vue d'ensemble
@@ -81,11 +81,14 @@ uniquement des noms de variables et de consoles.
 - **Rôle** : les boutons « Voir sur Amazon » (au moins 44 px de haut) mènent à Amazon.fr avec le tag `keurbookfr-21`
   (construits par `src/lib/amazon.ts`, réglable par `NEXT_PUBLIC_AMAZON_TAG`). Depuis le 28 octobre 2026, le lien
   reçoit un emplacement (fiche, top, conseil, rubrique) et prend son code dans une table unique (`AMAZON_TAGS`) :
-  tous les emplacements utilisent encore `keurbookfr-21`. 433 livres et BD sur 796 ont un ASIN vérifié
+  tous les emplacements utilisent encore `keurbookfr-21`. 435 livres et BD sur 796 ont un ASIN vérifié
   (`src/lib/demo/amazon-asins.json`, date de vérification par livre) et mènent directement à leur fiche Amazon :
   90 le 19 octobre 2026 (pages Top 10), 359 ajoutés le 28 octobre 2026 (titre et ISBN-13 comparés à la fiche,
   bouton « Ajouter au panier » présent), puis 16 retirés le même jour car plus vendus neufs (dont Le monde s'effondre,
-  Une si longue lettre, Allah n'est pas obligé dans l'édition de la fiche). L'Empire peul du Macina, épuisé, reste
+  Une si longue lettre, Allah n'est pas obligé dans l'édition de la fiche) ; deux sont revenus le même jour avec
+  une édition neuve en stock, vérifiée (Aya de Yopougon : Gallimard BD 2022 ; L'Intérieur de la nuit : Plon 2005).
+  Le monde s'effondre et Assèze l'Africaine, n° 1 de leur Top 10, restent sur la recherche : aucune édition neuve
+  de la même traduction (Achebe : seulement une nouvelle traduction, « Tout s'effondre », Belles Lettres 2026). L'Empire peul du Macina, épuisé, reste
   sans lien direct depuis le 24 octobre 2026. Les autres ouvrent une recherche Amazon (ISBN ou titre + auteur, rayon Livres).
 - **Vérification de la disponibilité** : `npm run verifier-produits` (sur le Mac, pas sur GitHub ; `--ecrire`,
   `--lot 30`, `--ids …`) ouvre chaque page Amazon : bouton d'achat présent → date du jour ; sinon le livre passe en
