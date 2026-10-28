@@ -9,6 +9,7 @@ import { siteConfig, withBase } from "@/lib/config";
 import { getBookAuthors, getBookCountry, getBooksByAuthor, getNeighbourBooks, getRelatedBooks, toCards } from "@/lib/data/books";
 import { ALireAussi } from "@/components/layout/ALireAussi";
 import { getConseilsForBooks } from "@/lib/data/conseils";
+import { getTop10sOfBook } from "@/lib/data/top10";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { AUDIENCES, GENRES, THEMES } from "@/lib/themes";
 import type { Book } from "@/lib/types";
@@ -29,9 +30,10 @@ export async function BookDetail({ book }: { book: Book }) {
     .flat()
     .filter((b, i, all) => b.slug !== book.slug && all.findIndex((x) => x.slug === b.slug) === i);
   const conseils = getConseilsForBooks([book.slug]).slice(0, 3);
+  const tops = getTop10sOfBook(book.slug);
   const names = creatorNames(book);
   const trans = translator(book);
-  const buyUrl = amazonUrl(book);
+  const buyUrl = amazonUrl(book, "fiche");
   const url = `${siteConfig.url}${base.path}`;
   const filterBase = isBd ? "/bd" : "/livres";
   const photoOf = new Map(authors.map((a) => [a.slug, a.photo]));
@@ -93,7 +95,7 @@ export async function BookDetail({ book }: { book: Book }) {
         </div>
         <PileButton slug={book.slug} className="py-3.5 text-[15px]" />
       </div>
-      {book.outOfPrint && <p className="mt-2 text-xs text-muted">Épuisé chez l&apos;éditeur : disponible d&apos;occasion.</p>}
+      {book.outOfPrint && <p className="mt-2 text-xs text-muted">Épuisé chez l&apos;éditeur ; on le trouve d&apos;occasion.</p>}
     </>
   );
   const factList = (
@@ -190,6 +192,24 @@ export async function BookDetail({ book }: { book: Book }) {
 
             <div className="mx-auto mt-6 max-w-md md:hidden">{buy}</div>
           </div>
+
+          {/* Top 10 dont le livre fait partie (liens internes) */}
+          {tops.length > 0 && (
+            <ul className="mx-auto mt-8 max-w-md space-y-2 md:mx-0">
+              {tops.map(({ top, rank }) => (
+                <li key={top.slug}>
+                  <Link href={`/top-10/${top.slug}`} className="flex items-center gap-3 rounded-xl border border-line-strong p-3.5 text-[14px] leading-snug hover:border-ink hover:text-accent">
+                    <span aria-hidden className="font-serif text-2xl leading-none text-accent">
+                      {rank}
+                    </span>
+                    <span>
+                      Ce livre est n°&nbsp;{rank} du <span className="underline underline-offset-4">{top.title}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
 
           {/* 6. Résumé */}
           <section aria-labelledby="resume">

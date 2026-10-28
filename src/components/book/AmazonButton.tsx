@@ -1,6 +1,6 @@
 /**
  * Bouton « Voir sur Amazon » (lien partenaire, nouvel onglet). Aucun prix affiché : seul celui d'Amazon fait foi
- * (même libellé que les autres sites Keur).
+ * (même libellé que les autres sites Keur). Toujours au moins 44 px de haut (min-h-11), même en petite taille, pour le doigt.
  */
 export function AmazonButton({ href, title, small = false, className = "" }: { href: string; title: string; small?: boolean; className?: string }) {
   return (
@@ -9,7 +9,7 @@ export function AmazonButton({ href, title, small = false, className = "" }: { h
       target="_blank"
       rel="sponsored nofollow noopener"
       aria-label={`Voir sur Amazon : ${title}, lien partenaire (nouvel onglet)`}
-      className={`${small ? "btn-primary px-3 py-1.5 text-xs" : "btn-primary"} ${className}`}
+      className={`${small ? "btn-primary min-h-11 px-4 py-2 text-[13px]" : "btn-primary min-h-11"} ${className}`}
     >
       Voir sur Amazon
     </a>

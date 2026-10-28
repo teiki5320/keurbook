@@ -2,7 +2,10 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { nettoyerArticle, nettoyerFichier, type Actu, type ArticleActu } from "@/lib/veille";
-import { allAuthors } from "@/lib/demo";
+import { bookPath, normalize } from "@/lib/book-utils";
+import { allAuthors, allBooks } from "@/lib/demo";
+import { getConseilsForBooks } from "./conseils";
+import { getTop10sOfBook } from "./top10";
 
 /**
  * Articles complets des actus, lus au moment de la construction (fichier .veille/articles.json écrit par
@@ -53,4 +56,39 @@ export function getActusConstruction(): Actu[] {
 /** Fiches auteurs existantes : slug → nom (pour relier les tags « auteur:<slug> »). */
 export function getNomsAuteurs(): Record<string, string> {
   return Object.fromEntries(allAuthors.map((a) => [a.slug, a.name]));
+}
+
+/** Liens internes d'un article d'actu : fiches des livres dont il parle, puis le Top 10 et le conseil proches. */
+export interface LiensActu {
+  livres: Array<{ href: string; titre: string }>;
+  top: { href: string; titre: string } | null;
+  conseil: { href: string; titre: string } | null;
+}
+
+/** Texte comparable : minuscules, sans accents, mots séparés par une seule espace. */
+const comparable = (t: string) => ` ${normalize(t).replace(/[^a-z0-9]+/g, " ").trim()} `;
+
+/**
+ * Livres dont parle l'article : seulement ceux des auteurs étiquetés (tags « auteur:<slug> »), dont le titre
+ * (ou sa partie principale, avant la virgule ou les deux-points, d'au moins 5 lettres) figure dans le texte.
+ * Exemple : l'actu sur Murambi mène à /livre/murambi-le-livre-des-ossements. Jamais de lien Amazon ici.
+ */
+export function getLiensActu(article: ArticleActu): LiensActu {
+  const auteurs = new Set((article.tags ?? []).flatMap((t) => /^auteur:([a-z0-9-]+)$/.exec(t)?.[1] ?? []));
+  const texte = comparable([article.titre, article.chapo, ...article.blocs.flatMap((b) => [b.intertitre ?? "", ...b.paragraphes])].join(" "));
+  const livres = allBooks
+    .filter((b) => b.isPublished && b.contributors.some((c) => c.authorSlug && auteurs.has(c.authorSlug)))
+    .filter((b) => {
+      const principal = b.title.split(/[,:]| ou /)[0];
+      return [b.title, principal].some((t) => comparable(t).trim().length >= 5 && texte.includes(comparable(t)));
+    })
+    .slice(0, 2);
+  const slugs = livres.map((b) => b.slug);
+  const top = slugs.flatMap((s) => getTop10sOfBook(s))[0]?.top ?? null;
+  const conseil = getConseilsForBooks(slugs)[0] ?? null;
+  return {
+    livres: livres.map((b) => ({ href: bookPath(b), titre: b.title })),
+    top: slugs.length && top ? { href: `/top-10/${top.slug}`, titre: top.title } : null,
+    conseil: slugs.length && conseil ? { href: `/conseils/${conseil.slug}`, titre: conseil.title } : null,
+  };
 }

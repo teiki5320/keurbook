@@ -33,12 +33,16 @@ export function BookCard({ book, showBuy = false, priority = false }: { book: Bo
   );
 }
 
-/** `eager` : nombre de couvertures du haut chargées tout de suite (image principale de la page), les autres en différé. */
-export function BookGrid({ books, showBuy = false, eager = 0 }: { books: BookCardData[]; showBuy?: boolean; eager?: number }) {
+/**
+ * `eager` : nombre de couvertures du haut chargées tout de suite (image principale de la page), les autres en différé.
+ * `showBuy` : bouton « Voir sur Amazon » sous chaque livre (true) ou seulement sous les N premiers (nombre).
+ */
+export function BookGrid({ books, showBuy = false, eager = 0 }: { books: BookCardData[]; showBuy?: boolean | number; eager?: number }) {
+  const buyCount = showBuy === true ? books.length : showBuy === false ? 0 : showBuy;
   return (
     <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-5">
       {books.map((b, i) => (
-        <BookCard key={b.slug} book={b} showBuy={showBuy} priority={i < eager} />
+        <BookCard key={b.slug} book={b} showBuy={i < buyCount} priority={i < eager} />
       ))}
     </div>
   );

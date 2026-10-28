@@ -258,7 +258,9 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
       {/* 6. Ses livres sur le site */}
       {books.length > 1 && (
         <Section title={`Ses livres sur ${siteConfig.name}`}>
-          <BookGrid books={await toCards(books)} />
+          {/* Bouton Amazon sous les 3 premiers livres seulement (page sobre : certains auteurs ont 30 livres),
+              séparé de la publicité par l'en-tête de la section et les couvertures. */}
+          <BookGrid books={await toCards(books)} showBuy={3} />
         </Section>
       )}
 

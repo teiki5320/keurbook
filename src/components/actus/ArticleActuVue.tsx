@@ -16,6 +16,8 @@ interface Props {
   article: ArticleActu;
   /** Fiches existantes du site liées à l'article (tags « auteur:<slug> »). */
   fiches: Array<{ href: string; nom: string }>;
+  /** Fiches des livres dont parle l'article, Top 10 et conseil proches (pages construites seulement). */
+  liens?: { livres: Array<{ href: string; titre: string }>; top: { href: string; titre: string } | null; conseil: { href: string; titre: string } | null };
   /** 3 autres actus, avec le lien de leur carte. */
   autres: Array<{ actu: Actu; lien: LienCarte }>;
 }
@@ -25,7 +27,7 @@ interface Props {
  * Texte réécrit par la veille (jamais le texte d'origine), source et crédit de l'image toujours visibles.
  * Pas de lien Amazon sur ces pages.
  */
-export function ArticleActuVue({ article, fiches, autres }: Props) {
+export function ArticleActuVue({ article, fiches, liens, autres }: Props) {
   const lienExterne = { target: "_blank", rel: "noopener nofollow", className: "font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-ink" } as const;
   return (
     <>
@@ -92,6 +94,37 @@ export function ArticleActuVue({ article, fiches, autres }: Props) {
             .
           </p>
         </aside>
+
+        {liens && liens.livres.length > 0 && (
+          <aside aria-labelledby="pour-aller-plus-loin" className="mx-auto mt-6 max-w-[680px]">
+            <h2 id="pour-aller-plus-loin" className="eyebrow">
+              Pour aller plus loin sur {siteConfig.name}
+            </h2>
+            <ul className="mt-3 space-y-2 text-[15px]">
+              {liens.livres.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="underline underline-offset-4 hover:text-accent">
+                    La fiche du livre <i>{l.titre}</i> →
+                  </Link>
+                </li>
+              ))}
+              {liens.top && (
+                <li>
+                  <Link href={liens.top.href} className="underline underline-offset-4 hover:text-accent">
+                    {liens.top.titre} →
+                  </Link>
+                </li>
+              )}
+              {liens.conseil && (
+                <li>
+                  <Link href={liens.conseil.href} className="underline underline-offset-4 hover:text-accent">
+                    Conseil : {liens.conseil.titre} →
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </aside>
+        )}
 
         {fiches.length > 0 && (
           <ul className="mx-auto mt-6 flex max-w-[680px] flex-wrap gap-2">

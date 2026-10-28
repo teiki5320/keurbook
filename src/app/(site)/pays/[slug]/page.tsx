@@ -145,14 +145,15 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
       {/* 5. Livres */}
       {livres.length > 0 && (
         <Section title="Livres" href={`/livres?pays=${country.code}`}>
-          <BookGrid books={await toCards(livres)} />
+          {/* Pays sans « Par où commencer » : bouton Amazon sous les 3 premiers livres seulement (page légère ; à défaut de livres, les 3 premières BD). */}
+          <BookGrid books={await toCards(livres)} showBuy={startCards.length ? false : 3} />
         </Section>
       )}
 
       {/* 6. BD */}
       {bd.length > 0 && (
         <Section title="Bandes dessinées" href={`/bd?pays=${country.code}`}>
-          <BookGrid books={await toCards(bd)} />
+          <BookGrid books={await toCards(bd)} showBuy={startCards.length || livres.length ? false : 3} />
         </Section>
       )}
 

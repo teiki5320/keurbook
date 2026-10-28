@@ -7,6 +7,7 @@ import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
+import { AMAZON_TAGS } from "../../src/lib/amazon";
 
 const out = join(import.meta.dirname, "..", "..", "out");
 
@@ -129,6 +130,29 @@ describe("Site construit (out/)", () => {
   it("les fichiers ads.txt et de clé IndexNow sont bien publiés", () => {
     assert.match(readFileSync(join(out, "ads.txt"), "utf8"), /google\.com, pub-\d+, DIRECT/);
     assert.ok(readdirSync(out).some((f) => /^[0-9a-f]{32}\.txt$/.test(f)), "fichier de clé IndexNow absent");
+  });
+});
+
+describe("Liens Amazon des pages construites", () => {
+  const codes = new Set(Object.values(AMAZON_TAGS));
+  const liens = (html: string) => [...html.replace(/<script[\s\S]*?<\/script>/g, "").matchAll(/<a\b[^>]*href="(https:\/\/www\.amazon\.fr[^"]*)"[^>]*>/g)];
+
+  it("chaque lien a un tag de la table, rel sponsored nofollow noopener et un nouvel onglet", () => {
+    const erreurs = fautives(({ html }) => {
+      for (const [balise, href] of liens(html)) {
+        // Entités HTML décodées comme le fait le navigateur (&amp; et l'apostrophe &#x27; des titres).
+        const tag = new URL(href.replace(/&#x27;/g, "'").replace(/&amp;/g, "&")).searchParams.get("tag");
+        if (!tag || !codes.has(tag)) return `tag absent ou hors table (${href})`;
+        if (!/rel="sponsored nofollow noopener"/.test(balise) || !/target="_blank"/.test(balise)) return `rel ou target manquant (${href})`;
+      }
+      return null;
+    });
+    assert.deepEqual(erreurs.slice(0, 10), []);
+  });
+
+  it("aucun lien Amazon sur l'accueil ni dans les actus", () => {
+    const erreurs = fautives(({ file, html }) => ((file === "index.html" || file.startsWith("actus")) && liens(html).length ? "lien Amazon" : null));
+    assert.deepEqual(erreurs.slice(0, 10), []);
   });
 });
 

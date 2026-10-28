@@ -38,6 +38,13 @@ export const getTop10s = (): Top10[] => TOPS;
 
 export const getTop10BySlug = (slug: string): Top10 | null => TOPS.find((t) => t.slug === slug) ?? null;
 
+/** Top 10 dont fait partie un livre, avec son rang (lien « Ce livre est dans le Top 10 … » de la fiche). */
+export const getTop10sOfBook = (bookSlug: string): Array<{ top: Top10; rank: number }> =>
+  TOPS.flatMap((top) => {
+    const i = top.items.findIndex((it) => it.slug === bookSlug);
+    return i < 0 ? [] : [{ top, rank: i + 1 }];
+  });
+
 /** Texte « Pourquoi le lire » tiré de la fiche : début du résumé (au moins une phrase complète) puis les raisons de la fiche. */
 function whyFromSheet(summary: string, whyRead: string[]): string {
   const sentences = summary.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [summary];
@@ -76,7 +83,7 @@ export async function getTop10Books(top: Top10): Promise<Top10Book[]> {
         age: ageFromSheet(book),
         awards: book.awards.map((a) => `${a.name} ${a.year}`),
         why: fr(why ?? whyFromSheet(book.summary, book.whyRead)),
-        amazonUrl: amazonUrl(book),
+        amazonUrl: amazonUrl(book, "top"),
       };
     }),
   );

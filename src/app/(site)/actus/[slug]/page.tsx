@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ArticleActuVue } from "@/components/actus/ArticleActuVue";
 import { suivantsEnBoucle } from "@/lib/boucle";
 import { siteConfig } from "@/lib/config";
-import { getActusConstruction, getArticleActu, getArticlesActus, getConstruits, getNomsAuteurs } from "@/lib/data/veille-articles";
+import { getActusConstruction, getArticleActu, getArticlesActus, getConstruits, getLiensActu, getNomsAuteurs } from "@/lib/data/veille-articles";
 import { getMaintenance } from "@/lib/data/settings";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { clip, pageMetadata } from "@/lib/metadata";
@@ -82,7 +82,7 @@ export default async function ArticleActuPage({ params }: PageProps<"/actus/[slu
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />
-      <ArticleActuVue article={article} fiches={fichesDesTags(article.tags, getNomsAuteurs())} autres={autres} />
+      <ArticleActuVue article={article} fiches={fichesDesTags(article.tags, getNomsAuteurs())} liens={getLiensActu(article)} autres={autres} />
     </>
   );
 }

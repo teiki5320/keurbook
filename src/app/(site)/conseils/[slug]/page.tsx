@@ -40,7 +40,12 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
   const conseil = getConseilBySlug((await params).slug);
   if (!conseil) notFound();
   const books = await getAllBooks();
-  const cited = await toCards(conseil.livres.flatMap((s) => books.filter((b) => b.slug === s)));
+  const citedBooks = conseil.livres.flatMap((s) => books.filter((b) => b.slug === s));
+  const cited = await toCards(citedBooks, "conseil");
+  /** Une phrase « pourquoi » par livre : la première raison « Pourquoi le lire » de sa fiche. */
+  const why = new Map(citedBooks.map((b) => [b.slug, b.whyRead[0] ?? ""]));
+  /** Encart du haut : les 3 premiers livres de l'article (les seuls avec un bouton Amazon, pour rester sobre). */
+  const featured = cited.slice(0, 3);
   const related = getRelatedConseils(conseil);
   const sections = conseilSections(conseil.body);
   const [firstHalf, secondHalf] = splitAtMiddleSection(renderConseil(conseil.body));
@@ -108,6 +113,34 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
           <span className="sr-only">En bref : </span>
           {conseil.resume}
         </p>
+        {/* Les livres de cet article : juste après « En bref », loin des publicités (milieu et fin de l'article). */}
+        {featured.length > 0 && (
+          <section className="mt-8 rounded-xl border border-line-strong p-4 sm:p-5" aria-labelledby="livres-article">
+            <h2 id="livres-article" className="eyebrow">
+              Les livres de cet article
+            </h2>
+            <ul className="mt-3 space-y-4">
+              {featured.map((b) => (
+                <li key={b.slug} className="grid grid-cols-[56px_1fr] items-start gap-4">
+                  <Link href={b.path}>
+                    <BookCover title={b.title} creators={b.creators} cover={b.cover} illustration={b.illustration} />
+                  </Link>
+                  <div className="min-w-0">
+                    <Link href={b.path} className="font-serif text-xl leading-[1.05] hover:text-accent">
+                      {b.title}
+                    </Link>
+                    <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
+                    {why.get(b.slug) && <p className="mt-1.5 text-[13px] leading-snug text-ink/80">{why.get(b.slug)}</p>}
+                    <div className="mt-2">
+                      <AmazonButton href={b.amazonUrl} title={b.title} small />
+                      <AmazonNote illustrated={!b.cover && !!b.illustration} />
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         {sections.length > 2 && (
           <nav aria-label="Sommaire" className="mt-8 text-sm">
             <p className="eyebrow">Sommaire</p>
@@ -150,10 +183,10 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
                       {b.title}
                     </Link>
                     <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
-                    <div className="mt-2">
-                      <AmazonButton href={b.amazonUrl} title={b.title} small />
-                      <AmazonNote illustrated={!b.cover && !!b.illustration} />
-                    </div>
+                    {why.get(b.slug) && <p className="mt-1.5 text-[13px] leading-snug text-ink/80">{why.get(b.slug)}</p>}
+                    <Link href={b.path} className="mt-2 inline-block text-[13px] underline underline-offset-4 hover:text-accent">
+                      Lire la fiche
+                    </Link>
                   </div>
                 </li>
               ))}

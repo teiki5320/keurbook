@@ -1,6 +1,6 @@
 import "server-only";
 import { cache } from "react";
-import { amazonUrl } from "../amazon";
+import { amazonUrl, type AmazonEmplacement } from "../amazon";
 import { suivantsEnBoucle } from "../boucle";
 import { authorSlugsOf, bookCountry, bookPageTitle, byNewest, creatorNames, normalize, periodOf } from "../book-utils";
 import { COUNTRIES } from "../countries";
@@ -77,7 +77,8 @@ export async function getBookAuthors(book: Book): Promise<Author[]> {
   return authorSlugsOf(book).flatMap((s) => map.get(s) ?? []);
 }
 
-export async function toCard(book: Book): Promise<BookCardData> {
+/** Carte d'un livre ; `emplacement` choisit le code de suivi du lien Amazon (table de src/lib/amazon.ts). */
+export async function toCard(book: Book, emplacement: AmazonEmplacement = "rubrique"): Promise<BookCardData> {
   const country = await getBookCountry(book);
   const creators = creatorNames(book);
   return {
@@ -95,7 +96,7 @@ export async function toCard(book: Book): Promise<BookCardData> {
     year: book.year,
     cover: book.cover,
     illustration: book.illustration ?? null,
-    amazonUrl: amazonUrl(book),
+    amazonUrl: amazonUrl(book, emplacement),
     priceCents: book.priceCents,
     addedAt: book.addedAt,
     featured: book.featured,
@@ -103,8 +104,8 @@ export async function toCard(book: Book): Promise<BookCardData> {
   };
 }
 
-export async function toCards(books: Book[]): Promise<BookCardData[]> {
-  return Promise.all(books.map(toCard));
+export async function toCards(books: Book[], emplacement: AmazonEmplacement = "rubrique"): Promise<BookCardData[]> {
+  return Promise.all(books.map((b) => toCard(b, emplacement)));
 }
 
 /** Livres et BD d'un auteur (quel que soit son rôle). */

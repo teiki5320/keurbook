@@ -12,6 +12,7 @@ import { lifeYears } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
 import { getAllBooks, getAuthorGenerations, getAuthors, getBooksByAuthor, getCountriesWithBooks, getCountry, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
+import { getTop10s } from "@/lib/data/top10";
 import { todayInParis } from "@/lib/conseils/article";
 import { getMaintenance } from "@/lib/data/settings";
 import { jsonLd } from "@/lib/json-ld";
@@ -124,6 +125,30 @@ export default async function HomePage() {
           <BookRow books={shelf} />
         </section>
       )}
+
+      {/* Les sélections Top 10 : liens internes seulement (aucun bouton Amazon sur l'accueil). */}
+      <section className="container-page mt-12" aria-labelledby="top10-accueil">
+        <div className="mb-4 flex items-end justify-between gap-4">
+          <div>
+            <p className="eyebrow">Nos sélections</p>
+            <h2 id="top10-accueil" className="mt-2 font-serif text-[30px] leading-none sm:text-4xl">
+              Les Top 10
+            </h2>
+          </div>
+          <Link href="/top-10" className="shrink-0 text-[13px] text-accent hover:text-ink">
+            Tous les Top 10 →
+          </Link>
+        </div>
+        <ul className="flex flex-wrap gap-2">
+          {getTop10s().map((t) => (
+            <li key={t.slug}>
+              <Link href={`/top-10/${t.slug}`} className="tag min-h-11">
+                {t.tab}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {/* Actus du livre : lues en direct depuis la veille (rien ne s'affiche s'il n'y en a pas). */}
       <BlocActus
