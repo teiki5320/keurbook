@@ -32,7 +32,7 @@ export default async function BdListPage() {
       />
       <PageHeader title="BD" intro="Les bandes dessinées des auteurs et dessinateurs d'Afrique subsaharienne." />
       {/* Sans JavaScript (et pour les moteurs de recherche), la liste complète est déjà dans la page. */}
-      <Suspense fallback={<div className="container-page"><h2 className="sr-only">Les BD</h2><BookGrid books={cards.slice(0, PAGE_SIZE)} /></div>}>
+      <Suspense fallback={<div className="container-page"><h2 className="sr-only">Les BD</h2><BookGrid books={cards.slice(0, PAGE_SIZE)} eager={2} /></div>}>
         <BooksBrowser books={cards} countries={countries.filter((c) => c.bd > 0)} simple />
       </Suspense>
       <AllTitles books={cards} label="Toutes les BD de A à Z" />

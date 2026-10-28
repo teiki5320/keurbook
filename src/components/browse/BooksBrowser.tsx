@@ -106,7 +106,7 @@ export function BooksBrowser({ books, countries, simple = false }: Props) {
       </div>
 
       <h2 className="sr-only">{simple ? "Les BD" : "Les livres"}</h2>
-      {results.length > 0 ? <BookGrid books={results.slice(0, shown)} /> : <p className="py-16 text-center font-serif text-2xl text-muted italic">Aucun résultat pour cette recherche.</p>}
+      {results.length > 0 ? <BookGrid books={results.slice(0, shown)} eager={2} /> : <p className="py-16 text-center font-serif text-2xl text-muted italic">Aucun résultat pour cette recherche.</p>}
       {results.length > shown && (
         <div className="mt-10 text-center">
           <button type="button" className="btn-primary py-3" onClick={() => setShown((n) => n + PAGE_SIZE)}>

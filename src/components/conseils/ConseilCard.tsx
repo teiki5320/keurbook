@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- site statique : images non optimisées par Next.js */
 import Link from "next/link";
 import { withBase } from "@/lib/config";
+import { conseilSrcSet } from "@/lib/images";
 import type { Conseil } from "@/lib/conseils/article";
 import { CONSEIL_CATEGORIES } from "@/lib/conseils/categories";
 import { formatDate } from "@/lib/format";
@@ -12,6 +13,8 @@ export function ConseilCard({ conseil }: { conseil: Conseil }) {
         {conseil.image ? (
           <img
             src={withBase(conseil.image)}
+            srcSet={conseilSrcSet(conseil.image)}
+            sizes="(min-width: 640px) 192px, 96px"
             alt={`Illustration de l'article « ${conseil.title} »`}
             loading="lazy"
             className="aspect-[3/2] w-24 rounded object-cover transition duration-500 group-hover:scale-[1.03] sm:w-48"

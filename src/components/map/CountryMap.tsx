@@ -1,11 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { mapPercent } from "./africa-map";
+import { IdleParticles } from "./IdleParticles";
 
-// Three.js (~600 Ko) n'est téléchargé que sur les pages qui affichent la carte.
-const AfricaParticles = dynamic(() => import("./AfricaParticles").then((m) => m.AfricaParticles), { ssr: false });
 
 interface MapCountry {
   code: string;
@@ -28,7 +26,7 @@ export function CountryMap({ countries, highlight }: { countries: MapCountry[]; 
   const current = countries.find((c) => c.slug === highlight);
   return (
     <div className="relative aspect-square w-full max-w-xl overflow-hidden rounded-2xl bg-white" role="group" aria-label="Carte des pays d'Afrique subsaharienne présents sur Keurbook">
-      <AfricaParticles country={current?.code} />
+      <IdleParticles country={current?.code} />
       {current ? (
         <p className="pointer-events-none absolute inset-x-0 bottom-4 text-center font-serif text-2xl italic">{current.name}</p>
       ) : (

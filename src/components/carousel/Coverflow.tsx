@@ -6,6 +6,7 @@ import { useState, type KeyboardEvent } from "react";
 import { initials } from "@/lib/book-utils";
 import { withBase } from "@/lib/config";
 import { useSwipe } from "./useSwipe";
+import { thumb } from "@/lib/images";
 
 export interface CoverflowItem {
   key: string;
@@ -82,7 +83,7 @@ export function Coverflow({ items, hint = "Glissez pour parcourir · touchez le 
               <div className={`relative size-full overflow-hidden rounded-md bg-white shadow-[0_30px_60px_-20px_rgba(0,0,0,.8)] ring-1 ${isActive ? "ring-accent" : "ring-line-strong"}`}>
                 {it.image ? (
                   <img
-                    src={withBase(it.image)}
+                    src={thumb(it.image, 400)}
                     alt={it.imageAlt ?? ""}
                     draggable={false}
                     loading={ao <= 1 ? "eager" : "lazy"}

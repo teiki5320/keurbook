@@ -32,7 +32,7 @@ export default async function BooksPage() {
       />
       <PageHeader title="Livres" intro="Romans, poésie, essais, théâtre et jeunesse : les livres des auteurs d'Afrique subsaharienne, en français." />
       {/* Sans JavaScript (et pour les moteurs de recherche), la liste complète est déjà dans la page. */}
-      <Suspense fallback={<div className="container-page"><h2 className="sr-only">Les livres</h2><BookGrid books={cards.slice(0, PAGE_SIZE)} /></div>}>
+      <Suspense fallback={<div className="container-page"><h2 className="sr-only">Les livres</h2><BookGrid books={cards.slice(0, PAGE_SIZE)} eager={2} /></div>}>
         <BooksBrowser books={cards} countries={countries.filter((c) => c.books > 0)} />
       </Suspense>
       <AllTitles books={cards} label="Tous les livres de A à Z" />

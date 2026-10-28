@@ -1,14 +1,12 @@
 "use client";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useState } from "react";
 import { countryPath } from "../map/africa-map";
 import { useSwipe } from "./useSwipe";
+import { IdleParticles } from "../map/IdleParticles";
 
-// Three.js n'est téléchargé que sur la page qui affiche le carrousel.
-const AfricaParticles = dynamic(() => import("../map/AfricaParticles").then((m) => m.AfricaParticles), { ssr: false });
 
 export interface CarouselCountry {
   code: string;
@@ -44,7 +42,7 @@ export function CountryCarousel({ countries, start = 0 }: { countries: CarouselC
       <div {...swipe} className="relative overflow-hidden select-none" style={{ ...swipe.style, height: "min(clamp(300px,54vh,500px), 86vw)" }}>
         {/* Un seul nuage, au centre : il se transforme d'un pays à l'autre. */}
         <div className="absolute top-1/2 left-1/2 aspect-square h-full -translate-x-1/2 -translate-y-1/2">
-          <AfricaParticles country={cur.code} colorful />
+          <IdleParticles country={cur.code} colorful />
         </div>
         {countries.map((c, i) => {
           let o = i - active;

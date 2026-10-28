@@ -4,7 +4,7 @@
  */
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { illustrationSrcSet, thumb } from "../src/lib/images";
+import { conseilSrcSet, illustrationSrcSet, thumb } from "../src/lib/images";
 import { currentHashes, readLedger } from "../src/lib/lastmod";
 
 describe("Registre des dates (lastmod.json)", () => {
@@ -36,5 +36,8 @@ describe("Vignettes d'images", () => {
     assert.equal(thumb("/authors/mariama-ba.jpg", 300), "/authors/mariama-ba.jpg");
     assert.equal(thumb("/brand/logo.webp", 200), "/brand/logo.webp");
     assert.equal(illustrationSrcSet("/authors/mariama-ba.jpg"), undefined);
+  });
+  it("articles Conseils : vignettes 400 et 800 px puis original 1200 px", () => {
+    assert.equal(conseilSrcSet("/conseils/theatre-africain.webp"), "/conseils/w400/theatre-africain.webp 400w, /conseils/w800/theatre-africain.webp 800w, /conseils/theatre-africain.webp 1200w");
   });
 });

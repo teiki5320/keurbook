@@ -4,11 +4,11 @@ import { PileButton } from "../pile/PileButton";
 import { AmazonButton } from "./AmazonButton";
 import { BookCover } from "./BookCover";
 
-export function BookCard({ book, showBuy = false }: { book: BookCardData; showBuy?: boolean }) {
+export function BookCard({ book, showBuy = false, priority = false }: { book: BookCardData; showBuy?: boolean; priority?: boolean }) {
   return (
     <article className="group reveal relative flex flex-col">
       <Link href={book.path} className="block">
-        <BookCover title={book.title} creators={book.creators} cover={book.cover} illustration={book.illustration} className="transition duration-300 group-hover:-translate-y-1.5 group-hover:-rotate-1 group-hover:shadow-2xl group-hover:shadow-black/70" />
+        <BookCover title={book.title} creators={book.creators} cover={book.cover} illustration={book.illustration} priority={priority} className="transition duration-300 group-hover:-translate-y-1.5 group-hover:-rotate-1 group-hover:shadow-2xl group-hover:shadow-black/70" />
       </Link>
       <div className="absolute top-2 right-2">
         <PileButton slug={book.slug} compact />
@@ -32,11 +32,12 @@ export function BookCard({ book, showBuy = false }: { book: BookCardData; showBu
   );
 }
 
-export function BookGrid({ books, showBuy = false }: { books: BookCardData[]; showBuy?: boolean }) {
+/** `eager` : nombre de couvertures du haut chargées tout de suite (image principale de la page), les autres en différé. */
+export function BookGrid({ books, showBuy = false, eager = 0 }: { books: BookCardData[]; showBuy?: boolean; eager?: number }) {
   return (
     <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-5">
-      {books.map((b) => (
-        <BookCard key={b.slug} book={b} showBuy={showBuy} />
+      {books.map((b, i) => (
+        <BookCard key={b.slug} book={b} showBuy={showBuy} priority={i < eager} />
       ))}
     </div>
   );

@@ -14,6 +14,7 @@ import { getMaintenance } from "@/lib/data/settings";
 import { formatDate } from "@/lib/format";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
+import { conseilSrcSet } from "@/lib/images";
 
 export function generateStaticParams() {
   return getConseils().map((c) => ({ slug: c.slug }));
@@ -90,6 +91,8 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={withBase(conseil.image)}
+              srcSet={conseilSrcSet(conseil.image)}
+              sizes="(min-width: 768px) 720px, 100vw"
               alt={`Illustration de l'article « ${conseil.title} »`}
               width={1200}
               height={800}
