@@ -257,7 +257,7 @@ Rien de particulier : Keurbook n'a pas d'application.
 
 ## Points faibles connus
 
-1. **Le registre des dates dépend d'une commande manuelle.** Si une routine oublie `npx tsx scripts/lastmod.mjs`, la page prend la date du dernier commit : c'est juste, mais moins précis. Le test ne fait qu'avertir, il ne bloque pas.
+1. **Registre des dates : réglé le 28 octobre 2026.** Il dépendait d'une commande manuelle ; il est maintenant recalculé avant chaque construction (`prebuild`), avec la date du commit qui a changé la page.
 2. **Cache de 10 minutes.** Une page republiée peut rester à l'ancienne version 10 minutes, et le cache n'est pas vidé à la mise en ligne. Seules les adresses de `keurbook.com` sont concernées, pas `www.keurbook.com`.
 3. **AdSense pas encore validé.** Le bandeau de consentement et les annonces n'ont jamais été vus en vrai : leur effet sur la vitesse (environ 165 Ko de script) reste à mesurer.
 4. **`inlineCss` est une option expérimentale de Next.js.** Elle peut changer ou disparaître à une mise à jour : à vérifier à chaque nouvelle version.

@@ -53,7 +53,8 @@ export function renderConseil(body: string): string {
     // Seuls les liens web, internes, ancres et e-mails sont acceptés (pas de « javascript: » ni de « //autre-site »).
     if (!/^(https?:|\/(?!\/)|#|mailto:)/i.test(href)) href = "#";
     const external = /^https?:/.test(href);
-    const attrs = external ? ` target="_blank" rel="${/amazon\./.test(href) ? "sponsored nofollow " : ""}noopener noreferrer"` : "";
+    // Liens Amazon (partenaires) : même attribut que le bouton « Voir sur Amazon ».
+    const attrs = external ? ` target="_blank" rel="${/amazon\./.test(href) ? "sponsored nofollow noopener" : "noopener noreferrer"}"` : "";
     if (href.startsWith("/")) href = withBase(href);
     return `<a href="${escapeAttr(href)}"${title ? ` title="${escapeAttr(title)}"` : ""}${attrs}>${inner}</a>`;
   };

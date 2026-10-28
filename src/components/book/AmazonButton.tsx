@@ -7,7 +7,7 @@ export function AmazonButton({ href, title, small = false, className = "" }: { h
     <a
       href={href}
       target="_blank"
-      rel="sponsored nofollow noopener noreferrer"
+      rel="sponsored nofollow noopener"
       aria-label={`Voir sur Amazon : ${title}, lien partenaire (nouvel onglet)`}
       className={`${small ? "btn-primary px-3 py-1.5 text-xs" : "btn-primary"} ${className}`}
     >

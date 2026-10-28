@@ -35,6 +35,9 @@ jobs:
         with:
           ref: main
           persist-credentials: false
+          # Historique git complet : les dates du plan du site (scripts/lastmod.mjs, lancé avant la construction)
+          # reprennent le jour du commit qui a changé chaque page.
+          fetch-depth: 0
 
       - name: Installer Node.js
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
@@ -59,31 +62,52 @@ jobs:
           NEXT_PUBLIC_SITE_URL: https://keurbook.com
           NEXT_TELEMETRY_DISABLED: 1
 
+      # Contrôle du site construit avant toute mise en ligne (un seul h1, description, canonique, JSON-LD lisible,
+      # titres de 60 caractères au plus, images srcset, code AdSense…) : tests/sortie/sortie.test.ts.
+      - name: Contrôler le site construit
+        run: npm run test:sortie
+
+      # Repère propre à cette publication : la dernière étape vérifie que keurbook.com le sert bien.
+      - name: Marquer la version publiée
+        run: echo "${GITHUB_SHA} ${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" > out/version.txt
+
       # Les secrets ne sont donnés qu'aux étapes qui en ont besoin (pas à l'installation ni au build).
+      # Sans eux, la publication échoue (en rouge, avec un e-mail de GitHub) au lieu de passer pour réussie.
       - name: Vérifier la présence des secrets Cloudflare
-        id: secrets
         env:
           HAS_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
           HAS_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
         run: |
-          if [ "$HAS_TOKEN" = "true" ] && [ "$HAS_ACCOUNT" = "true" ]; then
-            echo "ok=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "ok=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::Ajoutez les secrets CLOUDFLARE_API_TOKEN et CLOUDFLARE_ACCOUNT_ID pour publier le site."
+          if [ "$HAS_TOKEN" != "true" ] || [ "$HAS_ACCOUNT" != "true" ]; then
+            echo "::error::Secrets CLOUDFLARE_API_TOKEN ou CLOUDFLARE_ACCOUNT_ID absents : rien n'est publié."
+            exit 1
           fi
 
       - name: Publier sur Cloudflare Pages
-        if: steps.secrets.outputs.ok == 'true'
         env:
           # Réglés par le propriétaire dans Settings → Secrets and variables → Actions.
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          # wrangler est figé dans package-lock.json (installé par npm ci).
-          # Crée le projet « keurbook » à la première publication (sans effet s'il existe déjà).
-          npx wrangler pages project create keurbook --production-branch=main || true
+          # wrangler est figé dans package-lock.json (installé par npm ci). Le projet « keurbook » existe déjà.
           npx wrangler pages deploy out --project-name=keurbook --branch=main --commit-dirty=true
+
+      # Le site en ligne doit servir la version qui vient d'être publiée (jusqu'à 3 minutes d'attente).
+      # Paramètre ?v=… différent à chaque essai : jamais de copie gardée en cache par Cloudflare.
+      - name: Vérifier que keurbook.com sert la nouvelle version
+        run: |
+          attendu="$(cat out/version.txt)"
+          servi=""
+          for i in $(seq 1 18); do
+            servi="$(curl -fsS -H 'Cache-Control: no-cache' "https://keurbook.com/version.txt?v=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${i}" || true)"
+            if [ "$servi" = "$attendu" ]; then
+              echo "keurbook.com sert bien la version $attendu"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::keurbook.com ne sert pas la nouvelle version (attendu « $attendu », reçu « $servi »)."
+          exit 1
 
       # GitHub coupe les tâches programmées d'un dépôt public après 60 jours sans activité :
       # chaque publication programmée réactive la tâche, pour que les articles continuent de paraître.

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleActuVue } from "@/components/actus/ArticleActuVue";
+import { suivantsEnBoucle } from "@/lib/boucle";
 import { siteConfig } from "@/lib/config";
 import { getActusConstruction, getArticleActu, getArticlesActus, getConstruits, getNomsAuteurs } from "@/lib/data/veille-articles";
 import { getMaintenance } from "@/lib/data/settings";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { clip, pageMetadata } from "@/lib/metadata";
-import { fichesDesTags, lienActu } from "@/lib/veille";
+import { fichesDesTags, lienActu, type Actu } from "@/lib/veille";
 
 /** Adresse factice quand la veille n'a encore aucun article (l'export statique refuse une liste vide) : page 404, hors sitemap. */
 const AUCUN = "aucun-article";
@@ -42,9 +43,15 @@ export default async function ArticleActuPage({ params }: PageProps<"/actus/[slu
   const construits = getConstruits();
   const url = `${siteConfig.url}/actus/${article.slug}`;
 
-  // Autres actus : les plus récentes, sauf celle-ci ; les articles construits d'abord.
-  const actus = getActusConstruction().filter((a) => a.id !== article.id);
-  const autres = [...actus.filter((a) => construits[a.id]), ...actus.filter((a) => !construits[a.id])]
+  // Autres actus : les 3 articles construits qui suivent celui-ci, en boucle (chaque article reçoit ainsi
+  // des liens des autres, pas seulement les plus récents), complétés au besoin par les actus sans page.
+  // Un article dont l'actu est sortie du fichier de la veille garde sa carte (titre, chapo, image de l'article).
+  const actus = getActusConstruction();
+  const actuDe = new Map(actus.map((a) => [a.id, a]));
+  const suivants: Actu[] = suivantsEnBoucle(getArticlesActus(), (a) => a.id === article.id, 3)
+    .filter((a) => a.id !== article.id)
+    .map((a) => actuDe.get(a.id) ?? { id: a.id, titre: a.titre, resume: a.chapo, source_nom: a.source_nom, source_url: a.source_url, publie_le: a.publie_le, image: a.image, slug: a.slug });
+  const autres = [...suivants, ...actus.filter((a) => !construits[a.id] && a.id !== article.id)]
     .slice(0, 3)
     .map((actu) => ({ actu, lien: lienActu(actu, construits) }));
 

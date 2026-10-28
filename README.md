@@ -85,16 +85,17 @@ Ouvrez http://localhost:3000. Variables facultatives : `cp .env.example .env.loc
 | `npm run lint` | ESLint |
 | `npm run typecheck` | Vérification des types |
 | `npm test` | Tests des contenus et des articles |
+| `npm run test:sortie` | Contrôle du site construit (`out/`), après `npm run build` |
 
 ## Publication
 
-Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` vérifie, construit et publie sur Cloudflare Pages (projet `keurbook`) à chaque push sur `main`, chaque lundi, mercredi et vendredi (articles programmés) et à la main. Il ne publie que si les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` sont présents. Le workflow « Maintenance » met le site en pause ou le rouvre (`content/maintenance.json`). Depuis le 28 octobre 2026, une règle de cache Cloudflare garde les pages HTML de keurbook.com 10 minutes (voir docs/INFRA.md) : une page republiée apparaît en 10 minutes au plus.
+Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` vérifie, construit et publie sur Cloudflare Pages (projet `keurbook`) à chaque push sur `main`, chaque lundi, mercredi et vendredi (articles programmés) et à la main. Avant la mise en ligne, il contrôle le site construit (`npm run test:sortie`) ; il échoue (en rouge) si les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` manquent ; après la mise en ligne, il vérifie pendant 3 minutes au plus que `https://keurbook.com/version.txt` sert bien la nouvelle version (depuis le 28 octobre 2026). Le workflow « Maintenance » met le site en pause ou le rouvre (`content/maintenance.json`). Depuis le 28 octobre 2026, une règle de cache Cloudflare garde les pages HTML de keurbook.com 10 minutes (voir docs/INFRA.md) : une page republiée apparaît en 10 minutes au plus.
 
-**Dates du plan du site** : chaque page du sitemap porte la date de son dernier vrai changement, lue dans `src/lib/lastmod.json` (empreinte du contenu + jour). Après un changement de fiche, d'article Conseils ou de top 10 : `npx tsx scripts/lastmod.mjs` (les pages changées prennent la date du jour) ; sans ce passage, une page changée prend la date du dernier commit. `--historique` reconstruit tout le registre depuis git.
+**Dates du plan du site** : chaque page du sitemap porte la date de son dernier vrai changement, lue dans `src/lib/lastmod.json` (empreinte du contenu + jour). Depuis le 28 octobre 2026, le registre est mis à jour tout seul avant chaque construction (`prebuild` → `scripts/lastmod.mjs`) : une page changée pas encore commitée prend la date du jour, sinon le jour du commit qui l'a changée (la publication récupère tout l'historique git pour cela). `npx tsx scripts/lastmod.mjs --historique` reconstruit tout le registre depuis git.
 
 **Vignettes d'images** : `scripts/vignettes.mjs` (lancé avant `next dev` et `next build`) crée des versions légères des illustrations (300 et 400 px) et des portraits (200 et 400 px) dans `public/*/w<largeur>/`, non suivies par git ; les listes les utilisent (`src/lib/images.ts`).
 
-**IndexNow (Bing, Yandex, Seznam…)** : le workflow `.github/workflows/indexnow.yml` lit le sitemap publié et signale toutes ses pages, chaque lundi à 2 h UTC et à la demande (onglet Actions → « IndexNow » → « Run workflow »). En local : `node scripts/indexnow.mjs`. La clé, publique par conception, est dans `public/86e162766f5615ec8020869f4b66761d.txt` et dans le script.
+**IndexNow (Bing, Yandex, Seznam…)** : le workflow `.github/workflows/indexnow.yml` lit le sitemap publié et signale toutes ses pages après chaque publication réussie de `main` (depuis le 28 octobre 2026), chaque lundi à 2 h UTC et à la demande (onglet Actions → « IndexNow » → « Run workflow »). En local : `node scripts/indexnow.mjs`. La clé, publique par conception, est dans `public/86e162766f5615ec8020869f4b66761d.txt` et dans le script.
 
 ### Publicité (Google AdSense)
 

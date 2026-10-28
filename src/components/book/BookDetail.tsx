@@ -6,7 +6,8 @@ import { PileButton } from "@/components/pile/PileButton";
 import { amazonUrl } from "@/lib/amazon";
 import { creatorNames, creators, deOrD, translator } from "@/lib/book-utils";
 import { siteConfig, withBase } from "@/lib/config";
-import { getBookAuthors, getBookCountry, getBooksByAuthor, getRelatedBooks, toCards } from "@/lib/data/books";
+import { getBookAuthors, getBookCountry, getBooksByAuthor, getNeighbourBooks, getRelatedBooks, toCards } from "@/lib/data/books";
+import { ALireAussi } from "@/components/layout/ALireAussi";
 import { getConseilsForBooks } from "@/lib/data/conseils";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { AUDIENCES, GENRES, THEMES } from "@/lib/themes";
@@ -23,7 +24,7 @@ const ROLE_LABEL = { auteur: "", scenariste: "Scénario", dessinateur: "Dessin",
 export async function BookDetail({ book }: { book: Book }) {
   const isBd = book.kind === "bd";
   const base = isBd ? { name: "BD", href: "/bd", path: `/bd/${book.slug}` } : { name: "Livres", href: "/livres", path: `/livre/${book.slug}` };
-  const [country, authors, related] = await Promise.all([getBookCountry(book), getBookAuthors(book), getRelatedBooks(book)]);
+  const [country, authors, related, neighbours] = await Promise.all([getBookCountry(book), getBookAuthors(book), getRelatedBooks(book), getNeighbourBooks(book)]);
   const sameAuthor = (await Promise.all(authors.map((a) => getBooksByAuthor(a.slug))))
     .flat()
     .filter((b, i, all) => b.slug !== book.slug && all.findIndex((x) => x.slug === b.slug) === i);
@@ -364,6 +365,9 @@ export async function BookDetail({ book }: { book: Book }) {
           <BookGrid books={await toCards(related)} />
         </Section>
       )}
+
+      {/* Fiches voisines en boucle : chaque fiche reçoit au moins 3 liens d'autres fiches. */}
+      <ALireAussi liens={neighbours.map((b) => ({ href: b.kind === "bd" ? `/bd/${b.slug}` : `/livre/${b.slug}`, nom: b.title, detail: creatorNames(b) }))} />
 
       {/* 16. Conseils liés */}
       {conseils.length > 0 && (

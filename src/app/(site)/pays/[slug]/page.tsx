@@ -11,7 +11,8 @@ import { Coverflow } from "@/components/carousel/Coverflow";
 import { CountryMap } from "@/components/map/CountryMap";
 import { lifeYears } from "@/lib/book-utils";
 import { siteConfig } from "@/lib/config";
-import { getAuthorsOfCountry, getBooksOfCountry, getCountriesWithBooks, getCountryBySlug, toCards } from "@/lib/data/books";
+import { getAuthorsOfCountry, getBooksOfCountry, getCountriesWithBooks, getCountryBySlug, getNeighbourCountries, toCards } from "@/lib/data/books";
+import { ALireAussi } from "@/components/layout/ALireAussi";
 import { getConseils } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
@@ -154,6 +155,9 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
           <BookGrid books={await toCards(bd)} />
         </Section>
       )}
+
+      {/* Pays voisins en boucle : chaque page pays reçoit au moins 3 liens d'autres pages pays. */}
+      <ALireAussi titre="Autres pays à découvrir" liens={(await getNeighbourCountries(country.slug)).map((c) => ({ href: `/pays/${c.slug}`, nom: c.name }))} />
 
       {/* 7. Conseils liés */}
       {conseils.length > 0 && (

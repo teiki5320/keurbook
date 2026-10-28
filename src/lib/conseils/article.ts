@@ -1,3 +1,4 @@
+import { suivantsEnBoucle } from "../boucle";
 import { isConseilCategory, type ConseilCategory } from "./categories";
 
 /** Article de la rubrique Conseils : un fichier Markdown de content/conseils/, une question. */
@@ -75,7 +76,9 @@ export function internalLinks(body: string): string[] {
 
 /** « À lire aussi » : articles de la même catégorie d'abord, puis les plus récents. */
 export function relatedConseils(current: Conseil, all: Conseil[], count = 3): Conseil[] {
-  const others = all.filter((c) => c.slug !== current.slug);
+  // Articles suivants en boucle (voir src/lib/boucle.ts) : chaque article reçoit des liens d'autres articles,
+  // et pas seulement les premiers publiés. Même thème d'abord, puis les autres.
+  const others = suivantsEnBoucle(all, (c) => c.slug === current.slug, all.length).filter((c) => c.slug !== current.slug);
   const same = others.filter((c) => c.theme === current.theme);
   const rest = others.filter((c) => c.theme !== current.theme);
   return [...same, ...rest].slice(0, count);

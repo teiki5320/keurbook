@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "tsx scripts/vignettes.mjs && next dev",
+    "prebuild": "tsx scripts/lastmod.mjs",
     "build": "tsx scripts/vignettes.mjs && tsx scripts/veille-entites.mjs && tsx scripts/veille-articles.mjs && next build",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "test:sortie": "tsx --test tests/sortie/*.test.ts"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",

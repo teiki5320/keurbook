@@ -12,7 +12,8 @@ import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { initials, lifeYears } from "@/lib/book-utils";
 import { siteConfig, withBase } from "@/lib/config";
-import { getAuthorBySlug, getAuthors, getAuthorThemes, getBooksByAuthor, getCountry, getRelatedAuthors, toCard, toCards } from "@/lib/data/books";
+import { getAuthorBySlug, getAuthors, getAuthorThemes, getBooksByAuthor, getCountry, getNeighbourAuthors, getRelatedAuthors, toCard, toCards } from "@/lib/data/books";
+import { ALireAussi } from "@/components/layout/ALireAussi";
 import { getConseilsForBooks } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
 import { GENERATIONS, generationOf } from "@/lib/generations";
@@ -41,7 +42,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
   if (getMaintenance().enabled) return null;
   const author = await getAuthorBySlug((await params).slug);
   if (!author) notFound();
-  const [books, themes, related] = await Promise.all([getBooksByAuthor(author.slug), getAuthorThemes(author.slug), getRelatedAuthors(author)]);
+  const [books, themes, related, neighbours] = await Promise.all([getBooksByAuthor(author.slug), getAuthorThemes(author.slug), getRelatedAuthors(author), getNeighbourAuthors(author)]);
   const country = getCountry(author.countryCode);
   const start = books.find((b) => b.slug === author.startWith) ?? books[0] ?? null;
   const startCard = start ? await toCard(start) : null;
@@ -273,6 +274,9 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           </ul>
         </Section>
       )}
+
+      {/* Fiches auteurs voisines en boucle : chaque fiche reçoit au moins 3 liens d'autres fiches. */}
+      <ALireAussi titre="Autres auteurs à découvrir" liens={neighbours.map((a) => ({ href: `/auteur/${a.slug}`, nom: a.name, detail: getCountry(a.countryCode)?.name }))} />
 
       {/* 11. Conseils liés */}
       {conseils.length > 0 && (

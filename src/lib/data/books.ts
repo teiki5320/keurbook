@@ -1,6 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import { amazonUrl } from "../amazon";
+import { suivantsEnBoucle } from "../boucle";
 import { authorSlugsOf, bookCountry, bookPageTitle, byNewest, creatorNames, normalize, periodOf } from "../book-utils";
 import { COUNTRIES } from "../countries";
 import { allAuthors, allBooks } from "../demo";
@@ -125,6 +126,28 @@ export async function getRelatedBooks(book: Book, limit = 4) {
     .sort((x, y) => y.s - x.s || byNewest(x.b, y.b))
     .slice(0, limit)
     .map((x) => x.b);
+}
+
+/**
+ * « À lire aussi » d'une fiche livre ou BD : les 3 suivantes du même type, rangées par pays puis par titre,
+ * en boucle (voir src/lib/boucle.ts). Chaque fiche reçoit ainsi 3 liens de ses voisines.
+ */
+export async function getNeighbourBooks(book: Book, n = 3) {
+  const map = await authorMap();
+  const key = (b: Book) => `${bookCountry(b, map) ?? "~"} ${normalize(b.title)} ${b.slug}`;
+  const ordered = (await getBooks(book.kind)).map((b) => ({ b, k: key(b) })).sort((x, y) => x.k.localeCompare(y.k, "fr")).map((x) => x.b);
+  return suivantsEnBoucle(ordered, (b) => b.slug === book.slug, n);
+}
+
+/** « À lire aussi » d'une fiche auteur : les 3 suivants, rangés par pays puis par nom, en boucle. */
+export async function getNeighbourAuthors(author: Author, n = 3) {
+  const ordered = [...(await getAuthors())].sort((a, b) => `${a.countryCode ?? "~"} ${a.name}`.localeCompare(`${b.countryCode ?? "~"} ${b.name}`, "fr"));
+  return suivantsEnBoucle(ordered, (a) => a.slug === author.slug, n);
+}
+
+/** « À lire aussi » d'une page pays : les 3 pays suivants (ordre de la carte), en boucle. */
+export async function getNeighbourCountries(slug: string, n = 3) {
+  return suivantsEnBoucle(await getCountriesWithBooks(), (c) => c.slug === slug, n);
 }
 
 /** Thèmes récurrents d'un auteur (les plus fréquents dans ses livres). */

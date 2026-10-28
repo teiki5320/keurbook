@@ -30,7 +30,7 @@ publications réelles, ou routine qui publie).
 
 - ✅ Site en ligne sur `keurbook.com`.
 - ✅ Référencement naturel : sitemap envoyé à Google Search Console (propriété `keurbook.com`),
-  IndexNow chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
+  IndexNow après chaque publication et chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
   vendredi). Au 28 octobre 2026 : 41 articles publiés, 20 programmés ; le rythme régulier va
   jusqu'au 7 décembre (11 articles ajoutés le 15 octobre), puis seuls des articles de saison sont programmés. La routine « Écrire les
   articles Conseils » repasse le 1er et le 15 de chaque mois.

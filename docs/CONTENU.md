@@ -45,7 +45,7 @@ Du haut vers le bas :
 12. Public : adulte, ado ou jeunesse
 13. Bouton « Ajouter à ma pile à lire »
 14. « Du même auteur »
-15. « Vous aimerez aussi » (même pays ou même thème)
+15. « Vous aimerez aussi » (même pays ou même thème), puis « À lire aussi » : 3 liens texte vers les fiches suivantes du même type (rangées par pays puis par titre, en boucle), pour que chaque fiche reçoive des liens
 16. Conseils liés (articles qui parlent du livre)
 
 ## Fiche BD (`/bd/[titre]`)
@@ -67,7 +67,7 @@ Même contenu que la fiche livre, avec deux différences :
 8. Prix littéraires reçus
 9. Thèmes récurrents (liens vers les listes par thème)
 10. « L'actu de [Nom] » : jusqu'à 3 actus liées à l'auteur (veille actus), seulement s'il y en a
-11. « Auteurs proches » (même pays ou mêmes thèmes)
+11. « Auteurs proches » (même pays ou mêmes thèmes), puis « Autres auteurs à découvrir » : 3 liens vers les fiches suivantes (par pays puis par nom, en boucle)
 12. Conseils liés
 
 ## Fiche pays (`/pays/[pays]`)
@@ -80,7 +80,8 @@ Une page n'existe que si le pays a au moins un livre sur le site (comme Keur Coo
 4. Auteurs du pays
 5. Livres du pays
 6. BD du pays
-7. Conseils liés
+7. « Autres pays à découvrir » : 3 liens vers les pays suivants (ordre de la carte, en boucle)
+8. Conseils liés
 
 ## Pages de liste
 

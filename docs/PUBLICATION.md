@@ -8,7 +8,7 @@
 
 - **Production** : en ligne sur keurbook.com depuis le 1er octobre 2026
 - **Domaine & SSL** : Cloudflare, certificat valide jusqu'au 30 décembre 2026, renouvelé seul
-- **Visibilité** : 680 pages indexées par Google sur 980, IndexNow chaque lundi
+- **Visibilité** : 680 pages indexées par Google sur 980, IndexNow après chaque publication et chaque lundi
 - **Contact** : keurbook@toakeur.com
 
 ## Boutiques
@@ -25,7 +25,7 @@
 ## Ce qui reste, dans l'ordre
 
 1. ✅ **Mise en ligne** : site publié sur keurbook.com par Cloudflare Pages le 1er octobre 2026.
-2. ✅ **Search Console et IndexNow** : sitemap envoyé à Google, tout le site signalé chaque lundi.
+2. ✅ **Search Console et IndexNow** : sitemap envoyé à Google, tout le site signalé après chaque publication et chaque lundi.
 3. ✅ **Publicité préparée** : script AdSense, ads.txt et 4 blocs d'annonces publiés le 12 octobre (aucune annonce affichée avant la validation).
 4. ✅ **Fiches rallongées** : refus AdSense du 21 octobre (contenu trop mince) ; les 796 fiches ont reçu « Le livre en détail » le 21 octobre.
 5. **Validation AdSense** : nouvel examen demandé le 22 octobre, « En préparation » dans la console au 28 octobre 2026 ; suivre l'avis de Google dans la console AdSense.
@@ -62,8 +62,8 @@
   2026, renvoyé le 16 puis le 20 octobre, lu par Google le 26 octobre (aucune erreur). Search Console
   (onglet Indexation du Studio) au 28 octobre 2026 : 680 pages indexées sur 980, 300 pas encore
   (182 inconnues de Google, 118 détectées mais non explorées) ; 679 sur 975 le 27 octobre, 673 sur 971 le 20 octobre.
-- **IndexNow** (Bing, Yandex…) : tout le sitemap est signalé chaque lundi ; dernière exécution
-  réussie le 26 octobre 2026.
+- **IndexNow** (Bing, Yandex…) : tout le sitemap est signalé après chaque publication réussie de `main`
+  (depuis le 28 octobre 2026) et chaque lundi ; dernière exécution du lundi réussie le 26 octobre 2026.
 - **Mesure d'audience** : Cloudflare Web Analytics (sans cookie), balise constatée en ligne le
   14 octobre 2026 ; chiffres à vérifier dans la console.
 - **Publicité** : Google AdSense en place (script chargé sur les pages, `https://keurbook.com/ads.txt`
