@@ -56,6 +56,11 @@ export interface Book {
   year: number;
   /** Langue d'origine pour une traduction (« anglais »), null si le livre est écrit en français. */
   originalLanguage: string | null;
+  /**
+   * Titre de l'édition conseillée quand il diffère du titre de la fiche (nouvelle traduction, par exemple
+   * « Tout s'effondre » pour « Le monde s'effondre ») : affiché dans la fiche technique.
+   */
+  editionTitle?: string;
   /** Éditeur de l'édition conseillée (celle vers laquelle mène Amazon). */
   publisher: string;
   pages: number | null;

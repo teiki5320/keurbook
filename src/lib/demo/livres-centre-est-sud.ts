@@ -719,7 +719,7 @@ export const livresCentreEstSud: Book[] = [
     metaDescription: "Le monde s'effondre, écrit par Chinua Achebe (Nigeria, 1958) : résumé du roman d'Okonkwo à Umuofia, personnages et raisons de lire ce classique.",
     contributors: [
       { role: "auteur", name: "Chinua Achebe", authorSlug: "chinua-achebe" },
-      { role: "traducteur", name: "Michel Ligny", authorSlug: null },
+      { role: "traducteur", name: "Pierre Girard", authorSlug: null },
     ],
     genre: "roman",
     audience: "adulte",
@@ -733,9 +733,12 @@ export const livresCentreEstSud: Book[] = [
     ],
     year: 1958,
     originalLanguage: "anglais",
-    publisher: "Présence Africaine",
-    pages: null,
-    isbn: "9782708701915",
+    // Édition conseillée depuis le 28 octobre 2026 : la traduction de Michel Ligny (Présence Africaine, 1966)
+    // n'est plus vendue neuve ; traducteur et pages : page de l'éditeur (lesbelleslettres.com) et fabula.org.
+    editionTitle: "Tout s'effondre (nouvelle traduction, 2026)",
+    publisher: "Les Belles Lettres",
+    pages: 232,
+    isbn: "9782251459790",
     format: null,
     awards: [],
     featured: false,

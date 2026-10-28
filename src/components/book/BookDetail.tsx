@@ -75,6 +75,7 @@ export async function BookDetail({ book }: { book: Book }) {
   ];
 
   const facts: Array<[string, React.ReactNode]> = [
+    ...(book.editionTitle ? ([["Édition conseillée", book.editionTitle]] as Array<[string, React.ReactNode]>) : []),
     ["Éditeur", book.publisher],
     ["Première parution", book.year],
     ...(book.originalLanguage ? ([["Langue d'origine", book.originalLanguage]] as Array<[string, React.ReactNode]>) : []),
