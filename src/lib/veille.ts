@@ -172,6 +172,19 @@ export function nettoyerArticle(brut: unknown): ArticleActu | null {
   };
 }
 
+/**
+ * Ids de l'index de tous les articles (articles/keurbook/index.json : { articles: [{ id, slug, … }] }).
+ * La veille ne supprime jamais un article, même quand l'actu sort des 60 plus récentes.
+ * Index illisible : [].
+ */
+export function idsIndexArticles(brut: unknown): string[] {
+  if (!brut || typeof brut !== "object" || !Array.isArray((brut as { articles?: unknown }).articles)) return [];
+  const ids = (brut as { articles: unknown[] }).articles
+    .map((a) => (a && typeof a === "object" ? (a as { id?: unknown }).id : null))
+    .filter(idValide);
+  return [...new Set(ids)];
+}
+
 /** Lien d'une carte d'actu : la page construite, sinon la page de secours, sinon la source (nouvel onglet). */
 export interface LienCarte {
   href: string;

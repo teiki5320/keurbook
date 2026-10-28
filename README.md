@@ -46,7 +46,7 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Livres
 | Thèmes, genres, publics | `src/lib/themes.ts` |
 | Articles Conseils | `content/conseils/<slug>.md` (paraissent à leur date : lundi, mercredi ou vendredi) |
 | Top 10 | `src/lib/top10/sujets.ts` (11 onglets) |
-| Actus (veille) | lues dans le navigateur depuis `https://teiki5320.github.io/veille/actus/keurbook.json` (`src/lib/veille.ts`, `src/components/actus/`) ; `public/veille/entites.json` (liste des auteurs pour la veille) est généré au build par `scripts/veille-entites.mjs` ; les articles complets (`articles/keurbook/<id>.json`) sont lus au build par `scripts/veille-articles.mjs` (`src/lib/data/veille-articles.ts`) |
+| Actus (veille) | lues dans le navigateur depuis `https://teiki5320.github.io/veille/actus/keurbook.json` (`src/lib/veille.ts`, `src/components/actus/`) ; `public/veille/entites.json` (liste des auteurs pour la veille) est généré au build par `scripts/veille-entites.mjs` ; tous les articles complets (index `articles/keurbook/index.json`, puis `articles/keurbook/<id>.json`, jamais supprimés) sont lus au build par `scripts/veille-articles.mjs` (`src/lib/data/veille-articles.ts`) |
 
 Règles de rédaction : [`docs/REDACTION.md`](docs/REDACTION.md). Champs exacts : `src/lib/types.ts`. Les tests (`npm test`) vérifient la cohérence : chaque auteur a un pays d'Afrique subsaharienne, chaque livre une fiche auteur, chaque lien d'article une page existante, etc.
 

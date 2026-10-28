@@ -7,7 +7,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
-import { articleValide, fichesDesTags, idDepuisRecherche, lienActu, nettoyerArticle, nomDomaine, slugValide, type Actu } from "../src/lib/veille";
+import { articleValide, idsIndexArticles, fichesDesTags, idDepuisRecherche, lienActu, nettoyerArticle, nomDomaine, slugValide, type Actu } from "../src/lib/veille";
 
 const exemple = JSON.parse(readFileSync(join(import.meta.dirname, "fixtures", "article-exemple.json"), "utf8"));
 const ID = exemple.id as string;
@@ -54,6 +54,19 @@ describe("articles des actus", () => {
     assert.ok(!slugValide("aucun-article"));
     assert.ok(!slugValide("a--b"));
     assert.ok(!slugValide("x".repeat(81)));
+  });
+});
+
+describe("index de tous les articles", () => {
+  it("lit les ids, sans doublon ni id mal formé", () => {
+    const index = { version: 1, site: "keurbook", articles: [{ id: ID, slug: exemple.slug }, { id: ID }, { id: "../x" }, null, { slug: "sans-id" }] };
+    assert.deepEqual(idsIndexArticles(index), [ID]);
+  });
+
+  it("index absent ou cassé : aucun id", () => {
+    assert.deepEqual(idsIndexArticles(null), []);
+    assert.deepEqual(idsIndexArticles("<html>"), []);
+    assert.deepEqual(idsIndexArticles({ articles: "rien" }), []);
   });
 });
 

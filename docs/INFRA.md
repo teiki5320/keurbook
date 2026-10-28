@@ -124,9 +124,9 @@ uniquement des noms de variables et de consoles.
   menu et le sitemap), bloc « L'actu de … » sur chaque fiche auteur (3 actus liées à l'auteur ; absent
   s'il n'y en a pas). Composants dans `src/components/actus/`. Jamais de lien Amazon dans ces blocs.
 - **Articles complets** (depuis le 28 octobre 2026) : chaque actu a son article de 300 à 450 mots, écrit
-  par la veille (`articles/keurbook/<id>.json`, schéma article v1). Au build, `scripts/veille-articles.mjs`
-  lit les actus et leurs articles (fichier `.veille/articles.json`, non suivi ; veille injoignable = 0 page,
-  build intact) et le site construit une page `/actus/<adresse>` par article (fil d'Ariane, chapô, image et
+  par la veille (`articles/keurbook/<id>.json`, schéma article v1), jamais supprimé ensuite. Au build,
+  `scripts/veille-articles.mjs` lit l'index de tous les articles (`articles/keurbook/index.json`) et les actus
+  récentes (fichier `.veille/articles.json`, non suivi ; veille injoignable = 0 page, build intact) et le site construit une page `/actus/<adresse>` par article (fil d'Ariane, chapô, image et
   crédit, intertitres, encadré « Sources », liens vers les fiches auteurs, 3 autres actus, 1 annonce
   AdSense « article »), avec `NewsArticle` en JSON-LD, dans le sitemap (et donc IndexNow). Reconstruction
   2 fois par jour (11 h 50 et 18 h 50 UTC) par `deploy.yml`. Les articles parus entre deux constructions
