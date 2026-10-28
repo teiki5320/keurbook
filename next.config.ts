@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || undefined,
   images: { unoptimized: true },
   poweredByHeader: false,
+  // CSS (Tailwind, environ 12 Ko compressé) écrit dans la page au lieu d'un fichier à télécharger avant l'affichage :
+  // gagne un aller-retour réseau au premier affichage, surtout sur téléphone (visiteurs venus de Google).
+  experimental: { inlineCss: true },
 };
 
 export default nextConfig;
