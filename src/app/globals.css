@@ -104,7 +104,7 @@ body {
 
 /* Animations douces (seulement si le visiteur n'a pas demandé moins d'animations). */
 @media (prefers-reduced-motion: no-preference) {
-  /* Apparition en fondu au défilement (navigateurs qui savent lier une animation au défilement). */
+  /* Apparition en glissant au défilement (navigateurs qui savent lier une animation au défilement). */
   @supports (animation-timeline: view()) {
     .reveal {
       animation: reveal linear both;
@@ -126,13 +126,12 @@ body {
   }
 }
 
+/* Glissement seul, sans fondu : un texte à demi transparent pendant l'animation perdait son contraste (accessibilité). */
 @keyframes reveal {
   from {
-    opacity: 0;
     transform: translateY(24px);
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }

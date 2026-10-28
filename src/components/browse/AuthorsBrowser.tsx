@@ -59,9 +59,9 @@ export function AuthorsBrowser({ authors, countries }: { authors: AuthorListItem
         <p className="text-[13px] text-faint" aria-live="polite">
           {list.length} {list.length > 1 ? "auteurs" : "auteur"}
         </p>
-        <nav aria-label="Lettres" className="flex flex-wrap justify-end gap-x-2 gap-y-1 text-[12px]">
+        <nav aria-label="Lettres" className="flex flex-wrap justify-end gap-x-0.5 text-[12px]">
           {groups.map(([l]) => (
-            <a key={l} href={`#lettre-${l}`} className="text-accent hover:text-ink">
+            <a key={l} href={`#lettre-${l}`} className="inline-flex h-6 min-w-6 items-center justify-center text-accent hover:text-ink">
               {l}
             </a>
           ))}
