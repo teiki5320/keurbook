@@ -88,7 +88,7 @@ Ouvrez http://localhost:3000. Variables facultatives : `cp .env.example .env.loc
 
 ## Publication
 
-Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` vérifie, construit et publie sur Cloudflare Pages (projet `keurbook`) à chaque push sur `main`, chaque lundi, mercredi et vendredi (articles programmés) et à la main. Il ne publie que si les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` sont présents. Le workflow « Maintenance » met le site en pause ou le rouvre (`content/maintenance.json`).
+Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` vérifie, construit et publie sur Cloudflare Pages (projet `keurbook`) à chaque push sur `main`, chaque lundi, mercredi et vendredi (articles programmés) et à la main. Il ne publie que si les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` sont présents. Le workflow « Maintenance » met le site en pause ou le rouvre (`content/maintenance.json`). Depuis le 28 octobre 2026, une règle de cache Cloudflare garde les pages HTML de keurbook.com 10 minutes (voir docs/INFRA.md) : une page republiée apparaît en 10 minutes au plus.
 
 **Dates du plan du site** : chaque page du sitemap porte la date de son dernier vrai changement, lue dans `src/lib/lastmod.json` (empreinte du contenu + jour). Après un changement de fiche, d'article Conseils ou de top 10 : `npx tsx scripts/lastmod.mjs` (les pages changées prennent la date du jour) ; sans ce passage, une page changée prend la date du dernier commit. `--historique` reconstruit tout le registre depuis git.
 

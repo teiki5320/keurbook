@@ -57,6 +57,7 @@ uniquement des noms de variables et de consoles.
   à Cloudflare Web Analytics et, depuis le 27 octobre 2026, à `teiki5320.github.io` pour le fichier et les images
   de la veille actus — `connect-src` et `img-src` seulement —, HSTS, cache des images) ; les adresses techniques `*.pages.dev` sont en `noindex`.
 - **Redirections** : `public/_redirects`.
+- **Cache des pages** : depuis le 28 octobre 2026, une règle de cache Cloudflare (Caching → Cache Rules, « Pages HTML en cache 10 min ») garde les pages HTML de keurbook.com (adresses sans point) 10 minutes chez Cloudflare ; les erreurs et redirections (codes 300 et plus) ne sont jamais gardées. Une page republiée apparaît donc en 10 minutes au plus. Réponse du serveur : environ 0,2 s au lieu de 0,6 à 2,8 s avant.
 - **Console** : tableau de bord Cloudflare, rubrique Workers & Pages → `keurbook`.
 
 ## Nom de domaine

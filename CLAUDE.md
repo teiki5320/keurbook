@@ -5,6 +5,7 @@
 - Ce que contient chaque page : docs/CONTENU.md. Le design définitif est fait à part (Claude Design) : l'habillage actuel est provisoire.
 - Données : passer par src/lib/data/* (données écrites dans src/lib/demo, src/lib/countries.ts et content/conseils ; site statique, sans base).
 - Vérifications : `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`.
+- Dates du plan du site : après tout changement d'une fiche livre, BD ou auteur, d'un article Conseils ou d'un top 10, lance `npx tsx scripts/lastmod.mjs` et mets `src/lib/lastmod.json` dans le même commit (les pages changées prennent la date du jour).
 
 ## Fiches à jour à chaque changement (règle de Jean, 22 octobre 2026)
 
