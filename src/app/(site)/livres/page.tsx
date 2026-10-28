@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { BookGrid } from "@/components/book/BookCard";
 import { BooksBrowser } from "@/components/browse/BooksBrowser";
+import { AllTitles } from "@/components/browse/AllTitles";
 import { EntryText, PageHeader } from "@/components/layout/Section";
 import { bookPath } from "@/lib/book-utils";
-import { siteConfig } from "@/lib/config";
+import { PAGE_SIZE, siteConfig } from "@/lib/config";
 import { getBooks, getCountriesWithBooks, toCards } from "@/lib/data/books";
 import { getMaintenance } from "@/lib/data/settings";
 import { itemListLd, jsonLd } from "@/lib/json-ld";
@@ -21,7 +22,8 @@ export const metadata: Metadata = pageMetadata({
 export default async function BooksPage() {
   if (getMaintenance().enabled) return null;
   const [books, countries] = await Promise.all([getBooks("livre"), getCountriesWithBooks()]);
-  const cards = await toCards(books);
+  // Liste filtrable : sans lien Amazon (non affiché dans la grille), pour alléger la page.
+  const cards = (await toCards(books)).map((c) => ({ ...c, amazonUrl: "" }));
   return (
     <>
       <script
@@ -30,9 +32,10 @@ export default async function BooksPage() {
       />
       <PageHeader title="Livres" intro="Romans, poésie, essais, théâtre et jeunesse : les livres des auteurs d'Afrique subsaharienne, en français." />
       {/* Sans JavaScript (et pour les moteurs de recherche), la liste complète est déjà dans la page. */}
-      <Suspense fallback={<div className="container-page"><BookGrid books={cards} /></div>}>
+      <Suspense fallback={<div className="container-page"><h2 className="sr-only">Les livres</h2><BookGrid books={cards.slice(0, PAGE_SIZE)} /></div>}>
         <BooksBrowser books={cards} countries={countries.filter((c) => c.books > 0)} />
       </Suspense>
+      <AllTitles books={cards} label="Tous les livres de A à Z" />
       <EntryText title="Les livres d'Afrique subsaharienne, en français">
         <p>
           Keurbook rassemble {books.length} livres d&apos;auteurs nés en Afrique subsaharienne ou issus de sa diaspora, tous disponibles en français : romans, nouvelles, poésie, théâtre,

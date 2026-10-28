@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- site statique : images non optimisées par Next.js */
 import { withBase } from "@/lib/config";
+import { illustrationSrcSet } from "@/lib/images";
 
 /** Teintes sombres des couvertures typographiques (design « Nuit »). */
 const TONES = ["#5a2e22", "#23343a", "#3d3a2a", "#2d2438", "#1f3a2e", "#4a3a22", "#6b4e17"];
@@ -25,6 +26,7 @@ export function BookCover({
   illustration = null,
   className = "",
   priority = false,
+  sizes = "(min-width: 1024px) 200px, (min-width: 640px) 30vw, 45vw",
 }: {
   title: string;
   creators: string;
@@ -33,6 +35,8 @@ export function BookCover({
   className?: string;
   /** Image principale de la page : chargée tout de suite, en priorité. */
   priority?: boolean;
+  /** Largeur affichée (attribut sizes) : le navigateur choisit la vignette (300 ou 400 px) ou l'original (600 px). */
+  sizes?: string;
 }) {
   if (!cover && illustration)
     return (
@@ -43,6 +47,8 @@ export function BookCover({
         {/* Le texte alternatif porte le titre et l'auteur ; le titre posé par-dessus est masqué aux lecteurs d'écran. */}
         <img
           src={withBase(illustration)}
+          srcSet={illustrationSrcSet(illustration)}
+          sizes={sizes}
           alt={`${title}, ${creators} : couverture illustrée par Keurbook`}
           className="absolute inset-0 size-full object-cover"
           loading={priority ? "eager" : "lazy"}

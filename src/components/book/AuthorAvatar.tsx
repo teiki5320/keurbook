@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element -- site statique : images non optimisées par Next.js */
 import Link from "next/link";
 import { initials } from "@/lib/book-utils";
-import { withBase } from "@/lib/config";
+import { thumb } from "@/lib/images";
 
 /** Photo ronde de l'auteur (libre de droits), ou ses initiales. */
 export function AuthorAvatar({ name, photo, className = "size-10 text-sm" }: { name: string; photo: string | null; className?: string }) {
-  if (photo) return <img src={withBase(photo)} alt="" className={`shrink-0 rounded-full object-cover object-top grayscale brightness-90 ${className}`} loading="lazy" />;
+  if (photo) return <img src={thumb(photo, 200)} alt="" className={`shrink-0 rounded-full object-cover object-top grayscale brightness-90 ${className}`} loading="lazy" />;
   return (
     <span aria-hidden className={`flex shrink-0 items-center justify-center rounded-full bg-white font-serif text-muted ${className}`}>
       {initials(name)}
@@ -39,7 +39,7 @@ export function AuthorTile({
     >
       {image ? (
         <img
-          src={withBase(image)}
+          src={thumb(image, 400)}
           alt={photo ? `Portrait de ${name}` : `Illustration d'un livre de ${name}`}
           className={`portrait-vivant size-full object-cover ${photo ? "object-top" : "object-center"} brightness-75 grayscale transition duration-700 group-hover:scale-[1.04] group-hover:brightness-95 group-hover:grayscale-0 group-focus-visible:brightness-95 group-focus-visible:grayscale-0`}
           loading="lazy"

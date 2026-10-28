@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { BookGrid } from "@/components/book/BookCard";
 import { BooksBrowser } from "@/components/browse/BooksBrowser";
+import { AllTitles } from "@/components/browse/AllTitles";
 import { EntryText, PageHeader } from "@/components/layout/Section";
 import { bookPath, titleWithSubtitle } from "@/lib/book-utils";
-import { siteConfig } from "@/lib/config";
+import { PAGE_SIZE, siteConfig } from "@/lib/config";
 import { getAuthors, getBooks, getCountriesWithBooks, toCards } from "@/lib/data/books";
 import { getMaintenance } from "@/lib/data/settings";
 import { itemListLd, jsonLd } from "@/lib/json-ld";
@@ -20,7 +21,8 @@ export const metadata: Metadata = pageMetadata({
 export default async function BdListPage() {
   if (getMaintenance().enabled) return null;
   const [books, countries, authors] = await Promise.all([getBooks("bd"), getCountriesWithBooks(), getAuthors()]);
-  const cards = await toCards(books);
+  // Liste filtrable : sans lien Amazon (non affiché dans la grille), pour alléger la page.
+  const cards = (await toCards(books)).map((c) => ({ ...c, amazonUrl: "" }));
   const bdAuthors = authors.filter((a) => books.some((b) => b.contributors.some((c) => c.authorSlug === a.slug))).length;
   return (
     <>
@@ -30,9 +32,10 @@ export default async function BdListPage() {
       />
       <PageHeader title="BD" intro="Les bandes dessinées des auteurs et dessinateurs d'Afrique subsaharienne." />
       {/* Sans JavaScript (et pour les moteurs de recherche), la liste complète est déjà dans la page. */}
-      <Suspense fallback={<div className="container-page"><BookGrid books={cards} /></div>}>
+      <Suspense fallback={<div className="container-page"><h2 className="sr-only">Les BD</h2><BookGrid books={cards.slice(0, PAGE_SIZE)} /></div>}>
         <BooksBrowser books={cards} countries={countries.filter((c) => c.bd > 0)} simple />
       </Suspense>
+      <AllTitles books={cards} label="Toutes les BD de A à Z" />
       <EntryText title="La bande dessinée africaine, en français">
         <p>
           Keurbook présente {books.length} bandes dessinées signées par {bdAuthors} scénaristes et dessinateurs d&apos;Afrique subsaharienne et de sa diaspora : chroniques du quotidien,

@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { BookCardData } from "@/lib/data/books";
 import { normalize } from "@/lib/book-utils";
+import { PAGE_SIZE } from "@/lib/config";
 import { AUDIENCES, GENRES, PERIODS, THEMES } from "@/lib/themes";
 import { BookGrid } from "../book/BookCard";
 
@@ -32,9 +33,12 @@ export function BooksBrowser({ books, countries, simple = false }: Props) {
     tri: (params.get("tri") as Sort) || "nouveautes",
   }));
 
+  const [shown, setShown] = useState(PAGE_SIZE);
+
   function update(patch: Partial<typeof state>) {
     const next = { ...state, ...patch };
     setState(next);
+    setShown(PAGE_SIZE);
     const qs = new URLSearchParams();
     for (const [k, v] of Object.entries(next)) if (v && !(k === "tri" && v === "nouveautes")) qs.set(k, v);
     const s = qs.toString();
@@ -101,7 +105,15 @@ export function BooksBrowser({ books, countries, simple = false }: Props) {
         </label>
       </div>
 
-      {results.length > 0 ? <BookGrid books={results} /> : <p className="py-16 text-center font-serif text-2xl text-muted italic">Aucun résultat pour cette recherche.</p>}
+      <h2 className="sr-only">{simple ? "Les BD" : "Les livres"}</h2>
+      {results.length > 0 ? <BookGrid books={results.slice(0, shown)} /> : <p className="py-16 text-center font-serif text-2xl text-muted italic">Aucun résultat pour cette recherche.</p>}
+      {results.length > shown && (
+        <div className="mt-10 text-center">
+          <button type="button" className="btn-primary py-3" onClick={() => setShown((n) => n + PAGE_SIZE)}>
+            Afficher plus ({results.length - shown} {simple ? "BD" : results.length - shown > 1 ? "livres" : "livre"} de plus)
+          </button>
+        </div>
+      )}
     </div>
   );
 }

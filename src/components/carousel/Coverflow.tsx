@@ -106,7 +106,7 @@ export function Coverflow({ items, hint = "Glissez pour parcourir · touchez le 
       {n > 1 && (
         <div className="mt-3 flex flex-wrap justify-center" aria-label="Choisir un portrait">
           {items.map((it, i) => (
-            <button key={it.key} type="button" aria-pressed={i === active} aria-label={it.title} onClick={() => setActive(i)} className="flex h-6 items-center px-1">
+            <button key={it.key} type="button" aria-pressed={i === active} aria-label={it.title} onClick={() => setActive(i)} className="flex h-6 min-w-6 items-center justify-center px-1">
               <span aria-hidden className={`block h-1.5 rounded-md transition-[width] duration-300 ${i === active ? "w-8 bg-accent" : "w-2.5 bg-ink/30"}`} />
             </button>
           ))}

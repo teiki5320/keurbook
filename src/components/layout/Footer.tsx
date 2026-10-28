@@ -3,6 +3,7 @@ import { CookieSettingsLink } from "@/components/ads/CookieSettingsLink";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { siteConfig, withBase } from "@/lib/config";
 import { NAV, SECONDARY_NAV } from "./nav";
+import { EmailLink } from "@/components/layout/EmailLink";
 
 export function Footer() {
   return (
@@ -22,7 +23,7 @@ export function Footer() {
         </div>
         <nav aria-label="Rubriques" className="flex flex-col gap-2.5">
           {NAV.map((n) => (
-            <Link key={n.href} href={n.href} className="font-serif text-xl leading-none hover:text-accent">
+            <Link key={n.href} href={n.href} prefetch={false} className="font-serif text-xl leading-none hover:text-accent">
               {n.label}
             </Link>
           ))}
@@ -30,7 +31,7 @@ export function Footer() {
             Ma pile <i>à lire</i>
           </Link>
           {SECONDARY_NAV.map((n) => (
-            <Link key={n.href} href={n.href} className="mt-1 text-muted hover:text-ink">
+            <Link key={n.href} href={n.href} prefetch={false} className="mt-1 text-muted hover:text-ink">
               {n.label}
             </Link>
           ))}
@@ -40,7 +41,7 @@ export function Footer() {
           <Link href="/confidentialite" className="hover:text-ink">Confidentialité</Link>
           <Link href="/conditions" className="hover:text-ink">Conditions d&apos;utilisation</Link>
           <CookieSettingsLink className="hover:text-ink" />
-          <a href={`mailto:${siteConfig.contactEmail}`} className="hover:text-ink">{siteConfig.contactEmail}</a>
+          <EmailLink email={siteConfig.contactEmail} className="hover:text-ink" />
         </nav>
       </div>
       <div className="container-page space-y-2 border-t border-line py-5 text-[11px] leading-relaxed text-faint">

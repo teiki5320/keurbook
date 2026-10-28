@@ -104,7 +104,7 @@ export function CountryCarousel({ countries, start = 0 }: { countries: CarouselC
       </div>
       <div className="mt-6 flex flex-wrap justify-center" aria-label="Choisir un pays">
         {countries.map((c, i) => (
-          <button key={c.code} type="button" aria-current={i === active ? "true" : undefined} aria-label={c.name} onClick={() => setActive(i)} className="flex h-6 items-center px-1">
+          <button key={c.code} type="button" aria-current={i === active ? "true" : undefined} aria-label={c.name} onClick={() => setActive(i)} className="flex h-6 min-w-6 items-center justify-center px-1">
             <span aria-hidden className={`block h-1.5 rounded-md transition-[width] duration-300 ${i === active ? "w-7 bg-accent" : "w-2 bg-ink/25"}`} />
           </button>
         ))}

@@ -54,3 +54,9 @@ next-env.d.ts
 
 # Articles complets des actus, lus sur la veille au build (scripts/veille-articles.mjs)
 /.veille/
+
+# Vignettes d'images, générées avant le build (scripts/vignettes.mjs)
+/public/illustrations/w300/
+/public/illustrations/w400/
+/public/authors/w200/
+/public/authors/w400/

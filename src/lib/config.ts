@@ -61,3 +61,6 @@ export const legalConfig = {
   host: process.env.NEXT_PUBLIC_LEGAL_HOST || defaultHost.full,
   hostName: process.env.NEXT_PUBLIC_LEGAL_HOST_NAME || defaultHost.name,
 };
+
+/** Livres et BD affichés d'abord dans /livres et /bd, puis par paquets (bouton « Afficher plus ») : page légère sur téléphone. */
+export const PAGE_SIZE = 48;

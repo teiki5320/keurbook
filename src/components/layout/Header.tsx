@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { siteConfig, withBase } from "@/lib/config";
 import { PileCount } from "../pile/PileCount";
 import { NAV, SECONDARY_NAV } from "./nav";
+import { EmailLink } from "@/components/layout/EmailLink";
 
 /** En-tête : liens en ligne sur grand écran, bouton « Menu » plein écran sur mobile. */
 export function Header() {
@@ -34,7 +35,7 @@ export function Header() {
           </Link>
           <nav aria-label="Menu principal" className="hidden gap-6 text-sm text-ink/80 md:flex">
             {NAV.map((n) => (
-              <Link key={n.href} href={n.href} className="hover:text-accent">
+              <Link key={n.href} href={n.href} prefetch={false} className="hover:text-accent">
                 {n.label}
               </Link>
             ))}
@@ -58,7 +59,7 @@ export function Header() {
         <div id="menu-mobile" className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-paper px-5 pt-20 pb-6 md:hidden">
           <nav aria-label="Menu mobile" className="flex flex-col">
             {NAV.map((n) => (
-              <Link key={n.href} href={n.href} onClick={close} className="border-b border-line py-3 font-serif text-[46px] leading-none hover:text-accent">
+              <Link key={n.href} href={n.href} prefetch={false} onClick={close} className="border-b border-line py-3 font-serif text-[46px] leading-none hover:text-accent">
                 {n.label}
               </Link>
             ))}
@@ -71,7 +72,7 @@ export function Header() {
           </Link>
           <nav aria-label="Listes" className="mt-6 flex gap-5 text-sm text-muted">
             {SECONDARY_NAV.map((n) => (
-              <Link key={n.href} href={n.href} onClick={close} className="hover:text-ink">
+              <Link key={n.href} href={n.href} prefetch={false} onClick={close} className="hover:text-ink">
                 {n.label}
               </Link>
             ))}
@@ -80,7 +81,7 @@ export function Header() {
             <Link href="/mentions-legales" onClick={close}>Mentions légales</Link>
             <Link href="/confidentialite" onClick={close}>Confidentialité</Link>
             <Link href="/conditions" onClick={close}>Conditions</Link>
-            <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+            <EmailLink email={siteConfig.contactEmail} />
           </div>
         </div>
       )}

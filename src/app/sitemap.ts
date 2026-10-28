@@ -7,8 +7,19 @@ import { getTop10s } from "@/lib/data/top10";
 import { TOP10_UPDATED } from "@/lib/top10/sujets";
 import { getMaintenance } from "@/lib/data/settings";
 import { getArticlesActus } from "@/lib/data/veille-articles";
+import { currentHashes, readLedger } from "@/lib/lastmod";
+import { execFileSync } from "node:child_process";
 
 export const dynamic = "force-static";
+
+/** Jour du dernier commit (date de repli d'une page changée dont le registre n'est pas encore à jour), sinon aujourd'hui. */
+function commitDay(): string {
+  try {
+    return execFileSync("git", ["log", "-1", "--format=%cs"], { encoding: "utf8" }).trim() || new Date().toISOString().slice(0, 10);
+  } catch {
+    return new Date().toISOString().slice(0, 10);
+  }
+}
 
 /** Dernière mise à jour des pages légales. */
 const LEGAL_UPDATED = "2026-10-12";
@@ -21,12 +32,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url;
   const conseils = getConseils();
   const authorMap = new Map(authors.map((a) => [a.slug, a]));
-  // Dernière modification : date d'ajout la plus récente des livres concernés (ou de l'article le plus récent).
+  // Dernière modification réelle de chaque page : registre src/lib/lastmod.json (empreinte du contenu + jour du changement).
+  // Contenu changé depuis la dernière mise à jour du registre : jour du dernier commit.
+  const hashes = await currentHashes();
+  const ledger = readLedger();
+  const fallback = commitDay();
+  const changed = (key: string, added: string) => {
+    const known = ledger[key];
+    const d = known && known.h === hashes[key] ? known.d : fallback;
+    return d > added ? d : added;
+  };
   const day = (d: string) => new Date(`${d}T00:00:00Z`);
   const latest = (dates: string[]) => dates.reduce((a, b) => (b > a ? b : a), "2026-09-30");
-  const booksOf = (pred: (b: (typeof books)[number]) => boolean) => books.filter(pred).map((b) => b.addedAt);
-  const lastBook = latest(books.map((b) => b.addedAt));
-  const lastConseil = latest(conseils.map((c) => c.date));
+  const bookDay = new Map(books.map((b) => [b.slug, changed(`${b.kind === "bd" ? "bd" : "livre"}/${b.slug}`, b.addedAt)]));
+  const booksOf = (pred: (b: (typeof books)[number]) => boolean) => books.filter(pred).map((b) => bookDay.get(b.slug)!);
+  const conseilDay = new Map(conseils.map((c) => [c.slug, changed(`conseils/${c.slug}`, c.date)]));
+  const lastBook = latest([...bookDay.values()]);
+  const lastConseil = latest([...conseilDay.values()]);
   const lists: Record<string, string> = {
     "/livres": latest(booksOf((b) => b.kind === "livre")),
     "/bd": latest(booksOf((b) => b.kind === "bd")),
@@ -49,16 +71,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticPages,
     // Top 10 : une adresse par onglet (/top-10 renvoie vers le premier comme adresse canonique).
-    ...getTop10s().map((t) => ({ url: `${base}/top-10/${t.slug}`, lastModified: day(TOP10_UPDATED), changeFrequency: "monthly" as const, priority: 0.8 })),
+    ...getTop10s().map((t) => ({ url: `${base}/top-10/${t.slug}`, lastModified: day(changed(`top-10/${t.slug}`, TOP10_UPDATED)), changeFrequency: "monthly" as const, priority: 0.8 })),
     ...books.map((b) => ({
       url: `${base}${b.kind === "bd" ? "/bd" : "/livre"}/${b.slug}`,
-      lastModified: new Date(`${b.addedAt}T00:00:00Z`),
+      lastModified: day(bookDay.get(b.slug)!),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
     ...authors.map((a) => ({
       url: `${base}/auteur/${a.slug}`,
-      lastModified: day(latest(booksOf((b) => b.contributors.some((c) => c.authorSlug === a.slug)))),
+      lastModified: day(changed(`auteur/${a.slug}`, latest(booksOf((b) => b.contributors.some((c) => c.authorSlug === a.slug))))),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
@@ -70,7 +92,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...conseils.map((c) => ({
       url: `${base}/conseils/${c.slug}`,
-      lastModified: new Date(`${c.date}T00:00:00Z`),
+      lastModified: day(conseilDay.get(c.slug)!),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

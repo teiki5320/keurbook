@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { legalConfig, siteConfig } from "@/lib/config";
+import { EmailLink } from "@/components/layout/EmailLink";
 
 export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité",
@@ -20,7 +21,7 @@ export default function PrivacyPage() {
 
       <h2>Responsable du traitement</h2>
       <p>
-        {legalConfig.companyName}, {legalConfig.address}. Contact : <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.
+        {legalConfig.companyName}, {legalConfig.address}. Contact : <EmailLink email={siteConfig.contactEmail} />.
       </p>
 
       <h2>Données collectées et finalités</h2>
@@ -110,7 +111,7 @@ export default function PrivacyPage() {
       <p>
         Vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement, de limitation, d&apos;opposition
         et de portabilité de vos données, ainsi que du droit de définir des directives relatives à leur sort après votre
-        décès. Pour les exercer : <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>. Vous
+        décès. Pour les exercer : <EmailLink email={siteConfig.contactEmail} />. Vous
         pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr).
       </p>
 

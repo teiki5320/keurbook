@@ -16,7 +16,7 @@ export default function NotFound() {
         <h1 className="mt-6 font-serif text-[44px] leading-none sm:text-6xl">Page introuvable</h1>
         <p className="mt-3 max-w-md text-[15px] text-muted">Cette page n&apos;existe pas ou n&apos;est plus disponible.</p>
         <div className="mt-8 flex max-w-sm flex-col gap-2 sm:max-w-none sm:flex-row">
-          <Link href="/livres" className="btn-primary py-4">
+          <Link href="/livres" prefetch={false} className="btn-primary py-4">
             Voir les livres
           </Link>
           <Link href="/" className="btn-secondary py-4">

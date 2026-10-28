@@ -9,13 +9,14 @@ import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
 import { SECONDARY_NAV } from "@/components/layout/nav";
 import { lifeYears } from "@/lib/book-utils";
-import { siteConfig, withBase } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 import { getAllBooks, getAuthorGenerations, getAuthors, getBooksByAuthor, getCountriesWithBooks, getCountry, toCards } from "@/lib/data/books";
 import { getConseils } from "@/lib/data/conseils";
 import { todayInParis } from "@/lib/conseils/article";
 import { getMaintenance } from "@/lib/data/settings";
 import { jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
+import { thumb } from "@/lib/images";
 
 export const metadata: Metadata = pageMetadata({
   title: `${siteConfig.name} — ${siteConfig.tagline}`,
@@ -81,7 +82,7 @@ export default async function HomePage() {
           {mosaic.map((a, i) => (
             <div key={a!.slug} className="mosaique-case relative overflow-hidden" style={{ "--rang": i } as React.CSSProperties}>
               <img
-                src={withBase(a!.photo!)}
+                src={thumb(a!.photo!, 400)}
                 alt=""
                 loading={i < 6 ? "eager" : "lazy"}
                 fetchPriority={i < 3 ? "high" : "low"}
@@ -116,7 +117,7 @@ export default async function HomePage() {
               <p className="eyebrow">Cette semaine</p>
               <h2 className="mt-2 font-serif text-[34px] leading-none sm:text-5xl">À lire maintenant</h2>
             </div>
-            <Link href="/livres" className="shrink-0 text-[13px] text-accent hover:text-ink">
+            <Link href="/livres" prefetch={false} className="shrink-0 text-[13px] text-accent hover:text-ink">
               Tous les livres →
             </Link>
           </div>

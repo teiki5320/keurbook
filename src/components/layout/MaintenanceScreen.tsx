@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { EmailLink } from "@/components/layout/EmailLink";
 
 export function MaintenanceScreen({ message, contactEmail }: { message: string; contactEmail: string }) {
   return (
@@ -7,7 +8,7 @@ export function MaintenanceScreen({ message, contactEmail }: { message: string; 
       <h1 className="mt-6 font-serif text-2xl">On range les étagères</h1>
       <p className="mt-3 max-w-md text-muted">{message}</p>
       <p className="mt-6 text-sm">
-        <a href={`mailto:${contactEmail}`} className="underline">{contactEmail}</a>
+        <EmailLink email={contactEmail} className="underline" />
       </p>
       <nav aria-label="Informations légales" className="mt-10 flex gap-4 text-xs text-muted">
         <Link href="/mentions-legales">Mentions légales</Link>

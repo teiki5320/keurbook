@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { chargerFichier, filtrerParTag, lienActu, type FichierActus } from "@/lib/veille";
+import { chargerFichier, filtrerParTag, lienActu, type Actu, type FichierActus } from "@/lib/veille";
 import { ActuBandeau } from "./ActuBandeau";
 import { ActuVignette } from "./ActuVignette";
 
@@ -25,6 +25,8 @@ export interface PropsBlocActus {
   className?: string;
   /** Pages d'articles construites avec le site : id de l'actu → adresse (/actus/<slug>/). */
   construits?: Record<string, string>;
+  /** Actus lues à la construction du site : écrites dans la page (lecteurs sans JavaScript, moteurs de recherche), puis remplacées par la version du jour. */
+  initiales?: Actu[];
 }
 
 /** « 27 octobre à 12 h 05 », heure de Paris. */
@@ -39,12 +41,13 @@ function dateHeure(d: Date): string {
  * Chaque carte ouvre l'article complet sur le site (voir lienActu).
  * Aucune actu, ou fichier injoignable : rien n'est affiché (ou le texte « siVide »).
  */
-export function BlocActusClient({ titre, surtitre, limite, tag, lien, prioritaire = false, avecMiseAJour = false, siVide, className = "", construits = {} }: PropsBlocActus) {
-  const [fichier, setFichier] = useState<FichierActus | null | undefined>(undefined);
+export function BlocActusClient({ titre, surtitre, limite, tag, lien, prioritaire = false, avecMiseAJour = false, siVide, className = "", construits = {}, initiales = [] }: PropsBlocActus) {
+  const [fichier, setFichier] = useState<FichierActus | null | undefined>(initiales.length ? { version: 1, site: "keurbook", genere_le: "", actus: initiales } : undefined);
 
   useEffect(() => {
     let actif = true;
-    chargerFichier().then((f) => actif && setFichier(f));
+    // Fichier injoignable : on garde les actus écrites dans la page.
+    chargerFichier().then((f) => actif && setFichier((avant) => f ?? avant));
     return () => {
       actif = false;
     };

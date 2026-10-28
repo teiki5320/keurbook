@@ -1,12 +1,15 @@
 import Link from "next/link";
 
+/** Pages de liste lourdes (centaines de livres) : pas de préchargement, qui coûtait plus de 100 Ko sur téléphone à chaque page. */
+export const isHeavyList = (href: string) => /^\/(livres|bd|auteurs|pays)(\?|$)/.test(href);
+
 export function Section({ title, href, linkLabel = "Tout voir", children, id }: { title: string; href?: string; linkLabel?: string; children: React.ReactNode; id?: string }) {
   return (
     <section id={id} className="container-page mt-16">
       <div className="mb-6 flex items-baseline justify-between gap-4">
         <h2 className="section-title">{title}</h2>
         {href && (
-          <Link href={href} className="text-[13px] whitespace-nowrap text-muted hover:text-accent">
+          <Link href={href} prefetch={isHeavyList(href) ? false : undefined} className="text-[13px] whitespace-nowrap text-muted hover:text-accent">
             {linkLabel} →
           </Link>
         )}
@@ -34,7 +37,7 @@ export function Breadcrumb({ items }: { items: Array<{ name: string; href?: stri
           <li key={i} className="flex gap-1.5">
             {i > 0 && <span aria-hidden>·</span>}
             {it.href ? (
-              <Link href={it.href} className="hover:text-ink">
+              <Link href={it.href} prefetch={isHeavyList(it.href) ? false : undefined} className="hover:text-ink">
                 {it.name}
               </Link>
             ) : (

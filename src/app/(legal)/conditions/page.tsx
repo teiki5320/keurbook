@@ -3,6 +3,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { legalConfig, siteConfig } from "@/lib/config";
+import { EmailLink } from "@/components/layout/EmailLink";
 
 export const metadata: Metadata = pageMetadata({
   title: "Conditions générales d'utilisation",
@@ -69,7 +70,7 @@ export default function TermsPage() {
       <h2>Article 7 — Droit applicable</h2>
       <p>
         Les présentes CGU sont soumises au droit français. Pour toute question :{" "}
-        <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.
+        <EmailLink email={siteConfig.contactEmail} />.
       </p>
     </LegalPage>
   );

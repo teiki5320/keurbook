@@ -71,7 +71,7 @@ export function PileList({ books }: { books: BookCardData[] }) {
           </div>
           <p className="mt-6 font-serif text-[28px] italic">Votre pile à lire est vide.</p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted">Ajoutez des livres avec le bouton « Ajouter à ma pile à lire » des fiches.</p>
-          <Link href="/livres" className="mt-5 text-sm text-accent hover:text-ink">
+          <Link href="/livres" prefetch={false} className="mt-5 text-sm text-accent hover:text-ink">
             Voir les livres →
           </Link>
         </div>

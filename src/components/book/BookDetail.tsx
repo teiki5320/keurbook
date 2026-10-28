@@ -117,7 +117,7 @@ export async function BookDetail({ book }: { book: Book }) {
           {/* 1. Couverture sur halo */}
           <div className={`-mx-5 px-5 py-10 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-xl md:px-5 md:py-6 ${halo}`}>
             <div className={`mx-auto md:w-full ${isBd ? "w-56 sm:w-64" : "w-52 sm:w-60"}`}>
-              <BookCover title={book.title} creators={names} cover={book.cover} illustration={book.illustration} className="shadow-2xl shadow-black/70" priority />
+              <BookCover title={book.title} creators={names} cover={book.cover} illustration={book.illustration} className="shadow-2xl shadow-black/70" priority sizes="(min-width: 1024px) 280px, 240px" />
             </div>
             {/* Honnêteté envers l'acheteur : l'illustration n'est pas la couverture de l'édition vendue. */}
             {!book.cover && book.illustration && (
@@ -136,7 +136,7 @@ export async function BookDetail({ book }: { book: Book }) {
           {/* 2 à 5 : genre, pays, titre, auteurs, achat */}
           <div className="text-center md:text-left">
             <p className="eyebrow">
-              <Link href={`${filterBase}?genre=${book.genre}`} className="hover:text-ink">
+              <Link href={`${filterBase}?genre=${book.genre}`} prefetch={false} className="hover:text-ink">
                 {GENRES[book.genre]}
               </Link>
               {country && (
@@ -344,7 +344,7 @@ export async function BookDetail({ book }: { book: Book }) {
             </h2>
             <div className="flex flex-wrap gap-2">
               {book.themes.map((t) => (
-                <Link key={t} href={`${filterBase}?theme=${t}`} className="tag">
+                <Link key={t} href={`${filterBase}?theme=${t}`} prefetch={false} className="tag">
                   {THEMES[t]}
                 </Link>
               ))}

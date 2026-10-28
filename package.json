@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "tsx scripts/veille-entites.mjs && tsx scripts/veille-articles.mjs && next build",
+    "dev": "tsx scripts/vignettes.mjs && next dev",
+    "build": "tsx scripts/vignettes.mjs && tsx scripts/veille-entites.mjs && tsx scripts/veille-articles.mjs && next build",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts"
@@ -26,6 +26,7 @@
     "@types/three": "^0.186.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "sharp": "0.35.4",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5",

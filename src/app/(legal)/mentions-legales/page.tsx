@@ -4,6 +4,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { LegalPage } from "@/components/layout/LegalPage";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { legalConfig, siteConfig } from "@/lib/config";
+import { EmailLink } from "@/components/layout/EmailLink";
 
 export const metadata: Metadata = pageMetadata({
   title: "Mentions légales",
@@ -32,7 +33,7 @@ export default function LegalNoticePage() {
         <li>Directeur de la publication : {l.director}.</li>
         {l.phone && <li>Téléphone : {l.phone}.</li>}
         <li>
-          Contact : <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.
+          Contact : <EmailLink email={siteConfig.contactEmail} />.
         </li>
       </ul>
 

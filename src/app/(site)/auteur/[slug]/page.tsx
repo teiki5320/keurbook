@@ -216,7 +216,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
           {themes.length > 0 && (
             <div className="mt-8 flex flex-wrap gap-2">
               {themes.map((t) => (
-                <Link key={t} href={`/livres?theme=${t}`} className="tag">
+                <Link key={t} href={`/livres?theme=${t}`} prefetch={false} className="tag">
                   {THEMES[t]}
                 </Link>
               ))}
