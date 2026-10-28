@@ -1,103 +1,37 @@
 /**
- * ASIN Amazon.fr vérifiés à la main : le bouton « Acheter sur Amazon » mène directement au livre
+ * ASIN Amazon.fr vérifiés : le bouton « Voir sur Amazon » mène directement au livre
  * (https://www.amazon.fr/dp/<ASIN>) au lieu d'une recherche. Pour un livre papier, l'ASIN est l'ISBN-10
- * de l'édition conseillée (celui de la fiche) : chaque adresse a été ouverte et contrôlée.
- * Vérifiés le 19 octobre 2026 : livres de la page « Top 10 » (le titre de chaque page Amazon a été comparé à la fiche).
- * Livre à ISBN 979… (sans ISBN-10) : l'ASIN Amazon (B0…) de la page dont l'ISBN-13 est celui de la fiche.
- * ISBN absent ou page introuvable : le bouton garde une recherche Amazon.
- * 24 octobre 2026 : L'Empire peul du Macina (2723606260) retiré, indisponible sur Amazon.fr sans autre édition
- * achetable (livre épuisé) ; son bouton revient à la recherche Amazon. Le remettre s'il redevient achetable.
+ * de l'édition de la fiche ; livre à ISBN 979… (sans ISBN-10) : l'ASIN Amazon (B0…) de la page dont l'ISBN-13
+ * est celui de la fiche. ISBN absent, page introuvable ou livre seulement d'occasion : le bouton garde une
+ * recherche Amazon (jamais d'ASIN deviné).
+ *
+ * Les données sont dans amazon-asins.json :
+ * - « actifs » : slug → { asin, verifie_le } ; chaque page Amazon a été ouverte : titre et ISBN-13 comparés
+ *   à la fiche, bouton « Ajouter au panier » présent. 19 octobre 2026 : livres des pages Top 10 ;
+ *   28 octobre 2026 : fiches qui reçoivent des visites (docs/referencement.md), puis le reste du catalogue.
+ * - « indisponibles » : ASIN retirés car plus achetables (le bouton revient à la recherche). Exemple :
+ *   L'Empire peul du Macina (24 octobre 2026), épuisé sans autre édition achetable : à laisser sans lien direct.
+ *
+ * Vérification de la disponibilité, sur le Mac (pas sur GitHub) : `npm run verifier-produits`
+ * (voir scripts/verifier-produits.mjs) met à jour verifie_le ou passe le livre en « indisponibles ».
  */
-export const AMAZON_ASINS: Record<string, string> = {
-  "l-enfant-noir": "2266178946",
-  "le-monde-s-effondre": "2708701916",
-  "une-vie-de-boy": "2266169289",
-  "l-aventure-ambigue": "2264036931",
-  "les-soleils-des-independances": "2020259214",
-  "une-si-longue-lettre": "2842612892",
-  "verre-casse": "2757864505",
-  "notre-dame-du-nil": "2070456315",
-  "petit-pays": "2253070440",
-  "la-plus-secrete-memoire-des-hommes": "2253937711",
-  "akissi": "2070628027",
-  "allah-n-est-pas-oblige": "2020525712",
-  "anguille-sous-roche": "2370550945",
-  "asseze-l-africaine": "2290042927",
-  "aya-de-yopougon": "2070669343",
-  "camarade-papa": "2253259586",
-  "commissaire-kouame-un-si-joli-jardin": "2075076928",
-  "congo-inc": "233005887X",
-  "critique-de-la-raison-negre": "2707187933",
-  "cycles-sombres": "2876930021",
-  "frere-d-ame": "2757875965",
-  "ishindenshin": "2897125160",
-  "jacaranda": "2253252034",
-  "je-remercie-la-nuit": "2897129840",
-  "kaidara": "2364371414",
-  "l-autre-moitie-du-soleil": "2072722470",
-  "l-etrange-destin-de-wangrin": "2264017589",
-  "l-interieur-de-la-nuit": "2266162683",
-  "l-ombre-d-imana": "2742754776",
-  "la-belle-histoire-de-leuk-le-lievre": "2841298329",
-  "la-diablesse-et-son-enfant": "2211208207",
-  "la-greve-des-battu": "2842612507",
-  "la-legende-de-l-errance": "2738435599",
-  "la-nuit-au-coeur": "2073080022",
-  "la-saison-de-l-ombre": "2266248774",
-  "la-vie-et-demie": "2757894471",
-  "le-devoir-de-violence": "2021341771",
-  "le-feu-des-origines": "2330103212",
-  "le-maitre-de-la-parole": "2266008986",
-  "le-pagne-noir": "2708700251",
-  "le-pauvre-christ-de-bomba": "2708705687",
-  "le-reve-du-pecheur": "2073096107",
-  "le-roi-de-kahel": "2757814613",
-  "le-tambour-des-larmes": "9973581156",
-  "le-taxi-brousse-de-papa-diop": "2748517431",
-  "le-ventre-de-l-atlantique": "225310907X",
-  "les-bouts-de-bois-de-dieu": "2266245813",
-  "les-contes-d-amadou-koumba": "2708701673",
-  "les-dogues-noirs-de-l-empire-la-force-noire": "2343133255",
-  "les-honneurs-perdus": "2290049743",
-  "les-impatientes": "2290252948",
-  "les-maquisards": "2073133916",
-  "leurres-et-lueurs": "2708706195",
-  "ma-soeur-etoile": "2021005887",
-  "madame-livingstone": "2723497194",
-  "main-basse-sur-le-cameroun": "2707159360",
-  "malamine": "2354190220",
-  "memoires-de-porc-epic": "2757805193",
-  "mission-terminee": "2864410117",
-  "nations-negres-et-culture": "2708706888",
-  "no-home": "270215963X",
-  "petit-bodiel-et-autres-contes-de-la-savane": "2266157884",
-  "pourquoi-le-lion-n-est-plus-le-roi-des-animaux": "2070596710",
-  "presque-songes": "2493036301",
-  "reine-pokou": "2742753974",
-  "restituer-le-patrimoine-africain": "2848767251",
-  "silence-du-choeur": "2708709828",
-  "soundjata-ou-l-epopee-mandingue": "2708700782",
-  "sur-les-berges-du-chari-district-nord-de-la-beaute": "2362291030",
-  "tempete-sur-bangui": "2849532258",
-  "temps-de-chien": "2842614194",
-  "tous-tes-enfants-disperses": "2290225258",
-  "tram-83": "2864249596",
-  "trois-femmes-puissantes": "2070440494",
-  "tropique-de-la-violence": "2072764572",
-  "un-long-chemin-vers-la-liberte": "2253140635",
-  "un-ocean-deux-mers-trois-continents": "2330130783",
-  "yacouba-chasseur-africain": "2070630153",
-  // Vérifiés le 19 octobre 2026 (2e série : liens qui ouvraient une recherche, nouvel onglet « Pour ados »).
-  "solo-d-un-revenant": "2020971933",
-  "eve-de-ses-decombres": "2070776182",
-  "petit-pays-bd": "B0CQFCCGLH",
-  "la-vie-de-pahe": "2888901331",
-  "rwanda-1994": "222615809X",
-  "ethiopiques": "2020037955",
-  "laterite": "B0CJBFMD47",
-  "afropean-soul": "2080425900",
-  "nelson-mandela-non-a-l-apartheid": "2330032412",
-  "le-pays-de-reve": "2700281349",
-  "un-enfant-d-afrique": "2708706454",
-  "aigre-doux": "2330124317",
-};
+import donnees from "./amazon-asins.json";
+
+interface AsinVerifie {
+  asin: string;
+  verifie_le: string;
+}
+
+export const AMAZON_ASINS: Record<string, string> = Object.fromEntries(
+  Object.entries(donnees.actifs as Record<string, AsinVerifie>).map(([slug, v]) => [slug, v.asin]),
+);
+
+/** Date de la dernière vérification de chaque ASIN (AAAA-MM-JJ). */
+export const AMAZON_ASINS_VERIFIES_LE: Record<string, string> = Object.fromEntries(
+  Object.entries(donnees.actifs as Record<string, AsinVerifie>).map(([slug, v]) => [slug, v.verifie_le]),
+);
+
+/** ASIN retirés car plus achetables neufs : slug → date du constat (AAAA-MM-JJ). */
+export const AMAZON_INDISPONIBLES: Record<string, string> = Object.fromEntries(
+  Object.entries(donnees.indisponibles as Record<string, { constate_le: string }>).map(([slug, v]) => [slug, v.constate_le]),
+);

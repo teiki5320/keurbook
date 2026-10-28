@@ -16,7 +16,7 @@ publications réelles, ou routine qui publie).
 
 - [fait] **Aujourd'hui** : affiliation Amazon Partenaires (tag `keurbookfr-21`, nouveau compte depuis le 18 octobre) ; le site ne vend rien.
 - [en cours] **Validation AdSense** : refusée le 21 octobre (contenu jugé trop mince), fiches rallongées, nouvel examen demandé le 22 octobre, « En préparation » dans la console AdSense (vérifié le 28 octobre 2026) ; aucune annonce d'ici là.
-- **Liens Amazon directs** : 90 livres des Top 10 mènent déjà à leur fiche Amazon ; étendre ces ASIN vérifiés aux autres, qui gardent une recherche.
+- **Liens Amazon directs** : 433 livres et BD sur 796 mènent à leur fiche Amazon (28 octobre 2026) ; les autres (sans ISBN, ou seulement d'occasion) gardent une recherche.
 - **Partenariats** : mises en avant payées par des éditeurs ou libraires, une fois l'audience mesurée.
 
 ## Points forts
@@ -50,7 +50,7 @@ publications réelles, ou routine qui publie).
 
 - **Pages indexées par Google** : 680 sur 980 (Search Console, onglet Indexation du Studio, 28 octobre 2026 ; 679 sur 975 le 27 octobre, 673 sur 971 le 20 octobre)
 - **Pages pas encore indexées** : 300 (28 octobre 2026), dont 182 inconnues de Google (parmi elles la page Actus et les 4 articles d'actus) et 118 détectées non explorées
-- **Liens Amazon directs** : 90 livres et BD sur 796 (ASIN vérifiés le 19 octobre 2026 ; 91 jusqu'au 24 octobre, L'Empire peul du Macina étant devenu indisponible)
+- **Liens Amazon directs** : 433 livres et BD sur 796 (28 octobre 2026 ; 90 le 19 octobre, 91 jusqu'au 24 octobre). Fiches qui reçoivent des visites : 38 sur 81 en lien direct (17 avant)
 - **Articles Conseils** : 41 publiés, 20 programmés (28 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
@@ -61,7 +61,8 @@ publications réelles, ou routine qui publie).
 - Faire indexer par Google les 300 pages qui ne le sont pas encore (BD, pages auteurs, livres,
   pays et pages de liste) : renforcer les liens internes vers elles et suivre leur
   évolution dans l'onglet Indexation du Studio.
-- Étendre les liens Amazon directs (ASIN vérifiés) au-delà des 90 livres des Top 10, en commençant
-  par les livres les plus vus dans Cloudflare Web Analytics.
+- Garder les liens Amazon directs justes : lancer `npm run verifier-produits -- --ecrire --lot 30`
+  régulièrement sur le Mac ; pour les classiques retirés (seulement d'occasion dans l'édition de la fiche),
+  chercher une édition neuve et mettre la fiche à jour.
 - Ouvrir un premier canal social pour Keurbook — un compte Pinterest Keurbook pour les couvertures
   et les portraits d'auteurs, comme Keur Cook et Keur Déco — et le brancher au Planning du Studio.

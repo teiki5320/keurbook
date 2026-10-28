@@ -9,7 +9,7 @@ import { describe, it } from "node:test";
 import { ageFromSheet } from "../src/lib/book-utils";
 import { COUNTRIES } from "../src/lib/countries";
 import { allAuthors, allBooks } from "../src/lib/demo";
-import { AMAZON_ASINS } from "../src/lib/demo/amazon-asins";
+import { AMAZON_ASINS, AMAZON_INDISPONIBLES } from "../src/lib/demo/amazon-asins";
 import { TOP10S } from "../src/lib/top10/sujets";
 
 const published = new Map(allBooks.filter((b) => b.isPublished).map((b) => [b.slug, b]));
@@ -112,8 +112,14 @@ describe("Doublons entre onglets", () => {
         assert.ok(common.length <= 2, `${ta.slug} / ${tb.slug} : ${common.join(", ")}`);
       }
   });
-  it("le n° 1 de chaque onglet a un lien Amazon direct", () => {
-    for (const t of TOP10S) assert.ok(published.get(t.items[0].slug)?.amazonAsin, `${t.slug} : n° 1 sans ASIN`);
+  it("le n° 1 de chaque onglet a un lien Amazon direct (sauf si sa vérification l'a trouvé plus vendu neuf)", () => {
+    // Exception datée : un ASIN passé en « indisponibles » par npm run verifier-produits (édition de la fiche
+    // seulement d'occasion) ; le bouton mène alors à la recherche, en attendant une édition neuve vérifiée.
+    for (const t of TOP10S) {
+      const slug = t.items[0].slug;
+      if (AMAZON_INDISPONIBLES[slug]) continue;
+      assert.ok(published.get(slug)?.amazonAsin, `${t.slug} : n° 1 sans ASIN`);
+    }
   });
 });
 

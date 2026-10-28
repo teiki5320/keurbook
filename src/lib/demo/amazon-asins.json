@@ -1,0 +1,1823 @@
+{
+  "actifs": {
+    "l-enfant-noir": {
+      "asin": "2266178946",
+      "verifie_le": "2026-10-28"
+    },
+    "une-vie-de-boy": {
+      "asin": "2266169289",
+      "verifie_le": "2026-10-28"
+    },
+    "l-aventure-ambigue": {
+      "asin": "2264036931",
+      "verifie_le": "2026-10-28"
+    },
+    "les-soleils-des-independances": {
+      "asin": "2020259214",
+      "verifie_le": "2026-10-28"
+    },
+    "verre-casse": {
+      "asin": "2757864505",
+      "verifie_le": "2026-10-28"
+    },
+    "notre-dame-du-nil": {
+      "asin": "2070456315",
+      "verifie_le": "2026-10-28"
+    },
+    "petit-pays": {
+      "asin": "2253070440",
+      "verifie_le": "2026-10-28"
+    },
+    "la-plus-secrete-memoire-des-hommes": {
+      "asin": "2253937711",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi": {
+      "asin": "2070628027",
+      "verifie_le": "2026-10-28"
+    },
+    "anguille-sous-roche": {
+      "asin": "2370550945",
+      "verifie_le": "2026-10-28"
+    },
+    "camarade-papa": {
+      "asin": "2253259586",
+      "verifie_le": "2026-10-28"
+    },
+    "commissaire-kouame-un-si-joli-jardin": {
+      "asin": "2075076928",
+      "verifie_le": "2026-10-28"
+    },
+    "congo-inc": {
+      "asin": "233005887X",
+      "verifie_le": "2026-10-28"
+    },
+    "critique-de-la-raison-negre": {
+      "asin": "2707187933",
+      "verifie_le": "2026-10-28"
+    },
+    "frere-d-ame": {
+      "asin": "2757875965",
+      "verifie_le": "2026-10-28"
+    },
+    "ishindenshin": {
+      "asin": "2897125160",
+      "verifie_le": "2026-10-28"
+    },
+    "jacaranda": {
+      "asin": "2253252034",
+      "verifie_le": "2026-10-28"
+    },
+    "je-remercie-la-nuit": {
+      "asin": "2897129840",
+      "verifie_le": "2026-10-28"
+    },
+    "kaidara": {
+      "asin": "2364371414",
+      "verifie_le": "2026-10-28"
+    },
+    "l-autre-moitie-du-soleil": {
+      "asin": "2072722470",
+      "verifie_le": "2026-10-28"
+    },
+    "l-etrange-destin-de-wangrin": {
+      "asin": "2264017589",
+      "verifie_le": "2026-10-28"
+    },
+    "l-ombre-d-imana": {
+      "asin": "2742754776",
+      "verifie_le": "2026-10-28"
+    },
+    "la-belle-histoire-de-leuk-le-lievre": {
+      "asin": "2841298329",
+      "verifie_le": "2026-10-28"
+    },
+    "la-diablesse-et-son-enfant": {
+      "asin": "2211208207",
+      "verifie_le": "2026-10-28"
+    },
+    "la-legende-de-l-errance": {
+      "asin": "2738435599",
+      "verifie_le": "2026-10-28"
+    },
+    "la-nuit-au-coeur": {
+      "asin": "2073080022",
+      "verifie_le": "2026-10-28"
+    },
+    "la-saison-de-l-ombre": {
+      "asin": "2266248774",
+      "verifie_le": "2026-10-28"
+    },
+    "la-vie-et-demie": {
+      "asin": "2757894471",
+      "verifie_le": "2026-10-28"
+    },
+    "le-devoir-de-violence": {
+      "asin": "2021341771",
+      "verifie_le": "2026-10-28"
+    },
+    "le-feu-des-origines": {
+      "asin": "2330103212",
+      "verifie_le": "2026-10-28"
+    },
+    "le-pagne-noir": {
+      "asin": "2708700251",
+      "verifie_le": "2026-10-28"
+    },
+    "le-pauvre-christ-de-bomba": {
+      "asin": "2708705687",
+      "verifie_le": "2026-10-28"
+    },
+    "le-reve-du-pecheur": {
+      "asin": "2073096107",
+      "verifie_le": "2026-10-28"
+    },
+    "le-roi-de-kahel": {
+      "asin": "2757814613",
+      "verifie_le": "2026-10-28"
+    },
+    "le-tambour-des-larmes": {
+      "asin": "9973581156",
+      "verifie_le": "2026-10-28"
+    },
+    "le-ventre-de-l-atlantique": {
+      "asin": "225310907X",
+      "verifie_le": "2026-10-28"
+    },
+    "les-bouts-de-bois-de-dieu": {
+      "asin": "2266245813",
+      "verifie_le": "2026-10-28"
+    },
+    "les-contes-d-amadou-koumba": {
+      "asin": "2708701673",
+      "verifie_le": "2026-10-28"
+    },
+    "les-dogues-noirs-de-l-empire-la-force-noire": {
+      "asin": "2343133255",
+      "verifie_le": "2026-10-28"
+    },
+    "les-impatientes": {
+      "asin": "2290252948",
+      "verifie_le": "2026-10-28"
+    },
+    "les-maquisards": {
+      "asin": "2073133916",
+      "verifie_le": "2026-10-28"
+    },
+    "leurres-et-lueurs": {
+      "asin": "2708706195",
+      "verifie_le": "2026-10-28"
+    },
+    "ma-soeur-etoile": {
+      "asin": "2021005887",
+      "verifie_le": "2026-10-28"
+    },
+    "madame-livingstone": {
+      "asin": "2723497194",
+      "verifie_le": "2026-10-28"
+    },
+    "main-basse-sur-le-cameroun": {
+      "asin": "2707159360",
+      "verifie_le": "2026-10-28"
+    },
+    "nations-negres-et-culture": {
+      "asin": "2708706888",
+      "verifie_le": "2026-10-28"
+    },
+    "no-home": {
+      "asin": "270215963X",
+      "verifie_le": "2026-10-28"
+    },
+    "petit-bodiel-et-autres-contes-de-la-savane": {
+      "asin": "2266157884",
+      "verifie_le": "2026-10-28"
+    },
+    "presque-songes": {
+      "asin": "2493036301",
+      "verifie_le": "2026-10-28"
+    },
+    "reine-pokou": {
+      "asin": "2742753974",
+      "verifie_le": "2026-10-28"
+    },
+    "restituer-le-patrimoine-africain": {
+      "asin": "2848767251",
+      "verifie_le": "2026-10-28"
+    },
+    "soundjata-ou-l-epopee-mandingue": {
+      "asin": "2708700782",
+      "verifie_le": "2026-10-28"
+    },
+    "sur-les-berges-du-chari-district-nord-de-la-beaute": {
+      "asin": "2362291030",
+      "verifie_le": "2026-10-28"
+    },
+    "tempete-sur-bangui": {
+      "asin": "2849532258",
+      "verifie_le": "2026-10-28"
+    },
+    "temps-de-chien": {
+      "asin": "2842614194",
+      "verifie_le": "2026-10-19"
+    },
+    "tous-tes-enfants-disperses": {
+      "asin": "2290225258",
+      "verifie_le": "2026-10-19"
+    },
+    "tram-83": {
+      "asin": "2864249596",
+      "verifie_le": "2026-10-19"
+    },
+    "trois-femmes-puissantes": {
+      "asin": "2070440494",
+      "verifie_le": "2026-10-19"
+    },
+    "tropique-de-la-violence": {
+      "asin": "2072764572",
+      "verifie_le": "2026-10-19"
+    },
+    "un-long-chemin-vers-la-liberte": {
+      "asin": "2253140635",
+      "verifie_le": "2026-10-19"
+    },
+    "un-ocean-deux-mers-trois-continents": {
+      "asin": "2330130783",
+      "verifie_le": "2026-10-19"
+    },
+    "yacouba-chasseur-africain": {
+      "asin": "2070630153",
+      "verifie_le": "2026-10-19"
+    },
+    "solo-d-un-revenant": {
+      "asin": "2020971933",
+      "verifie_le": "2026-10-19"
+    },
+    "eve-de-ses-decombres": {
+      "asin": "2070776182",
+      "verifie_le": "2026-10-19"
+    },
+    "petit-pays-bd": {
+      "asin": "B0CQFCCGLH",
+      "verifie_le": "2026-10-19"
+    },
+    "la-vie-de-pahe": {
+      "asin": "2888901331",
+      "verifie_le": "2026-10-19"
+    },
+    "rwanda-1994": {
+      "asin": "222615809X",
+      "verifie_le": "2026-10-19"
+    },
+    "ethiopiques": {
+      "asin": "2020037955",
+      "verifie_le": "2026-10-19"
+    },
+    "laterite": {
+      "asin": "B0CJBFMD47",
+      "verifie_le": "2026-10-19"
+    },
+    "afropean-soul": {
+      "asin": "2080425900",
+      "verifie_le": "2026-10-19"
+    },
+    "nelson-mandela-non-a-l-apartheid": {
+      "asin": "2330032412",
+      "verifie_le": "2026-10-19"
+    },
+    "le-pays-de-reve": {
+      "asin": "2700281349",
+      "verifie_le": "2026-10-19"
+    },
+    "un-enfant-d-afrique": {
+      "asin": "2708706454",
+      "verifie_le": "2026-10-19"
+    },
+    "aigre-doux": {
+      "asin": "2330124317",
+      "verifie_le": "2026-10-19"
+    },
+    "et-dieu-seul-sait-comment-je-dors": {
+      "asin": "2708707191",
+      "verifie_le": "2026-10-28"
+    },
+    "une-enfant-de-poto-poto": {
+      "asin": "2070136086",
+      "verifie_le": "2026-10-28"
+    },
+    "un-piege-sans-fin": {
+      "asin": "2708704559",
+      "verifie_le": "2026-10-28"
+    },
+    "les-ecailles-du-ciel": {
+      "asin": "2020314487",
+      "verifie_le": "2026-10-28"
+    },
+    "cendres-et-braises": {
+      "asin": "2738421377",
+      "verifie_le": "2026-10-28"
+    },
+    "l-appel-des-arenes": {
+      "asin": "2753107866",
+      "verifie_le": "2026-10-28"
+    },
+    "oui-mon-commandant": {
+      "asin": "2742708634",
+      "verifie_le": "2026-10-28"
+    },
+    "riwan-ou-le-chemin-de-sable": {
+      "asin": "2708707302",
+      "verifie_le": "2026-10-28"
+    },
+    "la-fabrique-du-present": {
+      "asin": "2384823000",
+      "verifie_le": "2026-10-28"
+    },
+    "les-crapauds-brousse": {
+      "asin": "2757816691",
+      "verifie_le": "2026-10-28"
+    },
+    "la-folie-et-la-mort": {
+      "asin": "2708707175",
+      "verifie_le": "2026-10-28"
+    },
+    "au-coeur-de-ce-pays": {
+      "asin": "2757807188",
+      "verifie_le": "2026-10-28"
+    },
+    "de-l-autre-cote-du-regard": {
+      "asin": "2842614801",
+      "verifie_le": "2026-10-28"
+    },
+    "debout-paye": {
+      "asin": "2253185558",
+      "verifie_le": "2026-10-28"
+    },
+    "en-attendant-le-vote-des-betes-sauvages": {
+      "asin": "2757877100",
+      "verifie_le": "2026-10-28"
+    },
+    "la-cheffe-roman-d-une-cuisiniere": {
+      "asin": "2072763630",
+      "verifie_le": "2026-10-28"
+    },
+    "lettre-a-la-france-negre": {
+      "asin": "2842613953",
+      "verifie_le": "2026-10-28"
+    },
+    "habiter-le-monde": {
+      "asin": "2897125195",
+      "verifie_le": "2026-10-28"
+    },
+    "hilda": {
+      "asin": "270731661X",
+      "verifie_le": "2026-10-28"
+    },
+    "ketala": {
+      "asin": "2290001546",
+      "verifie_le": "2026-10-28"
+    },
+    "le-chercheur-d-afriques": {
+      "asin": "2020849607",
+      "verifie_le": "2026-10-28"
+    },
+    "rien-ne-t-appartient": {
+      "asin": "207300301X",
+      "verifie_le": "2026-10-28"
+    },
+    "les-cauchemars-du-gecko": {
+      "asin": "2911412796",
+      "verifie_le": "2026-10-28"
+    },
+    "le-clan-des-femmes": {
+      "asin": "2296128475",
+      "verifie_le": "2026-10-28"
+    },
+    "vie-et-enseignement-de-tierno-bokar": {
+      "asin": "2757841955",
+      "verifie_le": "2026-10-28"
+    },
+    "murambi-le-livre-des-ossements": {
+      "asin": "2843049660",
+      "verifie_le": "2026-10-28"
+    },
+    "le-baobab-fou": {
+      "asin": "2708708031",
+      "verifie_le": "2026-10-28"
+    },
+    "afrotopia": {
+      "asin": "284876502X",
+      "verifie_le": "2026-10-28"
+    },
+    "amkoullel-l-enfant-peul": {
+      "asin": "2868699065",
+      "verifie_le": "2026-10-28"
+    },
+    "place-des-fetes": {
+      "asin": "2070760111",
+      "verifie_le": "2026-10-28"
+    },
+    "johnny-chien-mechant": {
+      "asin": "2330079192",
+      "verifie_le": "2026-10-28"
+    },
+    "nour-1947": {
+      "asin": "2842614038",
+      "verifie_le": "2026-10-28"
+    },
+    "rever-en-temps-de-guerre": {
+      "asin": "2493036786",
+      "verifie_le": "2026-10-28"
+    },
+    "ake-les-annees-d-enfance": {
+      "asin": "2757899562",
+      "verifie_le": "2026-10-28"
+    },
+    "paradis": {
+      "asin": "2073017290",
+      "verifie_le": "2026-10-28"
+    },
+    "pres-de-la-mer": {
+      "asin": "2073059325",
+      "verifie_le": "2026-10-28"
+    },
+    "le-bal-des-princes": {
+      "asin": "2742771891",
+      "verifie_le": "2026-10-28"
+    },
+    "confidences": {
+      "asin": "2889278336",
+      "verifie_le": "2026-10-28"
+    },
+    "la-memoire-amputee": {
+      "asin": "2493324013",
+      "verifie_le": "2026-10-28"
+    },
+    "vehi-ciosane-suivi-du-mandat": {
+      "asin": "2708701703",
+      "verifie_le": "2026-10-28"
+    },
+    "le-dernier-de-l-empire": {
+      "asin": "2858021694",
+      "verifie_le": "2026-10-28"
+    },
+    "anthologie-de-la-nouvelle-poesie-negre-et-malgache": {
+      "asin": "2130653057",
+      "verifie_le": "2026-10-28"
+    },
+    "ce-que-je-crois": {
+      "asin": "2246840295",
+      "verifie_le": "2026-10-28"
+    },
+    "oeuvre-poetique": {
+      "asin": "2757884077",
+      "verifie_le": "2026-10-28"
+    },
+    "de-purs-hommes": {
+      "asin": "2253240915",
+      "verifie_le": "2026-10-28"
+    },
+    "la-preference-nationale": {
+      "asin": "2708707221",
+      "verifie_le": "2026-10-28"
+    },
+    "inassouvies-nos-vies": {
+      "asin": "2290017728",
+      "verifie_le": "2026-10-28"
+    },
+    "celles-qui-attendent": {
+      "asin": "2290031984",
+      "verifie_le": "2026-10-28"
+    },
+    "impossible-de-grandir": {
+      "asin": "2290093521",
+      "verifie_le": "2026-10-28"
+    },
+    "marianne-porte-plainte": {
+      "asin": "2081408465",
+      "verifie_le": "2026-10-28"
+    },
+    "les-veilleurs-de-sangomar": {
+      "asin": "2253242179",
+      "verifie_le": "2026-10-28"
+    },
+    "de-quoi-aimer-vivre": {
+      "asin": "2253106720",
+      "verifie_le": "2026-10-28"
+    },
+    "marianne-face-aux-faussaires": {
+      "asin": "2226472487",
+      "verifie_le": "2026-10-28"
+    },
+    "le-verbe-libre-ou-le-silence": {
+      "asin": "222648387X",
+      "verifie_le": "2026-10-28"
+    },
+    "aucune-nuit-ne-sera-noire": {
+      "asin": "2226504389",
+      "verifie_le": "2026-10-28"
+    },
+    "le-temps-de-tamango": {
+      "asin": "2858021856",
+      "verifie_le": "2026-10-28"
+    },
+    "les-tambours-de-la-memoire": {
+      "asin": "2738409121",
+      "verifie_le": "2026-10-28"
+    },
+    "les-traces-de-la-meute": {
+      "asin": "2738422780",
+      "verifie_le": "2026-10-28"
+    },
+    "negrophobie": {
+      "asin": "2912485819",
+      "verifie_le": "2026-10-28"
+    },
+    "les-petits-de-la-guenon": {
+      "asin": "2384820737",
+      "verifie_le": "2026-10-28"
+    },
+    "l-ex-pere-de-la-nation": {
+      "asin": "2858028753",
+      "verifie_le": "2026-10-28"
+    },
+    "1889-l-attraction-universelle": {
+      "asin": "2296962106",
+      "verifie_le": "2026-10-28"
+    },
+    "la-porte-du-voyage-sans-retour": {
+      "asin": "2757896490",
+      "verifie_le": "2026-10-28"
+    },
+    "ou-s-adosse-le-ciel": {
+      "asin": "2260057306",
+      "verifie_le": "2026-10-28"
+    },
+    "les-nouveaux-contes-d-amadou-koumba": {
+      "asin": "2708700537",
+      "verifie_le": "2026-10-28"
+    },
+    "a-rebrousse-temps": {
+      "asin": "2708703994",
+      "verifie_le": "2026-10-28"
+    },
+    "a-rebrousse-gens": {
+      "asin": "2708704443",
+      "verifie_le": "2026-10-28"
+    },
+    "rue-felix-faure": {
+      "asin": "2359260960",
+      "verifie_le": "2026-10-28"
+    },
+    "dahij": {
+      "asin": "2070122670",
+      "verifie_le": "2026-10-28"
+    },
+    "105-rue-carnot": {
+      "asin": "2897129875",
+      "verifie_le": "2026-10-28"
+    },
+    "la-saveur-des-derniers-metres": {
+      "asin": "2848768541",
+      "verifie_le": "2026-10-28"
+    },
+    "traces": {
+      "asin": "2330147937",
+      "verifie_le": "2026-10-28"
+    },
+    "le-bouddhisme-est-ne-a-colobane": {
+      "asin": "2384820818",
+      "verifie_le": "2026-10-28"
+    },
+    "la-femme-changee-en-buche": {
+      "asin": "2707312851",
+      "verifie_le": "2026-10-28"
+    },
+    "en-famille": {
+      "asin": "2707320021",
+      "verifie_le": "2026-10-28"
+    },
+    "un-temps-de-saison": {
+      "asin": "2073116957",
+      "verifie_le": "2026-10-28"
+    },
+    "la-sorciere": {
+      "asin": "2073045189",
+      "verifie_le": "2026-10-28"
+    },
+    "rosie-carpe": {
+      "asin": "2707320978",
+      "verifie_le": "2026-10-28"
+    },
+    "papa-doit-manger": {
+      "asin": "2707317985",
+      "verifie_le": "2026-10-28"
+    },
+    "tous-mes-amis": {
+      "asin": "2707318590",
+      "verifie_le": "2026-10-28"
+    },
+    "les-serpents": {
+      "asin": "2707318566",
+      "verifie_le": "2026-10-28"
+    },
+    "rien-d-humain": {
+      "asin": "2846810958",
+      "verifie_le": "2026-10-28"
+    },
+    "autoportrait-en-vert": {
+      "asin": "2070337545",
+      "verifie_le": "2026-10-28"
+    },
+    "le-souhait": {
+      "asin": "2211079628",
+      "verifie_le": "2026-10-28"
+    },
+    "mon-coeur-a-l-etroit": {
+      "asin": "2070357457",
+      "verifie_le": "2026-10-28"
+    },
+    "les-grandes-personnes": {
+      "asin": "2070131939",
+      "verifie_le": "2026-10-28"
+    },
+    "ladivine": {
+      "asin": "2070459381",
+      "verifie_le": "2026-10-28"
+    },
+    "trois-pieces": {
+      "asin": "2072841895",
+      "verifie_le": "2026-10-28"
+    },
+    "un-pas-de-chat-sauvage": {
+      "asin": "2081485125",
+      "verifie_le": "2026-10-28"
+    },
+    "royan-la-professeure-de-francais": {
+      "asin": "2072926955",
+      "verifie_le": "2026-10-28"
+    },
+    "la-vengeance-m-appartient": {
+      "asin": "2072977223",
+      "verifie_le": "2026-10-28"
+    },
+    "le-bon-denis": {
+      "asin": "2715266227",
+      "verifie_le": "2026-10-28"
+    },
+    "ma-cherie": {
+      "asin": "2379414483",
+      "verifie_le": "2026-10-28"
+    },
+    "les-fondements-economiques-et-culturels-d-un-etat-federal-d-afrique-noire": {
+      "asin": "2708705350",
+      "verifie_le": "2026-10-28"
+    },
+    "anteriorite-des-civilisations-negres": {
+      "asin": "2708705628",
+      "verifie_le": "2026-10-28"
+    },
+    "civilisation-ou-barbarie": {
+      "asin": "2708703943",
+      "verifie_le": "2026-10-28"
+    },
+    "alerte-sous-les-tropiques": {
+      "asin": "2708705482",
+      "verifie_le": "2026-10-28"
+    },
+    "aspects-de-la-civilisation-africaine": {
+      "asin": "2708706012",
+      "verifie_le": "2026-10-28"
+    },
+    "jesus-vu-par-un-musulman": {
+      "asin": "2234044030",
+      "verifie_le": "2026-10-28"
+    },
+    "sur-les-traces-d-amkoullel-l-enfant-peul": {
+      "asin": "2742718796",
+      "verifie_le": "2026-10-28"
+    },
+    "il-n-y-a-pas-de-petite-querelle": {
+      "asin": "2266230735",
+      "verifie_le": "2026-10-28"
+    },
+    "l-aine-des-orphelins": {
+      "asin": "2020798344",
+      "verifie_le": "2026-10-28"
+    },
+    "les-coqs-cubains-chantent-a-minuit": {
+      "asin": "2757857282",
+      "verifie_le": "2026-10-28"
+    },
+    "bled": {
+      "asin": "2021088960",
+      "verifie_le": "2026-10-28"
+    },
+    "saharienne-indigo": {
+      "asin": "2021088979",
+      "verifie_le": "2026-10-28"
+    },
+    "monne-outrages-et-defis": {
+      "asin": "2020349647",
+      "verifie_le": "2026-10-28"
+    },
+    "le-diseur-de-verite": {
+      "asin": "2912525144",
+      "verifie_le": "2026-10-28"
+    },
+    "a-vol-d-oiseau": {
+      "asin": "2738416993",
+      "verifie_le": "2026-10-28"
+    },
+    "a-mi-chemin": {
+      "asin": "2738491545",
+      "verifie_le": "2026-10-28"
+    },
+    "loin-de-mon-pere": {
+      "asin": "2742791272",
+      "verifie_le": "2026-10-28"
+    },
+    "en-compagnie-des-hommes": {
+      "asin": "2359496395",
+      "verifie_le": "2026-10-28"
+    },
+    "leopold-sedar-senghor-le-poete-des-paroles-qui-durent": {
+      "asin": "2919372343",
+      "verifie_le": "2026-10-28"
+    },
+    "black-manoo": {
+      "asin": "2757889354",
+      "verifie_le": "2026-10-28"
+    },
+    "cocoaians-naissance-d-une-nation-chocolat": {
+      "asin": "2381980423",
+      "verifie_le": "2026-10-28"
+    },
+    "les-portes": {
+      "asin": "2493213750",
+      "verifie_le": "2026-10-28"
+    },
+    "et-le-ciel-a-oublie-de-pleuvoir": {
+      "asin": "2915258139",
+      "verifie_le": "2026-10-28"
+    },
+    "le-griot-de-l-emir": {
+      "asin": "9973580524",
+      "verifie_le": "2026-10-28"
+    },
+    "je-suis-seul": {
+      "asin": "997358113X",
+      "verifie_le": "2026-10-28"
+    },
+    "parias": {
+      "asin": "2848053860",
+      "verifie_le": "2026-10-28"
+    },
+    "l-initie": {
+      "asin": "2708707477",
+      "verifie_le": "2026-10-28"
+    },
+    "ainsi-parlait-mon-pere": {
+      "asin": "2709661829",
+      "verifie_le": "2026-10-28"
+    },
+    "les-fables-du-moineau": {
+      "asin": "2072857457",
+      "verifie_le": "2026-10-28"
+    },
+    "profaner-ananda": {
+      "asin": "2073104509",
+      "verifie_le": "2026-10-28"
+    },
+    "l-ombre-des-choses-a-venir": {
+      "asin": "2020990970",
+      "verifie_le": "2026-10-28"
+    },
+    "cantique-de-l-acacia": {
+      "asin": "202137713X",
+      "verifie_le": "2026-10-28"
+    },
+    "une-magie-ordinaire": {
+      "asin": "2021524108",
+      "verifie_le": "2026-10-28"
+    },
+    "dictionnaire-de-la-negritude": {
+      "asin": "2738404944",
+      "verifie_le": "2026-10-28"
+    },
+    "la-france-contre-l-afrique": {
+      "asin": "2707149780",
+      "verifie_le": "2026-10-28"
+    },
+    "les-arbres-en-parlent-encore": {
+      "asin": "2253067768",
+      "verifie_le": "2026-10-28"
+    },
+    "femme-nue-femme-noire": {
+      "asin": "2253112690",
+      "verifie_le": "2026-10-28"
+    },
+    "le-christ-selon-l-afrique": {
+      "asin": "2226256016",
+      "verifie_le": "2026-10-28"
+    },
+    "contours-du-jour-qui-vient": {
+      "asin": "2266169084",
+      "verifie_le": "2026-10-28"
+    },
+    "soulfood-equatoriale": {
+      "asin": "2841113809",
+      "verifie_le": "2026-10-28"
+    },
+    "les-aubes-ecarlates": {
+      "asin": "2266200585",
+      "verifie_le": "2026-10-28"
+    },
+    "ecrits-pour-la-parole": {
+      "asin": "2381980571",
+      "verifie_le": "2026-10-28"
+    },
+    "red-in-blue-trilogie": {
+      "asin": "2851818651",
+      "verifie_le": "2026-10-28"
+    },
+    "rouge-imperatrice": {
+      "asin": "2266308106",
+      "verifie_le": "2026-10-28"
+    },
+    "ce-qu-il-faut-dire": {
+      "asin": "2851819704",
+      "verifie_le": "2026-10-28"
+    },
+    "afropea": {
+      "asin": "2818506557",
+      "verifie_le": "2026-10-28"
+    },
+    "l-autre-langue-des-femmes": {
+      "asin": "B0C1G1LR4H",
+      "verifie_le": "2026-10-28"
+    },
+    "stardust": {
+      "asin": "2266335294",
+      "verifie_le": "2026-10-28"
+    },
+    "fille-d-amanitore-et-que-mon-regne-arrive": {
+      "asin": "2381980504",
+      "verifie_le": "2026-10-28"
+    },
+    "les-aventures-de-la-foufoune": {
+      "asin": "2021569047",
+      "verifie_le": "2026-10-28"
+    },
+    "le-harem-du-roi": {
+      "asin": "2290415480",
+      "verifie_le": "2026-10-28"
+    },
+    "l-invention-du-beau-regard": {
+      "asin": "2070772713",
+      "verifie_le": "2026-10-28"
+    },
+    "manifeste-d-une-nouvelle-litterature-africaine": {
+      "asin": "2842877225",
+      "verifie_le": "2026-10-28"
+    },
+    "la-republique-de-l-imagination": {
+      "asin": "291141263X",
+      "verifie_le": "2026-10-28"
+    },
+    "les-jours-viennent-et-passent": {
+      "asin": "2073049370",
+      "verifie_le": "2026-10-28"
+    },
+    "39-rue-de-berne": {
+      "asin": "2889070654",
+      "verifie_le": "2026-10-28"
+    },
+    "loin-de-douala": {
+      "asin": "2889070646",
+      "verifie_le": "2026-10-28"
+    },
+    "la-promesse-de-sa-phall-excellence": {
+      "asin": "2889278220",
+      "verifie_le": "2026-10-28"
+    },
+    "la-danse-des-peres": {
+      "asin": "2889074641",
+      "verifie_le": "2026-10-28"
+    },
+    "de-la-postcolonie": {
+      "asin": "2348057506",
+      "verifie_le": "2026-10-28"
+    },
+    "sortir-de-la-grande-nuit": {
+      "asin": "2707176648",
+      "verifie_le": "2026-10-28"
+    },
+    "politiques-de-l-inimitie": {
+      "asin": "2348040824",
+      "verifie_le": "2026-10-28"
+    },
+    "brutalisme": {
+      "asin": "2348078058",
+      "verifie_le": "2026-10-28"
+    },
+    "pour-un-monde-en-commun": {
+      "asin": "2330162170",
+      "verifie_le": "2026-10-28"
+    },
+    "la-communaute-terrestre": {
+      "asin": "2348092751",
+      "verifie_le": "2026-10-28"
+    },
+    "elle-sera-de-jaspe-et-de-corail": {
+      "asin": "2858023298",
+      "verifie_le": "2026-10-28"
+    },
+    "le-ministre-et-le-griot": {
+      "asin": "2842801393",
+      "verifie_le": "2026-10-28"
+    },
+    "l-enfant-pluie": {
+      "asin": "2842801385",
+      "verifie_le": "2026-10-28"
+    },
+    "quand-le-coq-annoncera-l-aube-d-un-autre-jour": {
+      "asin": "2738482988",
+      "verifie_le": "2026-10-28"
+    },
+    "les-petits-fils-negres-de-vercingetorix": {
+      "asin": "2757800663",
+      "verifie_le": "2026-10-28"
+    },
+    "african-psycho": {
+      "asin": "2757865129",
+      "verifie_le": "2026-10-28"
+    },
+    "tant-que-les-arbres-s-enracineront-dans-la-terre": {
+      "asin": "2757866524",
+      "verifie_le": "2026-10-28"
+    },
+    "demain-j-aurai-vingt-ans": {
+      "asin": "2070446239",
+      "verifie_le": "2026-10-28"
+    },
+    "tais-toi-et-meurs": {
+      "asin": "2757897799",
+      "verifie_le": "2026-10-28"
+    },
+    "le-sanglot-de-l-homme-noir": {
+      "asin": "2757865110",
+      "verifie_le": "2026-10-28"
+    },
+    "lumieres-de-pointe-noire": {
+      "asin": "2757865072",
+      "verifie_le": "2026-10-28"
+    },
+    "petit-piment": {
+      "asin": "2757861883",
+      "verifie_le": "2026-10-28"
+    },
+    "lettres-noires": {
+      "asin": "2818505526",
+      "verifie_le": "2026-10-28"
+    },
+    "le-monde-est-mon-langage": {
+      "asin": "2757864130",
+      "verifie_le": "2026-10-28"
+    },
+    "les-cigognes-sont-immortelles": {
+      "asin": "2757875604",
+      "verifie_le": "2026-10-28"
+    },
+    "le-coq-solitaire": {
+      "asin": "B07R76N24Z",
+      "verifie_le": "2026-10-28"
+    },
+    "huit-lecons-sur-l-afrique": {
+      "asin": "2757887009",
+      "verifie_le": "2026-10-28"
+    },
+    "rumeurs-d-amerique": {
+      "asin": "2757889176",
+      "verifie_le": "2026-10-28"
+    },
+    "le-commerce-des-allonges": {
+      "asin": "2757899686",
+      "verifie_le": "2026-10-28"
+    },
+    "cette-femme-qui-nous-regarde": {
+      "asin": "2221253876",
+      "verifie_le": "2026-10-28"
+    },
+    "ramses-de-paris": {
+      "asin": "2021591859",
+      "verifie_le": "2026-10-28"
+    },
+    "l-ante-peuple": {
+      "asin": "2757816713",
+      "verifie_le": "2026-10-28"
+    },
+    "encre-sueur-salive-et-sang": {
+      "asin": "2021285928",
+      "verifie_le": "2026-10-28"
+    },
+    "poemes-sony-labou-tansi": {
+      "asin": "2271087430",
+      "verifie_le": "2026-10-28"
+    },
+    "photo-de-groupe-au-bord-du-fleuve": {
+      "asin": "2330012993",
+      "verifie_le": "2026-10-28"
+    },
+    "la-sonate-a-bridgetower": {
+      "asin": "2330118589",
+      "verifie_le": "2026-10-28"
+    },
+    "sur-l-autre-rive": {
+      "asin": "2020168731",
+      "verifie_le": "2026-10-28"
+    },
+    "dossier-classe": {
+      "asin": "2020326574",
+      "verifie_le": "2026-10-28"
+    },
+    "mathematiques-congolaises": {
+      "asin": "2742796835",
+      "verifie_le": "2026-10-28"
+    },
+    "la-belle-de-casa": {
+      "asin": "2330139136",
+      "verifie_le": "2026-10-28"
+    },
+    "nation-cannibale": {
+      "asin": "2207180247",
+      "verifie_le": "2026-10-28"
+    },
+    "fleur-de-beton": {
+      "asin": "233000589X",
+      "verifie_le": "2026-10-28"
+    },
+    "orage-sur-le-tanganyika": {
+      "asin": "2278078801",
+      "verifie_le": "2026-10-28"
+    },
+    "femme-du-ciel-et-des-tempetes": {
+      "asin": "2330181892",
+      "verifie_le": "2026-10-28"
+    },
+    "heliosphera-fille-des-abysses": {
+      "asin": "2330170637",
+      "verifie_le": "2026-10-28"
+    },
+    "la-reine-aux-yeux-de-lune": {
+      "asin": "2266342681",
+      "verifie_le": "2026-10-28"
+    },
+    "le-depart": {
+      "asin": "274275315X",
+      "verifie_le": "2026-10-28"
+    },
+    "leopold-sedar-senghor-poetes-d-aujourd-hui": {
+      "asin": "2232122751",
+      "verifie_le": "2026-10-28"
+    },
+    "la-nouvelle-chose-francaise": {
+      "asin": "2742771867",
+      "verifie_le": "2026-10-28"
+    },
+    "rosa-parks-non-a-la-discrimination-raciale": {
+      "asin": "2330032439",
+      "verifie_le": "2026-10-28"
+    },
+    "l-or-des-rivieres": {
+      "asin": "2742789588",
+      "verifie_le": "2026-10-28"
+    },
+    "un-balcon-sur-l-algerois": {
+      "asin": "2330018126",
+      "verifie_le": "2026-10-28"
+    },
+    "j-aurais-un-royaume-en-bois-flotte": {
+      "asin": "2072717175",
+      "verifie_le": "2026-10-28"
+    },
+    "l-enfant-n-est-pas-mort": {
+      "asin": "2362291421",
+      "verifie_le": "2026-10-28"
+    },
+    "gens-de-brume": {
+      "asin": "2330082282",
+      "verifie_le": "2026-10-28"
+    },
+    "petit-eloge-de-la-lumiere-nature": {
+      "asin": "2916447970",
+      "verifie_le": "2026-10-28"
+    },
+    "le-temps-liquide": {
+      "asin": "2072920566",
+      "verifie_le": "2026-10-28"
+    },
+    "inyenzi-ou-les-cafards": {
+      "asin": "2070457389",
+      "verifie_le": "2026-10-28"
+    },
+    "la-femme-aux-pieds-nus": {
+      "asin": "2070446662",
+      "verifie_le": "2026-10-28"
+    },
+    "l-iguifou": {
+      "asin": "2070466981",
+      "verifie_le": "2026-10-28"
+    },
+    "ce-que-murmurent-les-collines": {
+      "asin": "2070463087",
+      "verifie_le": "2026-10-28"
+    },
+    "coeur-tambour": {
+      "asin": "2072762537",
+      "verifie_le": "2026-10-28"
+    },
+    "kibogo-est-monte-au-ciel": {
+      "asin": "2072964172",
+      "verifie_le": "2026-10-28"
+    },
+    "sister-deborah": {
+      "asin": "2073045782",
+      "verifie_le": "2026-10-28"
+    },
+    "julienne": {
+      "asin": "2073133355",
+      "verifie_le": "2026-10-28"
+    },
+    "l-ennui-des-apres-midi-sans-fin": {
+      "asin": "B0FC1MYPYL",
+      "verifie_le": "2026-10-28"
+    },
+    "balbala": {
+      "asin": "207042121X",
+      "verifie_le": "2026-10-28"
+    },
+    "moisson-de-cranes": {
+      "asin": "2755508655",
+      "verifie_le": "2026-10-28"
+    },
+    "la-divine-chanson": {
+      "asin": "2843047323",
+      "verifie_le": "2026-10-28"
+    },
+    "pourquoi-tu-danses-quand-tu-marches": {
+      "asin": "2072894697",
+      "verifie_le": "2026-10-28"
+    },
+    "dictionnaire-enjoue-des-cultures-africaines": {
+      "asin": "281850631X",
+      "verifie_le": "2026-10-28"
+    },
+    "dis-moi-pour-qui-j-existe": {
+      "asin": "2709669447",
+      "verifie_le": "2026-10-28"
+    },
+    "notre-france-noire": {
+      "asin": "2213717044",
+      "verifie_le": "2026-10-28"
+    },
+    "pagli": {
+      "asin": "2070760219",
+      "verifie_le": "2026-10-28"
+    },
+    "le-sari-vert": {
+      "asin": "2070440346",
+      "verifie_le": "2026-10-28"
+    },
+    "quand-la-nuit-consent-a-me-parler": {
+      "asin": "2362290182",
+      "verifie_le": "2026-10-28"
+    },
+    "les-jours-vivants": {
+      "asin": "2070140415",
+      "verifie_le": "2026-10-28"
+    },
+    "ceux-du-large": {
+      "asin": "2362291480",
+      "verifie_le": "2026-10-28"
+    },
+    "danser-sur-tes-braises": {
+      "asin": "2362292754",
+      "verifie_le": "2026-10-28"
+    },
+    "le-rire-des-deesses": {
+      "asin": "225393870X",
+      "verifie_le": "2026-10-28"
+    },
+    "sylvia-p": {
+      "asin": "2362294293",
+      "verifie_le": "2026-10-28"
+    },
+    "le-jour-des-cameleons": {
+      "asin": "2253907677",
+      "verifie_le": "2026-10-28"
+    },
+    "la-nuit-s-ajoute-a-la-nuit": {
+      "asin": "2253252077",
+      "verifie_le": "2026-10-28"
+    },
+    "chronique-d-un-royaume-perdu": {
+      "asin": "2246846943",
+      "verifie_le": "2026-10-28"
+    },
+    "les-rochers-de-poudre-d-or": {
+      "asin": "2070321118",
+      "verifie_le": "2026-10-28"
+    },
+    "blue-bay-palace": {
+      "asin": "2070462323",
+      "verifie_le": "2026-10-28"
+    },
+    "la-noce-d-anna": {
+      "asin": "2070379949",
+      "verifie_le": "2026-10-28"
+    },
+    "en-attendant-demain": {
+      "asin": "2070792773",
+      "verifie_le": "2026-10-28"
+    },
+    "une-annee-lumiere": {
+      "asin": "207281989X",
+      "verifie_le": "2026-10-28"
+    },
+    "le-ciel-par-dessus-le-toit": {
+      "asin": "2072935849",
+      "verifie_le": "2026-10-28"
+    },
+    "la-memoire-delavee": {
+      "asin": "2073097995",
+      "verifie_le": "2026-10-28"
+    },
+    "traduit-de-la-nuit": {
+      "asin": "2842801253",
+      "verifie_le": "2026-10-28"
+    },
+    "l-arbre-anthropophage": {
+      "asin": "2070789497",
+      "verifie_le": "2026-10-28"
+    },
+    "portraits-d-insurges": {
+      "asin": "2911412885",
+      "verifie_le": "2026-10-28"
+    },
+    "revenir": {
+      "asin": "2743671173",
+      "verifie_le": "2026-10-28"
+    },
+    "tisser": {
+      "asin": "2897127376",
+      "verifie_le": "2026-10-28"
+    },
+    "derange-que-je-suis": {
+      "asin": "2370551690",
+      "verifie_le": "2026-10-28"
+    },
+    "jouissance": {
+      "asin": "2370553243",
+      "verifie_le": "2026-10-28"
+    },
+    "ejo": {
+      "asin": "2746755939",
+      "verifie_le": "2026-10-28"
+    },
+    "consolee": {
+      "asin": "229038500X",
+      "verifie_le": "2026-10-28"
+    },
+    "peau-d-epice": {
+      "asin": "2075189862",
+      "verifie_le": "2026-10-28"
+    },
+    "culbuter-le-malheur": {
+      "asin": "2897129549",
+      "verifie_le": "2026-10-28"
+    },
+    "le-convoi": {
+      "asin": "2290406376",
+      "verifie_le": "2026-10-28"
+    },
+    "decoloniser-l-esprit": {
+      "asin": "2358720194",
+      "verifie_le": "2026-10-28"
+    },
+    "pour-une-afrique-libre": {
+      "asin": "284876581X",
+      "verifie_le": "2026-10-28"
+    },
+    "les-neuf-parfaites": {
+      "asin": "2708710087",
+      "verifie_le": "2026-10-28"
+    },
+    "en-attendant-les-barbares": {
+      "asin": "2020404567",
+      "verifie_le": "2026-10-28"
+    },
+    "michael-k-sa-vie-son-temps": {
+      "asin": "B0BNMJKMC3",
+      "verifie_le": "2026-10-28"
+    },
+    "foe": {
+      "asin": "2020476932",
+      "verifie_le": "2026-10-28"
+    },
+    "l-age-de-fer": {
+      "asin": "2020476924",
+      "verifie_le": "2026-10-28"
+    },
+    "le-maitre-de-petersbourg": {
+      "asin": "2020638924",
+      "verifie_le": "2026-10-28"
+    },
+    "scenes-de-la-vie-d-un-jeune-garcon": {
+      "asin": "2020525771",
+      "verifie_le": "2026-10-28"
+    },
+    "elizabeth-costello": {
+      "asin": "2020864770",
+      "verifie_le": "2026-10-28"
+    },
+    "l-homme-ralenti": {
+      "asin": "2757806262",
+      "verifie_le": "2026-10-28"
+    },
+    "l-education-de-jesus": {
+      "asin": "2757871773",
+      "verifie_le": "2026-10-28"
+    },
+    "trois-histoires": {
+      "asin": "2021305619",
+      "verifie_le": "2026-10-28"
+    },
+    "l-abattoir-de-verre": {
+      "asin": "2757876007",
+      "verifie_le": "2026-10-28"
+    },
+    "paysage-sud-africain": {
+      "asin": "2864325179",
+      "verifie_le": "2026-10-28"
+    },
+    "doubler-le-cap": {
+      "asin": "2020817276",
+      "verifie_le": "2026-10-28"
+    },
+    "de-la-lecture-a-l-ecriture": {
+      "asin": "2020985942",
+      "verifie_le": "2026-10-28"
+    },
+    "ici-et-maintenant": {
+      "asin": "2330024673",
+      "verifie_le": "2026-10-28"
+    },
+    "la-verite-du-recit": {
+      "asin": "222631492X",
+      "verifie_le": "2026-10-28"
+    },
+    "conversations-avec-moi-meme": {
+      "asin": "B0C7749F79",
+      "verifie_le": "2026-10-28"
+    },
+    "lettres-de-prison": {
+      "asin": "2266287885",
+      "verifie_le": "2026-10-28"
+    },
+    "les-termitieres-de-la-savane": {
+      "asin": "2251455337",
+      "verifie_le": "2026-10-28"
+    },
+    "americanah": {
+      "asin": "2070468801",
+      "verifie_le": "2026-10-28"
+    },
+    "chere-ijeawele": {
+      "asin": "2072721970",
+      "verifie_le": "2026-10-28"
+    },
+    "notes-sur-le-chagrin": {
+      "asin": "2072943922",
+      "verifie_le": "2026-10-28"
+    },
+    "l-inventaire-des-reves": {
+      "asin": "2073137563",
+      "verifie_le": "2026-10-28"
+    },
+    "sublime-royaume": {
+      "asin": "225307988X",
+      "verifie_le": "2026-10-28"
+    },
+    "la-danse-de-la-foret": {
+      "asin": "2858028680",
+      "verifie_le": "2026-10-28"
+    },
+    "les-interpretes": {
+      "asin": "270871029X",
+      "verifie_le": "2026-10-28"
+    },
+    "cet-homme-est-mort": {
+      "asin": "2757899929",
+      "verifie_le": "2026-10-28"
+    },
+    "du-rouge-de-cam-sur-les-feuilles": {
+      "asin": "2879310199",
+      "verifie_le": "2026-10-28"
+    },
+    "isara": {
+      "asin": "2757899902",
+      "verifie_le": "2026-10-28"
+    },
+    "baabou-roi": {
+      "asin": "2742754520",
+      "verifie_le": "2026-10-28"
+    },
+    "chroniques-du-pays-des-gens-les-plus-heureux-du-monde": {
+      "asin": "2021497887",
+      "verifie_le": "2026-10-28"
+    },
+    "memoire-du-depart": {
+      "asin": "2207181138",
+      "verifie_le": "2026-10-28"
+    },
+    "la-voie-des-pelerins": {
+      "asin": "2207183807",
+      "verifie_le": "2026-10-28"
+    },
+    "adieu-zanzibar": {
+      "asin": "2073086373",
+      "verifie_le": "2026-10-28"
+    },
+    "les-vies-d-apres": {
+      "asin": "2073151639",
+      "verifie_le": "2026-10-28"
+    },
+    "tombe-tombe-au-fond-de-l-eau": {
+      "asin": "2367322864",
+      "verifie_le": "2026-10-28"
+    },
+    "chronique-des-jours-de-cendre": {
+      "asin": "2226138005",
+      "verifie_le": "2026-10-28"
+    },
+    "le-chat-et-le-noir": {
+      "asin": "2367322481",
+      "verifie_le": "2026-10-28"
+    },
+    "un-fleuve-appele-temps-une-maison-appelee-terre": {
+      "asin": "2226188584",
+      "verifie_le": "2026-10-28"
+    },
+    "le-fil-des-missangas": {
+      "asin": "2915540764",
+      "verifie_le": "2026-10-28"
+    },
+    "la-pluie-ebahie": {
+      "asin": "2367322872",
+      "verifie_le": "2026-10-28"
+    },
+    "traducteur-de-pluies": {
+      "asin": "2367322856",
+      "verifie_le": "2026-10-28"
+    },
+    "le-chasseur-d-elephants-invisibles": {
+      "asin": "2367322430",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-2": {
+      "asin": "2075171211",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-3": {
+      "asin": "207517122X",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-4": {
+      "asin": "2075171238",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-5": {
+      "asin": "2075171246",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-6": {
+      "asin": "2075171254",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-7": {
+      "asin": "2075163987",
+      "verifie_le": "2026-10-28"
+    },
+    "aya-de-yopougon-tome-8": {
+      "asin": "207519310X",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-super-heros-en-platre": {
+      "asin": "2070639568",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-vacances-dangereuses": {
+      "asin": "2070646440",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-rentree-musclee": {
+      "asin": "2070649822",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-mixture-magique": {
+      "asin": "2070658880",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-sans-amis": {
+      "asin": "2070665496",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-faux-depart": {
+      "asin": "2070604160",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-mission-pas-possible": {
+      "asin": "2075084696",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-aller-retour": {
+      "asin": "2075129533",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-enfermes-dedans": {
+      "asin": "2075150095",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-paix-temporaire": {
+      "asin": "2075205353",
+      "verifie_le": "2026-10-28"
+    },
+    "akissi-de-paris": {
+      "asin": "207519629X",
+      "verifie_le": "2026-10-28"
+    },
+    "bienvenue-tome-2": {
+      "asin": "2070645975",
+      "verifie_le": "2026-10-28"
+    },
+    "bienvenue-tome-3": {
+      "asin": "207065334X",
+      "verifie_le": "2026-10-28"
+    },
+    "commissaire-kouame-un-homme-tombe-avec-son-ombre": {
+      "asin": "2075150192",
+      "verifie_le": "2026-10-28"
+    },
+    "commissaire-kouame-on-ne-fait-pas-de-feu-sous-un-arbre-en-fleur": {
+      "asin": "2075211515",
+      "verifie_le": "2026-10-28"
+    },
+    "terre-gatee-ange-le-migrant": {
+      "asin": "2369815027",
+      "verifie_le": "2026-10-28"
+    },
+    "tempete-sur-bangui-tome-2": {
+      "asin": "2849533181",
+      "verifie_le": "2026-10-28"
+    },
+    "maison-sans-fenetres": {
+      "asin": "2849532975",
+      "verifie_le": "2026-10-28"
+    },
+    "rene-maran-un-homme-presque-pareil-aux-autres": {
+      "asin": "B0C2CWYQZP",
+      "verifie_le": "2026-10-28"
+    },
+    "mandrill-les-orchidees-de-volnaiev": {
+      "asin": "2723436055",
+      "verifie_le": "2026-10-28"
+    },
+    "mandrill-le-cheval-de-troie": {
+      "asin": "2723439968",
+      "verifie_le": "2026-10-28"
+    },
+    "chaos-debout-a-kinshasa": {
+      "asin": "2344010297",
+      "verifie_le": "2026-10-28"
+    },
+    "le-singe-jaune": {
+      "asin": "2344024506",
+      "verifie_le": "2026-10-28"
+    },
+    "pour-une-couleur-de-peau": {
+      "asin": "2343168768",
+      "verifie_le": "2026-10-28"
+    },
+    "vaudou-soccer-temps-additionnel": {
+      "asin": "B06ZZRW871",
+      "verifie_le": "2026-10-28"
+    },
+    "thomas-sankara-rebelle-visionnaire": {
+      "asin": "250114659X",
+      "verifie_le": "2026-10-28"
+    },
+    "bulambemba": {
+      "asin": "2917623152",
+      "verifie_le": "2026-10-28"
+    },
+    "en-naviguant-vers-les-indes": {
+      "asin": "2917623349",
+      "verifie_le": "2026-10-28"
+    },
+    "l-embarquement-de-bois-d-ebene": {
+      "asin": "2917623438",
+      "verifie_le": "2026-10-28"
+    },
+    "ile-de-goree": {
+      "asin": "2917623705",
+      "verifie_le": "2026-10-28"
+    },
+    "colonies-des-antilles-et-de-l-ocean-indien": {
+      "asin": "2917623918",
+      "verifie_le": "2026-10-28"
+    },
+    "mamie-denis-evadee-de-la-maison-de-retraite": {
+      "asin": "2343101302",
+      "verifie_le": "2026-10-28"
+    },
+    "vive-la-corruption": {
+      "asin": "2296136931",
+      "verifie_le": "2026-10-28"
+    },
+    "yao-visa-refuse": {
+      "asin": "2343173397",
+      "verifie_le": "2026-10-28"
+    },
+    "missy": {
+      "asin": "2849530468",
+      "verifie_le": "2026-10-28"
+    },
+    "la-callas-l-enfance-d-une-diva": {
+      "asin": "2369428457",
+      "verifie_le": "2026-10-28"
+    },
+    "les-enfants-du-pays": {
+      "asin": "2849535524",
+      "verifie_le": "2026-10-28"
+    },
+    "trois-aventures-de-mata-mata-et-pili-pili": {
+      "asin": "2336418851",
+      "verifie_le": "2026-10-28"
+    },
+    "le-retour-au-pays-d-alphonse-madiba-dit-daudet": {
+      "asin": "2296121969",
+      "verifie_le": "2026-10-28"
+    },
+    "le-retour-en-france-d-alphonse-madiba-dit-daudet": {
+      "asin": "2343090726",
+      "verifie_le": "2026-10-28"
+    },
+    "le-grand-retour-du-taxi-brousse-de-papa-diop": {
+      "asin": "2748521145",
+      "verifie_le": "2026-10-28"
+    },
+    "la-pipe-de-tita-nveng": {
+      "asin": "287763535X",
+      "verifie_le": "2026-10-28"
+    },
+    "le-pagne-bleu": {
+      "asin": "2877636682",
+      "verifie_le": "2026-10-28"
+    },
+    "les-rois-de-la-sape": {
+      "asin": "2362470830",
+      "verifie_le": "2026-10-28"
+    },
+    "jungle-urbaine-lola": {
+      "asin": "2296966381",
+      "verifie_le": "2026-10-28"
+    },
+    "mbote-kinshasa-article-15": {
+      "asin": "2849532681",
+      "verifie_le": "2026-10-28"
+    },
+    "lucas-et-les-racoons": {
+      "asin": "B0DQQCVTLV",
+      "verifie_le": "2026-10-28"
+    },
+    "chroniques-de-brazzaville": {
+      "asin": "2296966268",
+      "verifie_le": "2026-10-28"
+    },
+    "les-dessous-de-pointe-noire": {
+      "asin": "234312437X",
+      "verifie_le": "2026-10-28"
+    },
+    "seductions-mille-mysteres-d-afrique": {
+      "asin": "2336301652",
+      "verifie_le": "2026-10-28"
+    },
+    "paris-vaille-que-vaille": {
+      "asin": "234304631X",
+      "verifie_le": "2026-10-28"
+    },
+    "les-fins-limiers": {
+      "asin": "2343077231",
+      "verifie_le": "2026-10-28"
+    },
+    "chaka-d-apres-l-oeuvre-de-thomas-mofolo": {
+      "asin": "2343124329",
+      "verifie_le": "2026-10-28"
+    },
+    "legere-amertume-une-histoire-du-the": {
+      "asin": "2343156859",
+      "verifie_le": "2026-10-28"
+    },
+    "moi-borg-enfant-de-korhogo": {
+      "asin": "2343174504",
+      "verifie_le": "2026-10-28"
+    }
+  },
+  "indisponibles": {
+    "l-empire-peul-du-macina": {
+      "asin": "2723606260",
+      "constate_le": "2026-10-24",
+      "note": "Livre épuisé, sans autre édition achetable sur Amazon.fr : laisser sans lien direct."
+    },
+    "le-monde-s-effondre": {
+      "asin": "2708701916",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "une-si-longue-lettre": {
+      "asin": "2842612892",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "allah-n-est-pas-oblige": {
+      "asin": "2020525712",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "asseze-l-africaine": {
+      "asin": "2290042927",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "aya-de-yopougon": {
+      "asin": "2070669343",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "cycles-sombres": {
+      "asin": "2876930021",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "l-interieur-de-la-nuit": {
+      "asin": "2266162683",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "la-greve-des-battu": {
+      "asin": "2842612507",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "le-maitre-de-la-parole": {
+      "asin": "2266008986",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "le-taxi-brousse-de-papa-diop": {
+      "asin": "2748517431",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "les-honneurs-perdus": {
+      "asin": "2290049743",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "malamine": {
+      "asin": "2354190220",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "memoires-de-porc-epic": {
+      "asin": "2757805193",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "mission-terminee": {
+      "asin": "2864410117",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "pourquoi-le-lion-n-est-plus-le-roi-des-animaux": {
+      "asin": "2070596710",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "silence-du-choeur": {
+      "asin": "2708709828",
+      "constate_le": "2026-10-28",
+      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    }
+  }
+}
