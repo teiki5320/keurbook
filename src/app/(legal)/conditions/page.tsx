@@ -33,7 +33,7 @@ export default function TermsPage() {
 
       <h2>Article 3 — Le site ne vend aucun livre</h2>
       <p>
-        L&apos;Éditeur ne vend, n&apos;expédie ni ne facture aucun livre. Les boutons « Acheter sur Amazon » renvoient vers des fiches
+        L&apos;Éditeur ne vend, n&apos;expédie ni ne facture aucun livre. Les boutons « Voir sur Amazon » renvoient vers des fiches
         Amazon.fr : la vente est conclue entre l&apos;acheteur et Amazon ou le vendeur tiers indiqué sur Amazon, selon leurs
         propres conditions. La livraison, le droit de rétractation, les garanties et le service client
         relèvent de ce vendeur.

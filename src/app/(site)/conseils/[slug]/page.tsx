@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { AmazonButton, AmazonNote } from "@/components/book/AmazonButton";
 import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { Section } from "@/components/layout/Section";
@@ -140,7 +141,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
             </h2>
             <ul className="mt-3 space-y-2.5">
               {cited.map((b) => (
-                <li key={b.slug} className="grid grid-cols-[56px_1fr_auto] items-center gap-4 rounded-lg bg-white p-2.5">
+                <li key={b.slug} className="grid grid-cols-[56px_1fr] items-start gap-4 rounded-lg bg-white p-2.5">
                   <Link href={b.path}>
                     <BookCover title={b.title} creators={b.creators} cover={b.cover} illustration={b.illustration} />
                   </Link>
@@ -149,10 +150,11 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
                       {b.title}
                     </Link>
                     <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
+                    <div className="mt-2">
+                      <AmazonButton href={b.amazonUrl} title={b.title} small />
+                      <AmazonNote illustrated={!b.cover && !!b.illustration} />
+                    </div>
                   </div>
-                  <a href={b.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-primary px-3 py-2 text-xs">
-                    Amazon
-                  </a>
                 </li>
               ))}
             </ul>

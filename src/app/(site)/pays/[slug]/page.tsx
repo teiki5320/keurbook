@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { AmazonButton } from "@/components/book/AmazonButton";
+import { AmazonButton, AmazonNote } from "@/components/book/AmazonButton";
 import { BookGrid } from "@/components/book/BookCard";
 import { BookCover } from "@/components/book/BookCover";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
@@ -132,7 +132,8 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
                   <span className="mt-1 block text-xs text-muted">{b.creators}</span>
                 </Link>
                 <div className="mt-3">
-                  <AmazonButton href={b.amazonUrl} priceCents={b.priceCents} small />
+                  <AmazonButton href={b.amazonUrl} title={b.title} small />
+                  <AmazonNote illustrated={!b.cover && !!b.illustration} />
                 </div>
               </li>
             ))}

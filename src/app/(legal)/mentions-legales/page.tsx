@@ -79,7 +79,7 @@ export default function LegalNoticePage() {
 
       <h2>Liens sponsorisés (Amazon)</h2>
       <p>
-        Les boutons « Acheter sur Amazon » des fiches livres, des fiches auteurs, des conseils et de la pile à lire sont des
+        Les boutons « Voir sur Amazon » des fiches livres, des fiches auteurs, des conseils et de la pile à lire sont des
         liens d&apos;affiliation du programme Partenaires d&apos;Amazon.fr. {AMAZON_DISCLOSURE} Le prix payé est le même pour
         l&apos;acheteur. Le site ne vend aucun livre : la vente, la livraison et le service client relèvent d&apos;Amazon ou
         du vendeur tiers. Aucun prix n&apos;est garanti : seul le prix affiché sur Amazon au moment de l&apos;achat fait foi.

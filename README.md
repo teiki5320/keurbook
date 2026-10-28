@@ -1,6 +1,6 @@
 # Keurbook — les livres des auteurs d'Afrique subsaharienne
 
-Site en français qui présente des **livres et BD d'auteurs d'Afrique subsaharienne** (et de leur diaspora), écrits en français ou traduits : fiches livres, fiches auteurs, littérature de chaque pays et une rubrique **Conseils** (articles le lundi, le mercredi et le vendredi) et des pages **Top 10** (11 onglets), plus des **Actus du livre africain** lues en direct depuis la veille actus (depuis le 27 octobre 2026). Le site ne vend rien : les boutons « Acheter sur Amazon » mènent à Amazon.fr (programme Partenaires).
+Site en français qui présente des **livres et BD d'auteurs d'Afrique subsaharienne** (et de leur diaspora), écrits en français ou traduits : fiches livres, fiches auteurs, littérature de chaque pays et une rubrique **Conseils** (articles le lundi, le mercredi et le vendredi) et des pages **Top 10** (11 onglets), plus des **Actus du livre africain** lues en direct depuis la veille actus (depuis le 27 octobre 2026). Le site ne vend rien : les boutons « Voir sur Amazon » mènent à Amazon.fr (programme Partenaires).
 
 - **Site** : https://keurbook.com (`www.keurbook.com` sert le même site ; adresse canonique sans www). Publié sur Cloudflare Pages (projet `keurbook`).
 - **Dépôt** : https://github.com/teiki5320/keurbook.

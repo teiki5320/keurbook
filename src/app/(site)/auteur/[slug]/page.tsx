@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlocActus } from "@/components/actus/BlocActus";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { AmazonButton, AmazonNote } from "@/components/book/AmazonButton";
 import { AuthorTile } from "@/components/book/AuthorAvatar";
 import { BookGrid } from "@/components/book/BookCard";
 import { BookCover } from "@/components/book/BookCover";
@@ -171,9 +172,10 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
                   <p className="mt-1 text-xs text-faint">{start.year}</p>
                   <p className="mt-2 hidden text-sm text-muted sm:line-clamp-3">{start.summary}</p>
                 </div>
-                <a href={startCard.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="mt-3 text-[13px] text-accent hover:text-ink">
-                  Acheter sur Amazon →
-                </a>
+                <div className="mt-3">
+                  <AmazonButton href={startCard.amazonUrl} title={startCard.title} small />
+                  <AmazonNote illustrated={!startCard.cover && !!startCard.illustration} />
+                </div>
               </div>
             </div>
           )}

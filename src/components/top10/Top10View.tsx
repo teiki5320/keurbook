@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { AmazonButton } from "@/components/book/AmazonButton";
+import { AmazonButton, AmazonNote } from "@/components/book/AmazonButton";
 import { BookCover } from "@/components/book/BookCover";
-import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import type { Top10Book } from "@/lib/data/top10";
 import { TOP10_UPDATED } from "@/lib/top10/sujets";
 import type { Top10 } from "@/lib/top10/types";
-import { PartnerNote } from "./PartnerNote";
 import { RichText } from "./RichText";
 import { Top10Tabs } from "./Top10Tabs";
 
@@ -41,7 +39,6 @@ export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; boo
           </p>
           <h1 className="mt-3 font-serif text-[42px] leading-[0.98] text-balance sm:text-6xl">{top.title}</h1>
           <p className="mt-6 text-[17px] leading-relaxed text-ink/85">{top.intro}</p>
-          <p className="mt-4 text-xs leading-relaxed text-faint">{AMAZON_DISCLOSURE}</p>
         </header>
 
         {/* Les 10 livres */}
@@ -86,12 +83,12 @@ export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; boo
                     <p className="mt-2 text-[15px] leading-relaxed text-ink/85">{b.why}</p>
 
                     <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-3">
-                      <AmazonButton href={b.amazonUrl} priceCents={null} label="Voir sur Amazon" className="py-3" />
-                      <PartnerNote />
+                      <AmazonButton href={b.amazonUrl} title={b.title} className="py-3" />
                       <Link href={b.path} className="text-sm text-accent hover:text-ink">
                         Voir la fiche →
                       </Link>
                     </div>
+                    <AmazonNote illustrated={!b.cover && !!b.illustration} />
                   </div>
                 </div>
               </section>
@@ -147,7 +144,6 @@ export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; boo
               </li>
             ))}
           </ul>
-          <p className="mt-8 text-xs leading-relaxed text-faint">{AMAZON_DISCLOSURE}</p>
         </section>
       </article>
     </>

@@ -17,7 +17,7 @@ uniquement des noms de variables et de consoles.
 - 🌐 **Web** : 🐙 GitHub — main · publication au vert [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbook [ok] → 🌍 keurbook.com — en ligne, réponse 200 [ok]
 - 📝 **Contenu** : ✍️ Articles Conseils — 41 publiés, 20 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé chaque lundi [ok] → 🔍 Google — 680 pages indexées sur 980 [à faire]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 10 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbook.json sur GitHub Pages [ok] → 🌍 keurbook.com — accueil (4), /actus (20), fiches auteur (3) [ok]
-- 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Acheter sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 90 ASIN sur 796 livres et BD [à faire]
+- 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 90 ASIN sur 796 livres et BD [à faire]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — script et 4 blocs en place [ok] → ✅ Validation du site — refusée le 21/10, réexamen demandé le 22/10, « En préparation » au 28/10 [pas encore] → 💶 Revenus — aucun constaté [pas encore]
 
 ## Vue d'ensemble
@@ -72,7 +72,7 @@ uniquement des noms de variables et de consoles.
 
 ## Amazon Partenaires (affiliation)
 
-- **Rôle** : les boutons « Acheter sur Amazon » mènent à Amazon.fr avec le tag `keurbookfr-21`
+- **Rôle** : les boutons « Voir sur Amazon » mènent à Amazon.fr avec le tag `keurbookfr-21`
   (construits par `src/lib/amazon.ts`, réglable par `NEXT_PUBLIC_AMAZON_TAG`). 90 livres et BD (ceux
   des pages Top 10) ont un ASIN vérifié à la main le 19 octobre 2026 (`src/lib/demo/amazon-asins.ts`)
   et mènent directement à leur fiche Amazon (91 jusqu'au 24 octobre 2026 : L'Empire peul du Macina, épuisé et

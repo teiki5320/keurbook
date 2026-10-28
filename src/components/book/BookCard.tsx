@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { BookCardData } from "@/lib/data/books";
 import { PileButton } from "../pile/PileButton";
-import { AmazonButton } from "./AmazonButton";
+import { AmazonButton, AmazonNote } from "./AmazonButton";
 import { BookCover } from "./BookCover";
 
 export function BookCard({ book, showBuy = false, priority = false }: { book: BookCardData; showBuy?: boolean; priority?: boolean }) {
@@ -25,7 +25,8 @@ export function BookCard({ book, showBuy = false, priority = false }: { book: Bo
       </p>
       {showBuy && (
         <div className="mt-3">
-          <AmazonButton href={book.amazonUrl} priceCents={book.priceCents} small />
+          <AmazonButton href={book.amazonUrl} title={book.title} small />
+          <AmazonNote illustrated={!book.cover && !!book.illustration} />
         </div>
       )}
     </article>

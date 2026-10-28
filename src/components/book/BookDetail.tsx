@@ -8,12 +8,11 @@ import { creatorNames, creators, deOrD, translator } from "@/lib/book-utils";
 import { siteConfig, withBase } from "@/lib/config";
 import { getBookAuthors, getBookCountry, getBooksByAuthor, getRelatedBooks, toCards } from "@/lib/data/books";
 import { getConseilsForBooks } from "@/lib/data/conseils";
-import { formatPrice } from "@/lib/format";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { AUDIENCES, GENRES, THEMES } from "@/lib/themes";
 import type { Book } from "@/lib/types";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { AmazonButton } from "./AmazonButton";
+import { AmazonButton, AmazonNote } from "./AmazonButton";
 import { AuthorAvatar } from "./AuthorAvatar";
 import { BookGrid } from "./BookCard";
 import { BookCover } from "./BookCover";
@@ -87,11 +86,13 @@ export async function BookDetail({ book }: { book: Book }) {
   const buy = (
     <>
       <div className="flex flex-col gap-2">
-        <AmazonButton href={buyUrl} priceCents={book.priceCents} className="py-4 text-[15px]" />
+        <div>
+          <AmazonButton href={buyUrl} title={book.title} className="w-full py-4 text-[15px]" />
+          <AmazonNote illustrated={!book.cover && !!book.illustration} />
+        </div>
         <PileButton slug={book.slug} className="py-3.5 text-[15px]" />
       </div>
       {book.outOfPrint && <p className="mt-2 text-xs text-muted">Épuisé chez l&apos;éditeur : disponible d&apos;occasion.</p>}
-      {book.priceCents != null && <p className="mt-2 text-xs text-faint">Prix indicatif : le prix affiché sur Amazon fait foi ({formatPrice(book.priceCents)}).</p>}
     </>
   );
   const factList = (
@@ -119,12 +120,6 @@ export async function BookDetail({ book }: { book: Book }) {
             <div className={`mx-auto md:w-full ${isBd ? "w-56 sm:w-64" : "w-52 sm:w-60"}`}>
               <BookCover title={book.title} creators={names} cover={book.cover} illustration={book.illustration} className="shadow-2xl shadow-black/70" priority sizes="(min-width: 1024px) 280px, 240px" />
             </div>
-            {/* Honnêteté envers l'acheteur : l'illustration n'est pas la couverture de l'édition vendue. */}
-            {!book.cover && book.illustration && (
-              <p className="mx-auto mt-4 max-w-60 text-center text-[11px] leading-snug text-faint md:max-w-none">
-                Couverture illustrée par Keurbook. L&apos;édition vendue sur Amazon a sa propre couverture.
-              </p>
-            )}
           </div>
           <div className="hidden md:mt-5 md:block">
             {buy}

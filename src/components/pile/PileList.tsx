@@ -7,6 +7,7 @@ import { useState } from "react";
 import type { BookCardData } from "@/lib/data/books";
 import { siteConfig } from "@/lib/config";
 import { usePile } from "@/lib/pile";
+import { AmazonButton, AmazonNote } from "../book/AmazonButton";
 import { BookCover } from "../book/BookCover";
 
 /** Position et rotation des couvertures empilées (4 au plus). */
@@ -97,11 +98,12 @@ export function PileList({ books }: { books: BookCardData[] }) {
                     {b.title}
                   </Link>
                   <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
+                  <div className="mt-2">
+                    <AmazonButton href={b.amazonUrl} title={b.title} small />
+                    <AmazonNote illustrated={!b.cover && !!b.illustration} />
+                  </div>
                 </div>
                 <div className="flex shrink-0 items-center gap-3">
-                  <a href={b.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" className="text-[13px] text-accent hover:text-ink">
-                    Amazon →
-                  </a>
                   <button type="button" onClick={() => toggle(b.slug)} className="rounded-full p-1.5 text-faint hover:text-ink" aria-label={`Retirer ${b.title} de ma pile à lire`}>
                     <X className="size-4" aria-hidden />
                   </button>

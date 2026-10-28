@@ -102,7 +102,7 @@ export default function PrivacyPage() {
 
       <h2>Liens vers Amazon</h2>
       <p>
-        Les boutons « Acheter sur Amazon » ouvrent Amazon.fr avec notre identifiant de partenaire, qui permet à Amazon de nous
+        Les boutons « Voir sur Amazon » ouvrent Amazon.fr avec notre identifiant de partenaire, qui permet à Amazon de nous
         rémunérer sur les achats. Nous ne recevons aucune donnée personnelle de votre part à cette occasion. Sur Amazon,
         vos données et les cookies déposés relèvent de la politique de confidentialité d&apos;Amazon.
       </p>
@@ -126,7 +126,7 @@ export default function PrivacyPage() {
         <li><strong>Cookies publicitaires de Google et de ses partenaires</strong> : seulement avec votre accord ; liste et durées dans le bandeau.</li>
         <li><strong>Pile à lire</strong> (stockage local de votre navigateur) — conserve les livres que vous avez mis de côté, uniquement sur votre appareil, jusqu&apos;à ce que vous les retiriez ou effaciez les données du site. Elle n&apos;est transmise à personne.</li>
       </ul>
-      <p>Amazon.fr, une fois ouvert depuis un bouton « Acheter sur Amazon », dépose ses propres cookies, selon sa politique.</p>
+      <p>Amazon.fr, une fois ouvert depuis un bouton « Voir sur Amazon », dépose ses propres cookies, selon sa politique.</p>
     </LegalPage>
   );
 }
