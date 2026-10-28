@@ -42,7 +42,7 @@
 | Dernière publication | 27 octobre 2026 (0 h 15 UTC), publication réussie (veille actus) ; celle du 26 octobre (1 h 13 UTC) a mis en ligne le dernier article Conseils paru |
 | Mise en ligne | 1er octobre 2026 |
 | Dépôt | https://github.com/teiki5320/keurbook |
-| Taille publiée | 975 adresses dans le sitemap (27 octobre 2026 ; 974 jusqu'au 26 octobre, avant la page Actus), dont 40 articles Conseils |
+| Taille publiée | 980 adresses dans le sitemap (28 octobre 2026 : dont 41 articles Conseils et 4 articles d'actus ; 975 le 27 octobre, 974 jusqu'au 26 octobre, avant la page Actus) |
 | Contact affiché | `keurbook@toakeur.com` |
 | Maintenance | désactivée (`content/maintenance.json`) |
 

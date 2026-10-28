@@ -17,7 +17,7 @@ export default function ActusPage() {
     <>
       <PageHeader
         title="Actus du livre africain"
-        intro="Prix littéraires, nouveaux livres, rencontres d'auteurs, salons et bande dessinée : l'actualité des écrivains d'Afrique et de sa diaspora. Chaque actu est résumée par nos soins, avec un lien vers l'article d'origine. Mise à jour deux fois par jour."
+        intro="Prix littéraires, nouveaux livres, rencontres d'auteurs, salons et bande dessinée : l'actualité des écrivains d'Afrique et de sa diaspora. Touchez une actu pour lire l'article complet, rédigé par nos soins à partir de sources citées. Mise à jour deux fois par jour."
       />
       <div className="container-page">
         <BlocActus limite={20} avecMiseAJour siVide="Les actus arrivent bientôt : revenez dans quelques heures." />

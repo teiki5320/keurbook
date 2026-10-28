@@ -23,7 +23,7 @@ publications réelles, ou routine qui publie).
 
 - 📚 **Catalogue ciblé** : 675 livres et 121 BD d'auteurs d'Afrique subsaharienne et de la diaspora, introuvables ensemble ailleurs.
 - 🌍 **Entrée par auteurs, pays et Top 10** : 92 fiches d'auteurs, 26 pages pays et 11 Top 10 thématiques relient chaque livre à son contexte.
-- 📰 **Actus du livre africain** : prix, sorties, salons et BD, résumés par nous deux fois par jour, avec la source et le crédit de chaque image.
+- 📰 **Actus du livre africain** : prix, sorties, salons et BD, racontés par nous deux fois par jour dans un article complet sur le site, avec la source et le crédit de chaque image.
 - ✍️ **Textes maison** : résumés écrits par nous et articles Conseils trois fois par semaine, sans ISBN ni prix inventés.
 
 ## Canaux
@@ -36,7 +36,9 @@ publications réelles, ou routine qui publie).
   articles Conseils » repasse le 1er et le 15 de chaque mois.
 - ✅ Actus : depuis le 27 octobre 2026, une rubrique « Actus du livre africain » (`/actus`, 20 actus),
   un bloc de 4 actus sur l'accueil et les actus de l'auteur sur chaque fiche auteur, mis à jour
-  2 fois par jour (12 h et 19 h) par la veille actus ; chaque actu renvoie vers sa source. Contenu frais
+  2 fois par jour (12 h et 19 h) par la veille actus. Depuis le 28 octobre 2026, chaque actu ouvre son
+  article complet sur le site (300 à 450 mots, page `/actus/<adresse>` que Google peut trouver, dans le
+  sitemap), avec la source et ses liens ; avant, la carte renvoyait directement vers la source. Contenu frais
   pour le référencement et pour donner une raison de revenir.
 - ⬜ Pinterest : aucun compte Keurbook.
 - ⬜ TikTok et YouTube : TikTok « Afrotok » est branché au Studio mais rattaché à aucune app, YouTube « toa.afrotok » à Erea seule ; une

@@ -38,6 +38,43 @@ export interface Actu {
   collecte_le?: string;
   langue?: string;
   image: ImageActu;
+  /** Adresse de l'article complet sur le site (/actus/<slug>) ; absente tant que l'article n'est pas écrit. */
+  slug?: string;
+  /** Fichier de l'article complet sur la veille (articles/keurbook/<id>.json). */
+  article_url?: string;
+  lecture_min?: number;
+}
+
+/** Un bloc de l'article complet : intertitre facultatif, puis les paragraphes. */
+export interface BlocArticle {
+  intertitre: string | null;
+  paragraphes: string[];
+}
+
+/**
+ * Article complet d'une actu (schéma https://teiki5320.github.io/veille/schema/article-schema-v1.json),
+ * déjà réécrit par la veille : jamais le texte ni le titre d'origine.
+ */
+export interface ArticleActu {
+  version: number;
+  site: string;
+  id: string;
+  slug: string;
+  titre: string;
+  chapo: string;
+  blocs: BlocArticle[];
+  mots: number;
+  lecture_min: number;
+  theme?: string;
+  pays?: string[];
+  competition?: string | null;
+  tags?: string[];
+  source_nom: string;
+  source_url: string;
+  autres_sources?: string[];
+  publie_le: string;
+  redige_le: string;
+  image: ImageActu;
 }
 
 export interface FichierActus {
@@ -46,6 +83,15 @@ export interface FichierActus {
   genere_le: string;
   actus: Actu[];
 }
+
+/** Dossier des articles complets de Keurbook sur la veille. */
+export const BASE_ARTICLES = "https://teiki5320.github.io/veille/articles/keurbook/";
+
+/** Adresse de la page de secours (articles parus après la dernière construction du site). */
+export const PAGE_SECOURS = "/actus/article";
+
+/** Adresses réservées sous /actus/ : un article ne peut pas porter ce nom. */
+const SLUGS_RESERVES = new Set(["article", "aucun-article"]);
 
 const DELAI_MS = 8000;
 const CACHE_MS = 15 * 60 * 1000;
@@ -67,11 +113,128 @@ export function actuValide(a: unknown): a is Actu {
   } catch {
     return false;
   }
-  const i = x.image;
+  return imageValide(x.image);
+}
+
+/** Image servie par la veille, avec son crédit (jamais l'image de l'article source). */
+function imageValide(i: Partial<ImageActu> | undefined): boolean {
   if (!i || typeof i.url !== "string" || !i.url.startsWith(BASE_IMAGES)) return false;
   if (typeof i.credit !== "string" || typeof i.alt !== "string") return false;
   if (i.page != null && !estHttp(i.page)) return false;
   return true;
+}
+
+/** Identifiant d'une actu : 40 caractères hexadécimaux. */
+export const idValide = (id: unknown): id is string => typeof id === "string" && /^[0-9a-f]{40}$/.test(id);
+
+/** Adresse d'article utilisable sous /actus/ (minuscules, chiffres, tirets ; pas un nom réservé). */
+export const slugValide = (slug: unknown): slug is string =>
+  typeof slug === "string" && slug.length <= 80 && /^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug) && !SLUGS_RESERVES.has(slug);
+
+const texte = (v: unknown): v is string => typeof v === "string" && v.trim().length > 0;
+
+/** Garde seulement un article complet et sûr (même contrôle que les actus : source http(s) non Amazon, image de la veille). */
+export function articleValide(a: unknown): a is ArticleActu {
+  if (!a || typeof a !== "object") return false;
+  const x = a as Partial<ArticleActu>;
+  if (!idValide(x.id) || !slugValide(x.slug) || !texte(x.titre) || !texte(x.chapo)) return false;
+  if (!texte(x.source_nom) || !estHttp(x.source_url) || !texte(x.publie_le) || Number.isNaN(Date.parse(x.publie_le))) return false;
+  try {
+    if (estLienAmazon(x.source_url)) return false;
+  } catch {
+    return false;
+  }
+  if (!Array.isArray(x.blocs) || x.blocs.length === 0) return false;
+  for (const b of x.blocs) {
+    if (!b || typeof b !== "object" || !Array.isArray(b.paragraphes) || b.paragraphes.length === 0) return false;
+    if (!b.paragraphes.every(texte) || (b.intertitre != null && typeof b.intertitre !== "string")) return false;
+  }
+  if (x.autres_sources != null && !(Array.isArray(x.autres_sources) && x.autres_sources.every(estHttp))) return false;
+  return imageValide(x.image);
+}
+
+/** Article nettoyé : autres sources sans lien Amazon, valeurs manquantes complétées. */
+export function nettoyerArticle(brut: unknown): ArticleActu | null {
+  if (!articleValide(brut)) return null;
+  const autres = (brut.autres_sources ?? []).filter((u) => {
+    try {
+      return !estLienAmazon(u) && u !== brut.source_url;
+    } catch {
+      return false;
+    }
+  });
+  return {
+    ...brut,
+    blocs: brut.blocs.map((b) => ({ intertitre: b.intertitre?.trim() || null, paragraphes: b.paragraphes })),
+    lecture_min: Math.max(1, Math.round(Number(brut.lecture_min) || 1)),
+    redige_le: texte(brut.redige_le) && !Number.isNaN(Date.parse(brut.redige_le)) ? brut.redige_le : brut.publie_le,
+    autres_sources: autres,
+  };
+}
+
+/** Lien d'une carte d'actu : la page construite, sinon la page de secours, sinon la source (nouvel onglet). */
+export interface LienCarte {
+  href: string;
+  externe: boolean;
+}
+
+/**
+ * Choix du lien d'une carte.
+ * construits : id de l'actu → adresse (slug) des pages /actus/<slug> construites avec le site.
+ */
+export function lienActu(actu: Actu, construits: Record<string, string> = {}): LienCarte {
+  const slug = construits[actu.id];
+  if (slug) return { href: `/actus/${slug}`, externe: false };
+  if (actu.article_url && actu.article_url.startsWith(BASE_ARTICLES) && idValide(actu.id)) {
+    return { href: `${PAGE_SECOURS}?id=${actu.id}`, externe: false };
+  }
+  return { href: actu.source_url, externe: true };
+}
+
+/** Id demandé à la page de secours (« ?id=… ») ; null s'il est absent ou mal formé. */
+export function idDepuisRecherche(recherche: string): string | null {
+  const id = new URLSearchParams(recherche).get("id")?.trim().toLowerCase();
+  return idValide(id) ? id : null;
+}
+
+/** Nom lisible d'une autre source (« www.jeuneafrique.com/… » → « jeuneafrique.com »). */
+export function nomDomaine(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+
+/** Fiches existantes liées à l'article : tags « auteur:<slug> » qui correspondent à une fiche du site, les autres sont ignorés. */
+export function fichesDesTags(tags: string[] | undefined, auteurs: Record<string, string>): Array<{ href: string; nom: string }> {
+  const vus = new Set<string>();
+  const fiches: Array<{ href: string; nom: string }> = [];
+  for (const t of tags ?? []) {
+    const m = /^auteur:([a-z0-9-]+)$/.exec(t);
+    if (!m || vus.has(m[1]) || !auteurs[m[1]]) continue;
+    vus.add(m[1]);
+    fiches.push({ href: `/auteur/${m[1]}`, nom: auteurs[m[1]] });
+  }
+  return fiches;
+}
+
+/**
+ * Article complet lu dans le navigateur (page de secours) : délai de 8 s.
+ * null si l'article n'existe pas ou n'est pas lisible.
+ */
+export async function chargerArticle(id: string): Promise<ArticleActu | null> {
+  if (!idValide(id)) return null;
+  try {
+    const ctrl = new AbortController();
+    const minuteur = setTimeout(() => ctrl.abort(), DELAI_MS);
+    const rep = await fetch(`${BASE_ARTICLES}${id}.json`, { signal: ctrl.signal, cache: "no-cache" }).finally(() => clearTimeout(minuteur));
+    if (!rep.ok) return null;
+    const article = nettoyerArticle(await rep.json());
+    return article && article.id === id ? article : null;
+  } catch {
+    return null;
+  }
 }
 
 /** Nettoie un fichier reçu : actus valides, de la plus récente à la plus ancienne. */

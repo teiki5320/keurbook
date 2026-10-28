@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsx scripts/veille-entites.mjs && next build",
+    "build": "tsx scripts/veille-entites.mjs && tsx scripts/veille-articles.mjs && next build",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts"

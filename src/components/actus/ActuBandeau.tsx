@@ -1,15 +1,16 @@
 /* eslint-disable @next/next/no-img-element -- images de la veille, servies telles quelles */
-import type { Actu } from "@/lib/veille";
+import type { Actu, LienCarte as Lien } from "@/lib/veille";
 import { CreditImage } from "./CreditImage";
+import { LienCarte } from "./LienCarte";
 import { LienSource } from "./LienSource";
 
 /**
- * Actu à la une : image 16:9, titre, résumé, source et crédit.
+ * Actu à la une : image 16:9, titre, résumé, source et crédit. Toute la carte ouvre « lien ».
  * « horizontal » : image à gauche du texte sur grand écran (page /actus).
  * « colonne » : à côté des vignettes sur grand écran ; l'image remplit la hauteur laissée par le texte,
  * pour que le bandeau finisse pile à la hauteur de la colonne de vignettes.
  */
-export function ActuBandeau({ actu, prioritaire = false, Titre = "h3", colonne = false, horizontal = false }: { actu: Actu; prioritaire?: boolean; Titre?: "h2" | "h3"; colonne?: boolean; horizontal?: boolean }) {
+export function ActuBandeau({ actu, lien, prioritaire = false, Titre = "h3", colonne = false, horizontal = false }: { actu: Actu; lien: Lien; prioritaire?: boolean; Titre?: "h2" | "h3"; colonne?: boolean; horizontal?: boolean }) {
   const image = (
     <img
       src={actu.image.url}
@@ -22,14 +23,16 @@ export function ActuBandeau({ actu, prioritaire = false, Titre = "h3", colonne =
     />
   );
   return (
-    <article className={`flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-line bg-white ${horizontal ? "lg:flex-row" : ""}`}>
+    <article className={`group relative flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-line bg-white ${horizontal ? "lg:flex-row" : ""}`}>
       {colonne ? <div className="relative lg:min-h-[190px] lg:flex-1">{image}</div> : image}
       <div className={`flex flex-col gap-2 p-4 sm:p-5 ${colonne ? "lg:flex-none" : "flex-1"}`}>
-        <Titre className={`font-serif text-[26px] leading-[1.08] sm:text-[32px] ${colonne ? "lg:line-clamp-3 lg:text-[30px]" : ""}`}>{actu.titre}</Titre>
+        <Titre className={`font-serif text-[26px] leading-[1.08] group-hover:text-accent sm:text-[32px] ${colonne ? "lg:line-clamp-3 lg:text-[30px]" : ""}`}>
+          <LienCarte lien={lien}>{actu.titre}</LienCarte>
+        </Titre>
         <p className={`text-[15px] leading-relaxed text-ink/80 ${colonne ? "lg:line-clamp-3" : ""}`}>{actu.resume}</p>
         <div className="mt-auto pt-1">
           <LienSource actu={actu} />
-          <CreditImage image={actu.image} className="mt-1" />
+          <CreditImage image={actu.image} className="relative z-10 mt-1" />
         </div>
       </div>
     </article>

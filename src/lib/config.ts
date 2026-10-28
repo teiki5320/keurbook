@@ -37,7 +37,7 @@ export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-
  * - fiche : 1 annonce en fin de fiche livre ou BD, loin du bouton Amazon ;
  * - auteur : 1 annonce après la biographie ;
  * - pays : 1 annonce après les portraits d'écrivains ;
- * - article : 2 annonces dans un conseil (au milieu du texte, puis en fin de page).
+ * - article : 2 annonces dans un conseil (au milieu du texte, puis en fin de page), 1 en fin d'article d'actu.
  */
 export const ADSENSE_SLOTS = {
   fiche: process.env.NEXT_PUBLIC_ADSENSE_SLOT_FICHE ?? "5113817102",

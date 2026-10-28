@@ -51,3 +51,6 @@ next-env.d.ts
 
 # Fiches pour la veille actus, générées au build (scripts/veille-entites.mjs)
 /public/veille/
+
+# Articles complets des actus, lus sur la veille au build (scripts/veille-articles.mjs)
+/.veille/

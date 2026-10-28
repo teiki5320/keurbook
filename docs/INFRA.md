@@ -30,9 +30,9 @@ uniquement des noms de variables et de consoles.
 - **Backend** : aucun. Site entièrement statique (dossier `out/`), sans base de données, sans
   compte. La pile à lire reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense,
   après accord dans le bandeau de consentement de Google (voir docs/PUBLICITE.md).
-- **Taille** : 975 adresses dans le sitemap au 27 octobre 2026 (675 livres, 121 BD, 92 auteurs,
-  26 pays, 40 articles Conseils publiés, 11 pages Top 10, la page Actus, pages de liste et pages légales ;
-  974 jusqu'au 26 octobre 2026, avant la page Actus).
+- **Taille** : 980 adresses dans le sitemap au 28 octobre 2026 (675 livres, 121 BD, 92 auteurs,
+  26 pays, 41 articles Conseils publiés, 11 pages Top 10, la page Actus, 4 articles d'actus, pages de liste
+  et pages légales ; 975 le 27 octobre, avant les articles d'actus, et 974 jusqu'au 26 octobre, avant la page Actus).
 - **Particularités** : interrupteur de maintenance dans `content/maintenance.json` (désactivé),
   tests de cohérence des contenus dans `tests/`, signalement IndexNow chaque lundi.
 
@@ -41,7 +41,8 @@ uniquement des noms de variables et de consoles.
 - **Rôle** : dépôt du code et des contenus, et trois workflows :
   - `deploy.yml` (« Publier le site ») : lint, types, tests, build, puis publication sur
     Cloudflare Pages à chaque push sur `main`, chaque lundi, mercredi et vendredi à 23 h 15 UTC la
-    veille (articles programmés) et à la main ;
+    veille (articles programmés), chaque jour à 11 h 50 et 18 h 50 UTC (pages des articles d'actus,
+    depuis le 28 octobre 2026) et à la main ;
   - `indexnow.yml` : signale toutes les pages du sitemap publié à IndexNow (Bing, Yandex…) chaque
     lundi à 2 h UTC et à la demande ;
   - `maintenance.yml` : met le site en pause ou le rouvre, puis republie.
@@ -122,6 +123,15 @@ uniquement des noms de variables et de consoles.
 - **Emplacements** : bloc « Actus du livre » sur l'accueil (4 actus), page `/actus` (20 actus, dans le
   menu et le sitemap), bloc « L'actu de … » sur chaque fiche auteur (3 actus liées à l'auteur ; absent
   s'il n'y en a pas). Composants dans `src/components/actus/`. Jamais de lien Amazon dans ces blocs.
+- **Articles complets** (depuis le 28 octobre 2026) : chaque actu a son article de 300 à 450 mots, écrit
+  par la veille (`articles/keurbook/<id>.json`, schéma article v1). Au build, `scripts/veille-articles.mjs`
+  lit les actus et leurs articles (fichier `.veille/articles.json`, non suivi ; veille injoignable = 0 page,
+  build intact) et le site construit une page `/actus/<adresse>` par article (fil d'Ariane, chapô, image et
+  crédit, intertitres, encadré « Sources », liens vers les fiches auteurs, 3 autres actus, 1 annonce
+  AdSense « article »), avec `NewsArticle` en JSON-LD, dans le sitemap (et donc IndexNow). Reconstruction
+  2 fois par jour (11 h 50 et 18 h 50 UTC) par `deploy.yml`. Les articles parus entre deux constructions
+  s'ouvrent dans la page de secours `/actus/article?id=<id>` (lue dans le navigateur, `noindex`, hors
+  sitemap). Toute la carte d'une actu ouvre l'article sur le site ; sans article, elle ouvre la source.
 - **Fiches pour la veille** : `public/veille/entites.json` (92 auteurs : tag `auteur:<slug>`, nom
   public, variantes sans accents, pays), généré à chaque build par `scripts/veille-entites.mjs`
   et publié sur `https://keurbook.com/veille/entites.json`. La tâche de veille s'en sert pour relier une

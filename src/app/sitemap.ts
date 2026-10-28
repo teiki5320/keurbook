@@ -6,6 +6,7 @@ import { getConseils } from "@/lib/data/conseils";
 import { getTop10s } from "@/lib/data/top10";
 import { TOP10_UPDATED } from "@/lib/top10/sujets";
 import { getMaintenance } from "@/lib/data/settings";
+import { getArticlesActus } from "@/lib/data/veille-articles";
 
 export const dynamic = "force-static";
 
@@ -70,6 +71,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...conseils.map((c) => ({
       url: `${base}/conseils/${c.slug}`,
       lastModified: new Date(`${c.date}T00:00:00Z`),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    // Articles complets des actus, construits 2 fois par jour (la page de secours /actus/article n'y est pas).
+    ...getArticlesActus().map((a) => ({
+      url: `${base}/actus/${a.slug}`,
+      lastModified: new Date(a.redige_le),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

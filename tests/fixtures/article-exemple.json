@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "site": "keurbook",
+  "id": "f42687aabdab0f4cca9884e39a461826e6be4789",
+  "slug": "exemple-colloque-ucad-boubacar-boris-diop",
+  "titre": "Dakar : l'UCAD consacre un colloque international à Boubacar Boris Diop",
+  "chapo": "Exemple de test. À Dakar, l'université Cheikh Anta Diop réunit pendant trois jours chercheurs et écrivains autour de l'œuvre de Boubacar Boris Diop.",
+  "blocs": [
+    {
+      "intertitre": null,
+      "paragraphes": [
+        "Exemple de test : ce texte sert seulement aux essais du site et n'est jamais publié. L'université Cheikh Anta Diop de Dakar accueille du 26 au 28 octobre un colloque international consacré à l'œuvre de Boubacar Boris Diop, l'un des romanciers sénégalais les plus lus.",
+        "Chercheurs, écrivains et acteurs culturels y croisent leurs lectures d'une œuvre écrite en français comme en wolof."
+      ]
+    },
+    {
+      "intertitre": "Une œuvre en deux langues",
+      "paragraphes": [
+        "Les échanges vont de « Murambi », roman consacré au génocide des Tutsi au Rwanda, jusqu'à « Doomi Golo », écrit en wolof. Ce passage d'une langue à l'autre est au cœur de plusieurs interventions.",
+        "Felwine Sarr a ouvert les travaux par la leçon inaugurale, en revenant sur la place de ces livres dans la littérature du continent."
+      ]
+    },
+    {
+      "intertitre": "Un nouveau livre annoncé",
+      "paragraphes": [
+        "L'auteur prépare un livre sur la poétesse Phillis Wheatley, annoncé pour mars 2027 chez Philippe Rey. Ce paragraphe d'exemple complète le texte pour atteindre une longueur proche de celle d'un vrai article de la veille, afin de vérifier la mise en page sur téléphone, sur tablette et sur ordinateur, avec des lignes assez longues pour juger du confort de lecture."
+      ]
+    }
+  ],
+  "mots": 210,
+  "lecture_min": 2,
+  "theme": "livres",
+  "pays": [
+    "SN"
+  ],
+  "tags": [
+    "auteur:boubacar-boris-diop",
+    "auteur:felwine-sarr"
+  ],
+  "source_nom": "SenePlus",
+  "source_url": "https://www.seneplus.com/article/boubacar-boris-diop-la-charge-et-les-chemins-de-lecriture",
+  "autres_sources": [
+    "https://www.example.org/colloque"
+  ],
+  "publie_le": "2026-10-27T10:19:53.000Z",
+  "redige_le": "2026-10-28T00:30:00.000Z",
+  "image": {
+    "url": "https://teiki5320.github.io/veille/images/keurbook/f42687aabdab0f4cca9884e39a461826e6be4789.webp",
+    "source": "wikimedia",
+    "credit": "Hreinn Gudlaugsson",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Boubacar-Boris-Diop_DSC06105.jpg",
+    "alt": "L'écrivain sénégalais Boubacar Boris Diop",
+    "mots_cles": [
+      "Boubacar Boris Diop"
+    ],
+    "largeur": 1600,
+    "hauteur": 900
+  }
+}
