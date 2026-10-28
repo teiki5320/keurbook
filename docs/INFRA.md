@@ -1,6 +1,6 @@
 # INFRA — fiche technique
 
-Mis à jour le 27 octobre 2026, d'après le code du dépôt et le site en ligne. Aucun secret ici :
+Mis à jour le 28 octobre 2026, d'après le code du dépôt et le site en ligne. Aucun secret ici :
 uniquement des noms de variables et de consoles.
 
 ## En bref
@@ -9,16 +9,16 @@ uniquement des noms de variables et de consoles.
 - **Stack** : Next.js 16 en export statique, React 19, Tailwind CSS 4
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions
-- **Site** : keurbook.com (975 adresses dans le sitemap)
+- **Site** : keurbook.com (980 adresses dans le sitemap)
 - **IA et outils** : routine « Écrire les articles Conseils », veille actus (2 passages par jour), IndexNow, Cloudflare Web Analytics
 
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main · publication au vert [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbook [ok] → 🌍 keurbook.com — en ligne, réponse 200 [ok]
-- 📝 **Contenu** : ✍️ Articles Conseils — 40 publiés, 21 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé chaque lundi [ok] → 🔍 Google — 679 pages indexées sur 975 [à faire]
+- 📝 **Contenu** : ✍️ Articles Conseils — 41 publiés, 20 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé chaque lundi [ok] → 🔍 Google — 680 pages indexées sur 980 [à faire]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 10 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbook.json sur GitHub Pages [ok] → 🌍 keurbook.com — accueil (4), /actus (20), fiches auteur (3) [ok]
 - 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Acheter sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 90 ASIN sur 796 livres et BD [à faire]
-- 📰 **Publicité** : 📰 AdSense (publicité web) — script et 4 blocs en place [ok] → ✅ Validation du site — refusée le 21/10, réexamen demandé le 22/10, « En préparation » au 27/10 [pas encore] → 💶 Revenus — aucun constaté [pas encore]
+- 📰 **Publicité** : 📰 AdSense (publicité web) — script et 4 blocs en place [ok] → ✅ Validation du site — refusée le 21/10, réexamen demandé le 22/10, « En préparation » au 28/10 [pas encore] → 💶 Revenus — aucun constaté [pas encore]
 
 ## Vue d'ensemble
 
@@ -85,10 +85,10 @@ uniquement des noms de variables et de consoles.
 
 ## AdSense (publicité web)
 
-- **Rôle** : annonces Google sur le site, une fois le site validé. Historique : première demande d'examen le 12 octobre 2026, refusée le 21 octobre 2026 (« contenu à faible valeur informative ») ; les 796 fiches ont été rallongées le 21 octobre et l'examen a été redemandé le 22 octobre 2026. État du nouvel examen : « En préparation » dans la console, ni validé ni refusé (vérifié le 27 octobre 2026) ; **aucune annonce ne s'affiche pour l'instant**. Script AdSense et balise
+- **Rôle** : annonces Google sur le site, une fois le site validé. Historique : première demande d'examen le 12 octobre 2026, refusée le 21 octobre 2026 (« contenu à faible valeur informative ») ; les 796 fiches ont été rallongées le 21 octobre et l'examen a été redemandé le 22 octobre 2026. État du nouvel examen : « En préparation » dans la console, ni validé ni refusé (vérifié le 28 octobre 2026) ; **aucune annonce ne s'affiche pour l'instant**. Script AdSense et balise
   `google-adsense-account` chargés dans `src/app/layout.tsx` ; identifiant d'éditeur dans
   `src/lib/config.ts` (`ADSENSE_CLIENT`, réglable par `NEXT_PUBLIC_ADSENSE_CLIENT` ; laissée vide,
-  plus aucun script Google ne serait chargé). `public/ads.txt` est publié et répond.
+  plus aucun script Google ne serait chargé). `public/ads.txt` est publié et répond (la console AdSense l'affiche encore « Introuvable » au 28 octobre 2026).
 - **Emplacements choisis** (annonces automatiques désactivées), composant `AdSlot`, mention
   « Publicité » visible : 1 en fin de fiche livre ou BD, 1 après la biographie d'un auteur, 1 sur
   les pages pays, 2 dans les articles Conseils. Aucune sur l'accueil, les listes, les Top 10, la pile à lire
@@ -98,7 +98,7 @@ uniquement des noms de variables et de consoles.
   européennes), lien « Gérer mes cookies » en pied de page ; la politique de sécurité de
   `public/_headers` n'ouvre que les domaines Google nécessaires.
 - **Détail** : docs/PUBLICITE.md.
-- **Validation du site et revenus** : refusée le 21 octobre 2026, nouvel examen demandé le 22 octobre 2026 (état à vérifier dans la console) ; aucun revenu tant que le site n'est pas validé.
+- **Validation du site et revenus** : refusée le 21 octobre 2026, nouvel examen demandé le 22 octobre 2026, « En préparation » dans la console (vérifié le 28 octobre 2026) ; aucun revenu tant que le site n'est pas validé.
 - **Console** : https://adsense.google.com (compte `pub-2680784147246798`, géré avec `admin@toakeur.com`).
 
 ## Analytics (mesure d'usage)
