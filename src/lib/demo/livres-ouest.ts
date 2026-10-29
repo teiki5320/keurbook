@@ -105,10 +105,13 @@ export const livresOuest: Book[] = [
     ],
     quote: null,
     year: 1956,
-    publisher: "Seuil",
-    pages: null,
-    isbn: "9782020037952",
-    format: null,
+    // 29/10/2026 : l'édition Seuil (2020037955) n'est plus vendue neuve sur Amazon.fr ; édition conseillée :
+    // l'Œuvre poétique en Points (2020), qui contient Éthiopiques (fiche Amazon vérifiée le 29/10/2026).
+    editionTitle: "Œuvre poétique (recueil complet, avec Éthiopiques)",
+    publisher: "Points",
+    pages: 448,
+    isbn: "9782757884072",
+    format: "poche",
     awards: [],
   }),
   livre({
