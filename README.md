@@ -55,7 +55,7 @@ Règles de rédaction : [`docs/REDACTION.md`](docs/REDACTION.md). Champs exacts 
 - Liens construits par `src/lib/amazon.ts` avec le tag `keurbookfr-21` (`NEXT_PUBLIC_AMAZON_TAG` pour le changer). Ce tag vient du nouveau compte Amazon Partenaires ouvert le 18 octobre 2026 (l'ancien compte a été fermé par Amazon).
 - Si le champ `amazonAsin` d'un livre est rempli (ASIN vérifié sur Amazon.fr), le bouton mène à la fiche ; sinon à une **recherche Amazon** (ISBN, ou titre + auteur, rayon Livres).
 - Code de suivi par emplacement (fiche, top, conseil, rubrique) : table unique `AMAZON_TAGS` de `src/lib/amazon.ts` (tous à `keurbookfr-21` pour l'instant).
-- ASIN vérifiés : `src/lib/demo/amazon-asins.json` (436 livres au 28 octobre 2026). Disponibilité : `npm run verifier-produits` sur le Mac (Chrome + Playwright), voir `scripts/verifier-produits.mjs`.
+- ASIN vérifiés : `src/lib/demo/amazon-asins.json` (436 livres au 29 octobre 2026). Disponibilité : `npm run verifier-produits` sur le Mac (Chrome + Playwright), voir `scripts/verifier-produits.mjs`.
 - `priceCents` : prix indicatif relevé à la main (affiché seulement s'il est rempli).
 - Mention obligatoire dans le pied de page et les pages légales.
 
@@ -102,7 +102,7 @@ Même fonctionnement que Keur Cook : le workflow `.github/workflows/deploy.yml` 
 ### Publicité (Google AdSense)
 
 - Compte AdSense `pub-2680784147246798` (comptes de gestion sur `admin@toakeur.com`). Le script est chargé sur les pages (`src/app/layout.tsx`, identifiant dans `src/lib/config.ts`) et `public/ads.txt` est publié.
-- **Le site n'est pas encore validé par Google** : première demande le 12 octobre 2026, refusée le 21 octobre (contenu jugé trop mince) ; fiches rallongées, nouvel examen demandé le 22 octobre 2026, « En préparation » dans la console (vérifié le 28 octobre 2026). Aucune annonce ne s'affiche tant que Google n'a pas validé le site. Détail : [`docs/PUBLICITE.md`](docs/PUBLICITE.md).
+- **Le site n'est pas encore validé par Google** : première demande le 12 octobre 2026, refusée le 21 octobre (contenu jugé trop mince) ; fiches rallongées, nouvel examen demandé le 22 octobre 2026, « En préparation » dans la console (vérifié le 29 octobre 2026). Aucune annonce ne s'affiche tant que Google n'a pas validé le site. Détail : [`docs/PUBLICITE.md`](docs/PUBLICITE.md).
 
 ### État de la mise en route
 

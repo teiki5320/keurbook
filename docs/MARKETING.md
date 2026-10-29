@@ -1,6 +1,6 @@
 # MARKETING — plan marketing & rémunération
 
-Mis à jour le 28 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
+Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
 publications réelles, ou routine qui publie).
 
 ## Positionnement
@@ -15,8 +15,8 @@ publications réelles, ou routine qui publie).
 ## Rémunération par phases
 
 - [fait] **Aujourd'hui** : affiliation Amazon Partenaires (tag `keurbookfr-21`, nouveau compte depuis le 18 octobre) ; le site ne vend rien.
-- [en cours] **Validation AdSense** : refusée le 21 octobre (contenu jugé trop mince), fiches rallongées, nouvel examen demandé le 22 octobre, « En préparation » dans la console AdSense (vérifié le 28 octobre 2026) ; aucune annonce d'ici là.
-- **Liens Amazon directs** : 436 livres et BD sur 796 mènent à leur fiche Amazon (28 octobre 2026) ; les autres (sans ISBN, ou seulement d'occasion) gardent une recherche.
+- [en cours] **Validation AdSense** : refusée le 21 octobre (contenu jugé trop mince), fiches rallongées, nouvel examen demandé le 22 octobre, « En préparation » dans la console AdSense (vérifié le 29 octobre 2026) ; aucune annonce d'ici là.
+- **Liens Amazon directs** : 436 livres et BD sur 796 mènent à leur fiche Amazon (29 octobre 2026) ; les autres (sans ISBN, ou seulement d'occasion) gardent une recherche.
 - **Partenariats** : mises en avant payées par des éditeurs ou libraires, une fois l'audience mesurée.
 
 ## Points forts
@@ -32,7 +32,7 @@ publications réelles, ou routine qui publie).
 - ✅ Site en ligne sur `keurbook.com`.
 - ✅ Référencement naturel : sitemap envoyé à Google Search Console (propriété `keurbook.com`),
   IndexNow après chaque publication et chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
-  vendredi). Au 28 octobre 2026 : 41 articles publiés, 20 programmés ; le rythme régulier va
+  vendredi). Au 29 octobre 2026 : 41 articles publiés, 20 programmés ; le rythme régulier va
   jusqu'au 7 décembre (11 articles ajoutés le 15 octobre), puis seuls des articles de saison sont programmés. La routine « Écrire les
   articles Conseils » repasse le 1er et le 15 de chaque mois.
 - ✅ Actus : depuis le 27 octobre 2026, une rubrique « Actus du livre africain » (`/actus`, 20 actus),
@@ -49,17 +49,17 @@ publications réelles, ou routine qui publie).
 
 ## Mesures
 
-- **Pages indexées par Google** : 680 sur 980 (Search Console, onglet Indexation du Studio, 28 octobre 2026 ; 679 sur 975 le 27 octobre, 673 sur 971 le 20 octobre)
-- **Pages pas encore indexées** : 300 (28 octobre 2026), dont 182 inconnues de Google (parmi elles la page Actus et les 4 articles d'actus) et 118 détectées non explorées
-- **Liens Amazon directs** : 436 livres et BD sur 796 (28 octobre 2026 ; 90 le 19 octobre, 91 jusqu'au 24 octobre). Fiches qui reçoivent des visites : 38 sur 81 en lien direct (17 avant)
-- **Articles Conseils** : 41 publiés, 20 programmés (28 octobre 2026)
+- **Pages indexées par Google** : 680 sur 982 (Search Console, onglet Indexation du Studio, 29 octobre 2026 ; 680 sur 980 le 28 octobre, 679 sur 975 le 27 octobre, 673 sur 971 le 20 octobre)
+- **Pages pas encore indexées** : 302 (29 octobre 2026), dont 297 inconnues de Google et 5 détectées non explorées
+- **Liens Amazon directs** : 436 livres et BD sur 796 (29 octobre 2026 ; 90 le 19 octobre, 91 jusqu'au 24 octobre). Fiches qui reçoivent des visites : 38 sur 81 en lien direct (17 avant)
+- **Articles Conseils** : 41 publiés, 20 programmés (29 octobre 2026)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
-- **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre, « En préparation » dans la console (vérifié le 28 octobre 2026)
+- **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre, « En préparation » dans la console (vérifié le 29 octobre 2026)
 
 ## Les 3 priorités
 
-- Faire indexer par Google les 300 pages qui ne le sont pas encore (BD, pages auteurs, livres,
+- Faire indexer par Google les 302 pages qui ne le sont pas encore (BD, pages auteurs, livres,
   pays et pages de liste) : renforcer les liens internes vers elles et suivre leur
   évolution dans l'onglet Indexation du Studio.
 - Garder les liens Amazon directs justes : lancer `npm run verifier-produits -- --ecrire --lot 30`
