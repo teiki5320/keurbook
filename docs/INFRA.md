@@ -10,12 +10,12 @@ uniquement des noms de variables et de consoles.
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions
 - **Site** : keurbook.com (982 adresses dans le sitemap)
-- **IA et outils** : routine « Écrire les articles Conseils », veille actus (2 passages par jour), IndexNow, Cloudflare Web Analytics
+- **IA et outils** : routine « Articles » du Studio (articles Conseils), veille actus (2 passages par jour), IndexNow, Cloudflare Web Analytics
 
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main · publication au vert [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbook [ok] → 🌍 keurbook.com — en ligne, réponse 200 [ok]
-- 📝 **Contenu** : ✍️ Articles Conseils — 41 publiés, 20 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé après chaque publication et chaque lundi [ok] → 🔍 Google — 680 pages indexées sur 982 [à faire]
+- 📝 **Contenu** : ✍️ Articles Conseils — 42 publiés, 26 programmés (30 octobre 2026) [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé après chaque publication et chaque lundi [ok] → 🔍 Google — 680 pages indexées sur 982 [à faire]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 10 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbook.json sur GitHub Pages [ok] → 🌍 keurbook.com — accueil (4), /actus (20), fiches auteur (3) [ok]
 - 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 436 ASIN sur 796 livres et BD [en cours]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — script et 4 blocs en place [ok] → ✅ Validation du site — refusée le 21/10, réexamen demandé le 22/10, « En préparation » au 29/10 [pas encore] → 💶 Revenus — aucun constaté [pas encore]

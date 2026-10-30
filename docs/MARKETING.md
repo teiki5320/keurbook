@@ -32,9 +32,10 @@ publications réelles, ou routine qui publie).
 - ✅ Site en ligne sur `keurbook.com`.
 - ✅ Référencement naturel : sitemap envoyé à Google Search Console (propriété `keurbook.com`),
   IndexNow après chaque publication et chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
-  vendredi). Au 29 octobre 2026 : 41 articles publiés, 20 programmés ; le rythme régulier va
-  jusqu'au 7 décembre (11 articles ajoutés le 15 octobre), puis seuls des articles de saison sont programmés. La routine « Écrire les
-  articles Conseils » repasse le 1er et le 15 de chaque mois.
+  vendredi). Au 30 octobre 2026 : 42 articles publiés, 26 programmés ; le rythme régulier va
+  jusqu'au 28 décembre (7 articles ajoutés le 30 octobre ; il s'arrêtait au 7 décembre avant), puis seuls des articles de saison sont programmés
+  (1er et 8 février 2027). Depuis fin octobre 2026, la routine « Articles » du Studio vérifie chaque matin l'avance du site
+  et complète la série quand il reste moins de 20 articles ou moins de 4 semaines (elle passait avant le 1er et le 15 de chaque mois).
 - ✅ Actus : depuis le 27 octobre 2026, une rubrique « Actus du livre africain » (`/actus`, 20 actus),
   un bloc de 4 actus sur l'accueil et les actus de l'auteur sur chaque fiche auteur, mis à jour
   2 fois par jour (12 h et 19 h) par la veille actus. Depuis le 28 octobre 2026, chaque actu ouvre son
@@ -52,7 +53,7 @@ publications réelles, ou routine qui publie).
 - **Pages indexées par Google** : 680 sur 982 (Search Console, onglet Indexation du Studio, 29 octobre 2026 ; 680 sur 980 le 28 octobre, 679 sur 975 le 27 octobre, 673 sur 971 le 20 octobre)
 - **Pages pas encore indexées** : 302 (29 octobre 2026), dont 297 inconnues de Google et 5 détectées non explorées
 - **Liens Amazon directs** : 436 livres et BD sur 796 (29 octobre 2026 ; 90 le 19 octobre, 91 jusqu'au 24 octobre). Fiches qui reçoivent des visites : 38 sur 81 en lien direct (17 avant)
-- **Articles Conseils** : 41 publiés, 20 programmés (29 octobre 2026)
+- **Articles Conseils** : 42 publiés, 26 programmés (30 octobre 2026 ; 41 publiés et 20 programmés le 29 octobre)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
 - **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre, « En préparation » dans la console (vérifié le 29 octobre 2026)
