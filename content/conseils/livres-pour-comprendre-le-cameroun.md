@@ -22,7 +22,7 @@ La même année, Mongo Beti publie [Le Pauvre Christ de Bomba](/livre/le-pauvre-
 
 ## Le village et la tradition
 
-Pour une lecture plus légère, ouvrez [Le Fils d'Agatha Moudio](/livre/le-fils-d-agatha-moudio) (1967) de Francis Bebey, écrivain et grand musicien. Dans un village de pêcheurs près de Douala, un jeune homme doit épouser la fille choisie par les anciens, mais n'a d'yeux que pour la libre et rieuse Agatha. Une comédie pleine de malice sur la parole des anciens et les désirs de la jeunesse. Du même auteur, [Le Roi Albert d'Effidi](/livre/le-roi-albert-d-effidi) (1976) met en scène un boutiquier vaniteux qui veut épouser la jeune Nani.
+Pour une lecture plus légère, ouvrez [Le Fils d'Agatha Moudio](/livre/le-fils-d-agatha-moudio) (1967) de Francis Bebey, écrivain et grand musicien. Dans un village de pêcheurs près de Douala, un jeune homme doit épouser la fille choisie par les anciens, mais n'a d'yeux que pour la libre et rieuse Agatha. Une comédie pleine de malice sur la parole des anciens et les désirs de la jeunesse. Du même auteur, [Le Roi Albert d'Effidi](/livre/le-roi-albert-d-effidi) (1976) met en scène un boutiquier vaniteux qui veut épouser la jeune Nani. Son dernier roman, [L'Enfant-pluie](/livre/l-enfant-pluie) (1994), raconte avec tendresse l'enfance de Mwana auprès de sa grand-mère Iyo.
 
 ## La guerre d'indépendance
 

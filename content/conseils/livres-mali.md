@@ -14,7 +14,7 @@ Tout commence au XIIIe siècle avec Soundjata Keïta, le fondateur de l'empire d
 
 [Soundjata ou l'Épopée mandingue](/livre/soundjata-ou-l-epopee-mandingue), publié en 1960, en est la version la plus lue en français. L'historien Djibril Tamsir Niane y transcrit le récit du griot Mamadou Kouyaté. On suit l'enfant infirme et moqué, l'exil de sa mère et de ses frères, puis son retour face à Soumaoro Kanté, le redoutable roi-sorcier du Sosso.
 
-C'est un texte court, rythmé, plein de prophéties et de combats. Il se lit dès le collège et donne la clé de toute la culture mandingue, partagée entre le Mali, la Guinée et leurs voisins. Pour une autre version de la même histoire, plus ample, voyez [Le Maître de la parole](/livre/le-maitre-de-la-parole) de Camara Laye.
+C'est un texte court, rythmé, plein de prophéties et de combats. Il se lit dès le collège et donne la clé de toute la culture mandingue, partagée entre le Mali, la [Guinée](/pays/guinee) et leurs voisins. Pour une autre version de la même histoire, plus ample, voyez [Le Maître de la parole](/livre/le-maitre-de-la-parole) de Camara Laye.
 
 ## Amadou Hampâté Bâ, la mémoire d'un siècle
 

@@ -36,7 +36,7 @@ Aux Comores, [Ali Zamir](/auteur/ali-zamir), né à Anjouan en 1987, a fait une 
 
 ## Zanzibar et la côte swahilie
 
-[Abdulrazak Gurnah](/auteur/abdulrazak-gurnah), né à Zanzibar en 1948, a reçu le prix Nobel de littérature en 2021. Il écrit en anglais, mais son monde est celui de l'océan Indien, de ses marchands et de ses exils. Dans [Paradis](/livre/paradis), un garçon de douze ans est laissé en gage à un riche marchand de la côte pour rembourser les dettes de son père, au début du XXe siècle, alors que les Allemands étendent leur emprise sur l'Afrique de l'Est. [Près de la mer](/livre/pres-de-la-mer) suit un vieil homme de Zanzibar venu demander l'asile en Angleterre.
+[Abdulrazak Gurnah](/auteur/abdulrazak-gurnah), né à Zanzibar en 1948, a reçu le [prix Nobel de littérature](/conseils/prix-nobel-litterature-ecrivains-africains) en 2021. Il écrit en anglais, mais son monde est celui de l'océan Indien, de ses marchands et de ses exils. Dans [Paradis](/livre/paradis), un garçon de douze ans est laissé en gage à un riche marchand de la côte pour rembourser les dettes de son père, au début du XXe siècle, alors que les Allemands étendent leur emprise sur l'Afrique de l'Est. [Près de la mer](/livre/pres-de-la-mer) suit un vieil homme de Zanzibar venu demander l'asile en Angleterre.
 
 ## Un détour par le Mozambique
 

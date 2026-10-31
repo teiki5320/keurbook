@@ -12,7 +12,7 @@ Un classique, c'est un livre qui continue d'être lu longtemps après sa parutio
 
 **[Les Contes d'Amadou Koumba](/livre/les-contes-d-amadou-koumba)** de Birago Diop (1947) ouvrent la marche. Le vétérinaire sénégalais met par écrit les contes de son enfance, avec Leuk-le-Lièvre et Bouki-l'Hyène. C'est la tradition orale qui entre dans la littérature écrite en français, et un livre que l'on peut lire à tout âge.
 
-**[L'Enfant noir](/livre/l-enfant-noir)** de Camara Laye (1953) est sans doute le récit d'enfance africain le plus lu. Depuis Paris, l'auteur guinéen se souvient de Kouroussa, de son père forgeron, de sa mère et des rites de passage. Un livre tendre, très accessible, qui reste une porte d'entrée idéale.
+**[L'Enfant noir](/livre/l-enfant-noir)** de Camara Laye (1953) est sans doute le récit d'enfance africain le plus lu. Depuis Paris, l'auteur [guinéen](/pays/guinee) se souvient de Kouroussa, de son père forgeron, de sa mère et des rites de passage. Un livre tendre, très accessible, qui reste une porte d'entrée idéale.
 
 **[Une vie de boy](/livre/une-vie-de-boy)** de Ferdinand Oyono (1956) prend le contre-pied : sous la forme du journal d'un jeune domestique camerounais, c'est une satire impitoyable de la société coloniale. Court et mordant, il fait sourire avant de faire grincer des dents.
 

@@ -24,7 +24,7 @@ C'est plus long que *L'Enfant noir*, mais on ne s'ennuie jamais : Hampâté Bâ 
 
 Au [Nigeria](/pays/nigeria), [Wole Soyinka](/auteur/wole-soyinka) raconte dans [Aké, les années d'enfance](/livre/ake-les-annees-d-enfance) ses premières années dans un quartier d'Abeokuta, en pays yoruba, dans les années 1930 et 1940. Entre un père directeur d'école et une mère commerçante au caractère explosif, l'enfant pose mille questions, fait des bêtises et dévore les livres.
 
-Le texte est vif, souvent drôle, et révèle déjà la curiosité de celui qui deviendra le premier Africain prix Nobel de littérature. Découvrez l'auteur dans notre article [Qui est Wole Soyinka ?](/conseils/wole-soyinka).
+Le texte est vif, souvent drôle, et révèle déjà la curiosité de celui qui deviendra le premier Africain [prix Nobel de littérature](/conseils/prix-nobel-litterature-ecrivains-africains). Découvrez l'auteur dans notre article [Qui est Wole Soyinka ?](/conseils/wole-soyinka).
 
 ## Grandir sous la colonisation
 

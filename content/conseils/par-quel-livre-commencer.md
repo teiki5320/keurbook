@@ -14,7 +14,7 @@ Si vous ne deviez lire qu'un livre, ce serait peut-être [Une si longue lettre](
 
 ## Un récit d'enfance : L'Enfant noir
 
-[L'Enfant noir](/livre/l-enfant-noir) de Camara Laye, publié en 1953, raconte une enfance en Haute-Guinée : le père forgeron, la mère respectée de tous, l'école, puis le départ vers la ville. C'est un livre tendre, lumineux, qui montre un monde avec ses rites et ses secrets. Il est idéal pour découvrir l'Afrique de l'Ouest d'avant les indépendances, sans avoir besoin de connaissances historiques.
+[L'Enfant noir](/livre/l-enfant-noir) de Camara Laye, publié en 1953, raconte une enfance en [Haute-Guinée](/pays/guinee) : le père forgeron, la mère respectée de tous, l'école, puis le départ vers la ville. C'est un livre tendre, lumineux, qui montre un monde avec ses rites et ses secrets. Il est idéal pour découvrir l'Afrique de l'Ouest d'avant les indépendances, sans avoir besoin de connaissances historiques.
 
 ## Un roman d'aujourd'hui : Petit pays
 
