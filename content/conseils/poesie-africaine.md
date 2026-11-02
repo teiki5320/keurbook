@@ -20,7 +20,7 @@ La poésie africaine de langue française est d'abord liée à la négritude et 
 
 Plus tôt encore, à Madagascar, [Jean-Joseph Rabearivelo](/auteur/jean-joseph-rabearivelo) publiait [Presque-songes](/livre/presque-songes) en 1934 : des poèmes en prose écrits en malgache et en français, où les paysages des hautes terres deviennent des visions de rêve. C'est l'un des premiers grands livres de la poésie africaine d'expression française. Notre article [Quels livres lire sur Madagascar ?](/conseils/livres-madagascar) vous en dira plus sur ce poète.
 
-Enfin, la tradition orale a ses grands poèmes, transmis de bouche à oreille. [Kaïdara](/livre/kaidara), recueilli et traduit par le Malien [Amadou Hampâté Bâ](/auteur/amadou-hampate-ba) avec Lilyan Kesteloot, est un récit initiatique peul : trois compagnons descendent au pays souterrain des génies et doivent comprendre une série de symboles étranges. On le lit comme une épopée.
+Enfin, la tradition orale a ses grands poèmes, transmis de bouche à oreille. [Kaïdara](/livre/kaidara), recueilli et traduit par le Malien [Amadou Hampâté Bâ](/auteur/amadou-hampate-ba) avec Lilyan Kesteloot, est un récit initiatique peul : trois compagnons descendent au pays souterrain des génies et doivent comprendre une série de symboles étranges. On le lit comme une épopée. Du même passeur, avec l'ethnologue Germaine Dieterlen, [Koumen](/livre/koumen) est un autre texte initiatique peul, venu des bergers du Ferlo, au Sénégal.
 
 ## Des poètes qui écrivent aussi des romans
 

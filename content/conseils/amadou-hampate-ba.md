@@ -36,7 +36,7 @@ La suite, [Oui mon commandant !](/livre/oui-mon-commandant), publiée en 1994, r
 
 ## Le conteur
 
-Hampâté Bâ a aussi transmis de nombreux contes peuls. [Kaïdara](/livre/kaidara), grand récit initiatique, suit trois compagnons descendus au pays souterrain des génies, où chacun révèle son caractère face aux symboles qu'il rencontre. Plus accessibles, [Petit Bodiel et autres contes de la savane](/livre/petit-bodiel-et-autres-contes-de-la-savane) et [Il n'y a pas de petite querelle](/livre/il-n-y-a-pas-de-petite-querelle) réunissent des histoires d'animaux rusés, de rois vaniteux et de marabouts gourmands, qui se moquent des travers humains. Ils se lisent en famille.
+Hampâté Bâ a aussi transmis de nombreux contes peuls. [Kaïdara](/livre/kaidara), grand récit initiatique, suit trois compagnons descendus au pays souterrain des génies, où chacun révèle son caractère face aux symboles qu'il rencontre. Avec l'ethnologue Germaine Dieterlen, il a aussi recueilli et commenté [Koumen](/livre/koumen) (1961), texte initiatique des pasteurs peuls : le jeune berger Silé Sadio, guidé par le petit génie Koumen, traverse douze clairières pour apprendre le savoir du bétail. Plus accessibles, [Petit Bodiel et autres contes de la savane](/livre/petit-bodiel-et-autres-contes-de-la-savane) et [Il n'y a pas de petite querelle](/livre/il-n-y-a-pas-de-petite-querelle) réunissent des histoires d'animaux rusés, de rois vaniteux et de marabouts gourmands, qui se moquent des travers humains. Ils se lisent en famille.
 
 ## Ce qui fait la force de son œuvre
 

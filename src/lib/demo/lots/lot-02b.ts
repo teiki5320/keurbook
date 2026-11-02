@@ -766,6 +766,7 @@ export const livres: Book[] = [
   livre({
     slug: "koumen",
     title: "Koumen",
+    metaDescription: "Koumen (1961) d'Amadou Hampâté Bâ et Germaine Dieterlen : résumé du texte initiatique peul où le berger Silé Sadio traverse douze clairières.",
     subtitle: "Texte initiatique des pasteurs peuls",
     contributors: [ba, auteur("Germaine Dieterlen", null)],
     genre: "recit",

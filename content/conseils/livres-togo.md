@@ -34,7 +34,7 @@ Si vous ne lisez qu'un livre de lui, prenez [Une magie ordinaire](/livre/une-mag
 
 ## Deux écrivains, deux façons de dire le pays
 
-Sami Tchak et Kossi Efoui ont le même âge à deux ans près, et tous deux sont passés par la philosophie à Lomé avant de partir en France. Pourtant, ils écrivent de façon très différente. Le premier aime la provocation, le franc-parler et les grands voyages : plusieurs de ses romans se passent en Amérique latine. Le second préfère les villes sans nom, les silences et les images, et parle du Togo à travers des pays imaginaires.
+Sami Tchak et Kossi Efoui ont le même âge à deux ans près, et tous deux sont passés par la philosophie à Lomé avant de partir en France. Pourtant, ils écrivent de façon très différente. Le premier aime la provocation, le franc-parler et les grands voyages : plusieurs de ses romans se passent en Amérique latine, à commencer par [Hermina](/livre/hermina), qui ouvre ce cycle. Le second préfère les villes sans nom, les silences et les images, et parle du Togo à travers des pays imaginaires.
 
 Mais tous deux reviennent, tôt ou tard, à la famille et au pays natal. C'est ce que montrent leurs deux livres les plus personnels, *Ainsi parlait mon père* et *Une magie ordinaire*, qui se lisent très bien l'un après l'autre. L'exil, sujet qui traverse leurs œuvres, est aussi au cœur de notre article [Quels romans africains parlent d'exil et d'immigration ?](/conseils/romans-africains-exil-immigration).
 

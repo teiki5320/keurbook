@@ -44,7 +44,7 @@ L'exil ne mène pas toujours en France. **[Tropique de la violence](/livre/tropi
 
 **[No Home](/livre/no-home)** de [Yaa Gyasi](/auteur/yaa-gyasi) (2016) remonte plus loin : il suit, sur trois siècles, les descendants de deux demi-sœurs du Ghana, l'une restée en Afrique, l'autre déportée en Amérique. Un grand roman sur l'exil forcé de la traite et ses conséquences.
 
-Enfin, pour changer de regard, **[Aux États-Unis d'Afrique](/livre/aux-etats-unis-d-afrique)** d'[Abdourahman A. Waberi](/auteur/abdourahman-a-waberi) (2006) renverse tout : l'Afrique y est riche et unie, et ce sont des Européens qui tentent d'y émigrer au péril de leur vie. Une fable satirique qui fait réfléchir.
+Enfin, pour changer de regard, **[Aux États-Unis d'Afrique](/livre/aux-etats-unis-d-afrique)** d'[Abdourahman A. Waberi](/auteur/abdourahman-a-waberi) (2006) renverse tout : l'Afrique y est riche et unie, et ce sont des Européens qui tentent d'y émigrer au péril de leur vie. Une fable satirique qui fait réfléchir. Du même auteur, [Transit](/livre/transit) donne la parole à deux Djiboutiens qui attendent à l'aéroport de Roissy qu'on statue sur leur sort.
 
 ## Par où commencer ?
 

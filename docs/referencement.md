@@ -209,3 +209,42 @@ Aucune : les 46 recherches de 15 vues ou plus ont toutes leur vraie page (fiche 
 ### Pages travaillées il y a 4 semaines
 
 Aucune : le journal commence le 17/10. Premier bilan le 14/11. Premiers signes (moins de 10 jours, à ne pas interpréter) : « une vie de boy » 11,9 → 14,1 ; « crépuscule des temps anciens » 11,4 → 11,8 ; « soundjata ou l'épopée mandingue » 12,5 → 10,1 ; « et dieu seul sait comment je dors » 19,7 → 23,8.
+
+## 02/11/2026
+
+### Pages améliorées (montrées par Google en 2e page, chiffres du 03/10 au 31/10)
+
+Sur les 81 pages de la liste, 80 ont déjà été travaillées depuis le 17/10 (moins de 28 jours) : il en restait une. Titre (« Titre, Auteur | Keurbook », gabarit commun) et titre principal inchangés : ils contiennent déjà la recherche.
+
+| Page | Recherches visées | Place | Vues | Ancienne description | Nouvelle description | Liens ajoutés depuis |
+|---|---|---|---|---|---|---|
+| /livre/koumen | « koumen » | 12,3 | 3 | automatique (début du résumé) | Koumen (1961) d'Amadou Hampâté Bâ et Germaine Dieterlen : résumé du texte initiatique peul où le berger Silé Sadio traverse douze clairières. | /conseils/amadou-hampate-ba, /conseils/poesie-africaine (aucun lien avant) |
+
+À revoir à partir du 30/11/2026.
+
+### Pages oubliées par Google (Search Console au 02/11)
+
+991 pages dans le plan du site (lu par Google le 28/10), 663 indexées. 311 pages « inconnues » (103 BD, 90 pages auteur, 62 livres, 22 pays, 14 actus, 11 Top 10, 7 Conseils, /conditions, /confidentialite) et 17 « visitées mais pas retenues ».
+
+Causes cherchées sur les 17 pages « visitées mais pas retenues » (pages construites : nombre de mots et liens depuis les autres pages, hors menu) :
+- Toutes ont un texte propre de 717 à 1 563 mots, une adresse canonique juste et sont dans le plan du site : pas de page trop courte ni en double.
+- Cinq fiches livre n'étaient reliées par aucun article Conseils, seulement par les fiches voisines. Fait : un lien depuis l'article le plus proche, avec des faits repris de la fiche — /livre/rue-la-poudriere (4 liens avant) depuis /conseils/livres-maurice-ocean-indien ; /livre/hermina (8) depuis /conseils/livres-togo ; /livre/transit (8) depuis /conseils/romans-africains-exil-immigration ; /livre/fille-d-amanitore-et-que-mon-regne-arrive depuis /conseils/leonora-miano. Les articles Maurice (4/11) et Togo (11/12) sont programmés : leurs liens compteront à leur parution.
+- /livre/femme-nue-femme-noire : pas de lien ajouté (aucun article proche n'en parle).
+- /mentions-legales : page juridique, normal qu'elle ne soit pas retenue ; rien à faire.
+- Les autres (/livre/revenir, /livre/l-enfant-pluie, /livre/liberte-4-socialisme-et-planification, /livre/monsieur-thogo-gnini, /livre/cycles-sombres, /auteur/nimrod, /pays/guinee et les 4 Conseils) ont déjà 9 à 35 liens, dont au moins un article : pas de défaut trouvé, Google doit repasser.
+
+Reste : les 311 pages inconnues (surtout BD et pages auteur) ; à revoir au prochain passage.
+
+### Fiches enrichies et socle
+
+Fiches enrichies vérifiées le 17/10 (moins de 28 jours) : pas refait. Contrôle rapide des pages construites aujourd'hui : JSON-LD valide sur /livre/koumen (Book, BreadcrumbList), /conseils/leonora-miano (Article, BreadcrumbList) et l'accueil (WebSite, Organization).
+
+Socle vérifié le 17/10 : pas refait. Vitesse sur téléphone : l'outil PageSpeed de Google a encore refusé ce matin (quota du jour épuisé, erreur 429). À refaire au prochain passage.
+
+### Page nouvelle
+
+Aucune : les 48 recherches de 15 vues ou plus ont toutes leur vraie page. « fatou diome » (66 vues) montre encore ses fiches livre (Inassouvies, nos vies 4e, De l'autre côté du regard 7e) plutôt que sa page auteur ou l'article, qui existent déjà. Toujours loin : « terre ceinte » 45,3, « impossible de grandir » 43,7, « marianne porte plainte » 41,1, « l'ante peuple » 35,1, « encre sueur salive et sang » 34,8, « trop de soleil tue l'amour » 32,7.
+
+### Pages travaillées il y a 4 semaines
+
+Aucune : le journal commence le 17/10. Premier bilan le 14/11. Signes (moins de 3 semaines, à ne pas interpréter) : « une vie de boy » 11,9 → 13,9 ; « crépuscule des temps anciens » 11,4 → 11,8 ; « soundjata ou l'épopée mandingue » 12,5 → 10,1 ; « les gardiens du temple » 8,2 → 8,4 ; « climbié » 11,1 → 11,0 ; « et dieu seul sait comment je dors » 19,7 → 23,7 ; « une enfant de poto poto » 17,4 → 25,8 ; « béatrice du congo » 9,5 → 10,1.

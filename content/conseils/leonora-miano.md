@@ -34,7 +34,7 @@ Elle aime aussi changer de forme. [Crépuscule du tourment](/livre/crepuscule-du
 
 ## Une écriture musicale
 
-Léonora Miano écrit aussi pour le théâtre et a publié plusieurs essais. Dans tous ses livres, la musique est présente : le jazz, la soul et le blues donnent leur rythme à ses phrases, et parfois leur titre à ses livres, comme *Blues pour Élise* (2010) ou *Afropean Soul* (2008). Sa langue est ample, rythmée, exigeante, avec des mots empruntés aux langues du Cameroun ou des noms de peuples inventés. Elle ne cherche pas à rendre les choses faciles, mais elle donne beaucoup à ceux qui acceptent d'entrer dans son monde.
+Léonora Miano écrit aussi pour le théâtre, comme [Fille d'Amanitore](/livre/fille-d-amanitore-et-que-mon-regne-arrive), où des esprits de reines guerrières se penchent sur des femmes d'aujourd'hui, et elle a publié plusieurs essais. Dans tous ses livres, la musique est présente : le jazz, la soul et le blues donnent leur rythme à ses phrases, et parfois leur titre à ses livres, comme *Blues pour Élise* (2010) ou *Afropean Soul* (2008). Sa langue est ample, rythmée, exigeante, avec des mots empruntés aux langues du Cameroun ou des noms de peuples inventés. Elle ne cherche pas à rendre les choses faciles, mais elle donne beaucoup à ceux qui acceptent d'entrer dans son monde.
 
 Elle a reçu en 2011 le Grand prix littéraire d'Afrique noire. Depuis 2021, un prix porte même son nom, le prix Frontières-Léonora Miano.
 

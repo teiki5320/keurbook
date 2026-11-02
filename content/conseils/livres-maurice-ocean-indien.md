@@ -12,7 +12,7 @@ Autour d'elle, l'océan Indien relie des mondes très différents : les Comores,
 
 ## Ananda Devi, l'île sans carte postale
 
-[Ananda Devi](/auteur/ananda-devi), née à Maurice en 1957 dans une famille d'origine indienne, est la grande romancière de l'île. Lauréate en 2024 du prix Neustadt, l'une des plus hautes récompenses littéraires internationales, elle écrit sur les femmes, le corps et la violence d'une société loin des clichés.
+[Ananda Devi](/auteur/ananda-devi), née à Maurice en 1957 dans une famille d'origine indienne, est la grande romancière de l'île. Lauréate en 2024 du prix Neustadt, l'une des plus hautes récompenses littéraires internationales, elle écrit sur les femmes, le corps et la violence d'une société loin des clichés. Son premier roman, [Rue la Poudrière](/livre/rue-la-poudriere), réédité en 2024, suit Paule, fille d'un quartier pauvre de Port-Louis prise dans le monde de la prostitution à la fin des années 1970.
 
 Commencez par [Ève de ses décombres](/livre/eve-de-ses-decombres), prix des Cinq Continents de la Francophonie 2006. Dans un quartier pauvre de Port-Louis, quatre adolescents cherchent à s'en sortir, et leurs quatre voix, rageuses et poétiques, se relaient. Un livre court et saisissant.
 
