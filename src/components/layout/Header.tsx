@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { siteConfig, withBase } from "@/lib/config";
 import { PileCount } from "../pile/PileCount";
 import { NAV, SECONDARY_NAV } from "./nav";
+import { SitesKeur } from "./SitesKeur";
 import { EmailLink } from "@/components/layout/EmailLink";
 
 /** En-tête : liens en ligne sur grand écran, bouton « Menu » plein écran sur mobile. */
@@ -40,7 +41,10 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <Link href="/pile-a-lire" className="ml-auto hidden items-center font-serif text-xl hover:text-accent md:inline-flex">
+          <div className="ml-auto hidden md:block">
+            <SitesKeur />
+          </div>
+          <Link href="/pile-a-lire" className="hidden items-center font-serif text-xl hover:text-accent md:inline-flex">
             Ma pile <i className="ml-1.5">à lire</i>
             <PileCount />
           </Link>
@@ -70,6 +74,7 @@ export function Header() {
             </span>
             <PileCount />
           </Link>
+          <SitesKeur mobile />
           <nav aria-label="Listes" className="mt-6 flex gap-5 text-sm text-muted">
             {SECONDARY_NAV.map((n) => (
               <Link key={n.href} href={n.href} prefetch={false} onClick={close} className="hover:text-ink">
