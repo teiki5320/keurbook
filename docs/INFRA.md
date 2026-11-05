@@ -129,6 +129,11 @@ uniquement des noms de variables et de consoles.
   2026. La page Confidentialité décrit cette mesure.
 - **Chiffres** : à vérifier dans la console.
 - **Console** : tableau de bord Cloudflare, rubrique Analytics & Logs → Web Analytics.
+- **Umami (essai depuis le 5 novembre 2026)** : Umami Cloud, offre gratuite (1 site, 100 000 événements par mois,
+  pas d'accès API), région UE, sans cookie. Balise dans `src/app/layout.tsx` (identifiant public
+  `UMAMI_WEBSITE_ID` dans `src/lib/config.ts`, limitée à `keurbook.com`) ; `public/_headers` autorise
+  `cloud.umami.is` (script) et `gateway.umami.is` (envoi). Clics comptés : « Clic Amazon » (avec le titre du
+  livre) et « Menu sites Keur » (avec le site). Console : https://cloud.umami.is. Cloudflare reste en place.
 
 ## Veille actus
 

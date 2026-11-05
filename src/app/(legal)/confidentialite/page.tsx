@@ -26,7 +26,7 @@ export default function PrivacyPage() {
 
       <h2>Données collectées et finalités</h2>
       <p>
-        Le site ne comporte ni compte, ni formulaire. La fréquentation est mesurée par Cloudflare Web Analytics, sans cookie et sans suivre une personne d&apos;un site à l&apos;autre : seuls des chiffres globaux (pages vues, pays, type d&apos;appareil) sont conservés. Des données personnelles sont
+        Le site ne comporte ni compte, ni formulaire. La fréquentation est mesurée par Cloudflare Web Analytics et par Umami (Umami Cloud, données hébergées dans l&apos;Union européenne), sans cookie et sans suivre une personne d&apos;un site à l&apos;autre : seuls des chiffres globaux (pages vues, pays, type d&apos;appareil, clics sur les liens Amazon et sur le menu des sites Keur) sont conservés. Des données personnelles sont
         traitées dans les cas suivants.
       </p>
       <ul>

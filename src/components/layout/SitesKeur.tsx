@@ -64,13 +64,13 @@ export function SitesKeur({ mobile = false }: { mobile?: boolean }) {
         >
           {SITES.map((s) => (
             <li key={s.href}>
-              <a href={s.href} className={lien}>
+              <a href={s.href} className={lien} data-umami-event="Menu sites Keur" data-umami-event-site={s.nom}>
                 <span className="font-medium">{s.nom}</span> <span className="text-muted">— {s.texte}</span>
               </a>
             </li>
           ))}
           <li className="mt-1 border-t border-line pt-1">
-            <a href="https://toakeur.com/" className={lien}>Toute la maison : toakeur.com</a>
+            <a href="https://toakeur.com/" className={lien} data-umami-event="Menu sites Keur" data-umami-event-site="toakeur.com">Toute la maison : toakeur.com</a>
           </li>
         </ul>
       )}

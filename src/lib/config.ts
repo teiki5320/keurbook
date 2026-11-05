@@ -29,6 +29,9 @@ export const siteConfig = {
  * Google AdSense : identifiant d'éditeur (public par conception : il figure dans le code de chaque page et dans ads.txt).
  * Vide = aucune publicité ni script Google sur le site.
  */
+/** Umami Cloud (offre gratuite, région UE) : identifiant public du site, visible dans chaque page (pas un secret). Essai depuis le 5 novembre 2026. */
+export const UMAMI_WEBSITE_ID = "d1715415-5452-48af-a9fa-69e3e2de06f3";
+
 export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-2680784147246798";
 
 /**
