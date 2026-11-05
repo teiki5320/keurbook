@@ -61,12 +61,22 @@ try {
     lus.push(
       ...(await Promise.all(
         ids.slice(i, i + 8).map(async (id) => {
-          try {
-            const art = nettoyerArticle(await lireJson(`${BASE_ARTICLES}${id}.json`));
-            return art && art.id === id ? art : null;
-          } catch {
-            return null;
+          // Jusqu'à 3 essais : un raté passager de GitHub Pages faisait disparaître la page de l'article.
+          for (let essai = 1; essai <= 3; essai++) {
+            try {
+              const art = nettoyerArticle(await lireJson(`${BASE_ARTICLES}${id}.json`));
+              if (art && art.id === id) return art;
+              console.warn(`veille/articles : article ${id} illisible ou invalide.`);
+              return null;
+            } catch (e) {
+              if (essai === 3) {
+                console.warn(`veille/articles : article ${id} injoignable après 3 essais (${e instanceof Error ? e.message : e}).`);
+                return null;
+              }
+              await new Promise((r) => setTimeout(r, 1000 * essai));
+            }
           }
+          return null;
         }),
       )),
     );
