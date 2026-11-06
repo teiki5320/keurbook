@@ -36,7 +36,7 @@ L'île Maurice a donné deux autrices majeures. **Ananda Devi**, avec [Ève de s
 
 **Chimamanda Ngozi Adichie (Nigeria)** est sans doute l'autrice africaine la plus célèbre au monde. [L'Autre Moitié du soleil](/livre/l-autre-moitie-du-soleil), qui a reçu l'Orange Prize en 2007, raconte la guerre du Biafra à travers plusieurs personnages. Son essai *Nous sommes tous des féministes* a été lu par des millions de personnes.
 
-**Yaa Gyasi (Ghana et États-Unis)**, avec [No Home](/livre/no-home) (2016), suit les descendants de deux demi-sœurs sur trois siècles, entre le Ghana et l'Amérique.
+**Yaa Gyasi (Ghana et États-Unis)**, avec [No Home](/livre/no-home) (2016), suit les descendants de deux demi-sœurs sur trois siècles, entre le Ghana et l'Amérique. Dans [Sublime royaume](/livre/sublime-royaume) (2020), elle suit Gifty, fille d'immigrés ghanéens élevée en Alabama et chercheuse en neurosciences, qui tente de comprendre la mort de son frère et la dépression de sa mère.
 
 ## Ce qui les rassemble
 

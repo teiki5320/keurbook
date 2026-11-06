@@ -22,7 +22,7 @@ Avec [Djarabane](/bd/djarabane-au-petit-marche-des-amours-perdues) (2023), le Tc
 
 ## Si vous aimez l'histoire
 
-[Barly Baruti](/auteur/barly-baruti), pionnier de la BD congolaise, signe avec le scénariste Christophe Cassiau-Haurie [Madame Livingstone](/bd/madame-livingstone) (2014). En 1915, au Congo belge, un aviateur belge doit couler un navire de guerre allemand sur le lac Tanganyika. On lui adjoint un guide énigmatique, un métis qui se dit fils de l'explorateur Livingstone. Une aventure qui éclaire un front oublié de la Première Guerre mondiale, et une belle histoire d'amitié.
+[Barly Baruti](/auteur/barly-baruti), pionnier de la BD congolaise, signe avec le scénariste Christophe Cassiau-Haurie [Madame Livingstone](/bd/madame-livingstone) (2014). En 1915, au Congo belge, un aviateur belge doit couler un navire de guerre allemand sur le lac Tanganyika. On lui adjoint un guide énigmatique, un métis qui se dit fils de l'explorateur Livingstone. Une aventure qui éclaire un front oublié de la Première Guerre mondiale, et une belle histoire d'amitié. Ses débuts dans la BD franco-belge passent par [Eva K.](/bd/eva-k-les-hommes-du-train) (1995), avec le scénariste Frank Giroud : le premier tome d'une trilogie policière, où des malfaiteurs veulent dévaliser un train blindé chargé d'art sacré, dans un pays africain soumis à une dictature.
 
 Du même dessinateur, [Chaos debout à Kinshasa](/bd/chaos-debout-a-kinshasa) (2016), sur un scénario de Thierry Bellefroid, nous emmène en 1974. Un petit voyou de Harlem gagne un voyage pour assister au combat de boxe entre Mohamed Ali et George Foreman, à Kinshasa. Il découvre le Zaïre de Mobutu, nid d'espions et de politiciens véreux. Un album très documenté, qui se lit comme un film.
 

@@ -46,16 +46,22 @@ export default async function CountriesPage() {
           Faites glisser le carrousel pour voyager d&apos;ouest en est, ou cherchez directement un écrivain dans la liste des <Link href="/auteurs">auteurs</Link>. Pour un premier pas, lisez notre conseil{" "}
           <Link href="/conseils/par-quel-livre-commencer">Par quel livre commencer pour découvrir la littérature africaine ?</Link>
         </p>
-        {/* Ligne discrète : chaque page pays a un lien depuis cette page (pour les visiteurs sans carrousel et pour Google). */}
-        <nav aria-label="Tous les pays" className="pt-2 text-[13px] leading-loose text-faint">
-          {[...countries]
-            .sort((a, b) => a.name.localeCompare(b.name, "fr"))
-            .map((c, i) => (
-              <span key={c.code}>
-                {i > 0 && " · "}
-                <Link href={`/pays/${c.slug}`}>{c.name}</Link>
-              </span>
-            ))}
+        {/* Liste de tous les pays avec leurs nombres d'écrivains, de livres et de BD (lien vers chaque page pays, lisible sans carrousel et par Google). */}
+        <nav aria-label="Tous les pays">
+          <h3 className="pt-2 text-[15px] font-semibold">Les {countries.length} pays de Keurbook</h3>
+          <ul className="columns-1 gap-6 pt-1 text-[14px] leading-relaxed sm:columns-2">
+            {[...countries]
+              .sort((a, b) => a.name.localeCompare(b.name, "fr"))
+              .map((c) => (
+                <li key={c.code}>
+                  <Link href={`/pays/${c.slug}`}>{c.name}</Link>
+                  <span className="text-faint">
+                    {" "}
+                    : {[c.authors && `${c.authors} écrivain${c.authors > 1 ? "s" : ""}`, c.books && `${c.books} livre${c.books > 1 ? "s" : ""}`, c.bd && `${c.bd} BD`].filter(Boolean).join(", ")}
+                  </span>
+                </li>
+              ))}
+          </ul>
         </nav>
       </EntryText>
     </>

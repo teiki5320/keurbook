@@ -58,6 +58,8 @@ export function lifeYears(a: Pick<Author, "birthYear" | "deathYear">): string {
 /** Titre et tome : « Aya de Yopougon, tome 2 », « Akissi : Paix temporaire ». */
 export function titleWithSubtitle(book: Pick<Book, "title" | "subtitle">): string {
   if (!book.subtitle) return book.title;
+  // Sous-titre qui reprend déjà le titre (« Dipoula » / « Dipoula l'Albinos contre le petit Pahé ») : pas de répétition.
+  if (normalize(book.subtitle).startsWith(normalize(book.title))) return book.subtitle;
   const tome = book.subtitle.match(/^tome\s+(\d+)$/i);
   return tome ? `${book.title}, tome ${tome[1]}` : `${book.title} : ${book.subtitle}`;
 }

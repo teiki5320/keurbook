@@ -26,6 +26,8 @@ La série a été adaptée en dessin animé, ce qui peut aider à accrocher les 
 
 [**La Vie de Pahé**](/bd/la-vie-de-pahe), du dessinateur gabonais Pahé, raconte son enfance au Gabon puis son arrivée en France. Le trait est caricatural et plein d'énergie, le ton volontiers comique. Certains passages parlent de sujets plus sérieux, comme l'immigration : c'est une BD à feuilleter d'abord, pour vérifier qu'elle convient à l'âge de l'enfant. Elle a elle aussi été adaptée pour la télévision.
 
+Le même dessinateur a créé la série [Dipoula](/bd/dipoula-l-albinos-contre-le-petit-pahe). Dans le deuxième album (2010, scénario de Louis-Bertrand Devaud), un petit Gabonais albinos élevé à l'orphelinat voit arriver dans sa classe le petit Pahé : la rivalité tourne peu à peu à l'amitié, en gags d'une ou deux pages.
+
 ## Pour les adolescents : Aya de Yopougon
 
 [**Aya de Yopougon**](/bd/aya-de-yopougon), de Marguerite Abouet (scénario) et Clément Oubrerie (dessin), est la série qui a fait connaître la BD africaine au grand public. Elle a reçu le prix du premier album au Festival d'Angoulême en 2006. On y suit Aya, une jeune fille sérieuse qui rêve de devenir médecin, et ses amies, dans un quartier populaire d'Abidjan à la fin des années 1970.

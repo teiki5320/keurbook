@@ -248,3 +248,14 @@ Aucune : les 48 recherches de 15 vues ou plus ont toutes leur vraie page. « fat
 ### Pages travaillées il y a 4 semaines
 
 Aucune : le journal commence le 17/10. Premier bilan le 14/11. Signes (moins de 3 semaines, à ne pas interpréter) : « une vie de boy » 11,9 → 13,9 ; « crépuscule des temps anciens » 11,4 → 11,8 ; « soundjata ou l'épopée mandingue » 12,5 → 10,1 ; « les gardiens du temple » 8,2 → 8,4 ; « climbié » 11,1 → 11,0 ; « et dieu seul sait comment je dors » 19,7 → 23,7 ; « une enfant de poto poto » 17,4 → 25,8 ; « béatrice du congo » 9,5 → 10,1.
+
+## 06/11/2026 — « Pages visitées mais pas retenues » (35 pages, demande du Studio)
+
+Contrôle des pages construites (mots du contenu principal, liens depuis les autres pages hors menu, titre, description) :
+- Toutes ont un texte propre (de 380 à 3 100 mots), un titre et une description uniques, une adresse canonique et sont dans le plan du site. 17 d'entre elles avaient déjà été regardées le 02/11.
+- /pays (page des pays) était la plus courte (382 mots, la liste des pays ne donnait que leurs noms) : la liste montre maintenant, pour chaque pays, le nombre d'écrivains, de livres et de BD du site (chiffres calculés depuis les fiches) → 510 mots.
+- Fiches BD d'une série au même nom (Dipoula) : le titre de page répétait le nom (« Dipoula : Dipoula l'Albinos contre le petit Pahé ») → « Dipoula l'Albinos contre le petit Pahé (BD) » ; la description automatique des BD avait une virgule mal placée (« (2010) , BD de ») et ne distinguait pas les tomes d'une même série → « Titre : sous-titre (année), BD de … ». Corrigé dans le gabarit, pour toutes les BD.
+- Liens ajoutés depuis l'article le plus proche, avec des faits repris de la fiche : /livre/sublime-royaume (7 liens avant) depuis /conseils/grandes-autrices-africaines ; /bd/eva-k-les-hommes-du-train (7) depuis /conseils/bd-africaines-adultes ; /bd/dipoula-l-albinos-contre-le-petit-pahe (9) depuis /conseils/bd-africaines-enfant.
+- Rien à faire : /mentions-legales (page juridique) ; /bd, /auteurs, /conseils, /actus (pages de rubrique longues et très reliées) ; les autres fiches, pages auteur, pays et Conseils (8 à 36 liens chacune, texte de 490 à 1 650 mots) : Google doit repasser.
+
+Reste : surveiller ces 35 pages au prochain relevé de la Search Console.
