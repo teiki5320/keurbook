@@ -105,7 +105,22 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
               fetchPriority="high"
               className="aspect-[3/2] w-full rounded-md object-cover shadow-2xl shadow-black/50"
             />
-            <figcaption className="mt-2 text-[11px] text-faint">Illustration Keurbook (créée par intelligence artificielle).</figcaption>
+            <figcaption className="mt-2 text-[11px] break-words text-faint">
+              {conseil.imageCredit ? (
+                <>
+                  Photo :{" "}
+                  {conseil.imagePage ? (
+                    <a href={conseil.imagePage} target="_blank" rel="noopener nofollow" className="underline decoration-line-strong underline-offset-2 hover:text-ink">
+                      {conseil.imageCredit}
+                    </a>
+                  ) : (
+                    conseil.imageCredit
+                  )}
+                </>
+              ) : (
+                "Illustration Keurbook (créée par intelligence artificielle)."
+              )}
+            </figcaption>
           </figure>
         )}
         {/* 2. Réponse courte */}

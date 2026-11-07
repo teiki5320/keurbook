@@ -5,6 +5,8 @@ date: 2026-11-18
 theme: actualite
 resume: Le Black Friday tombe le vendredi 27 novembre 2026. Préparez votre liste dès maintenant avec des valeurs sûres : La plus secrète mémoire des hommes, Petit pays, Verre Cassé ou Frère d'âme pour les romans, Akissi pour les enfants. Les prix changent selon les vendeurs : vérifiez-les toujours sur Amazon.
 livres: la-plus-secrete-memoire-des-hommes, petit-pays, verre-casse, frere-d-ame, jacaranda, afrotopia, akissi, le-pagne-noir
+imageCredit: freestocks.org · CC0 (Wikimedia Commons)
+imagePage: https://commons.wikimedia.org/wiki/File:A_pile_of_books_(29767858348).jpg
 ---
 Le Black Friday 2026 aura lieu le vendredi 27 novembre. Entre les offres du moment et les cadeaux de fin d'année qui approchent, c'est une bonne occasion de remplir sa pile à lire. Pas besoin de vous précipiter : mieux vaut arriver avec une liste claire. Voici de quoi la composer avec des livres d'auteurs africains, du roman au conte pour enfants.
 
