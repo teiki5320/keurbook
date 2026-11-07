@@ -30,7 +30,7 @@ publications réelles, ou routine qui publie).
 - ✅ Site en ligne sur `keurbook.com`.
 - ✅ Référencement naturel : sitemap envoyé à Google Search Console (propriété `keurbook.com`),
   IndexNow après chaque publication et chaque lundi, articles Conseils publiés trois fois par semaine (lundi, mercredi,
-  vendredi). Au 6 novembre 2026 : 45 articles publiés, 23 programmés ; le rythme régulier va
+  vendredi). Au 7 novembre 2026 : 45 articles publiés, 24 programmés (23 le 6 novembre ; un article Black Friday, le 18 novembre, s'ajoute à la série) ; le rythme régulier va
   jusqu'au 28 décembre (7 articles ajoutés le 30 octobre ; il s'arrêtait au 7 décembre avant), puis seuls des articles de saison sont programmés
   (1er et 8 février 2027). Depuis fin octobre 2026, la routine « Articles » du Studio vérifie chaque matin l'avance du site
   et complète la série quand il reste moins de 20 articles ou moins de 4 semaines (elle passait avant le 1er et le 15 de chaque mois).
@@ -51,7 +51,7 @@ publications réelles, ou routine qui publie).
 - **Pages indexées par Google** : 649 sur 995 (Search Console, onglet Indexation du Studio, 6 novembre 2026 ; 650 sur 993 le 5 novembre, 663 sur 993 le 4 novembre, 663 sur 991 le 2 novembre, 675 sur 988 le 1er novembre, 675 sur 987 le 31 octobre, 677 sur 984 le 30 octobre, 680 sur 982 le 29 octobre, 680 sur 980 le 28 octobre, 679 sur 975 le 27 octobre, 673 sur 971 le 20 octobre)
 - **Pages pas encore indexées** : 346 (6 novembre 2026), dont 311 inconnues de Google et 35 explorées mais pas indexées (343 le 5 novembre, 330 le 4 novembre, 328 le 2 novembre, 313 le 1er novembre, 312 le 31 octobre, 307 le 30 octobre, 302 le 29 octobre)
 - **Liens Amazon directs** : 435 livres et BD sur 796 (5 novembre 2026 ; 436 le 29 octobre, 90 le 19 octobre, 91 jusqu'au 24 octobre). Fiches qui reçoivent des visites : 38 sur 81 en lien direct (17 avant)
-- **Articles Conseils** : 45 publiés, 23 programmés (6 novembre 2026 ; 44 publiés et 24 programmés le 5 novembre, 43 publiés et 25 programmés le 2 novembre, 42 publiés et 26 programmés le 1er novembre, 41 publiés et 20 programmés le 29 octobre)
+- **Articles Conseils** : 45 publiés, 24 programmés (7 novembre 2026 ; 45 publiés et 23 programmés le 6 novembre, 44 publiés et 24 programmés le 5 novembre, 43 publiés et 25 programmés le 2 novembre, 42 publiés et 26 programmés le 1er novembre, 41 publiés et 20 programmés le 29 octobre)
 - **Visites** : à vérifier dans la console Cloudflare Web Analytics (mesure active depuis le 13 octobre 2026) et dans Umami (essai depuis le 5 novembre 2026)
 - **Clics et revenus Amazon** : à vérifier dans la console
 - **Revenus AdSense** : aucun ; site refusé le 21 octobre 2026, nouvel examen demandé le 22 octobre, « En préparation » dans la console (vérifié le 6 novembre 2026)
