@@ -25,7 +25,7 @@ export function BookCard({ book, showBuy = false, priority = false }: { book: Bo
       </p>
       {showBuy && (
         <div className="mt-3">
-          <AmazonButton href={book.amazonUrl} title={book.title} small />
+          <AmazonButton href={book.amazonUrl} title={book.title} emplacement={book.amazonEmplacement} small />
           <AmazonNote illustrated={!book.cover && !!book.illustration} />
         </div>
       )}

@@ -2,7 +2,7 @@
  * Bouton « Voir sur Amazon » (lien partenaire, nouvel onglet). Aucun prix affiché : seul celui d'Amazon fait foi
  * (même libellé que les autres sites Keur). Toujours au moins 44 px de haut (min-h-11), même en petite taille, pour le doigt.
  */
-export function AmazonButton({ href, title, small = false, className = "" }: { href: string; title: string; small?: boolean; className?: string }) {
+export function AmazonButton({ href, title, emplacement, small = false, className = "" }: { href: string; title: string; emplacement: string; small?: boolean; className?: string }) {
   return (
     <a
       href={href}
@@ -11,6 +11,7 @@ export function AmazonButton({ href, title, small = false, className = "" }: { h
       aria-label={`Voir sur Amazon : ${title}, lien partenaire (nouvel onglet)`}
       data-umami-event="Clic Amazon"
       data-umami-event-livre={title}
+      data-umami-event-emplacement={emplacement}
       className={`${small ? "btn-primary min-h-11 px-4 py-2 text-[13px]" : "btn-primary min-h-11"} ${className}`}
     >
       Voir sur Amazon

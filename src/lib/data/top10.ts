@@ -1,4 +1,4 @@
-import { amazonUrl } from "@/lib/amazon";
+import { amazonUrl, type AmazonEmplacement } from "@/lib/amazon";
 import { ageFromSheet, bookPath, creatorNames } from "@/lib/book-utils";
 import { TOP10S } from "@/lib/top10/sujets";
 import type { Top10 } from "@/lib/top10/types";
@@ -25,6 +25,8 @@ export interface Top10Book {
   awards: string[];
   why: string;
   amazonUrl: string;
+  /** Emplacement du bouton, pour le suivi des clics. */
+  amazonEmplacement: AmazonEmplacement;
 }
 
 /** Espaces insécables à la française (avant « ? ! : ; » et dans les guillemets) : aucun signe seul en début de ligne. */
@@ -84,6 +86,7 @@ export async function getTop10Books(top: Top10): Promise<Top10Book[]> {
         awards: book.awards.map((a) => `${a.name} ${a.year}`),
         why: fr(why ?? whyFromSheet(book.summary, book.whyRead)),
         amazonUrl: amazonUrl(book, "top"),
+        amazonEmplacement: "top",
       };
     }),
   );

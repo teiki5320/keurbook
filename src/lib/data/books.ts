@@ -26,6 +26,8 @@ export interface BookCardData {
   cover: string | null;
   illustration: string | null;
   amazonUrl: string;
+  /** Emplacement du bouton, pour le suivi des clics. */
+  amazonEmplacement: AmazonEmplacement;
   priceCents: number | null;
   addedAt: string;
   featured: boolean;
@@ -97,6 +99,7 @@ export async function toCard(book: Book, emplacement: AmazonEmplacement = "rubri
     cover: book.cover,
     illustration: book.illustration ?? null,
     amazonUrl: amazonUrl(book, emplacement),
+    amazonEmplacement: emplacement,
     priceCents: book.priceCents,
     addedAt: book.addedAt,
     featured: book.featured,

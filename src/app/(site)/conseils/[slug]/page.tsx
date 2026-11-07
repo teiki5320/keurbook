@@ -132,7 +132,7 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
                     <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
                     {why.get(b.slug) && <p className="mt-1.5 text-[13px] leading-snug text-ink/80">{why.get(b.slug)}</p>}
                     <div className="mt-2">
-                      <AmazonButton href={b.amazonUrl} title={b.title} small />
+                      <AmazonButton href={b.amazonUrl} title={b.title} emplacement={b.amazonEmplacement} small />
                       <AmazonNote illustrated={!b.cover && !!b.illustration} />
                     </div>
                   </div>

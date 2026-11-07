@@ -174,7 +174,7 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
                   <p className="mt-2 hidden text-sm text-muted sm:line-clamp-3">{start.summary}</p>
                 </div>
                 <div className="mt-3">
-                  <AmazonButton href={startCard.amazonUrl} title={startCard.title} small />
+                  <AmazonButton href={startCard.amazonUrl} title={startCard.title} emplacement={startCard.amazonEmplacement} small />
                   <AmazonNote illustrated={!startCard.cover && !!startCard.illustration} />
                 </div>
               </div>

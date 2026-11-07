@@ -133,7 +133,7 @@ export default async function CountryPage({ params }: PageProps<"/pays/[slug]">)
                   <span className="mt-1 block text-xs text-muted">{b.creators}</span>
                 </Link>
                 <div className="mt-3">
-                  <AmazonButton href={b.amazonUrl} title={b.title} small />
+                  <AmazonButton href={b.amazonUrl} title={b.title} emplacement={b.amazonEmplacement} small />
                   <AmazonNote illustrated={!b.cover && !!b.illustration} />
                 </div>
               </li>

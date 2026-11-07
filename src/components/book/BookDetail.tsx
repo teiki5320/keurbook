@@ -91,7 +91,7 @@ export async function BookDetail({ book }: { book: Book }) {
     <>
       <div className="flex flex-col gap-2">
         <div>
-          <AmazonButton href={buyUrl} title={book.title} className="w-full py-4 text-[15px]" />
+          <AmazonButton href={buyUrl} title={book.title} emplacement="fiche" className="w-full py-4 text-[15px]" />
           <AmazonNote illustrated={!book.cover && !!book.illustration} />
         </div>
         <PileButton slug={book.slug} className="py-3.5 text-[15px]" />

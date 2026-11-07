@@ -99,7 +99,7 @@ export function PileList({ books }: { books: BookCardData[] }) {
                   </Link>
                   <p className="mt-0.5 text-xs text-muted">{b.creators}</p>
                   <div className="mt-2">
-                    <AmazonButton href={b.amazonUrl} title={b.title} small />
+                    <AmazonButton href={b.amazonUrl} title={b.title} emplacement={b.amazonEmplacement} small />
                     <AmazonNote illustrated={!b.cover && !!b.illustration} />
                   </div>
                 </div>

@@ -83,7 +83,7 @@ export function Top10View({ tops, top, books }: { tops: Top10[]; top: Top10; boo
                     <p className="mt-2 text-[15px] leading-relaxed text-ink/85">{b.why}</p>
 
                     <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-3">
-                      <AmazonButton href={b.amazonUrl} title={b.title} className="py-3" />
+                      <AmazonButton href={b.amazonUrl} title={b.title} emplacement={b.amazonEmplacement} className="py-3" />
                       <Link href={b.path} className="text-sm text-accent hover:text-ink">
                         Voir la fiche →
                       </Link>
