@@ -663,9 +663,11 @@ export const livres: Book[] = [
       "Un classique de l'album jeunesse africain, réédité avec un CD.",
     ],
     year: 2005,
+    // 07/11/2026 : l'édition avec CD n'est plus vendue neuve sur Amazon.fr ; édition conseillée :
+    // l'album Syros de 2015, vendu par Amazon (fiche Amazon vérifiée le 07/11/2026).
     publisher: "Syros",
-    pages: null,
-    isbn: "9782748517439",
+    pages: 32,
+    isbn: "9782748516982",
     format: "album",
     awards: [],
   }),

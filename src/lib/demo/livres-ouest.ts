@@ -37,9 +37,11 @@ export const livresOuest: Book[] = [
     ],
     quote: null,
     year: 1979,
-    publisher: "Le Serpent à plumes",
-    pages: 164,
-    isbn: "9782842612894",
+    // 07/11/2026 : l'édition du Serpent à plumes n'est plus vendue neuve sur Amazon.fr ; édition conseillée :
+    // le poche Litos (2023), vendu par Amazon (fiche Amazon vérifiée le 07/11/2026).
+    publisher: "Litos",
+    pages: 176,
+    isbn: "9782385060398",
     format: "poche",
     awards: [{ name: "Prix Noma", year: 1980 }],
     featured: true,
@@ -105,7 +107,7 @@ export const livresOuest: Book[] = [
     ],
     quote: null,
     year: 1956,
-    // 29/10/2026 : l'édition Seuil (2020037955) n'est plus vendue neuve sur Amazon.fr ; édition conseillée :
+    // 29/10/2026 : l'édition Seuil n'est plus vendue neuve sur Amazon.fr ; édition conseillée :
     // l'Œuvre poétique en Points (2020), qui contient Éthiopiques (fiche Amazon vérifiée le 29/10/2026).
     editionTitle: "Œuvre poétique (recueil complet, avec Éthiopiques)",
     publisher: "Points",

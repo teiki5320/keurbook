@@ -1739,6 +1739,14 @@
     "le-monde-s-effondre": {
       "asin": "2251459790",
       "verifie_le": "2026-10-28"
+    },
+    "une-si-longue-lettre": {
+      "asin": "2385060396",
+      "verifie_le": "2026-11-07"
+    },
+    "le-taxi-brousse-de-papa-diop": {
+      "asin": "2748516982",
+      "verifie_le": "2026-11-07"
     }
   },
   "indisponibles": {
@@ -1746,11 +1754,6 @@
       "asin": "2723606260",
       "constate_le": "2026-10-24",
       "note": "Livre épuisé, sans autre édition achetable sur Amazon.fr : laisser sans lien direct."
-    },
-    "une-si-longue-lettre": {
-      "asin": "2842612892",
-      "constate_le": "2026-10-28",
-      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
     },
     "allah-n-est-pas-oblige": {
       "asin": "2020525712",
@@ -1774,11 +1777,6 @@
     },
     "le-maitre-de-la-parole": {
       "asin": "2266008986",
-      "constate_le": "2026-10-28",
-      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
-    },
-    "le-taxi-brousse-de-papa-diop": {
-      "asin": "2748517431",
       "constate_le": "2026-10-28",
       "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
     },
