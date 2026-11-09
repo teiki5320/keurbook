@@ -78,7 +78,7 @@ export function BooksBrowser({ books, countries, simple = false }: Props) {
         />
       </label>
 
-      <div className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
+      <div className="relative -mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
         <Pill label="Pays" value={state.pays} onChange={(pays) => update({ pays })} options={countries.map((c) => [c.code, c.name])} />
         {!simple && <Pill label="Thème" value={state.theme} onChange={(theme) => update({ theme })} options={usedThemes} />}
         {!simple && <Pill label="Genre" value={state.genre} onChange={(genre) => update({ genre })} options={usedGenres} />}

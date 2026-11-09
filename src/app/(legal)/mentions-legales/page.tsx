@@ -57,7 +57,8 @@ export default function LegalNoticePage() {
           qu&apos;aux personnes à qui vous envoyez ce lien.
         </li>
         <li>
-          Les polices, les images et le code du site sont servis par le site lui-même. La fréquentation est mesurée sans
+          Les polices, les images et le code du site sont servis par le site lui-même, sauf les photos des actus (GitHub
+          Pages) et les scripts de mesure d&apos;audience. La fréquentation est mesurée sans
           cookie par Cloudflare Web Analytics et Umami (chiffres globaux seulement). Seuls les annonces et le bandeau de
           consentement viennent de Google.
         </li>

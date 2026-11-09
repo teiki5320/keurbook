@@ -136,7 +136,7 @@ export const auteursCentreEstSud: Author[] = [
     awards: [
       { name: "Grand prix littéraire d'Afrique noire", year: 2015 },
       { name: "Prix Ahmadou-Kourouma", year: 2020 },
-      { name: "Grand prix littéraire d'Afrique noire", year: 2024 },
+      { name: "Grand prix Afrique", year: 2025 },
       { name: "Prix des Cinq Continents de la Francophonie", year: 2025 },
     ],
   },
