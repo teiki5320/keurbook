@@ -1747,6 +1747,10 @@
     "le-taxi-brousse-de-papa-diop": {
       "asin": "2748516982",
       "verifie_le": "2026-11-07"
+    },
+    "les-traces-de-la-meute": {
+      "asin": "2738422780",
+      "verifie_le": "2026-11-09"
     }
   },
   "indisponibles": {
@@ -1808,11 +1812,6 @@
     "silence-du-choeur": {
       "asin": "2708709828",
       "constate_le": "2026-10-28",
-      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
-    },
-    "les-traces-de-la-meute": {
-      "asin": "2738422780",
-      "constate_le": "2026-11-05",
       "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
     }
   }

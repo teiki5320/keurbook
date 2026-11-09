@@ -17,7 +17,7 @@ uniquement des noms de variables et de consoles.
 - 🌐 **Web** : 🐙 GitHub — main · publication au vert [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbook [ok] → 🌍 keurbook.com — en ligne, réponse 200 [ok]
 - 📝 **Contenu** : ✍️ Articles Conseils — 46 publiés, 23 programmés (9 novembre 2026 ; 45 et 24 les 7 et 8 novembre) [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — sitemap signalé après chaque publication et chaque lundi [ok] → 🔍 Google — 490 pages indexées sur 998 [à faire]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 10 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbook.json sur GitHub Pages [ok] → 🌍 keurbook.com — accueil (4), /actus (20), fiches auteur (3) [ok]
-- 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 437 ASIN sur 796 livres et BD [à faire]
+- 🛒 **Affiliation** : 📚 Fiche livre ou BD — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbookfr-21 [ok] → 🔗 Liens directs — 438 ASIN sur 796 livres et BD [à faire]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — script et 4 blocs en place [ok] → ✅ Validation du site — refusée le 21/10, réexamen demandé le 22/10, « En préparation » au 09/11 [pas encore] → 💶 Revenus — aucun constaté [pas encore]
 
 ## Vue d'ensemble
@@ -81,7 +81,7 @@ uniquement des noms de variables et de consoles.
 - **Rôle** : les boutons « Voir sur Amazon » (au moins 44 px de haut) mènent à Amazon.fr avec le tag `keurbookfr-21`
   (construits par `src/lib/amazon.ts`, réglable par `NEXT_PUBLIC_AMAZON_TAG`). Depuis le 28 octobre 2026, le lien
   reçoit un emplacement (fiche, top, conseil, rubrique) et prend son code dans une table unique (`AMAZON_TAGS`) :
-  tous les emplacements utilisent encore `keurbookfr-21`. 437 livres et BD sur 796 ont un ASIN vérifié
+  tous les emplacements utilisent encore `keurbookfr-21`. 438 livres et BD sur 796 ont un ASIN vérifié
   (`src/lib/demo/amazon-asins.json`, date de vérification par livre) et mènent directement à leur fiche Amazon :
   90 le 19 octobre 2026 (pages Top 10), 359 ajoutés le 28 octobre 2026 (titre et ISBN-13 comparés à la fiche,
   bouton « Ajouter au panier » présent), puis 16 retirés le même jour car plus vendus neufs (dont Le monde s'effondre,
@@ -91,7 +91,7 @@ uniquement des noms de variables et de consoles.
   (Les Belles Lettres, 2026), affichée dans la fiche. Le 29 octobre 2026, Éthiopiques est passé à l'Œuvre poétique
   de Senghor (Points), l'édition Seuil n'étant plus vendue neuve (toujours 436 ASIN vérifiés). Assèze l'Africaine, n° 1 de son Top 10, reste sur la recherche :
   aucune édition vendue neuve. L'Empire peul du Macina, épuisé, reste
-  sans lien direct depuis le 24 octobre 2026. Le 5 novembre 2026, Les Traces de la meute (2738422780), plus vendu neuf, est revenu à la recherche Amazon (436 ASIN vérifiés jusque-là, 435 ensuite). Le 7 novembre 2026, Une si longue lettre (poche Litos 2023) et Le taxi-brousse de Papa Diop (album Syros 2015) ont retrouvé un lien direct avec une édition vendue neuve (437 ASIN vérifiés depuis). Les autres ouvrent une recherche Amazon (ISBN ou titre + auteur, rayon Livres).
+  sans lien direct depuis le 24 octobre 2026. Le 5 novembre 2026, Les Traces de la meute (2738422780), plus vendu neuf, est revenu à la recherche Amazon (436 ASIN vérifiés jusque-là, 435 ensuite). Le 7 novembre 2026, Une si longue lettre (poche Litos 2023) et Le taxi-brousse de Papa Diop (album Syros 2015) ont retrouvé un lien direct avec une édition vendue neuve (437 ASIN vérifiés jusqu'au 8 novembre). Le 9 novembre 2026, Les Traces de la meute (2738422780) a retrouvé son lien direct : de nouveau vendu neuf par un libraire sur Amazon.fr (438 ASIN vérifiés depuis). L'Empire peul du Macina, revérifié le 9 novembre 2026, est toujours « Actuellement indisponible » : il garde la recherche. Les autres ouvrent une recherche Amazon (ISBN ou titre + auteur, rayon Livres).
 - **Vérification de la disponibilité** : `npm run verifier-produits` (sur le Mac, pas sur GitHub ; `--ecrire`,
   `--lot 30`, `--ids …`) ouvre chaque page Amazon : bouton d'achat présent → date du jour ; sinon le livre passe en
   « indisponibles » et revient à la recherche. Premier passage le 28 octobre 2026 (54 confirmés, 16 retirés,

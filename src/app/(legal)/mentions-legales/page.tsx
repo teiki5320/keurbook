@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
 export default function LegalNoticePage() {
   const l = legalConfig;
   return (
-    <LegalPage title="Mentions légales" updated="12 octobre 2026">
+    <LegalPage title="Mentions légales" updated="9 novembre 2026">
       <p>
         Informations sur l&apos;éditeur et l&apos;hébergeur du site, l&apos;usage de vos données et les limites des
         informations publiées (loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique).
@@ -57,8 +57,9 @@ export default function LegalNoticePage() {
           qu&apos;aux personnes à qui vous envoyez ce lien.
         </li>
         <li>
-          Les polices, les images et le code du site sont servis par le site lui-même, sans mesure d&apos;audience. Seuls les
-          annonces et le bandeau de consentement viennent de Google.
+          Les polices, les images et le code du site sont servis par le site lui-même. La fréquentation est mesurée sans
+          cookie par Cloudflare Web Analytics et Umami (chiffres globaux seulement). Seuls les annonces et le bandeau de
+          consentement viennent de Google.
         </li>
         <li>L&apos;hébergeur peut enregistrer des journaux techniques (adresse IP, date, page demandée) pour la sécurité du service.</li>
         <li>

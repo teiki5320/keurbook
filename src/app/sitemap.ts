@@ -22,7 +22,7 @@ function commitDay(): string {
 }
 
 /** Dernière mise à jour des pages légales. */
-const LEGAL_UPDATED = "2026-10-12";
+const LEGAL_UPDATED = "2026-11-09";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Site en maintenance : rien à indexer.
