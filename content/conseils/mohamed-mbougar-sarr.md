@@ -18,7 +18,7 @@ Très tôt, il écrit : des nouvelles d'abord, puis des romans. Il s'installe en
 
 Avant le Goncourt, Mbougar Sarr avait déjà publié trois romans remarqués :
 
-- **Terre ceinte** (2015), sur une ville du Sahel sous la coupe de djihadistes et les habitants qui résistent. Ce premier roman a reçu le prix Ahmadou-Kourouma et le Grand prix du roman métis.
+- **Terre ceinte** (2014), sur une ville du Sahel sous la coupe de djihadistes et les habitants qui résistent. Ce premier roman a reçu le prix Ahmadou-Kourouma et le Grand prix du roman métis.
 - **Silence du chœur** (2017), qui raconte l'arrivée de jeunes migrants dans un village de Sicile, et les réactions qu'elle provoque.
 - **De purs hommes** (2018), sur l'homophobie au Sénégal, à partir d'une vidéo qui circule sur les réseaux sociaux. Un sujet délicat, abordé avec beaucoup de nuance.
 

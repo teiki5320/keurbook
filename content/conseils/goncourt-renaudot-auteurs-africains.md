@@ -31,11 +31,13 @@ Le Renaudot a été plus précoce et plus régulier dans sa reconnaissance des �
 
 Le Goncourt et le Renaudot ne sont pas les seuls prix qui comptent. Plusieurs romans africains ont été distingués par le **prix Goncourt des lycéens**, décerné par un jury d'élèves :
 
+- [Contours du jour qui vient](/livre/contours-du-jour-qui-vient) de Léonora Miano en 2006 ;
 - [Petit pays](/livre/petit-pays) de Gaël Faye en 2016 ;
 - [Frère d'âme](/livre/frere-d-ame) de David Diop en 2018, qui a aussi reçu en 2021, dans sa traduction anglaise, l'International Booker Prize ;
-- [Les Impatientes](/livre/les-impatientes) de Djaïli Amadou Amal en 2020.
+- [Les Impatientes](/livre/les-impatientes) de Djaïli Amadou Amal en 2020 ;
+- [La Nuit au cœur](/livre/la-nuit-au-coeur) de la Mauricienne Nathacha Appanah en 2025.
 
-Le **prix Femina** a couronné Léonora Miano en 2013 pour [La Saison de l'ombre](/livre/la-saison-de-l-ombre), un roman sur la traite vue depuis l'Afrique. Marie NDiaye l'avait reçu en 2001 pour *Rosie Carpe*.
+Le **prix Femina** a couronné Léonora Miano en 2013 pour [La Saison de l'ombre](/livre/la-saison-de-l-ombre), un roman sur la traite vue depuis l'Afrique. Marie NDiaye l'avait reçu en 2001 pour *Rosie Carpe*, et Nathacha Appanah l'a obtenu en 2025 pour [La Nuit au cœur](/livre/la-nuit-au-coeur).
 
 ## Ce que disent ces palmarès
 
