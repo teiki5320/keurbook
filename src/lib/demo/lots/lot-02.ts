@@ -302,6 +302,7 @@ export const livres: Book[] = [
   livre({
     slug: "les-nouveaux-contes-d-amadou-koumba",
     title: "Les Nouveaux Contes d'Amadou Koumba",
+    metaDescription: "Les Nouveaux Contes d'Amadou Koumba (1958) de Birago Diop : résumé des treize contes du griot, de l'avare Mor Lam à Bouki l'hyène. Humour et sagesse.",
     contributors: [biragoDiop],
     genre: "contes",
     audience: "adulte",

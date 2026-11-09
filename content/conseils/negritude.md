@@ -38,7 +38,7 @@ Le plus simple est de lire Senghor lui-même. Son recueil [Éthiopiques](/livre/
 
 Pour remonter aux précurseurs, lisez [Presque-songes](/livre/presque-songes) du Malgache Jean-Joseph Rabearivelo, mort en 1937 : une poésie mystérieuse, nourrie de la tradition de son île, que Senghor admirait.
 
-La négritude a aussi encouragé la mise par écrit des traditions orales. [Les Contes d'Amadou Koumba](/livre/les-contes-d-amadou-koumba) de Birago Diop (1947) en sont le meilleur exemple. Senghor a d'ailleurs préfacé leur suite, *Les Nouveaux Contes d'Amadou Koumba* (1958).
+La négritude a aussi encouragé la mise par écrit des traditions orales. [Les Contes d'Amadou Koumba](/livre/les-contes-d-amadou-koumba) de Birago Diop (1947) en sont le meilleur exemple. Senghor a d'ailleurs préfacé leur suite, [Les Nouveaux Contes d'Amadou Koumba](/livre/les-nouveaux-contes-d-amadou-koumba) (1958).
 
 Du côté des idées, [Nations nègres et culture](/livre/nations-negres-et-culture) de Cheikh Anta Diop (1954) partage la même ambition : rendre aux Africains leur histoire. Et [L'Aventure ambiguë](/livre/l-aventure-ambigue) de Cheikh Hamidou Kane (1961) interroge, sous forme de roman, cette tension entre culture africaine et école occidentale.
 

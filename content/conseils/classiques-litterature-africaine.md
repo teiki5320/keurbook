@@ -10,7 +10,7 @@ Un classique, c'est un livre qui continue d'être lu longtemps après sa parutio
 
 ## Les années 1950 : raconter son monde
 
-**[Les Contes d'Amadou Koumba](/livre/les-contes-d-amadou-koumba)** de Birago Diop (1947) ouvrent la marche. Le vétérinaire sénégalais met par écrit les contes de son enfance, avec Leuk-le-Lièvre et Bouki-l'Hyène. C'est la tradition orale qui entre dans la littérature écrite en français, et un livre que l'on peut lire à tout âge.
+**[Les Contes d'Amadou Koumba](/livre/les-contes-d-amadou-koumba)** de Birago Diop (1947) ouvrent la marche. Le vétérinaire sénégalais met par écrit les contes de son enfance, avec Leuk-le-Lièvre et Bouki-l'Hyène. C'est la tradition orale qui entre dans la littérature écrite en français, et un livre que l'on peut lire à tout âge. Leur suite, [Les Nouveaux Contes d'Amadou Koumba](/livre/les-nouveaux-contes-d-amadou-koumba) (1958), réunit treize nouveaux contes du même griot.
 
 **[L'Enfant noir](/livre/l-enfant-noir)** de Camara Laye (1953) est sans doute le récit d'enfance africain le plus lu. Depuis Paris, l'auteur [guinéen](/pays/guinee) se souvient de Kouroussa, de son père forgeron, de sa mère et des rites de passage. Un livre tendre, très accessible, qui reste une porte d'entrée idéale.
 

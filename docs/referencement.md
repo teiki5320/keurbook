@@ -259,3 +259,39 @@ Contrôle des pages construites (mots du contenu principal, liens depuis les aut
 - Rien à faire : /mentions-legales (page juridique) ; /bd, /auteurs, /conseils, /actus (pages de rubrique longues et très reliées) ; les autres fiches, pages auteur, pays et Conseils (8 à 36 liens chacune, texte de 490 à 1 650 mots) : Google doit repasser.
 
 Reste : surveiller ces 35 pages au prochain relevé de la Search Console.
+
+## 09/11/2026
+
+### Pages améliorées (montrées par Google en 2e page, chiffres du 10/10 au 07/11)
+
+Sur les 47 pages de la liste, 46 ont déjà été travaillées depuis le 17/10 (moins de 28 jours) : il en restait une. Titre (« Titre, Auteur | Keurbook », gabarit commun) et titre principal inchangés : ils contiennent déjà la recherche.
+
+| Page | Recherches visées | Place | Vues | Ancienne description | Nouvelle description | Liens ajoutés depuis |
+|---|---|---|---|---|---|---|
+| /livre/les-nouveaux-contes-d-amadou-koumba | « les nouveaux contes d'amadou koumba » (4 vues, 9,3), « les contes d'amadou koumba » (1 vue, 44) | 16,2 | 5 | automatique (début du résumé) | Les Nouveaux Contes d'Amadou Koumba (1958) de Birago Diop : résumé des treize contes du griot, de l'avare Mor Lam à Bouki l'hyène. Humour et sagesse. | /conseils/classiques-litterature-africaine, /conseils/theatre-africain, /conseils/negritude (aucun lien avant) |
+
+À revoir à partir du 07/12/2026.
+
+### Pages oubliées par Google (Search Console au 09/11) — aussi demande du Studio « 203 pages visitées mais pas retenues »
+
+998 pages dans le plan du site (lu par Google le 04/11), 490 indexées seulement (663 le 02/11). 203 pages « visitées mais pas retenues » (166 livres, 14 BD, 8 pays, 7 Conseils, 4 pages auteur, /livres, /bd, /auteurs, /pays, /conseils, /actus, /mentions-legales) et 305 « inconnues » (99 BD, 88 pages auteur, 62 livres, 17 actus, 16 pays, 11 Top 10, 10 Conseils).
+
+Causes cherchées dans le site construit, en comparant les 179 fiches livre et BD écartées aux 617 autres :
+- Texte : même longueur (environ 800 mots dans la page, dont 410 à 1 000 mots propres à la fiche : résumé, « Pourquoi le lire », « Le livre en détail »). Aucune fiche écartée n'est plus courte que les autres ; seule /auteur/khp est courte (370 mots).
+- Liens internes : les fiches écartées en reçoivent même plus (médiane 17 pages contre 13), toutes depuis au moins un article Conseils, un Top 10 ou une page auteur.
+- Titres et descriptions : tous uniques (seul doublon, /top-10 et le premier Top 10, déjà couvert par une adresse canonique commune).
+- Technique : adresse canonique juste, présente dans le plan du site, réponse 200, les variantes (www, barre finale, .html) redirigées vers la bonne adresse.
+
+Conclusion : pas de défaut à corriger dans les gabarits. Google trie un site jeune de près de 1 000 fiches construites sur le même modèle, et en garde pour l'instant la moitié. Rien d'inventé n'a été ajouté. Reste : décision de Jean (voir compte rendu) entre attendre le prochain relevé ou faire écrire des textes plus longs, fiche par fiche, en commençant par les plus vues.
+
+### Fiches enrichies et socle
+
+Fiches enrichies vérifiées le 17/10 (moins de 28 jours) : pas refait. Socle vérifié le 17/10 : pas refait. Vitesse sur téléphone : l'outil PageSpeed de Google a encore refusé ce matin (quota du jour épuisé). À refaire au prochain passage.
+
+### Page nouvelle
+
+Aucune : les 20 recherches de 15 vues ou plus ont toutes leur vraie page. « fatou diome » (23 vues) montre surtout l'article sur Alain Mabanckou (21e) plutôt que sa page auteur. Toujours loin : « terre ceinte » 44,4, « marianne porte plainte » 41,3, « l'ante peuple » 35, « encre sueur salive et sang » 32,8, « trop de soleil tue l'amour » 31,7.
+
+### Pages travaillées il y a 4 semaines
+
+Aucune n'a encore 28 jours (premières le 17/10 : bilan le 14/11). Signes (à ne pas interpréter) : « une vie de boy » 11,9 → 13,9 ; « soundjata ou l'épopée mandingue » 12,5 → 9,8 ; « climbié » 11,1 → 10,9 ; « crépuscule des temps anciens » 11,4 → 12,8 ; « et dieu seul sait comment je dors » 19,7 → 24,6 ; « une enfant de poto poto » 17,4 → 30,8 ; « qui a mangé madame d'avoine bergotha » 16,2 → 16,3.

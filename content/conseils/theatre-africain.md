@@ -26,7 +26,7 @@ Du même auteur, [Béatrice du Congo](/livre/beatrice-du-congo) est une tragédi
 
 ## Une farce pour commencer
 
-Si vous n'avez jamais lu de théâtre, commencez par [L'Os de Mor Lam](/livre/l-os-de-mor-lam) de [Birago Diop](/auteur/birago-diop). Dans un village frappé par la disette, Mor Lam refuse de partager son os à moelle avec son ami venu lui rendre visite, et imagine une ruse énorme pour le garder. Tirée d'un de ses contes, cette farce sur l'avarice est courte, drôle et cruelle. Peter Brook l'a mise en scène au Festival d'Avignon en 1979.
+Si vous n'avez jamais lu de théâtre, commencez par [L'Os de Mor Lam](/livre/l-os-de-mor-lam) de [Birago Diop](/auteur/birago-diop). Dans un village frappé par la disette, Mor Lam refuse de partager son os à moelle avec son ami venu lui rendre visite, et imagine une ruse énorme pour le garder. Tirée d'un conte des [Nouveaux Contes d'Amadou Koumba](/livre/les-nouveaux-contes-d-amadou-koumba), cette farce sur l'avarice est courte, drôle et cruelle. Peter Brook l'a mise en scène au Festival d'Avignon en 1979.
 
 ## Le théâtre des dictatures
 
