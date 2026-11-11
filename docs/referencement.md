@@ -295,3 +295,9 @@ Aucune : les 20 recherches de 15 vues ou plus ont toutes leur vraie page. « fat
 ### Pages travaillées il y a 4 semaines
 
 Aucune n'a encore 28 jours (premières le 17/10 : bilan le 14/11). Signes (à ne pas interpréter) : « une vie de boy » 11,9 → 13,9 ; « soundjata ou l'épopée mandingue » 12,5 → 9,8 ; « climbié » 11,1 → 10,9 ; « crépuscule des temps anciens » 11,4 → 12,8 ; « et dieu seul sait comment je dors » 19,7 → 24,6 ; « une enfant de poto poto » 17,4 → 30,8 ; « qui a mangé madame d'avoine bergotha » 16,2 → 16,3.
+
+## 11/11/2026 — « Pages visitées mais pas retenues » (253 pages, demande du Studio)
+
+Même liste que le 09/11, en plus longue (253 pages au lieu de 203 ; les 40 montrées sont les mêmes types : pages de rubrique, fiches livre récentes, quelques BD). L'analyse complète du 09/11 (longueur des textes, liens internes, titres et descriptions uniques, adresse canonique, plan du site) n'a trouvé aucun défaut de gabarit, et rien n'a changé dans le site depuis. Aucune correction sûre à faire dans le code : rien modifié.
+
+Reste : décision de Jean entre attendre le prochain relevé de Google ou faire écrire des textes plus longs, fiche par fiche (avec des faits vérifiés), en commençant par les plus vues.
