@@ -301,3 +301,12 @@ Aucune n'a encore 28 jours (premières le 17/10 : bilan le 14/11). Signes (à ne
 Même liste que le 09/11, en plus longue (253 pages au lieu de 203 ; les 40 montrées sont les mêmes types : pages de rubrique, fiches livre récentes, quelques BD). L'analyse complète du 09/11 (longueur des textes, liens internes, titres et descriptions uniques, adresse canonique, plan du site) n'a trouvé aucun défaut de gabarit, et rien n'a changé dans le site depuis. Aucune correction sûre à faire dans le code : rien modifié.
 
 Reste : décision de Jean entre attendre le prochain relevé de Google ou faire écrire des textes plus longs, fiche par fiche (avec des faits vérifiés), en commençant par les plus vues.
+
+## 12/11/2026 — « Pages visitées mais pas retenues » (372 pages, demande du Studio)
+
+Même liste que le 09/11 et le 11/11, en plus longue (372 pages au lieu de 253 ; les 40 montrées : les 5 pages de rubrique, /mentions-legales, des fiches livre et BD récentes). Contrôle des pages en ligne : les fiches ont toujours 800 mots environ, un titre et une description uniques et 15 à 20 liens internes (Du même auteur, Vous aimerez aussi, Dans nos conseils) ; /livres et /bd ont un texte d'entrée relié aux classiques et aux conseils.
+
+Corrigé à la source :
+- /auteurs était la seule page de rubrique sans texte propre (une phrase d'introduction et la liste des noms). Ajout d'un texte d'entrée calculé depuis les fiches (aucun chiffre écrit à la main) : nombre d'auteurs et de pays, nombre d'auteurs de BD, les 4 pays les mieux représentés (liens vers leurs pages pays) et les 4 auteurs qui ont le plus de titres sur le site (liens vers leurs pages), plus des liens vers /pays, /livres, /bd et le conseil « Par quel livre commencer ».
+
+Rien d'autre de sûr à corriger dans les gabarits (voir l'analyse du 09/11). Reste : décision de Jean entre attendre le prochain relevé de Google ou faire écrire des textes plus longs, fiche par fiche, avec des faits vérifiés, en commençant par les plus vues.
