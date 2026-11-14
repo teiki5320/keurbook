@@ -49,6 +49,8 @@ export function BookCover({
           src={withBase(illustration)}
           srcSet={illustrationSrcSet(illustration)}
           sizes={sizes}
+          width={600}
+          height={900}
           alt={`${title}, ${creators} : couverture illustrée par Keurbook`}
           className="absolute inset-0 size-full object-cover"
           loading={priority ? "eager" : "lazy"}
