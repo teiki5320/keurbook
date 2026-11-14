@@ -703,11 +703,13 @@ export const livres: Book[] = [
       "Prix Littérature-Monde et prix de la Porte Dorée 2018.",
       "Le deuxième roman du futur prix Goncourt 2021.",
     ],
+    // 14/11/2026 : l'édition de poche n'est plus vendue neuve sur Amazon.fr ; édition conseillée :
+    // le broché Présence africaine de 2017 (fiche Amazon vérifiée le 14/11/2026).
     year: 2017,
     publisher: "Présence africaine",
-    pages: 569,
-    isbn: "9782708709829",
-    format: "poche",
+    pages: 415,
+    isbn: "9782708709041",
+    format: "grand-format",
     awards: [
       { name: "Prix Littérature-Monde", year: 2018 },
       { name: "Prix de la Porte Dorée", year: 2018 },
