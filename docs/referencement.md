@@ -310,3 +310,7 @@ Corrigé à la source :
 - /auteurs était la seule page de rubrique sans texte propre (une phrase d'introduction et la liste des noms). Ajout d'un texte d'entrée calculé depuis les fiches (aucun chiffre écrit à la main) : nombre d'auteurs et de pays, nombre d'auteurs de BD, les 4 pays les mieux représentés (liens vers leurs pages pays) et les 4 auteurs qui ont le plus de titres sur le site (liens vers leurs pages), plus des liens vers /pays, /livres, /bd et le conseil « Par quel livre commencer ».
 
 Rien d'autre de sûr à corriger dans les gabarits (voir l'analyse du 09/11). Reste : décision de Jean entre attendre le prochain relevé de Google ou faire écrire des textes plus longs, fiche par fiche, avec des faits vérifiés, en commençant par les plus vues.
+
+## 14/11/2026 — « Pages visitées mais pas retenues » (374 pages, demande du Studio)
+
+Même liste que le 12/11 (374 pages au lieu de 372 ; les 40 montrées : les 5 pages de rubrique, /mentions-legales, des fiches livre et BD). Rien n'a changé dans les gabarits depuis l'analyse du 09/11 et la correction de /auteurs du 12/11 : aucune nouvelle cause sûre à corriger. Reste : décision de Jean entre attendre le prochain relevé de Google ou faire écrire des textes plus longs, fiche par fiche, avec des faits vérifiés, en commençant par les plus vues.
