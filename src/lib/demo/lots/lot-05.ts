@@ -682,7 +682,7 @@ export const livres: Book[] = [
   livre({
     slug: "qui-a-mange-madame-d-avoine-bergotha",
     title: "Qui a mangé Madame d'Avoine Bergotha ?",
-    metaDescription: "Qui a mangé Madame d'Avoine Bergotha ? (1989), pièce de Sony Labou Tansi : une comédie du travestissement qui tourne au cauchemar politique. Résumé.",
+    metaDescription: "Qui a mangé Madame d'Avoine Bergotha ? de Sony Labou Tansi (1989) : résumé de la pièce, une comédie du travestissement qui vire au cauchemar politique.",
     contributors: [SONY],
     genre: "theatre",
     audience: "adulte",

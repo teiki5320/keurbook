@@ -41,7 +41,7 @@ export const livresCentreEstSud: Book[] = [
     ...base,
     slug: "une-vie-de-boy",
     title: "Une vie de boy",
-    metaDescription: "Une vie de boy (1956) de Ferdinand Oyono : le journal de Toundi, boy du commandant, portrait sans pitié de la société coloniale. Résumé et analyse.",
+    metaDescription: "Une vie de boy de Ferdinand Oyono (1956) : résumé et analyse du journal de Toundi, boy du commandant de Dangan, satire de la société coloniale.",
     contributors: [{ role: "auteur", name: "Ferdinand Oyono", authorSlug: "ferdinand-oyono" }],
     genre: "roman",
     audience: "ado",

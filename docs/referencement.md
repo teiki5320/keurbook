@@ -314,3 +314,45 @@ Rien d'autre de sûr à corriger dans les gabarits (voir l'analyse du 09/11). Re
 ## 14/11/2026 — « Pages visitées mais pas retenues » (374 pages, demande du Studio)
 
 Même liste que le 12/11 (374 pages au lieu de 372 ; les 40 montrées : les 5 pages de rubrique, /mentions-legales, des fiches livre et BD). Rien n'a changé dans les gabarits depuis l'analyse du 09/11 et la correction de /auteurs du 12/11 : aucune nouvelle cause sûre à corriger. Reste : décision de Jean entre attendre le prochain relevé de Google ou faire écrire des textes plus longs, fiche par fiche, avec des faits vérifiés, en commençant par les plus vues.
+
+## 16/11/2026
+
+### Pages améliorées (montrées par Google en 2e page, chiffres des 28 derniers jours au 16/11)
+
+Sur les 12 pages de la liste, 10 ont été travaillées le 22 ou le 26/10 (moins de 28 jours) : il en restait 2, déjà travaillées le 19/10. Leurs fiches sont déjà longues (résumé, « Pourquoi le lire », analyse en trois parties) et reliées par des articles Conseils : seule la description Google change, pour mettre « résumé » au début. Titre (« Titre, Auteur | Keurbook ») et titre principal inchangés.
+
+| Page | Recherches visées | Place | Vues | Ancienne description | Nouvelle description |
+|---|---|---|---|---|---|
+| /livre/une-vie-de-boy | « une vie de boy », « la vie de boy », « vie de boy » | 14,7 | 71 | « Une vie de boy (1956) de Ferdinand Oyono : le journal de Toundi, boy du commandant, portrait sans pitié de la société coloniale. Résumé et analyse. » | « Une vie de boy de Ferdinand Oyono (1956) : résumé et analyse du journal de Toundi, boy du commandant de Dangan, satire de la société coloniale. » |
+| /livre/qui-a-mange-madame-d-avoine-bergotha | « qui a mange madame d'avoine bergotha » | 16,2 | 29 | « Qui a mangé Madame d'Avoine Bergotha ? (1989), pièce de Sony Labou Tansi : une comédie du travestissement qui tourne au cauchemar politique. Résumé. » | « Qui a mangé Madame d'Avoine Bergotha ? de Sony Labou Tansi (1989) : résumé de la pièce, une comédie du travestissement qui vire au cauchemar politique. » |
+
+À revoir à partir du 14/12/2026.
+
+### Pages travaillées il y a 4 semaines (17 et 19/10) : elles ont baissé
+
+Chiffres des 28 derniers jours au 16/11, comparés au jour du travail : « une vie de boy » 11,9 → 14,8 ; « qui a mangé madame d'avoine bergotha » 16,2 → 16,2 ; « et dieu seul sait comment je dors » 19,7 → 27,3 ; « une enfant de poto poto » 17,4 → 38,6 ; « soundjata ou l'épopée mandingue » 12,5 → 37,9 ; « crépuscule des temps anciens » 11,4 → 44 (1 vue) ; « l'enfant noir de camara laye » 11,3 → 64 à 83 (1 vue). « les gardiens du temple », « climbié » et « béatrice du congo » n'apparaissent plus dans les recherches du mois. La baisse touche tout le site, pas seulement ces pages : elle va avec la chute des pages retenues par Google (voir plus bas).
+
+### Pages oubliées par Google (Search Console au 16/11) — aussi demande du Studio « 414 pages visitées mais pas retenues »
+
+1 006 pages dans le plan du site (lu par Google le 11/11), 282 indexées seulement (490 le 09/11, 663 le 02/11). 414 pages « visitées mais pas retenues » et 310 « inconnues ».
+
+Contrôles du jour :
+- Technique : sur les pages écartées (ex. /livre/profaner-ananda, /livres), réponse 200, pas de « noindex » (seulement `max-image-preview:large`), pas d'en-tête X-Robots-Tag, adresse canonique juste.
+- Texte répété d'une fiche à l'autre (site construit, 675 fiches livre) : seulement 66 à 94 mots par fiche (mention Amazon, « Ajouter à ma pile à lire », mention de la couverture, intertitres) sur 550 à 725 mots ; le reste est propre à la fiche.
+- Rien n'a changé dans les gabarits depuis l'analyse du 09/11 et la correction de /auteurs du 12/11.
+
+Conclusion : aucune cause sûre à corriger dans le code. Google retire des pages d'un site jeune de 1 000 fiches construites sur le même modèle. Rien d'inventé n'a été ajouté. Reste : décision de Jean (demandée depuis le 09/11) entre attendre ou faire écrire des textes plus longs et plus personnels, fiche par fiche, avec des faits vérifiés, en commençant par les plus vues.
+
+### Fiches enrichies vérifiées le 16/11/2026
+
+Vérifié dans les pages construites (JSON valide) : Book + BreadcrumbList sur /livre/profaner-ananda et /bd/petit-pays-bd, Person + BreadcrumbList sur /auteur/mongo-beti, Article + BreadcrumbList sur /conseils/ahmadou-kourouma, WebSite + Organization sur l'accueil. Pas de FAQ visible, donc pas de FAQPage. Rien à corriger.
+
+### Socle vérifié le 16/11/2026
+
+- IndexNow : clé publique `/86e162766f5615ec8020869f4b66761d.txt` en ligne (réponse 200), script `scripts/indexnow.mjs` en place.
+- Google Discover : `max-image-preview:large` sur toutes les pages ; image de partage 1200 × 630 par défaut, images des articles Conseils à 1200 px de large.
+- Vitesse sur téléphone : l'outil PageSpeed de Google a encore refusé (quota du jour épuisé, erreur 429) pour l'accueil, /livre/une-vie-de-boy et /conseils/classiques-litterature-africaine. À refaire au prochain passage.
+
+### Page nouvelle
+
+Aucune : les 13 recherches de 15 vues ou plus ont toutes leur vraie page (fiche livre). Loin dans Google : « marianne porte plainte » 43,4, « une enfant de poto poto » 38,6, « l'ante peuple » 36, « trop de soleil tue l'amour » 31,7, « encre sueur salive et sang » 31,2, « cet homme est mort wole soyinka » 29,4.
