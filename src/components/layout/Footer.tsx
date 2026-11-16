@@ -37,6 +37,7 @@ export function Footer() {
           ))}
         </nav>
         <nav aria-label="Informations légales" className="flex flex-col gap-2 text-muted">
+          <Link href="/a-propos" className="hover:text-ink">À propos</Link>
           <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
           <Link href="/confidentialite" className="hover:text-ink">Confidentialité</Link>
           <Link href="/conditions" className="hover:text-ink">Conditions d&apos;utilisation</Link>
