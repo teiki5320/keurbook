@@ -1256,10 +1256,6 @@
       "asin": "2070789497",
       "verifie_le": "2026-10-28"
     },
-    "portraits-d-insurges": {
-      "asin": "2911412885",
-      "verifie_le": "2026-10-28"
-    },
     "revenir": {
       "asin": "2743671173",
       "verifie_le": "2026-10-28"
@@ -1812,6 +1808,11 @@
       "asin": "2070596710",
       "constate_le": "2026-10-28",
       "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
+    },
+    "portraits-d-insurges": {
+      "asin": "2911412885",
+      "constate_le": "2026-11-06",
+      "note": "Plus de bouton d'achat sur Amazon.fr (seulement des vendeurs tiers) : retour à la recherche Amazon jusqu'à son retour (choix de Jean, 18/11)."
     }
   }
 }
