@@ -121,6 +121,16 @@ describe("Site construit (out/)", () => {
     if (bing) assert.match(bing[1], /^[0-9A-F]{32}$/);
   });
 
+  it("flux RSS : construit, rempli, annoncé dans robots.txt et signalé dans chaque page", () => {
+    const flux = readFileSync(join(out, "feed.xml"), "utf8");
+    assert.match(flux, /^<\?xml version="1\.0" encoding="UTF-8"\?>\n<rss version="2\.0"/);
+    assert.ok((flux.match(/<item>/g) ?? []).length >= 5, "moins de 5 éléments");
+    assert.match(readFileSync(join(out, "robots.txt"), "utf8"), /Sitemap: https:\/\/keurbook\.com\/feed\.xml/);
+    for (const page of ["index", "conseils"]) {
+      const html = readFileSync(join(out, `${page}.html`), "utf8");
+      assert.match(html, /<link rel="alternate" type="application\/rss\+xml"[^>]*href="https:\/\/keurbook\.com\/feed\.xml"/, page);
+    }
+  });
   it("robots.txt annonce le plan du site, qui contient les fiches avec leur date", () => {
     assert.match(readFileSync(join(out, "robots.txt"), "utf8"), /Sitemap: https:\/\/keurbook\.com\/sitemap\.xml/);
     const plan = readFileSync(join(out, "sitemap.xml"), "utf8");

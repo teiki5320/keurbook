@@ -33,7 +33,8 @@ export function pageMetadata({ title, description, path, image, imageAlt, type =
   return {
     title: absolute ? { absolute: fullTitle } : title,
     description,
-    alternates: { canonical: path },
+    // Flux RSS du site signalé sur chaque page (src/app/feed.xml/route.ts).
+    alternates: { canonical: path, types: { "application/rss+xml": [{ url: "/feed.xml", title: `${siteConfig.name} : actus et conseils` }] } },
     openGraph: {
       type: type === "book" || type === "profile" ? "website" : type,
       locale: siteConfig.locale,

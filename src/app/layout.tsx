@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
+  alternates: { types: { "application/rss+xml": [{ url: "/feed.xml", title: `${siteConfig.name} : actus et conseils` }] } },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
