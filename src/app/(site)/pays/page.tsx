@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CountryCarousel } from "@/components/carousel/CountryCarousel";
 import { EntryText, PageHeader } from "@/components/layout/Section";
 import { siteConfig } from "@/lib/config";
-import { getCountriesWithBooks } from "@/lib/data/books";
+import { getAllBooks, getCountriesWithBooks } from "@/lib/data/books";
 import { getMaintenance } from "@/lib/data/settings";
 import { itemListLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
@@ -20,6 +20,9 @@ export default async function CountriesPage() {
   const countries = [...(await getCountriesWithBooks())].sort((a, b) => a.lon - b.lon);
   const start = Math.max(0, countries.findIndex((c) => c.code === "SN"));
   const authors = countries.reduce((n, c) => n + c.authors, 0);
+  // Premier livre « Par où commencer » de chaque pays (choix déjà écrit dans src/lib/countries.ts), lié depuis la liste.
+  const books = await getAllBooks();
+  const firstOf = (c: (typeof countries)[number]) => c.startWith.map((slug) => books.find((b) => b.slug === slug)).find((b) => b !== undefined) ?? null;
   return (
     <>
       <script
@@ -59,6 +62,18 @@ export default async function CountriesPage() {
                     {" "}
                     : {[c.authors && `${c.authors} écrivain${c.authors > 1 ? "s" : ""}`, c.books && `${c.books} livre${c.books > 1 ? "s" : ""}`, c.bd && `${c.bd} BD`].filter(Boolean).join(", ")}
                   </span>
+                  {(() => {
+                    const first = firstOf(c);
+                    return first ? (
+                      <span className="text-faint">
+                        {" "}
+                        ; pour commencer :{" "}
+                        <Link href={first.kind === "bd" ? `/bd/${first.slug}` : `/livre/${first.slug}`}>
+                          <i>{first.title}</i>
+                        </Link>
+                      </span>
+                    ) : null;
+                  })()}
                 </li>
               ))}
           </ul>

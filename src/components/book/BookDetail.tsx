@@ -43,6 +43,8 @@ export async function BookDetail({ book }: { book: Book }) {
   const rank = oeuvre.indexOf(book);
   const before = rank > 0 ? oeuvre[rank - 1] : null;
   const after = rank >= 0 && rank < oeuvre.length - 1 ? oeuvre[rank + 1] : null;
+  // « Par où commencer » de la fiche auteur (choix déjà écrit dans les données) : phrase propre à la fiche et lien vers ce livre.
+  const startBook = author?.startWith ? (oeuvre.find((b) => b.slug === author.startWith) ?? null) : null;
   const bookLink = (b: Book) => (
     <Link href={b.kind === "bd" ? `/bd/${b.slug}` : `/livre/${b.slug}`} className="underline underline-offset-4 hover:text-accent">
       <i>{b.title}</i>
@@ -285,6 +287,15 @@ export async function BookDetail({ book }: { book: Book }) {
                     {" "}Le suivant est {bookLink(after)} ({after.year}).
                   </>
                 )}
+                {startBook &&
+                  author &&
+                  (startBook.slug === book.slug ? (
+                    <> C&apos;est le livre par lequel nous conseillons de commencer pour découvrir {author.name}.</>
+                  ) : (
+                    <>
+                      {" "}Pour découvrir {author.name}, nous conseillons de commencer par {bookLink(startBook)} ({startBook.year}).
+                    </>
+                  ))}
               </p>
             </section>
           )}

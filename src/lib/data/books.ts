@@ -116,7 +116,18 @@ export async function getBooksByAuthor(slug: string) {
   return (await getAllBooks()).filter((b) => authorSlugsOf(b).includes(slug));
 }
 
-/** « Vous aimerez aussi » : même pays, puis thèmes communs, puis même genre. Hors livres du même auteur. */
+/** Nombre stable tiré de deux adresses : départage les fiches de même score sans favoriser toujours les mêmes. */
+function melange(a: string, b: string) {
+  let h = 2166136261;
+  for (const ch of `${a}|${b}`) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
+  return h;
+}
+
+/**
+ * « Vous aimerez aussi » : même pays, thèmes communs, même genre, hors livres du même auteur. À score égal, l'ordre dépend de la fiche
+ * (et non plus de la date d'ajout) : les liens se répartissent sur tout le catalogue au lieu de pointer
+ * toujours vers les mêmes livres récents, et chaque fiche a sa propre sélection.
+ */
 export async function getRelatedBooks(book: Book, limit = 4) {
   const map = await authorMap();
   const own = new Set(authorSlugsOf(book));
@@ -127,7 +138,7 @@ export async function getRelatedBooks(book: Book, limit = 4) {
   return others
     .map((b) => ({ b, s: score(b) }))
     .filter((x) => x.s > 0)
-    .sort((x, y) => y.s - x.s || byNewest(x.b, y.b))
+    .sort((x, y) => y.s - x.s || melange(book.slug, x.b.slug) - melange(book.slug, y.b.slug))
     .slice(0, limit)
     .map((x) => x.b);
 }
