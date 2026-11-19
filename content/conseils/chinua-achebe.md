@@ -51,3 +51,5 @@ Achebe reçoit en 2007 le Man Booker International Prize pour l'ensemble de son 
 Commencez évidemment par [Le monde s'effondre](/livre/le-monde-s-effondre) : c'est court, très clair, et c'est le livre qui a ouvert la voie à des générations d'écrivains, de Wole Soyinka à Chimamanda Ngozi Adichie. Si vous aimez l'humour grinçant, enchaînez avec [Le Démagogue](/livre/le-demagogue).
 
 Pour aller plus loin, tous ses livres sont réunis sur sa [fiche auteur](/auteur/chinua-achebe), et notre article [Quels livres lire pour découvrir le Nigeria ?](/conseils/livres-nigeria) présente les autres grandes voix de son pays.
+
+Pour situer Achebe parmi les autres écrivains du continent, voyez [Littérature africaine : histoire, grands thèmes, auteurs](/conseils/litterature-africaine-histoire-themes-auteurs), et pour choisir votre prochain roman, [Meilleur roman africain : lesquels lire en premier ?](/conseils/meilleur-roman-africain).

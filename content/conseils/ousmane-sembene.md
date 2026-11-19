@@ -45,3 +45,5 @@ Il meurt en 2007 à Dakar, laissant une œuvre qui reste d'une grande actualité
 Commencez par [Les Bouts de bois de Dieu](/livre/les-bouts-de-bois-de-dieu), son grand roman : c'est long, mais on est emporté par la lutte des grévistes. Si vous voulez un texte plus court et plus drôle, prenez [Xala](/livre/xala) ou [Véhi-Ciosane, suivi du Mandat](/livre/vehi-ciosane-suivi-du-mandat).
 
 Prolongez avec ses films, souvent disponibles en version restaurée. Tous ses livres sont réunis sur sa [fiche auteur](/auteur/ousmane-sembene), et notre article [Quels livres lire pour comprendre l'histoire du Sénégal ?](/conseils/histoire-du-senegal) les replace dans l'histoire du pays.
+
+Les Bouts de bois de Dieu s'inspire d'un événement réel : la grève des cheminots de 1947-1948. Pour d'autres romans qui racontent l'histoire de l'intérieur, lisez [Roman historique africain : quels romans lire ?](/conseils/roman-historique-africain).

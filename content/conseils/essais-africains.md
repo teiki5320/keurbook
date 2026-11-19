@@ -35,3 +35,5 @@ Enfin, le classique : [Nations nègres et culture](/livre/nations-negres-et-cult
 Si vous n'avez jamais lu d'essai africain, commencez par [Nous sommes tous des féministes](/livre/nous-sommes-tous-des-feministes) : une heure de lecture, et beaucoup à méditer. Enchaînez avec [Afrotopia](/livre/afrotopia) ou [Huit leçons sur l'Afrique](/livre/huit-lecons-sur-l-afrique).
 
 Les lecteurs plus aguerris iront ensuite vers [Décoloniser l'esprit](/livre/decoloniser-l-esprit), puis vers Mbembe et Cheikh Anta Diop. Et si vous préférez les romans pour entrer dans ces questions, notre article [Quels sont les classiques de la littérature africaine à lire absolument ?](/conseils/classiques-litterature-africaine) est un bon point de départ.
+
+Pour une vue d'ensemble des grands courants, des thèmes et des auteurs, voyez [Littérature africaine : histoire, grands thèmes, auteurs](/conseils/litterature-africaine-histoire-themes-auteurs).

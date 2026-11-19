@@ -51,3 +51,5 @@ L'épopée n'appartient pas qu'au passé. Le Kényan [Ngũgĩ wa Thiong'o](/aute
 Commencez par [Soundjata ou l'Épopée mandingue](/livre/soundjata-ou-l-epopee-mandingue) : c'est la clé de toutes les autres, et il se lit dès 12 ans. Pour les plus jeunes ou les amateurs de dessin, la BD [Chaka](/bd/chaka-d-apres-l-oeuvre-de-thomas-mofolo) est une belle porte d'entrée.
 
 Les lecteurs qui aiment la philosophie et les symboles iront vers [Kaïdara](/livre/kaidara). Et si ces récits vous plaisent, continuez avec nos articles [Quels contes africains lire aux enfants ?](/conseils/contes-africains-enfants) et [Quels livres lire pour découvrir le Mali ?](/conseils/livres-mali).
+
+Si vous aimez les récits qui plongent dans le passé, lisez aussi [Roman historique africain : quels romans lire ?](/conseils/roman-historique-africain), et pour replacer ces épopées dans l'ensemble, [Littérature africaine : histoire, grands thèmes, auteurs](/conseils/litterature-africaine-histoire-themes-auteurs).

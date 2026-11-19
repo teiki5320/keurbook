@@ -53,3 +53,5 @@ Le recueil **[Éthiopiques](/livre/ethiopiques)** de Léopold Sédar Senghor ré
 - **Ajoutez un mot** : expliquer en une phrase pourquoi vous avez choisi ce livre pour cette personne, c'est déjà donner envie de l'ouvrir.
 
 Et si le livre doit voyager, retrouvez nos idées de lectures légères dans [Quels livres africains lire en vacances ?](/conseils/livres-africains-vacances). Joyeuses fêtes et bonnes lectures !
+
+Pour un premier cadeau sûr, notre sélection [Meilleur roman africain : lesquels lire en premier ?](/conseils/meilleur-roman-africain) donne dix romans qui plaisent presque toujours.
