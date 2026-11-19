@@ -25,8 +25,8 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Livres
 | Pays (seulement ceux qui ont au moins un livre) | `/pays`, `/pays/<slug>` |
 | Conseils (lundi, mercredi et vendredi) | `/conseils`, `/conseils/<slug>` |
 | Top 10 (11 onglets thématiques ; `/top-10` ouvre le premier) | `/top-10`, `/top-10/<slug>` |
-| Actus du livre africain (20 dernières actus, lues en direct ; 4 sur l'accueil, 3 par fiche auteur) | `/actus` |
-| Article complet d'une actu (construit 2 fois par jour ; page de secours non indexée pour les plus récents) | `/actus/<adresse>`, `/actus/article?id=<id>` |
+| Actus du livre africain (20 dernières actus, lues en direct ; accessibles aux visiteurs mais en `noindex` et hors sitemap depuis le 19 novembre 2026 ; plus de bloc d'actus sur l'accueil ni sur les fiches auteur) | `/actus` |
+| Article complet d'une actu (construit 2 fois par jour ; `noindex` et hors sitemap depuis le 19 novembre 2026, comme la page de secours) | `/actus/<adresse>`, `/actus/article?id=<id>` |
 | Ma pile à lire (dans le navigateur, sans compte, partageable par lien) | `/pile-a-lire` |
 | Pages légales | `/mentions-legales`, `/confidentialite`, `/conditions` |
 

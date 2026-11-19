@@ -33,6 +33,8 @@ export async function generateMetadata({ params }: PageProps<"/actus/[slug]">): 
     publishedTime: article.publie_le,
     image: photo ? article.image.url : null,
     imageAlt: article.image.alt,
+    // Actus hors de Google (19 novembre 2026) : pages gardées pour les visiteurs, mais non indexées.
+    noindex: true,
   });
 }
 

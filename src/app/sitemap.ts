@@ -6,7 +6,6 @@ import { getConseils } from "@/lib/data/conseils";
 import { getTop10s } from "@/lib/data/top10";
 import { TOP10_UPDATED } from "@/lib/top10/sujets";
 import { getMaintenance } from "@/lib/data/settings";
-import { getArticlesActus } from "@/lib/data/veille-articles";
 import { currentHashes, readLedger } from "@/lib/lastmod";
 import { execFileSync } from "node:child_process";
 
@@ -59,8 +58,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     { url: base, lastModified: day(latest([lastBook, lastConseil])), changeFrequency: "weekly" as const, priority: 1 },
     ...Object.entries(lists).map(([path, d]) => ({ url: `${base}${path}`, lastModified: day(d), changeFrequency: "weekly" as const, priority: 0.8 })),
-    // Actus : lues en direct depuis la veille (2 fois par jour), la page change tous les jours.
-    { url: `${base}/actus`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.7 },
     ...["/a-propos", "/conditions", "/mentions-legales", "/confidentialite"].map((path) => ({
       url: `${base}${path}`,
       lastModified: day(LEGAL_UPDATED),
@@ -93,13 +90,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...conseils.map((c) => ({
       url: `${base}/conseils/${c.slug}`,
       lastModified: day(conseilDay.get(c.slug)!),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
-    // Articles complets des actus, construits 2 fois par jour (la page de secours /actus/article n'y est pas).
-    ...getArticlesActus().map((a) => ({
-      url: `${base}/actus/${a.slug}`,
-      lastModified: new Date(a.redige_le),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

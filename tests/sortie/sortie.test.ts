@@ -137,6 +137,15 @@ describe("Site construit (out/)", () => {
     assert.match(plan, /<loc>https:\/\/keurbook\.com\/livre\/105-rue-carnot<\/loc>\s*<lastmod>\d{4}-\d{2}-\d{2}/);
   });
 
+  it("les actus sont hors de Google (noindex, hors plan du site) et le site ne renvoie pas vers les autres sites de la maison", () => {
+    const plan = readFileSync(join(out, "sitemap.xml"), "utf8");
+    assert.doesNotMatch(plan, /\/actus/, "actus dans le plan du site");
+    const actus = readFileSync(join(out, "actus.html"), "utf8");
+    assert.match(actus, /<meta name="robots" content="noindex, follow/);
+    const accueil = readFileSync(join(out, "index.html"), "utf8");
+    assert.doesNotMatch(accueil, /href="https:\/\/(www\.)?(keurcook|keurdeco|keurfoot|keurkado|keurbible|keurdesir|solelis|kultiled|toakeur)\./, "lien vers un autre site");
+  });
+
   it("les fichiers ads.txt et de clé IndexNow sont bien publiés", () => {
     assert.match(readFileSync(join(out, "ads.txt"), "utf8"), /google\.com, pub-\d+, DIRECT/);
     assert.ok(readdirSync(out).some((f) => /^[0-9a-f]{32}\.txt$/.test(f)), "fichier de clé IndexNow absent");

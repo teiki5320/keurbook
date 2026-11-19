@@ -8,6 +8,7 @@ export const metadata: Metadata = pageMetadata({
   title: "Actus du livre africain",
   description: "Prix littéraires, nouveaux livres, salons et BD : l'actualité des écrivains d'Afrique et de la diaspora, résumée chaque jour avec un lien vers chaque source.",
   path: "/actus",
+  noindex: true,
 });
 
 /** Page « Actus » : les 20 dernières actus du livre et de la BD d'Afrique, lues en direct depuis la veille. */

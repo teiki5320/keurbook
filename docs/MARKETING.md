@@ -34,12 +34,13 @@ publications réelles, ou routine qui publie).
   jusqu'au 18 janvier 2027 (8 articles ajoutés le 18 novembre 2026 ; il s'arrêtait au 28 décembre avant, et au 7 décembre avant le 30 octobre), puis seuls des articles de saison sont programmés
   (1er et 8 février 2027). Depuis fin octobre 2026, la routine « Articles » du Studio vérifie chaque matin l'avance du site
   et complète la série quand il reste moins de 20 articles ou moins de 4 semaines (elle passait avant le 1er et le 15 de chaque mois).
-- ✅ Actus : depuis le 27 octobre 2026, une rubrique « Actus du livre africain » (`/actus`, 20 actus),
-  un bloc de 4 actus sur l'accueil et les actus de l'auteur sur chaque fiche auteur, mis à jour
-  2 fois par jour (12 h et 19 h) par la veille actus. Depuis le 28 octobre 2026, chaque actu ouvre son
-  article complet sur le site (300 à 450 mots, page `/actus/<adresse>` que Google peut trouver, dans le
-  sitemap), avec la source et ses liens ; avant, la carte renvoyait directement vers la source. Contenu frais
-  pour le référencement et pour donner une raison de revenir.
+- ⚠️ Actus : depuis le 27 octobre 2026, une rubrique « Actus du livre africain » (`/actus`, 20 actus),
+  mise à jour 2 fois par jour (12 h et 19 h) par la veille actus ; depuis le 28 octobre 2026, chaque actu a son
+  article complet (`/actus/<adresse>`). Depuis le 19 novembre 2026, ces pages restent ouvertes aux visiteurs mais sont
+  en `noindex` et hors sitemap et hors flux RSS, et les blocs d'actus de l'accueil et des fiches auteur sont retirés :
+  les actus réécrites d'autres médias passaient pour du contenu repris et le site a chuté sur Google (voir
+  le diagnostic du Studio, `docs/analyse-vues-2026-11-19/diagnostic.md`). Le menu « Les sites Keur » (en-tête) et le lien
+  « Un site TOA KEUR » (pied de page) sont aussi retirés le 19 novembre 2026 : plus aucun lien vers les autres sites.
 - ⬜ Pinterest : aucun compte Keurbook.
 - ⬜ TikTok et YouTube : TikTok « Afrotok » et YouTube « toa.afrotok » sont branchés au Studio mais rattachés à toakeur, pas à Keurbook (vérifié le 19 novembre 2026) ; une
   vidéo Keurbook est prête depuis le 5 octobre, mais aucune publication n'est constatée.

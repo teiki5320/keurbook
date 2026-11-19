@@ -21,7 +21,7 @@ Le site est une **ode aux écrivains** : les auteurs sont mis en avant, leurs li
 5. **Pays** — `/pays` et `/pays/[pays]` : les auteurs du pays d'abord, puis les livres conseillés, les livres et les BD.
 6. **Conseils** — `/conseils` et `/conseils/[article]` : trois articles par semaine (lundi, mercredi, vendredi), qui répondent à une question que les gens se posent.
 7. **Listes secondaires** — `/livres` et `/bd` (recherche et filtres), accessibles depuis l'accueil et le pied de page, plus depuis le menu.
-8. **Actus du livre africain** — `/actus` (depuis le 27 octobre 2026) : les 20 dernières actus de la veille actus (prix, sorties, salons, BD), lues en direct ; aussi un bloc de 4 actus sur l'accueil (après « À lire maintenant ») et un bloc « L'actu de … » (3 actus) sur chaque fiche auteur, absent s'il n'y en a pas. Chaque actu : titre reformulé, résumé réécrit, nom de la source, crédit de l'image ; jamais de lien Amazon. Toute la carte ouvre l'article complet (depuis le 28 octobre 2026) : page `/actus/<adresse>` avec fil d'Ariane, titre, chapô, date et temps de lecture, image et crédit, intertitres, encadré « Sources » (« Article rédigé par Keurbook à partir de : … »), liens vers les fiches des auteurs cités, 3 autres actus et 1 annonce ; page de secours `/actus/article?id=…` (non indexée) pour les articles parus depuis la dernière construction ; sans article, la carte ouvre la source.
+8. **Actus du livre africain** — `/actus` (depuis le 27 octobre 2026) : les 20 dernières actus de la veille actus (prix, sorties, salons, BD), lues en direct. Depuis le 19 novembre 2026, la page et les articles d'actus sont en `noindex`, hors du plan du site et du flux RSS (retirés de Google, qui les prenait pour du contenu repris), et le bloc de 4 actus de l'accueil et le bloc « L'actu de … » des fiches auteur sont retirés (l'accueil les affichait depuis le 27 octobre ; le lien « Actus » du menu reste). Chaque actu : titre reformulé, résumé réécrit, nom de la source, crédit de l'image ; jamais de lien Amazon. Toute la carte ouvre l'article complet (depuis le 28 octobre 2026) : page `/actus/<adresse>` avec fil d'Ariane, titre, chapô, date et temps de lecture, image et crédit, intertitres, encadré « Sources » (« Article rédigé par Keurbook à partir de : … »), liens vers les fiches des auteurs cités, 3 autres actus et 1 annonce ; page de secours `/actus/article?id=…` (non indexée) pour les articles parus depuis la dernière construction ; sans article, la carte ouvre la source.
 9. **Ma pile à lire** — `/pile-a-lire` (stockée dans le navigateur, sans compte).
 10. **Pages légales** — mentions légales, confidentialité, conditions (avec la mention Amazon Partenaires).
 
@@ -66,7 +66,7 @@ Même contenu que la fiche livre, avec deux différences :
 7. Ses autres titres (liste simple, sans fiche)
 8. Prix littéraires reçus
 9. Thèmes récurrents (liens vers les listes par thème)
-10. « L'actu de [Nom] » : jusqu'à 3 actus liées à l'auteur (veille actus), seulement s'il y en a
+10. (Retiré le 19 novembre 2026) « L'actu de [Nom] » : jusqu'à 3 actus liées à l'auteur
 11. « Auteurs proches » (même pays ou mêmes thèmes), puis « Autres auteurs à découvrir » : 3 liens vers les fiches suivantes (par pays puis par nom, en boucle)
 12. Conseils liés
 
