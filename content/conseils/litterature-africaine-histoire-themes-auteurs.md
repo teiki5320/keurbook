@@ -5,6 +5,8 @@ date: 2026-11-30
 theme: auteurs
 resume: La littérature africaine est d'abord orale : épopées, contes et proverbes transmis par les griots. Les romans écrits modernes naissent surtout dans les années 1950, autour de la négritude et des luttes anticoloniales. Elle n'a pas de « père » unique : Chinua Achebe est le plus cité, mais Senghor, Camara Laye ou Mongo Beti comptent autant. Ses grands thèmes : la colonisation, l'identité, le pouvoir, la condition des femmes, l'exil et la mémoire.
 livres: les-contes-d-amadou-koumba, soundjata-ou-l-epopee-mandingue, ethiopiques, l-enfant-noir, une-vie-de-boy, le-monde-s-effondre, les-soleils-des-independances, une-si-longue-lettre, la-vie-et-demie, le-ventre-de-l-atlantique, petit-pays, la-plus-secrete-memoire-des-hommes
+imageCredit: Stuart C. Shapiro · CC BY 3.0 (Wikimedia Commons)
+imagePage: https://commons.wikimedia.org/wiki/File:Chinua_Achebe_-_Buffalo_25Sep2008.jpg
 ---
 La littérature africaine n'est pas un genre, ni une école : c'est un ensemble immense de textes écrits sur un continent qui compte plus de cinquante pays. Ce qu'on met sous ce nom en France, c'est le plus souvent la littérature écrite par des auteurs d'Afrique subsaharienne ou de leur diaspora, en français ou traduite. Voici comment elle est née, quels noms retenir et de quoi elle parle.
 
