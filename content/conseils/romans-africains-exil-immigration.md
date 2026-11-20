@@ -28,6 +28,8 @@ Bien avant eux, **[Le Docker noir](/livre/le-docker-noir)** d'[Ousmane Sembène]
 
 **[Le Chercheur d'Afriques](/livre/le-chercheur-d-afriques)** d'[Henri Lopes](/auteur/henri-lopes) (1990), prix Jules-Verne, suit André, né au Congo d'une mère noire et d'un père blanc. Traité de « mal blanchi » au pays, il devient le « moricaud » en France, où il cherche sa place et son père.
 
+Autre vie d'exilé en France, celle de [Un rêve utile](/livre/un-reve-utile) de [Tierno Monénembo](/auteur/tierno-monenembo) : à Lyon, un jeune Africain raconte les petits boulots, la débrouille et la nostalgie du pays dans un foyer délabré de la Croix-Rousse.
+
 ## L'exil intérieur
 
 Partir, c'est aussi risquer de se perdre. **[L'Aventure ambiguë](/livre/l-aventure-ambigue)** de Cheikh Hamidou Kane (1961) suit Samba Diallo, envoyé de son pays des Diallobé jusqu'à Paris pour étudier, et de plus en plus partagé entre deux mondes. Un grand roman philosophique, toujours actuel.

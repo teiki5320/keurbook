@@ -16,6 +16,8 @@ Tout commence avec [Jean-Joseph Rabearivelo](/auteur/jean-joseph-rabearivelo), n
 
 Son recueil le plus célèbre, [Presque-songes](/livre/presque-songes) (1934), réunit des poèmes en prose où les paysages des hautes terres, la nuit et les ancêtres deviennent des visions presque rêvées. Son recueil jumeau, [Traduit de la nuit](/livre/traduit-de-la-nuit) (1935), est l'un des sommets de la poésie malgache. Les deux livres sont brefs : on peut les lire poème par poème, à voix haute.
 
+Pour remonter aux débuts du poète, lisez [La Coupe de cendres](/livre/la-coupe-de-cendres), son premier recueil publié à Tananarive en 1924, quand il n'a que vingt-trois ans : on y voit déjà sa maîtrise des mètres classiques. Voir aussi notre [guide de la poésie africaine](/conseils/poesie-africaine).
+
 Pour entendre la poésie orale de l'île, ouvrez [Vieilles chansons des pays d'Imerina](/livre/vieilles-chansons-des-pays-d-imerina). Rabearivelo y adapte en français les hain-teny, ces joutes poétiques où l'on parle d'amour et de sagesse par images. Un recueil malicieux, paru après sa mort.
 
 ## 1947, la blessure longtemps tue

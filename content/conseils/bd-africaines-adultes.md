@@ -28,6 +28,8 @@ Du même dessinateur, [Chaos debout à Kinshasa](/bd/chaos-debout-a-kinshasa) (2
 
 Plus récent, [Les Enfants du pays](/bd/les-enfants-du-pays) (2025) d'[Annick Kamgang](/auteur/annick-kamgang) part d'une histoire familiale. Miriam rejoint au Cameroun son père malade, qui l'a abandonnée vingt-cinq ans plus tôt, et enquête sur sa vie. Elle découvre peu à peu la guerre d'indépendance du pays, longtemps passée sous silence. Un thriller intime et politique à la fois.
 
+Pour sourire sans se prendre au sérieux, [Rugbill, t. 1](/bd/rugbill) (scénario de Faro, dessin du Congolais Hallain Paluku) enchaîne des gags courts sur le rugby d'un village du Sud-Ouest : une BD d'humour pour ados et adultes.
+
 ## Si vous aimez la satire
 
 La BD africaine sait aussi se moquer des puissants. [Colonel Toutou](/bd/colonel-toutou-a-l-ombre-de-paris) (2020), de [Christophe Ngalle Edimo](/auteur/christophe-ngalle-edimo) et [Simon-Pierre Mbumbo](/auteur/simon-pierre-mbumbo), met en scène un « dictateur éclairé » d'un pays imaginaire, toujours soucieux de ce qu'on pense de lui à Paris. Les chapitres courts racontent sur le mode comique une réalité qui ne l'est pas : celle des liens troubles entre la France et ses anciennes colonies.
