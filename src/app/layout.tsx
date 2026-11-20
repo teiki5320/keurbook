@@ -43,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className={`${geist.variable} ${instrumentSerif.variable} antialiased`} suppressHydrationWarning>
       <head>
-        {/* Mesure d'audience Umami, sans cookie : visites, et clics marqués data-umami-event (Amazon, menu des sites Keur). */}
+        {/* Mesure d'audience Umami, sans cookie : visites, et clics marqués data-umami-event (Amazon). */}
         <script defer src="https://cloud.umami.is/script.js" data-website-id={UMAMI_WEBSITE_ID} data-domains="keurbook.com" />
         {/* Code AdSense : charge les annonces et le bandeau de consentement de Google (réglé dans AdSense). */}
         {ADSENSE_CLIENT && (
