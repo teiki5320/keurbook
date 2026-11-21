@@ -51,6 +51,8 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
   // Couleur de l'époque de l'auteur (ocre, terracotta ou indigo) et halo tiré de la couverture de son livre conseillé.
   const firstYear = books.length ? Math.min(...books.map((b) => b.year)) : null;
   const era = GENERATIONS.find((g) => g.key === generationOf(author.birthYear, firstYear))!;
+  // Pas de médaillon si c'est la même couverture que la carte « Par où commencer » : elle serait affichée deux fois.
+  const avatarCover = author.coverImage && author.coverImage !== startCard?.illustration ? author.coverImage : null;
   const halo = startCard?.illustration ?? books.map((b) => b.illustration).find(Boolean) ?? null;
 
   const structuredData = [
@@ -106,8 +108,8 @@ export default async function AuthorPage({ params }: PageProps<"/auteur/[slug]">
             </div>
           ) : (
             <div className="container-page pt-16 md:px-0 md:pt-10">
-              {author.coverImage ? (
-                <img src={withBase(author.coverImage)} alt={`Illustration d'un livre de ${author.name}`} className="size-28 rounded-full object-cover md:size-40" />
+              {avatarCover ? (
+                <img src={withBase(avatarCover)} alt={`Illustration d'un livre de ${author.name}`} className="size-28 rounded-full object-cover md:size-40" />
               ) : (
                 <span aria-hidden className="flex size-28 items-center justify-center rounded-full bg-white font-serif text-4xl text-muted md:size-40 md:text-5xl">
                   {initials(author.name)}
