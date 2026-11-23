@@ -61,7 +61,7 @@ export const TOP10S: Top10[] = [
       },
     ],
     start:
-      "Pour une première lecture courte, [L'Enfant noir](/livre/l-enfant-noir) ou [Une si longue lettre](/livre/une-si-longue-lettre). Pour un roman d'aujourd'hui, [Petit pays](/livre/petit-pays). Pour rire, [Verre Cassé](/livre/verre-casse).",
+      "Pour une première lecture courte, [L'Enfant noir](/livre/l-enfant-noir) ou [Une si longue lettre](/livre/une-si-longue-lettre). Pour un roman d'aujourd'hui, [Petit pays](/livre/petit-pays). Pour rire, [Verre Cassé](/livre/verre-casse). Pour choisir selon vos goûts, lisez notre guide du [meilleur roman africain à lire en premier](/conseils/meilleur-roman-africain).",
     faq: [
       {
         q: "Comment avez-vous fait ce classement ?",
@@ -127,7 +127,7 @@ export const TOP10S: Top10[] = [
       },
     ],
     start:
-      "Pour un livre court et fort, [Frère d'âme](/livre/frere-d-ame) ou [Ève de ses décombres](/livre/eve-de-ses-decombres). Pour rire tout en réfléchissant, [Temps de chien](/livre/temps-de-chien) ou [Congo Inc.](/livre/congo-inc).",
+      "Pour un livre court et fort, [Frère d'âme](/livre/frere-d-ame) ou [Ève de ses décombres](/livre/eve-de-ses-decombres). Pour rire tout en réfléchissant, [Temps de chien](/livre/temps-de-chien) ou [Congo Inc.](/livre/congo-inc). Pour d'autres idées, voyez quel est le [meilleur roman africain selon ce que vous aimez lire](/conseils/meilleur-roman-africain).",
     faq: [
       {
         q: "Comment ces dix livres ont-ils été choisis ?",
