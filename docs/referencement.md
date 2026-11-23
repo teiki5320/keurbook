@@ -356,3 +356,38 @@ Vérifié dans les pages construites (JSON valide) : Book + BreadcrumbList sur /
 ### Page nouvelle
 
 Aucune : les 13 recherches de 15 vues ou plus ont toutes leur vraie page (fiche livre). Loin dans Google : « marianne porte plainte » 43,4, « une enfant de poto poto » 38,6, « l'ante peuple » 36, « trop de soleil tue l'amour » 31,7, « encre sueur salive et sang » 31,2, « cet homme est mort wole soyinka » 29,4.
+
+## 23/11/2026
+
+### Pages améliorées (montrées par Google en 2e page, chiffres du 24/10 au 21/11)
+
+La liste ne compte que 5 pages. /livre/une-vie-de-boy a été travaillée le 16/11 (moins de 28 jours) : pas retouchée. /livre/le-maitre-de-la-parole : sa fiche n'est pas retouchée aujourd'hui, car le travail « Amazon » remplace en même temps son lien Amazon dans le même fichier ; elle a déjà 4 articles qui y mènent. /livre/le-monde-s-effondre est déjà à la 4e place, avec 9 articles qui y mènent : rien à ajouter. Pour les 2 autres, titre (« Titre, Auteur | Keurbook », gabarit commun), titre principal et description sont déjà bons (ils contiennent la recherche) : seuls des liens ont été ajoutés depuis des articles Conseils proches, avec des faits tirés des fiches.
+
+| Page | Recherche visée | Place | Vues | Titre (inchangé) | Liens ajoutés depuis |
+|---|---|---|---|---|---|
+| /livre/ma-grand-mere-bantoue-et-mes-ancetres-les-gaulois | « ma grand mere bantoue et mes ancetres les gaulois » | 14,6 | 17 | Ma grand-mère bantoue et mes ancêtres les Gaulois \| Keurbook (le nom de l'auteur ne tient pas en 60 caractères) | /conseils/livres-congo-rdc, /conseils/romans-africains-exil-immigration |
+| /livre/le-regard-du-roi | « le regard du roi » | 8,7 | 6 | Le Regard du roi, Camara Laye \| Keurbook | /conseils/classiques-litterature-africaine |
+
+À revoir à partir du 21/12/2026.
+
+### Pages travaillées il y a 4 semaines (22 et 26/10)
+
+Sur les 73 pages travaillées le 22 et le 26/10, la plupart n'apparaissent plus du tout dans les recherches du mois (la baisse touche tout le site, voir plus bas). Celles qui restent (chiffres du 24/10 au 21/11, comparés au jour du travail) :
+- ont monté : « les cauchemars du gecko » 18,5 → 10 ; « le regard du roi » 9,2 → 8,7 ; « nations nègres et culture » 14,9 → 11 (1 vue) ; « patron de new york » 11,1 → 9 (1 vue) ; « le monde s'effondre » 9,6 → 4,2 (requêtes variées, 1 vue chacune) ;
+- ont baissé : « le maître de la parole » 8 → 9,4 ; « ma grand mère bantoue… » 12,7 → 14,6 ; « le revenant aminata sow fall » 5,5 → 13,5 ; « le roi miraculé » 5,6 → 26 ; « hosties noires » 15,8 → 19 ; « legendes africaines » 19,7 → 100.
+
+### Pages oubliées par Google (Search Console au 23/11)
+
+989 pages connues de la Search Console, 276 indexées (282 le 16/11). 424 pages « visitées mais pas retenues » et 289 « inconnues ».
+
+Contrôle de 30 pages dans le site construit (les 15 premières de chaque liste : les 5 rubriques, /mentions-legales, /conditions, /confidentialite et 22 fiches livre et BD) : toutes sont dans le plan du site, ont une adresse canonique juste, aucun « noindex » (seulement `max-image-preview:large`), 730 à 940 mots sur les fiches, et de 9 à 39 pages du site qui mènent à chaque fiche (les rubriques sont liées depuis toutes les pages).
+
+Conclusion : comme le 16/11, aucune cause sûre à corriger dans le code. Rien d'inventé n'a été ajouté. Reste la décision de Jean (demandée depuis le 09/11) entre attendre ou faire écrire des textes plus longs et plus personnels, fiche par fiche, avec des faits vérifiés, en commençant par les plus vues.
+
+### Fiches enrichies et socle
+
+Fiches enrichies vérifiées le 16/11 (moins de 28 jours) : pas refait. Socle vérifié le 16/11 : pas refait. Vitesse sur téléphone : l'outil PageSpeed de Google a encore refusé ce matin (quota du jour épuisé, erreur 429). À refaire au prochain passage.
+
+### Page nouvelle
+
+Aucune : les 7 recherches de 15 vues ou plus ont toutes leur vraie page (fiche livre). Loin dans Google : « une enfant de poto poto » 37,4, « trop de soleil tue l'amour » 31,6, « cet homme est mort wole soyinka » 27,3, « et dieu seul sait comment je dors » 23,4, « fleche de dieu » 21,2.

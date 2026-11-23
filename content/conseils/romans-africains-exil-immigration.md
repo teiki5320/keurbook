@@ -26,7 +26,7 @@ La BD **[Malamine](/bd/malamine)** de Christophe Ngalle Edimo et Simon-Pierre Mb
 
 Bien avant eux, **[Le Docker noir](/livre/le-docker-noir)** d'[Ousmane Sembène](/auteur/ousmane-sembene) (1956) racontait la vie des ouvriers africains en France : Diaw Falla, docker sénégalais à Marseille, écrit un roman la nuit, qu'une romancière française publie sous son nom.
 
-**[Le Chercheur d'Afriques](/livre/le-chercheur-d-afriques)** d'[Henri Lopes](/auteur/henri-lopes) (1990), prix Jules-Verne, suit André, né au Congo d'une mère noire et d'un père blanc. Traité de « mal blanchi » au pays, il devient le « moricaud » en France, où il cherche sa place et son père.
+**[Le Chercheur d'Afriques](/livre/le-chercheur-d-afriques)** d'[Henri Lopes](/auteur/henri-lopes) (1990), prix Jules-Verne, suit André, né au Congo d'une mère noire et d'un père blanc. Traité de « mal blanchi » au pays, il devient le « moricaud » en France, où il cherche sa place et son père. Henri Lopes est revenu sur le métissage dans un court essai, [Ma grand-mère bantoue et mes ancêtres les Gaulois](/livre/ma-grand-mere-bantoue-et-mes-ancetres-les-gaulois) (2003).
 
 Autre vie d'exilé en France, celle de [Un rêve utile](/livre/un-reve-utile) de [Tierno Monénembo](/auteur/tierno-monenembo) : à Lyon, un jeune Africain raconte les petits boulots, la débrouille et la nostalgie du pays dans un foyer délabré de la Croix-Rousse.
 
